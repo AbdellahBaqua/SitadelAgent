@@ -5,7 +5,7 @@ personne morale, dire à quelle **famille** appartient le demandeur, puis repér
 Un demandeur non classable reste `non_determine`. Chaque résultat renvoie à sa source publique
 (fichier Sitadel du SDES, fiche de l'Annuaire des entreprises).
 
-**À lire d'abord :** `rapport\rapport_resultats_yvelines.pdf` (résultats), `out_fouille\dashboard.html`
+**À lire d'abord :** `rapport\note_buddimm.pdf` (note de rendu, 2 pages), `out_fouille\dashboard.html`
 (tableau de bord), `out_fouille\prospects_priorises.csv` (prospects qualifiés).
 
 ## 1. Installation
@@ -147,7 +147,7 @@ Vérifier après coup toutes les notes (rejoue les requêtes jointes ; ajouter `
 ```
 python -X utf8 src\verifier_notes.py        # -> out\verification_chiffres.md
 python -X utf8 src\split_insights.py        # -> out\insights_claude.md, out\insights_nvidia.md (un fichier par modèle)
-python -X utf8 src\rapport_pdf.py           # -> rapport\rapport_resultats_yvelines.pdf
+python -X utf8 src\rapport_pdf.py           # -> rapport\rapport_resultats_yvelines.pdf (non versionné, à régénérer)
 ```
 Le garde-fou accepte aussi un pourcentage cité tel quel par un outil (ex. « ~15 % des ouvertures de chantier »,
 réserve du dictionnaire). L'interprétation, que le code ne voit pas, est relue à part : `out_fouille/relecture.json`

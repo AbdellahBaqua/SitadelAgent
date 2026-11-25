@@ -17,3 +17,6 @@ __pycache__/
 
 # Documents personnels de préparation (hors livrable)
 perso/
+
+# Rapport de résultats détaillé : régénérable par src\rapport_pdf.py, hors livrable
+rapport/rapport_resultats_yvelines.pdf
