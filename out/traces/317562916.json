@@ -1,0 +1,116 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "317562916"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "317562916"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "317562916"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "317562916"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "SUPER CARNOT",
+     "nb_permis_PC": 1,
+     "annees_depot": [
+      "2016"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 2,
+     "surface_locaux_non_residentiels_creee_m2": 0,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 1,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 0
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "317562916",
+      "nom": "SUPER CARNOT",
+      "nature_juridique": "5499",
+      "naf_actuel": "68.20B",
+      "etat": "C",
+      "date_creation": "1979-01-01",
+      "categorie": null,
+      "effectif": "NN",
+      "nb_etablissements": 1,
+      "nb_etablissements_ouverts": 0,
+      "siege_actuel": {
+       "siret": "31756291600013",
+       "naf": "68.20B",
+       "etat": "F"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "31756291600013",
+       "naf_dans_permis": "47.11D",
+       "nb_permis": 1,
+       "annees_depot": [
+        "2016"
+       ],
+       "etat_actuel": "fermé",
+       "date_creation": "1979-01-01",
+       "date_fermeture": "2022-04-30"
+      }
+     ],
+     "alertes": [
+      "SIRET 31756291600013 (permis 2016) fermé le 2022-04-30 : le NAF 47.11D du permis vient d'un établissement fermé",
+      "NAF du permis ['47.11D'] différent du NAF actuel de l'entreprise 68.20B"
+     ],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/317562916"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "47.11D",
+      "libelle": "Supermarchés"
+     },
+     {
+      "code": "68.20B",
+      "libelle": "Location de terrains et d'autres biens immobiliers"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5499",
+     "libelle": "Société à responsabilité limitée (sans autre indication)"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"fonciere_investisseur\",\"confiance\":\"moyenne\",\"indices\":[\"fiche_entreprise : NAF actuel 68.20B « Location de terrains et d'autres biens immobiliers » – activité de location immobilière, cœur de métier des foncières/investisseurs\",\"fiche_entreprise : nature juridique 5499 (SARL) – forme juridique courante pour une foncière ou une SCI\",\"permis_du_demandeur : 1 permis en 2016, 2 logements créés via permis individuel, aucun logement social déclaré – petit projet de construction, compatible avec un investisseur qui développe pour louer ou revendre\",\"libelle_naf : 68.20B confirme l'activité de location immobilière ; 47.11D (supermarchés) est le NAF historique de l'établissement du permis, fermé depuis 2022\",\"fiche_entreprise (alertes) : l'établissement du permis est fermé et son NAF diffère du NAF actuel de l'entreprise, ce qui renforce la lecture du NAF actuel comme activité réelle\"],\"limites\":\"Entreprise fermée (état « C »), un unique permis ancien (2016), pas d'information sur la destination finale des 2 logements (location ou vente), pas de preuve d'appartenance à un groupe foncier connu. La classification repose principalement sur le NAF actuel, qui est un indicateur fort mais unique.\"}"
+   }
+  ]
+ }
+]

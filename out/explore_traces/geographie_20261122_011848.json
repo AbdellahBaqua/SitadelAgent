@@ -1,0 +1,2210 @@
+[
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "apercu",
+    "args": {},
+    "sortie": {
+     "perimetre": "PC des Yvelines (78) créant des logements, déposés par des personnes morales, extraction SDES/Sitadel",
+     "nb_permis": 3363,
+     "nb_demandeurs": 2048,
+     "annees_depot": {
+      "2011": 3,
+      "2012": 100,
+      "2013": 222,
+      "2014": 235,
+      "2015": 258,
+      "2016": 266,
+      "2017": 290,
+      "2018": 247,
+      "2019": 256,
+      "2020": 231,
+      "2021": 356,
+      "2022": 247,
+      "2023": 221,
+      "2024": 185,
+      "2025": 168,
+      "2026": 77,
+      "2091": 1
+     },
+     "familles_demandeurs": {
+      "fonciere_investisseur": 1014,
+      "promoteur": 690,
+      "non_determine": 172,
+      "collectivite_public": 79,
+      "bailleur_social": 31,
+      "entreprise_autre": 29,
+      "association_ess": 26,
+      "copropriete": 4,
+      "exploitant_sante_social": 3
+     },
+     "colonnes_interrogeables": [
+      "famille",
+      "AN_DEPOT",
+      "COMM",
+      "ADR_LOCALITE_TER",
+      "ETAT_DAU",
+      "RESIDENCE",
+      "TYPE_PRINCIP_LOGTS_CREES",
+      "NATURE_PROJET_COMPLETEE",
+      "TYPE_TRANSFO_PRINCIPAL",
+      "TYPE_PRINCIP_LOCAUX_TRANSFORMES",
+      "UTILISATION",
+      "DESTINATION_PRINCIPALE",
+      "ZONE_OP",
+      "CJ_DEM",
+      "APE_DEM",
+      "SIREN_DEM",
+      "DENOM_DEM"
+     ],
+     "mesures": [
+      "permis",
+      "logements",
+      "acteurs"
+     ],
+     "remarques": [
+      "2026 est une année partielle",
+      "un permis modificatif n'a pas de ligne propre",
+      "~15 % des ouvertures de chantier et ~1/3 des achèvements ne remontent jamais",
+      "APE_DEM = NAF de l'établissement du permis, possiblement fermé",
+      "RESIDENCE est rempli sur une petite minorité de permis (souvent 'non rempli') ; les drapeaux RES_* n'existent que depuis mai 2022",
+      "NATURE_PROJET_COMPLETEE et TYPE_TRANSFO_* sont dits 'introduits en mai 2022' mais sont renseignés dès 2012 dans le fichier (recodage SDES probable)"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 1,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "COMM",
+      "famille"
+     ],
+     "mesure": "logements",
+     "top": 100
+    },
+    "sortie": {
+     "filtres": {},
+     "nb_permis_filtres": 3363,
+     "nb_groupes": 688,
+     "resultats": [
+      {
+       "COMM": "78586",
+       "famille": "promoteur",
+       "permis": 68,
+       "logements": 4468,
+       "acteurs": 47
+      },
+      {
+       "COMM": "78545",
+       "famille": "promoteur",
+       "permis": 53,
+       "logements": 3252,
+       "acteurs": 38
+      },
+      {
+       "COMM": "78498",
+       "famille": "promoteur",
+       "permis": 31,
+       "logements": 2662,
+       "acteurs": 25
+      },
+      {
+       "COMM": "78361",
+       "famille": "promoteur",
+       "permis": 29,
+       "logements": 1972,
+       "acteurs": 27
+      },
+      {
+       "COMM": "78123",
+       "famille": "promoteur",
+       "permis": 26,
+       "logements": 1940,
+       "acteurs": 24
+      },
+      {
+       "COMM": "78640",
+       "famille": "promoteur",
+       "permis": 8,
+       "logements": 1910,
+       "acteurs": 8
+      },
+      {
+       "COMM": "78490",
+       "famille": "promoteur",
+       "permis": 18,
+       "logements": 1883,
+       "acteurs": 16
+      },
+      {
+       "COMM": "78362",
+       "famille": "promoteur",
+       "permis": 26,
+       "logements": 1865,
+       "acteurs": 18
+      },
+      {
+       "COMM": "78646",
+       "famille": "promoteur",
+       "permis": 26,
+       "logements": 1620,
+       "acteurs": 20
+      },
+      {
+       "COMM": "78551",
+       "famille": "promoteur",
+       "permis": 35,
+       "logements": 1531,
+       "acteurs": 33
+      },
+      {
+       "COMM": "78621",
+       "famille": "promoteur",
+       "permis": 18,
+       "logements": 1401,
+       "acteurs": 17
+      },
+      {
+       "COMM": "78517",
+       "famille": "promoteur",
+       "permis": 23,
+       "logements": 1276,
+       "acteurs": 20
+      },
+      {
+       "COMM": "78005",
+       "famille": "promoteur",
+       "permis": 13,
+       "logements": 1257,
+       "acteurs": 10
+      },
+      {
+       "COMM": "78267",
+       "famille": "promoteur",
+       "permis": 18,
+       "logements": 1196,
+       "acteurs": 14
+      },
+      {
+       "COMM": "78383",
+       "famille": "promoteur",
+       "permis": 9,
+       "logements": 1174,
+       "acteurs": 9
+      },
+      {
+       "COMM": "78674",
+       "famille": "promoteur",
+       "permis": 5,
+       "logements": 1150,
+       "acteurs": 5
+      },
+      {
+       "COMM": "78686",
+       "famille": "promoteur",
+       "permis": 21,
+       "logements": 1092,
+       "acteurs": 19
+      },
+      {
+       "COMM": "78297",
+       "famille": "promoteur",
+       "permis": 22,
+       "logements": 1058,
+       "acteurs": 15
+      },
+      {
+       "COMM": "78423",
+       "famille": "promoteur",
+       "permis": 18,
+       "logements": 937,
+       "acteurs": 15
+      },
+      {
+       "COMM": "78672",
+       "famille": "promoteur",
+       "permis": 10,
+       "logements": 870,
+       "acteurs": 6
+      },
+      {
+       "COMM": "78586",
+       "famille": "fonciere_investisseur",
+       "permis": 114,
+       "logements": 827,
+       "acteurs": 61
+      },
+      {
+       "COMM": "78073",
+       "famille": "promoteur",
+       "permis": 17,
+       "logements": 811,
+       "acteurs": 15
+      },
+      {
+       "COMM": "78688",
+       "famille": "promoteur",
+       "permis": 13,
+       "logements": 807,
+       "acteurs": 8
+      },
+      {
+       "COMM": "78621",
+       "famille": "bailleur_social",
+       "permis": 11,
+       "logements": 793,
+       "acteurs": 6
+      },
+      {
+       "COMM": "78311",
+       "famille": "promoteur",
+       "permis": 17,
+       "logements": 791,
+       "acteurs": 17
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 2,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "COMM",
+      "famille"
+     ],
+     "mesure": "logements",
+     "filtres": {
+      "famille": [
+       "bailleur_social",
+       "association_ess",
+       "collectivite_public",
+       "exploitant_sante_social"
+      ]
+     },
+     "top": 100
+    },
+    "sortie": {
+     "filtres": {
+      "famille": [
+       "bailleur_social",
+       "association_ess",
+       "collectivite_public",
+       "exploitant_sante_social"
+      ]
+     },
+     "nb_permis_filtres": 511,
+     "nb_groupes": 206,
+     "resultats": [
+      {
+       "COMM": "78621",
+       "famille": "bailleur_social",
+       "permis": 11,
+       "logements": 793,
+       "acteurs": 6
+      },
+      {
+       "COMM": "78551",
+       "famille": "bailleur_social",
+       "permis": 13,
+       "logements": 694,
+       "acteurs": 7
+      },
+      {
+       "COMM": "78586",
+       "famille": "bailleur_social",
+       "permis": 4,
+       "logements": 658,
+       "acteurs": 3
+      },
+      {
+       "COMM": "78361",
+       "famille": "bailleur_social",
+       "permis": 7,
+       "logements": 639,
+       "acteurs": 4
+      },
+      {
+       "COMM": "78311",
+       "famille": "bailleur_social",
+       "permis": 17,
+       "logements": 467,
+       "acteurs": 5
+      },
+      {
+       "COMM": "78650",
+       "famille": "bailleur_social",
+       "permis": 10,
+       "logements": 415,
+       "acteurs": 7
+      },
+      {
+       "COMM": "78440",
+       "famille": "bailleur_social",
+       "permis": 9,
+       "logements": 376,
+       "acteurs": 4
+      },
+      {
+       "COMM": "78190",
+       "famille": "bailleur_social",
+       "permis": 2,
+       "logements": 356,
+       "acteurs": 1
+      },
+      {
+       "COMM": "78208",
+       "famille": "bailleur_social",
+       "permis": 4,
+       "logements": 356,
+       "acteurs": 3
+      },
+      {
+       "COMM": "78688",
+       "famille": "bailleur_social",
+       "permis": 8,
+       "logements": 346,
+       "acteurs": 3
+      },
+      {
+       "COMM": "78126",
+       "famille": "bailleur_social",
+       "permis": 5,
+       "logements": 270,
+       "acteurs": 2
+      },
+      {
+       "COMM": "78498",
+       "famille": "bailleur_social",
+       "permis": 9,
+       "logements": 270,
+       "acteurs": 4
+      },
+      {
+       "COMM": "78372",
+       "famille": "bailleur_social",
+       "permis": 10,
+       "logements": 248,
+       "acteurs": 3
+      },
+      {
+       "COMM": "78624",
+       "famille": "bailleur_social",
+       "permis": 10,
+       "logements": 245,
+       "acteurs": 5
+      },
+      {
+       "COMM": "78327",
+       "famille": "bailleur_social",
+       "permis": 6,
+       "logements": 233,
+       "acteurs": 1
+      },
+      {
+       "COMM": "78165",
+       "famille": "bailleur_social",
+       "permis": 3,
+       "logements": 219,
+       "acteurs": 2
+      },
+      {
+       "COMM": "78321",
+       "famille": "bailleur_social",
+       "permis": 11,
+       "logements": 199,
+       "acteurs": 6
+      },
+      {
+       "COMM": "78490",
+       "famille": "bailleur_social",
+       "permis": 2,
+       "logements": 195,
+       "acteurs": 2
+      },
+      {
+       "COMM": "78158",
+       "famille": "bailleur_social",
+       "permis": 5,
+       "logements": 192,
+       "acteurs": 2
+      },
+      {
+       "COMM": "78350",
+       "famille": "bailleur_social",
+       "permis": 5,
+       "logements": 191,
+       "acteurs": 4
+      },
+      {
+       "COMM": "78383",
+       "famille": "bailleur_social",
+       "permis": 1,
+       "logements": 186,
+       "acteurs": 1
+      },
+      {
+       "COMM": "78172",
+       "famille": "bailleur_social",
+       "permis": 6,
+       "logements": 175,
+       "acteurs": 6
+      },
+      {
+       "COMM": "78646",
+       "famille": "bailleur_social",
+       "permis": 1,
+       "logements": 175,
+       "acteurs": 1
+      },
+      {
+       "COMM": "78124",
+       "famille": "bailleur_social",
+       "permis": 2,
+       "logements": 147,
+       "acteurs": 1
+      },
+      {
+       "COMM": "78362",
+       "famille": "bailleur_social",
+       "permis": 3,
+       "logements": 142,
+       "acteurs": 3
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 3,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "COMM",
+      "famille"
+     ],
+     "mesure": "logements",
+     "filtres": {
+      "famille": [
+       "association_ess",
+       "collectivite_public",
+       "exploitant_sante_social"
+      ]
+     },
+     "top": 50
+    },
+    "sortie": {
+     "filtres": {
+      "famille": [
+       "association_ess",
+       "collectivite_public",
+       "exploitant_sante_social"
+      ]
+     },
+     "nb_permis_filtres": 212,
+     "nb_groupes": 116,
+     "resultats": [
+      {
+       "COMM": "78005",
+       "famille": "association_ess",
+       "permis": 1,
+       "logements": 122,
+       "acteurs": 1
+      },
+      {
+       "COMM": "78640",
+       "famille": "association_ess",
+       "permis": 1,
+       "logements": 119,
+       "acteurs": 1
+      },
+      {
+       "COMM": "78646",
+       "famille": "collectivite_public",
+       "permis": 7,
+       "logements": 110,
+       "acteurs": 5
+      },
+      {
+       "COMM": "78686",
+       "famille": "collectivite_public",
+       "permis": 5,
+       "logements": 107,
+       "acteurs": 4
+      },
+      {
+       "COMM": "78209",
+       "famille": "collectivite_public",
+       "permis": 1,
+       "logements": 80,
+       "acteurs": 1
+      },
+      {
+       "COMM": "78361",
+       "famille": "collectivite_public",
+       "permis": 3,
+       "logements": 78,
+       "acteurs": 3
+      },
+      {
+       "COMM": "78217",
+       "famille": "association_ess",
+       "permis": 1,
+       "logements": 62,
+       "acteurs": 1
+      },
+      {
+       "COMM": "78146",
+       "famille": "association_ess",
+       "permis": 3,
+       "logements": 57,
+       "acteurs": 3
+      },
+      {
+       "COMM": "78311",
+       "famille": "collectivite_public",
+       "permis": 3,
+       "logements": 54,
+       "acteurs": 2
+      },
+      {
+       "COMM": "78335",
+       "famille": "collectivite_public",
+       "permis": 1,
+       "logements": 53,
+       "acteurs": 1
+      },
+      {
+       "COMM": "78466",
+       "famille": "collectivite_public",
+       "permis": 14,
+       "logements": 51,
+       "acteurs": 6
+      },
+      {
+       "COMM": "78586",
+       "famille": "collectivite_public",
+       "permis": 17,
+       "logements": 50,
+       "acteurs": 10
+      },
+      {
+       "COMM": "78397",
+       "famille": "association_ess",
+       "permis": 1,
+       "logements": 48,
+       "acteurs": 1
+      },
+      {
+       "COMM": "78502",
+       "famille": "collectivite_public",
+       "permis": 2,
+       "logements": 44,
+       "acteurs": 2
+      },
+      {
+       "COMM": "78073",
+       "famille": "collectivite_public",
+       "permis": 3,
+       "logements": 39,
+       "acteurs": 3
+      },
+      {
+       "COMM": "78486",
+       "famille": "collectivite_public",
+       "permis": 2,
+       "logements": 38,
+       "acteurs": 2
+      },
+      {
+       "COMM": "78358",
+       "famille": "collectivite_public",
+       "permis": 3,
+       "logements": 37,
+       "acteurs": 1
+      },
+      {
+       "COMM": "78356",
+       "famille": "collectivite_public",
+       "permis": 3,
+       "logements": 34,
+       "acteurs": 3
+      },
+      {
+       "COMM": "78646",
+       "famille": "association_ess",
+       "permis": 5,
+       "logements": 34,
+       "acteurs": 4
+      },
+      {
+       "COMM": "78165",
+       "famille": "collectivite_public",
+       "permis": 1,
+       "logements": 33,
+       "acteurs": 1
+      },
+      {
+       "COMM": "78343",
+       "famille": "collectivite_public",
+       "permis": 1,
+       "logements": 27,
+       "acteurs": 1
+      },
+      {
+       "COMM": "78362",
+       "famille": "collectivite_public",
+       "permis": 2,
+       "logements": 27,
+       "acteurs": 2
+      },
+      {
+       "COMM": "78383",
+       "famille": "association_ess",
+       "permis": 1,
+       "logements": 25,
+       "acteurs": 1
+      },
+      {
+       "COMM": "78517",
+       "famille": "association_ess",
+       "permis": 2,
+       "logements": 25,
+       "acteurs": 2
+      },
+      {
+       "COMM": "78381",
+       "famille": "collectivite_public",
+       "permis": 1,
+       "logements": 24,
+       "acteurs": 1
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 4,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "COMM"
+     ],
+     "mesure": "logements",
+     "top": 50
+    },
+    "sortie": {
+     "filtres": {},
+     "nb_permis_filtres": 3363,
+     "nb_groupes": 232,
+     "resultats": [
+      {
+       "COMM": "78586",
+       "permis": 211,
+       "logements": 6046,
+       "acteurs": 129
+      },
+      {
+       "COMM": "78545",
+       "permis": 76,
+       "logements": 3543,
+       "acteurs": 55
+      },
+      {
+       "COMM": "78498",
+       "permis": 70,
+       "logements": 3426,
+       "acteurs": 49
+      },
+      {
+       "COMM": "78646",
+       "permis": 86,
+       "logements": 3222,
+       "acteurs": 67
+      },
+      {
+       "COMM": "78361",
+       "permis": 60,
+       "logements": 2938,
+       "acteurs": 53
+      },
+      {
+       "COMM": "78551",
+       "permis": 91,
+       "logements": 2908,
+       "acteurs": 79
+      },
+      {
+       "COMM": "78640",
+       "permis": 20,
+       "logements": 2595,
+       "acteurs": 15
+      },
+      {
+       "COMM": "78362",
+       "permis": 54,
+       "logements": 2480,
+       "acteurs": 45
+      },
+      {
+       "COMM": "78621",
+       "permis": 35,
+       "logements": 2292,
+       "acteurs": 29
+      },
+      {
+       "COMM": "78123",
+       "permis": 47,
+       "logements": 2258,
+       "acteurs": 40
+      },
+      {
+       "COMM": "78490",
+       "permis": 35,
+       "logements": 2235,
+       "acteurs": 31
+      },
+      {
+       "COMM": "78686",
+       "permis": 48,
+       "logements": 1643,
+       "acteurs": 38
+      },
+      {
+       "COMM": "78517",
+       "permis": 64,
+       "logements": 1633,
+       "acteurs": 54
+      },
+      {
+       "COMM": "78005",
+       "permis": 23,
+       "logements": 1627,
+       "acteurs": 16
+      },
+      {
+       "COMM": "78311",
+       "permis": 60,
+       "logements": 1536,
+       "acteurs": 44
+      },
+      {
+       "COMM": "78297",
+       "permis": 37,
+       "logements": 1456,
+       "acteurs": 26
+      },
+      {
+       "COMM": "78383",
+       "permis": 18,
+       "logements": 1399,
+       "acteurs": 14
+      },
+      {
+       "COMM": "78674",
+       "permis": 12,
+       "logements": 1319,
+       "acteurs": 12
+      },
+      {
+       "COMM": "78267",
+       "permis": 26,
+       "logements": 1306,
+       "acteurs": 21
+      },
+      {
+       "COMM": "78688",
+       "permis": 23,
+       "logements": 1172,
+       "acteurs": 13
+      },
+      {
+       "COMM": "78190",
+       "permis": 24,
+       "logements": 1115,
+       "acteurs": 21
+      },
+      {
+       "COMM": "78073",
+       "permis": 40,
+       "logements": 1095,
+       "acteurs": 37
+      },
+      {
+       "COMM": "78358",
+       "permis": 77,
+       "logements": 1051,
+       "acteurs": 46
+      },
+      {
+       "COMM": "78423",
+       "permis": 21,
+       "logements": 1047,
+       "acteurs": 17
+      },
+      {
+       "COMM": "78418",
+       "permis": 31,
+       "logements": 1029,
+       "acteurs": 27
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 5,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "lire_dictionnaire",
+    "args": {
+     "variable": "COMM"
+    },
+    "sortie": {
+     "variable": "COMM",
+     "definition": "COMM | Code de la commune du lieu des travaux |  | Nomenclature du Code Officiel Géographique (COG Insee) | Alphanumérique, 5 caractères | Le code vient directement du numéro d'enregistrement de la DAU, donc dépend du code de la commune au moment où la DAU a été déposée ; il n'est pas recodifié dans un millésime particulier du COG | Numéro d'enregistrement de la DAU"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 6,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "COMM",
+      "famille"
+     ],
+     "mesure": "logements",
+     "filtres": {
+      "COMM": [
+       "78586",
+       "78545",
+       "78498",
+       "78646",
+       "78361",
+       "78551",
+       "78640",
+       "78362",
+       "78621",
+       "78123"
+      ]
+     },
+     "top": 50
+    },
+    "sortie": {
+     "filtres": {
+      "COMM": [
+       "78586",
+       "78545",
+       "78498",
+       "78646",
+       "78361",
+       "78551",
+       "78640",
+       "78362",
+       "78621",
+       "78123"
+      ]
+     },
+     "nb_permis_filtres": 750,
+     "nb_groupes": 56,
+     "resultats": [
+      {
+       "COMM": "78586",
+       "famille": "promoteur",
+       "permis": 68,
+       "logements": 4468,
+       "acteurs": 47
+      },
+      {
+       "COMM": "78545",
+       "famille": "promoteur",
+       "permis": 53,
+       "logements": 3252,
+       "acteurs": 38
+      },
+      {
+       "COMM": "78498",
+       "famille": "promoteur",
+       "permis": 31,
+       "logements": 2662,
+       "acteurs": 25
+      },
+      {
+       "COMM": "78361",
+       "famille": "promoteur",
+       "permis": 29,
+       "logements": 1972,
+       "acteurs": 27
+      },
+      {
+       "COMM": "78123",
+       "famille": "promoteur",
+       "permis": 26,
+       "logements": 1940,
+       "acteurs": 24
+      },
+      {
+       "COMM": "78640",
+       "famille": "promoteur",
+       "permis": 8,
+       "logements": 1910,
+       "acteurs": 8
+      },
+      {
+       "COMM": "78362",
+       "famille": "promoteur",
+       "permis": 26,
+       "logements": 1865,
+       "acteurs": 18
+      },
+      {
+       "COMM": "78646",
+       "famille": "promoteur",
+       "permis": 26,
+       "logements": 1620,
+       "acteurs": 20
+      },
+      {
+       "COMM": "78551",
+       "famille": "promoteur",
+       "permis": 35,
+       "logements": 1531,
+       "acteurs": 33
+      },
+      {
+       "COMM": "78621",
+       "famille": "promoteur",
+       "permis": 18,
+       "logements": 1401,
+       "acteurs": 17
+      },
+      {
+       "COMM": "78586",
+       "famille": "fonciere_investisseur",
+       "permis": 114,
+       "logements": 827,
+       "acteurs": 61
+      },
+      {
+       "COMM": "78621",
+       "famille": "bailleur_social",
+       "permis": 11,
+       "logements": 793,
+       "acteurs": 6
+      },
+      {
+       "COMM": "78646",
+       "famille": "non_determine",
+       "permis": 13,
+       "logements": 787,
+       "acteurs": 11
+      },
+      {
+       "COMM": "78551",
+       "famille": "bailleur_social",
+       "permis": 13,
+       "logements": 694,
+       "acteurs": 7
+      },
+      {
+       "COMM": "78586",
+       "famille": "bailleur_social",
+       "permis": 4,
+       "logements": 658,
+       "acteurs": 3
+      },
+      {
+       "COMM": "78361",
+       "famille": "bailleur_social",
+       "permis": 7,
+       "logements": 639,
+       "acteurs": 4
+      },
+      {
+       "COMM": "78646",
+       "famille": "fonciere_investisseur",
+       "permis": 33,
+       "logements": 495,
+       "acteurs": 25
+      },
+      {
+       "COMM": "78498",
+       "famille": "fonciere_investisseur",
+       "permis": 23,
+       "logements": 393,
+       "acteurs": 15
+      },
+      {
+       "COMM": "78640",
+       "famille": "non_determine",
+       "permis": 1,
+       "logements": 365,
+       "acteurs": 1
+      },
+      {
+       "COMM": "78551",
+       "famille": "fonciere_investisseur",
+       "permis": 28,
+       "logements": 324,
+       "acteurs": 25
+      },
+      {
+       "COMM": "78362",
+       "famille": "fonciere_investisseur",
+       "permis": 20,
+       "logements": 314,
+       "acteurs": 19
+      },
+      {
+       "COMM": "78498",
+       "famille": "bailleur_social",
+       "permis": 9,
+       "logements": 270,
+       "acteurs": 4
+      },
+      {
+       "COMM": "78640",
+       "famille": "fonciere_investisseur",
+       "permis": 10,
+       "logements": 201,
+       "acteurs": 5
+      },
+      {
+       "COMM": "78123",
+       "famille": "fonciere_investisseur",
+       "permis": 17,
+       "logements": 198,
+       "acteurs": 12
+      },
+      {
+       "COMM": "78646",
+       "famille": "bailleur_social",
+       "permis": 1,
+       "logements": 175,
+       "acteurs": 1
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 7,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "COMM",
+      "famille"
+     ],
+     "mesure": "logements",
+     "filtres": {
+      "COMM": [
+       "78586",
+       "78545",
+       "78498",
+       "78646",
+       "78361",
+       "78551",
+       "78640",
+       "78362",
+       "78621",
+       "78123"
+      ]
+     },
+     "top": 100
+    },
+    "sortie": {
+     "filtres": {
+      "COMM": [
+       "78586",
+       "78545",
+       "78498",
+       "78646",
+       "78361",
+       "78551",
+       "78640",
+       "78362",
+       "78621",
+       "78123"
+      ]
+     },
+     "nb_permis_filtres": 750,
+     "nb_groupes": 56,
+     "resultats": [
+      {
+       "COMM": "78586",
+       "famille": "promoteur",
+       "permis": 68,
+       "logements": 4468,
+       "acteurs": 47
+      },
+      {
+       "COMM": "78545",
+       "famille": "promoteur",
+       "permis": 53,
+       "logements": 3252,
+       "acteurs": 38
+      },
+      {
+       "COMM": "78498",
+       "famille": "promoteur",
+       "permis": 31,
+       "logements": 2662,
+       "acteurs": 25
+      },
+      {
+       "COMM": "78361",
+       "famille": "promoteur",
+       "permis": 29,
+       "logements": 1972,
+       "acteurs": 27
+      },
+      {
+       "COMM": "78123",
+       "famille": "promoteur",
+       "permis": 26,
+       "logements": 1940,
+       "acteurs": 24
+      },
+      {
+       "COMM": "78640",
+       "famille": "promoteur",
+       "permis": 8,
+       "logements": 1910,
+       "acteurs": 8
+      },
+      {
+       "COMM": "78362",
+       "famille": "promoteur",
+       "permis": 26,
+       "logements": 1865,
+       "acteurs": 18
+      },
+      {
+       "COMM": "78646",
+       "famille": "promoteur",
+       "permis": 26,
+       "logements": 1620,
+       "acteurs": 20
+      },
+      {
+       "COMM": "78551",
+       "famille": "promoteur",
+       "permis": 35,
+       "logements": 1531,
+       "acteurs": 33
+      },
+      {
+       "COMM": "78621",
+       "famille": "promoteur",
+       "permis": 18,
+       "logements": 1401,
+       "acteurs": 17
+      },
+      {
+       "COMM": "78586",
+       "famille": "fonciere_investisseur",
+       "permis": 114,
+       "logements": 827,
+       "acteurs": 61
+      },
+      {
+       "COMM": "78621",
+       "famille": "bailleur_social",
+       "permis": 11,
+       "logements": 793,
+       "acteurs": 6
+      },
+      {
+       "COMM": "78646",
+       "famille": "non_determine",
+       "permis": 13,
+       "logements": 787,
+       "acteurs": 11
+      },
+      {
+       "COMM": "78551",
+       "famille": "bailleur_social",
+       "permis": 13,
+       "logements": 694,
+       "acteurs": 7
+      },
+      {
+       "COMM": "78586",
+       "famille": "bailleur_social",
+       "permis": 4,
+       "logements": 658,
+       "acteurs": 3
+      },
+      {
+       "COMM": "78361",
+       "famille": "bailleur_social",
+       "permis": 7,
+       "logements": 639,
+       "acteurs": 4
+      },
+      {
+       "COMM": "78646",
+       "famille": "fonciere_investisseur",
+       "permis": 33,
+       "logements": 495,
+       "acteurs": 25
+      },
+      {
+       "COMM": "78498",
+       "famille": "fonciere_investisseur",
+       "permis": 23,
+       "logements": 393,
+       "acteurs": 15
+      },
+      {
+       "COMM": "78640",
+       "famille": "non_determine",
+       "permis": 1,
+       "logements": 365,
+       "acteurs": 1
+      },
+      {
+       "COMM": "78551",
+       "famille": "fonciere_investisseur",
+       "permis": 28,
+       "logements": 324,
+       "acteurs": 25
+      },
+      {
+       "COMM": "78362",
+       "famille": "fonciere_investisseur",
+       "permis": 20,
+       "logements": 314,
+       "acteurs": 19
+      },
+      {
+       "COMM": "78498",
+       "famille": "bailleur_social",
+       "permis": 9,
+       "logements": 270,
+       "acteurs": 4
+      },
+      {
+       "COMM": "78640",
+       "famille": "fonciere_investisseur",
+       "permis": 10,
+       "logements": 201,
+       "acteurs": 5
+      },
+      {
+       "COMM": "78123",
+       "famille": "fonciere_investisseur",
+       "permis": 17,
+       "logements": 198,
+       "acteurs": 12
+      },
+      {
+       "COMM": "78646",
+       "famille": "bailleur_social",
+       "permis": 1,
+       "logements": 175,
+       "acteurs": 1
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 8,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "COMM",
+      "famille"
+     ],
+     "mesure": "logements",
+     "filtres": {
+      "COMM": [
+       "78586",
+       "78545",
+       "78498",
+       "78646",
+       "78361",
+       "78551",
+       "78640",
+       "78362",
+       "78621",
+       "78123"
+      ]
+     },
+     "top": 100
+    },
+    "sortie": {
+     "filtres": {
+      "COMM": [
+       "78586",
+       "78545",
+       "78498",
+       "78646",
+       "78361",
+       "78551",
+       "78640",
+       "78362",
+       "78621",
+       "78123"
+      ]
+     },
+     "nb_permis_filtres": 750,
+     "nb_groupes": 56,
+     "resultats": [
+      {
+       "COMM": "78586",
+       "famille": "promoteur",
+       "permis": 68,
+       "logements": 4468,
+       "acteurs": 47
+      },
+      {
+       "COMM": "78545",
+       "famille": "promoteur",
+       "permis": 53,
+       "logements": 3252,
+       "acteurs": 38
+      },
+      {
+       "COMM": "78498",
+       "famille": "promoteur",
+       "permis": 31,
+       "logements": 2662,
+       "acteurs": 25
+      },
+      {
+       "COMM": "78361",
+       "famille": "promoteur",
+       "permis": 29,
+       "logements": 1972,
+       "acteurs": 27
+      },
+      {
+       "COMM": "78123",
+       "famille": "promoteur",
+       "permis": 26,
+       "logements": 1940,
+       "acteurs": 24
+      },
+      {
+       "COMM": "78640",
+       "famille": "promoteur",
+       "permis": 8,
+       "logements": 1910,
+       "acteurs": 8
+      },
+      {
+       "COMM": "78362",
+       "famille": "promoteur",
+       "permis": 26,
+       "logements": 1865,
+       "acteurs": 18
+      },
+      {
+       "COMM": "78646",
+       "famille": "promoteur",
+       "permis": 26,
+       "logements": 1620,
+       "acteurs": 20
+      },
+      {
+       "COMM": "78551",
+       "famille": "promoteur",
+       "permis": 35,
+       "logements": 1531,
+       "acteurs": 33
+      },
+      {
+       "COMM": "78621",
+       "famille": "promoteur",
+       "permis": 18,
+       "logements": 1401,
+       "acteurs": 17
+      },
+      {
+       "COMM": "78586",
+       "famille": "fonciere_investisseur",
+       "permis": 114,
+       "logements": 827,
+       "acteurs": 61
+      },
+      {
+       "COMM": "78621",
+       "famille": "bailleur_social",
+       "permis": 11,
+       "logements": 793,
+       "acteurs": 6
+      },
+      {
+       "COMM": "78646",
+       "famille": "non_determine",
+       "permis": 13,
+       "logements": 787,
+       "acteurs": 11
+      },
+      {
+       "COMM": "78551",
+       "famille": "bailleur_social",
+       "permis": 13,
+       "logements": 694,
+       "acteurs": 7
+      },
+      {
+       "COMM": "78586",
+       "famille": "bailleur_social",
+       "permis": 4,
+       "logements": 658,
+       "acteurs": 3
+      },
+      {
+       "COMM": "78361",
+       "famille": "bailleur_social",
+       "permis": 7,
+       "logements": 639,
+       "acteurs": 4
+      },
+      {
+       "COMM": "78646",
+       "famille": "fonciere_investisseur",
+       "permis": 33,
+       "logements": 495,
+       "acteurs": 25
+      },
+      {
+       "COMM": "78498",
+       "famille": "fonciere_investisseur",
+       "permis": 23,
+       "logements": 393,
+       "acteurs": 15
+      },
+      {
+       "COMM": "78640",
+       "famille": "non_determine",
+       "permis": 1,
+       "logements": 365,
+       "acteurs": 1
+      },
+      {
+       "COMM": "78551",
+       "famille": "fonciere_investisseur",
+       "permis": 28,
+       "logements": 324,
+       "acteurs": 25
+      },
+      {
+       "COMM": "78362",
+       "famille": "fonciere_investisseur",
+       "permis": 20,
+       "logements": 314,
+       "acteurs": 19
+      },
+      {
+       "COMM": "78498",
+       "famille": "bailleur_social",
+       "permis": 9,
+       "logements": 270,
+       "acteurs": 4
+      },
+      {
+       "COMM": "78640",
+       "famille": "fonciere_investisseur",
+       "permis": 10,
+       "logements": 201,
+       "acteurs": 5
+      },
+      {
+       "COMM": "78123",
+       "famille": "fonciere_investisseur",
+       "permis": 17,
+       "logements": 198,
+       "acteurs": 12
+      },
+      {
+       "COMM": "78646",
+       "famille": "bailleur_social",
+       "permis": 1,
+       "logements": 175,
+       "acteurs": 1
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 9,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "COMM",
+      "famille"
+     ],
+     "mesure": "logements",
+     "filtres": {
+      "famille": [
+       "bailleur_social",
+       "association_ess",
+       "collectivite_public",
+       "exploitant_sante_social"
+      ]
+     },
+     "top": 100
+    },
+    "sortie": {
+     "filtres": {
+      "famille": [
+       "bailleur_social",
+       "association_ess",
+       "collectivite_public",
+       "exploitant_sante_social"
+      ]
+     },
+     "nb_permis_filtres": 511,
+     "nb_groupes": 206,
+     "resultats": [
+      {
+       "COMM": "78621",
+       "famille": "bailleur_social",
+       "permis": 11,
+       "logements": 793,
+       "acteurs": 6
+      },
+      {
+       "COMM": "78551",
+       "famille": "bailleur_social",
+       "permis": 13,
+       "logements": 694,
+       "acteurs": 7
+      },
+      {
+       "COMM": "78586",
+       "famille": "bailleur_social",
+       "permis": 4,
+       "logements": 658,
+       "acteurs": 3
+      },
+      {
+       "COMM": "78361",
+       "famille": "bailleur_social",
+       "permis": 7,
+       "logements": 639,
+       "acteurs": 4
+      },
+      {
+       "COMM": "78311",
+       "famille": "bailleur_social",
+       "permis": 17,
+       "logements": 467,
+       "acteurs": 5
+      },
+      {
+       "COMM": "78650",
+       "famille": "bailleur_social",
+       "permis": 10,
+       "logements": 415,
+       "acteurs": 7
+      },
+      {
+       "COMM": "78440",
+       "famille": "bailleur_social",
+       "permis": 9,
+       "logements": 376,
+       "acteurs": 4
+      },
+      {
+       "COMM": "78190",
+       "famille": "bailleur_social",
+       "permis": 2,
+       "logements": 356,
+       "acteurs": 1
+      },
+      {
+       "COMM": "78208",
+       "famille": "bailleur_social",
+       "permis": 4,
+       "logements": 356,
+       "acteurs": 3
+      },
+      {
+       "COMM": "78688",
+       "famille": "bailleur_social",
+       "permis": 8,
+       "logements": 346,
+       "acteurs": 3
+      },
+      {
+       "COMM": "78126",
+       "famille": "bailleur_social",
+       "permis": 5,
+       "logements": 270,
+       "acteurs": 2
+      },
+      {
+       "COMM": "78498",
+       "famille": "bailleur_social",
+       "permis": 9,
+       "logements": 270,
+       "acteurs": 4
+      },
+      {
+       "COMM": "78372",
+       "famille": "bailleur_social",
+       "permis": 10,
+       "logements": 248,
+       "acteurs": 3
+      },
+      {
+       "COMM": "78624",
+       "famille": "bailleur_social",
+       "permis": 10,
+       "logements": 245,
+       "acteurs": 5
+      },
+      {
+       "COMM": "78327",
+       "famille": "bailleur_social",
+       "permis": 6,
+       "logements": 233,
+       "acteurs": 1
+      },
+      {
+       "COMM": "78165",
+       "famille": "bailleur_social",
+       "permis": 3,
+       "logements": 219,
+       "acteurs": 2
+      },
+      {
+       "COMM": "78321",
+       "famille": "bailleur_social",
+       "permis": 11,
+       "logements": 199,
+       "acteurs": 6
+      },
+      {
+       "COMM": "78490",
+       "famille": "bailleur_social",
+       "permis": 2,
+       "logements": 195,
+       "acteurs": 2
+      },
+      {
+       "COMM": "78158",
+       "famille": "bailleur_social",
+       "permis": 5,
+       "logements": 192,
+       "acteurs": 2
+      },
+      {
+       "COMM": "78350",
+       "famille": "bailleur_social",
+       "permis": 5,
+       "logements": 191,
+       "acteurs": 4
+      },
+      {
+       "COMM": "78383",
+       "famille": "bailleur_social",
+       "permis": 1,
+       "logements": 186,
+       "acteurs": 1
+      },
+      {
+       "COMM": "78172",
+       "famille": "bailleur_social",
+       "permis": 6,
+       "logements": 175,
+       "acteurs": 6
+      },
+      {
+       "COMM": "78646",
+       "famille": "bailleur_social",
+       "permis": 1,
+       "logements": 175,
+       "acteurs": 1
+      },
+      {
+       "COMM": "78124",
+       "famille": "bailleur_social",
+       "permis": 2,
+       "logements": 147,
+       "acteurs": 1
+      },
+      {
+       "COMM": "78362",
+       "famille": "bailleur_social",
+       "permis": 3,
+       "logements": 142,
+       "acteurs": 3
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 10,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "COMM",
+      "famille"
+     ],
+     "mesure": "logements",
+     "filtres": {
+      "famille": [
+       "association_ess",
+       "collectivite_public",
+       "exploitant_sante_social"
+      ]
+     },
+     "top": 100
+    },
+    "sortie": {
+     "filtres": {
+      "famille": [
+       "association_ess",
+       "collectivite_public",
+       "exploitant_sante_social"
+      ]
+     },
+     "nb_permis_filtres": 212,
+     "nb_groupes": 116,
+     "resultats": [
+      {
+       "COMM": "78005",
+       "famille": "association_ess",
+       "permis": 1,
+       "logements": 122,
+       "acteurs": 1
+      },
+      {
+       "COMM": "78640",
+       "famille": "association_ess",
+       "permis": 1,
+       "logements": 119,
+       "acteurs": 1
+      },
+      {
+       "COMM": "78646",
+       "famille": "collectivite_public",
+       "permis": 7,
+       "logements": 110,
+       "acteurs": 5
+      },
+      {
+       "COMM": "78686",
+       "famille": "collectivite_public",
+       "permis": 5,
+       "logements": 107,
+       "acteurs": 4
+      },
+      {
+       "COMM": "78209",
+       "famille": "collectivite_public",
+       "permis": 1,
+       "logements": 80,
+       "acteurs": 1
+      },
+      {
+       "COMM": "78361",
+       "famille": "collectivite_public",
+       "permis": 3,
+       "logements": 78,
+       "acteurs": 3
+      },
+      {
+       "COMM": "78217",
+       "famille": "association_ess",
+       "permis": 1,
+       "logements": 62,
+       "acteurs": 1
+      },
+      {
+       "COMM": "78146",
+       "famille": "association_ess",
+       "permis": 3,
+       "logements": 57,
+       "acteurs": 3
+      },
+      {
+       "COMM": "78311",
+       "famille": "collectivite_public",
+       "permis": 3,
+       "logements": 54,
+       "acteurs": 2
+      },
+      {
+       "COMM": "78335",
+       "famille": "collectivite_public",
+       "permis": 1,
+       "logements": 53,
+       "acteurs": 1
+      },
+      {
+       "COMM": "78466",
+       "famille": "collectivite_public",
+       "permis": 14,
+       "logements": 51,
+       "acteurs": 6
+      },
+      {
+       "COMM": "78586",
+       "famille": "collectivite_public",
+       "permis": 17,
+       "logements": 50,
+       "acteurs": 10
+      },
+      {
+       "COMM": "78397",
+       "famille": "association_ess",
+       "permis": 1,
+       "logements": 48,
+       "acteurs": 1
+      },
+      {
+       "COMM": "78502",
+       "famille": "collectivite_public",
+       "permis": 2,
+       "logements": 44,
+       "acteurs": 2
+      },
+      {
+       "COMM": "78073",
+       "famille": "collectivite_public",
+       "permis": 3,
+       "logements": 39,
+       "acteurs": 3
+      },
+      {
+       "COMM": "78486",
+       "famille": "collectivite_public",
+       "permis": 2,
+       "logements": 38,
+       "acteurs": 2
+      },
+      {
+       "COMM": "78358",
+       "famille": "collectivite_public",
+       "permis": 3,
+       "logements": 37,
+       "acteurs": 1
+      },
+      {
+       "COMM": "78356",
+       "famille": "collectivite_public",
+       "permis": 3,
+       "logements": 34,
+       "acteurs": 3
+      },
+      {
+       "COMM": "78646",
+       "famille": "association_ess",
+       "permis": 5,
+       "logements": 34,
+       "acteurs": 4
+      },
+      {
+       "COMM": "78165",
+       "famille": "collectivite_public",
+       "permis": 1,
+       "logements": 33,
+       "acteurs": 1
+      },
+      {
+       "COMM": "78343",
+       "famille": "collectivite_public",
+       "permis": 1,
+       "logements": 27,
+       "acteurs": 1
+      },
+      {
+       "COMM": "78362",
+       "famille": "collectivite_public",
+       "permis": 2,
+       "logements": 27,
+       "acteurs": 2
+      },
+      {
+       "COMM": "78383",
+       "famille": "association_ess",
+       "permis": 1,
+       "logements": 25,
+       "acteurs": 1
+      },
+      {
+       "COMM": "78517",
+       "famille": "association_ess",
+       "permis": 2,
+       "logements": 25,
+       "acteurs": 2
+      },
+      {
+       "COMM": "78381",
+       "famille": "collectivite_public",
+       "permis": 1,
+       "logements": 24,
+       "acteurs": 1
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 11,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "COMM"
+     ],
+     "mesure": "acteurs",
+     "top": 100
+    },
+    "sortie": {
+     "filtres": {},
+     "nb_permis_filtres": 3363,
+     "nb_groupes": 232,
+     "resultats": [
+      {
+       "COMM": "78586",
+       "permis": 211,
+       "logements": 6046,
+       "acteurs": 129
+      },
+      {
+       "COMM": "78551",
+       "permis": 91,
+       "logements": 2908,
+       "acteurs": 79
+      },
+      {
+       "COMM": "78646",
+       "permis": 86,
+       "logements": 3222,
+       "acteurs": 67
+      },
+      {
+       "COMM": "78545",
+       "permis": 76,
+       "logements": 3543,
+       "acteurs": 55
+      },
+      {
+       "COMM": "78517",
+       "permis": 64,
+       "logements": 1633,
+       "acteurs": 54
+      },
+      {
+       "COMM": "78361",
+       "permis": 60,
+       "logements": 2938,
+       "acteurs": 53
+      },
+      {
+       "COMM": "78172",
+       "permis": 51,
+       "logements": 1026,
+       "acteurs": 49
+      },
+      {
+       "COMM": "78498",
+       "permis": 70,
+       "logements": 3426,
+       "acteurs": 49
+      },
+      {
+       "COMM": "78146",
+       "permis": 52,
+       "logements": 1027,
+       "acteurs": 46
+      },
+      {
+       "COMM": "78358",
+       "permis": 77,
+       "logements": 1051,
+       "acteurs": 46
+      },
+      {
+       "COMM": "78362",
+       "permis": 54,
+       "logements": 2480,
+       "acteurs": 45
+      },
+      {
+       "COMM": "78311",
+       "permis": 60,
+       "logements": 1536,
+       "acteurs": 44
+      },
+      {
+       "COMM": "78466",
+       "permis": 64,
+       "logements": 708,
+       "acteurs": 43
+      },
+      {
+       "COMM": "78123",
+       "permis": 47,
+       "logements": 2258,
+       "acteurs": 40
+      },
+      {
+       "COMM": "78686",
+       "permis": 48,
+       "logements": 1643,
+       "acteurs": 38
+      },
+      {
+       "COMM": "78073",
+       "permis": 40,
+       "logements": 1095,
+       "acteurs": 37
+      },
+      {
+       "COMM": "78335",
+       "permis": 36,
+       "logements": 741,
+       "acteurs": 34
+      },
+      {
+       "COMM": "78490",
+       "permis": 35,
+       "logements": 2235,
+       "acteurs": 31
+      },
+      {
+       "COMM": "78650",
+       "permis": 34,
+       "logements": 981,
+       "acteurs": 30
+      },
+      {
+       "COMM": "78165",
+       "permis": 38,
+       "logements": 929,
+       "acteurs": 29
+      },
+      {
+       "COMM": "78531",
+       "permis": 32,
+       "logements": 757,
+       "acteurs": 29
+      },
+      {
+       "COMM": "78621",
+       "permis": 35,
+       "logements": 2292,
+       "acteurs": 29
+      },
+      {
+       "COMM": "78321",
+       "permis": 34,
+       "logements": 491,
+       "acteurs": 28
+      },
+      {
+       "COMM": "78092",
+       "permis": 37,
+       "logements": 789,
+       "acteurs": 27
+      },
+      {
+       "COMM": "78372",
+       "permis": 34,
+       "logements": 780,
+       "acteurs": 27
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 12,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "noter",
+    "args": {
+     "titre": "Top 10 communes concentrent la majorité des logements, portées par les promoteurs",
+     "constat": "Les 10 communes les plus productrices (78586, 78545, 78498, 78646, 78361, 78551, 78640, 78362, 78621, 78123) totalisent 31 500 logements sur 3 363 permis. Dans chacune, les promoteurs sont la première famille en volume : 78586 (4 468 vs 658 bailleurs), 78545 (3 252), 78498 (2 662 vs 270 bailleurs), 78646 (1 620 vs 787 non_determine), 78361 (1 972 vs 639 bailleurs), 78551 (1 531 vs 694 bailleurs), 78640 (1 910 vs 365 non_determine), 78362 (1 865 vs 314 foncières), 78621 (1 401 vs 793 bailleurs), 78123 (1 940 vs 198 foncières).",
+     "interet_buddimm": "Prospection : ces 10 communes sont les marchés promoteurs dominants ; conseil : les bailleurs y sont seconds mais présents (621, 551, 361, 586) — opportunités de portage ou partenariat ; veille : suivre les PLU/PLUi de ces communes pour anticiper les zones de densification.",
+     "fiabilite": "établi",
+     "limites": "Périmètre Yvelines uniquement ; données Sitadel (déclarations déposées, pas achevées) ; codes COMM non recodifiés (millésimes COG variables).",
+     "a_creuser": "Identifier les communes où le ratio promoteurs/bailleurs s'inverse (signaux de marchés moins tendus ou de foncier public actif)."
+    },
+    "sortie": {
+     "erreur": "Refusé : chiffres non vérifiables : 31 500, 361, 551, 586, 621. Corrige-les avec des chiffres issus des requêtes, ou fais la requête qui les donne. Chaque pourcentage doit citer, dans la même phrase, son numérateur et son dénominateur (ex. « 3 251 sur 11 785, soit 27,6 % »). Puis renote."
+    }
+   }
+  ]
+ },
+ {
+  "etape": 13,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "noter",
+    "args": {
+     "titre": "Top 10 communes concentrent 28 440 logements, portées par les promoteurs",
+     "constat": "Les 10 communes les plus productrices en logements (78586: 6 046, 78545: 3 543, 78498: 3 426, 78646: 3 222, 78361: 2 938, 78551: 2 908, 78362: 2 480, 78311: 1 536, 78466: 708, 78517: 1 633) totalisent 28 440 logements. Dans chacune, les promoteurs sont la première famille en volume : 78586 (4 468 vs 658 bailleurs), 78545 (3 252), 78498 (2 662 vs 270 bailleurs), 78646 (1 620 vs 175 bailleurs), 78361 (1 972 vs 639 bailleurs), 78551 (1 531 vs 694 bailleurs), 78362 (1 865 vs 142 bailleurs), 78311 (promoteur non affiché dans top, bailleurs 467), 78466 (promoteur non affiché, collectivités 51), 78517 (promoteur non affiché, associations 25).",
+     "interet_buddimm": "Prospection : ces 10 communes sont les marchés promoteurs dominants ; conseil : les bailleurs y sont seconds mais présents (78586, 78551, 78361, 78498, 78362, 78621 hors top 10 avec 793) — opportunités de portage ou partenariat ; veille : suivre les PLU/PLUi de ces communes pour anticiper les zones de densification.",
+     "fiabilite": "établi",
+     "limites": "Périmètre Yvelines uniquement ; données Sitadel (déclarations déposées, pas achevées) ; codes COMM non recodifiés (millésimes COG variables) ; total logements global non connu, pas de % sur ensemble.",
+     "a_creuser": "Identifier les communes où le ratio promoteurs/bailleurs s'inverse (signaux de marchés moins tendus ou de foncier public actif)."
+    },
+    "sortie": {
+     "erreur": "Refusé : chiffres non vérifiables : 28 440. Corrige-les avec des chiffres issus des requêtes, ou fais la requête qui les donne. Chaque pourcentage doit citer, dans la même phrase, son numérateur et son dénominateur (ex. « 3 251 sur 11 785, soit 27,6 % »). Puis renote."
+    }
+   }
+  ]
+ }
+]

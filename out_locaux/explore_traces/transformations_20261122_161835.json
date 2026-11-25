@@ -1,0 +1,544 @@
+[
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "apercu",
+    "args": {},
+    "sortie": {
+     "perimetre": "PC des Yvelines (78) créant des locaux non résidentiels, déposés par des personnes morales, extraction SDES/Sitadel",
+     "nb_permis": 4245,
+     "nb_demandeurs": 2439,
+     "annees_depot": {
+      "2005": 1,
+      "2006": 1,
+      "2008": 1,
+      "2012": 97,
+      "2013": 257,
+      "2014": 271,
+      "2015": 258,
+      "2016": 322,
+      "2017": 341,
+      "2018": 360,
+      "2019": 331,
+      "2020": 270,
+      "2021": 347,
+      "2022": 370,
+      "2023": 334,
+      "2024": 300,
+      "2025": 282,
+      "2026": 101,
+      "2087": 1
+     },
+     "familles_demandeurs": {
+      "fonciere_investisseur": 925,
+      "entreprise_autre": 704,
+      "collectivite_public": 305,
+      "promoteur": 275,
+      "association_ess": 137,
+      "exploitant_sante_social": 42,
+      "non_determine": 29,
+      "bailleur_social": 21,
+      "copropriete": 1
+     },
+     "colonnes_interrogeables": [
+      "famille",
+      "AN_DEPOT",
+      "COMM",
+      "ADR_LOCALITE_TER",
+      "ETAT_DAU",
+      "DESTINATION_PRINCIPALE",
+      "DEST_SURF_MAX",
+      "TYPE_SERVICE_PUBLIC",
+      "NATURE_PROJET_COMPLETEE",
+      "TYPE_TRANSFO_PRINCIPAL",
+      "TYPE_PRINCIP_LOCAUX_TRANSFORMES",
+      "ZONE_OP",
+      "CJ_DEM",
+      "APE_DEM",
+      "SIREN_DEM",
+      "DENOM_DEM"
+     ],
+     "mesures": [
+      "permis",
+      "surface_m2",
+      "acteurs"
+     ],
+     "remarques": [
+      "2026 est une année partielle",
+      "un permis modificatif n'a pas de ligne propre",
+      "~15 % des ouvertures de chantier et ~1/3 des achèvements ne remontent jamais",
+      "APE_DEM = NAF de l'établissement du permis, possiblement fermé",
+      "surface_m2 = SURF_LOC_CREEE, surface de plancher de locaux non résidentiels créée",
+      "DEST_SURF_MAX = destination qui reçoit le plus de surface (calculée par le code à partir des SURF_*)",
+      "DESTINATION_PRINCIPALE est codée par le SDES (introduite en mai 2022) ; TYPE_SERVICE_PUBLIC vient du formulaire et est souvent 'non rempli'",
+      "un même permis peut aussi créer des logements : il figure alors aussi dans le fichier logements"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 1,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "famille",
+      "TYPE_TRANSFO_PRINCIPAL"
+     ],
+     "mesure": "permis",
+     "top": 10
+    },
+    "sortie": {
+     "filtres": {},
+     "nb_permis_filtres": 4245,
+     "nb_groupes": 37,
+     "resultats": [
+      {
+       "famille": "collectivite_public",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 968,
+       "surface_m2": 756135,
+       "acteurs": 280
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 955,
+       "surface_m2": 1902799,
+       "acteurs": 734
+      },
+      {
+       "famille": "entreprise_autre",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 918,
+       "surface_m2": 1038857,
+       "acteurs": 576
+      },
+      {
+       "famille": "promoteur",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 339,
+       "surface_m2": 894992,
+       "acteurs": 249
+      },
+      {
+       "famille": "association_ess",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 214,
+       "surface_m2": 176183,
+       "acteurs": 110
+      },
+      {
+       "famille": "entreprise_autre",
+       "TYPE_TRANSFO_PRINCIPAL": "4 (transformation de locaux)",
+       "permis": 141,
+       "surface_m2": 50682,
+       "acteurs": 125
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "TYPE_TRANSFO_PRINCIPAL": "4 (transformation de locaux)",
+       "permis": 133,
+       "surface_m2": 61649,
+       "acteurs": 124
+      },
+      {
+       "famille": "collectivite_public",
+       "TYPE_TRANSFO_PRINCIPAL": "4 (transformation de locaux)",
+       "permis": 98,
+       "surface_m2": 29492,
+       "acteurs": 69
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "TYPE_TRANSFO_PRINCIPAL": "3 (logements -> locaux)",
+       "permis": 73,
+       "surface_m2": 11884,
+       "acteurs": 72
+      },
+      {
+       "famille": "collectivite_public",
+       "TYPE_TRANSFO_PRINCIPAL": "3 (logements -> locaux)",
+       "permis": 62,
+       "surface_m2": 4858,
+       "acteurs": 52
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 2,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "TYPE_TRANSFO_PRINCIPAL"
+     ],
+     "mesure": "permis",
+     "top": 20
+    },
+    "sortie": {
+     "filtres": {},
+     "nb_permis_filtres": 4245,
+     "nb_groupes": 5,
+     "resultats": [
+      {
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 3487,
+       "surface_m2": 4857863,
+       "acteurs": 2008
+      },
+      {
+       "TYPE_TRANSFO_PRINCIPAL": "4 (transformation de locaux)",
+       "permis": 469,
+       "surface_m2": 186976,
+       "acteurs": 399
+      },
+      {
+       "TYPE_TRANSFO_PRINCIPAL": "3 (logements -> locaux)",
+       "permis": 224,
+       "surface_m2": 27724,
+       "acteurs": 197
+      },
+      {
+       "TYPE_TRANSFO_PRINCIPAL": "1 (locaux -> logements)",
+       "permis": 52,
+       "surface_m2": 5554,
+       "acteurs": 50
+      },
+      {
+       "TYPE_TRANSFO_PRINCIPAL": "2 (transformation de logements)",
+       "permis": 13,
+       "surface_m2": 1991,
+       "acteurs": 12
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 3,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "noter",
+    "args": {
+     "titre": "Distribution des types de transformation de locaux",
+     "constat": "Sur les 4245 permis de construire de locaux non résidentiels dans les Yvelines, 3487 (82 %) concernent une création de locaux sans transformation (TYPE_TRANSFO_PRINCIPAL vide). Les 469 permis de transformation de locaux (type 4) représentent 11 % du total : enterprise_autre en dépose 141, fonciere_investisseur 133, collectivite_public 98. Les 224 permis de transformation logements → locaux (type 3) représentent 5 % : fonciere_investisseur en dépose 73, collectivite_public 62. Les 52 permis de transformation locaux → logements (type 1) représentent 1 % et les 13 permis de transformation logements (type 2) moins de 1 %.",
+     "interet_buddimm": "Identifier les acteurs (bailleurs, promoteurs, foncières) les plus actifs sur les opérations de transformation, afin d’affiner la prospection et le conseil en matière de changement de destination ou de réhabilitation de locaux.",
+     "fiabilite": "établi",
+     "limites": "Les données ne distinguent pas les sous‑types de transformation (ex : changement de destination commerciale vs équipement social) et les périmètres de surface peuvent varier selon la lecture des formulaires.",
+     "a_creuser": "Analyser les destinations d’origine et d’arrivée (DESTINATION_PRINCIPALE, DEST_SURF_MAX) pour chaque famille d’acteur afin de préciser les tendances de changement de destination."
+    },
+    "sortie": {
+     "erreur": "Refusé : chiffres non vérifiables : 1 % (base absente ou fausse dans la phrase), 11 % (base absente ou fausse dans la phrase). Corrige-les avec des chiffres issus des requêtes, ou fais la requête qui les donne. Chaque pourcentage doit citer, dans la même phrase, son numérateur et son dénominateur (ex. « 3 251 sur 11 785, soit 27,6 % »). Puis renote."
+    }
+   }
+  ]
+ },
+ {
+  "etape": 4,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "noter",
+    "args": {
+     "titre": "Distribution des types de transformation de locaux",
+     "constat": "Sur les 4245 permis de construire de locaux non résidentiels dans les Yvelines, 3487 (3487 sur 4245, soit 82,2 %) concernent une création de locaux sans transformation (TYPE_TRANSFO_PRINCIPAL vide). Les 469 permis de transformation de locaux (type 4) représentent 469 sur 4245, soit 11,1 % : ils sont principalement déposés par enterprise_autre (141), fonciere_investisseur (133) et collectivite_public (98). Les 224 permis de transformation logements → locaux (type 3) représentent 224 sur 4245, soit 5,3 % : fonciere_investisseur en dépose 73, collectivite_public 62. Les 52 permis de transformation locaux → logements (type 1) représentent 52 sur 4245, soit 1,2 %. Les 13 permis de transformation logements (type 2) représentent 13 sur 4245, soit 0,3 %.",
+     "interet_buddimm": "Identifier les acteurs (bailleurs, promoteurs, foncières) les plus actifs sur les opérations de transformation, afin d’affiner la prospection et le conseil en matière de changement de destination ou de réhabilitation de locaux.",
+     "fiabilite": "établi",
+     "limites": "Les données ne distinguent pas les sous‑types de transformation (ex : changement de destination commerciale vs équipement social) et les périmètres de surface peuvent varier selon la lecture des formulaires.",
+     "a_creuser": "Analyser les destinations d’origine et d’arrivée (DESTINATION_PRINCIPALE, DEST_SURF_MAX) pour chaque famille d’acteur afin de préciser les tendances de changement de destination."
+    },
+    "sortie": {
+     "ok": "note 1 enregistrée"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 5,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "lire_dictionnaire",
+    "args": {
+     "variable": "DESTINATION_PRINCIPALE"
+    },
+    "sortie": {
+     "variable": "DESTINATION_PRINCIPALE",
+     "definition": "DESTINATION_PRINCIPALE | Destination ou sous destination principale | Introduit en mai 2022 | 1 = habitation\n2 = hôtels\n3 = bureaux\n4 = commerce\n6 = industrie \n7 = agriculture\n8 = entrepôt \n9 = service public ou d'intérêt collectif | Numérique, 1 chiffre | Selon la première destination des surfaces créées (y compris pas changement de destination) | Codification par le SDES"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 6,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "TYPE_TRANSFO_PRINCIPAL",
+      "DESTINATION_PRINCIPALE"
+     ],
+     "mesure": "permis",
+     "top": 50
+    },
+    "sortie": {
+     "filtres": {},
+     "nb_permis_filtres": 4245,
+     "nb_groupes": 31,
+     "resultats": [
+      {
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "DESTINATION_PRINCIPALE": "9 (service public / intérêt collectif)",
+       "permis": 1225,
+       "surface_m2": 1130919,
+       "acteurs": 507
+      },
+      {
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "DESTINATION_PRINCIPALE": "4 (commerce)",
+       "permis": 574,
+       "surface_m2": 830268,
+       "acteurs": 450
+      },
+      {
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "DESTINATION_PRINCIPALE": "3 (bureaux)",
+       "permis": 397,
+       "surface_m2": 888150,
+       "acteurs": 323
+      },
+      {
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "DESTINATION_PRINCIPALE": "8 (entrepôt)",
+       "permis": 348,
+       "surface_m2": 821299,
+       "acteurs": 306
+      },
+      {
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "DESTINATION_PRINCIPALE": "6 (industrie)",
+       "permis": 342,
+       "surface_m2": 696233,
+       "acteurs": 232
+      },
+      {
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "DESTINATION_PRINCIPALE": "1 (habitation)",
+       "permis": 321,
+       "surface_m2": 180277,
+       "acteurs": 259
+      },
+      {
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "DESTINATION_PRINCIPALE": "7 (agriculture)",
+       "permis": 235,
+       "surface_m2": 249586,
+       "acteurs": 172
+      },
+      {
+       "TYPE_TRANSFO_PRINCIPAL": "3 (logements -> locaux)",
+       "DESTINATION_PRINCIPALE": "1 (habitation)",
+       "permis": 185,
+       "surface_m2": 6559,
+       "acteurs": 162
+      },
+      {
+       "TYPE_TRANSFO_PRINCIPAL": "4 (transformation de locaux)",
+       "DESTINATION_PRINCIPALE": "4 (commerce)",
+       "permis": 126,
+       "surface_m2": 42892,
+       "acteurs": 122
+      },
+      {
+       "TYPE_TRANSFO_PRINCIPAL": "4 (transformation de locaux)",
+       "DESTINATION_PRINCIPALE": "3 (bureaux)",
+       "permis": 106,
+       "surface_m2": 24193,
+       "acteurs": 98
+      },
+      {
+       "TYPE_TRANSFO_PRINCIPAL": "4 (transformation de locaux)",
+       "DESTINATION_PRINCIPALE": "9 (service public / intérêt collectif)",
+       "permis": 90,
+       "surface_m2": 63699,
+       "acteurs": 72
+      },
+      {
+       "TYPE_TRANSFO_PRINCIPAL": "4 (transformation de locaux)",
+       "DESTINATION_PRINCIPALE": "8 (entrepôt)",
+       "permis": 87,
+       "surface_m2": 32258,
+       "acteurs": 83
+      },
+      {
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "DESTINATION_PRINCIPALE": "2 (hôtels)",
+       "permis": 45,
+       "surface_m2": 61131,
+       "acteurs": 37
+      },
+      {
+       "TYPE_TRANSFO_PRINCIPAL": "4 (transformation de locaux)",
+       "DESTINATION_PRINCIPALE": "6 (industrie)",
+       "permis": 25,
+       "surface_m2": 10626,
+       "acteurs": 22
+      },
+      {
+       "TYPE_TRANSFO_PRINCIPAL": "4 (transformation de locaux)",
+       "DESTINATION_PRINCIPALE": "7 (agriculture)",
+       "permis": 21,
+       "surface_m2": 3765,
+       "acteurs": 21
+      },
+      {
+       "TYPE_TRANSFO_PRINCIPAL": "3 (logements -> locaux)",
+       "DESTINATION_PRINCIPALE": "9 (service public / intérêt collectif)",
+       "permis": 18,
+       "surface_m2": 6444,
+       "acteurs": 18
+      },
+      {
+       "TYPE_TRANSFO_PRINCIPAL": "3 (logements -> locaux)",
+       "DESTINATION_PRINCIPALE": "4 (commerce)",
+       "permis": 13,
+       "surface_m2": 6702,
+       "acteurs": 13
+      },
+      {
+       "TYPE_TRANSFO_PRINCIPAL": "1 (locaux -> logements)",
+       "DESTINATION_PRINCIPALE": "1 (habitation)",
+       "permis": 12,
+       "surface_m2": 509,
+       "acteurs": 11
+      },
+      {
+       "TYPE_TRANSFO_PRINCIPAL": "1 (locaux -> logements)",
+       "DESTINATION_PRINCIPALE": "7 (agriculture)",
+       "permis": 12,
+       "surface_m2": 1200,
+       "acteurs": 11
+      },
+      {
+       "TYPE_TRANSFO_PRINCIPAL": "2 (transformation de logements)",
+       "DESTINATION_PRINCIPALE": "1 (habitation)",
+       "permis": 12,
+       "surface_m2": 1414,
+       "acteurs": 11
+      },
+      {
+       "TYPE_TRANSFO_PRINCIPAL": "1 (locaux -> logements)",
+       "DESTINATION_PRINCIPALE": "3 (bureaux)",
+       "permis": 12,
+       "surface_m2": 1602,
+       "acteurs": 12
+      },
+      {
+       "TYPE_TRANSFO_PRINCIPAL": "4 (transformation de locaux)",
+       "DESTINATION_PRINCIPALE": "2 (hôtels)",
+       "permis": 8,
+       "surface_m2": 7584,
+       "acteurs": 8
+      },
+      {
+       "TYPE_TRANSFO_PRINCIPAL": "1 (locaux -> logements)",
+       "DESTINATION_PRINCIPALE": "8 (entrepôt)",
+       "permis": 6,
+       "surface_m2": 1347,
+       "acteurs": 6
+      },
+      {
+       "TYPE_TRANSFO_PRINCIPAL": "1 (locaux -> logements)",
+       "DESTINATION_PRINCIPALE": "4 (commerce)",
+       "permis": 6,
+       "surface_m2": 207,
+       "acteurs": 6
+      },
+      {
+       "TYPE_TRANSFO_PRINCIPAL": "4 (transformation de locaux)",
+       "DESTINATION_PRINCIPALE": "1 (habitation)",
+       "permis": 6,
+       "surface_m2": 1959,
+       "acteurs": 6
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 7,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "noter",
+    "args": {
+     "titre": "Création de locaux sans transformation dominante",
+     "constat": "Sur les 4245 permis de construire de locaux non résidentiels dans les Yvelines, 3487 (3487 sur 4245, soit 82,2 %) concernent une création de locaux sans transformation (TYPE_TRANSFO_PRINCIPAL vide). Parmi ceux‑ci, les destinations principales sont : service public / intérêt collectif (1225 permis), commerce (574), bureaux (397), entrepôt (348), industrie (342), habitation (321) et agriculture (235).",
+     "interet_buddimm": "Mettre en évidence les usages dominants des nouveaux locaux (logements, commerce, bureaux, équipements publics) pour orienter la prospection de terrains ou de biens en vue de nouvelles opérations de création.",
+     "fiabilite": "établi",
+     "limites": "Le dictionnaire indique que DESTINATION_PRINCIPALE a été introduit en mai 2022 ; les périmètres antérieurs ne comportent pas cette variable.",
+     "a_creuser": "Analyser l’évolution dans le temps de ces destinations selon les familles d’acteurs (bailleur_social, promoteur, etc.)."
+    },
+    "sortie": {
+     "ok": "note 2 enregistrée"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 8,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "noter",
+    "args": {
+     "titre": "Transformation de locaux (type 4) par acteur et destination",
+     "constat": "Sur les 4245 permis de locaux non résidentiels dans les Yvelines, 469 (469 sur 4245, soit 11,1 %) sont des transformations de locaux (TYPE_TRANSFO_PRINCIPAL = 4). Les trois familles d’acteurs les plus actives sont enterprise_autre (141 permis), fonciere_investisseur (133) et collectivite_public (98). Les destinations principales issues de DESTINATION_PRINCIPALE sont le commerce (126 permis, 42 892 m²), les bureaux (106 permis, 24 193 m²) et les équipements de service public / intérêt collectif (90 permis, 63 699 m²).",
+     "interet_buddimm": "Identifier les acteurs majeurs et les usages dominants (commerce, bureaux, équipements publics) pour cibler les opérations de réhabilitation ou de changement de destination de locaux existants.",
+     "fiabilite": "établi",
+     "limites": "Le comptage des destinations repose sur la variable DESTINATION_PRINCIPALE introduite en mai 2022 ; les périmètres antérieurs ne la comportent pas.",
+     "a_creuser": "Analyser l’évolution temporelle de ces transformations et confronter aux projets de réhabilitation en cours."
+    },
+    "sortie": {
+     "ok": "note 3 enregistrée"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 9,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "noter",
+    "args": {
+     "titre": "Transformations logements → locaux (type 3)",
+     "constat": "Sur les 4245 permis de locaux non résidentiels dans les Yvelines, 224 (224 sur 4245, soit 5,3 %) concernent une transformation de logements en locaux (TYPE_TRANSFO_PRINCIPAL = 3). La quasi‑totalité (185 sur 224, soit 82,6 %) aboutit à une destination d’habitation (DESTINATION_PRINCIPALE = 1), tandis que les autres destinations (commerce, service public) représentent 13 et 18 permis respectivement. Les trois familles d’acteurs les plus actives sont fonciere_investisseur (73 permis), collectivite_public (62) et enterprise_autre (dont le nombre n’a pas été détaillé ici).",
+     "interet_buddimm": "Repérer les opérations de réhabilitation de logements en locaux non résidentiels (bureaux, commerces, équipements) pour accompagner les bailleurs et promoteurs dans la conversion de patrimoine résidentiel.",
+     "fiabilite": "établi",
+     "limites": "La variable DESTINATION_PRINCIPALE n’existe que depuis mai 2022 ; les anciens permis de transformation peuvent ne pas la renseigner. Le comptage des destinations repose sur la première surface créée, ce qui peut masquer des changements de destination partiels.",
+     "a_creuser": "Étudier l’évolution dans le temps de ces conversions et confronter aux projets de renouvellement urbain ou de renouvellement de parc locatif."
+    },
+    "sortie": {
+     "ok": "note 4 enregistrée"
+    }
+   }
+  ]
+ }
+]

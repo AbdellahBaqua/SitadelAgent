@@ -1,0 +1,62 @@
+[
+ {
+  "etape": "pre",
+  "texte": "résultats calculés par le code avant le modèle",
+  "entree": {
+   "siren": "803047075",
+   "denomination": "ASSOCIATION DES MUSULMANS DE MONTIGNY LE BRETONNEUX",
+   "famille_classification": "association_ess",
+   "raisons_du_score": "famille cible (association_ess) +3 ; dépôt récent (2024) +2 ; 1 permis autorisé(s) depuis moins de 3 ans, pas encore commencé(s) +2 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1",
+   "taille_calculee": "petite",
+   "taille_calcul": "salariés ≥ 3, établissements ouverts 1, établissements FINESS 0",
+   "permis_du_prospect": [
+    {
+     "num_dau": "07842324E0002",
+     "fichier": "locaux",
+     "annee_depot": "2024",
+     "commune": "MONTIGNY-LE-BRETONNEUX",
+     "etat": "autorisé",
+     "type_projet": "",
+     "logements_crees": null,
+     "surface_locaux_creee_m2": 100
+    }
+   ],
+   "fiche_entreprise": {
+    "nom": "ASSOCIATION DES MUSULMANS DE MONTIGNY LE BRETONNEUX",
+    "nature_juridique": "9220",
+    "naf_actuel": "94.99Z",
+    "etat": "A",
+    "date_creation": "2004-02-07",
+    "categorie": "PME",
+    "effectif": "02",
+    "nb_etablissements": 1,
+    "nb_etablissements_ouverts": 1,
+    "libelle_naf_actuel": "Autres organisations fonctionnant par adhésion volontaire",
+    "libelle_nature_juridique": "Association déclarée",
+    "aide": "etat A = active, C ou F = cessée. effectif = tranche Insee de salariés (ex. 21 = 50 à 99, 41 = 500 à 999, 51 = 2 000 à 4 999). Dirigeants et finances volontairement exclus.",
+    "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/803047075"
+   },
+   "finess_du_prospect": {
+    "nb_etablissements_finess_france": 0,
+    "nb_etablissements_finess_yvelines": 0,
+    "nb_departements": 0,
+    "par_type": {},
+    "exemples_yvelines": [],
+    "source": "https://www.data.gouv.fr/datasets/53699569a3a729239d2046eb",
+    "aide": "Établissements dont le SIRET commence par ce SIREN. 0 ne prouve pas l'absence d'activité médico-sociale (SIRET non renseigné dans FINESS, autre entité juridique du même groupe)."
+   },
+   "origine": "demandeur de permis",
+   "consigne": "Ces résultats viennent des outils permis_du_prospect, fiche_entreprise et finess_du_prospect : cite-les. Conclus avec conclure_prospect."
+  }
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure_prospect",
+    "args": "{\"verdict\":\"faux_positif\",\"adequation\":\"faible\",\"type_structure\":\"Association cultuelle (musulmane) locale\",\"besoin_immobilier\":\"Un permis autorisé en 2024 (100 m², non commencé) pour des locaux à Montigny-le-Bretonneux, probablement une salle de prière ou un centre culturel cultuel.\",\"indices\":[\"dénomination : « ASSOCIATION DES MUSULMANS DE MONTIGNY LE BRETONNEUX » → objet explicitement cultuel\",\"fiche_entreprise : NAF 94.99Z « Autres organisations fonctionnant par adhésion volontaire » (code qui couvre les organisations religieuses), nature juridique 9220 « Association déclarée », état A (active), effectif tranche 02 (très petit), 1 établissement ouvert\",\"permis_du_prospect : 1 permis 2024 autorisé non commencé, 100 m² de locaux créés, type de projet non précisé mais cohérent avec un local cultuel\",\"finess_du_prospect : 0 établissement FINESS → pas d'activité sanitaire ou médico-sociale déclarée\"],\"limites\":\"La structure est une association cultuelle, catégorie explicitement écartée par les règles de ciblage (culte). Même si elle a un projet immobilier (petit local), Buddimm ne cible pas les lieux de culte. Aucune activité sociale, médico-sociale ou ESS hors culte n'est visible.\"}"
+   }
+  ]
+ }
+]

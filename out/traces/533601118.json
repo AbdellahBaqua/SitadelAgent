@@ -1,0 +1,111 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "533601118"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "533601118"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "533601118"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "533601118"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "H ET A",
+     "nb_permis_PC": 2,
+     "annees_depot": [
+      "2024"
+     ],
+     "nb_communes": 2,
+     "logements_crees_total": 76,
+     "surface_locaux_non_residentiels_creee_m2": 170,
+     "nb_permis_collectif": 2,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [
+      "5"
+     ],
+     "logements_locatifs_sociaux_declares": 38,
+     "permis_autorises_pas_remontes_comme_commences": 2
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "533601118",
+      "nom": "H ET A",
+      "nature_juridique": "5710",
+      "naf_actuel": "64.20Z",
+      "etat": "A",
+      "date_creation": "2011-07-13",
+      "categorie": "PME",
+      "effectif": "02",
+      "nb_etablissements": 3,
+      "nb_etablissements_ouverts": 1,
+      "siege_actuel": {
+       "siret": "53360111800037",
+       "naf": "64.20Z",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "53360111800037",
+       "naf_dans_permis": "64.20Z",
+       "nb_permis": 2,
+       "annees_depot": [
+        "2024"
+       ],
+       "etat_actuel": "ouvert",
+       "date_creation": "2023-04-26",
+       "date_fermeture": null
+      }
+     ],
+     "alertes": [],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/533601118"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "64.20Z",
+      "libelle": "Activités des sociétés holding"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5710",
+     "libelle": "SAS, société par actions simplifiée"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"non_determine\",\"confiance\":\"faible\",\"indices\":[\"permis_du_demandeur : 2 permis collectifs déposés en 2024, 76 logements créés dont 38 logements locatifs sociaux déclarés (50 % de logement social)\",\"fiche_entreprise : structure juridiquement une SAS (cj 5710), NAF actuel 64.20Z (Activités des sociétés holding), active, 2 salariés, siège ouvert\",\"libelle_naf : 64.20Z = Activités des sociétés holding (holding de tête, pas exploitant direct)\",\"libelle_cj : 5710 = SAS, société par actions simplifiée (forme non typique des bailleurs sociaux que sont OPH, SA HLM, coopératives HLM, SEM logement social)\"],\"limites\":\"L'entité dépose des permis avec une forte composante logement social (38/76), mais son NAF actuel est celui d'une holding (64.20Z) et sa forme est une SAS, ce qui ne correspond pas aux formes juridiques classiques des bailleurs sociaux. Elle pourrait être une holding de groupe HLM, un promoteur spécialisé dans le logement social, ou une foncière en développement. Les effectifs (2 salariés) et l'absence d'alerte ne permettent pas de trancher. Aucune information sur l'actionnariat ou l'objet social précis n'est disponible via les outils.\"}"
+   }
+  ]
+ }
+]

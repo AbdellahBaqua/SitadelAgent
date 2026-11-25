@@ -1,0 +1,109 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "339993214"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "339993214"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "339993214"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "339993214"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "SOGEFIMUR",
+     "nb_permis_PC": 1,
+     "annees_depot": [
+      "2016"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 0,
+     "surface_locaux_non_residentiels_creee_m2": 664,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 1
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "339993214",
+      "nom": "SOGEFIMUR",
+      "nature_juridique": "5599",
+      "naf_actuel": "64.91Z",
+      "etat": "A",
+      "date_creation": "1986-12-02",
+      "categorie": "GE",
+      "effectif": "NN",
+      "nb_etablissements": 2,
+      "nb_etablissements_ouverts": 1,
+      "siege_actuel": {
+       "siret": "33999321400032",
+       "naf": "64.91Z",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "33999321400032",
+       "naf_dans_permis": "64.91Z",
+       "nb_permis": 1,
+       "annees_depot": [
+        "2016"
+       ],
+       "etat_actuel": "ouvert",
+       "date_creation": "1996-06-10",
+       "date_fermeture": null
+      }
+     ],
+     "alertes": [],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/339993214"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "64.91Z",
+      "libelle": "Crédit-bail"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5599",
+     "libelle": "SA à conseil d'administration (s.a.i.)"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"fonciere_investisseur\",\"confiance\":\"moyenne\",\"indices\":[\"fiche_entreprise : NAF actuel 64.91Z « Crédit-bail » (libelle_naf) — activité de crédit-bail immobilier, qui consiste à détenir des actifs immobiliers pour les louer avec option d'achat\",\"fiche_entreprise : nature juridique 5599 « SA à conseil d'administration » (libelle_cj) — société anonyme, forme compatible avec une foncière\",\"permis_du_demandeur : 1 PC en 2016 pour 664 m² de surface non résidentielle créée, 0 logement — projet de type tertiaire/commercial, cohérent avec un investisseur qui construit pour louer\",\"denomination : SOGEFIMUR — évocation de « Société de Gestion Financière Immobilière », nom typique d'une structure d'investissement immobilier\"],\"limites\":\"Le NAF 64.91Z relève de la section K (activités financières) et non de la section L (immobilier) ; l'entreprise est une société de crédit-bail (loueur financier) plutôt qu'une foncière classique (NAF 68.20B). La distinction entre « foncière_investisseur » et « entreprise_autre » reste discutable : le crédit-bail immobilier détient et loue du patrimoine, ce qui correspond à la définition de la famille, mais son cœur de métier est financier.\"}"
+   }
+  ]
+ }
+]

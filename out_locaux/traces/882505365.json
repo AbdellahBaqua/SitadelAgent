@@ -1,0 +1,115 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "882505365"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "882505365"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "882505365"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "882505365"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "GMC",
+     "nb_permis_PC": 1,
+     "annees_depot": [
+      "2022"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 0,
+     "surface_locaux_non_residentiels_creee_m2": 57,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 0
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "882505365",
+      "nom": "GMC",
+      "nature_juridique": "5710",
+      "naf_actuel": "10.71C",
+      "etat": "A",
+      "date_creation": "2020-03-12",
+      "categorie": "PME",
+      "effectif": "12",
+      "nb_etablissements": 1,
+      "nb_etablissements_ouverts": 1,
+      "siege_actuel": {
+       "siret": "88250536500016",
+       "naf": "10.71C",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "88250536500016",
+       "naf_dans_permis": "70.10Z",
+       "nb_permis": 1,
+       "annees_depot": [
+        "2022"
+       ],
+       "etat_actuel": "ouvert",
+       "date_creation": "2020-03-12",
+       "date_fermeture": null
+      }
+     ],
+     "alertes": [
+      "NAF du permis ['70.10Z'] différent du NAF actuel de l'entreprise 10.71C"
+     ],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/882505365"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "10.71C",
+      "libelle": "Boulangerie et boulangerie-pâtisserie"
+     },
+     {
+      "code": "70.10Z",
+      "libelle": "Activités des sièges sociaux"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5710",
+     "libelle": "SAS, société par actions simplifiée"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"entreprise_autre\",\"confiance\":\"moyenne\",\"indices\":[\"fiche_entreprise : entreprise GMC, SAS (cj 5710), NAF actuel 10.71C « Boulangerie et boulangerie-pâtisserie », active, PME 12 salariés, 1 établissement ouvert\",\"libelle_naf : 10.71C = Boulangerie et boulangerie-pâtisserie (activité actuelle) ; 70.10Z = Activités des sièges sociaux (NAF historique du permis)\",\"permis_du_demandeur : 1 permis en 2022, 0 logement créé, 57 m² de surface non résidentielle créée, aucun logement social déclaré\",\"libelle_cj : 5710 = SAS, société par actions simplifiée (forme commerciale classique)\"],\"limites\":\"Le permis a été déposé sous un NAF d'établissement (70.10Z « Activités des sièges sociaux ») différent de l'activité actuelle de l'entreprise (boulangerie). L'établissement concerné est toutefois toujours ouvert. L'objet du permis (57 m² non résidentiels) ne permet pas de rattacher la structure à une famille immobilière spécifique (promoteur, bailleur, foncière, exploitant santé/social, etc.).\"}"
+   }
+  ]
+ }
+]

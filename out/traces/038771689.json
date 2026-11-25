@@ -1,0 +1,111 @@
+[
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "{\"siren\":\"038771689\"}"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "S.C. IMMOBILIERE RES BEL AIR 2 6 RUE STE",
+     "nb_permis_PC": 1,
+     "annees_depot": [
+      "2016"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 20,
+     "nb_permis_collectif": 1,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 5,
+     "permis_autorises_pas_remontes_comme_commences": 1
+    }
+   }
+  ]
+ },
+ {
+  "etape": 1,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "fiche_entreprise",
+    "args": "{\"siren\":\"038771689\"}"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "038771689",
+      "nom": "S.C. IMMOBILIERE RES BEL AIR 2 6 RUE STE",
+      "nature_juridique": "9110",
+      "naf_actuel": "81.10Z",
+      "etat": "A",
+      "date_creation": "1995-12-25",
+      "categorie": "PME",
+      "effectif": "01",
+      "nb_etablissements": 1,
+      "nb_etablissements_ouverts": 1,
+      "siege_actuel": {
+       "siret": "03877168900015",
+       "naf": "81.10Z",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "03877168900015",
+       "naf_dans_permis": "81.10Z",
+       "nb_permis": 1,
+       "annees_depot": [
+        "2016"
+       ],
+       "etat_actuel": "ouvert",
+       "date_creation": "1995-12-25",
+       "date_fermeture": null
+      }
+     ],
+     "alertes": [],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/038771689"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 2,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "libelle_naf",
+    "args": "{\"code\":\"81.10Z\"}"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "libelle_naf",
+    "sortie": {
+     "code": "81.10Z",
+     "libelle": "Activités combinées de soutien lié aux bâtiments"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 3,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"confiance\":\"haute\",\"famille\":\"entreprise_autre\",\"indices\":[\"fiche_entreprise.naf_actuel = 81.10Z (Activités combinées de soutien lié aux bâtiments)\",\"fiche_entreprise.nature_juridique = 9110 (Société Civile)\",\"libelle_naf(81.10Z) = Activités combinées de soutien lié aux bâtiments\"],\"limites\":\"Aucune information supplémentaire sur des activités de location ou de promotion immobilière n'est disponible.\"}"
+   }
+  ]
+ }
+]

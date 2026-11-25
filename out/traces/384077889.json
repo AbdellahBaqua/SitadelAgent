@@ -1,0 +1,116 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "384077889"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "384077889"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "384077889"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "384077889"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "CLAPHINE",
+     "nb_permis_PC": 4,
+     "annees_depot": [
+      "2016"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 4,
+     "surface_locaux_non_residentiels_creee_m2": 0,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 4,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 4
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "384077889",
+      "nom": "CLAPHINE",
+      "nature_juridique": "5710",
+      "naf_actuel": "68.20B",
+      "etat": "A",
+      "date_creation": "1992-01-01",
+      "categorie": "PME",
+      "effectif": "01",
+      "nb_etablissements": 4,
+      "nb_etablissements_ouverts": 1,
+      "siege_actuel": {
+       "siret": "38407788900036",
+       "naf": "68.20B",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "38407788900044",
+       "naf_dans_permis": "64.20Z",
+       "nb_permis": 4,
+       "annees_depot": [
+        "2016"
+       ],
+       "etat_actuel": "fermé",
+       "date_creation": "2010-06-29",
+       "date_fermeture": "2023-06-09"
+      }
+     ],
+     "alertes": [
+      "SIRET 38407788900044 (permis 2016) fermé le 2023-06-09 : le NAF 64.20Z du permis vient d'un établissement fermé",
+      "NAF du permis ['64.20Z'] différent du NAF actuel de l'entreprise 68.20B"
+     ],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/384077889"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "64.20Z",
+      "libelle": "Activités des sociétés holding"
+     },
+     {
+      "code": "68.20B",
+      "libelle": "Location de terrains et d'autres biens immobiliers"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5710",
+     "libelle": "SAS, société par actions simplifiée"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"fonciere_investisseur\",\"confiance\":\"moyenne\",\"indices\":[\"fiche_entreprise : NAF actuel 68.20B « Location de terrains et d'autres biens immobiliers » (libelle_naf)\",\"fiche_entreprise : forme juridique SAS (cj 5710) (libelle_cj)\",\"fiche_entreprise : entreprise active depuis 1992, PME, 1 salarié, 1 établissement ouvert (siège)\",\"permis_du_demandeur : 4 permis en 2016 pour 4 maisons individuelles, 0 logement social déclaré, établissement permis (SIRET 38407788900044) fermé depuis 2023\",\"libelle_naf : 64.20Z (permis) = Activités des sociétés holding (historique, établissement fermé)\",\"libelle_naf : 68.20B (actuel) = Location de terrains et d'autres biens immobiliers\"],\"limites\":\"L'activité de promotion immobilière en 2016 (4 maisons individuelles) pourrait suggérer un promoteur, mais l'établissement concerné est fermé et l'activité actuelle de l'entreprise est la location immobilière (foncière). Aucune information sur la détention patrimoniale actuelle ni sur la vocation sociale.\"}"
+   }
+  ]
+ }
+]

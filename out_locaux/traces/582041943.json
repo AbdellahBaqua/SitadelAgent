@@ -1,0 +1,111 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "582041943"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "582041943"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "582041943"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "582041943"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "PERNOD RICARD",
+     "nb_permis_PC": 1,
+     "annees_depot": [
+      "2014"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 0,
+     "surface_locaux_non_residentiels_creee_m2": 5441,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 0
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "582041943",
+      "nom": "PERNOD RICARD",
+      "nature_juridique": "5599",
+      "naf_actuel": "70.10Z",
+      "etat": "A",
+      "date_creation": "1958-01-01",
+      "categorie": "GE",
+      "effectif": "41",
+      "nb_etablissements": 4,
+      "nb_etablissements_ouverts": 1,
+      "siege_actuel": {
+       "siret": "58204194300405",
+       "naf": "70.10Z",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "58204194300389",
+       "naf_dans_permis": "70.10Z",
+       "nb_permis": 1,
+       "annees_depot": [
+        "2014"
+       ],
+       "etat_actuel": "fermé",
+       "date_creation": "2002-10-07",
+       "date_fermeture": "2020-07-22"
+      }
+     ],
+     "alertes": [
+      "SIRET 58204194300389 (permis 2014) fermé le 2020-07-22 : le NAF 70.10Z du permis vient d'un établissement fermé"
+     ],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/582041943"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "70.10Z",
+      "libelle": "Activités des sièges sociaux"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5599",
+     "libelle": "SA à conseil d'administration (s.a.i.)"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"entreprise_autre\",\"confiance\":\"haute\",\"indices\":[\"fiche_entreprise : entreprise PERNOD RICARD, nature juridique 5599 (SA à conseil d'administration), catégorie GE (grande entreprise), effectif 41, naf_actuel 70.10Z (Activités des sièges sociaux), état actif\",\"libelle_naf : 70.10Z = Activités des sièges sociaux (confirmé par l'outil)\",\"libelle_cj : 5599 = SA à conseil d'administration (s.a.i.) (confirmé par l'outil)\",\"permis_du_demandeur : 1 permis en 2014, 5 441 m² de surface non résidentielle créée, 0 logement créé, 0 logement locatif social déclaré, aucun permis collectif ou individuel\",\"fiche_entreprise (alertes) : l'établissement du permis (SIRET 58204194300389) est fermé depuis 2020, le NAF du permis provenait d'un établissement fermé ; l'activité actuelle de l'entreprise reste 70.10Z (siège social)\"],\"limites\":\"Le permis date de 2014 et concerne un établissement depuis fermé (2020), mais la société mère PERNOD RICARD reste active avec une activité de siège social (NAF 70.10Z). La classification repose sur la nature actuelle de l'entreprise (grand groupe industriel, SA, siège social) et sur l'objet du permis (bureaux/locaux non résidentiels), non sur de l'immobilier locatif, de la promotion, du logement social ou de l'ESS.\"}"
+   }
+  ]
+ }
+]

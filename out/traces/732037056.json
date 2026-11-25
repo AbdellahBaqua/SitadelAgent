@@ -1,0 +1,111 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "732037056"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "732037056"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "732037056"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "732037056"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "SOCIETE DE GESTION PIERRE CARDIN",
+     "nb_permis_PC": 1,
+     "annees_depot": [
+      "2025"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 3,
+     "surface_locaux_non_residentiels_creee_m2": 0,
+     "nb_permis_collectif": 1,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [
+      "7"
+     ],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 1
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "732037056",
+      "nom": "SOCIETE DE GESTION PIERRE CARDIN",
+      "nature_juridique": "5710",
+      "naf_actuel": "82.99Z",
+      "etat": "A",
+      "date_creation": "1973-01-01",
+      "categorie": "PME",
+      "effectif": "12",
+      "nb_etablissements": 44,
+      "nb_etablissements_ouverts": 18,
+      "siege_actuel": {
+       "siret": "73203705600015",
+       "naf": "82.99Z",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "73203705600015",
+       "naf_dans_permis": "82.99Z",
+       "nb_permis": 1,
+       "annees_depot": [
+        "2025"
+       ],
+       "etat_actuel": "ouvert",
+       "date_creation": "1900-01-01",
+       "date_fermeture": null
+      }
+     ],
+     "alertes": [],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/732037056"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "82.99Z",
+      "libelle": "Autres activités de soutien aux entreprises n.c.a."
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5710",
+     "libelle": "SAS, société par actions simplifiée"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"entreprise_autre\",\"confiance\":\"moyenne\",\"indices\":[\"permis_du_demandeur : 1 permis en 2025, 3 logements créés, 1 permis collectif, 0 logement social déclaré\",\"fiche_entreprise : forme juridique SAS (cj 5710), NAF actuel 82.99Z, active depuis 1973, 12 employés, 44 établissements dont 18 ouverts\",\"libelle_naf : 82.99Z = « Autres activités de soutien aux entreprises n.c.a. » (activité de services aux entreprises, pas d'immobilier)\",\"libelle_cj : 5710 = « SAS, société par actions simplifiée » (société commerciale classique)\",\"dénomination : « SOCIETE DE GESTION PIERRE CARDIN » suggère une société de gestion/holding pour la marque Pierre Cardin, pas un acteur immobilier spécialisé\"],\"limites\":\"L'unique permis (3 logements) pourrait indiquer une opération immobilière ponctuelle (logements de fonction, siège, etc.), mais le NAF 82.99Z et la forme SAS ne correspondent à aucune famille immobilière identifiée (bailleur social, promoteur, foncière, association ESS, exploitant santé/social, collectivité, copropriété). L'absence de NAF immobilier (41.10Z, 68.20B, 68.32Z) et de tout signal d'activité sociale ou publique oriente vers « entreprise_autre ».\"}"
+   }
+  ]
+ }
+]

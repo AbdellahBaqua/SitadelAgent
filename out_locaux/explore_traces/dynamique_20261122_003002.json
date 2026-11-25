@@ -1,0 +1,1459 @@
+[
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "apercu",
+    "args": {},
+    "sortie": {
+     "perimetre": "PC des Yvelines (78) créant des locaux non résidentiels, déposés par des personnes morales, extraction SDES/Sitadel",
+     "nb_permis": 4245,
+     "nb_demandeurs": 2439,
+     "annees_depot": {
+      "2005": 1,
+      "2006": 1,
+      "2008": 1,
+      "2012": 97,
+      "2013": 257,
+      "2014": 271,
+      "2015": 258,
+      "2016": 322,
+      "2017": 341,
+      "2018": 360,
+      "2019": 331,
+      "2020": 270,
+      "2021": 347,
+      "2022": 370,
+      "2023": 334,
+      "2024": 300,
+      "2025": 282,
+      "2026": 101,
+      "2087": 1
+     },
+     "familles_demandeurs": {
+      "fonciere_investisseur": 895,
+      "entreprise_autre": 602,
+      "collectivite_public": 303,
+      "promoteur": 266,
+      "non_determine": 184,
+      "association_ess": 135,
+      "exploitant_sante_social": 32,
+      "bailleur_social": 21,
+      "copropriete": 1
+     },
+     "colonnes_interrogeables": [
+      "famille",
+      "AN_DEPOT",
+      "COMM",
+      "ADR_LOCALITE_TER",
+      "ETAT_DAU",
+      "DESTINATION_PRINCIPALE",
+      "DEST_SURF_MAX",
+      "TYPE_SERVICE_PUBLIC",
+      "NATURE_PROJET_COMPLETEE",
+      "TYPE_TRANSFO_PRINCIPAL",
+      "TYPE_PRINCIP_LOCAUX_TRANSFORMES",
+      "ZONE_OP",
+      "CJ_DEM",
+      "APE_DEM",
+      "SIREN_DEM",
+      "DENOM_DEM"
+     ],
+     "mesures": [
+      "permis",
+      "surface_m2",
+      "acteurs"
+     ],
+     "remarques": [
+      "2026 est une année partielle",
+      "un permis modificatif n'a pas de ligne propre",
+      "~15 % des ouvertures de chantier et ~1/3 des achèvements ne remontent jamais",
+      "APE_DEM = NAF de l'établissement du permis, possiblement fermé",
+      "surface_m2 = SURF_LOC_CREEE, surface de plancher de locaux non résidentiels créée",
+      "DEST_SURF_MAX = destination qui reçoit le plus de surface (calculée par le code à partir des SURF_*)",
+      "DESTINATION_PRINCIPALE est codée par le SDES (introduite en mai 2022) ; TYPE_SERVICE_PUBLIC vient du formulaire et est souvent 'non rempli'",
+      "un même permis peut aussi créer des logements : il figure alors aussi dans le fichier logements"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 1,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "AN_DEPOT",
+      "DEST_SURF_MAX"
+     ],
+     "mesure": "surface_m2",
+     "top": 50
+    },
+    "sortie": {
+     "filtres": {},
+     "nb_permis_filtres": 4245,
+     "nb_groupes": 112,
+     "resultats": [
+      {
+       "AN_DEPOT": "2025",
+       "DEST_SURF_MAX": "entrepôt",
+       "permis": 35,
+       "surface_m2": 214051,
+       "acteurs": 35
+      },
+      {
+       "AN_DEPOT": "2018",
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "permis": 139,
+       "surface_m2": 170533,
+       "acteurs": 106
+      },
+      {
+       "AN_DEPOT": "2022",
+       "DEST_SURF_MAX": "bureaux",
+       "permis": 33,
+       "surface_m2": 147506,
+       "acteurs": 31
+      },
+      {
+       "AN_DEPOT": "2020",
+       "DEST_SURF_MAX": "entrepôt",
+       "permis": 31,
+       "surface_m2": 142520,
+       "acteurs": 28
+      },
+      {
+       "AN_DEPOT": "2016",
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "permis": 112,
+       "surface_m2": 140116,
+       "acteurs": 95
+      },
+      {
+       "AN_DEPOT": "2015",
+       "DEST_SURF_MAX": "commerce",
+       "permis": 72,
+       "surface_m2": 121059,
+       "acteurs": 71
+      },
+      {
+       "AN_DEPOT": "2019",
+       "DEST_SURF_MAX": "bureaux",
+       "permis": 58,
+       "surface_m2": 112882,
+       "acteurs": 54
+      },
+      {
+       "AN_DEPOT": "2025",
+       "DEST_SURF_MAX": "industrie",
+       "permis": 28,
+       "surface_m2": 112733,
+       "acteurs": 22
+      },
+      {
+       "AN_DEPOT": "2017",
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "permis": 123,
+       "surface_m2": 109854,
+       "acteurs": 92
+      },
+      {
+       "AN_DEPOT": "2023",
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "permis": 152,
+       "surface_m2": 106366,
+       "acteurs": 117
+      },
+      {
+       "AN_DEPOT": "2022",
+       "DEST_SURF_MAX": "entrepôt",
+       "permis": 35,
+       "surface_m2": 105880,
+       "acteurs": 33
+      },
+      {
+       "AN_DEPOT": "2021",
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "permis": 106,
+       "surface_m2": 102937,
+       "acteurs": 89
+      },
+      {
+       "AN_DEPOT": "2018",
+       "DEST_SURF_MAX": "bureaux",
+       "permis": 61,
+       "surface_m2": 102916,
+       "acteurs": 56
+      },
+      {
+       "AN_DEPOT": "2020",
+       "DEST_SURF_MAX": "bureaux",
+       "permis": 38,
+       "surface_m2": 101588,
+       "acteurs": 36
+      },
+      {
+       "AN_DEPOT": "2013",
+       "DEST_SURF_MAX": "bureaux",
+       "permis": 38,
+       "surface_m2": 99446,
+       "acteurs": 32
+      },
+      {
+       "AN_DEPOT": "2016",
+       "DEST_SURF_MAX": "commerce",
+       "permis": 83,
+       "surface_m2": 97510,
+       "acteurs": 76
+      },
+      {
+       "AN_DEPOT": "2024",
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "permis": 132,
+       "surface_m2": 97098,
+       "acteurs": 98
+      },
+      {
+       "AN_DEPOT": "2022",
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "permis": 139,
+       "surface_m2": 95493,
+       "acteurs": 107
+      },
+      {
+       "AN_DEPOT": "2019",
+       "DEST_SURF_MAX": "commerce",
+       "permis": 71,
+       "surface_m2": 95091,
+       "acteurs": 66
+      },
+      {
+       "AN_DEPOT": "2017",
+       "DEST_SURF_MAX": "commerce",
+       "permis": 100,
+       "surface_m2": 81107,
+       "acteurs": 97
+      },
+      {
+       "AN_DEPOT": "2016",
+       "DEST_SURF_MAX": "bureaux",
+       "permis": 53,
+       "surface_m2": 80173,
+       "acteurs": 48
+      },
+      {
+       "AN_DEPOT": "2018",
+       "DEST_SURF_MAX": "commerce",
+       "permis": 79,
+       "surface_m2": 79250,
+       "acteurs": 75
+      },
+      {
+       "AN_DEPOT": "2022",
+       "DEST_SURF_MAX": "commerce",
+       "permis": 99,
+       "surface_m2": 77159,
+       "acteurs": 89
+      },
+      {
+       "AN_DEPOT": "2025",
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "permis": 104,
+       "surface_m2": 75522,
+       "acteurs": 82
+      },
+      {
+       "AN_DEPOT": "2021",
+       "DEST_SURF_MAX": "industrie",
+       "permis": 30,
+       "surface_m2": 73779,
+       "acteurs": 26
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 2,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "AN_DEPOT",
+      "DEST_SURF_MAX"
+     ],
+     "mesure": "permis",
+     "top": 80
+    },
+    "sortie": {
+     "filtres": {},
+     "nb_permis_filtres": 4245,
+     "nb_groupes": 112,
+     "resultats": [
+      {
+       "AN_DEPOT": "2023",
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "permis": 152,
+       "surface_m2": 106366,
+       "acteurs": 117
+      },
+      {
+       "AN_DEPOT": "2018",
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "permis": 139,
+       "surface_m2": 170533,
+       "acteurs": 106
+      },
+      {
+       "AN_DEPOT": "2022",
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "permis": 139,
+       "surface_m2": 95493,
+       "acteurs": 107
+      },
+      {
+       "AN_DEPOT": "2024",
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "permis": 132,
+       "surface_m2": 97098,
+       "acteurs": 98
+      },
+      {
+       "AN_DEPOT": "2017",
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "permis": 123,
+       "surface_m2": 109854,
+       "acteurs": 92
+      },
+      {
+       "AN_DEPOT": "2016",
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "permis": 112,
+       "surface_m2": 140116,
+       "acteurs": 95
+      },
+      {
+       "AN_DEPOT": "2019",
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "permis": 112,
+       "surface_m2": 71555,
+       "acteurs": 95
+      },
+      {
+       "AN_DEPOT": "2013",
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "permis": 111,
+       "surface_m2": 69944,
+       "acteurs": 82
+      },
+      {
+       "AN_DEPOT": "2021",
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "permis": 106,
+       "surface_m2": 102937,
+       "acteurs": 89
+      },
+      {
+       "AN_DEPOT": "2025",
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "permis": 104,
+       "surface_m2": 75522,
+       "acteurs": 82
+      },
+      {
+       "AN_DEPOT": "2017",
+       "DEST_SURF_MAX": "commerce",
+       "permis": 100,
+       "surface_m2": 81107,
+       "acteurs": 97
+      },
+      {
+       "AN_DEPOT": "2022",
+       "DEST_SURF_MAX": "commerce",
+       "permis": 99,
+       "surface_m2": 77159,
+       "acteurs": 89
+      },
+      {
+       "AN_DEPOT": "2014",
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "permis": 96,
+       "surface_m2": 44859,
+       "acteurs": 81
+      },
+      {
+       "AN_DEPOT": "2021",
+       "DEST_SURF_MAX": "commerce",
+       "permis": 92,
+       "surface_m2": 59829,
+       "acteurs": 86
+      },
+      {
+       "AN_DEPOT": "2015",
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "permis": 87,
+       "surface_m2": 35327,
+       "acteurs": 71
+      },
+      {
+       "AN_DEPOT": "2016",
+       "DEST_SURF_MAX": "commerce",
+       "permis": 83,
+       "surface_m2": 97510,
+       "acteurs": 76
+      },
+      {
+       "AN_DEPOT": "2018",
+       "DEST_SURF_MAX": "commerce",
+       "permis": 79,
+       "surface_m2": 79250,
+       "acteurs": 75
+      },
+      {
+       "AN_DEPOT": "2020",
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "permis": 74,
+       "surface_m2": 47082,
+       "acteurs": 64
+      },
+      {
+       "AN_DEPOT": "2015",
+       "DEST_SURF_MAX": "commerce",
+       "permis": 72,
+       "surface_m2": 121059,
+       "acteurs": 71
+      },
+      {
+       "AN_DEPOT": "2019",
+       "DEST_SURF_MAX": "commerce",
+       "permis": 71,
+       "surface_m2": 95091,
+       "acteurs": 66
+      },
+      {
+       "AN_DEPOT": "2025",
+       "DEST_SURF_MAX": "commerce",
+       "permis": 67,
+       "surface_m2": 40518,
+       "acteurs": 59
+      },
+      {
+       "AN_DEPOT": "2020",
+       "DEST_SURF_MAX": "commerce",
+       "permis": 65,
+       "surface_m2": 60705,
+       "acteurs": 64
+      },
+      {
+       "AN_DEPOT": "2024",
+       "DEST_SURF_MAX": "commerce",
+       "permis": 64,
+       "surface_m2": 33701,
+       "acteurs": 57
+      },
+      {
+       "AN_DEPOT": "2014",
+       "DEST_SURF_MAX": "commerce",
+       "permis": 64,
+       "surface_m2": 68786,
+       "acteurs": 60
+      },
+      {
+       "AN_DEPOT": "2018",
+       "DEST_SURF_MAX": "bureaux",
+       "permis": 61,
+       "surface_m2": 102916,
+       "acteurs": 56
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 3,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "AN_DEPOT",
+      "famille"
+     ],
+     "mesure": "surface_m2",
+     "top": 80
+    },
+    "sortie": {
+     "filtres": {},
+     "nb_permis_filtres": 4245,
+     "nb_groupes": 121,
+     "resultats": [
+      {
+       "AN_DEPOT": "2025",
+       "famille": "fonciere_investisseur",
+       "permis": 86,
+       "surface_m2": 312752,
+       "acteurs": 77
+      },
+      {
+       "AN_DEPOT": "2022",
+       "famille": "fonciere_investisseur",
+       "permis": 90,
+       "surface_m2": 230057,
+       "acteurs": 83
+      },
+      {
+       "AN_DEPOT": "2018",
+       "famille": "fonciere_investisseur",
+       "permis": 91,
+       "surface_m2": 199575,
+       "acteurs": 86
+      },
+      {
+       "AN_DEPOT": "2020",
+       "famille": "entreprise_autre",
+       "permis": 70,
+       "surface_m2": 177716,
+       "acteurs": 63
+      },
+      {
+       "AN_DEPOT": "2019",
+       "famille": "fonciere_investisseur",
+       "permis": 97,
+       "surface_m2": 157622,
+       "acteurs": 89
+      },
+      {
+       "AN_DEPOT": "2022",
+       "famille": "promoteur",
+       "permis": 39,
+       "surface_m2": 139272,
+       "acteurs": 35
+      },
+      {
+       "AN_DEPOT": "2016",
+       "famille": "fonciere_investisseur",
+       "permis": 88,
+       "surface_m2": 132306,
+       "acteurs": 81
+      },
+      {
+       "AN_DEPOT": "2017",
+       "famille": "fonciere_investisseur",
+       "permis": 88,
+       "surface_m2": 131600,
+       "acteurs": 84
+      },
+      {
+       "AN_DEPOT": "2015",
+       "famille": "fonciere_investisseur",
+       "permis": 64,
+       "surface_m2": 126412,
+       "acteurs": 62
+      },
+      {
+       "AN_DEPOT": "2020",
+       "famille": "fonciere_investisseur",
+       "permis": 86,
+       "surface_m2": 110219,
+       "acteurs": 85
+      },
+      {
+       "AN_DEPOT": "2025",
+       "famille": "entreprise_autre",
+       "permis": 64,
+       "surface_m2": 108979,
+       "acteurs": 59
+      },
+      {
+       "AN_DEPOT": "2023",
+       "famille": "fonciere_investisseur",
+       "permis": 77,
+       "surface_m2": 106884,
+       "acteurs": 74
+      },
+      {
+       "AN_DEPOT": "2020",
+       "famille": "promoteur",
+       "permis": 28,
+       "surface_m2": 104738,
+       "acteurs": 27
+      },
+      {
+       "AN_DEPOT": "2013",
+       "famille": "fonciere_investisseur",
+       "permis": 65,
+       "surface_m2": 99046,
+       "acteurs": 56
+      },
+      {
+       "AN_DEPOT": "2021",
+       "famille": "fonciere_investisseur",
+       "permis": 86,
+       "surface_m2": 96886,
+       "acteurs": 79
+      },
+      {
+       "AN_DEPOT": "2016",
+       "famille": "entreprise_autre",
+       "permis": 77,
+       "surface_m2": 91145,
+       "acteurs": 65
+      },
+      {
+       "AN_DEPOT": "2017",
+       "famille": "collectivite_public",
+       "permis": 94,
+       "surface_m2": 89621,
+       "acteurs": 64
+      },
+      {
+       "AN_DEPOT": "2021",
+       "famille": "promoteur",
+       "permis": 52,
+       "surface_m2": 87422,
+       "acteurs": 48
+      },
+      {
+       "AN_DEPOT": "2018",
+       "famille": "promoteur",
+       "permis": 26,
+       "surface_m2": 86862,
+       "acteurs": 24
+      },
+      {
+       "AN_DEPOT": "2016",
+       "famille": "promoteur",
+       "permis": 27,
+       "surface_m2": 83866,
+       "acteurs": 27
+      },
+      {
+       "AN_DEPOT": "2021",
+       "famille": "collectivite_public",
+       "permis": 84,
+       "surface_m2": 81715,
+       "acteurs": 64
+      },
+      {
+       "AN_DEPOT": "2024",
+       "famille": "collectivite_public",
+       "permis": 89,
+       "surface_m2": 81294,
+       "acteurs": 63
+      },
+      {
+       "AN_DEPOT": "2023",
+       "famille": "promoteur",
+       "permis": 27,
+       "surface_m2": 76903,
+       "acteurs": 23
+      },
+      {
+       "AN_DEPOT": "2022",
+       "famille": "entreprise_autre",
+       "permis": 84,
+       "surface_m2": 75423,
+       "acteurs": 70
+      },
+      {
+       "AN_DEPOT": "2019",
+       "famille": "promoteur",
+       "permis": 23,
+       "surface_m2": 73560,
+       "acteurs": 21
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 4,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "AN_DEPOT",
+      "famille"
+     ],
+     "mesure": "permis",
+     "top": 80
+    },
+    "sortie": {
+     "filtres": {},
+     "nb_permis_filtres": 4245,
+     "nb_groupes": 121,
+     "resultats": [
+      {
+       "AN_DEPOT": "2018",
+       "famille": "collectivite_public",
+       "permis": 111,
+       "surface_m2": 69318,
+       "acteurs": 79
+      },
+      {
+       "AN_DEPOT": "2023",
+       "famille": "collectivite_public",
+       "permis": 98,
+       "surface_m2": 71141,
+       "acteurs": 70
+      },
+      {
+       "AN_DEPOT": "2019",
+       "famille": "collectivite_public",
+       "permis": 97,
+       "surface_m2": 56289,
+       "acteurs": 73
+      },
+      {
+       "AN_DEPOT": "2019",
+       "famille": "fonciere_investisseur",
+       "permis": 97,
+       "surface_m2": 157622,
+       "acteurs": 89
+      },
+      {
+       "AN_DEPOT": "2022",
+       "famille": "collectivite_public",
+       "permis": 96,
+       "surface_m2": 53851,
+       "acteurs": 65
+      },
+      {
+       "AN_DEPOT": "2017",
+       "famille": "collectivite_public",
+       "permis": 94,
+       "surface_m2": 89621,
+       "acteurs": 64
+      },
+      {
+       "AN_DEPOT": "2014",
+       "famille": "fonciere_investisseur",
+       "permis": 92,
+       "surface_m2": 66318,
+       "acteurs": 81
+      },
+      {
+       "AN_DEPOT": "2018",
+       "famille": "fonciere_investisseur",
+       "permis": 91,
+       "surface_m2": 199575,
+       "acteurs": 86
+      },
+      {
+       "AN_DEPOT": "2022",
+       "famille": "fonciere_investisseur",
+       "permis": 90,
+       "surface_m2": 230057,
+       "acteurs": 83
+      },
+      {
+       "AN_DEPOT": "2024",
+       "famille": "collectivite_public",
+       "permis": 89,
+       "surface_m2": 81294,
+       "acteurs": 63
+      },
+      {
+       "AN_DEPOT": "2016",
+       "famille": "fonciere_investisseur",
+       "permis": 88,
+       "surface_m2": 132306,
+       "acteurs": 81
+      },
+      {
+       "AN_DEPOT": "2017",
+       "famille": "fonciere_investisseur",
+       "permis": 88,
+       "surface_m2": 131600,
+       "acteurs": 84
+      },
+      {
+       "AN_DEPOT": "2020",
+       "famille": "fonciere_investisseur",
+       "permis": 86,
+       "surface_m2": 110219,
+       "acteurs": 85
+      },
+      {
+       "AN_DEPOT": "2021",
+       "famille": "fonciere_investisseur",
+       "permis": 86,
+       "surface_m2": 96886,
+       "acteurs": 79
+      },
+      {
+       "AN_DEPOT": "2025",
+       "famille": "fonciere_investisseur",
+       "permis": 86,
+       "surface_m2": 312752,
+       "acteurs": 77
+      },
+      {
+       "AN_DEPOT": "2024",
+       "famille": "fonciere_investisseur",
+       "permis": 85,
+       "surface_m2": 67024,
+       "acteurs": 82
+      },
+      {
+       "AN_DEPOT": "2022",
+       "famille": "entreprise_autre",
+       "permis": 84,
+       "surface_m2": 75423,
+       "acteurs": 70
+      },
+      {
+       "AN_DEPOT": "2021",
+       "famille": "collectivite_public",
+       "permis": 84,
+       "surface_m2": 81715,
+       "acteurs": 64
+      },
+      {
+       "AN_DEPOT": "2018",
+       "famille": "entreprise_autre",
+       "permis": 82,
+       "surface_m2": 71983,
+       "acteurs": 71
+      },
+      {
+       "AN_DEPOT": "2016",
+       "famille": "collectivite_public",
+       "permis": 82,
+       "surface_m2": 64867,
+       "acteurs": 61
+      },
+      {
+       "AN_DEPOT": "2023",
+       "famille": "entreprise_autre",
+       "permis": 81,
+       "surface_m2": 70789,
+       "acteurs": 71
+      },
+      {
+       "AN_DEPOT": "2013",
+       "famille": "collectivite_public",
+       "permis": 77,
+       "surface_m2": 41129,
+       "acteurs": 53
+      },
+      {
+       "AN_DEPOT": "2023",
+       "famille": "fonciere_investisseur",
+       "permis": 77,
+       "surface_m2": 106884,
+       "acteurs": 74
+      },
+      {
+       "AN_DEPOT": "2016",
+       "famille": "entreprise_autre",
+       "permis": 77,
+       "surface_m2": 91145,
+       "acteurs": 65
+      },
+      {
+       "AN_DEPOT": "2017",
+       "famille": "entreprise_autre",
+       "permis": 76,
+       "surface_m2": 62834,
+       "acteurs": 67
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 5,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "lire_dictionnaire",
+    "args": {
+     "variable": "ETAT"
+    },
+    "sortie": {
+     "variable": "ETAT",
+     "definition": "variable inconnue du dictionnaire"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 6,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "AN_DEPOT"
+     ],
+     "mesure": "permis",
+     "top": 30
+    },
+    "sortie": {
+     "filtres": {},
+     "nb_permis_filtres": 4245,
+     "nb_groupes": 19,
+     "resultats": [
+      {
+       "AN_DEPOT": "2022",
+       "permis": 370,
+       "surface_m2": 523757,
+       "acteurs": 303
+      },
+      {
+       "AN_DEPOT": "2018",
+       "permis": 360,
+       "surface_m2": 486857,
+       "acteurs": 298
+      },
+      {
+       "AN_DEPOT": "2021",
+       "permis": 347,
+       "surface_m2": 337850,
+       "acteurs": 299
+      },
+      {
+       "AN_DEPOT": "2017",
+       "permis": 341,
+       "surface_m2": 334963,
+       "acteurs": 282
+      },
+      {
+       "AN_DEPOT": "2023",
+       "permis": 334,
+       "surface_m2": 358518,
+       "acteurs": 283
+      },
+      {
+       "AN_DEPOT": "2019",
+       "permis": 331,
+       "surface_m2": 380496,
+       "acteurs": 285
+      },
+      {
+       "AN_DEPOT": "2016",
+       "permis": 322,
+       "surface_m2": 437364,
+       "acteurs": 273
+      },
+      {
+       "AN_DEPOT": "2024",
+       "permis": 300,
+       "surface_m2": 252398,
+       "acteurs": 250
+      },
+      {
+       "AN_DEPOT": "2025",
+       "permis": 282,
+       "surface_m2": 530847,
+       "acteurs": 243
+      },
+      {
+       "AN_DEPOT": "2014",
+       "permis": 271,
+       "surface_m2": 195930,
+       "acteurs": 236
+      },
+      {
+       "AN_DEPOT": "2020",
+       "permis": 270,
+       "surface_m2": 443821,
+       "acteurs": 244
+      },
+      {
+       "AN_DEPOT": "2015",
+       "permis": 258,
+       "surface_m2": 262460,
+       "acteurs": 225
+      },
+      {
+       "AN_DEPOT": "2013",
+       "permis": 257,
+       "surface_m2": 271171,
+       "acteurs": 199
+      },
+      {
+       "AN_DEPOT": "2026",
+       "permis": 101,
+       "surface_m2": 111115,
+       "acteurs": 98
+      },
+      {
+       "AN_DEPOT": "2012",
+       "permis": 97,
+       "surface_m2": 152076,
+       "acteurs": 89
+      },
+      {
+       "AN_DEPOT": "2008",
+       "permis": 1,
+       "surface_m2": 413,
+       "acteurs": 1
+      },
+      {
+       "AN_DEPOT": "2006",
+       "permis": 1,
+       "surface_m2": 57,
+       "acteurs": 1
+      },
+      {
+       "AN_DEPOT": "2005",
+       "permis": 1,
+       "surface_m2": 0,
+       "acteurs": 1
+      },
+      {
+       "AN_DEPOT": "2087",
+       "permis": 1,
+       "surface_m2": 15,
+       "acteurs": 1
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 7,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "lire_dictionnaire",
+    "args": {
+     "variable": "DECISION"
+    },
+    "sortie": {
+     "variable": "DECISION",
+     "definition": "variable inconnue du dictionnaire"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 8,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "AN_DEPOT",
+      "DEST_SURF_MAX"
+     ],
+     "mesure": "surface_m2",
+     "filtres": {
+      "AN_DEPOT_min": 2018,
+      "AN_DEPOT_max": 2024
+     },
+     "top": 60
+    },
+    "sortie": {
+     "filtres": {
+      "AN_DEPOT_min": 2018,
+      "AN_DEPOT_max": 2024
+     },
+     "nb_permis_filtres": 2312,
+     "nb_groupes": 49,
+     "resultats": [
+      {
+       "AN_DEPOT": "2018",
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "permis": 139,
+       "surface_m2": 170533,
+       "acteurs": 106
+      },
+      {
+       "AN_DEPOT": "2022",
+       "DEST_SURF_MAX": "bureaux",
+       "permis": 33,
+       "surface_m2": 147506,
+       "acteurs": 31
+      },
+      {
+       "AN_DEPOT": "2020",
+       "DEST_SURF_MAX": "entrepôt",
+       "permis": 31,
+       "surface_m2": 142520,
+       "acteurs": 28
+      },
+      {
+       "AN_DEPOT": "2019",
+       "DEST_SURF_MAX": "bureaux",
+       "permis": 58,
+       "surface_m2": 112882,
+       "acteurs": 54
+      },
+      {
+       "AN_DEPOT": "2023",
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "permis": 152,
+       "surface_m2": 106366,
+       "acteurs": 117
+      },
+      {
+       "AN_DEPOT": "2022",
+       "DEST_SURF_MAX": "entrepôt",
+       "permis": 35,
+       "surface_m2": 105880,
+       "acteurs": 33
+      },
+      {
+       "AN_DEPOT": "2021",
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "permis": 106,
+       "surface_m2": 102937,
+       "acteurs": 89
+      },
+      {
+       "AN_DEPOT": "2018",
+       "DEST_SURF_MAX": "bureaux",
+       "permis": 61,
+       "surface_m2": 102916,
+       "acteurs": 56
+      },
+      {
+       "AN_DEPOT": "2020",
+       "DEST_SURF_MAX": "bureaux",
+       "permis": 38,
+       "surface_m2": 101588,
+       "acteurs": 36
+      },
+      {
+       "AN_DEPOT": "2024",
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "permis": 132,
+       "surface_m2": 97098,
+       "acteurs": 98
+      },
+      {
+       "AN_DEPOT": "2022",
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "permis": 139,
+       "surface_m2": 95493,
+       "acteurs": 107
+      },
+      {
+       "AN_DEPOT": "2019",
+       "DEST_SURF_MAX": "commerce",
+       "permis": 71,
+       "surface_m2": 95091,
+       "acteurs": 66
+      },
+      {
+       "AN_DEPOT": "2018",
+       "DEST_SURF_MAX": "commerce",
+       "permis": 79,
+       "surface_m2": 79250,
+       "acteurs": 75
+      },
+      {
+       "AN_DEPOT": "2022",
+       "DEST_SURF_MAX": "commerce",
+       "permis": 99,
+       "surface_m2": 77159,
+       "acteurs": 89
+      },
+      {
+       "AN_DEPOT": "2021",
+       "DEST_SURF_MAX": "industrie",
+       "permis": 30,
+       "surface_m2": 73779,
+       "acteurs": 26
+      },
+      {
+       "AN_DEPOT": "2019",
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "permis": 112,
+       "surface_m2": 71555,
+       "acteurs": 95
+      },
+      {
+       "AN_DEPOT": "2023",
+       "DEST_SURF_MAX": "bureaux",
+       "permis": 45,
+       "surface_m2": 67612,
+       "acteurs": 42
+      },
+      {
+       "AN_DEPOT": "2020",
+       "DEST_SURF_MAX": "industrie",
+       "permis": 31,
+       "surface_m2": 63856,
+       "acteurs": 31
+      },
+      {
+       "AN_DEPOT": "2020",
+       "DEST_SURF_MAX": "commerce",
+       "permis": 65,
+       "surface_m2": 60705,
+       "acteurs": 64
+      },
+      {
+       "AN_DEPOT": "2021",
+       "DEST_SURF_MAX": "commerce",
+       "permis": 92,
+       "surface_m2": 59829,
+       "acteurs": 86
+      },
+      {
+       "AN_DEPOT": "2018",
+       "DEST_SURF_MAX": "entrepôt",
+       "permis": 29,
+       "surface_m2": 59161,
+       "acteurs": 28
+      },
+      {
+       "AN_DEPOT": "2023",
+       "DEST_SURF_MAX": "industrie",
+       "permis": 27,
+       "surface_m2": 52498,
+       "acteurs": 24
+      },
+      {
+       "AN_DEPOT": "2022",
+       "DEST_SURF_MAX": "industrie",
+       "permis": 34,
+       "surface_m2": 52176,
+       "acteurs": 28
+      },
+      {
+       "AN_DEPOT": "2023",
+       "DEST_SURF_MAX": "entrepôt",
+       "permis": 21,
+       "surface_m2": 51198,
+       "acteurs": 21
+      },
+      {
+       "AN_DEPOT": "2023",
+       "DEST_SURF_MAX": "commerce",
+       "permis": 60,
+       "surface_m2": 47285,
+       "acteurs": 58
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 9,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "AN_DEPOT",
+      "famille"
+     ],
+     "mesure": "surface_m2",
+     "filtres": {
+      "AN_DEPOT_min": 2018,
+      "AN_DEPOT_max": 2024
+     },
+     "top": 60
+    },
+    "sortie": {
+     "filtres": {
+      "AN_DEPOT_min": 2018,
+      "AN_DEPOT_max": 2024
+     },
+     "nb_permis_filtres": 2312,
+     "nb_groupes": 55,
+     "resultats": [
+      {
+       "AN_DEPOT": "2022",
+       "famille": "fonciere_investisseur",
+       "permis": 90,
+       "surface_m2": 230057,
+       "acteurs": 83
+      },
+      {
+       "AN_DEPOT": "2018",
+       "famille": "fonciere_investisseur",
+       "permis": 91,
+       "surface_m2": 199575,
+       "acteurs": 86
+      },
+      {
+       "AN_DEPOT": "2020",
+       "famille": "entreprise_autre",
+       "permis": 70,
+       "surface_m2": 177716,
+       "acteurs": 63
+      },
+      {
+       "AN_DEPOT": "2019",
+       "famille": "fonciere_investisseur",
+       "permis": 97,
+       "surface_m2": 157622,
+       "acteurs": 89
+      },
+      {
+       "AN_DEPOT": "2022",
+       "famille": "promoteur",
+       "permis": 39,
+       "surface_m2": 139272,
+       "acteurs": 35
+      },
+      {
+       "AN_DEPOT": "2020",
+       "famille": "fonciere_investisseur",
+       "permis": 86,
+       "surface_m2": 110219,
+       "acteurs": 85
+      },
+      {
+       "AN_DEPOT": "2023",
+       "famille": "fonciere_investisseur",
+       "permis": 77,
+       "surface_m2": 106884,
+       "acteurs": 74
+      },
+      {
+       "AN_DEPOT": "2020",
+       "famille": "promoteur",
+       "permis": 28,
+       "surface_m2": 104738,
+       "acteurs": 27
+      },
+      {
+       "AN_DEPOT": "2021",
+       "famille": "fonciere_investisseur",
+       "permis": 86,
+       "surface_m2": 96886,
+       "acteurs": 79
+      },
+      {
+       "AN_DEPOT": "2021",
+       "famille": "promoteur",
+       "permis": 52,
+       "surface_m2": 87422,
+       "acteurs": 48
+      },
+      {
+       "AN_DEPOT": "2018",
+       "famille": "promoteur",
+       "permis": 26,
+       "surface_m2": 86862,
+       "acteurs": 24
+      },
+      {
+       "AN_DEPOT": "2021",
+       "famille": "collectivite_public",
+       "permis": 84,
+       "surface_m2": 81715,
+       "acteurs": 64
+      },
+      {
+       "AN_DEPOT": "2024",
+       "famille": "collectivite_public",
+       "permis": 89,
+       "surface_m2": 81294,
+       "acteurs": 63
+      },
+      {
+       "AN_DEPOT": "2023",
+       "famille": "promoteur",
+       "permis": 27,
+       "surface_m2": 76903,
+       "acteurs": 23
+      },
+      {
+       "AN_DEPOT": "2022",
+       "famille": "entreprise_autre",
+       "permis": 84,
+       "surface_m2": 75423,
+       "acteurs": 70
+      },
+      {
+       "AN_DEPOT": "2019",
+       "famille": "promoteur",
+       "permis": 23,
+       "surface_m2": 73560,
+       "acteurs": 21
+      },
+      {
+       "AN_DEPOT": "2018",
+       "famille": "entreprise_autre",
+       "permis": 82,
+       "surface_m2": 71983,
+       "acteurs": 71
+      },
+      {
+       "AN_DEPOT": "2023",
+       "famille": "collectivite_public",
+       "permis": 98,
+       "surface_m2": 71141,
+       "acteurs": 70
+      },
+      {
+       "AN_DEPOT": "2023",
+       "famille": "entreprise_autre",
+       "permis": 81,
+       "surface_m2": 70789,
+       "acteurs": 71
+      },
+      {
+       "AN_DEPOT": "2018",
+       "famille": "collectivite_public",
+       "permis": 111,
+       "surface_m2": 69318,
+       "acteurs": 79
+      },
+      {
+       "AN_DEPOT": "2024",
+       "famille": "fonciere_investisseur",
+       "permis": 85,
+       "surface_m2": 67024,
+       "acteurs": 82
+      },
+      {
+       "AN_DEPOT": "2019",
+       "famille": "entreprise_autre",
+       "permis": 65,
+       "surface_m2": 61660,
+       "acteurs": 59
+      },
+      {
+       "AN_DEPOT": "2019",
+       "famille": "collectivite_public",
+       "permis": 97,
+       "surface_m2": 56289,
+       "acteurs": 73
+      },
+      {
+       "AN_DEPOT": "2022",
+       "famille": "collectivite_public",
+       "permis": 96,
+       "surface_m2": 53851,
+       "acteurs": 65
+      },
+      {
+       "AN_DEPOT": "2021",
+       "famille": "entreprise_autre",
+       "permis": 74,
+       "surface_m2": 47137,
+       "acteurs": 67
+      }
+     ]
+    }
+   }
+  ]
+ }
+]

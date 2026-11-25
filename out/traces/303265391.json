@@ -1,0 +1,111 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "303265391"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "303265391"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "303265391"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "303265391"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "BEUVELET GESTION INVESTISSEMENT",
+     "nb_permis_PC": 2,
+     "annees_depot": [
+      "2019",
+      "2022"
+     ],
+     "nb_communes": 2,
+     "logements_crees_total": 35,
+     "surface_locaux_non_residentiels_creee_m2": 0,
+     "nb_permis_collectif": 1,
+     "nb_permis_individuel": 1,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 0
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "303265391",
+      "nom": "BEUVELET GESTION INVESTISSEMENT (BGI)",
+      "nature_juridique": "5499",
+      "naf_actuel": "64.20Z",
+      "etat": "A",
+      "date_creation": "1975-01-01",
+      "categorie": "PME",
+      "effectif": "02",
+      "nb_etablissements": 5,
+      "nb_etablissements_ouverts": 2,
+      "siege_actuel": {
+       "siret": "30326539100050",
+       "naf": "64.20Z",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "30326539100050",
+       "naf_dans_permis": "64.20Z",
+       "nb_permis": 2,
+       "annees_depot": [
+        "2019",
+        "2022"
+       ],
+       "etat_actuel": "ouvert",
+       "date_creation": "2003-03-01",
+       "date_fermeture": null
+      }
+     ],
+     "alertes": [],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/303265391"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "64.20Z",
+      "libelle": "Activités des sociétés holding"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5499",
+     "libelle": "Société à responsabilité limitée (sans autre indication)"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"non_determine\",\"confiance\":\"faible\",\"indices\":[\"permis_du_demandeur : 2 permis de construire (2019, 2022) pour 35 logements au total (1 collectif, 1 individuel), 0 logement locatif social déclaré\",\"fiche_entreprise : société active (SARL, CJ 5499), NAF actuel 64.20Z (activités des sociétés holding), 2 employés, 5 établissements dont 2 ouverts\",\"libelle_naf : 64.20Z = Activités des sociétés holding\",\"libelle_cj : 5499 = Société à responsabilité limitée (sans autre indication)\",\"dénomination : BEUVELET GESTION INVESTISSEMENT (BGI) suggère une activité de gestion d'investissements\"],\"limites\":\"L'activité de holding (NAF 64.20Z) ne permet pas de distinguer si la structure est un support juridique de promotion (famille promoteur) ou une foncière détenant du patrimoine (famille fonciere_investisseur). Les permis montrent une production de logements privés (0 logement social), mais le modèle économique (vente ou location) n'est pas connu. Aucune information sur la destination des opérations (vente à terme, location, portage pour tiers). La catégorie juridique (SARL) est compatible avec plusieurs familles.\"}"
+   }
+  ]
+ }
+]

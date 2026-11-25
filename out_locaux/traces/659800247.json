@@ -1,0 +1,111 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "659800247"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "659800247"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "659800247"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "659800247"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "SCHUCO INTERNATIONAL",
+     "nb_permis_PC": 2,
+     "annees_depot": [
+      "2019",
+      "2024"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 0,
+     "surface_locaux_non_residentiels_creee_m2": 3915,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 1
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "659800247",
+      "nom": "SCHUCO INTERNATIONAL",
+      "nature_juridique": "5306",
+      "naf_actuel": "46.73A",
+      "etat": "A",
+      "date_creation": "1965-01-01",
+      "categorie": "ETI",
+      "effectif": "32",
+      "nb_etablissements": 6,
+      "nb_etablissements_ouverts": 4,
+      "siege_actuel": {
+       "siret": "65980024700028",
+       "naf": "46.72Z",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "65980024700028",
+       "naf_dans_permis": "46.73A",
+       "nb_permis": 2,
+       "annees_depot": [
+        "2019",
+        "2024"
+       ],
+       "etat_actuel": "ouvert",
+       "date_creation": "1987-06-26",
+       "date_fermeture": null
+      }
+     ],
+     "alertes": [],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/659800247"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "46.73A",
+      "libelle": "Commerce de gros (commerce interentreprises) de bois et de matériaux de construction"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5306",
+     "libelle": "Société en commandite simple"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"entreprise_autre\",\"confiance\":\"haute\",\"indices\":[\"permis_du_demandeur : 2 permis de construire (2019, 2024) pour 3 915 m² de surface non résidentielle, 0 logement créé, 0 logement social déclaré\",\"fiche_entreprise : entreprise active (ETI, 32 salariés), NAF actuel 46.73A « Commerce de gros (commerce interentreprises) de bois et de matériaux de construction », forme juridique 5306 (Société en commandite simple)\",\"libelle_naf : 46.73A confirme l'activité de négoce de matériaux de construction\",\"libelle_cj : 5306 = Société en commandite simple, structure commerciale privée\",\"permis_du_demandeur + fiche_entreprise : l'établissement porteur des permis (SIRET 65980024700028) est le siège actuel, ouvert, NAF 46.72Z (commerce de gros de matériaux de construction), cohérent avec l'activité de l'entreprise\"],\"limites\":\"Aucune : l'activité de négoce de matériaux de construction et la nature des permis (locaux non résidentiels, pas de logement) orientent sans ambiguïté vers une entreprise construisant pour son exploitation propre (entrepôts, bureaux, usine), hors des familles cibles (bailleur, promoteur, foncière, association, exploitant santé/social, collectivité, copropriété).\"}"
+   }
+  ]
+ }
+]

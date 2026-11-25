@@ -1,0 +1,128 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "450695804"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "450695804"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "450695804"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "450695804"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "ENTREPRENDRE POUR HUMANISER LA DEPENDANC",
+     "nb_permis_PC": 1,
+     "annees_depot": [
+      "2016"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 0,
+     "surface_locaux_non_residentiels_creee_m2": 4549,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 0
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "450695804",
+      "nom": "ENTREPRENDRE POUR HUMANISER LA DEPENDANC",
+      "nature_juridique": "5308",
+      "naf_actuel": "70.22Z",
+      "etat": "A",
+      "date_creation": "2003-11-01",
+      "categorie": "PME",
+      "effectif": "12",
+      "nb_etablissements": 17,
+      "nb_etablissements_ouverts": 2,
+      "siege_actuel": {
+       "siret": "45069580400036",
+       "naf": "70.22Z",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "45069580400036",
+       "naf_dans_permis": "70.22Z",
+       "nb_permis": 1,
+       "annees_depot": [
+        "2016"
+       ],
+       "etat_actuel": "ouvert",
+       "date_creation": "2014-06-23",
+       "date_fermeture": null
+      }
+     ],
+     "alertes": [],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/450695804"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "70.22Z",
+      "libelle": "Conseil pour les affaires et autres conseils de gestion"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5560",
+     "libelle": "Autre SA coopérative à conseil d'administration"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "libelle_cj",
+    "args": "{\"code\":\"5308\"}"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5308",
+     "libelle": "Société en commandite par actions"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 1,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"entreprise_autre\",\"confiance\":\"moyenne\",\"indices\":[\"permis_du_demandeur : 1 PC en 2016, 4 549 m² de surface non résidentielle créée, 0 logement, 0 logement social\",\"fiche_entreprise : NAF actuel 70.22Z « Conseil pour les affaires et autres conseils de gestion » (activité de conseil), nature juridique 5308 « Société en commandite par actions » (forme commerciale), entreprise active, PME 12 salariés\",\"libelle_naf (70.22Z) : confirme l'activité de conseil en gestion, pas de construction, d'exploitation médico-sociale ni de portage immobilier\",\"libelle_cj (5308) : forme juridique commerciale (SCA), non associative, non coopérative HLM, non publique\",\"dénomination : « ENTREPRENDRE POUR HUMANISER LA DEPENDANC » évoque une mission sociale (dépendance), mais la structure et l'activité réelle sont celles d'un cabinet de conseil commercial\"],\"limites\":\"Le permis porte sur de la surface non résidentielle (4 549 m²) qui pourrait correspondre à un équipement médico-social, mais le demandeur est un cabinet de conseil (NAF 70.22Z) sous forme de SCA, pas un exploitant direct. Aucune preuve d'appartenance à l'ESS (association, fondation, mutuelle) ni de statut de bailleur social, promoteur ou foncière. La qualification « entreprise_autre » reste la plus adaptée faute de correspondance avec les familles spécialisées.\"}"
+   }
+  ]
+ }
+]

@@ -1,0 +1,116 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "943384669"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "943384669"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "943384669"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "943384669"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "NES HOLDING",
+     "nb_permis_PC": 2,
+     "annees_depot": [
+      "2026"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 0,
+     "surface_locaux_non_residentiels_creee_m2": 5245,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 1
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "943384669",
+      "nom": "NES HOLDING",
+      "nature_juridique": "5710",
+      "naf_actuel": "82.11Z",
+      "etat": "A",
+      "date_creation": "2025-04-07",
+      "categorie": null,
+      "effectif": "NN",
+      "nb_etablissements": 2,
+      "nb_etablissements_ouverts": 1,
+      "siege_actuel": {
+       "siret": "94338466900025",
+       "naf": "82.11Z",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "94338466900017",
+       "naf_dans_permis": "66.30Z",
+       "nb_permis": 2,
+       "annees_depot": [
+        "2026"
+       ],
+       "etat_actuel": "fermé",
+       "date_creation": "2025-04-07",
+       "date_fermeture": "2026-09-23"
+      }
+     ],
+     "alertes": [
+      "SIRET 94338466900017 (permis 2026) fermé le 2026-09-23 : le NAF 66.30Z du permis vient d'un établissement fermé",
+      "NAF du permis ['66.30Z'] différent du NAF actuel de l'entreprise 82.11Z"
+     ],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/943384669"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "66.30Z",
+      "libelle": "Gestion de fonds"
+     },
+     {
+      "code": "82.11Z",
+      "libelle": "Services administratifs combinés de bureau"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5710",
+     "libelle": "SAS, société par actions simplifiée"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"non_determine\",\"confiance\":\"faible\",\"indices\":[\"permis_du_demandeur : 2 permis en 2026, 0 logement, 5 245 m² de surface non résidentielle, 0 logement social déclaré\",\"fiche_entreprise : entreprise active (créée 2025-04-07), SAS (CJ 5710), NAF actuel 82.11Z « Services administratifs combinés de bureau », 1 établissement ouvert (siège), 1 établissement fermé\",\"fiche_entreprise : l'établissement ayant déposé les permis (SIRET 94338466900017, NAF 66.30Z « Gestion de fonds ») est fermé depuis le 2026-09-23\",\"libelle_naf : 66.30Z = Gestion de fonds (indice historique, établissement fermé) ; 82.11Z = Services administratifs combinés de bureau (activité actuelle)\",\"libelle_cj : 5710 = SAS, société par actions simplifiée\",\"dénomination : « NES HOLDING » suggère une société holding\"],\"limites\":\"L'activité actuelle de l'entreprise (82.11Z, services administratifs) ne correspond à aucune famille immobilière précise. Le NAF 66.30Z (gestion de fonds) qui apparaît dans les permis provient d'un établissement fermé depuis septembre 2026, ce qui en fait un indice historique faible. Aucun élément ne confirme une activité de bailleur social, promoteur, foncière, association ESS, exploitant santé/social, collectivité ou copropriété. La surface non résidentielle construite (5 245 m²) pourrait indiquer un projet immobilier d'entreprise, mais la nature du maître d'ouvrage reste indéterminée (holding de gestion, véhicule d'investissement, entreprise utilisatrice ?). L'entreprise est très récente (avril 2025) et son unique établissement ouvert exerce une activité de support administratif.\"}"
+   }
+  ]
+ }
+]

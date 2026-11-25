@@ -1,0 +1,189 @@
+﻿## Variables_Locaux
+Nom de la variable | Description de la variable | Nouveau mai 2022? | Modalités | Format | Observations | Origine
+REG_CODE | Code de la région du lieu des travaux |  | Nomenclature du Code Officiel Géographique (COG Insee) | Alphanumérique, 2 caractères |  | Numéro d'enregistrement de la DAU
+DEP_CODE | Code du département du lieu des travaux |  |  | Alphanumérique, 2 caractères |  | Numéro d'enregistrement de la DAU
+COMM | Code de la commune du lieu des travaux |  | Nomenclature du Code Officiel Géographique (COG Insee) | Alphanumérique, 5 caractères | Le code vient directement du numéro d'enregistrement de la DAU, donc dépend du code de la commune au moment où la DAU a été déposée ; il n'est pas recodifié dans un millésime particulier du COG | Numéro d'enregistrement de la DAU
+TYPE_DAU | Type de DAU -- demande d'autorisation d'urbanisme (PC ou DP généralement, rarement PA) |  | PC (Permis de construire)
+DP (Déclaration Préalable) | Alphanumérique, 2 caractères |  | Numéro d'enregistrement de la DAU
+NUM_DAU | Numéro d'enregistrement de la DAU |  |  | Alphanumérique, 13 caractères | Numéro sur 13 caractères : les 6 premiers caractères correspondent au code commune, les 2 suivants à l'année de dépôt de la DAU, les 5 derniers à un numéro d'ordre | Numéro d'enregistrement de la DAU
+ETAT_DAU | Etat d'avancement du projet |  | 2 = Autorisé
+4 = annulé
+5 = Commencé
+6 = terminé | numérique, 1 chiffre | Toutes les DAU du fichier ont été autorisées ; les modalités 4 à 6 concernent des DAU pour lesquelles est connu l'état postérieur d'avancement du projet . | Décision / suivi des travaux
+DATE_REELLE_AUTORISATION | Date réelle d'autorisation (PC) ou de non-opposition (DP) initiale |  |  | Date, format AAAA-MM-JJ | Date de décision relative à la demande initiale, sans prise en compte d'éventuels modificatifs. | Décision
+DATE_REELLE_DOC | Date réelle d'ouverture de chantier |  |  | Date, format AAAA-MM-JJ |  | Déclaration officielle (DOC) ou information obtenue par enquête
+DATE_REELLE_DAACT | Date réelle d'achèvement des travaux |  |  | Date, format AAAA-MM-JJ |  | Déclaration officielle (DAACT) ou information obtenue par enquête
+AN_DEPOT | Année de dépôt de la DAU | Introduit en mai 2022 |  | numérique, 4 chiffres | 4 caractères issus des 2 numéros d'enregistrement de la DAU | Numéro d'enregistrement de la DAU
+DR_DEPOT | Date réelle de dépôt de la DAU | Introduit en avril 2026 |  | Date, format AAAA-MM-JJ |  | 
+DPC_AUT | Date (mois) de prise en compte (DPC) de l'autorisation initiale |  |  | Date, format AAAAMM | Une autorisation délivrée le 6 décembre 2020 enregistrée dans Sitadel en mars 2021 (du fait d'un retard de collecte) a pour date de prise en compte "202102" et pour date réelle "2020-12-06" ; elle est diffusée fin mars 2021. | Gestion de la collecte
+DPC_DOC | Date (mois) de prise en compte (DPC) de l'ouverture du chantier |  |  | Date, format AAAAMM | Une ouverture de chantier ayant eu lieu le 6 décembre 2020 enregistrée dans Sitadel en mars 2021 (du fait d'un retard de collecte) a pour date de prise en compte "202102" et pour date réelle "2020-12-06" ; elle est diffusée fin mars 2021. | Gestion de la collecte
+DPC_DERN | Date (mois) (DPC) de prise en compte du dernier événement reçu |  |  | Date, format AAAAMM | Date de prise en compte du dernier événement reçu dans le cycle de vie de l'autorisation d'urbanisme (autorisation ou mise en chantier ou achèvement des travaux). | Gestion de la collecte
+APE_DEM | Code d'activité principale de l'établissement d'un demandeur avéré en tant que personne morale |  | Nomenclature NAF Rév2 | Alphanumérique, 6 caractères | Indisponible pour les personnes physiques, les personnes morales assimilées à des personnes physiques, et les demandeurs non retrouvés dans Sirène | Sirène
+CJ_DEM | Catégorie juridique d'un demandeur avéré en tant que personne morale |  | Nomenclature du répertoire Sirène | numérique, 4 chiffres | Indisponible pour les personnes physiques, les personnes morales assimilées à des personnes physiques, et les demandeurs non retrouvés dans Sirène | Sirène
+DENOM_DEM | Dénomination d'un demandeur avéré en tant que personne morale |  |  | Alphanumérique, 120 caractères | Indisponible pour les personnes physiques, les personnes morales assimilées à des personnes physiques, et les demandeurs non retrouvés dans Sirène | Sirène
+SIREN_DEM | Numéro SIREN d'un demandeur avéré en tant que personne morale |  |  | Alphanumérique, 9 caractères | Indisponible pour les personnes physiques, les personnes morales assimilées à des personnes physiques, et les demandeurs non retrouvés dans Sirène | Formulaire ou recherche à partir de la dénomination
+SIRET_DEM | Numéro SIRET d'un demandeur avéré en tant que personne morale |  |  | Alphanumérique, 14 caractères | Indisponible pour les personnes physiques, les personnes morales assimilées à des personnes physiques, et les demandeurs non retrouvés dans Sirène | Formulaire ou recherche à partir de la dénomination
+CODPOST_DEM | Code postal du demandeur |  |  | Alphanumérique, 5 caractères |  | Formulaire
+LOCALITE_DEM | Localité du demandeur |  |  | Alphanumérique, 32 caractères |  | Formulaire
+REC_ARCHI | Indicateur de recours à un architecte |  | 1 si oui, 0 si non | Booléen, 1 caractère | Insuffisamment renseigné | Formulaire
+ADR_NUM_TER | Numéro de voie du terrain |  |  | Alphanumérique, 5 caractères |  | Formulaire
+ADR_LIBVOIE_TER | Libellé de la voie du terrain |  |  | Alphanumérique, 26 caractères |  | Formulaire
+ADR_LIEUDIT_TER | Lieu-dit du terrain |  |  | Alphanumérique, 38 caractères |  | Formulaire
+ADR_LOCALITE_TER | Localité du terrain |  |  | Alphanumérique, 32 caractères |  | Formulaire
+ADR_CODPOST_TER | Code postal du terrain |  |  | Alphanumérique, 5 caractères |  | Formulaire
+SEC_CADASTRE1 | Section cadastrale 1 |  |  | Alphanumérique, 2 caractères | Les préfixes sont en général absents de Sitadel | Formulaire
+NUM_CADASTRE1 | Numéro parcelle cadastrale 1 |  |  | Alphanumérique, 4 caractères |  | Formulaire
+SEC_CADASTRE2 | Section cadastrale 2 |  |  | Alphanumérique, 2 caractères |  | Formulaire
+NUM_CADASTRE2 | Numéro parcelle cadastrale 2 |  |  | Alphanumérique, 4 caractères |  | Formulaire
+SEC_CADASTRE3 | Section cadastrale 3 |  |  | Alphanumérique, 2 caractères |  | Formulaire
+NUM_CADASTRE3 | Numéro parcelle cadastrale 3 |  |  | Alphanumérique, 4 caractères |  | Formulaire
+SEC_CADASTRE4 | Section cadastrale 4 | Introduit en octobre 2026 |  | Alphanumérique, 2 caractères |  | Formulaire
+NUM_CADASTRE4 | Numéro parcelle cadastrale 4 | Introduit en octobre 2026 |  | Alphanumérique, 4 caractères |  | Formulaire
+SEC_CADASTRE5 | Section cadastrale 5 | Introduit en octobre 2026 |  | Alphanumérique, 2 caractères |  | Formulaire
+NUM_CADASTRE5 | Numéro parcelle cadastrale 5 | Introduit en octobre 2026 |  | Alphanumérique, 4 caractères |  | Formulaire
+SEC_CADASTRE6 | Section cadastrale 6 | Introduit en octobre 2026 |  | Alphanumérique, 2 caractères |  | Formulaire
+NUM_CADASTRE6 | Numéro parcelle cadastrale 6 | Introduit en octobre 2026 |  | Alphanumérique, 4 caractères |  | Formulaire
+SEC_CADASTRE7 | Section cadastrale 7 | Introduit en octobre 2026 |  | Alphanumérique, 2 caractères |  | Formulaire
+NUM_CADASTRE7 | Numéro parcelle cadastrale 7 | Introduit en octobre 2026 |  | Alphanumérique, 4 caractères |  | Formulaire
+SEC_CADASTRE8 | Section cadastrale 8 | Introduit en octobre 2026 |  | Alphanumérique, 2 caractères |  | Formulaire
+NUM_CADASTRE8 | Numéro parcelle cadastrale 8 | Introduit en octobre 2026 |  | Alphanumérique, 4 caractères |  | Formulaire
+SEC_CADASTRE9 | Section cadastrale 9 | Introduit en octobre 2026 |  | Alphanumérique, 2 caractères |  | Formulaire
+NUM_CADASTRE9 | Numéro parcelle cadastrale 9 | Introduit en octobre 2026 |  | Alphanumérique, 4 caractères |  | Formulaire
+SEC_CADASTRE10 | Section cadastrale 10 | Introduit en octobre 2026 |  | Alphanumérique, 2 caractères |  | Formulaire
+NUM_CADASTRE10 | Numéro parcelle cadastrale 10 | Introduit en octobre 2026 |  | Alphanumérique, 4 caractères |  | Formulaire
+SEC_CADASTRE11 | Section cadastrale 11 | Introduit en octobre 2026 |  | Alphanumérique, 2 caractères |  | Formulaire
+NUM_CADASTRE11 | Numéro parcelle cadastrale 11 | Introduit en octobre 2026 |  | Alphanumérique, 4 caractères |  | Formulaire
+SEC_CADASTRE12 | Section cadastrale 12 | Introduit en octobre 2026 |  | Alphanumérique, 2 caractères |  | Formulaire
+NUM_CADASTRE12 | Numéro parcelle cadastrale 12 | Introduit en octobre 2026 |  | Alphanumérique, 4 caractères |  | Formulaire
+SEC_CADASTRE13 | Section cadastrale 13 | Introduit en octobre 2026 |  | Alphanumérique, 2 caractères |  | Formulaire
+NUM_CADASTRE13 | Numéro parcelle cadastrale 13 | Introduit en octobre 2026 |  | Alphanumérique, 4 caractères |  | Formulaire
+SEC_CADASTRE14 | Section cadastrale 14 | Introduit en octobre 2026 |  | Alphanumérique, 2 caractères |  | Formulaire
+NUM_CADASTRE14 | Numéro parcelle cadastrale 14 | Introduit en octobre 2026 |  | Alphanumérique, 4 caractères |  | Formulaire
+SEC_CADASTRE15 | Section cadastrale 15 | Introduit en octobre 2026 |  | Alphanumérique, 2 caractères |  | Formulaire
+NUM_CADASTRE15 | Numéro parcelle cadastrale 15 | Introduit en octobre 2026 |  | Alphanumérique, 4 caractères |  | Formulaire
+SEC_CADASTRE16 | Section cadastrale 16 | Introduit en octobre 2026 |  | Alphanumérique, 2 caractères |  | Formulaire
+NUM_CADASTRE16 | Numéro parcelle cadastrale 16 | Introduit en octobre 2026 |  | Alphanumérique, 4 caractères |  | Formulaire
+SEC_CADASTRE17 | Section cadastrale 17 | Introduit en octobre 2026 |  | Alphanumérique, 2 caractères |  | Formulaire
+NUM_CADASTRE17 | Numéro parcelle cadastrale 17 | Introduit en octobre 2026 |  | Alphanumérique, 4 caractères |  | Formulaire
+SEC_CADASTRE18 | Section cadastrale 18 | Introduit en octobre 2026 |  | Alphanumérique, 2 caractères |  | Formulaire
+NUM_CADASTRE18 | Numéro parcelle cadastrale 18 | Introduit en octobre 2026 |  | Alphanumérique, 4 caractères |  | Formulaire
+SEC_CADASTRE19 | Section cadastrale 19 | Introduit en octobre 2026 |  | Alphanumérique, 2 caractères |  | Formulaire
+NUM_CADASTRE19 | Numéro parcelle cadastrale 19 | Introduit en octobre 2026 |  | Alphanumérique, 4 caractères |  | Formulaire
+SEC_CADASTRE20 | Section cadastrale 20 | Introduit en octobre 2026 |  | Alphanumérique, 2 caractères |  | Formulaire
+NUM_CADASTRE20 | Numéro parcelle cadastrale 20 | Introduit en octobre 2026 |  | Alphanumérique, 4 caractères |  | Formulaire
+SEC_CADASTRE21 | Section cadastrale 21 | Introduit en octobre 2026 |  | Alphanumérique, 2 caractères |  | Formulaire
+NUM_CADASTRE21 | Numéro parcelle cadastrale 21 | Introduit en octobre 2026 |  | Alphanumérique, 4 caractères |  | Formulaire
+SEC_CADASTRE22 | Section cadastrale 22 | Introduit en octobre 2026 |  | Alphanumérique, 2 caractères |  | Formulaire
+NUM_CADASTRE22 | Numéro parcelle cadastrale 22 | Introduit en octobre 2026 |  | Alphanumérique, 4 caractères |  | Formulaire
+SEC_CADASTRE23 | Section cadastrale 23 | Introduit en octobre 2026 |  | Alphanumérique, 2 caractères |  | Formulaire
+NUM_CADASTRE23 | Numéro parcelle cadastrale 23 | Introduit en octobre 2026 |  | Alphanumérique, 4 caractères |  | Formulaire
+SEC_CADASTRE23 | Section cadastrale 23 | Introduit en octobre 2026 |  | Alphanumérique, 2 caractères |  | Formulaire
+NUM_CADASTRE23 | Numéro parcelle cadastrale 23 | Introduit en octobre 2026 |  | Alphanumérique, 4 caractères |  | Formulaire
+SEC_CADASTRE24 | Section cadastrale 24 | Introduit en octobre 2026 |  | Alphanumérique, 2 caractères |  | Formulaire
+NUM_CADASTRE24 | Numéro parcelle cadastrale 24 | Introduit en octobre 2026 |  | Alphanumérique, 4 caractères |  | Formulaire
+SEC_CADASTRE25 | Section cadastrale 25 | Introduit en octobre 2026 |  | Alphanumérique, 2 caractères |  | Formulaire
+NUM_CADASTRE25 | Numéro parcelle cadastrale 25 | Introduit en octobre 2026 |  | Alphanumérique, 4 caractères |  | Formulaire
+AGRIVOLTAIQUE | Projet portant sur une installation photovoltaïque | Introduit en octobre 2026 | 1 si oui, 0 si non, vide si non renseigné | Booléen, 1 caractère |  | Formulaire
+EMPRISE_SOL_AVANT | Emprise au sol avant travaux (en m2) | Introduit en octobre 2026 |  | Numérique, max. 8 chiffres |  | Formulaire
+EMPRISE_SOL_CREEE | Emprise au sol créée (en m2) | Introduit en octobre 2026 |  | Numérique, max. 8 chiffres |  | Formulaire
+EMPRISE_SOL_SUPPRIMEE | Emprise au sol supprimée (en m2) | Introduit en octobre 2026 |  | Numérique, max. 8 chiffres |  | Formulaire
+SUPERFICIE_TERRAIN | Superficie du terrain (en  m2) |  |  | Numérique, max. 8 chiffres |  | Formulaire
+ZONE_OP | Code "zone opératoire" |  | 1 = Lotissement
+2 = ZAC
+3 = AFU
+4 = Hors zones ou ne sais pas | numérique, 1 chiffre | Très insuffisamment renseigné | Formulaire
+NATURE_PROJET_DECLAREE | Nature du projet déclarée par le demandeur |  | 1 = nouvelle construction
+2 = travaux sur construction existante | numérique, 1 chiffre |  | Formulaire
+NATURE_PROJET_COMPLETEE | Nature de projet détaillée | Introduit en mai 2022 | 1 = nouvelle construction
+2 = transformation sans extension ni diminution de surface (inclut les changements de destination, réhabilitations, scissions/regroupements de logements ...)
+3 = transformation avec extension de surface
+4 = transformation avec diminution de surface
+5 = extension de surface sans transformation
+6 = diminution de surface sans transformation | Numérique, 1 chiffre | A partir du tableau des surfaces de plancher et de la nature de projet déclarée : une petite partie des "nouvelles constructions" déclarées sont recodifiées en travaux sur existant | Codification par le SDES 
+DESTINATION_PRINCIPALE | Destination ou sous destination principale | Introduit en mai 2022 | 1 = habitation
+2 = hôtels
+3 = bureaux
+4 = commerce
+6 = industrie 
+7 = agriculture
+8 = entrepôt 
+9 = service public ou d'intérêt collectif | Numérique, 1 chiffre | Selon la première destination des surfaces créées (y compris pas changement de destination) | Codification par le SDES
+TYPE_TRANSFO_PRINCIPAL | Type principal de transformation | Introduit en mai 2022 | 1 = transformation de locaux en logements (changement de destination)
+2 = transformation de logements (réhabilitation, scission, regroupement ...)
+3 = transformation de logements en locaux non résidentiels (changement de destination)
+4 = transformation de locaux non résidentiels (changement de destination, réhabilitation, scission, regroupement ...) | Alphanumérique, 1 caractère | Selon que la surface transformée et la surface issue de la transformation sont majoritairement des surfaces de logements ou de locaux | Codification par le SDES 
+TYPE_PRINCIP_LOCAUX_TRANSFORMES | Type principal des locaux d'origine transformés | Introduit en mai 2022 | 1 = habitation
+2 = hôtels
+3 = bureaux
+4 = commerce
+6 = industrie 
+7 = agriculture
+8 = entrepôt 
+9 = service public ou d'intérêt collectif | Alphanumérique, 1 caractère | Selon la première destination d'origine des surfaces transformées | Codification par le SDES 
+I_EXTENSION | Indicateur d'extension |  | 1 si oui, 0 si non | Booléen, 1 caractère |  | Formulaire
+I_SURELEVATION | Indicateur de surélévation |  | 1 si oui, 0 si non | Booléen, 1 caractère |  | Formulaire
+I_NIVSUPP | Indicateur de création de niveau(x) supplémentaire(s) |  | 1 si oui, 0 si non | Booléen, 1 caractère |  | Formulaire
+NB_NIV_MAX | Nombre de niveaux du bâtiment le plus élevé |  |  | Numérique, max. 2 chiffres | Nombre de niveaux au-dessus du sol depuis le nouveau formulaire de 2020, très insuffisamment renseigné | Formulaire
+NB_CHAMBRES | Nombre de chambres (hôtels et autres hébergements, notamment sociaux) |  |  | Numérique, max. 3 chiffres | Cette variable compte aussi bien le nombre de chambre d'un local (un hôtel) que le nombre de chambres d'un hébergement d'habitation (un foyer) | Formulaire
+SURF_AGR_AVANT | Surface de plancher de la destination ' Exploitation agricole et forestière ' existante avant travaux |  |  | Numérique, max. 7 chiffres | Destination ' Exploitation agricole et forestière ' article R. 151-27 du code de l'urbanisme en vigueur au 1er janvier 2016 | Formulaire
+SURF_AGR_CREEE | Surface de plancher de la destination ' Exploitation agricole et forestière ' nouvelle construite |  |  | Numérique, max. 7 chiffres | Destination ' Exploitation agricole et forestière ' article R. 151-27 du code de l'urbanisme en vigueur au 1er janvier 2016 | Formulaire
+SURF_AGR_ISSUE_TRANSFO | Surface de plancher de la destination ' Exploitation agricole et forestière ' issue d'une transformation (changement de destination, réhabilitation, scission, regroupement …) |  |  | Numérique, max. 7 chiffres | Destination ' Exploitation agricole et forestière ' article R. 151-27 du code de l'urbanisme en vigueur au 1er janvier 2016 | Formulaire
+SURF_AGR_DEMOLIE | Surface de plancher de la destination ' Exploitation agricole et forestière ' démolie |  |  | Numérique, max. 7 chiffres | Destination ' Exploitation agricole et forestière ' article R. 151-27 du code de l'urbanisme en vigueur au 1er janvier 2016 | Formulaire
+SURF_AGR_TRANSFORMEE | Surface de plancher de la destination ' Exploitation agricole et forestière ' transformée (changement de destination, réhabilitation, scission, regroupement ...) |  |  | Numérique, max. 7 chiffres | Destination ' Exploitation agricole et forestière '  article R. 151-27 du code de l'urbanisme en vigueur au 1er janvier 2016 | Formulaire
+SURF_HAB_AVANT | Surface de plancher de la destination ' Habitation ' existante avant travaux |  |  | Numérique, max. 7 chiffres |  | Formulaire
+SURF_HAB_CREEE | Surface de plancher de la destination ' Habitation ' nouvelle construite |  |  | Numérique, max. 7 chiffres | Lorsque le projet crée des chambres (sans coin cuisine indépendant) et non des logements, on utilise plutôt la sous-destination "Hébergement" de la destination "Habitation" | Formulaire
+SURF_HAB_ISSUE_TRANSFO | Surface de plancher de la destination ' Habitation ' issue d'une transformation (changement de destination, réhabilitation, scission, regroupement …) |  |  | Numérique, max. 7 chiffres | Surface issue d'un changement de destination ou d'un mouvement interne (cas où les surfaces supprimée et créée sont identiques sur une même ligne, qui correspondent le plus souvent à des réhabilitations, scissions, regroupements …) | Formulaire
+SURF_HAB_DEMOLIE | Surface de plancher de la destination ' Habitation ' supprimée (démolie) |  |  | Numérique, max. 7 chiffres |  | Formulaire
+SURF_HAB_TRANSFORMEE | Surface de plancher de la destination ' Habitation ' transformée (changement de destination, réhabilitation, scission, regroupement ...) |  |  | Numérique, max. 7 chiffres | Surface changée de destination ou faisant l'objet d'un mouvement interne (cas où les surfaces supprimée et créée sont identiques sur une même ligne, qui correspondent le plus souvent à des réhabilitations, scissions, regroupements … | Formulaire
+SURF_COM_AVANT | Surface de plancher de la destination ' Commerce et activités de service ' existante avant travaux |  |  | Numérique, max. 7 chiffres | Destination ' Commerce et activités de service ' article R. 151-27 du code de l'urbanisme en vigueur au 1er janvier 2016 | Formulaire
+SURF_COM_CREEE | Surface de plancher de la destination '  Commerce et activités de service ' nouvelle construite |  |  | Numérique, max. 7 chiffres | Destination ' Commerce et activités de service ' article R. 151-27 du code de l'urbanisme en vigueur au 1er janvier 2016 | Formulaire
+SURF_COM_ISSUE_TRANSFO | Surface de plancher de la destination 'Commerce et activités de service ' issue d'une transformation (changement de destination, réhabilitation, scission, regroupement …) |  |  | Numérique, max. 7 chiffres | Destination ' Commerce et activités de service ' article R. 151-27 du code de l'urbanisme en vigueur au 1er janvier 2016 | Formulaire
+SURF_COM_DEMOLIE | Surface de plancher de la destination ' Commerce et activités de service ' démolie |  |  | Numérique, max. 7 chiffres | Destination ' Commerce et activités de service ' article R. 151-27 du code de l'urbanisme en vigueur au 1er janvier 2016 | Formulaire
+SURF_COM_TRANSFORMEE | Surface de plancher de la destination ' Commerce et activités de service ' transformée (changement de destination, réhabilitation, scission, regroupement ...) |  |  | Numérique, max. 7 chiffres | Destination ' Commerce et activités de service ' article R. 151-27 du code de l'urbanisme en vigueur au 1er janvier 2016 | Formulaire
+SURF_PUB_AVANT | Surface de plancher de la destination ' Equipements d'intérêt collectif et services publics ' existante avant travaux |  |  | Numérique, max. 7 chiffres | Destination ' Equipements d'intérêt collectif et services publics '  article R. 151-27 du code de l'urbanisme en vigueur au 1er janvier 2016 | Formulaire
+SURF_PUB_CREEE | Surface de plancher de la destination ' Equipements d'intérêt collectif et services publics ' nouvelle construite |  |  | Numérique, max. 7 chiffres | Destination ' Equipements d'intérêt collectif et services publics ' article R. 151-27 du code de l'urbanisme en vigueur au 1er janvier 2016 | Formulaire
+SURF_PUB_ISSUE_TRANSFO | Surface de plancher de la destination ' Equipements d'intérêt collectif et services publics ' issue d'une transformation (changement de destination, réhabilitation, scission, regroupement …) |  |  | Numérique, max. 7 chiffres | Destination ' Equipements d'intérêt collectif et services publics ' article R. 151-27 du code de l'urbanisme en vigueur au 1er janvier 2016 | Formulaire
+SURF_PUB_DEMOLIE | Surface de plancher de la destination ' Equipements d'intérêt collectif et services publics ' démolie |  |  | Numérique, max. 7 chiffres | Destination ' Equipements d'intérêt collectif et services publics ' article R. 151-27 du code de l'urbanisme en vigueur au 1er janvier 2016 | Formulaire
+SURF_PUB_TRANSFORMEE | Surface de plancher de la destination ' Equipements d'intérêt collectif et services publics ' transformée (changement de destination, réhabilitation, scission, regroupement ...) |  |  | Numérique, max. 7 chiffres | Destination ' Equipements d'intérêt collectif et services publics ' article R. 151-27 du code de l'urbanisme en vigueur au 1er janvier 2016 | Formulaire
+SURF_LOC_AVANT | Surface de plancher de locaux non résidentiels (i.e. autres que d'habitation) existante avant travaux |  |  | Numérique, max. 7 chiffres | Total des surfaces des destinations autres que d'habitation | Formulaire
+SURF_LOC_CREEE | Surface de plancher de locaux non résidentiels (i.e. autres que d'habitation) nouvelle construite |  |  | Numérique, max. 7 chiffres | Total des surfaces des destinations autres que d'habitation | Formulaire
+SURF_LOC_ISSUE_TRANSFO | Surface de plancher de locaux non résidentiels (i.e. autres que d'habitation) issue d'une transformation (changement de destination, réhabilitation, scission, regroupement …) |  |  | Numérique, max. 7 chiffres | Total des surfaces des destinations autres que d'habitation | Formulaire
+SURF_LOC_DEMOLIE | Surface de plancher de locaux non résidentiels (i.e. autres que d'habitation) démolie |  |  | Numérique, max. 7 chiffres | Total des surfaces des destinations autres que d'habitation | Formulaire
+SURF_LOC_TRANSFORMEE | Surface de plancher de locaux non résidentiels (i.e. autres que d'habitation) transformée (changement de destination, réhabilitation, scission, regroupement ...) |  |  | Numérique, max. 7 chiffres | Total des surfaces des destinations autres que d'habitation | Formulaire
+TYPE_SERVICE_PUBLIC | Type de service public ou d'intérêt collectif |  | 1 = Transport
+2 = Enseignement et recherche
+3 = Santé
+4 = Action sociale
+5 = Ouvrage spécial
+6 = Culture et loisir
+7 = Non rempli
+8 = Plusieurs types renseignés | Numérique, 1 chiffre | Information du cadre "Informations complémentaires" | Formulaire
+SURF_HEB_AVANT | Surface de plancher de la sous-destination ' Hôtels ' existante avant travaux |  |  | Numérique, max. 7 chiffres | Sous destination ' Hôtels ' article R. 151-28 du code de l'urbanisme en vigueur au 1er janvier 2016 | Formulaire
+SURF_HEB_CREEE | Surface de plancher de la sous-destination ' Hôtels ' nouvelle construite |  |  | Numérique, max. 7 chiffres | Sous destination ' Hôtels ' article R. 151-28 du code de l'urbanisme en vigueur au 1er janvier 2016 | Formulaire
+SURF_HEB_ISSUE_TRANSFO | Surface de plancher de la sous-destination ' Hôtels ' issue d'une transformation (changement de destination, réhabilitation, scission, regroupement …) |  |  | Numérique, max. 7 chiffres | Sous destination ' Hôtels ' article R. 151-28 du code de l'urbanisme en vigueur au 1er janvier 2016 | Formulaire
+SURF_HEB_DEMOLIE | Surface de plancher de la sous-destination ' Hôtels ' démolie |  |  | Numérique, max. 7 chiffres | Sous destination ' Hôtels ' article R. 151-28 du code de l'urbanisme en vigueur au 1er janvier 2016 | Formulaire
+SURF_HEB_TRANSFORMEE | Surface de plancher de la sous-destination ' Hôtels ' transformée (changement de destination, réhabilitation, scission, regroupement ...) |  |  | Numérique, max. 7 chiffres | Sous destination ' Hôtels '  article R. 151-28 du code de l'urbanisme en vigueur au 1er janvier 2016 | Formulaire
+SURF_BUR_AVANT | Surface de plancher de la sous-destination ' Bureau ' existante avant travaux |  |  | Numérique, max. 7 chiffres | Sous destination ' Bureau ' article R. 151-28 du code de l'urbanisme en vigueur au 1er janvier 2016 | 
+SURF_BUR_CREEE | Surface de plancher de la sous-destination ' Bureau ' nouvelle construite |  |  | Numérique, max. 7 chiffres | Sous destination ' Bureau ' article R. 151-28 du code de l'urbanisme en vigueur au 1er janvier 2016 | 
+SURF_BUR_ISSUE_TRANSFO | Surface de plancher de la sous-destination ' Bureau ' issue d'une transformation (changement de destination, réhabilitation, scission, regroupement …) |  |  | Numérique, max. 7 chiffres | Sous destination ' Bureau ' article R. 151-28 du code de l'urbanisme en vigueur au 1er janvier 2016 | 
+SURF_BUR_DEMOLIE | Surface de plancher de la sous-destination ' Bureau ' démolie |  |  | Numérique, max. 7 chiffres | Sous destination ' Bureau ' article R. 151-28 du code de l'urbanisme en vigueur au 1er janvier 2016 | 
+SURF_BUR_TRANSFORMEE | Surface de plancher de la sous-destination ' Bureau ' transformée (changement de destination, réhabilitation, scission, regroupement ...) |  |  | Numérique, max. 7 chiffres | Sous destination ' Bureau ' article R. 151-28 du code de l'urbanisme en vigueur au 1er janvier 2016 | 
+SURF_IND_AVANT | Surface de plancher de la sous-destination ' Industrie ' existante avant travaux |  |  | Numérique, max. 7 chiffres | Sous destination ' Industrie ' article R. 151-28 du code de l'urbanisme en vigueur au 1er janvier 2016 | Formulaire
+SURF_IND_CREEE | Surface de plancher de la sous-destination ' Industrie ' nouvelle construite |  |  | Numérique, max. 7 chiffres | Sous destination ' Industrie ' article R. 151-28 du code de l'urbanisme en vigueur au 1er janvier 2016 | Formulaire
+SURF_IND_ISSUE_TRANSFO | Surface de plancher de la sous-destination ' Industrie ' issue d'une transformation (changement de destination, réhabilitation, scission, regroupement …) |  |  | Numérique, max. 7 chiffres | Sous destination ' Industrie ' article R. 151-28 du code de l'urbanisme en vigueur au 1er janvier 2016 | Formulaire
+SURF_IND_DEMOLIE | Surface de plancher de la sous-destination ' Industrie ' démolie |  |  | Numérique, max. 7 chiffres | Sous destination ' Industrie ' article R. 151-28 du code de l'urbanisme en vigueur au 1er janvier 2016 | Formulaire
+SURF_IND_TRANSFORMEE | Surface de plancher de la sous-destination ' Industrie ' transformée (changement de destination, réhabilitation, scission, regroupement ...) |  |  | Numérique, max. 7 chiffres | Sous destination ' Industrie ' article R. 151-28 du code de l'urbanisme en vigueur au 1er janvier 2016 | Formulaire
+SURF_ENT_AVANT | Surface de plancher de la sous-destination ' Entrepôt ' existante avant travaux |  |  | Numérique, max. 7 chiffres | Sous destination  ' Entrepôt ' article R. 151-28 du code de l'urbanisme en vigueur au 1er janvier 2016 | Formulaire
+SURF_ENT_CREEE | Surface de plancher de la sous-destination ' Entrepôt ' nouvelle construite |  |  | Numérique, max. 7 chiffres | Sous destination ' Entrepôt ' article R. 151-28 du code de l'urbanisme en vigueur au 1er janvier 2016 | Formulaire
+SURF_ENT_ISSUE_TRANSFO | Surface de plancher de la sous-destination ' Entrepôt ' issue d'une transformation (changement de destination, réhabilitation, scission, regroupement …) |  |  | Numérique, max. 7 chiffres | Sous destination ' Entrepôt ' article R. 151-28 du code de l'urbanisme en vigueur au 1er janvier 2016 | Formulaire
+SURF_ENT_DEMOLIE | Surface de plancher de la sous-destination ' Entrepôt ' démolie |  |  | Numérique, max. 7 chiffres | Sous destination ' Entrepôt ' article R. 151-28 du code de l'urbanisme en vigueur au 1er janvier 2016 | Formulaire
+SURF_ENT_TRANSFORMEE | Surface de plancher de la sous-destination ' Entrepôt ' transformée (changement de destination, réhabilitation, scission, regroupement ...) |  |  | Numérique, max. 7 chiffres | Sous destination ' Entrepôt ' article R. 151-28 du code de l'urbanisme en vigueur au 1er janvier 2016 | Formulaire
+ |  |  |  |  |  | 
+ |  |  |  |  |  | 
+ |  |  |  |  |  | 
+ |  |  |  |  |  | 
+ |  |  |  |  |  | 
+ |  |  |  |  |  | 
+ |  |  |  |  |  | 
+ |  |  |  |  |  | 
+

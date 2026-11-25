@@ -1,0 +1,116 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "393430608"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "393430608"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "393430608"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "393430608"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "ARGAN",
+     "nb_permis_PC": 2,
+     "annees_depot": [
+      "2015"
+     ],
+     "nb_communes": 2,
+     "logements_crees_total": 0,
+     "surface_locaux_non_residentiels_creee_m2": 19244,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 0
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "393430608",
+      "nom": "ARGAN",
+      "nature_juridique": "5699",
+      "naf_actuel": "68.20B",
+      "etat": "A",
+      "date_creation": "1993-12-11",
+      "categorie": "ETI",
+      "effectif": "12",
+      "nb_etablissements": 4,
+      "nb_etablissements_ouverts": 1,
+      "siege_actuel": {
+       "siret": "39343060800041",
+       "naf": "68.20B",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "39343060800033",
+       "naf_dans_permis": "64.20Z",
+       "nb_permis": 2,
+       "annees_depot": [
+        "2015"
+       ],
+       "etat_actuel": "fermé",
+       "date_creation": "2008-09-11",
+       "date_fermeture": "2018-04-27"
+      }
+     ],
+     "alertes": [
+      "SIRET 39343060800033 (permis 2015) fermé le 2018-04-27 : le NAF 64.20Z du permis vient d'un établissement fermé",
+      "NAF du permis ['64.20Z'] différent du NAF actuel de l'entreprise 68.20B"
+     ],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/393430608"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "64.20Z",
+      "libelle": "Activités des sociétés holding"
+     },
+     {
+      "code": "68.20B",
+      "libelle": "Location de terrains et d'autres biens immobiliers"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5699",
+     "libelle": "SA à directoire (s.a.i.)"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"fonciere_investisseur\",\"confiance\":\"moyenne\",\"indices\":[\"fiche_entreprise : NAF actuel 68.20B « Location de terrains et d'autres biens immobiliers » (activité courante de foncière)\",\"libelle_naf : 68.20B correspond à la location de biens immobiliers, cœur de métier des foncières/investisseurs\",\"fiche_entreprise : nature juridique 5699 (SA à directoire), forme classique pour une foncière cotée ou non\",\"permis_du_demandeur : 2 permis en 2015 pour 19 244 m² de surfaces non résidentielles, 0 logement créé, 0 logement social → profil investisseur/locatif plutôt que promoteur ou bailleur social\",\"fiche_entreprise : entreprise catégorisée ETI (effectif 12), active depuis 1993, cohérent avec une structure patrimoniale\"],\"limites\":\"Aucune mention explicite du statut SIIC / foncière dans les données publiques disponibles ; le NAF du permis (64.20Z, holding) provenait d'un établissement fermé en 2018, mais le NAF actuel de l'entreprise (68.20B) est bien celui d'une activité de location immobilière.\"}"
+   }
+  ]
+ }
+]

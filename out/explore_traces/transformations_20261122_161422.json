@@ -1,0 +1,894 @@
+[
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "apercu",
+    "args": {},
+    "sortie": {
+     "perimetre": "PC des Yvelines (78) créant des logements, déposés par des personnes morales, extraction SDES/Sitadel",
+     "nb_permis": 3363,
+     "nb_demandeurs": 2048,
+     "annees_depot": {
+      "2011": 3,
+      "2012": 100,
+      "2013": 222,
+      "2014": 235,
+      "2015": 258,
+      "2016": 266,
+      "2017": 290,
+      "2018": 247,
+      "2019": 256,
+      "2020": 231,
+      "2021": 356,
+      "2022": 247,
+      "2023": 221,
+      "2024": 185,
+      "2025": 168,
+      "2026": 77,
+      "2091": 1
+     },
+     "familles_demandeurs": {
+      "fonciere_investisseur": 1047,
+      "promoteur": 712,
+      "entreprise_autre": 115,
+      "collectivite_public": 79,
+      "bailleur_social": 32,
+      "non_determine": 29,
+      "association_ess": 27,
+      "copropriete": 4,
+      "exploitant_sante_social": 3
+     },
+     "colonnes_interrogeables": [
+      "famille",
+      "AN_DEPOT",
+      "COMM",
+      "ADR_LOCALITE_TER",
+      "ETAT_DAU",
+      "RESIDENCE",
+      "TYPE_PRINCIP_LOGTS_CREES",
+      "NATURE_PROJET_COMPLETEE",
+      "TYPE_TRANSFO_PRINCIPAL",
+      "TYPE_PRINCIP_LOCAUX_TRANSFORMES",
+      "UTILISATION",
+      "DESTINATION_PRINCIPALE",
+      "ZONE_OP",
+      "CJ_DEM",
+      "APE_DEM",
+      "SIREN_DEM",
+      "DENOM_DEM"
+     ],
+     "mesures": [
+      "permis",
+      "logements",
+      "acteurs"
+     ],
+     "remarques": [
+      "2026 est une année partielle",
+      "un permis modificatif n'a pas de ligne propre",
+      "~15 % des ouvertures de chantier et ~1/3 des achèvements ne remontent jamais",
+      "APE_DEM = NAF de l'établissement du permis, possiblement fermé",
+      "RESIDENCE est rempli sur une petite minorité de permis (souvent 'non rempli') ; les drapeaux RES_* n'existent que depuis mai 2022",
+      "NATURE_PROJET_COMPLETEE et TYPE_TRANSFO_* sont dits 'introduits en mai 2022' mais sont renseignés dès 2012 dans le fichier (recodage SDES probable)"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 1,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "TYPE_TRANSFO_PRINCIPAL"
+     ],
+     "mesure": "logements",
+     "top": 20
+    },
+    "sortie": {
+     "filtres": {},
+     "nb_permis_filtres": 3363,
+     "nb_groupes": 5,
+     "resultats": [
+      {
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 2816,
+       "logements": 83941,
+       "acteurs": 1693
+      },
+      {
+       "TYPE_TRANSFO_PRINCIPAL": "1 (locaux -> logements)",
+       "permis": 360,
+       "logements": 3908,
+       "acteurs": 319
+      },
+      {
+       "TYPE_TRANSFO_PRINCIPAL": "2 (transformation de logements)",
+       "permis": 147,
+       "logements": 1686,
+       "acteurs": 130
+      },
+      {
+       "TYPE_TRANSFO_PRINCIPAL": "3 (logements -> locaux)",
+       "permis": 15,
+       "logements": 379,
+       "acteurs": 15
+      },
+      {
+       "TYPE_TRANSFO_PRINCIPAL": "4 (transformation de locaux)",
+       "permis": 25,
+       "logements": 201,
+       "acteurs": 25
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 2,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "famille",
+      "TYPE_TRANSFO_PRINCIPAL"
+     ],
+     "mesure": "logements",
+     "top": 50
+    },
+    "sortie": {
+     "filtres": {},
+     "nb_permis_filtres": 3363,
+     "nb_groupes": 36,
+     "resultats": [
+      {
+       "famille": "promoteur",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 1078,
+       "logements": 60229,
+       "acteurs": 665
+      },
+      {
+       "famille": "bailleur_social",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 262,
+       "logements": 11014,
+       "acteurs": 31
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 1123,
+       "logements": 9098,
+       "acteurs": 797
+      },
+      {
+       "famille": "promoteur",
+       "TYPE_TRANSFO_PRINCIPAL": "1 (locaux -> logements)",
+       "permis": 50,
+       "logements": 1998,
+       "acteurs": 47
+      },
+      {
+       "famille": "entreprise_autre",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 169,
+       "logements": 1497,
+       "acteurs": 93
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "TYPE_TRANSFO_PRINCIPAL": "1 (locaux -> logements)",
+       "permis": 220,
+       "logements": 1049,
+       "acteurs": 199
+      },
+      {
+       "famille": "collectivite_public",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 123,
+       "logements": 859,
+       "acteurs": 60
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "TYPE_TRANSFO_PRINCIPAL": "2 (transformation de logements)",
+       "permis": 98,
+       "logements": 680,
+       "acteurs": 89
+      },
+      {
+       "famille": "non_determine",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 27,
+       "logements": 653,
+       "acteurs": 23
+      },
+      {
+       "famille": "association_ess",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 28,
+       "logements": 489,
+       "acteurs": 19
+      },
+      {
+       "famille": "bailleur_social",
+       "TYPE_TRANSFO_PRINCIPAL": "2 (transformation de logements)",
+       "permis": 15,
+       "logements": 473,
+       "acteurs": 9
+      },
+      {
+       "famille": "promoteur",
+       "TYPE_TRANSFO_PRINCIPAL": "2 (transformation de logements)",
+       "permis": 14,
+       "logements": 340,
+       "acteurs": 12
+      },
+      {
+       "famille": "bailleur_social",
+       "TYPE_TRANSFO_PRINCIPAL": "1 (locaux -> logements)",
+       "permis": 21,
+       "logements": 284,
+       "acteurs": 12
+      },
+      {
+       "famille": "entreprise_autre",
+       "TYPE_TRANSFO_PRINCIPAL": "1 (locaux -> logements)",
+       "permis": 27,
+       "logements": 271,
+       "acteurs": 26
+      },
+      {
+       "famille": "promoteur",
+       "TYPE_TRANSFO_PRINCIPAL": "3 (logements -> locaux)",
+       "permis": 2,
+       "logements": 194,
+       "acteurs": 2
+      },
+      {
+       "famille": "collectivite_public",
+       "TYPE_TRANSFO_PRINCIPAL": "1 (locaux -> logements)",
+       "permis": 28,
+       "logements": 193,
+       "acteurs": 22
+      },
+      {
+       "famille": "promoteur",
+       "TYPE_TRANSFO_PRINCIPAL": "4 (transformation de locaux)",
+       "permis": 2,
+       "logements": 145,
+       "acteurs": 2
+      },
+      {
+       "famille": "copropriete",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 3,
+       "logements": 98,
+       "acteurs": 3
+      },
+      {
+       "famille": "entreprise_autre",
+       "TYPE_TRANSFO_PRINCIPAL": "2 (transformation de logements)",
+       "permis": 5,
+       "logements": 90,
+       "acteurs": 5
+      },
+      {
+       "famille": "collectivite_public",
+       "TYPE_TRANSFO_PRINCIPAL": "3 (logements -> locaux)",
+       "permis": 2,
+       "logements": 79,
+       "acteurs": 2
+      },
+      {
+       "famille": "collectivite_public",
+       "TYPE_TRANSFO_PRINCIPAL": "2 (transformation de logements)",
+       "permis": 11,
+       "logements": 67,
+       "acteurs": 11
+      },
+      {
+       "famille": "association_ess",
+       "TYPE_TRANSFO_PRINCIPAL": "1 (locaux -> logements)",
+       "permis": 7,
+       "logements": 56,
+       "acteurs": 6
+      },
+      {
+       "famille": "bailleur_social",
+       "TYPE_TRANSFO_PRINCIPAL": "3 (logements -> locaux)",
+       "permis": 2,
+       "logements": 54,
+       "acteurs": 2
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "TYPE_TRANSFO_PRINCIPAL": "3 (logements -> locaux)",
+       "permis": 7,
+       "logements": 49,
+       "acteurs": 7
+      },
+      {
+       "famille": "non_determine",
+       "TYPE_TRANSFO_PRINCIPAL": "1 (locaux -> logements)",
+       "permis": 6,
+       "logements": 43,
+       "acteurs": 6
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 3,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "AN_DEPOT",
+      "TYPE_TRANSFO_PRINCIPAL"
+     ],
+     "mesure": "logements",
+     "top": 10
+    },
+    "sortie": {
+     "filtres": {},
+     "nb_permis_filtres": 3363,
+     "nb_groupes": 67,
+     "resultats": [
+      {
+       "AN_DEPOT": "2021",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 290,
+       "logements": 9959,
+       "acteurs": 224
+      },
+      {
+       "AN_DEPOT": "2017",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 254,
+       "logements": 8328,
+       "acteurs": 189
+      },
+      {
+       "AN_DEPOT": "2016",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 229,
+       "logements": 8134,
+       "acteurs": 168
+      },
+      {
+       "AN_DEPOT": "2015",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 213,
+       "logements": 7700,
+       "acteurs": 175
+      },
+      {
+       "AN_DEPOT": "2022",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 210,
+       "logements": 7103,
+       "acteurs": 173
+      },
+      {
+       "AN_DEPOT": "2019",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 217,
+       "logements": 6449,
+       "acteurs": 166
+      },
+      {
+       "AN_DEPOT": "2020",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 187,
+       "logements": 5191,
+       "acteurs": 171
+      },
+      {
+       "AN_DEPOT": "2018",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 207,
+       "logements": 5020,
+       "acteurs": 172
+      },
+      {
+       "AN_DEPOT": "2014",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 191,
+       "logements": 4814,
+       "acteurs": 148
+      },
+      {
+       "AN_DEPOT": "2024",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 156,
+       "logements": 4696,
+       "acteurs": 135
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 4,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "COMM",
+      "TYPE_TRANSFO_PRINCIPAL"
+     ],
+     "mesure": "logements",
+     "top": 20
+    },
+    "sortie": {
+     "filtres": {},
+     "nb_permis_filtres": 3363,
+     "nb_groupes": 481,
+     "resultats": [
+      {
+       "COMM": "78586",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 194,
+       "logements": 5990,
+       "acteurs": 117
+      },
+      {
+       "COMM": "78545",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 73,
+       "logements": 3533,
+       "acteurs": 53
+      },
+      {
+       "COMM": "78498",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 59,
+       "logements": 3271,
+       "acteurs": 41
+      },
+      {
+       "COMM": "78361",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 46,
+       "logements": 2654,
+       "acteurs": 42
+      },
+      {
+       "COMM": "78640",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 15,
+       "logements": 2542,
+       "acteurs": 14
+      },
+      {
+       "COMM": "78362",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 51,
+       "logements": 2461,
+       "acteurs": 42
+      },
+      {
+       "COMM": "78551",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 69,
+       "logements": 2378,
+       "acteurs": 60
+      },
+      {
+       "COMM": "78621",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 33,
+       "logements": 2286,
+       "acteurs": 27
+      },
+      {
+       "COMM": "78123",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 34,
+       "logements": 2201,
+       "acteurs": 31
+      },
+      {
+       "COMM": "78646",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 56,
+       "logements": 2120,
+       "acteurs": 43
+      },
+      {
+       "COMM": "78490",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 29,
+       "logements": 1935,
+       "acteurs": 27
+      },
+      {
+       "COMM": "78005",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 21,
+       "logements": 1623,
+       "acteurs": 16
+      },
+      {
+       "COMM": "78517",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 52,
+       "logements": 1570,
+       "acteurs": 44
+      },
+      {
+       "COMM": "78686",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 42,
+       "logements": 1525,
+       "acteurs": 34
+      },
+      {
+       "COMM": "78311",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 53,
+       "logements": 1447,
+       "acteurs": 39
+      },
+      {
+       "COMM": "78383",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 15,
+       "logements": 1365,
+       "acteurs": 13
+      },
+      {
+       "COMM": "78674",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 11,
+       "logements": 1318,
+       "acteurs": 11
+      },
+      {
+       "COMM": "78267",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 25,
+       "logements": 1290,
+       "acteurs": 20
+      },
+      {
+       "COMM": "78297",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 33,
+       "logements": 1283,
+       "acteurs": 22
+      },
+      {
+       "COMM": "78688",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 21,
+       "logements": 1138,
+       "acteurs": 11
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 5,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "noter",
+    "args": {
+     "titre": "Promoteurs en tête des reconversions bureaux → logements",
+     "constat": "Sur les 360 permis de transformation de locaux en logements (type 1), 50 sont déposés par des promoteurs, représentant 1 % des 3 363 permis totaux et 13,9 % des permis de type 1 (50/360). Ces 50 permis génèrent 1 998 logements, soit 51,1 % des logements issus de type 1 (1 998/3 908).",
+     "interet_buddimm": "Identifier les promoteurs actifs sur les reconversions permet cibler des opérations de conseil ou de partenariat pour Buddimm, notamment auprès de ceux qui réalisent le plus de logements par permis.",
+     "fiabilite": "établi",
+     "limites": "Les données ne couvrent que les Yvelines et les promoteurs « non déterminés » sont exclus du décompte.",
+     "a_creuser": "Analyser le portefeuille immobilier des promoteurs identifiés pour proposer des scénarios de reconversion."
+    },
+    "sortie": {
+     "ok": "note 1 enregistrée"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 6,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "COMM",
+      "TYPE_TRANSFO_PRINCIPAL"
+     ],
+     "filtres": {
+      "TYPE_TRANSFO_PRINCIPAL": "1 (locaux -> logements)"
+     },
+     "mesure": "logements",
+     "top": 20
+    },
+    "sortie": {
+     "filtres": {
+      "TYPE_TRANSFO_PRINCIPAL": "1 (locaux -> logements)"
+     },
+     "nb_permis_filtres": 360,
+     "nb_groupes": 150,
+     "resultats": [
+      {
+       "COMM": "78646",
+       "TYPE_TRANSFO_PRINCIPAL": "1 (locaux -> logements)",
+       "permis": 22,
+       "logements": 906,
+       "acteurs": 21
+      },
+      {
+       "COMM": "78551",
+       "TYPE_TRANSFO_PRINCIPAL": "1 (locaux -> logements)",
+       "permis": 16,
+       "logements": 214,
+       "acteurs": 16
+      },
+      {
+       "COMM": "78297",
+       "TYPE_TRANSFO_PRINCIPAL": "1 (locaux -> logements)",
+       "permis": 4,
+       "logements": 173,
+       "acteurs": 4
+      },
+      {
+       "COMM": "78143",
+       "TYPE_TRANSFO_PRINCIPAL": "1 (locaux -> logements)",
+       "permis": 2,
+       "logements": 145,
+       "acteurs": 2
+      },
+      {
+       "COMM": "78146",
+       "TYPE_TRANSFO_PRINCIPAL": "1 (locaux -> logements)",
+       "permis": 7,
+       "logements": 136,
+       "acteurs": 7
+      },
+      {
+       "COMM": "78686",
+       "TYPE_TRANSFO_PRINCIPAL": "1 (locaux -> logements)",
+       "permis": 6,
+       "logements": 118,
+       "acteurs": 5
+      },
+      {
+       "COMM": "78380",
+       "TYPE_TRANSFO_PRINCIPAL": "1 (locaux -> logements)",
+       "permis": 4,
+       "logements": 100,
+       "acteurs": 4
+      },
+      {
+       "COMM": "78321",
+       "TYPE_TRANSFO_PRINCIPAL": "1 (locaux -> logements)",
+       "permis": 2,
+       "logements": 99,
+       "acteurs": 2
+      },
+      {
+       "COMM": "78490",
+       "TYPE_TRANSFO_PRINCIPAL": "1 (locaux -> logements)",
+       "permis": 2,
+       "logements": 83,
+       "acteurs": 2
+      },
+      {
+       "COMM": "78442",
+       "TYPE_TRANSFO_PRINCIPAL": "1 (locaux -> logements)",
+       "permis": 4,
+       "logements": 81,
+       "acteurs": 3
+      },
+      {
+       "COMM": "78372",
+       "TYPE_TRANSFO_PRINCIPAL": "1 (locaux -> logements)",
+       "permis": 4,
+       "logements": 77,
+       "acteurs": 4
+      },
+      {
+       "COMM": "78361",
+       "TYPE_TRANSFO_PRINCIPAL": "1 (locaux -> logements)",
+       "permis": 6,
+       "logements": 76,
+       "acteurs": 5
+      },
+      {
+       "COMM": "78126",
+       "TYPE_TRANSFO_PRINCIPAL": "1 (locaux -> logements)",
+       "permis": 2,
+       "logements": 73,
+       "acteurs": 2
+      },
+      {
+       "COMM": "78029",
+       "TYPE_TRANSFO_PRINCIPAL": "1 (locaux -> logements)",
+       "permis": 1,
+       "logements": 72,
+       "acteurs": 1
+      },
+      {
+       "COMM": "78620",
+       "TYPE_TRANSFO_PRINCIPAL": "1 (locaux -> logements)",
+       "permis": 2,
+       "logements": 59,
+       "acteurs": 2
+      },
+      {
+       "COMM": "78350",
+       "TYPE_TRANSFO_PRINCIPAL": "1 (locaux -> logements)",
+       "permis": 4,
+       "logements": 51,
+       "acteurs": 3
+      },
+      {
+       "COMM": "78481",
+       "TYPE_TRANSFO_PRINCIPAL": "1 (locaux -> logements)",
+       "permis": 3,
+       "logements": 51,
+       "acteurs": 3
+      },
+      {
+       "COMM": "78517",
+       "TYPE_TRANSFO_PRINCIPAL": "1 (locaux -> logements)",
+       "permis": 8,
+       "logements": 50,
+       "acteurs": 8
+      },
+      {
+       "COMM": "78089",
+       "TYPE_TRANSFO_PRINCIPAL": "1 (locaux -> logements)",
+       "permis": 4,
+       "logements": 49,
+       "acteurs": 4
+      },
+      {
+       "COMM": "78358",
+       "TYPE_TRANSFO_PRINCIPAL": "1 (locaux -> logements)",
+       "permis": 5,
+       "logements": 49,
+       "acteurs": 5
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 7,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "fraicheur_donnees",
+    "args": {},
+    "sortie": {
+     "logements": {
+      "local": {
+       "millesime": "2026-10",
+       "lignes": null,
+       "recupere_le": null,
+       "note": "fiche absente : fichier fourni au départ, millésime supposé 2026-10",
+       "modifie_le": "2026-11-21T00:05:27"
+      },
+      "distant": {
+       "millesime": "2026-10",
+       "publie_le": "2026-10-28T07:45:00.000Z",
+       "titre": "Liste des autorisations d'urbanisme créant des logements"
+      },
+      "a_jour": true
+     },
+     "locaux": {
+      "local": {
+       "millesime": "2026-10",
+       "lignes": null,
+       "recupere_le": null,
+       "note": "fiche absente : fichier fourni au départ, millésime supposé 2026-10",
+       "modifie_le": "2026-11-21T23:43:39"
+      },
+      "distant": {
+       "millesime": "2026-10",
+       "publie_le": "2026-10-28T07:45:00.000Z",
+       "titre": "Liste des autorisations d'urbanisme créant des locaux non résidentiels"
+      },
+      "a_jour": true
+     }
+    }
+   }
+  ]
+ },
+ {
+  "etape": 8,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": "[\"famille\", \"TYPE_TRANSFO_PRINCIPAL\"]",
+     "mesure": "logements",
+     "top": "50",
+     "filtres": "{\"TYPE_TRANSFO_PRINCIPAL\": \"1 (locaux -> logements)\"}"
+    },
+    "sortie": {
+     "erreur": "group_by : 1 à 3 colonnes parmi la liste",
+     "colonnes_autorisees": [
+      "famille",
+      "AN_DEPOT",
+      "COMM",
+      "ADR_LOCALITE_TER",
+      "ETAT_DAU",
+      "RESIDENCE",
+      "TYPE_PRINCIP_LOGTS_CREES",
+      "NATURE_PROJET_COMPLETEE",
+      "TYPE_TRANSFO_PRINCIPAL",
+      "TYPE_PRINCIP_LOCAUX_TRANSFORMES",
+      "UTILISATION",
+      "DESTINATION_PRINCIPALE",
+      "ZONE_OP",
+      "CJ_DEM",
+      "APE_DEM",
+      "SIREN_DEM",
+      "DENOM_DEM"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 9,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": "[\"AN_DEPOT\", \"TYPE_TRANSFO_PRINCIPAL\"]",
+     "mesure": "logements",
+     "top": "30",
+     "filtres": "{\"TYPE_TRANSFO_PRINCIPAL\": \"1 (locaux -> logements)\"}"
+    },
+    "sortie": {
+     "erreur": "group_by : 1 à 3 colonnes parmi la liste",
+     "colonnes_autorisees": [
+      "famille",
+      "AN_DEPOT",
+      "COMM",
+      "ADR_LOCALITE_TER",
+      "ETAT_DAU",
+      "RESIDENCE",
+      "TYPE_PRINCIP_LOGTS_CREES",
+      "NATURE_PROJET_COMPLETEE",
+      "TYPE_TRANSFO_PRINCIPAL",
+      "TYPE_PRINCIP_LOCAUX_TRANSFORMES",
+      "UTILISATION",
+      "DESTINATION_PRINCIPALE",
+      "ZONE_OP",
+      "CJ_DEM",
+      "APE_DEM",
+      "SIREN_DEM",
+      "DENOM_DEM"
+     ]
+    }
+   }
+  ]
+ }
+]

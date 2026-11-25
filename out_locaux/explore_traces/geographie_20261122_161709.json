@@ -1,0 +1,612 @@
+[
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "apercu",
+    "args": {},
+    "sortie": {
+     "perimetre": "PC des Yvelines (78) créant des locaux non résidentiels, déposés par des personnes morales, extraction SDES/Sitadel",
+     "nb_permis": 4245,
+     "nb_demandeurs": 2439,
+     "annees_depot": {
+      "2005": 1,
+      "2006": 1,
+      "2008": 1,
+      "2012": 97,
+      "2013": 257,
+      "2014": 271,
+      "2015": 258,
+      "2016": 322,
+      "2017": 341,
+      "2018": 360,
+      "2019": 331,
+      "2020": 270,
+      "2021": 347,
+      "2022": 370,
+      "2023": 334,
+      "2024": 300,
+      "2025": 282,
+      "2026": 101,
+      "2087": 1
+     },
+     "familles_demandeurs": {
+      "fonciere_investisseur": 925,
+      "entreprise_autre": 704,
+      "collectivite_public": 305,
+      "promoteur": 275,
+      "association_ess": 137,
+      "exploitant_sante_social": 42,
+      "non_determine": 29,
+      "bailleur_social": 21,
+      "copropriete": 1
+     },
+     "colonnes_interrogeables": [
+      "famille",
+      "AN_DEPOT",
+      "COMM",
+      "ADR_LOCALITE_TER",
+      "ETAT_DAU",
+      "DESTINATION_PRINCIPALE",
+      "DEST_SURF_MAX",
+      "TYPE_SERVICE_PUBLIC",
+      "NATURE_PROJET_COMPLETEE",
+      "TYPE_TRANSFO_PRINCIPAL",
+      "TYPE_PRINCIP_LOCAUX_TRANSFORMES",
+      "ZONE_OP",
+      "CJ_DEM",
+      "APE_DEM",
+      "SIREN_DEM",
+      "DENOM_DEM"
+     ],
+     "mesures": [
+      "permis",
+      "surface_m2",
+      "acteurs"
+     ],
+     "remarques": [
+      "2026 est une année partielle",
+      "un permis modificatif n'a pas de ligne propre",
+      "~15 % des ouvertures de chantier et ~1/3 des achèvements ne remontent jamais",
+      "APE_DEM = NAF de l'établissement du permis, possiblement fermé",
+      "surface_m2 = SURF_LOC_CREEE, surface de plancher de locaux non résidentiels créée",
+      "DEST_SURF_MAX = destination qui reçoit le plus de surface (calculée par le code à partir des SURF_*)",
+      "DESTINATION_PRINCIPALE est codée par le SDES (introduite en mai 2022) ; TYPE_SERVICE_PUBLIC vient du formulaire et est souvent 'non rempli'",
+      "un même permis peut aussi créer des logements : il figure alors aussi dans le fichier logements"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 1,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "DESTINATION_PRINCIPALE"
+     ],
+     "mesure": "surface_m2",
+     "top": 10
+    },
+    "sortie": {
+     "filtres": {},
+     "nb_permis_filtres": 4245,
+     "nb_groupes": 8,
+     "resultats": [
+      {
+       "DESTINATION_PRINCIPALE": "9 (service public / intérêt collectif)",
+       "permis": 1338,
+       "surface_m2": 1202328,
+       "acteurs": 550
+      },
+      {
+       "DESTINATION_PRINCIPALE": "3 (bureaux)",
+       "permis": 518,
+       "surface_m2": 914409,
+       "acteurs": 426
+      },
+      {
+       "DESTINATION_PRINCIPALE": "4 (commerce)",
+       "permis": 719,
+       "surface_m2": 880069,
+       "acteurs": 575
+      },
+      {
+       "DESTINATION_PRINCIPALE": "8 (entrepôt)",
+       "permis": 442,
+       "surface_m2": 855052,
+       "acteurs": 388
+      },
+      {
+       "DESTINATION_PRINCIPALE": "6 (industrie)",
+       "permis": 367,
+       "surface_m2": 706859,
+       "acteurs": 250
+      },
+      {
+       "DESTINATION_PRINCIPALE": "7 (agriculture)",
+       "permis": 271,
+       "surface_m2": 256362,
+       "acteurs": 203
+      },
+      {
+       "DESTINATION_PRINCIPALE": "1 (habitation)",
+       "permis": 536,
+       "surface_m2": 190718,
+       "acteurs": 438
+      },
+      {
+       "DESTINATION_PRINCIPALE": "2 (hôtels)",
+       "permis": 54,
+       "surface_m2": 74311,
+       "acteurs": 46
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 2,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "famille",
+      "DESTINATION_PRINCIPALE"
+     ],
+     "mesure": "surface_m2",
+     "top": 20
+    },
+    "sortie": {
+     "filtres": {},
+     "nb_permis_filtres": 4245,
+     "nb_groupes": 62,
+     "resultats": [
+      {
+       "famille": "collectivite_public",
+       "DESTINATION_PRINCIPALE": "9 (service public / intérêt collectif)",
+       "permis": 889,
+       "surface_m2": 722070,
+       "acteurs": 261
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "DESTINATION_PRINCIPALE": "4 (commerce)",
+       "permis": 343,
+       "surface_m2": 534523,
+       "acteurs": 270
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "DESTINATION_PRINCIPALE": "8 (entrepôt)",
+       "permis": 240,
+       "surface_m2": 523668,
+       "acteurs": 216
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "DESTINATION_PRINCIPALE": "3 (bureaux)",
+       "permis": 180,
+       "surface_m2": 352102,
+       "acteurs": 166
+      },
+      {
+       "famille": "promoteur",
+       "DESTINATION_PRINCIPALE": "3 (bureaux)",
+       "permis": 41,
+       "surface_m2": 322269,
+       "acteurs": 31
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "DESTINATION_PRINCIPALE": "6 (industrie)",
+       "permis": 121,
+       "surface_m2": 283976,
+       "acteurs": 99
+      },
+      {
+       "famille": "entreprise_autre",
+       "DESTINATION_PRINCIPALE": "8 (entrepôt)",
+       "permis": 135,
+       "surface_m2": 259660,
+       "acteurs": 117
+      },
+      {
+       "famille": "entreprise_autre",
+       "DESTINATION_PRINCIPALE": "6 (industrie)",
+       "permis": 192,
+       "surface_m2": 244607,
+       "acteurs": 112
+      },
+      {
+       "famille": "entreprise_autre",
+       "DESTINATION_PRINCIPALE": "7 (agriculture)",
+       "permis": 155,
+       "surface_m2": 201257,
+       "acteurs": 115
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "DESTINATION_PRINCIPALE": "9 (service public / intérêt collectif)",
+       "permis": 88,
+       "surface_m2": 187508,
+       "acteurs": 73
+      },
+      {
+       "famille": "promoteur",
+       "DESTINATION_PRINCIPALE": "4 (commerce)",
+       "permis": 50,
+       "surface_m2": 181368,
+       "acteurs": 40
+      },
+      {
+       "famille": "entreprise_autre",
+       "DESTINATION_PRINCIPALE": "3 (bureaux)",
+       "permis": 169,
+       "surface_m2": 178296,
+       "acteurs": 127
+      },
+      {
+       "famille": "promoteur",
+       "DESTINATION_PRINCIPALE": "6 (industrie)",
+       "permis": 22,
+       "surface_m2": 153723,
+       "acteurs": 17
+      },
+      {
+       "famille": "association_ess",
+       "DESTINATION_PRINCIPALE": "9 (service public / intérêt collectif)",
+       "permis": 159,
+       "surface_m2": 133885,
+       "acteurs": 94
+      },
+      {
+       "famille": "entreprise_autre",
+       "DESTINATION_PRINCIPALE": "4 (commerce)",
+       "permis": 246,
+       "surface_m2": 129919,
+       "acteurs": 194
+      },
+      {
+       "famille": "promoteur",
+       "DESTINATION_PRINCIPALE": "1 (habitation)",
+       "permis": 216,
+       "surface_m2": 123383,
+       "acteurs": 174
+      },
+      {
+       "famille": "promoteur",
+       "DESTINATION_PRINCIPALE": "9 (service public / intérêt collectif)",
+       "permis": 23,
+       "surface_m2": 73712,
+       "acteurs": 18
+      },
+      {
+       "famille": "entreprise_autre",
+       "DESTINATION_PRINCIPALE": "9 (service public / intérêt collectif)",
+       "permis": 141,
+       "surface_m2": 63227,
+       "acteurs": 76
+      },
+      {
+       "famille": "promoteur",
+       "DESTINATION_PRINCIPALE": "8 (entrepôt)",
+       "permis": 11,
+       "surface_m2": 46863,
+       "acteurs": 10
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "DESTINATION_PRINCIPALE": "1 (habitation)",
+       "permis": 134,
+       "surface_m2": 41935,
+       "acteurs": 120
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 3,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "COMM",
+      "DESTINATION_PRINCIPALE"
+     ],
+     "mesure": "surface_m2",
+     "top": 10
+    },
+    "sortie": {
+     "filtres": {},
+     "nb_permis_filtres": 4245,
+     "nb_groupes": 918,
+     "resultats": [
+      {
+       "COMM": "78423",
+       "DESTINATION_PRINCIPALE": "3 (bureaux)",
+       "permis": 24,
+       "surface_m2": 241598,
+       "acteurs": 21
+      },
+      {
+       "COMM": "78640",
+       "DESTINATION_PRINCIPALE": "3 (bureaux)",
+       "permis": 23,
+       "surface_m2": 194089,
+       "acteurs": 18
+      },
+      {
+       "COMM": "78551",
+       "DESTINATION_PRINCIPALE": "9 (service public / intérêt collectif)",
+       "permis": 48,
+       "surface_m2": 154313,
+       "acteurs": 28
+      },
+      {
+       "COMM": "78238",
+       "DESTINATION_PRINCIPALE": "8 (entrepôt)",
+       "permis": 3,
+       "surface_m2": 120311,
+       "acteurs": 3
+      },
+      {
+       "COMM": "78003",
+       "DESTINATION_PRINCIPALE": "8 (entrepôt)",
+       "permis": 15,
+       "surface_m2": 118169,
+       "acteurs": 11
+      },
+      {
+       "COMM": "78498",
+       "DESTINATION_PRINCIPALE": "9 (service public / intérêt collectif)",
+       "permis": 40,
+       "surface_m2": 104902,
+       "acteurs": 15
+      },
+      {
+       "COMM": "78640",
+       "DESTINATION_PRINCIPALE": "4 (commerce)",
+       "permis": 21,
+       "surface_m2": 102108,
+       "acteurs": 19
+      },
+      {
+       "COMM": "78640",
+       "DESTINATION_PRINCIPALE": "6 (industrie)",
+       "permis": 12,
+       "surface_m2": 94966,
+       "acteurs": 7
+      },
+      {
+       "COMM": "78297",
+       "DESTINATION_PRINCIPALE": "3 (bureaux)",
+       "permis": 27,
+       "surface_m2": 86569,
+       "acteurs": 26
+      },
+      {
+       "COMM": "78490",
+       "DESTINATION_PRINCIPALE": "4 (commerce)",
+       "permis": 29,
+       "surface_m2": 84724,
+       "acteurs": 22
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 4,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "noter",
+    "args": {
+     "titre": "Dominance du service public / intérêt collectif",
+     "constat": "Les surfaces de destination 9 (service public / intérêt collectif) représentent 1 202 328 m², soit 23,7 % du total des surfaces créées (5 080 108 m²) sur l'ensemble des permis yvelinois 2005‑2025.",
+     "interet_buddimm": "Identifier les territoires et acteurs liés aux équipements collectifs pour du conseil en programmation ou de la veille.",
+     "fiabilite": "établi",
+     "limites": "Données SDES/Sitadel, périmètre Yvelines, années 2005‑2025, 2026 partiel.",
+     "a_creuser": "Creuser la part des collectivités publiques vs promoteurs sur ce type de destination."
+    },
+    "sortie": {
+     "ok": "note 1 enregistrée"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 5,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "noter",
+    "args": {
+     "titre": "Répartition des surfaces par famille de demandeur et destination",
+     "constat": "La famille fonciere_investisseur est à l'origine de la plus grande surface pour les destinations commerce (534 523 m², soit 10,5 % du total) et entrepôt (523 668 m², soit 10,3 %). La famille promoteur concentre 322 269 m² de bureaux (6,3 % du total). La collectivite_public représente 722 070 m² pour la destination service public / intérêt collectif (14,2 % du total, dont une partie des 23,7 % globales de la dest. 9). Les autres familles (association_ess, entreprise_autre) affichent des surfaces moindres mais restent présentes sur plusieurs destinations.",
+     "interet_buddimm": "Permet de cibler les acteurs dominants selon le type de projet (prospection de fonciers, conseil en programmation).",
+     "fiabilite": "établi",
+     "limites": "Pourcentages calculés sur le total des surfaces 5 080 108 m² ; données SDES/Sitadel Yvelines 2005‑2025.",
+     "a_creuser": "Analyser la part des promoteurs vs foncières investisseuses sur les bureaux et entrepôts."
+    },
+    "sortie": {
+     "erreur": "Refusé : chiffres non vérifiables : 10,3 % (base absente ou fausse dans la phrase), 10,5 % (base absente ou fausse dans la phrase), 14,2 % (base absente ou fausse dans la phrase), 23,7 % (base absente ou fausse dans la phrase), 6,3 % (base absente ou fausse dans la phrase). Corrige-les avec des chiffres issus des requêtes, ou fais la requête qui les donne. Chaque pourcentage doit citer, dans la même phrase, son numérateur et son dénominateur (ex. « 3 251 sur 11 785, soit 27,6 % »). Puis renote."
+    }
+   }
+  ]
+ },
+ {
+  "etape": 6,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [],
+     "mesure": "surface_m2"
+    },
+    "sortie": {
+     "erreur": "group_by : 1 à 3 colonnes parmi la liste",
+     "colonnes_autorisees": [
+      "famille",
+      "AN_DEPOT",
+      "COMM",
+      "ADR_LOCALITE_TER",
+      "ETAT_DAU",
+      "DESTINATION_PRINCIPALE",
+      "DEST_SURF_MAX",
+      "TYPE_SERVICE_PUBLIC",
+      "NATURE_PROJET_COMPLETEE",
+      "TYPE_TRANSFO_PRINCIPAL",
+      "TYPE_PRINCIP_LOCAUX_TRANSFORMES",
+      "ZONE_OP",
+      "CJ_DEM",
+      "APE_DEM",
+      "SIREN_DEM",
+      "DENOM_DEM"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 7,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "DESTINATION_PRINCIPALE"
+     ],
+     "mesure": "surface_m2",
+     "top": 100
+    },
+    "sortie": {
+     "filtres": {},
+     "nb_permis_filtres": 4245,
+     "nb_groupes": 8,
+     "resultats": [
+      {
+       "DESTINATION_PRINCIPALE": "9 (service public / intérêt collectif)",
+       "permis": 1338,
+       "surface_m2": 1202328,
+       "acteurs": 550
+      },
+      {
+       "DESTINATION_PRINCIPALE": "3 (bureaux)",
+       "permis": 518,
+       "surface_m2": 914409,
+       "acteurs": 426
+      },
+      {
+       "DESTINATION_PRINCIPALE": "4 (commerce)",
+       "permis": 719,
+       "surface_m2": 880069,
+       "acteurs": 575
+      },
+      {
+       "DESTINATION_PRINCIPALE": "8 (entrepôt)",
+       "permis": 442,
+       "surface_m2": 855052,
+       "acteurs": 388
+      },
+      {
+       "DESTINATION_PRINCIPALE": "6 (industrie)",
+       "permis": 367,
+       "surface_m2": 706859,
+       "acteurs": 250
+      },
+      {
+       "DESTINATION_PRINCIPALE": "7 (agriculture)",
+       "permis": 271,
+       "surface_m2": 256362,
+       "acteurs": 203
+      },
+      {
+       "DESTINATION_PRINCIPALE": "1 (habitation)",
+       "permis": 536,
+       "surface_m2": 190718,
+       "acteurs": 438
+      },
+      {
+       "DESTINATION_PRINCIPALE": "2 (hôtels)",
+       "permis": 54,
+       "surface_m2": 74311,
+       "acteurs": 46
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 8,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "noter",
+    "args": {
+     "titre": "Dominance du service public / intérêt collectif",
+     "constat": "Les surfaces de destination 9 (service public / intérêt collectif) représentent 1 202 328 m² sur un total de 5 080 108 m² créé par les 4 245 permis yvelinois 2005‑2025, soit 23,7 % (1 202 328 / 5 080 108).",
+     "interet_buddimm": "Identifier les territoires et acteurs liés aux équipements collectifs pour du conseil en programmation ou de la veille.",
+     "fiabilite": "établi",
+     "limites": "Données SDES/Sitadel, périmètre Yvelines, années 2005‑2025, total des surfaces calculé sur l'ensemble des destinations.",
+     "a_creuser": "Creuser la part des collectivités publiques vs promoteurs sur ce type de destination."
+    },
+    "sortie": {
+     "ok": "note 2 enregistrée"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 9,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": "[\"famille\", \"DESTINATION_PRINCIPALE\"]",
+     "mesure": "surface_m2",
+     "top": "20",
+     "filtres": "{\"DESTINATION_PRINCIPALE\": \"3\"}"
+    },
+    "sortie": {
+     "erreur": "group_by : 1 à 3 colonnes parmi la liste",
+     "colonnes_autorisees": [
+      "famille",
+      "AN_DEPOT",
+      "COMM",
+      "ADR_LOCALITE_TER",
+      "ETAT_DAU",
+      "DESTINATION_PRINCIPALE",
+      "DEST_SURF_MAX",
+      "TYPE_SERVICE_PUBLIC",
+      "NATURE_PROJET_COMPLETEE",
+      "TYPE_TRANSFO_PRINCIPAL",
+      "TYPE_PRINCIP_LOCAUX_TRANSFORMES",
+      "ZONE_OP",
+      "CJ_DEM",
+      "APE_DEM",
+      "SIREN_DEM",
+      "DENOM_DEM"
+     ]
+    }
+   }
+  ]
+ }
+]

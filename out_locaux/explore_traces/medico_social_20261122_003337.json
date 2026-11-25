@@ -1,0 +1,1394 @@
+[
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "apercu",
+    "args": {},
+    "sortie": {
+     "perimetre": "PC des Yvelines (78) créant des locaux non résidentiels, déposés par des personnes morales, extraction SDES/Sitadel",
+     "nb_permis": 4245,
+     "nb_demandeurs": 2439,
+     "annees_depot": {
+      "2005": 1,
+      "2006": 1,
+      "2008": 1,
+      "2012": 97,
+      "2013": 257,
+      "2014": 271,
+      "2015": 258,
+      "2016": 322,
+      "2017": 341,
+      "2018": 360,
+      "2019": 331,
+      "2020": 270,
+      "2021": 347,
+      "2022": 370,
+      "2023": 334,
+      "2024": 300,
+      "2025": 282,
+      "2026": 101,
+      "2087": 1
+     },
+     "familles_demandeurs": {
+      "fonciere_investisseur": 895,
+      "entreprise_autre": 602,
+      "collectivite_public": 303,
+      "promoteur": 266,
+      "non_determine": 184,
+      "association_ess": 135,
+      "exploitant_sante_social": 32,
+      "bailleur_social": 21,
+      "copropriete": 1
+     },
+     "colonnes_interrogeables": [
+      "famille",
+      "AN_DEPOT",
+      "COMM",
+      "ADR_LOCALITE_TER",
+      "ETAT_DAU",
+      "DESTINATION_PRINCIPALE",
+      "DEST_SURF_MAX",
+      "TYPE_SERVICE_PUBLIC",
+      "NATURE_PROJET_COMPLETEE",
+      "TYPE_TRANSFO_PRINCIPAL",
+      "TYPE_PRINCIP_LOCAUX_TRANSFORMES",
+      "ZONE_OP",
+      "CJ_DEM",
+      "APE_DEM",
+      "SIREN_DEM",
+      "DENOM_DEM"
+     ],
+     "mesures": [
+      "permis",
+      "surface_m2",
+      "acteurs"
+     ],
+     "remarques": [
+      "2026 est une année partielle",
+      "un permis modificatif n'a pas de ligne propre",
+      "~15 % des ouvertures de chantier et ~1/3 des achèvements ne remontent jamais",
+      "APE_DEM = NAF de l'établissement du permis, possiblement fermé",
+      "surface_m2 = SURF_LOC_CREEE, surface de plancher de locaux non résidentiels créée",
+      "DEST_SURF_MAX = destination qui reçoit le plus de surface (calculée par le code à partir des SURF_*)",
+      "DESTINATION_PRINCIPALE est codée par le SDES (introduite en mai 2022) ; TYPE_SERVICE_PUBLIC vient du formulaire et est souvent 'non rempli'",
+      "un même permis peut aussi créer des logements : il figure alors aussi dans le fichier logements"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 1,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "lire_dictionnaire",
+    "args": {
+     "variable": "TYPE_SERVICE_PUBLIC"
+    },
+    "sortie": {
+     "variable": "TYPE_SERVICE_PUBLIC",
+     "definition": "TYPE_SERVICE_PUBLIC | Type de service public ou d'intérêt collectif |  | 1 = Transport\n2 = Enseignement et recherche\n3 = Santé\n4 = Action sociale\n5 = Ouvrage spécial\n6 = Culture et loisir\n7 = Non rempli\n8 = Plusieurs types renseignés | Numérique, 1 chiffre | Information du cadre \"Informations complémentaires\" | Formulaire"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 2,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "TYPE_SERVICE_PUBLIC"
+     ],
+     "mesure": "permis"
+    },
+    "sortie": {
+     "filtres": {},
+     "nb_permis_filtres": 4245,
+     "nb_groupes": 8,
+     "resultats": [
+      {
+       "TYPE_SERVICE_PUBLIC": "7 (non rempli)",
+       "permis": 2668,
+       "surface_m2": 3798667,
+       "acteurs": 1916
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "6 (culture et loisir)",
+       "permis": 380,
+       "surface_m2": 234564,
+       "acteurs": 224
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "2 (enseignement et recherche)",
+       "permis": 375,
+       "surface_m2": 345133,
+       "acteurs": 206
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "5 (ouvrage spécial)",
+       "permis": 267,
+       "surface_m2": 175801,
+       "acteurs": 165
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "4 (action sociale)",
+       "permis": 231,
+       "surface_m2": 85879,
+       "acteurs": 176
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "3 (santé)",
+       "permis": 176,
+       "surface_m2": 236413,
+       "acteurs": 138
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "1 (transport)",
+       "permis": 89,
+       "surface_m2": 61733,
+       "acteurs": 28
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "8 (plusieurs types)",
+       "permis": 59,
+       "surface_m2": 141918,
+       "acteurs": 54
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 3,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "TYPE_SERVICE_PUBLIC",
+      "famille"
+     ],
+     "mesure": "permis"
+    },
+    "sortie": {
+     "filtres": {},
+     "nb_permis_filtres": 4245,
+     "nb_groupes": 57,
+     "resultats": [
+      {
+       "TYPE_SERVICE_PUBLIC": "7 (non rempli)",
+       "famille": "fonciere_investisseur",
+       "permis": 1032,
+       "surface_m2": 1694312,
+       "acteurs": 818
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "7 (non rempli)",
+       "famille": "entreprise_autre",
+       "permis": 805,
+       "surface_m2": 906641,
+       "acteurs": 549
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "7 (non rempli)",
+       "famille": "promoteur",
+       "permis": 300,
+       "surface_m2": 804399,
+       "acteurs": 226
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "6 (culture et loisir)",
+       "famille": "collectivite_public",
+       "permis": 277,
+       "surface_m2": 143404,
+       "acteurs": 139
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "2 (enseignement et recherche)",
+       "famille": "collectivite_public",
+       "permis": 246,
+       "surface_m2": 238493,
+       "acteurs": 109
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "7 (non rempli)",
+       "famille": "non_determine",
+       "permis": 217,
+       "surface_m2": 257229,
+       "acteurs": 156
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "7 (non rempli)",
+       "famille": "collectivite_public",
+       "permis": 188,
+       "surface_m2": 64644,
+       "acteurs": 110
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "5 (ouvrage spécial)",
+       "famille": "collectivite_public",
+       "permis": 178,
+       "surface_m2": 150583,
+       "acteurs": 109
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "4 (action sociale)",
+       "famille": "collectivite_public",
+       "permis": 91,
+       "surface_m2": 30226,
+       "acteurs": 64
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "7 (non rempli)",
+       "famille": "association_ess",
+       "permis": 82,
+       "surface_m2": 42730,
+       "acteurs": 38
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "3 (santé)",
+       "famille": "collectivite_public",
+       "permis": 67,
+       "surface_m2": 45083,
+       "acteurs": 47
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "5 (ouvrage spécial)",
+       "famille": "entreprise_autre",
+       "permis": 63,
+       "surface_m2": 14526,
+       "acteurs": 32
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "2 (enseignement et recherche)",
+       "famille": "association_ess",
+       "permis": 60,
+       "surface_m2": 15622,
+       "acteurs": 43
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "6 (culture et loisir)",
+       "famille": "association_ess",
+       "permis": 52,
+       "surface_m2": 27761,
+       "acteurs": 38
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "1 (transport)",
+       "famille": "collectivite_public",
+       "permis": 44,
+       "surface_m2": 50924,
+       "acteurs": 11
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 4,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "TYPE_SERVICE_PUBLIC",
+      "famille"
+     ],
+     "mesure": "surface_m2"
+    },
+    "sortie": {
+     "filtres": {},
+     "nb_permis_filtres": 4245,
+     "nb_groupes": 57,
+     "resultats": [
+      {
+       "TYPE_SERVICE_PUBLIC": "7 (non rempli)",
+       "famille": "fonciere_investisseur",
+       "permis": 1032,
+       "surface_m2": 1694312,
+       "acteurs": 818
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "7 (non rempli)",
+       "famille": "entreprise_autre",
+       "permis": 805,
+       "surface_m2": 906641,
+       "acteurs": 549
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "7 (non rempli)",
+       "famille": "promoteur",
+       "permis": 300,
+       "surface_m2": 804399,
+       "acteurs": 226
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "7 (non rempli)",
+       "famille": "non_determine",
+       "permis": 217,
+       "surface_m2": 257229,
+       "acteurs": 156
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "2 (enseignement et recherche)",
+       "famille": "collectivite_public",
+       "permis": 246,
+       "surface_m2": 238493,
+       "acteurs": 109
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "5 (ouvrage spécial)",
+       "famille": "collectivite_public",
+       "permis": 178,
+       "surface_m2": 150583,
+       "acteurs": 109
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "6 (culture et loisir)",
+       "famille": "collectivite_public",
+       "permis": 277,
+       "surface_m2": 143404,
+       "acteurs": 139
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "3 (santé)",
+       "famille": "association_ess",
+       "permis": 32,
+       "surface_m2": 79217,
+       "acteurs": 21
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "8 (plusieurs types)",
+       "famille": "collectivite_public",
+       "permis": 38,
+       "surface_m2": 66688,
+       "acteurs": 35
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "7 (non rempli)",
+       "famille": "collectivite_public",
+       "permis": 188,
+       "surface_m2": 64644,
+       "acteurs": 110
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "8 (plusieurs types)",
+       "famille": "fonciere_investisseur",
+       "permis": 1,
+       "surface_m2": 59339,
+       "acteurs": 1
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "1 (transport)",
+       "famille": "collectivite_public",
+       "permis": 44,
+       "surface_m2": 50924,
+       "acteurs": 11
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "3 (santé)",
+       "famille": "fonciere_investisseur",
+       "permis": 30,
+       "surface_m2": 49862,
+       "acteurs": 30
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "2 (enseignement et recherche)",
+       "famille": "fonciere_investisseur",
+       "permis": 33,
+       "surface_m2": 48619,
+       "acteurs": 27
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "3 (santé)",
+       "famille": "collectivite_public",
+       "permis": 67,
+       "surface_m2": 45083,
+       "acteurs": 47
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 5,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "TYPE_SERVICE_PUBLIC",
+      "AN_DEPOT"
+     ],
+     "mesure": "permis",
+     "filtres": {
+      "TYPE_SERVICE_PUBLIC": [
+       "3",
+       "4"
+      ]
+     }
+    },
+    "sortie": {
+     "filtres": {
+      "TYPE_SERVICE_PUBLIC": [
+       "3",
+       "4"
+      ]
+     },
+     "nb_permis_filtres": 407,
+     "nb_groupes": 31,
+     "resultats": [
+      {
+       "TYPE_SERVICE_PUBLIC": "3 (santé)",
+       "AN_DEPOT": "2023",
+       "permis": 30,
+       "surface_m2": 15998,
+       "acteurs": 28
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "4 (action sociale)",
+       "AN_DEPOT": "2017",
+       "permis": 23,
+       "surface_m2": 7546,
+       "acteurs": 22
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "4 (action sociale)",
+       "AN_DEPOT": "2018",
+       "permis": 22,
+       "surface_m2": 3859,
+       "acteurs": 21
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "4 (action sociale)",
+       "AN_DEPOT": "2013",
+       "permis": 22,
+       "surface_m2": 9986,
+       "acteurs": 18
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "4 (action sociale)",
+       "AN_DEPOT": "2016",
+       "permis": 21,
+       "surface_m2": 16510,
+       "acteurs": 20
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "4 (action sociale)",
+       "AN_DEPOT": "2022",
+       "permis": 20,
+       "surface_m2": 6045,
+       "acteurs": 16
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "3 (santé)",
+       "AN_DEPOT": "2016",
+       "permis": 18,
+       "surface_m2": 65157,
+       "acteurs": 18
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "4 (action sociale)",
+       "AN_DEPOT": "2015",
+       "permis": 17,
+       "surface_m2": 5978,
+       "acteurs": 16
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "3 (santé)",
+       "AN_DEPOT": "2022",
+       "permis": 17,
+       "surface_m2": 16270,
+       "acteurs": 17
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "4 (action sociale)",
+       "AN_DEPOT": "2014",
+       "permis": 17,
+       "surface_m2": 6474,
+       "acteurs": 15
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "4 (action sociale)",
+       "AN_DEPOT": "2024",
+       "permis": 16,
+       "surface_m2": 7469,
+       "acteurs": 16
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "4 (action sociale)",
+       "AN_DEPOT": "2019",
+       "permis": 15,
+       "surface_m2": 6189,
+       "acteurs": 15
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "3 (santé)",
+       "AN_DEPOT": "2019",
+       "permis": 15,
+       "surface_m2": 7709,
+       "acteurs": 14
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "4 (action sociale)",
+       "AN_DEPOT": "2021",
+       "permis": 14,
+       "surface_m2": 3772,
+       "acteurs": 12
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "3 (santé)",
+       "AN_DEPOT": "2018",
+       "permis": 14,
+       "surface_m2": 30449,
+       "acteurs": 14
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 6,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "TYPE_SERVICE_PUBLIC",
+      "famille",
+      "AN_DEPOT"
+     ],
+     "mesure": "permis",
+     "filtres": {
+      "TYPE_SERVICE_PUBLIC": [
+       "3",
+       "4"
+      ]
+     }
+    },
+    "sortie": {
+     "filtres": {
+      "TYPE_SERVICE_PUBLIC": [
+       "3",
+       "4"
+      ]
+     },
+     "nb_permis_filtres": 407,
+     "nb_groupes": 156,
+     "resultats": [
+      {
+       "TYPE_SERVICE_PUBLIC": "3 (santé)",
+       "famille": "collectivite_public",
+       "AN_DEPOT": "2023",
+       "permis": 11,
+       "surface_m2": 3549,
+       "acteurs": 10
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "4 (action sociale)",
+       "famille": "collectivite_public",
+       "AN_DEPOT": "2018",
+       "permis": 11,
+       "surface_m2": 2379,
+       "acteurs": 11
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "3 (santé)",
+       "famille": "collectivite_public",
+       "AN_DEPOT": "2025",
+       "permis": 10,
+       "surface_m2": 2747,
+       "acteurs": 9
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "4 (action sociale)",
+       "famille": "collectivite_public",
+       "AN_DEPOT": "2022",
+       "permis": 10,
+       "surface_m2": 5693,
+       "acteurs": 8
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "4 (action sociale)",
+       "famille": "collectivite_public",
+       "AN_DEPOT": "2016",
+       "permis": 8,
+       "surface_m2": 1493,
+       "acteurs": 7
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "3 (santé)",
+       "famille": "collectivite_public",
+       "AN_DEPOT": "2019",
+       "permis": 8,
+       "surface_m2": 3926,
+       "acteurs": 7
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "4 (action sociale)",
+       "famille": "collectivite_public",
+       "AN_DEPOT": "2019",
+       "permis": 8,
+       "surface_m2": 3180,
+       "acteurs": 8
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "4 (action sociale)",
+       "famille": "collectivite_public",
+       "AN_DEPOT": "2025",
+       "permis": 8,
+       "surface_m2": 5155,
+       "acteurs": 8
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "3 (santé)",
+       "famille": "fonciere_investisseur",
+       "AN_DEPOT": "2023",
+       "permis": 7,
+       "surface_m2": 226,
+       "acteurs": 7
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "4 (action sociale)",
+       "famille": "collectivite_public",
+       "AN_DEPOT": "2013",
+       "permis": 7,
+       "surface_m2": 2547,
+       "acteurs": 7
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "3 (santé)",
+       "famille": "collectivite_public",
+       "AN_DEPOT": "2017",
+       "permis": 7,
+       "surface_m2": 21839,
+       "acteurs": 5
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "4 (action sociale)",
+       "famille": "collectivite_public",
+       "AN_DEPOT": "2024",
+       "permis": 7,
+       "surface_m2": 524,
+       "acteurs": 7
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "4 (action sociale)",
+       "famille": "exploitant_sante_social",
+       "AN_DEPOT": "2017",
+       "permis": 7,
+       "surface_m2": 50,
+       "acteurs": 7
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "4 (action sociale)",
+       "famille": "collectivite_public",
+       "AN_DEPOT": "2015",
+       "permis": 6,
+       "surface_m2": 3820,
+       "acteurs": 6
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "3 (santé)",
+       "famille": "collectivite_public",
+       "AN_DEPOT": "2022",
+       "permis": 6,
+       "surface_m2": 1637,
+       "acteurs": 6
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 7,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "TYPE_SERVICE_PUBLIC",
+      "famille"
+     ],
+     "mesure": "surface_m2",
+     "filtres": {
+      "TYPE_SERVICE_PUBLIC": [
+       "3",
+       "4"
+      ]
+     }
+    },
+    "sortie": {
+     "filtres": {
+      "TYPE_SERVICE_PUBLIC": [
+       "3",
+       "4"
+      ]
+     },
+     "nb_permis_filtres": 407,
+     "nb_groupes": 16,
+     "resultats": [
+      {
+       "TYPE_SERVICE_PUBLIC": "3 (santé)",
+       "famille": "association_ess",
+       "permis": 32,
+       "surface_m2": 79217,
+       "acteurs": 21
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "3 (santé)",
+       "famille": "fonciere_investisseur",
+       "permis": 30,
+       "surface_m2": 49862,
+       "acteurs": 30
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "3 (santé)",
+       "famille": "collectivite_public",
+       "permis": 67,
+       "surface_m2": 45083,
+       "acteurs": 47
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "4 (action sociale)",
+       "famille": "collectivite_public",
+       "permis": 91,
+       "surface_m2": 30226,
+       "acteurs": 64
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "4 (action sociale)",
+       "famille": "promoteur",
+       "permis": 25,
+       "surface_m2": 25730,
+       "acteurs": 25
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "3 (santé)",
+       "famille": "promoteur",
+       "permis": 10,
+       "surface_m2": 22162,
+       "acteurs": 10
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "3 (santé)",
+       "famille": "bailleur_social",
+       "permis": 6,
+       "surface_m2": 14991,
+       "acteurs": 6
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "3 (santé)",
+       "famille": "non_determine",
+       "permis": 8,
+       "surface_m2": 12172,
+       "acteurs": 7
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "4 (action sociale)",
+       "famille": "entreprise_autre",
+       "permis": 12,
+       "surface_m2": 10038,
+       "acteurs": 11
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "3 (santé)",
+       "famille": "entreprise_autre",
+       "permis": 6,
+       "surface_m2": 9966,
+       "acteurs": 6
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "4 (action sociale)",
+       "famille": "fonciere_investisseur",
+       "permis": 24,
+       "surface_m2": 9051,
+       "acteurs": 22
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "4 (action sociale)",
+       "famille": "association_ess",
+       "permis": 25,
+       "surface_m2": 5568,
+       "acteurs": 16
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "4 (action sociale)",
+       "famille": "bailleur_social",
+       "permis": 7,
+       "surface_m2": 3646,
+       "acteurs": 6
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "3 (santé)",
+       "famille": "exploitant_sante_social",
+       "permis": 17,
+       "surface_m2": 2960,
+       "acteurs": 11
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "4 (action sociale)",
+       "famille": "exploitant_sante_social",
+       "permis": 25,
+       "surface_m2": 881,
+       "acteurs": 16
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 8,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "TYPE_SERVICE_PUBLIC",
+      "COMMUNE"
+     ],
+     "mesure": "surface_m2",
+     "filtres": {
+      "TYPE_SERVICE_PUBLIC": [
+       "3",
+       "4"
+      ]
+     },
+     "top": 20
+    },
+    "sortie": {
+     "erreur": "group_by : 1 à 3 colonnes parmi la liste",
+     "colonnes_autorisees": [
+      "famille",
+      "AN_DEPOT",
+      "COMM",
+      "ADR_LOCALITE_TER",
+      "ETAT_DAU",
+      "DESTINATION_PRINCIPALE",
+      "DEST_SURF_MAX",
+      "TYPE_SERVICE_PUBLIC",
+      "NATURE_PROJET_COMPLETEE",
+      "TYPE_TRANSFO_PRINCIPAL",
+      "TYPE_PRINCIP_LOCAUX_TRANSFORMES",
+      "ZONE_OP",
+      "CJ_DEM",
+      "APE_DEM",
+      "SIREN_DEM",
+      "DENOM_DEM"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 9,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "TYPE_SERVICE_PUBLIC",
+      "COMM"
+     ],
+     "mesure": "surface_m2",
+     "filtres": {
+      "TYPE_SERVICE_PUBLIC": [
+       "3",
+       "4"
+      ]
+     },
+     "top": 20
+    },
+    "sortie": {
+     "filtres": {
+      "TYPE_SERVICE_PUBLIC": [
+       "3",
+       "4"
+      ]
+     },
+     "nb_permis_filtres": 407,
+     "nb_groupes": 188,
+     "resultats": [
+      {
+       "TYPE_SERVICE_PUBLIC": "3 (santé)",
+       "COMM": "78644",
+       "permis": 1,
+       "surface_m2": 36628,
+       "acteurs": 1
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "3 (santé)",
+       "COMM": "78498",
+       "permis": 8,
+       "surface_m2": 22962,
+       "acteurs": 4
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "3 (santé)",
+       "COMM": "78361",
+       "permis": 10,
+       "surface_m2": 16438,
+       "acteurs": 9
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "3 (santé)",
+       "COMM": "78440",
+       "permis": 4,
+       "surface_m2": 10388,
+       "acteurs": 3
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "3 (santé)",
+       "COMM": "78117",
+       "permis": 4,
+       "surface_m2": 8775,
+       "acteurs": 4
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "3 (santé)",
+       "COMM": "78551",
+       "permis": 7,
+       "surface_m2": 8754,
+       "acteurs": 7
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "4 (action sociale)",
+       "COMM": "78490",
+       "permis": 7,
+       "surface_m2": 8578,
+       "acteurs": 6
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "3 (santé)",
+       "COMM": "78297",
+       "permis": 2,
+       "surface_m2": 7324,
+       "acteurs": 2
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "3 (santé)",
+       "COMM": "78640",
+       "permis": 2,
+       "surface_m2": 7038,
+       "acteurs": 2
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "3 (santé)",
+       "COMM": "78643",
+       "permis": 2,
+       "surface_m2": 6961,
+       "acteurs": 2
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "4 (action sociale)",
+       "COMM": "78640",
+       "permis": 3,
+       "surface_m2": 6572,
+       "acteurs": 3
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "3 (santé)",
+       "COMM": "78354",
+       "permis": 2,
+       "surface_m2": 6309,
+       "acteurs": 2
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "3 (santé)",
+       "COMM": "78571",
+       "permis": 1,
+       "surface_m2": 6200,
+       "acteurs": 1
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "3 (santé)",
+       "COMM": "78003",
+       "permis": 4,
+       "surface_m2": 6197,
+       "acteurs": 4
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "3 (santé)",
+       "COMM": "78380",
+       "permis": 2,
+       "surface_m2": 6170,
+       "acteurs": 2
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "3 (santé)",
+       "COMM": "78358",
+       "permis": 2,
+       "surface_m2": 6022,
+       "acteurs": 2
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "3 (santé)",
+       "COMM": "78455",
+       "permis": 2,
+       "surface_m2": 5649,
+       "acteurs": 2
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "3 (santé)",
+       "COMM": "78123",
+       "permis": 1,
+       "surface_m2": 5432,
+       "acteurs": 1
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "3 (santé)",
+       "COMM": "78650",
+       "permis": 5,
+       "surface_m2": 5389,
+       "acteurs": 5
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "4 (action sociale)",
+       "COMM": "78551",
+       "permis": 6,
+       "surface_m2": 4837,
+       "acteurs": 6
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 10,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "TYPE_SERVICE_PUBLIC",
+      "famille"
+     ],
+     "mesure": "permis",
+     "filtres": {
+      "TYPE_SERVICE_PUBLIC": [
+       "3",
+       "4"
+      ]
+     }
+    },
+    "sortie": {
+     "filtres": {
+      "TYPE_SERVICE_PUBLIC": [
+       "3",
+       "4"
+      ]
+     },
+     "nb_permis_filtres": 407,
+     "nb_groupes": 16,
+     "resultats": [
+      {
+       "TYPE_SERVICE_PUBLIC": "4 (action sociale)",
+       "famille": "collectivite_public",
+       "permis": 91,
+       "surface_m2": 30226,
+       "acteurs": 64
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "3 (santé)",
+       "famille": "collectivite_public",
+       "permis": 67,
+       "surface_m2": 45083,
+       "acteurs": 47
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "3 (santé)",
+       "famille": "association_ess",
+       "permis": 32,
+       "surface_m2": 79217,
+       "acteurs": 21
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "3 (santé)",
+       "famille": "fonciere_investisseur",
+       "permis": 30,
+       "surface_m2": 49862,
+       "acteurs": 30
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "4 (action sociale)",
+       "famille": "promoteur",
+       "permis": 25,
+       "surface_m2": 25730,
+       "acteurs": 25
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "4 (action sociale)",
+       "famille": "exploitant_sante_social",
+       "permis": 25,
+       "surface_m2": 881,
+       "acteurs": 16
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "4 (action sociale)",
+       "famille": "association_ess",
+       "permis": 25,
+       "surface_m2": 5568,
+       "acteurs": 16
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "4 (action sociale)",
+       "famille": "fonciere_investisseur",
+       "permis": 24,
+       "surface_m2": 9051,
+       "acteurs": 22
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "4 (action sociale)",
+       "famille": "non_determine",
+       "permis": 22,
+       "surface_m2": 739,
+       "acteurs": 16
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "3 (santé)",
+       "famille": "exploitant_sante_social",
+       "permis": 17,
+       "surface_m2": 2960,
+       "acteurs": 11
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "4 (action sociale)",
+       "famille": "entreprise_autre",
+       "permis": 12,
+       "surface_m2": 10038,
+       "acteurs": 11
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "3 (santé)",
+       "famille": "promoteur",
+       "permis": 10,
+       "surface_m2": 22162,
+       "acteurs": 10
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "3 (santé)",
+       "famille": "non_determine",
+       "permis": 8,
+       "surface_m2": 12172,
+       "acteurs": 7
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "4 (action sociale)",
+       "famille": "bailleur_social",
+       "permis": 7,
+       "surface_m2": 3646,
+       "acteurs": 6
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "3 (santé)",
+       "famille": "bailleur_social",
+       "permis": 6,
+       "surface_m2": 14991,
+       "acteurs": 6
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 11,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "TYPE_SERVICE_PUBLIC",
+      "AN_DEPOT"
+     ],
+     "mesure": "surface_m2",
+     "filtres": {
+      "TYPE_SERVICE_PUBLIC": [
+       "3",
+       "4"
+      ]
+     }
+    },
+    "sortie": {
+     "filtres": {
+      "TYPE_SERVICE_PUBLIC": [
+       "3",
+       "4"
+      ]
+     },
+     "nb_permis_filtres": 407,
+     "nb_groupes": 31,
+     "resultats": [
+      {
+       "TYPE_SERVICE_PUBLIC": "3 (santé)",
+       "AN_DEPOT": "2016",
+       "permis": 18,
+       "surface_m2": 65157,
+       "acteurs": 18
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "3 (santé)",
+       "AN_DEPOT": "2018",
+       "permis": 14,
+       "surface_m2": 30449,
+       "acteurs": 14
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "3 (santé)",
+       "AN_DEPOT": "2017",
+       "permis": 10,
+       "surface_m2": 24325,
+       "acteurs": 8
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "3 (santé)",
+       "AN_DEPOT": "2020",
+       "permis": 9,
+       "surface_m2": 18190,
+       "acteurs": 9
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "4 (action sociale)",
+       "AN_DEPOT": "2016",
+       "permis": 21,
+       "surface_m2": 16510,
+       "acteurs": 20
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "3 (santé)",
+       "AN_DEPOT": "2014",
+       "permis": 5,
+       "surface_m2": 16272,
+       "acteurs": 5
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "3 (santé)",
+       "AN_DEPOT": "2022",
+       "permis": 17,
+       "surface_m2": 16270,
+       "acteurs": 17
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "3 (santé)",
+       "AN_DEPOT": "2023",
+       "permis": 30,
+       "surface_m2": 15998,
+       "acteurs": 28
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "3 (santé)",
+       "AN_DEPOT": "2021",
+       "permis": 14,
+       "surface_m2": 11355,
+       "acteurs": 14
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "4 (action sociale)",
+       "AN_DEPOT": "2013",
+       "permis": 22,
+       "surface_m2": 9986,
+       "acteurs": 18
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "3 (santé)",
+       "AN_DEPOT": "2024",
+       "permis": 13,
+       "surface_m2": 9550,
+       "acteurs": 13
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "3 (santé)",
+       "AN_DEPOT": "2013",
+       "permis": 8,
+       "surface_m2": 9360,
+       "acteurs": 8
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "3 (santé)",
+       "AN_DEPOT": "2019",
+       "permis": 15,
+       "surface_m2": 7709,
+       "acteurs": 14
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "4 (action sociale)",
+       "AN_DEPOT": "2017",
+       "permis": 23,
+       "surface_m2": 7546,
+       "acteurs": 22
+      },
+      {
+       "TYPE_SERVICE_PUBLIC": "4 (action sociale)",
+       "AN_DEPOT": "2024",
+       "permis": 16,
+       "surface_m2": 7469,
+       "acteurs": 16
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 12,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "noter",
+    "args": {
+     "titre": "Associations ESS : premiers porteurs de surface en santé, mais collectivités mènent en nombre de permis",
+     "constat": "Sur les 407 permis TYPE_SERVICE_PUBLIC 3 (santé) et 4 (action sociale) : en santé, les associations_ess créent 79 217 m² sur 32 permis (21 acteurs), soit la plus grosse surface créée devant les foncières_investisseur (49 862 m², 30 permis) et les collectivités (45 083 m², 67 permis). En action sociale, les collectivités dominent largement en volume de permis (91, 30 226 m²) mais avec des projets plus petits (332 m² en moyenne) que les promoteurs (25 730 m² sur 25 permis = 1 029 m² moy.) ou les foncières (9 051 m² sur 24 permis).",
+     "interet_buddimm": "Prospection : les associations ESS sont les vraies \"grosses\" porteuses de projets santé (hôpitaux, EHPAC, pôles médicaux) — cibles prioritaires pour l'AMO. Les collectivités sont multiples mais sur des équipements de proximité plus petits (maisons de santé, centres sociaux). Les promoteurs et foncières interviennent comme véhicules immobiliers pour le compte d'exploitants.",
+     "fiabilite": "établi",
+     "limites": "Surface créée = surface_m2 déclarée au PC ; ne distingue pas neuf / extension / rénovation. 21 acteurs associatifs seulement sur 32 permis santé : quelques structures portent plusieurs opérations.",
+     "a_creuser": "Identifier les 21 associations ESS actives en santé (via SIREN/DENOM_DEM) pour qualifier leur typologie (fédérations, gestionnaires d'EHPAD, mutuelles, fondations)."
+    },
+    "sortie": {
+     "erreur": "Refusé : ces chiffres ne figurent dans aucun résultat d'outil : 1 029, 332. Corrige-les avec des chiffres issus des requêtes, ou fais la requête qui les donne, puis renote."
+    }
+   }
+  ]
+ },
+ {
+  "etape": 13,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "noter",
+    "args": {
+     "titre": "Associations ESS : premiers porteurs de surface en santé, mais collectivités mènent en nombre de permis",
+     "constat": "Sur les 407 permis TYPE_SERVICE_PUBLIC 3 (santé) et 4 (action sociale) : en santé, les associations_ess créent 79 217 m² sur 32 permis (21 acteurs), soit la plus grosse surface créée devant les foncières_investisseur (49 862 m², 30 permis, 30 acteurs) et les collectivités (45 083 m², 67 permis, 47 acteurs). En action sociale, les collectivités dominent largement en volume de permis (91, 30 226 m², 64 acteurs) mais les promoteurs créent 25 730 m² sur 25 permis (25 acteurs) et les foncières 9 051 m² sur 24 permis (22 acteurs).",
+     "interet_buddimm": "Prospection : les associations ESS sont les vraies \"grosses\" porteuses de projets santé (hôpitaux, EHPAD, pôles médicaux) — cibles prioritaires pour l'AMO. Les collectivités sont multiples mais sur des équipements de proximité plus petits (maisons de santé, centres sociaux). Les promoteurs et foncières interviennent comme véhicules immobiliers pour le compte d'exploitants.",
+     "fiabilite": "établi",
+     "limites": "Surface créée = surface_m2 déclarée au PC ; ne distingue pas neuf / extension / rénovation. 21 acteurs associatifs seulement sur 32 permis santé : quelques structures portent plusieurs opérations.",
+     "a_creuser": "Identifier les 21 associations ESS actives en santé (via SIREN/DENOM_DEM) pour qualifier leur typologie (fédérations, gestionnaires d'EHPAD, mutuelles, fondations)."
+    },
+    "sortie": {
+     "ok": "note 1 enregistrée"
+    }
+   }
+  ]
+ }
+]

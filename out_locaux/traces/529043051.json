@@ -1,0 +1,111 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "529043051"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "529043051"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "529043051"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "529043051"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "TRIBUVERTE",
+     "nb_permis_PC": 2,
+     "annees_depot": [
+      "2014",
+      "2026"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 0,
+     "surface_locaux_non_residentiels_creee_m2": 10,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 1
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "529043051",
+      "nom": "TRIBUVERTE",
+      "nature_juridique": "5710",
+      "naf_actuel": "64.20Z",
+      "etat": "A",
+      "date_creation": "2010-11-03",
+      "categorie": "PME",
+      "effectif": "01",
+      "nb_etablissements": 1,
+      "nb_etablissements_ouverts": 1,
+      "siege_actuel": {
+       "siret": "52904305100018",
+       "naf": "64.20Z",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "52904305100018",
+       "naf_dans_permis": "64.20Z",
+       "nb_permis": 2,
+       "annees_depot": [
+        "2014",
+        "2026"
+       ],
+       "etat_actuel": "ouvert",
+       "date_creation": "2010-11-03",
+       "date_fermeture": null
+      }
+     ],
+     "alertes": [],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/529043051"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "64.20Z",
+      "libelle": "Activités des sociétés holding"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5710",
+     "libelle": "SAS, société par actions simplifiée"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"non_determine\",\"confiance\":\"faible\",\"indices\":[\"fiche_entreprise : entreprise SAS (CJ 5710), activité holding (NAF 64.20Z), active, 1 employé, 1 établissement ouvert.\",\"permis_du_demandeur : 2 permis de construire déposés (2014, 2026), 0 logement créé, 10 m² de surface non résidentielle, 0 logement social déclaré.\",\"libelle_naf : 64.20Z = Activités des sociétés holding.\",\"libelle_cj : 5710 = SAS, société par actions simplifiée.\"],\"limites\":\"L'activité holding ne permet pas de distinguer une foncière immobilière d'une holding de groupe non immobilière. Les permis portent sur une très faible surface non résidentielle (10 m²) sans création de logement, ce qui est compatible avec une entreprise construisant pour son propre compte ou un investisseur occasionnel. Aucune information sur la détention/location de patrimoine immobilier.\"}"
+   }
+  ]
+ }
+]

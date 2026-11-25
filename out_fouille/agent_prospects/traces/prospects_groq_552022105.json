@@ -1,0 +1,152 @@
+[
+ {
+  "etape": "pre",
+  "texte": "résultats calculés par le code avant le modèle",
+  "entree": {
+   "siren": "552022105",
+   "denomination": "ICF LA SABLIERE SA D'HLM",
+   "famille_classification": "bailleur_social",
+   "raisons_du_score": "famille cible (bailleur_social) +2 ; dépôt assez récent (2022) +1 ; projet de taille significative (≥ 20 logements ou ≥ 1 000 m²) +1",
+   "taille_calculee": "grande",
+   "taille_calcul": "salariés ≥ 500, établissements ouverts 20, établissements FINESS 0",
+   "permis_du_prospect": [
+    {
+     "num_dau": "07868622G1010",
+     "fichier": "logements",
+     "annee_depot": "2022",
+     "commune": "VIROFLAY",
+     "etat": "autorisé",
+     "type_projet": "",
+     "logements_crees": 84,
+     "surface_locaux_creee_m2": null
+    },
+    {
+     "num_dau": "07839619G0012",
+     "fichier": "locaux",
+     "annee_depot": "2019",
+     "commune": "LE MESNIL LE ROI",
+     "etat": "commencé",
+     "type_projet": "",
+     "logements_crees": null,
+     "surface_locaux_creee_m2": 42
+    },
+    {
+     "num_dau": "0783581710044",
+     "fichier": "logements",
+     "annee_depot": "2017",
+     "commune": "MAISONS LAFFITTE",
+     "etat": "terminé",
+     "type_projet": "",
+     "logements_crees": 55,
+     "surface_locaux_creee_m2": null
+    },
+    {
+     "num_dau": "07811815Y0008",
+     "fichier": "logements",
+     "annee_depot": "2015",
+     "commune": "BUCHELAY",
+     "etat": "terminé",
+     "type_projet": "",
+     "logements_crees": 52,
+     "surface_locaux_creee_m2": null
+    },
+    {
+     "num_dau": "07836215Y0036",
+     "fichier": "logements",
+     "annee_depot": "2015",
+     "commune": "MANTES-LA-VILLE",
+     "etat": "terminé",
+     "type_projet": "",
+     "logements_crees": 28,
+     "surface_locaux_creee_m2": null
+    },
+    {
+     "num_dau": "07811815Y0008",
+     "fichier": "locaux",
+     "annee_depot": "2015",
+     "commune": "BUCHELAY",
+     "etat": "terminé",
+     "type_projet": "",
+     "logements_crees": null,
+     "surface_locaux_creee_m2": 848
+    },
+    {
+     "num_dau": "07855113Z0042",
+     "fichier": "logements",
+     "annee_depot": "2013",
+     "commune": "SAINT-GERMAIN-EN-LAYE",
+     "etat": "terminé",
+     "type_projet": "",
+     "logements_crees": 153,
+     "surface_locaux_creee_m2": null
+    },
+    {
+     "num_dau": "07864212V0034",
+     "fichier": "logements",
+     "annee_depot": "2012",
+     "commune": "VERNEUIL SUR SEINE",
+     "etat": "commencé",
+     "type_projet": "",
+     "logements_crees": 21,
+     "surface_locaux_creee_m2": null
+    },
+    {
+     "num_dau": "07864212V0035",
+     "fichier": "logements",
+     "annee_depot": "2012",
+     "commune": "VERNEUIL SUR SEINE",
+     "etat": "commencé",
+     "type_projet": "",
+     "logements_crees": 17,
+     "surface_locaux_creee_m2": null
+    },
+    {
+     "num_dau": "07864212V0036",
+     "fichier": "logements",
+     "annee_depot": "2012",
+     "commune": "VERNEUIL SUR SEINE",
+     "etat": "commencé",
+     "type_projet": "",
+     "logements_crees": 10,
+     "surface_locaux_creee_m2": null
+    }
+   ],
+   "fiche_entreprise": {
+    "nom": "ICF HABITAT SOCIAL (ICF HABITAT LA SABLIERE)",
+    "nature_juridique": "5646",
+    "naf_actuel": "68.20A",
+    "etat": "A",
+    "date_creation": "1955-01-01",
+    "categorie": "GE",
+    "effectif": "41",
+    "nb_etablissements": 56,
+    "nb_etablissements_ouverts": 20,
+    "libelle_naf_actuel": "Location de logements",
+    "libelle_nature_juridique": "SA de HLM à directoire",
+    "aide": "etat A = active, C ou F = cessée. effectif = tranche Insee de salariés (ex. 21 = 50 à 99, 41 = 500 à 999, 51 = 2 000 à 4 999). Dirigeants et finances volontairement exclus.",
+    "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/552022105"
+   },
+   "finess_du_prospect": {
+    "nb_etablissements_finess_france": 0,
+    "nb_etablissements_finess_yvelines": 0,
+    "nb_departements": 0,
+    "par_type": {},
+    "exemples_yvelines": [],
+    "source": "https://www.data.gouv.fr/datasets/53699569a3a729239d2046eb",
+    "aide": "Établissements dont le SIRET commence par ce SIREN. 0 ne prouve pas l'absence d'activité médico-sociale (SIRET non renseigné dans FINESS, autre entité juridique du même groupe)."
+   },
+   "origine": "demandeur de permis",
+   "consigne": "Ces résultats viennent des outils permis_du_prospect, fiche_entreprise et finess_du_prospect : cite-les. Conclus avec conclure_prospect."
+  }
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure_prospect",
+    "args": "{\"adequation\":\"moyenne\",\"besoin_immobilier\":\"Multiples projets de construction et de réhabilitation de logements (ex. 84 logements autorisés en 2022 à Viroflay, projets en cours depuis 2015, plusieurs permis de logements et de locaux) indiquent un besoin immobilier récurrent.\",\"indices\":[\"permis_du_prospect: autorisation 2022 de 84 logements à Viroflay (etat autorisé)\",\"permis_du_prospect: projet commencé 2019 de 42 m² de locaux à Le Mesnil le Roi\",\"permis_du_prospect: projets terminés 2015-2017 de dizaines de logements (ex. 52 logements à Buchelay, 55 à Maisons Laffitte)\",\"fiche_entreprise: nature juridique SA de HLM à directoire, activité 68.20A Location de logements, effectif 41 (500-999 salariés), 56 établissements dont 20 ouverts, statut actif\",\"finess_du_prospect: aucun établissement FINESS (0), mais absence ne prouve pas absence d'activité médico‑sociale\"],\"limites\":\"Structure très grande (500‑999 salariés, 20 établissements ouverts) ; risque d’avoir une direction immobilière interne, ce qui réduit l’adéquation à moyenne.\",\"type_structure\":\"Bailleur social (SA de HLM)\",\"verdict\":\"prospect\"}"
+   }
+  ]
+ }
+]

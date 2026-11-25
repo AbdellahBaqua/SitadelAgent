@@ -1,0 +1,111 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "775665615"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "775665615"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "775665615"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "775665615"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "CAISS REGIO CREDI AGRIC MUTUEL PARIS IDF",
+     "nb_permis_PC": 3,
+     "annees_depot": [
+      "2016",
+      "2017"
+     ],
+     "nb_communes": 3,
+     "logements_crees_total": 0,
+     "surface_locaux_non_residentiels_creee_m2": 0,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 2
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "775665615",
+      "nom": "CAISS REGIO CREDI AGRIC MUTUEL PARIS IDF",
+      "nature_juridique": "6596",
+      "naf_actuel": "64.19Z",
+      "etat": "A",
+      "date_creation": "1969-03-01",
+      "categorie": "GE",
+      "effectif": "51",
+      "nb_etablissements": 454,
+      "nb_etablissements_ouverts": 281,
+      "siege_actuel": {
+       "siret": "77566561500347",
+       "naf": "64.19Z",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "77566561500347",
+       "naf_dans_permis": "64.19Z",
+       "nb_permis": 3,
+       "annees_depot": [
+        "2016",
+        "2017"
+       ],
+       "etat_actuel": "ouvert",
+       "date_creation": "1900-01-01",
+       "date_fermeture": null
+      }
+     ],
+     "alertes": [],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/775665615"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "64.19Z",
+      "libelle": "Autres intermédiations monétaires"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "6596",
+     "libelle": "Caisse de crédit agricole mutuel"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"entreprise_autre\",\"confiance\":\"haute\",\"indices\":[\"fiche_entreprise : nature_juridique 6596 = « Caisse de crédit agricole mutuel » (libelle_cj), forme juridique propre aux établissements de crédit mutualistes\",\"fiche_entreprise : naf_actuel 64.19Z = « Autres intermédiations monétaires » (libelle_naf), activité bancaire\",\"permis_du_demandeur : 3 permis déposés en 2016-2017, 0 logement créé, 0 m² non-résidentiel créé, 0 logement locatif social déclaré → pas d'activité de promotion immobilière ni de bailleur social\",\"fiche_entreprise : entreprise de catégorie GE (grande entreprise), 454 établissements dont 281 ouverts, siège actif au même SIRET que les permis → structure bancaire nationale/régionale\",\"dénomination : « CAISS REGIO CREDI AGRIC MUTUEL PARIS IDF » = Caisse régionale de Crédit Agricole Mutuel Paris Île-de-France, réseau bancaire mutualiste\"],\"limites\":\"Aucune : l'activité bancaire, la forme juridique de caisse de crédit agricole mutuel, l'absence de production de logements dans les permis et la taille de l'entreprise convergent toutes vers une entreprise du secteur financier (banque mutualiste), qui ne rentre dans aucune des familles immobilières/sociales/santé ciblées.\"}"
+   }
+  ]
+ }
+]

@@ -1,0 +1,109 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "992140244"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "992140244"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "992140244"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "992140244"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "SCA LES 2 ACTES",
+     "nb_permis_PC": 1,
+     "annees_depot": [
+      "2025"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 2,
+     "surface_locaux_non_residentiels_creee_m2": 0,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 1,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 1
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "992140244",
+      "nom": "SCA LES 2 ACTES",
+      "nature_juridique": "6542",
+      "naf_actuel": "68.32A",
+      "etat": "A",
+      "date_creation": "2025-09-11",
+      "categorie": null,
+      "effectif": "NN",
+      "nb_etablissements": 1,
+      "nb_etablissements_ouverts": 1,
+      "siege_actuel": {
+       "siret": "99214024400011",
+       "naf": "68.32A",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "99214024400011",
+       "naf_dans_permis": "68.32A",
+       "nb_permis": 1,
+       "annees_depot": [
+        "2025"
+       ],
+       "etat_actuel": "ouvert",
+       "date_creation": "2025-09-11",
+       "date_fermeture": null
+      }
+     ],
+     "alertes": [],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/992140244"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "68.32A",
+      "libelle": "Administration d'immeubles et autres biens immobiliers"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "6542",
+     "libelle": "Société civile d'attribution"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"fonciere_investisseur\",\"confiance\":\"faible\",\"indices\":[\"fiche_entreprise : nature_juridique 6542 = Société civile d'attribution (SCA), une forme de société civile immobilière destinée à détenir et attribuer des biens immobiliers à ses associés\",\"libelle_cj : 6542 = Société civile d'attribution\",\"permis_du_demandeur : 1 permis en 2025 créant 2 logements individuels (0 locatifs sociaux), indiquant une opération de constitution de patrimoine\",\"fiche_entreprise : naf_actuel 68.32A = Administration d'immeubles et autres biens immobiliers (activité de gestion/administration du patrimoine détenu)\"],\"limites\":\"L'activité NAF principale est l'administration de biens (68.32A) et non la location (68.20A), ce qui pourrait suggérer une activité de service plutôt que d'investissement locatif pur. La société est très récente (créée en 2025) et ne dispose que d'un seul permis. L'absence de logements sociaux déclarés et la forme SCA (souvent utilisée pour de l'accession collective ou de l'habitat groupé) laissent une ambiguïté : véhicule d'accession à la propriété pour des particuliers, structure d'habitat participatif, ou foncière classique. Aucune information sur les associés (personnes physiques ou morales) n'est disponible.\"}"
+   }
+  ]
+ }
+]

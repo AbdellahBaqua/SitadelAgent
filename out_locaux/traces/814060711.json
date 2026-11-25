@@ -1,0 +1,115 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "814060711"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "814060711"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "814060711"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "814060711"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "SELARL PHARMACIE LAREDO",
+     "nb_permis_PC": 1,
+     "annees_depot": [
+      "2017"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 0,
+     "surface_locaux_non_residentiels_creee_m2": 2,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 0
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "814060711",
+      "nom": "SELARL PHARMACIE LAREDO",
+      "nature_juridique": "5485",
+      "naf_actuel": "47.73Z",
+      "etat": "A",
+      "date_creation": "2015-10-13",
+      "categorie": "PME",
+      "effectif": "02",
+      "nb_etablissements": 1,
+      "nb_etablissements_ouverts": 1,
+      "siege_actuel": {
+       "siret": "81406071100011",
+       "naf": "47.73Z",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "81406071100011",
+       "naf_dans_permis": "70.10Z",
+       "nb_permis": 1,
+       "annees_depot": [
+        "2017"
+       ],
+       "etat_actuel": "ouvert",
+       "date_creation": "2015-10-13",
+       "date_fermeture": null
+      }
+     ],
+     "alertes": [
+      "NAF du permis ['70.10Z'] différent du NAF actuel de l'entreprise 47.73Z"
+     ],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/814060711"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "47.73Z",
+      "libelle": "Commerce de détail de produits pharmaceutiques en magasin spécialisé"
+     },
+     {
+      "code": "70.10Z",
+      "libelle": "Activités des sièges sociaux"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5485",
+     "libelle": "Société d'exercice libéral à responsabilité limitée"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"exploitant_sante_social\",\"confiance\":\"haute\",\"indices\":[\"fiche_entreprise : NAF actuel 47.73Z « Commerce de détail de produits pharmaceutiques en magasin spécialisé » (activité de pharmacie, secteur santé)\",\"fiche_entreprise : nature juridique 5485 (SELARL) – forme réservée aux professions libérales de santé (pharmaciens)\",\"libelle_naf : 47.73Z = commerce de détail de produits pharmaceutiques (confirmation secteur santé)\",\"libelle_cj : 5485 = Société d'exercice libéral à responsabilité limitée (structure d'exercice libéral en santé)\",\"permis_du_demandeur : 1 permis en 2017, 2 m² de surface non résidentielle créée, 0 logement – cohérent avec une extension ou modification de local de pharmacie\"],\"limites\":\"Le NAF indiqué dans le permis (70.10Z « Activités des sièges sociaux ») diffère du NAF actuel de l'entreprise ; il s'agit d'une valeur historique d'établissement (toujours ouvert) qui ne reflète pas l'activité réelle de pharmacie.\"}"
+   }
+  ]
+ }
+]

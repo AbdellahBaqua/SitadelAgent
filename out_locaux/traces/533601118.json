@@ -1,0 +1,109 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "533601118"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "533601118"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "533601118"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "533601118"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "H ET A",
+     "nb_permis_PC": 2,
+     "annees_depot": [
+      "2024"
+     ],
+     "nb_communes": 2,
+     "logements_crees_total": 0,
+     "surface_locaux_non_residentiels_creee_m2": 170,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 2
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "533601118",
+      "nom": "H ET A",
+      "nature_juridique": "5710",
+      "naf_actuel": "64.20Z",
+      "etat": "A",
+      "date_creation": "2011-07-13",
+      "categorie": "PME",
+      "effectif": "02",
+      "nb_etablissements": 3,
+      "nb_etablissements_ouverts": 1,
+      "siege_actuel": {
+       "siret": "53360111800037",
+       "naf": "64.20Z",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "53360111800037",
+       "naf_dans_permis": "64.20Z",
+       "nb_permis": 2,
+       "annees_depot": [
+        "2024"
+       ],
+       "etat_actuel": "ouvert",
+       "date_creation": "2023-04-26",
+       "date_fermeture": null
+      }
+     ],
+     "alertes": [],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/533601118"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "64.20Z",
+      "libelle": "Activités des sociétés holding"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5710",
+     "libelle": "SAS, société par actions simplifiée"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"non_determine\",\"confiance\":\"faible\",\"indices\":[\"permis_du_demandeur : 2 permis en 2024, 0 logement créé, 170 m² de surface non résidentielle, 0 logement social déclaré\",\"fiche_entreprise : SAS (CJ 5710), NAF actuel 64.20Z, active depuis 2011, 2 employés, 3 établissements dont 1 ouvert\",\"libelle_naf : 64.20Z = Activités des sociétés holding\",\"libelle_cj : 5710 = SAS, société par actions simplifiée\"],\"limites\":\"L'activité de holding (64.20Z) est compatible avec plusieurs familles (foncière d'investissement, promoteur via des filiales, holding familiale, etc.). Les permis ne portent que sur du non-résidentiel (170 m²) sans création de logements, ce qui ne permet pas de distinguer un promoteur, une foncière ou une entreprise autre. Aucune information sur le patrimoine détenu, l'activité de location ou la vente en l'état futur d'achèvement.\"}"
+   }
+  ]
+ }
+]

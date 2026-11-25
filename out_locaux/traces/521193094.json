@@ -1,0 +1,116 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "521193094"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "521193094"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "521193094"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "521193094"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "SCI LUMIERE",
+     "nb_permis_PC": 1,
+     "annees_depot": [
+      "2014"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 0,
+     "surface_locaux_non_residentiels_creee_m2": 48,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 1
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "521193094",
+      "nom": "SCI LUMIERE",
+      "nature_juridique": "6599",
+      "naf_actuel": "00.00Z",
+      "etat": "A",
+      "date_creation": "2010-03-23",
+      "categorie": null,
+      "effectif": "NN",
+      "nb_etablissements": 1,
+      "nb_etablissements_ouverts": 1,
+      "siege_actuel": {
+       "siret": "52119309400013",
+       "naf": "70.10Z",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "52119309400013",
+       "naf_dans_permis": "70.10Z",
+       "nb_permis": 1,
+       "annees_depot": [
+        "2014"
+       ],
+       "etat_actuel": "ouvert",
+       "date_creation": "2010-03-23",
+       "date_fermeture": null
+      }
+     ],
+     "alertes": [
+      "NAF du permis ['70.10Z'] différent du NAF actuel de l'entreprise 00.00Z"
+     ],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/521193094"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "00.00Z",
+      "libelle": null,
+      "note": "code NAF rév. 2 inconnu du référentiel"
+     },
+     {
+      "code": "70.10Z",
+      "libelle": "Activités des sièges sociaux"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "6599",
+     "libelle": "Autre société civile"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"fonciere_investisseur\",\"confiance\":\"moyenne\",\"indices\":[\"fiche_entreprise : nature juridique 6599 « Autre société civile » (forme SCI)\",\"fiche_entreprise : établissement siège NAF 70.10Z « Activités des sièges sociaux » (holding/gestion de patrimoine)\",\"libelle_naf : 70.10Z = « Activités des sièges sociaux »\",\"libelle_cj : 6599 = « Autre société civile »\",\"permis_du_demandeur : 1 seul permis en 2014 pour 48 m² non résidentiel, 0 logement créé, 0 logement social déclaré\",\"dénomination : « SCI LUMIÈRE » – appellation typique d'une SCI de détention immobilière\"],\"limites\":\"NAF actuel de l'entreprise inconnu (00.00Z non référencé) ; pas de preuve directe d'activité locative ou de patrimoine détenu ; un seul permis ancien (2014) qui ne permet pas de confirmer le modèle économique actuel.\"}"
+   }
+  ]
+ }
+]

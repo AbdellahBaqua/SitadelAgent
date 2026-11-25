@@ -1,0 +1,62 @@
+[
+ {
+  "etape": "pre",
+  "texte": "résultats calculés par le code avant le modèle",
+  "entree": {
+   "siren": "843651753",
+   "denomination": "ESPERANCE BANLIEUES POISSY",
+   "famille_classification": "association_ess",
+   "raisons_du_score": "famille cible (association_ess) +3 ; dépôt récent (2024) +2 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1",
+   "taille_calculee": "petite",
+   "taille_calcul": "salariés ≥ 6, établissements ouverts 1, établissements FINESS 0",
+   "permis_du_prospect": [
+    {
+     "num_dau": "07849824Y0028",
+     "fichier": "locaux",
+     "annee_depot": "2024",
+     "commune": "POISSY",
+     "etat": "terminé",
+     "type_projet": "",
+     "logements_crees": null,
+     "surface_locaux_creee_m2": 56
+    }
+   ],
+   "fiche_entreprise": {
+    "nom": "ESPERANCE BANLIEUES POISSY",
+    "nature_juridique": "9220",
+    "naf_actuel": "94.99Z",
+    "etat": "A",
+    "date_creation": "2018-10-18",
+    "categorie": "PME",
+    "effectif": "03",
+    "nb_etablissements": 1,
+    "nb_etablissements_ouverts": 1,
+    "libelle_naf_actuel": "Autres organisations fonctionnant par adhésion volontaire",
+    "libelle_nature_juridique": "Association déclarée",
+    "aide": "etat A = active, C ou F = cessée. effectif = tranche Insee de salariés (ex. 21 = 50 à 99, 41 = 500 à 999, 51 = 2 000 à 4 999). Dirigeants et finances volontairement exclus.",
+    "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/843651753"
+   },
+   "finess_du_prospect": {
+    "nb_etablissements_finess_france": 0,
+    "nb_etablissements_finess_yvelines": 0,
+    "nb_departements": 0,
+    "par_type": {},
+    "exemples_yvelines": [],
+    "source": "https://www.data.gouv.fr/datasets/53699569a3a729239d2046eb",
+    "aide": "Établissements dont le SIRET commence par ce SIREN. 0 ne prouve pas l'absence d'activité médico-sociale (SIRET non renseigné dans FINESS, autre entité juridique du même groupe)."
+   },
+   "origine": "demandeur de permis",
+   "consigne": "Ces résultats viennent des outils permis_du_prospect, fiche_entreprise et finess_du_prospect : cite-les. Conclus avec conclure_prospect."
+  }
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure_prospect",
+    "args": "{\"verdict\":\"a_verifier\",\"adequation\":\"faible\",\"type_structure\":\"Association déclarée (ESS) « Autres organisations fonctionnant par adhésion volontaire » (NAF 94.99Z), petite taille (6‑9 salariés)\",\"besoin_immobilier\":\"Un permis de construire pour 56 m² de locaux délivré en 2024 à Poissy (état « terminé »), aucun projet en cours identifié.\",\"indices\":[\"fiche_entreprise : association déclarée (nature juridique 9220), NAF 94.99Z « Autres organisations fonctionnant par adhésion volontaire », active (état A), effectif 03 (6‑9 salariés), 1 établissement ouvert.\",\"permis_du_prospect : un permis déposé en 2024 à Poissy pour création de 56 m² de locaux, état « terminé ».\",\"finess_du_prospect : 0 établissement FINESS (ne prouve pas l'absence d'activité médico‑sociale).\",\"dénomination : « ESPERANCE BANLIEUES POISSY » évoque le réseau d'écoles « Espérance Banlieues » (activité potentiellement exclue), mais non confirmé par le NAF.\"],\"limites\":\"NAF 94.99Z large, ne permet pas de confirmer ni d'exclure une activité d'enseignement scolaire (cas évident écarté par le code) ; taille petite (effectif 03) hors cœur de cible Buddimm (structures moyennes/grandes) ; permis unique et terminé, besoin immobilier actuel peu visible.\"}"
+   }
+  ]
+ }
+]

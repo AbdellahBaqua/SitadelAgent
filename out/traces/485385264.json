@@ -1,0 +1,111 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "485385264"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "485385264"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "485385264"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "485385264"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "SARL L.T. IMMOBILIER",
+     "nb_permis_PC": 1,
+     "annees_depot": [
+      "2014"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 1,
+     "surface_locaux_non_residentiels_creee_m2": 0,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 1,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 0
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "485385264",
+      "nom": "LT IMMOBILIER",
+      "nature_juridique": "5710",
+      "naf_actuel": "68.31Z",
+      "etat": "C",
+      "date_creation": "2005-12-06",
+      "categorie": "GE",
+      "effectif": "NN",
+      "nb_etablissements": 4,
+      "nb_etablissements_ouverts": 0,
+      "siege_actuel": {
+       "siret": "48538526400042",
+       "naf": "68.31Z",
+       "etat": "F"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "48538526400034",
+       "naf_dans_permis": "68.31Z",
+       "nb_permis": 1,
+       "annees_depot": [
+        "2014"
+       ],
+       "etat_actuel": "fermé",
+       "date_creation": "2012-09-01",
+       "date_fermeture": "2025-12-31"
+      }
+     ],
+     "alertes": [
+      "SIRET 48538526400034 (permis 2014) fermé le 2025-12-31 : le NAF 68.31Z du permis vient d'un établissement fermé"
+     ],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/485385264"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "68.31Z",
+      "libelle": "Agences immobilières"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5499",
+     "libelle": "Société à responsabilité limitée (sans autre indication)"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"entreprise_autre\",\"confiance\":\"moyenne\",\"indices\":[\"fiche_entreprise : entreprise naf_actuel 68.31Z « Agences immobilières », nature_juridique 5710 (SARL), etat C (fermée), 0 établissements ouverts\",\"permis_du_demandeur : 1 permis en 2014, individuel, 1 logement créé, 0 logement social\",\"libelle_naf : 68.31Z = Agences immobilières\",\"libelle_cj : 5499 = Société à responsabilité limitée (sans autre indication)\",\"dénomination : SARL L.T. IMMOBILIER (nom commercial LT IMMOBILIER)\"],\"limites\":\"Entreprise fermée (état C), permis unique ancien (2014) porté par un établissement fermé. L'activité actuelle (agence immobilière) ne correspond pas aux familles spécialisées (bailleur, promoteur, foncière, association, exploitant santé, collectivité, copropriété). Impossible de savoir si la SARL a agi comme marchand de biens ou promoteur occasionnel ; le NAF 68.31Z (agence) diffère des codes promotion (41.10D) ou achat/revente propre (68.10Z).\"}"
+   }
+  ]
+ }
+]

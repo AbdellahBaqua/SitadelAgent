@@ -1,0 +1,113 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "304497183"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "304497183"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "304497183"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "304497183"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "A2BCD",
+     "nb_permis_PC": 4,
+     "annees_depot": [
+      "2012",
+      "2014"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 0,
+     "surface_locaux_non_residentiels_creee_m2": 403,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 1
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "304497183",
+      "nom": "A2BCD (A2BCD) (CAGIF)",
+      "nature_juridique": "5710",
+      "naf_actuel": "68.32A",
+      "etat": "A",
+      "date_creation": "1974-01-01",
+      "categorie": "ETI",
+      "effectif": "12",
+      "nb_etablissements": 4,
+      "nb_etablissements_ouverts": 2,
+      "siege_actuel": {
+       "siret": "30449718300042",
+       "naf": "68.32A",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "30449718300026",
+       "naf_dans_permis": "68.32A",
+       "nb_permis": 4,
+       "annees_depot": [
+        "2012",
+        "2014"
+       ],
+       "etat_actuel": "fermé",
+       "date_creation": "1993-07-23",
+       "date_fermeture": "2020-07-27"
+      }
+     ],
+     "alertes": [
+      "SIRET 30449718300026 (permis 2012,2014) fermé le 2020-07-27 : le NAF 68.32A du permis vient d'un établissement fermé"
+     ],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/304497183"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "68.32A",
+      "libelle": "Administration d'immeubles et autres biens immobiliers"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5599",
+     "libelle": "SA à conseil d'administration (s.a.i.)"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"fonciere_investisseur\",\"confiance\":\"moyenne\",\"indices\":[\"fiche_entreprise : NAF actuel 68.32A « Administration d'immeubles et autres biens immobiliers » (activité de gestion/administration de biens immobiliers, cœur de métier des foncières et sociétés de gestion de patrimoine)\",\"fiche_entreprise : Nature juridique 5599 (SA à conseil d'administration) — forme commerciale classique pour une foncière ou une société de gestion immobilière\",\"permis_du_demandeur : 4 permis (2012, 2014) avec 403 m² de surface non résidentielle créée et 0 logement — cohérent avec une activité de portage/gestion de locaux tertiaires/commerciaux plutôt que de promotion ou de logement social\",\"libelle_naf : 68.32A = « Administration d'immeubles et autres biens immobiliers » — code NAF typique des foncières, SCI de gestion, sociétés d'administration de biens\",\"fiche_entreprise : Entreprise active (ETI, 12 salariés) dont l'établissement porteur des permis est fermé depuis 2020 — l'activité actuelle (NAF 68.32A au siège) confirme la vocation immobilière\"],\"limites\":\"[\\\"On ne sait pas si A2BCD détient le patrimoine en propre (foncière) ou gère pour le compte de tiers (administrateur de biens) — la distinction n'est pas tranchée par les données publiques.\\\", \\\"Aucun élément ne rattache la structure au secteur HLM/ESS/santé-social ; l'absence de logements sociaux déclarés (0) et la nature juridique SA standard écartent les familles bailleur_social, association_ess, exploitant_sante_social, collectivite_public, copropriete.\\\", \\\"Le nom « A2BCD (CAGIF) » n'est pas explicite ; CAGIF pourrait évoquer une caisse de gestion immobilière mais cela reste une hypothèse non vérifiée.\\\"]\"}"
+   }
+  ]
+ }
+]

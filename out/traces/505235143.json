@@ -1,0 +1,106 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "505235143"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "505235143"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "505235143"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "505235143"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "FINANCIERE OGIC",
+     "nb_permis_PC": 1,
+     "annees_depot": [
+      "2019"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 139,
+     "surface_locaux_non_residentiels_creee_m2": 0,
+     "nb_permis_collectif": 1,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 41,
+     "permis_autorises_pas_remontes_comme_commences": 0
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "505235143",
+      "nom": "FINANCIERE OGIC",
+      "nature_juridique": "5710",
+      "naf_actuel": "64.20Z",
+      "etat": "A",
+      "date_creation": "2008-07-04",
+      "categorie": "ETI",
+      "effectif": "12",
+      "nb_etablissements": 13,
+      "nb_etablissements_ouverts": 3,
+      "siege_actuel": {
+       "siret": "50523514300094",
+       "naf": "64.20Z",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "?",
+       "naf_dans_permis": "64.20Z",
+       "nb_permis": 1,
+       "annees_depot": [
+        "2019"
+       ]
+      }
+     ],
+     "alertes": [],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/505235143"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "64.20Z",
+      "libelle": "Activités des sociétés holding"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5710",
+     "libelle": "SAS, société par actions simplifiée"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"promoteur\",\"confiance\":\"moyenne\",\"indices\":[\"permis_du_demandeur : 1 permis en 2019, 139 logements créés dont 41 locatifs sociaux, 1 permis collectif → activité de production de logements neufs\",\"fiche_entreprise : NAF actuel 64.20Z (holding), forme SAS, ETI, 12 employés → structure financière, mais le permis est déposé par cette entité\",\"libelle_naf : 64.20Z = Activités des sociétés holding\",\"libelle_cj : 5710 = SAS\",\"dénomination : FINANCIERE OGIC → holding du groupe OGIC, promoteur immobilier connu (connaissance du modèle non vérifiée)\"],\"limites\":\"Le NAF indique une holding, pas une activité de promotion opérationnelle ; le permis pourrait être déposé pour le compte d'une filiale. Aucune preuve directe que cette entité construit pour vendre.\"}"
+   }
+  ]
+ }
+]

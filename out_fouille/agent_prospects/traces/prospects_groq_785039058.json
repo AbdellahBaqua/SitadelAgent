@@ -1,0 +1,230 @@
+[
+ {
+  "etape": "pre",
+  "texte": "résultats calculés par le code avant le modèle",
+  "entree": {
+   "siren": "785039058",
+   "denomination": "AVENIR APEI",
+   "famille_classification": "association_ess",
+   "raisons_du_score": "famille cible (association_ess) +3 ; projet médico-social (résidence handicapés, équipement d'action sociale, équipement de santé) +3 ; dépôt récent (2025) +2 ; 3 permis autorisé(s) depuis moins de 3 ans, pas encore commencé(s) +2",
+   "taille_calculee": "grande",
+   "taille_calcul": "salariés ≥ 500, établissements ouverts 29, établissements FINESS 20",
+   "permis_du_prospect": [
+    {
+     "num_dau": "07865025G0014",
+     "fichier": "logements",
+     "annee_depot": "2025",
+     "commune": "LE VESINET",
+     "etat": "autorisé",
+     "type_projet": "résidence handicapés",
+     "logements_crees": 8,
+     "surface_locaux_creee_m2": null
+    },
+    {
+     "num_dau": "07812625G0014",
+     "fichier": "locaux",
+     "annee_depot": "2025",
+     "commune": "LA CELLE-SAINT-CLOUD",
+     "etat": "autorisé",
+     "type_projet": "équipement d'action sociale",
+     "logements_crees": null,
+     "surface_locaux_creee_m2": 564
+    },
+    {
+     "num_dau": "0784812500009",
+     "fichier": "locaux",
+     "annee_depot": "2025",
+     "commune": "LE PECQ",
+     "etat": "commencé",
+     "type_projet": "équipement d'action sociale",
+     "logements_crees": null,
+     "surface_locaux_creee_m2": 0
+    },
+    {
+     "num_dau": "07812624G0021",
+     "fichier": "locaux",
+     "annee_depot": "2024",
+     "commune": "LA CELLE-SAINT-CLOUD",
+     "etat": "autorisé",
+     "type_projet": "équipement d'action sociale",
+     "logements_crees": null,
+     "surface_locaux_creee_m2": 576
+    },
+    {
+     "num_dau": "0781722200052",
+     "fichier": "locaux",
+     "annee_depot": "2022",
+     "commune": "CONFLANS-SAINTE-HONORINE",
+     "etat": "terminé",
+     "type_projet": "équipement d'action sociale",
+     "logements_crees": null,
+     "surface_locaux_creee_m2": 20
+    },
+    {
+     "num_dau": "07812420G0011",
+     "fichier": "locaux",
+     "annee_depot": "2020",
+     "commune": "CARRIERES-SUR-SEINE",
+     "etat": "commencé",
+     "type_projet": "équipement de santé",
+     "logements_crees": null,
+     "surface_locaux_creee_m2": 634
+    },
+    {
+     "num_dau": "07812418G0011",
+     "fichier": "locaux",
+     "annee_depot": "2018",
+     "commune": "CARRIERES-SUR-SEINE",
+     "etat": "terminé",
+     "type_projet": "équipement d'action sociale",
+     "logements_crees": null,
+     "surface_locaux_creee_m2": 769
+    },
+    {
+     "num_dau": "07855117Z0078",
+     "fichier": "locaux",
+     "annee_depot": "2017",
+     "commune": "SAINT-GERMAIN-EN-LAYE",
+     "etat": "terminé",
+     "type_projet": "",
+     "logements_crees": null,
+     "surface_locaux_creee_m2": 756
+    },
+    {
+     "num_dau": "07812416G0009",
+     "fichier": "locaux",
+     "annee_depot": "2016",
+     "commune": "CARRIERES SUR SEINE",
+     "etat": "annulé",
+     "type_projet": "",
+     "logements_crees": null,
+     "surface_locaux_creee_m2": 272
+    },
+    {
+     "num_dau": "07819016G0020",
+     "fichier": "locaux",
+     "annee_depot": "2016",
+     "commune": "CROISSY-SUR-SEINE",
+     "etat": "commencé",
+     "type_projet": "équipement de santé",
+     "logements_crees": null,
+     "surface_locaux_creee_m2": 116
+    }
+   ],
+   "fiche_entreprise": {
+    "nom": "AVENIR APEI",
+    "nature_juridique": "9220",
+    "naf_actuel": "88.10B",
+    "etat": "A",
+    "date_creation": "1900-01-01",
+    "categorie": "ETI",
+    "effectif": "41",
+    "nb_etablissements": 36,
+    "nb_etablissements_ouverts": 29,
+    "libelle_naf_actuel": "Accueil ou accompagnement sans hébergement d’adultes handicapés ou de  personnes âgées",
+    "libelle_nature_juridique": "Association déclarée",
+    "aide": "etat A = active, C ou F = cessée. effectif = tranche Insee de salariés (ex. 21 = 50 à 99, 41 = 500 à 999, 51 = 2 000 à 4 999). Dirigeants et finances volontairement exclus.",
+    "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/785039058"
+   },
+   "finess_du_prospect": {
+    "nb_etablissements_finess_france": 20,
+    "nb_etablissements_finess_yvelines": 20,
+    "nb_departements": 1,
+    "par_type": {
+     "Etab. et Services d'Hébergement pour Adultes Handicapés": 9,
+     "Etab.et Services de Travail Protégé pour Adultes Handicapés": 4,
+     "Etab.Educ.Spéciale pour Déficients Mentaux et Handicapés": 3,
+     "Etab.Expérimentaux en Faveur des Adultes Handicapés": 2,
+     "Services à Domicile ou Ambulatoires pour Handicapés": 1,
+     "Services de Maintien à Domicile pour Handicapés": 1
+    },
+    "exemples_yvelines": [
+     {
+      "finess": "780002598",
+      "nom": "MAISON D ACCUEIL SPECIALISEE",
+      "ville": "CONFLANS STE HONORINE",
+      "categorie": "Maison d'Accueil Spécialisée (M.A.S.)",
+      "ouverture": "2004-11-02"
+     },
+     {
+      "finess": "780002648",
+      "nom": "FOYER DE VIE LE POINT DU JOUR",
+      "ville": "CONFLANS STE HONORINE",
+      "categorie": "Etab.Accueil Non Médicalisé pour personnes handicapées",
+      "ouverture": "2004-11-01"
+     },
+     {
+      "finess": "780012019",
+      "nom": "FOYER D ACCUEIL POLYVALENT POUR ADULTES HANDICAPES",
+      "ville": "ST CYR L ECOLE",
+      "categorie": "Foyer d'Accueil Polyvalent pour Adultes Handicapés",
+      "ouverture": "2006-05-15"
+     },
+     {
+      "finess": "780020103",
+      "nom": "FOYER DE VIE LES MESANGES",
+      "ville": "CROISSY SUR SEINE",
+      "categorie": "Foyer de Vie pour Adultes Handicapés",
+      "ouverture": "2009-01-01"
+     },
+     {
+      "finess": "780023792",
+      "nom": "SECTION ADAPTATION SPECIALISEE CHATOU",
+      "ville": "CHATOU",
+      "categorie": "Etablissement Expérimental pour Adultes Handicapés",
+      "ouverture": "2005-10-11"
+     },
+     {
+      "finess": "780170015",
+      "nom": "ETABLISSEMENT ET SERVICE D AIDE PAR LE TRAVAIL",
+      "ville": "CARRIERES SUR SEINE",
+      "categorie": "Etablissement et Service d'Aide par le Travail (E.S.A.T.)",
+      "ouverture": "1978-09-01"
+     },
+     {
+      "finess": "780690020",
+      "nom": "INSTITUT MEDICO EDUCATIF LA ROSERAIE",
+      "ville": "CARRIERES SUR SEINE",
+      "categorie": "Institut Médico-Educatif (I.M.E.)",
+      "ouverture": "1964-10-01"
+     },
+     {
+      "finess": "780690269",
+      "nom": "INSTITUT MEDICO PEDAGOGIQUE LES PAPILLONS BLANCS",
+      "ville": "CONFLANS STE HONORINE CEDE",
+      "categorie": "Institut Médico-Educatif (I.M.E.)",
+      "ouverture": "1994-07-29"
+     },
+     {
+      "finess": "780700787",
+      "nom": "ETABLISSEMENT ET SERVICE D AIDE PAR LE TRAVAIL LES NEFLIERS",
+      "ville": "ST GERMAIN EN LAYE",
+      "categorie": "Etablissement et Service d'Aide par le Travail (E.S.A.T.)",
+      "ouverture": "1973-01-01"
+     },
+     {
+      "finess": "780800769",
+      "nom": "ETABLISSEMENT ET SERVICE D AIDE PAR LE TRAVAIL",
+      "ville": "LA CELLE ST CLOUD",
+      "categorie": "Etablissement et Service d'Aide par le Travail (E.S.A.T.)",
+      "ouverture": "1982-01-01"
+     }
+    ],
+    "source": "https://www.data.gouv.fr/datasets/53699569a3a729239d2046eb",
+    "aide": "Établissements dont le SIRET commence par ce SIREN. 0 ne prouve pas l'absence d'activité médico-sociale (SIRET non renseigné dans FINESS, autre entité juridique du même groupe)."
+   },
+   "origine": "demandeur de permis",
+   "consigne": "Ces résultats viennent des outils permis_du_prospect, fiche_entreprise et finess_du_prospect : cite-les. Conclus avec conclure_prospect."
+  }
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure_prospect",
+    "args": "{\"adequation\":\"forte\",\"besoin_immobilier\":\"Multiples projets immobiliers récents (résidence handicapés, équipements d'action sociale et de santé) autorisés ou en cours, témoignant d'un besoin de pilotage et de suivi de projets immobiliers.\",\"indices\":[\"permis_du_prospect: plusieurs autorisations récentes (2025) pour résidence handicapés et équipements d'action sociale/ santé, dont 8 projets autorisés ou commencés\",\"fiche_entreprise: association déclarée (nature juridique 9220), NAF 88.10B (accueil sans hébergement d’adultes handicapés), effectif 41 (grande), 36 établissements dont 29 ouverts\",\"finess_du_prospect: 20 établissements FINESS en Yvelines, tous liés à l'hébergement ou services pour adultes handicapés\"],\"limites\":\"Structure de taille grande (effectif 500‑999) ; certaines très grandes structures possèdent déjà une direction immobilière interne, ce qui pourrait réduire l'opportunité, mais le volume d'établissements et les projets en cours restent pertinents.\",\"type_structure\":\"Association de l'ESS spécialisée dans l'accueil et l'accompagnement d'adultes handicapés, gestionnaire de 20 établissements médico‑sociaux en Yvelines.\",\"verdict\":\"prospect\"}"
+   }
+  ]
+ }
+]

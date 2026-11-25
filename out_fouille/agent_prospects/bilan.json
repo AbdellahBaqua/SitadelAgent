@@ -1,0 +1,22 @@
+{
+ "permis": 98,
+ "par_raison": {
+  "exploitant trouvé": 22,
+  "bâtiment pas encore ouvert (autorisé non commencé ou annulé)": 23,
+  "adresse du permis vide": 6,
+  "résidence seniors privée probable (hors FINESS)": 14,
+  "aucun établissement compatible dans la commune": 8,
+  "aucun établissement compatible dans la rue": 24,
+  "candidat dans la rue écarté par l'agent": 1
+ },
+ "attendus_dans_finess": 55,
+ "trouves": 22,
+ "taux_sur_attendus": 40,
+ "par_confiance": {
+  "moyenne": 11,
+  "faible": 6,
+  "haute": 5
+ },
+ "meme_entite": 5,
+ "nouveaux_exploitants": 8
+}

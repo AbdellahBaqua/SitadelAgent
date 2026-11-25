@@ -1,0 +1,115 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "802949230"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "802949230"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "802949230"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "802949230"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "BABY VILLAGE DU VEXIN",
+     "nb_permis_PC": 1,
+     "annees_depot": [
+      "2014"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 0,
+     "surface_locaux_non_residentiels_creee_m2": 0,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 0
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "802949230",
+      "nom": "BABY VILLAGE DU VEXIN",
+      "nature_juridique": "5499",
+      "naf_actuel": "88.91A",
+      "etat": "A",
+      "date_creation": "2014-06-17",
+      "categorie": "PME",
+      "effectif": "03",
+      "nb_etablissements": 4,
+      "nb_etablissements_ouverts": 4,
+      "siege_actuel": {
+       "siret": "80294923000048",
+       "naf": "88.91A",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "80294923000014",
+       "naf_dans_permis": "70.10Z",
+       "nb_permis": 1,
+       "annees_depot": [
+        "2014"
+       ],
+       "etat_actuel": "ouvert",
+       "date_creation": "2014-06-17",
+       "date_fermeture": null
+      }
+     ],
+     "alertes": [
+      "NAF du permis ['70.10Z'] différent du NAF actuel de l'entreprise 88.91A"
+     ],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/802949230"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "70.10Z",
+      "libelle": "Activités des sièges sociaux"
+     },
+     {
+      "code": "88.91A",
+      "libelle": "Accueil de jeunes enfants"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5499",
+     "libelle": "Société à responsabilité limitée (sans autre indication)"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"exploitant_sante_social\",\"confiance\":\"haute\",\"indices\":[\"fiche_entreprise : NAF actuel 88.91A « Accueil de jeunes enfants » (activité de petite enfance)\",\"fiche_entreprise : nature juridique 5499 = SARL (entreprise privée, non association)\",\"libelle_naf : 88.91A correspond à l'accueil de jeunes enfants (petite enfance)\",\"permis_du_demandeur : 1 permis en 2014, aucun logement social ni résidence déclarée\",\"libelle_cj : 5499 = Société à responsabilité limitée (sans autre indication)\"],\"limites\":\"Le permis date de 2014 et son NAF (70.10Z « Activités des sièges sociaux ») diffère de l'activité actuelle ; la surface créée n'est pas renseignée dans les données de permis. L'établissement porteur du permis (SIRET 80294923000014) est encore ouvert aujourd'hui.\"}"
+   }
+  ]
+ }
+]

@@ -1,0 +1,2080 @@
+[
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "apercu",
+    "args": {},
+    "sortie": {
+     "perimetre": "PC des Yvelines (78) créant des logements, déposés par des personnes morales, extraction SDES/Sitadel",
+     "nb_permis": 3363,
+     "nb_demandeurs": 2048,
+     "annees_depot": {
+      "2011": 3,
+      "2012": 100,
+      "2013": 222,
+      "2014": 235,
+      "2015": 258,
+      "2016": 266,
+      "2017": 290,
+      "2018": 247,
+      "2019": 256,
+      "2020": 231,
+      "2021": 356,
+      "2022": 247,
+      "2023": 221,
+      "2024": 185,
+      "2025": 168,
+      "2026": 77,
+      "2091": 1
+     },
+     "familles_demandeurs": {
+      "fonciere_investisseur": 1014,
+      "promoteur": 690,
+      "non_determine": 172,
+      "collectivite_public": 79,
+      "bailleur_social": 31,
+      "entreprise_autre": 29,
+      "association_ess": 26,
+      "copropriete": 4,
+      "exploitant_sante_social": 3
+     },
+     "colonnes_interrogeables": [
+      "famille",
+      "AN_DEPOT",
+      "COMM",
+      "ADR_LOCALITE_TER",
+      "ETAT_DAU",
+      "RESIDENCE",
+      "TYPE_PRINCIP_LOGTS_CREES",
+      "NATURE_PROJET_COMPLETEE",
+      "TYPE_TRANSFO_PRINCIPAL",
+      "TYPE_PRINCIP_LOCAUX_TRANSFORMES",
+      "UTILISATION",
+      "DESTINATION_PRINCIPALE",
+      "ZONE_OP",
+      "CJ_DEM",
+      "APE_DEM",
+      "SIREN_DEM",
+      "DENOM_DEM"
+     ],
+     "mesures": [
+      "permis",
+      "logements",
+      "acteurs"
+     ],
+     "remarques": [
+      "2026 est une année partielle",
+      "un permis modificatif n'a pas de ligne propre",
+      "~15 % des ouvertures de chantier et ~1/3 des achèvements ne remontent jamais",
+      "APE_DEM = NAF de l'établissement du permis, possiblement fermé",
+      "RESIDENCE est rempli sur une petite minorité de permis (souvent 'non rempli') ; les drapeaux RES_* n'existent que depuis mai 2022",
+      "NATURE_PROJET_COMPLETEE et TYPE_TRANSFO_* sont dits 'introduits en mai 2022' mais sont renseignés dès 2012 dans le fichier (recodage SDES probable)"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 1,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "SIREN_DEM",
+      "DENOM_DEM",
+      "famille"
+     ],
+     "mesure": "logements",
+     "top": 50
+    },
+    "sortie": {
+     "filtres": {},
+     "nb_permis_filtres": 3363,
+     "nb_groupes": 2068,
+     "resultats": [
+      {
+       "SIREN_DEM": "562091546",
+       "DENOM_DEM": "BOUYGUES IMMOBILIER",
+       "famille": "promoteur",
+       "permis": 48,
+       "logements": 3617,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "824350763",
+       "DENOM_DEM": "NEXITY IR PROGRAMMES GRAND PARIS",
+       "famille": "promoteur",
+       "permis": 19,
+       "logements": 1848,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "379445679",
+       "DENOM_DEM": "KAUFMAN & BROAD HOMES",
+       "famille": "promoteur",
+       "permis": 19,
+       "logements": 1762,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "552141533",
+       "DENOM_DEM": "IMMOBILIERE 3F",
+       "famille": "bailleur_social",
+       "permis": 44,
+       "logements": 1552,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "788058030",
+       "DENOM_DEM": "ADOMA",
+       "famille": "bailleur_social",
+       "permis": 11,
+       "logements": 1530,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "810928135",
+       "DENOM_DEM": "ALTAREA COGEDIM IDF",
+       "famille": "promoteur",
+       "permis": 11,
+       "logements": 1445,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "315518803",
+       "DENOM_DEM": "ANTIN RESIDENCES SA HABITAT LOYER MODERE",
+       "famille": "bailleur_social",
+       "permis": 30,
+       "logements": 1442,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "444760482",
+       "DENOM_DEM": "SCI RESIDENCES FRANCO SUISSE",
+       "famille": "promoteur",
+       "permis": 15,
+       "logements": 1180,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "419750252",
+       "DENOM_DEM": "MARIGNAN RESIDENCES",
+       "famille": "promoteur",
+       "permis": 18,
+       "logements": 951,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "592001648",
+       "DENOM_DEM": "ENTREPRISE SOCIALE POUR L'HABITAT DOMNIS",
+       "famille": "bailleur_social",
+       "permis": 29,
+       "logements": 933,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "824309751",
+       "DENOM_DEM": "NEXITY IR PROGRAMMES DOMAINES",
+       "famille": "promoteur",
+       "permis": 15,
+       "logements": 780,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "887490365",
+       "DENOM_DEM": "MARIGNAN ILE DE FRANCE",
+       "famille": "promoteur",
+       "permis": 11,
+       "logements": 772,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "489244483",
+       "DENOM_DEM": "EIFFAGE IMMOBILIER ILE DE FRANCE",
+       "famille": "promoteur",
+       "permis": 11,
+       "logements": 761,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "582142816",
+       "DENOM_DEM": "SA D'H L M FRANCE HABITATION",
+       "famille": "bailleur_social",
+       "permis": 23,
+       "logements": 729,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "353708746",
+       "DENOM_DEM": "DEMATHIEU ET BARD IMMOBILIER",
+       "famille": "fonciere_investisseur",
+       "permis": 10,
+       "logements": 571,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "444266555",
+       "DENOM_DEM": "SNC KAUFMAN & BROAD PROMOTION 4",
+       "famille": "promoteur",
+       "permis": 4,
+       "logements": 561,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "308435460",
+       "DENOM_DEM": "LES RESIDENCES SOCIETE ANONYME D'HABITATIONS A LOYER MODERE",
+       "famille": "bailleur_social",
+       "permis": 30,
+       "logements": 558,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "844198960",
+       "DENOM_DEM": "SNC IP1R",
+       "famille": "promoteur",
+       "permis": 10,
+       "logements": 547,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "784606576",
+       "DENOM_DEM": "ICADE PROMOTION",
+       "famille": "promoteur",
+       "permis": 7,
+       "logements": 540,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "444510853",
+       "DENOM_DEM": "SNC KAUFMAN & BROAD PROMOTION 6",
+       "famille": "promoteur",
+       "permis": 8,
+       "logements": 521,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "343183331",
+       "DENOM_DEM": "SOCIETE D'ETUDES, D'AMENAGEMENT ET DE REALISATIONS IMMOBILIERES ET FONCIERES",
+       "famille": "promoteur",
+       "permis": 3,
+       "logements": 507,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "794436170",
+       "DENOM_DEM": "SCCV VILLEPREUX - RUE DE LA PEPINIERE",
+       "famille": "promoteur",
+       "permis": 1,
+       "logements": 496,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "891412918",
+       "DENOM_DEM": "SAS TRIOLET",
+       "famille": "non_determine",
+       "permis": 1,
+       "logements": 485,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "415235514",
+       "DENOM_DEM": "PROMOTION PICHET",
+       "famille": "promoteur",
+       "permis": 2,
+       "logements": 470,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "480426048",
+       "DENOM_DEM": "ARC PROMOTION ILE DE FRANCE",
+       "famille": "promoteur",
+       "permis": 7,
+       "logements": 445,
+       "acteurs": 1
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 2,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "famille"
+     ],
+     "mesure": "logements"
+    },
+    "sortie": {
+     "filtres": {},
+     "nb_permis_filtres": 3363,
+     "nb_groupes": 9,
+     "resultats": [
+      {
+       "famille": "promoteur",
+       "permis": 1112,
+       "logements": 61394,
+       "acteurs": 690
+      },
+      {
+       "famille": "bailleur_social",
+       "permis": 299,
+       "logements": 11785,
+       "acteurs": 31
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "permis": 1410,
+       "logements": 10435,
+       "acteurs": 1014
+      },
+      {
+       "famille": "non_determine",
+       "permis": 247,
+       "logements": 3729,
+       "acteurs": 172
+      },
+      {
+       "famille": "collectivite_public",
+       "permis": 166,
+       "logements": 1200,
+       "acteurs": 79
+      },
+      {
+       "famille": "entreprise_autre",
+       "permis": 79,
+       "logements": 873,
+       "acteurs": 29
+      },
+      {
+       "famille": "association_ess",
+       "permis": 40,
+       "logements": 580,
+       "acteurs": 26
+      },
+      {
+       "famille": "copropriete",
+       "permis": 4,
+       "logements": 112,
+       "acteurs": 4
+      },
+      {
+       "famille": "exploitant_sante_social",
+       "permis": 6,
+       "logements": 7,
+       "acteurs": 3
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 3,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "famille",
+      "SIREN_DEM",
+      "DENOM_DEM"
+     ],
+     "mesure": "logements",
+     "top": 100
+    },
+    "sortie": {
+     "filtres": {},
+     "nb_permis_filtres": 3363,
+     "nb_groupes": 2068,
+     "resultats": [
+      {
+       "famille": "promoteur",
+       "SIREN_DEM": "562091546",
+       "DENOM_DEM": "BOUYGUES IMMOBILIER",
+       "permis": 48,
+       "logements": 3617,
+       "acteurs": 1
+      },
+      {
+       "famille": "promoteur",
+       "SIREN_DEM": "824350763",
+       "DENOM_DEM": "NEXITY IR PROGRAMMES GRAND PARIS",
+       "permis": 19,
+       "logements": 1848,
+       "acteurs": 1
+      },
+      {
+       "famille": "promoteur",
+       "SIREN_DEM": "379445679",
+       "DENOM_DEM": "KAUFMAN & BROAD HOMES",
+       "permis": 19,
+       "logements": 1762,
+       "acteurs": 1
+      },
+      {
+       "famille": "bailleur_social",
+       "SIREN_DEM": "552141533",
+       "DENOM_DEM": "IMMOBILIERE 3F",
+       "permis": 44,
+       "logements": 1552,
+       "acteurs": 1
+      },
+      {
+       "famille": "bailleur_social",
+       "SIREN_DEM": "788058030",
+       "DENOM_DEM": "ADOMA",
+       "permis": 11,
+       "logements": 1530,
+       "acteurs": 1
+      },
+      {
+       "famille": "promoteur",
+       "SIREN_DEM": "810928135",
+       "DENOM_DEM": "ALTAREA COGEDIM IDF",
+       "permis": 11,
+       "logements": 1445,
+       "acteurs": 1
+      },
+      {
+       "famille": "bailleur_social",
+       "SIREN_DEM": "315518803",
+       "DENOM_DEM": "ANTIN RESIDENCES SA HABITAT LOYER MODERE",
+       "permis": 30,
+       "logements": 1442,
+       "acteurs": 1
+      },
+      {
+       "famille": "promoteur",
+       "SIREN_DEM": "444760482",
+       "DENOM_DEM": "SCI RESIDENCES FRANCO SUISSE",
+       "permis": 15,
+       "logements": 1180,
+       "acteurs": 1
+      },
+      {
+       "famille": "promoteur",
+       "SIREN_DEM": "419750252",
+       "DENOM_DEM": "MARIGNAN RESIDENCES",
+       "permis": 18,
+       "logements": 951,
+       "acteurs": 1
+      },
+      {
+       "famille": "bailleur_social",
+       "SIREN_DEM": "592001648",
+       "DENOM_DEM": "ENTREPRISE SOCIALE POUR L'HABITAT DOMNIS",
+       "permis": 29,
+       "logements": 933,
+       "acteurs": 1
+      },
+      {
+       "famille": "promoteur",
+       "SIREN_DEM": "824309751",
+       "DENOM_DEM": "NEXITY IR PROGRAMMES DOMAINES",
+       "permis": 15,
+       "logements": 780,
+       "acteurs": 1
+      },
+      {
+       "famille": "promoteur",
+       "SIREN_DEM": "887490365",
+       "DENOM_DEM": "MARIGNAN ILE DE FRANCE",
+       "permis": 11,
+       "logements": 772,
+       "acteurs": 1
+      },
+      {
+       "famille": "promoteur",
+       "SIREN_DEM": "489244483",
+       "DENOM_DEM": "EIFFAGE IMMOBILIER ILE DE FRANCE",
+       "permis": 11,
+       "logements": 761,
+       "acteurs": 1
+      },
+      {
+       "famille": "bailleur_social",
+       "SIREN_DEM": "582142816",
+       "DENOM_DEM": "SA D'H L M FRANCE HABITATION",
+       "permis": 23,
+       "logements": 729,
+       "acteurs": 1
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "SIREN_DEM": "353708746",
+       "DENOM_DEM": "DEMATHIEU ET BARD IMMOBILIER",
+       "permis": 10,
+       "logements": 571,
+       "acteurs": 1
+      },
+      {
+       "famille": "promoteur",
+       "SIREN_DEM": "444266555",
+       "DENOM_DEM": "SNC KAUFMAN & BROAD PROMOTION 4",
+       "permis": 4,
+       "logements": 561,
+       "acteurs": 1
+      },
+      {
+       "famille": "bailleur_social",
+       "SIREN_DEM": "308435460",
+       "DENOM_DEM": "LES RESIDENCES SOCIETE ANONYME D'HABITATIONS A LOYER MODERE",
+       "permis": 30,
+       "logements": 558,
+       "acteurs": 1
+      },
+      {
+       "famille": "promoteur",
+       "SIREN_DEM": "844198960",
+       "DENOM_DEM": "SNC IP1R",
+       "permis": 10,
+       "logements": 547,
+       "acteurs": 1
+      },
+      {
+       "famille": "promoteur",
+       "SIREN_DEM": "784606576",
+       "DENOM_DEM": "ICADE PROMOTION",
+       "permis": 7,
+       "logements": 540,
+       "acteurs": 1
+      },
+      {
+       "famille": "promoteur",
+       "SIREN_DEM": "444510853",
+       "DENOM_DEM": "SNC KAUFMAN & BROAD PROMOTION 6",
+       "permis": 8,
+       "logements": 521,
+       "acteurs": 1
+      },
+      {
+       "famille": "promoteur",
+       "SIREN_DEM": "343183331",
+       "DENOM_DEM": "SOCIETE D'ETUDES, D'AMENAGEMENT ET DE REALISATIONS IMMOBILIERES ET FONCIERES",
+       "permis": 3,
+       "logements": 507,
+       "acteurs": 1
+      },
+      {
+       "famille": "promoteur",
+       "SIREN_DEM": "794436170",
+       "DENOM_DEM": "SCCV VILLEPREUX - RUE DE LA PEPINIERE",
+       "permis": 1,
+       "logements": 496,
+       "acteurs": 1
+      },
+      {
+       "famille": "non_determine",
+       "SIREN_DEM": "891412918",
+       "DENOM_DEM": "SAS TRIOLET",
+       "permis": 1,
+       "logements": 485,
+       "acteurs": 1
+      },
+      {
+       "famille": "promoteur",
+       "SIREN_DEM": "415235514",
+       "DENOM_DEM": "PROMOTION PICHET",
+       "permis": 2,
+       "logements": 470,
+       "acteurs": 1
+      },
+      {
+       "famille": "promoteur",
+       "SIREN_DEM": "480426048",
+       "DENOM_DEM": "ARC PROMOTION ILE DE FRANCE",
+       "permis": 7,
+       "logements": 445,
+       "acteurs": 1
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 4,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "SIREN_DEM",
+      "DENOM_DEM",
+      "famille"
+     ],
+     "mesure": "permis",
+     "top": 100
+    },
+    "sortie": {
+     "filtres": {},
+     "nb_permis_filtres": 3363,
+     "nb_groupes": 2068,
+     "resultats": [
+      {
+       "SIREN_DEM": "562091546",
+       "DENOM_DEM": "BOUYGUES IMMOBILIER",
+       "famille": "promoteur",
+       "permis": 48,
+       "logements": 3617,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "552141533",
+       "DENOM_DEM": "IMMOBILIERE 3F",
+       "famille": "bailleur_social",
+       "permis": 44,
+       "logements": 1552,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "450341847",
+       "DENOM_DEM": "IMMOBILIERE DES ORMES",
+       "famille": "fonciere_investisseur",
+       "permis": 39,
+       "logements": 101,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "315518803",
+       "DENOM_DEM": "ANTIN RESIDENCES SA HABITAT LOYER MODERE",
+       "famille": "bailleur_social",
+       "permis": 30,
+       "logements": 1442,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "308435460",
+       "DENOM_DEM": "LES RESIDENCES SOCIETE ANONYME D'HABITATIONS A LOYER MODERE",
+       "famille": "bailleur_social",
+       "permis": 30,
+       "logements": 558,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "592001648",
+       "DENOM_DEM": "ENTREPRISE SOCIALE POUR L'HABITAT DOMNIS",
+       "famille": "bailleur_social",
+       "permis": 29,
+       "logements": 933,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "582142816",
+       "DENOM_DEM": "SA D'H L M FRANCE HABITATION",
+       "famille": "bailleur_social",
+       "permis": 23,
+       "logements": 729,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "339436347",
+       "DENOM_DEM": "IMMOBILIER ET INFORMATIQUE",
+       "famille": "non_determine",
+       "permis": 20,
+       "logements": 40,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "379445679",
+       "DENOM_DEM": "KAUFMAN & BROAD HOMES",
+       "famille": "promoteur",
+       "permis": 19,
+       "logements": 1762,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "824350763",
+       "DENOM_DEM": "NEXITY IR PROGRAMMES GRAND PARIS",
+       "famille": "promoteur",
+       "permis": 19,
+       "logements": 1848,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "419750252",
+       "DENOM_DEM": "MARIGNAN RESIDENCES",
+       "famille": "promoteur",
+       "permis": 18,
+       "logements": 951,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "445240997",
+       "DENOM_DEM": "ETIMMO",
+       "famille": "entreprise_autre",
+       "permis": 17,
+       "logements": 39,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "398661017",
+       "DENOM_DEM": "CABINET VILLAIN SA",
+       "famille": "entreprise_autre",
+       "permis": 16,
+       "logements": 85,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "824309751",
+       "DENOM_DEM": "NEXITY IR PROGRAMMES DOMAINES",
+       "famille": "promoteur",
+       "permis": 15,
+       "logements": 780,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "444760482",
+       "DENOM_DEM": "SCI RESIDENCES FRANCO SUISSE",
+       "famille": "promoteur",
+       "permis": 15,
+       "logements": 1180,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "481016020",
+       "DENOM_DEM": "DMVIP",
+       "famille": "fonciere_investisseur",
+       "permis": 14,
+       "logements": 20,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "552046484",
+       "DENOM_DEM": "CDC HABITAT SOCIAL SOCIETE ANONYME D'HABITATIONS A LOYER MODERE",
+       "famille": "bailleur_social",
+       "permis": 12,
+       "logements": 354,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "478062235",
+       "DENOM_DEM": "OPH DE VERSAILLES",
+       "famille": "collectivite_public",
+       "permis": 12,
+       "logements": 195,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "399608991",
+       "DENOM_DEM": "TRIMAX DEVELOPPEMENT",
+       "famille": "promoteur",
+       "permis": 12,
+       "logements": 12,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "217803584",
+       "DENOM_DEM": "COMMUNE DE MAISONS LAFFITTE",
+       "famille": "collectivite_public",
+       "permis": 12,
+       "logements": 50,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "227806460",
+       "DENOM_DEM": "DEPARTEMENT DES YVELINES",
+       "famille": "collectivite_public",
+       "permis": 11,
+       "logements": 44,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "810928135",
+       "DENOM_DEM": "ALTAREA COGEDIM IDF",
+       "famille": "promoteur",
+       "permis": 11,
+       "logements": 1445,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "788058030",
+       "DENOM_DEM": "ADOMA",
+       "famille": "bailleur_social",
+       "permis": 11,
+       "logements": 1530,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "489244483",
+       "DENOM_DEM": "EIFFAGE IMMOBILIER ILE DE FRANCE",
+       "famille": "promoteur",
+       "permis": 11,
+       "logements": 761,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "887490365",
+       "DENOM_DEM": "MARIGNAN ILE DE FRANCE",
+       "famille": "promoteur",
+       "permis": 11,
+       "logements": 772,
+       "acteurs": 1
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 5,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "profil_acteur",
+    "args": {
+     "siren": "562091546"
+    },
+    "sortie": {
+     "denomination": "BOUYGUES IMMOBILIER",
+     "famille": "promoteur",
+     "cj": "5599 (SA à conseil d'administration (s.a.i.))",
+     "nb_permis": 48,
+     "logements": 3617,
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/562091546",
+     "permis": [
+      {
+       "num": "07864612V0149",
+       "annee": "2012",
+       "commune": "VERSAILLES",
+       "logements": 35,
+       "etat": "6 (terminé)",
+       "type": "3 (collectif hors résidence)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "07801513Y0004",
+       "annee": "2013",
+       "commune": "ANDRESY",
+       "logements": 100,
+       "etat": "6 (terminé)",
+       "type": "3 (collectif hors résidence)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "07820613M0001",
+       "annee": "2013",
+       "commune": "ECQUEVILLY",
+       "logements": 75,
+       "etat": "4 (annulé)",
+       "type": "3 (collectif hors résidence)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "07844013Y0027",
+       "annee": "2013",
+       "commune": "LES MUREAUX",
+       "logements": 49,
+       "etat": "6 (terminé)",
+       "type": "3 (collectif hors résidence)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "07854513B1009",
+       "annee": "2013",
+       "commune": "SAINT CYR L'ECOLE",
+       "logements": 101,
+       "etat": "5 (commencé)",
+       "type": "3 (collectif hors résidence)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "07858613G1064",
+       "annee": "2013",
+       "commune": "SARTROUVILLE",
+       "logements": 24,
+       "etat": "2 (autorisé)",
+       "type": "2 (plusieurs individuels)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "07858613G1100",
+       "annee": "2013",
+       "commune": "SARTROUVILLE",
+       "logements": 37,
+       "etat": "6 (terminé)",
+       "type": "3 (collectif hors résidence)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "07862113E0014",
+       "annee": "2013",
+       "commune": "TRAPPES",
+       "logements": 53,
+       "etat": "6 (terminé)",
+       "type": "3 (collectif hors résidence)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "07829714E0003",
+       "annee": "2014",
+       "commune": "GUYANCOURT",
+       "logements": 38,
+       "etat": "6 (terminé)",
+       "type": "3 (collectif hors résidence)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "07836714G0013",
+       "annee": "2014",
+       "commune": "",
+       "logements": 25,
+       "etat": "5 (commencé)",
+       "type": "3 (collectif hors résidence)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "07842314E0005",
+       "annee": "2014",
+       "commune": "MONTIGNY-LE-BRETONNEUX",
+       "logements": 66,
+       "etat": "4 (annulé)",
+       "type": "4 (résidence)",
+       "residence": "1 (personnes âgées)"
+      },
+      {
+       "num": "07849814Y0023",
+       "annee": "2014",
+       "commune": "POISSY",
+       "logements": 133,
+       "etat": "6 (terminé)",
+       "type": "3 (collectif hors résidence)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "07854514B1011",
+       "annee": "2014",
+       "commune": "SAINT CYR L ECOLE",
+       "logements": 97,
+       "etat": "6 (terminé)",
+       "type": "3 (collectif hors résidence)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "07862114E0015",
+       "annee": "2014",
+       "commune": "TRAPPES",
+       "logements": 83,
+       "etat": "6 (terminé)",
+       "type": "3 (collectif hors résidence)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "07800515A0020",
+       "annee": "2015",
+       "commune": "ACHERES",
+       "logements": 48,
+       "etat": "2 (autorisé)",
+       "type": "3 (collectif hors résidence)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "07813815G0007",
+       "annee": "2015",
+       "commune": "CHANTELOUP-LES-VIGNES",
+       "logements": 47,
+       "etat": "6 (terminé)",
+       "type": "3 (collectif hors résidence)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "07829915M0008",
+       "annee": "2015",
+       "commune": "HARDRICOURT",
+       "logements": 140,
+       "etat": "5 (commencé)",
+       "type": "3 (collectif hors résidence)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "0783581501032",
+       "annee": "2015",
+       "commune": "MAISONS LAFFITTE",
+       "logements": 45,
+       "etat": "2 (autorisé)",
+       "type": "3 (collectif hors résidence)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "07840115M0009",
+       "annee": "2015",
+       "commune": "MEULAN",
+       "logements": 44,
+       "etat": "5 (commencé)",
+       "type": "3 (collectif hors résidence)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "07842315E0016",
+       "annee": "2015",
+       "commune": "MONTIGNY-LE-BRETONNEUX",
+       "logements": 82,
+       "etat": "6 (terminé)",
+       "type": "3 (collectif hors résidence)",
+       "residence": "9 (non rempli)"
+      }
+     ],
+     "tronque": true
+    }
+   }
+  ]
+ },
+ {
+  "etape": 6,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "profil_acteur",
+    "args": {
+     "siren": "552141533"
+    },
+    "sortie": {
+     "denomination": "IMMOBILIERE 3F",
+     "famille": "bailleur_social",
+     "cj": "5599 (SA à conseil d'administration (s.a.i.))",
+     "nb_permis": 44,
+     "logements": 1552,
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/552141533",
+     "permis": [
+      {
+       "num": "07809213G0012",
+       "annee": "2013",
+       "commune": "BOUGIVAL",
+       "logements": 45,
+       "etat": "6 (terminé)",
+       "type": "3 (collectif hors résidence)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "07841813G1012",
+       "annee": "2013",
+       "commune": "MONTESSON",
+       "logements": 25,
+       "etat": "5 (commencé)",
+       "type": "3 (collectif hors résidence)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "07849813Y0033",
+       "annee": "2013",
+       "commune": "POISSY",
+       "logements": 68,
+       "etat": "2 (autorisé)",
+       "type": "3 (collectif hors résidence)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "07857513M0039",
+       "annee": "2013",
+       "commune": "SAINT-REMY-LES-CHEVREUSE",
+       "logements": 69,
+       "etat": "4 (annulé)",
+       "type": "3 (collectif hors résidence)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "07802914A0018",
+       "annee": "2014",
+       "commune": "AUBERGENVILLE",
+       "logements": 75,
+       "etat": "2 (autorisé)",
+       "type": "3 (collectif hors résidence)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "0781721400019",
+       "annee": "2014",
+       "commune": "CONFLANS SAINTE HONORINE",
+       "logements": 15,
+       "etat": "6 (terminé)",
+       "type": "3 (collectif hors résidence)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "07849815Y0060",
+       "annee": "2015",
+       "commune": "POISSY",
+       "logements": 66,
+       "etat": "6 (terminé)",
+       "type": "3 (collectif hors résidence)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "0782171600028",
+       "annee": "2016",
+       "commune": "EPONE",
+       "logements": 18,
+       "etat": "6 (terminé)",
+       "type": "3 (collectif hors résidence)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "0782171600029",
+       "annee": "2016",
+       "commune": "EPONE",
+       "logements": 19,
+       "etat": "6 (terminé)",
+       "type": "3 (collectif hors résidence)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "07853716M0025",
+       "annee": "2016",
+       "commune": "SAINT-ARNOULT-EN-YVELINES",
+       "logements": 55,
+       "etat": "4 (annulé)",
+       "type": "3 (collectif hors résidence)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "07812617G0019",
+       "annee": "2017",
+       "commune": "LA CELLE-SAINT-CLOUD",
+       "logements": 78,
+       "etat": "5 (commencé)",
+       "type": "3 (collectif hors résidence)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "07815817C0006",
+       "annee": "2017",
+       "commune": "LE CHESNAY",
+       "logements": 26,
+       "etat": "6 (terminé)",
+       "type": "3 (collectif hors résidence)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "07865017G0030",
+       "annee": "2017",
+       "commune": "LE VESINET",
+       "logements": 59,
+       "etat": "6 (terminé)",
+       "type": "3 (collectif hors résidence)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "07803018C0025",
+       "annee": "2018",
+       "commune": "AUFFARGIS",
+       "logements": 8,
+       "etat": "4 (annulé)",
+       "type": "3 (collectif hors résidence)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "07807318B1005",
+       "annee": "2018",
+       "commune": "",
+       "logements": 30,
+       "etat": "5 (commencé)",
+       "type": "3 (collectif hors résidence)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "07830718C0004",
+       "annee": "2018",
+       "commune": "HERMERAY",
+       "logements": 11,
+       "etat": "6 (terminé)",
+       "type": "3 (collectif hors résidence)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "07868818E0007",
+       "annee": "2018",
+       "commune": "VOISINS-LE-BRETONNEUX",
+       "logements": 18,
+       "etat": "6 (terminé)",
+       "type": "3 (collectif hors résidence)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "07831119G0054",
+       "annee": "2019",
+       "commune": "HOUILLES",
+       "logements": 4,
+       "etat": "5 (commencé)",
+       "type": "3 (collectif hors résidence)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "07831119G0088",
+       "annee": "2019",
+       "commune": "HOUILLES",
+       "logements": 17,
+       "etat": "5 (commencé)",
+       "type": "3 (collectif hors résidence)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "07831119G0099",
+       "annee": "2019",
+       "commune": "HOUILLES",
+       "logements": 51,
+       "etat": "2 (autorisé)",
+       "type": "3 (collectif hors résidence)",
+       "residence": "9 (non rempli)"
+      }
+     ],
+     "tronque": true
+    }
+   }
+  ]
+ },
+ {
+  "etape": 7,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "profil_acteur",
+    "args": {
+     "siren": "315518803"
+    },
+    "sortie": {
+     "denomination": "ANTIN RESIDENCES SA HABITAT LOYER MODERE",
+     "famille": "bailleur_social",
+     "cj": "5546 (SA de HLM à conseil d'administration)",
+     "nb_permis": 30,
+     "logements": 1442,
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/315518803",
+     "permis": [
+      {
+       "num": "07832712M0023",
+       "annee": "2012",
+       "commune": "JUZIERS",
+       "logements": 35,
+       "etat": "5 (commencé)",
+       "type": "3 (collectif hors résidence)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "07844012M0059",
+       "annee": "2012",
+       "commune": "LES MUREAUX",
+       "logements": 36,
+       "etat": "6 (terminé)",
+       "type": "3 (collectif hors résidence)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "07836213Y0005",
+       "annee": "2013",
+       "commune": "MANTES-LA-VILLE",
+       "logements": 35,
+       "etat": "5 (commencé)",
+       "type": "4 (résidence)",
+       "residence": "2 (étudiants)"
+      },
+      {
+       "num": "07857613E0014",
+       "annee": "2013",
+       "commune": "SAINT-REMY-L HONORE",
+       "logements": 30,
+       "etat": "2 (autorisé)",
+       "type": "2 (plusieurs individuels)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "0781721400069",
+       "annee": "2014",
+       "commune": "CONFLANS SAINTE HONORINE",
+       "logements": 1,
+       "etat": "6 (terminé)",
+       "type": "1 (1 logement individuel)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "07832714M0011",
+       "annee": "2014",
+       "commune": "JUZIERS",
+       "logements": 35,
+       "etat": "5 (commencé)",
+       "type": "3 (collectif hors résidence)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "07835614E0034",
+       "annee": "2014",
+       "commune": "MAGNY-LES-HAMEAUX",
+       "logements": 33,
+       "etat": "6 (terminé)",
+       "type": "3 (collectif hors résidence)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "07862114E0009",
+       "annee": "2014",
+       "commune": "TRAPPES",
+       "logements": 44,
+       "etat": "6 (terminé)",
+       "type": "3 (collectif hors résidence)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "07862414Y0063",
+       "annee": "2014",
+       "commune": "TRIEL-SUR-SEINE",
+       "logements": 49,
+       "etat": "6 (terminé)",
+       "type": "3 (collectif hors résidence)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "07811715K0007",
+       "annee": "2015",
+       "commune": "BUC",
+       "logements": 55,
+       "etat": "5 (commencé)",
+       "type": "3 (collectif hors résidence)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "07862415Y0022",
+       "annee": "2015",
+       "commune": "TRIEL-SUR-SEINE",
+       "logements": 41,
+       "etat": "6 (terminé)",
+       "type": "3 (collectif hors résidence)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "07868815E0006",
+       "annee": "2015",
+       "commune": "VOISINS-LE-BRETONNEUX",
+       "logements": 112,
+       "etat": "6 (terminé)",
+       "type": "3 (collectif hors résidence)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "07832116Y0039",
+       "annee": "2016",
+       "commune": "JOUARS PONTCHARTRAIN",
+       "logements": 43,
+       "etat": "6 (terminé)",
+       "type": "3 (collectif hors résidence)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "07862116E0006",
+       "annee": "2016",
+       "commune": "TRAPPES",
+       "logements": 34,
+       "etat": "6 (terminé)",
+       "type": "3 (collectif hors résidence)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "0780291700016",
+       "annee": "2017",
+       "commune": "AUBERGENVILLE",
+       "logements": 35,
+       "etat": "5 (commencé)",
+       "type": "3 (collectif hors résidence)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "07820817E0008",
+       "annee": "2017",
+       "commune": "ELANCOURT",
+       "logements": 65,
+       "etat": "6 (terminé)",
+       "type": "3 (collectif hors résidence)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "07844017M0027",
+       "annee": "2017",
+       "commune": "LES MUREAUX",
+       "logements": 40,
+       "etat": "6 (terminé)",
+       "type": "3 (collectif hors résidence)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "07846617G0074",
+       "annee": "2017",
+       "commune": "ORGEVAL",
+       "logements": 29,
+       "etat": "5 (commencé)",
+       "type": "3 (collectif hors résidence)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "07807318B1008",
+       "annee": "2018",
+       "commune": "BOIS-D'ARCY",
+       "logements": 30,
+       "etat": "5 (commencé)",
+       "type": "3 (collectif hors résidence)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "07832718M0007",
+       "annee": "2018",
+       "commune": "JUZIERS",
+       "logements": 34,
+       "etat": "6 (terminé)",
+       "type": "3 (collectif hors résidence)",
+       "residence": "9 (non rempli)"
+      }
+     ],
+     "tronque": true
+    }
+   }
+  ]
+ },
+ {
+  "etape": 8,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "profil_acteur",
+    "args": {
+     "siren": "450341847"
+    },
+    "sortie": {
+     "denomination": "IMMOBILIERE DES ORMES",
+     "famille": "fonciere_investisseur",
+     "cj": "5499 (Société à responsabilité limitée (sans autre indication))",
+     "nb_permis": 39,
+     "logements": 101,
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/450341847",
+     "permis": [
+      {
+       "num": "07858612G1092",
+       "annee": "2012",
+       "commune": "SARTROUVILLE",
+       "logements": 1,
+       "etat": "2 (autorisé)",
+       "type": "1 (1 logement individuel)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "07858612G1113",
+       "annee": "2012",
+       "commune": "SARTROUVILLE",
+       "logements": 1,
+       "etat": "6 (terminé)",
+       "type": "1 (1 logement individuel)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "07858612G1114",
+       "annee": "2012",
+       "commune": "SARTROUVILLE",
+       "logements": 1,
+       "etat": "6 (terminé)",
+       "type": "1 (1 logement individuel)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "07858612G1117",
+       "annee": "2012",
+       "commune": "SARTROUVILLE",
+       "logements": 1,
+       "etat": "6 (terminé)",
+       "type": "1 (1 logement individuel)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "07858612G1118",
+       "annee": "2012",
+       "commune": "SARTROUVILLE",
+       "logements": 1,
+       "etat": "2 (autorisé)",
+       "type": "1 (1 logement individuel)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "07858612G1121",
+       "annee": "2012",
+       "commune": "SARTROUVILLE",
+       "logements": 1,
+       "etat": "6 (terminé)",
+       "type": "1 (1 logement individuel)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "07858612G1126",
+       "annee": "2012",
+       "commune": "SARTROUVILLE",
+       "logements": 4,
+       "etat": "6 (terminé)",
+       "type": "3 (collectif hors résidence)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "07858612G1128",
+       "annee": "2012",
+       "commune": "SARTROUVILLE",
+       "logements": 37,
+       "etat": "4 (annulé)",
+       "type": "3 (collectif hors résidence)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "07858613G1022",
+       "annee": "2013",
+       "commune": "SARTROUVILLE",
+       "logements": 1,
+       "etat": "6 (terminé)",
+       "type": "1 (1 logement individuel)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "07858613G1023",
+       "annee": "2013",
+       "commune": "SARTROUVILLE",
+       "logements": 1,
+       "etat": "6 (terminé)",
+       "type": "1 (1 logement individuel)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "07858613G1024",
+       "annee": "2013",
+       "commune": "SARTROUVILLE",
+       "logements": 1,
+       "etat": "4 (annulé)",
+       "type": "1 (1 logement individuel)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "07858613G1025",
+       "annee": "2013",
+       "commune": "SARTROUVILLE",
+       "logements": 1,
+       "etat": "4 (annulé)",
+       "type": "1 (1 logement individuel)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "07858613G1029",
+       "annee": "2013",
+       "commune": "SARTROUVILLE",
+       "logements": 1,
+       "etat": "5 (commencé)",
+       "type": "1 (1 logement individuel)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "07858613G1030",
+       "annee": "2013",
+       "commune": "SARTROUVILLE",
+       "logements": 1,
+       "etat": "6 (terminé)",
+       "type": "1 (1 logement individuel)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "07858613G1041",
+       "annee": "2013",
+       "commune": "SARTROUVILLE",
+       "logements": 1,
+       "etat": "4 (annulé)",
+       "type": "1 (1 logement individuel)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "07858613G1042",
+       "annee": "2013",
+       "commune": "SARTROUVILLE",
+       "logements": 9,
+       "etat": "6 (terminé)",
+       "type": "3 (collectif hors résidence)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "07858613G1045",
+       "annee": "2013",
+       "commune": "SARTROUVILLE",
+       "logements": 1,
+       "etat": "6 (terminé)",
+       "type": "1 (1 logement individuel)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "07858613G1057",
+       "annee": "2013",
+       "commune": "SARTROUVILLE",
+       "logements": 1,
+       "etat": "5 (commencé)",
+       "type": "1 (1 logement individuel)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "07858613G1060",
+       "annee": "2013",
+       "commune": "SARTROUVILLE",
+       "logements": 1,
+       "etat": "6 (terminé)",
+       "type": "1 (1 logement individuel)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "07858613G1062",
+       "annee": "2013",
+       "commune": "SARTROUVILLE",
+       "logements": 6,
+       "etat": "6 (terminé)",
+       "type": "3 (collectif hors résidence)",
+       "residence": "9 (non rempli)"
+      }
+     ],
+     "tronque": true
+    }
+   }
+  ]
+ },
+ {
+  "etape": 9,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "profil_acteur",
+    "args": {
+     "siren": "383424273"
+    },
+    "sortie": {
+     "erreur": "SIREN hors périmètre"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 10,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "famille",
+      "SIREN_DEM",
+      "DENOM_DEM"
+     ],
+     "mesure": "permis",
+     "top": 20,
+     "filtres": {
+      "famille": "bailleur_social"
+     }
+    },
+    "sortie": {
+     "filtres": {
+      "famille": "bailleur_social"
+     },
+     "nb_permis_filtres": 299,
+     "nb_groupes": 37,
+     "resultats": [
+      {
+       "famille": "bailleur_social",
+       "SIREN_DEM": "552141533",
+       "DENOM_DEM": "IMMOBILIERE 3F",
+       "permis": 44,
+       "logements": 1552,
+       "acteurs": 1
+      },
+      {
+       "famille": "bailleur_social",
+       "SIREN_DEM": "315518803",
+       "DENOM_DEM": "ANTIN RESIDENCES SA HABITAT LOYER MODERE",
+       "permis": 30,
+       "logements": 1442,
+       "acteurs": 1
+      },
+      {
+       "famille": "bailleur_social",
+       "SIREN_DEM": "308435460",
+       "DENOM_DEM": "LES RESIDENCES SOCIETE ANONYME D'HABITATIONS A LOYER MODERE",
+       "permis": 30,
+       "logements": 558,
+       "acteurs": 1
+      },
+      {
+       "famille": "bailleur_social",
+       "SIREN_DEM": "592001648",
+       "DENOM_DEM": "ENTREPRISE SOCIALE POUR L'HABITAT DOMNIS",
+       "permis": 29,
+       "logements": 933,
+       "acteurs": 1
+      },
+      {
+       "famille": "bailleur_social",
+       "SIREN_DEM": "582142816",
+       "DENOM_DEM": "SA D'H L M FRANCE HABITATION",
+       "permis": 23,
+       "logements": 729,
+       "acteurs": 1
+      },
+      {
+       "famille": "bailleur_social",
+       "SIREN_DEM": "552046484",
+       "DENOM_DEM": "CDC HABITAT SOCIAL SOCIETE ANONYME D'HABITATIONS A LOYER MODERE",
+       "permis": 12,
+       "logements": 354,
+       "acteurs": 1
+      },
+      {
+       "famille": "bailleur_social",
+       "SIREN_DEM": "788058030",
+       "DENOM_DEM": "ADOMA",
+       "permis": 11,
+       "logements": 1530,
+       "acteurs": 1
+      },
+      {
+       "famille": "bailleur_social",
+       "SIREN_DEM": "582000105",
+       "DENOM_DEM": "BATIGERE EN ILE DE FRANCE",
+       "permis": 10,
+       "logements": 239,
+       "acteurs": 1
+      },
+      {
+       "famille": "bailleur_social",
+       "SIREN_DEM": "475680815",
+       "DENOM_DEM": "VILOGIA SOCIETE ANONYME D'HLM",
+       "permis": 9,
+       "logements": 201,
+       "acteurs": 1
+      },
+      {
+       "famille": "bailleur_social",
+       "SIREN_DEM": "582008728",
+       "DENOM_DEM": "EFIDIS SA HABITATION LOYER MODERE",
+       "permis": 9,
+       "logements": 349,
+       "acteurs": 1
+      },
+      {
+       "famille": "bailleur_social",
+       "SIREN_DEM": "785086505",
+       "DENOM_DEM": "SOVAL ENTREPRISE SOCIALE POUR L'HABITAT DU VAL DE SEINE",
+       "permis": 8,
+       "logements": 118,
+       "acteurs": 1
+      },
+      {
+       "famille": "bailleur_social",
+       "SIREN_DEM": "552022105",
+       "DENOM_DEM": "ICF LA SABLIERE SA D'HLM",
+       "permis": 8,
+       "logements": 420,
+       "acteurs": 1
+      },
+      {
+       "famille": "bailleur_social",
+       "SIREN_DEM": "582142816",
+       "DENOM_DEM": "SEQENS SOCIETE ANONYME D'HABITATIONS A LOYER MODERE",
+       "permis": 8,
+       "logements": 330,
+       "acteurs": 1
+      },
+      {
+       "famille": "bailleur_social",
+       "SIREN_DEM": "572204014",
+       "DENOM_DEM": "VALOPHIS SAREPA  - SOCIETE ANONYME D'HLM",
+       "permis": 8,
+       "logements": 406,
+       "acteurs": 1
+      },
+      {
+       "famille": "bailleur_social",
+       "SIREN_DEM": "322315557",
+       "DENOM_DEM": "DOMAXIS SOCIETE ANONYME D' HABITATIONS A LOYER MODERE",
+       "permis": 6,
+       "logements": 185,
+       "acteurs": 1
+      },
+      {
+       "famille": "bailleur_social",
+       "SIREN_DEM": "552093338",
+       "DENOM_DEM": "LOGEMENT GEST IMMOBILIERE REG PARISIENNE",
+       "permis": 5,
+       "logements": 279,
+       "acteurs": 1
+      },
+      {
+       "famille": "bailleur_social",
+       "SIREN_DEM": "308435460",
+       "DENOM_DEM": "SA D'HLM DE L'AGGLOMERATION PARISIENNE",
+       "permis": 5,
+       "logements": 142,
+       "acteurs": 1
+      },
+      {
+       "famille": "bailleur_social",
+       "SIREN_DEM": "304708589",
+       "DENOM_DEM": "APILOGIS SOCIETE ANONYME COOPERATIVE D'INTERET COLLECTIF D'HABITATIONS A LOYER MODERE, SOCIETE A CAPITAL VARIABLE",
+       "permis": 4,
+       "logements": 205,
+       "acteurs": 1
+      },
+      {
+       "famille": "bailleur_social",
+       "SIREN_DEM": "672022084",
+       "DENOM_DEM": "SA HLM PIERRES ET LUMIERES",
+       "permis": 4,
+       "logements": 92,
+       "acteurs": 1
+      },
+      {
+       "famille": "bailleur_social",
+       "SIREN_DEM": "393542428",
+       "DENOM_DEM": "LOGIREP",
+       "permis": 4,
+       "logements": 158,
+       "acteurs": 1
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 11,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "famille",
+      "SIREN_DEM",
+      "DENOM_DEM"
+     ],
+     "mesure": "permis",
+     "top": 20,
+     "filtres": {
+      "famille": "promoteur"
+     }
+    },
+    "sortie": {
+     "filtres": {
+      "famille": "promoteur"
+     },
+     "nb_permis_filtres": 1112,
+     "nb_groupes": 701,
+     "resultats": [
+      {
+       "famille": "promoteur",
+       "SIREN_DEM": "562091546",
+       "DENOM_DEM": "BOUYGUES IMMOBILIER",
+       "permis": 48,
+       "logements": 3617,
+       "acteurs": 1
+      },
+      {
+       "famille": "promoteur",
+       "SIREN_DEM": "379445679",
+       "DENOM_DEM": "KAUFMAN & BROAD HOMES",
+       "permis": 19,
+       "logements": 1762,
+       "acteurs": 1
+      },
+      {
+       "famille": "promoteur",
+       "SIREN_DEM": "824350763",
+       "DENOM_DEM": "NEXITY IR PROGRAMMES GRAND PARIS",
+       "permis": 19,
+       "logements": 1848,
+       "acteurs": 1
+      },
+      {
+       "famille": "promoteur",
+       "SIREN_DEM": "419750252",
+       "DENOM_DEM": "MARIGNAN RESIDENCES",
+       "permis": 18,
+       "logements": 951,
+       "acteurs": 1
+      },
+      {
+       "famille": "promoteur",
+       "SIREN_DEM": "824309751",
+       "DENOM_DEM": "NEXITY IR PROGRAMMES DOMAINES",
+       "permis": 15,
+       "logements": 780,
+       "acteurs": 1
+      },
+      {
+       "famille": "promoteur",
+       "SIREN_DEM": "444760482",
+       "DENOM_DEM": "SCI RESIDENCES FRANCO SUISSE",
+       "permis": 15,
+       "logements": 1180,
+       "acteurs": 1
+      },
+      {
+       "famille": "promoteur",
+       "SIREN_DEM": "399608991",
+       "DENOM_DEM": "TRIMAX DEVELOPPEMENT",
+       "permis": 12,
+       "logements": 12,
+       "acteurs": 1
+      },
+      {
+       "famille": "promoteur",
+       "SIREN_DEM": "810928135",
+       "DENOM_DEM": "ALTAREA COGEDIM IDF",
+       "permis": 11,
+       "logements": 1445,
+       "acteurs": 1
+      },
+      {
+       "famille": "promoteur",
+       "SIREN_DEM": "489244483",
+       "DENOM_DEM": "EIFFAGE IMMOBILIER ILE DE FRANCE",
+       "permis": 11,
+       "logements": 761,
+       "acteurs": 1
+      },
+      {
+       "famille": "promoteur",
+       "SIREN_DEM": "887490365",
+       "DENOM_DEM": "MARIGNAN ILE DE FRANCE",
+       "permis": 11,
+       "logements": 772,
+       "acteurs": 1
+      },
+      {
+       "famille": "promoteur",
+       "SIREN_DEM": "844198960",
+       "DENOM_DEM": "SNC IP1R",
+       "permis": 10,
+       "logements": 547,
+       "acteurs": 1
+      },
+      {
+       "famille": "promoteur",
+       "SIREN_DEM": "378151922",
+       "DENOM_DEM": "SARL FINANCIERE D.L.",
+       "permis": 9,
+       "logements": 34,
+       "acteurs": 1
+      },
+      {
+       "famille": "promoteur",
+       "SIREN_DEM": "340944008",
+       "DENOM_DEM": "CAPIMO",
+       "permis": 8,
+       "logements": 388,
+       "acteurs": 1
+      },
+      {
+       "famille": "promoteur",
+       "SIREN_DEM": "444510853",
+       "DENOM_DEM": "SNC KAUFMAN & BROAD PROMOTION 6",
+       "permis": 8,
+       "logements": 521,
+       "acteurs": 1
+      },
+      {
+       "famille": "promoteur",
+       "SIREN_DEM": "480426048",
+       "DENOM_DEM": "ARC PROMOTION ILE DE FRANCE",
+       "permis": 7,
+       "logements": 445,
+       "acteurs": 1
+      },
+      {
+       "famille": "promoteur",
+       "SIREN_DEM": "784606576",
+       "DENOM_DEM": "ICADE PROMOTION",
+       "permis": 7,
+       "logements": 540,
+       "acteurs": 1
+      },
+      {
+       "famille": "promoteur",
+       "SIREN_DEM": "379342587",
+       "DENOM_DEM": "GESTION ET ORGANISATION FONCIERE",
+       "permis": 7,
+       "logements": 88,
+       "acteurs": 1
+      },
+      {
+       "famille": "promoteur",
+       "SIREN_DEM": "830855797",
+       "DENOM_DEM": "VINCI IMMOBILIER ILE DE FRANCE",
+       "permis": 7,
+       "logements": 350,
+       "acteurs": 1
+      },
+      {
+       "famille": "promoteur",
+       "SIREN_DEM": "815022751",
+       "DENOM_DEM": "EUROPEAN HOMES 36",
+       "permis": 7,
+       "logements": 120,
+       "acteurs": 1
+      },
+      {
+       "famille": "promoteur",
+       "SIREN_DEM": "531272920",
+       "DENOM_DEM": "GREEN CITY IMMOBILIER",
+       "permis": 6,
+       "logements": 348,
+       "acteurs": 1
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 12,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "noter",
+    "args": {
+     "titre": "Bailleurs sociaux : concentration extrême sur quelques gros opérateurs réguliers",
+     "constat": "Sur 299 permis bailleurs sociaux (11 785 logements), 31 acteurs seulement. Les 5 premiers (3F, Antin, Les Résidences, Domnis, France Habitation) totalisent 156 permis (52 % des 299) et 5 214 logements (44 % des 11 785). 3F seul : 44 permis / 1 552 logts ; Antin : 30 / 1 442 ; Les Résidences : 30 / 558 ; Domnis : 29 / 933 ; France Habitation : 23 / 729. Moyenne 9,6 permis/acteur vs 1,6 chez les promoteurs.",
+     "interet_buddimm": "Prospection : 5 interlocuteurs couvrent la moitié du flux bailleur. Conseil : ces 5 ont une capacité d'instruction interne et des programmes récurrents (veille foncière, montage VEFA, rénovation lourde). Veille : tout nouveau permis de l'un des 5 signale un projet en cours.",
+     "fiabilite": "établi",
+     "limites": "Période 2011-2026 ; périmètre Yvelines seulement ; regroupement par SIREN unique (filiales non consolidées).",
+     "a_creuser": "Répartition géographique par bailleur (communes ciblées) ; part de construction neuve vs réhabilitation dans leurs permis."
+    },
+    "sortie": {
+     "erreur": "Refusé : chiffres non vérifiables : 156, 52 % (base absente ou fausse dans la phrase). Corrige-les avec des chiffres issus des requêtes, ou fais la requête qui les donne. Chaque pourcentage doit citer, dans la même phrase, son numérateur et son dénominateur (ex. « 3 251 sur 11 785, soit 27,6 % »). Puis renote."
+    }
+   }
+  ]
+ },
+ {
+  "etape": 13,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "noter",
+    "args": {
+     "titre": "Bailleurs sociaux : concentration extrême sur quelques gros opérateurs réguliers",
+     "constat": "Sur 299 permis bailleurs sociaux (11 785 logements), 31 acteurs seulement. Les 5 premiers (3F 44, Antin 30, Les Résidences 30, Domnis 29, France Habitation 23) totalisent 156 permis sur 299 (52,2 %) et 5 214 logements sur 11 785 (44,2 %). 3F seul : 44 permis / 1 552 logts ; Antin : 30 / 1 442 ; Les Résidences : 30 / 558 ; Domnis : 29 / 933 ; France Habitation : 23 / 729. Moyenne 9,6 permis/acteur vs 1,6 chez les promoteurs (701 acteurs pour 1 112 permis).",
+     "interet_buddimm": "Prospection : 5 interlocuteurs couvrent la moitié du flux bailleur. Conseil : ces 5 ont une capacité d'instruction interne et des programmes récurrents (veille foncière, montage VEFA, rénovation lourde). Veille : tout nouveau permis de l'un des 5 signale un projet en cours.",
+     "fiabilite": "établi",
+     "limites": "Période 2011-2026 ; périmètre Yvelines seulement ; regroupement par SIREN unique (filiales non consolidées).",
+     "a_creuser": "Répartition géographique par bailleur (communes ciblées) ; part de construction neuve vs réhabilitation dans leurs permis.",
+     "chiffres_non_verifies": [
+      "156"
+     ]
+    },
+    "sortie": {
+     "ok": "note 1 enregistrée avec avertissement"
+    }
+   }
+  ]
+ }
+]

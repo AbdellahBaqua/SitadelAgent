@@ -1,0 +1,19 @@
+# Secrets
+.env
+
+# Données brutes : volumineuses et re-téléchargeables (voir README, section 1)
+data/
+
+# Python
+__pycache__/
+*.pyc
+*.tmp
+
+# Journaux d'exécution
+*.log
+
+# Configuration locale de l'outil de développement
+.claude/
+
+# Documents personnels de préparation (hors livrable)
+perso/

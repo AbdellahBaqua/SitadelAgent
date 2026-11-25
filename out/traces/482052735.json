@@ -1,0 +1,109 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "482052735"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "482052735"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "482052735"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "482052735"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "FINANCIERE DE LA GOMMERIE",
+     "nb_permis_PC": 1,
+     "annees_depot": [
+      "2022"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 5,
+     "surface_locaux_non_residentiels_creee_m2": 0,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 1,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 0
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "482052735",
+      "nom": "FINANCIERE DE LA GOMMERIE",
+      "nature_juridique": "5499",
+      "naf_actuel": "64.20Z",
+      "etat": "A",
+      "date_creation": "2005-02-17",
+      "categorie": "PME",
+      "effectif": "01",
+      "nb_etablissements": 1,
+      "nb_etablissements_ouverts": 1,
+      "siege_actuel": {
+       "siret": "48205273500016",
+       "naf": "64.20Z",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "48205273500016",
+       "naf_dans_permis": "64.20Z",
+       "nb_permis": 1,
+       "annees_depot": [
+        "2022"
+       ],
+       "etat_actuel": "ouvert",
+       "date_creation": "2005-02-17",
+       "date_fermeture": null
+      }
+     ],
+     "alertes": [],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/482052735"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "64.20Z",
+      "libelle": "Activités des sociétés holding"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5499",
+     "libelle": "Société à responsabilité limitée (sans autre indication)"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"fonciere_investisseur\",\"confiance\":\"faible\",\"indices\":[\"fiche_entreprise : NAF actuel 64.20Z « Activités des sociétés holding » (libelle_naf), forme juridique SARL (CJ 5499, libelle_cj), entreprise active depuis 2005, 1 établissement ouvert, effectif 1 salarié\",\"permis_du_demandeur : 1 permis de construire déposé en 2022 pour 5 logements individuels (0 collectif, 0 logement social déclaré), pas de type de résidence renseigné\",\"dénomination : « FINANCIERE DE LA GOMMERIE » évoque une structure financière/holding, compatible avec un véhicule d'investissement immobilier\"],\"limites\":\"L'activité holding (64.20Z) est financière et non directement immobilière (location/gestion de patrimoine serait 68.20B, promotion 41.10D, marchand de biens 68.10Z). Le unique permis porte sur 5 maisons individuelles, ce qui peut correspondre à un petit programme pour vente (promoteur) ou pour location (foncière), mais l'échelle est trop réduite pour trancher. Aucune information sur la destination finale (vente ou location) ni sur d'éventuelles filiales opérationnelles. La classification en foncière_investisseur repose sur l'interprétation du nom « Financière » et de la détention d'un permis, sans preuve formelle d'activité de détention/location de patrimoine.\"}"
+   }
+  ]
+ }
+]

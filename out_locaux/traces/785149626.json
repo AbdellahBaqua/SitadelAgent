@@ -1,0 +1,111 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "785149626"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "785149626"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "785149626"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "785149626"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "CHAMBRE INTERDEPART NOTAIRES VERSAILLES",
+     "nb_permis_PC": 1,
+     "annees_depot": [
+      "2019"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 0,
+     "surface_locaux_non_residentiels_creee_m2": 140,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 0
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "785149626",
+      "nom": "CHAMBRE INTERDEPART NOTAIRES VERSAILLES",
+      "nature_juridique": "8450",
+      "naf_actuel": "94.12Z",
+      "etat": "C",
+      "date_creation": "1900-01-01",
+      "categorie": "PME",
+      "effectif": "11",
+      "nb_etablissements": 1,
+      "nb_etablissements_ouverts": 0,
+      "siege_actuel": {
+       "siret": "78514962600018",
+       "naf": "94.12Z",
+       "etat": "F"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "78514962600018",
+       "naf_dans_permis": "94.12Z",
+       "nb_permis": 1,
+       "annees_depot": [
+        "2019"
+       ],
+       "etat_actuel": "fermé",
+       "date_creation": "1900-01-01",
+       "date_fermeture": "2025-05-26"
+      }
+     ],
+     "alertes": [
+      "SIRET 78514962600018 (permis 2019) fermé le 2025-05-26 : le NAF 94.12Z du permis vient d'un établissement fermé"
+     ],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/785149626"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "94.12Z",
+      "libelle": "Activités des organisations professionnelles"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "8450",
+     "libelle": "Ordre professionnel ou assimilé"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"entreprise_autre\",\"confiance\":\"haute\",\"indices\":[\"fiche_entreprise : nature_juridique 8450 « Ordre professionnel ou assimilé »\",\"libelle_cj : code 8450 = « Ordre professionnel ou assimilé »\",\"libelle_naf : code 94.12Z = « Activités des organisations professionnelles »\",\"permis_du_demandeur : 1 permis en 2019 pour 140 m² de locaux non résidentiels, 0 logement créé\",\"fiche_entreprise : entreprise et établissement fermés (état « C » et « F »), effectif 11, catégorie PME\"],\"limites\":\"L'établissement porteur du permis est fermé depuis mai 2025 ; la classification repose sur la nature juridique et l'activité actuelle de l'entreprise (ordre professionnel des notaires), qui ne correspond à aucune famille ciblée par Buddimm (bailleurs sociaux, promoteurs, foncières, associations ESS, exploitants santé/social, collectivités, copropriétés).\"}"
+   }
+  ]
+ }
+]

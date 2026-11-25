@@ -1,0 +1,113 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "808540355"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "808540355"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "808540355"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "808540355"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "BURGER KING CONSTRUCTION",
+     "nb_permis_PC": 2,
+     "annees_depot": [
+      "2018",
+      "2020"
+     ],
+     "nb_communes": 2,
+     "logements_crees_total": 0,
+     "surface_locaux_non_residentiels_creee_m2": 901,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 1
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "808540355",
+      "nom": "BURGER KING CONSTRUCTION",
+      "nature_juridique": "5710",
+      "naf_actuel": "70.22Z",
+      "etat": "A",
+      "date_creation": "2014-12-15",
+      "categorie": "GE",
+      "effectif": "01",
+      "nb_etablissements": 4,
+      "nb_etablissements_ouverts": 1,
+      "siege_actuel": {
+       "siret": "80854035500043",
+       "naf": "70.22Z",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "80854035500035",
+       "naf_dans_permis": "70.22Z",
+       "nb_permis": 2,
+       "annees_depot": [
+        "2018",
+        "2020"
+       ],
+       "etat_actuel": "fermé",
+       "date_creation": "2016-06-22",
+       "date_fermeture": "2021-01-18"
+      }
+     ],
+     "alertes": [
+      "SIRET 80854035500035 (permis 2018,2020) fermé le 2021-01-18 : le NAF 70.22Z du permis vient d'un établissement fermé"
+     ],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/808540355"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "70.22Z",
+      "libelle": "Conseil pour les affaires et autres conseils de gestion"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5710",
+     "libelle": "SAS, société par actions simplifiée"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"entreprise_autre\",\"confiance\":\"moyenne\",\"indices\":[\"permis_du_demandeur : 2 permis déposés (2018, 2020) pour 901 m² de surface non résidentielle, 0 logement créé, 0 logement locatif social\",\"fiche_entreprise : entreprise active (SAS, grande entreprise, 1-2 salariés), NAF actuel 70.22Z, établissement du permis fermé depuis 2021\",\"libelle_naf : 70.22Z = « Conseil pour les affaires et autres conseils de gestion » (pas construction ni promotion immobilière)\",\"libelle_cj : 5710 = « SAS, société par actions simplifiée » (forme juridique privée lucrative)\",\"dénomination : « BURGER KING CONSTRUCTION » suggère une entité dédiée à la construction de restaurants Burger King, mais l'activité déclarée est du conseil en gestion\"],\"limites\":\"Le NAF actuel (conseil en gestion) ne correspond pas à l'intitulé « CONSTRUCTION » ni aux permis de construire non résidentiels. L'établissement ayant déposé les permis est fermé. L'objet réel (construction pour compte propre d'une chaîne de restauration vs promotion pour tiers) n'est pas tranché par les sources disponibles.\"}"
+   }
+  ]
+ }
+]

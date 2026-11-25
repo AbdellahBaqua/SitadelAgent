@@ -1,0 +1,120 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "798549697"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "798549697"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "798549697"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "798549697"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "CANON D'OR",
+     "nb_permis_PC": 2,
+     "annees_depot": [
+      "2016",
+      "2017"
+     ],
+     "nb_communes": 2,
+     "logements_crees_total": 110,
+     "surface_locaux_non_residentiels_creee_m2": 360,
+     "nb_permis_collectif": 2,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [
+      "7"
+     ],
+     "logements_locatifs_sociaux_declares": 29,
+     "permis_autorises_pas_remontes_comme_commences": 1
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "798549697",
+      "nom": "LA LISIERE DE SAINT GERMAIN",
+      "nature_juridique": "5202",
+      "naf_actuel": "41.10D",
+      "etat": "C",
+      "date_creation": "2013-11-18",
+      "categorie": "ETI",
+      "effectif": "NN",
+      "nb_etablissements": 2,
+      "nb_etablissements_ouverts": 0,
+      "siege_actuel": {
+       "siret": "79854969700018",
+       "naf": "70.10Z",
+       "etat": "F"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "79854969700018",
+       "naf_dans_permis": "70.10Z",
+       "nb_permis": 2,
+       "annees_depot": [
+        "2016",
+        "2017"
+       ],
+       "etat_actuel": "fermé",
+       "date_creation": "2013-11-18",
+       "date_fermeture": "2025-11-20"
+      }
+     ],
+     "alertes": [
+      "SIRET 79854969700018 (permis 2016,2017) fermé le 2025-11-20 : le NAF 70.10Z du permis vient d'un établissement fermé",
+      "NAF du permis ['70.10Z'] différent du NAF actuel de l'entreprise 41.10D"
+     ],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/798549697"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "41.10D",
+      "libelle": "Supports juridiques de programmes"
+     },
+     {
+      "code": "70.10Z",
+      "libelle": "Activités des sièges sociaux"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5202",
+     "libelle": "Société en nom collectif"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"promoteur\",\"confiance\":\"haute\",\"indices\":[\"fiche_entreprise : NAF actuel 41.10D « Supports juridiques de programmes » (libelle_naf), activité caractéristique des véhicules de promotion immobilière\",\"libelle_naf : 41.10D correspond exactement à la définition de la famille promoteur (SCI de construction-vente et supports juridiques de programmes)\",\"permis_du_demandeur : 2 permis de construire (2016-2017) pour 110 logements créés dont 29 locatifs sociaux, activité de production immobilière\",\"libelle_cj : catégorie juridique 5202 « Société en nom collectif », forme souvent utilisée pour des véhicules de programme (support juridique de programme)\"],\"limites\":\"La dénomination dans les permis (« CANON D'OR ») diffère du nom actuel de l'entreprise (« LA LISIERE DE SAINT GERMAIN ») – possible changement de nom ou nom commercial. L'établissement porteur des permis est fermé depuis 2025, le NAF du permis (70.10Z) n'est plus d'actualité. La présence de 29 logements locatifs sociaux pourrait évoquer un bailleur social, mais la forme juridique (SNC) et le NAF actuel orientent vers un promoteur réalisant du logement social pour le compte de bailleurs.\"}"
+   }
+  ]
+ }
+]

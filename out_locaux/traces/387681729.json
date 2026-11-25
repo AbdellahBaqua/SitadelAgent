@@ -1,0 +1,111 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "387681729"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "387681729"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "387681729"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "387681729"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "AMMA",
+     "nb_permis_PC": 1,
+     "annees_depot": [
+      "2018"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 0,
+     "surface_locaux_non_residentiels_creee_m2": 945,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 0
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "387681729",
+      "nom": "AMMA (AMMA)",
+      "nature_juridique": "6599",
+      "naf_actuel": "68.32A",
+      "etat": "A",
+      "date_creation": "1992-04-10",
+      "categorie": "PME",
+      "effectif": "NN",
+      "nb_etablissements": 3,
+      "nb_etablissements_ouverts": 1,
+      "siege_actuel": {
+       "siret": "38768172900035",
+       "naf": "68.32A",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "38768172900019",
+       "naf_dans_permis": "68.32A",
+       "nb_permis": 1,
+       "annees_depot": [
+        "2018"
+       ],
+       "etat_actuel": "fermé",
+       "date_creation": "1992-04-10",
+       "date_fermeture": "1994-09-20"
+      }
+     ],
+     "alertes": [
+      "SIRET 38768172900019 (permis 2018) fermé le 1994-09-20 : le NAF 68.32A du permis vient d'un établissement fermé"
+     ],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/387681729"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "68.32A",
+      "libelle": "Administration d'immeubles et autres biens immobiliers"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "6599",
+     "libelle": "Autre société civile"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"fonciere_investisseur\",\"confiance\":\"moyenne\",\"indices\":[\"fiche_entreprise : nature_juridique 6599 (Autre société civile) – forme souvent utilisée pour des SCI de portage immobilier\",\"fiche_entreprise : naf_actuel 68.32A (Administration d'immeubles et autres biens immobiliers) – activité de gestion/administration de biens immobiliers\",\"permis_du_demandeur : 1 permis en 2018 pour 945 m² de locaux non résidentiels, 0 logement créé – suggère une opération immobilière pour patrimoine propre\",\"libelle_cj : 6599 = Autre société civile\",\"libelle_naf : 68.32A = Administration d'immeubles et autres biens immobiliers\"],\"limites\":\"L'établissement qui a déposé le permis (SIRET 38768172900019) est fermé depuis 1994, le NAF du permis est donc un indice historique faible. L'activité actuelle (administration d'immeubles) peut correspondre à de la gestion pour compte de tiers ou à de la détention de patrimoine propre ; aucun élément ne permet de confirmer une vocation d'investisseur (foncière, SCPI, marchand de biens) plutôt que de simple gestionnaire. La dénomination « AMMA » ne donne pas d'indication sectorielle.\"}"
+   }
+  ]
+ }
+]

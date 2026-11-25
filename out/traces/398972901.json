@@ -1,0 +1,111 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "398972901"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "398972901"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "398972901"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "398972901"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "GMF ASSURANCES",
+     "nb_permis_PC": 1,
+     "annees_depot": [
+      "2024"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 19,
+     "surface_locaux_non_residentiels_creee_m2": 0,
+     "nb_permis_collectif": 1,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [
+      "1"
+     ],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 1
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "398972901",
+      "nom": "GMF ASSURANCES",
+      "nature_juridique": "5599",
+      "naf_actuel": "65.12Z",
+      "etat": "A",
+      "date_creation": "1994-11-15",
+      "categorie": "GE",
+      "effectif": "52",
+      "nb_etablissements": 1074,
+      "nb_etablissements_ouverts": 356,
+      "siege_actuel": {
+       "siret": "39897290108012",
+       "naf": "65.12Z",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "39897290108012",
+       "naf_dans_permis": "65.12Z",
+       "nb_permis": 1,
+       "annees_depot": [
+        "2024"
+       ],
+       "etat_actuel": "ouvert",
+       "date_creation": "2016-01-01",
+       "date_fermeture": null
+      }
+     ],
+     "alertes": [],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/398972901"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "65.12Z",
+      "libelle": "Autres assurances"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5599",
+     "libelle": "SA à conseil d'administration (s.a.i.)"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"entreprise_autre\",\"confiance\":\"moyenne\",\"indices\":[\"fiche_entreprise : NAF actuel 65.12Z « Autres assurances » (activité d'assurance)\",\"fiche_entreprise : nature juridique 5599 « SA à conseil d'administration (s.a.i.) » (société anonyme)\",\"permis_du_demandeur : 1 permis en 2024 pour 19 logements collectifs, 0 logement social déclaré\",\"libelle_naf : 65.12Z = « Autres assurances »\",\"libelle_cj : 5599 = « SA à conseil d'administration (s.a.i.) »\"],\"limites\":\"La dénomination « GMF ASSURANCES » évoque une mutuelle d'assurance (relevant de l'ESS), ce qui pourrait la rattacher à la famille association_ess. Cependant, la forme juridique est une SA (code 5599) et aucun outil ne confirme le statut mutualiste. L'activité principale reste l'assurance (NAF 65.12Z), non l'immobilier. Le permis montre une opération de construction de logements (19) sans vocation sociale apparente.\"}"
+   }
+  ]
+ }
+]

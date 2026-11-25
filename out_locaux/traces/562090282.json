@@ -1,0 +1,109 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "562090282"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "562090282"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "562090282"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "562090282"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "SOGOFIM-SOC GRAND ORIENT FRANCE IMMOBIL",
+     "nb_permis_PC": 1,
+     "annees_depot": [
+      "2015"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 0,
+     "surface_locaux_non_residentiels_creee_m2": 4300,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 0
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "562090282",
+      "nom": "SOGOFIM-SOC GRAND ORIENT FRANCE IMMOBIL",
+      "nature_juridique": "5710",
+      "naf_actuel": "68.32A",
+      "etat": "A",
+      "date_creation": "1956-01-01",
+      "categorie": "PME",
+      "effectif": "02",
+      "nb_etablissements": 4,
+      "nb_etablissements_ouverts": 3,
+      "siege_actuel": {
+       "siret": "56209028200020",
+       "naf": "70.22Z",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "56209028200020",
+       "naf_dans_permis": "68.32A",
+       "nb_permis": 1,
+       "annees_depot": [
+        "2015"
+       ],
+       "etat_actuel": "ouvert",
+       "date_creation": "1995-09-27",
+       "date_fermeture": null
+      }
+     ],
+     "alertes": [],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/562090282"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "68.32A",
+      "libelle": "Administration d'immeubles et autres biens immobiliers"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5710",
+     "libelle": "SAS, société par actions simplifiée"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"fonciere_investisseur\",\"confiance\":\"moyenne\",\"indices\":[\"fiche_entreprise : NAF actuel 68.32A « Administration d'immeubles et autres biens immobiliers » (activité de gestion/administration de patrimoine immobilier)\",\"libelle_naf : 68.32A = Administration d'immeubles et autres biens immobiliers\",\"dénomination : « SOGOFIM-SOC GRAND ORIENT FRANCE IMMOBIL » évoque une société de gestion foncière immobilière (SOGOFIM ≈ Société de Gestion Foncière Immobilière) liée au Grand Orient de France\",\"permis_du_demandeur : 1 permis en 2015 pour 4 300 m² de surface non résidentielle, 0 logement créé, 0 logement social → projet tertiaire/commercial, pas de production de logement social\",\"fiche_entreprise : forme juridique SAS (cj 5710), non compatible avec les formes classiques de bailleurs sociaux (OPH, SA HLM, coopérative, SEM)\",\"fiche_entreprise : effectif 2, PME, créée en 1956 → structure patrimoniale de longue date\"],\"limites\":\"Aucune preuve directe de détention/location de patrimoine en propre (la NAF 68.32A couvre aussi la gestion pour compte de tiers). Le siège a un NAF 70.22Z (conseil en gestion), différent de l'établissement porteur du permis. L'absence de logements sociaux et la nature non résidentielle du permis ne permettent pas de confirmer une activité de foncière d'investissement résidentiel.\"}"
+   }
+  ]
+ }
+]

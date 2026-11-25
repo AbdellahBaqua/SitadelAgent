@@ -1,0 +1,189 @@
+﻿## Variables_Logements
+Nom de la variable | Description de la variable | Nouveau mai 2022? | Modalités | Format | Observations | Origine
+REG_CODE | Code de la région du lieu des travaux |  | Nomenclature du Code Officiel Géographique (COG Insee) | Alphanumérique, 2 caractères |  | Numéro d'enregistrement de la DAU
+DEP_CODE | Code du département du lieu des travaux |  |  | Alphanumérique, 2 caractères |  | Numéro d'enregistrement de la DAU
+COMM | Code de la commune du lieu des travaux |  | Nomenclature du Code Officiel Géographique (COG Insee) | Alphanumérique, 5 caractères | Le code vient directement du numéro d'enregistrement de la DAU, donc dépend du code de la commune au moment où la DAU a été déposée ; il n'est pas recodifié dans un millésime particulier du COG | Numéro d'enregistrement de la DAU
+TYPE_DAU | Type de DAU -- demande d'autorisation d'urbanisme (PC ou DP généralement, rarement PA) |  | PC (Permis de construire)
+DP (Déclaration Préalable) | Alphanumérique, 2 caractères |  | Numéro d'enregistrement de la DAU
+NUM_DAU | Numéro d'enregistrement de la DAU |  |  | Alphanumérique, 13 caractères | Numéro sur 13 caractères : les 6 premiers caractères correspondent au code commune, les 2 suivants à l'année de dépôt de la DAU, les 5 derniers à un numéro d'ordre | Numéro d'enregistrement de la DAU
+ETAT_DAU | Etat d'avancement du projet |  | 2 = Autorisé
+4 = Annulé
+5 = Commencé
+6 = Terminé | Numérique, 1 chiffre | Toutes les DAU du fichier ont été autorisées ; les modalités 4 à 6 concernent des DAU pour lesquelles est connu l'état postérieur d'avancement du projet . | Décision / suivi des travaux
+DATE_REELLE_AUTORISATION | Date réelle d'autorisation (PC) ou de non-opposition (DP) initiale |  |  | Date, format AAAA-MM-JJ | Date de décision relative à la demande initiale, sans prise en compte d'éventuels modificatifs. | Décision
+DATE_REELLE_DOC | Date réelle d'ouverture de chantier |  |  | Date, format AAAA-MM-JJ |  | Déclaration officielle (DOC) ou information obtenue par enquête
+DATE_REELLE_DAACT | Date réelle d'achèvement des travaux |  |  | Date, format AAAA-MM-JJ |  | Déclaration officielle (DAACT) ou information obtenue par enquête
+AN_DEPOT | Année de dépôt de la DAU | Introduit en mai 2022 |  | Numérique, 4 chiffres | 2 caractères issus du numéro d'enregistrement de la DAU | Numéro d'enregistrement de la DAU
+DR_DEPOT | Date réelle de dépôt de la DAU | introduit en avril 2026 |  | Date, format AAAA-MM-JJ |  | 
+DPC_AUT | Date (mois) de prise en compte (DPC) de l'autorisation initiale |  |  | Date, format AAAAMM | Une autorisation délivrée le 6 décembre 2020 enregistrée dans Sitadel en mars 2021 (du fait d'un retard de collecte) a pour date de prise en compte "202102" et pour date réelle "2020-12-06" ; elle est diffusée fin mars 2021. | Gestion de la collecte
+DPC_DOC | Date (mois) de prise en compte (DPC) de l'ouverture du chantier |  |  | Date, format AAAAMM | Une ouverture de chantier ayant eu lieu le 6 décembre 2020 enregistrée dans Sitadel en mars 2021 (du fait d'un retard de collecte) a pour date de prise en compte "202102" et pour date réelle "2020-12-06" ; elle est diffusée fin mars 2021. | Gestion de la collecte
+DPC_DERN | Date (mois) (DPC) de prise en compte du dernier événement reçu |  |  | Date, format AAAAMM | Date de prise en compte du dernier événement reçu dans le cycle de vie de l'autorisation d'urbanisme (autorisation ou mise en chantier ou achèvement des travaux). | Gestion de la collecte
+APE_DEM | Code d'activité principale de l'établissement d'un demandeur avéré en tant que personne morale |  | Nomenclature NAF Rév2 | Alphanumérique, 6 caractères | Indisponible pour les personnes physiques, les personnes morales assimilées à des personnes physiques, et les demandeurs non retrouvés dans Sirène | Sirène
+CJ_DEM | Catégorie juridique d'un demandeur avéré en tant que personne morale |  | Nomenclature du répertoire Sirène | numérique, 4 chiffres | Indisponible pour les personnes physiques, les personnes morales assimilées à des personnes physiques, et les demandeurs non retrouvés dans Sirène | Sirène
+DENOM_DEM | Dénomination d'un demandeur avéré en tant que personne morale |  |  | Alphanumérique, 120 caractères | Indisponible pour les personnes physiques, les personnes morales assimilées à des personnes physiques, et les demandeurs non retrouvés dans Sirène | Sirène
+SIREN_DEM | Numéro SIREN d'un demandeur avéré en tant que personne morale |  |  | Alphanumérique, 9 caractères | Indisponible pour les personnes physiques, les personnes morales assimilées à des personnes physiques, et les demandeurs non retrouvés dans Sirène | Formulaire ou recherche à partir de la dénomination
+SIRET_DEM | Numéro SIRET d'un demandeur avéré en tant que personne morale |  |  | Alphanumérique, 14 caractères | Indisponible pour les personnes physiques, les personnes morales assimilées à des personnes physiques, et les demandeurs non retrouvés dans Sirène | Formulaire ou recherche à partir de la dénomination
+CODPOST_DEM | Code postal du demandeur |  |  | Alphanumérique, 5 caractères |  | Formulaire
+LOCALITE_DEM | Localité du demandeur |  |  | Alphanumérique, 32 caractères |  | Formulaire
+REC_ARCHI | Indicateur de recours à un architecte |  | 1 si oui, 0 si non | Booléen, 1 caractère | Insuffisamment renseigné | Formulaire
+ADR_NUM_TER | Numéro de voie du terrain |  |  | Alphanumérique, 5 caractères |  | Formulaire
+ADR_LIBVOIE_TER | Libellé de la voie du terrain |  |  | Alphanumérique, 26 caractères |  | Formulaire
+ADR_LIEUDIT_TER | Lieu-dit du terrain |  |  | Alphanumérique, 38 caractères |  | Formulaire
+ADR_LOCALITE_TER | Localité du terrain |  |  | Alphanumérique, 32 caractères |  | Formulaire
+ADR_CODPOST_TER | Code postal du terrain |  |  | Alphanumérique, 5 caractères |  | Formulaire
+SEC_CADASTRE1 | Section cadastrale 1 |  |  | Alphanumérique, 2 caractères | Les préfixes sont en général absents de Sitadel | Formulaire
+NUM_CADASTRE1 | Numéro parcelle cadastrale 1 |  |  | Alphanumérique, 4 caractères |  | Formulaire
+SEC_CADASTRE2 | Section cadastrale 2 |  |  | Alphanumérique, 2 caractères |  | Formulaire
+NUM_CADASTRE2 | Numéro parcelle cadastrale 2 |  |  | Alphanumérique, 4 caractères |  | Formulaire
+SEC_CADASTRE3 | Section cadastrale 3 |  |  | Alphanumérique, 2 caractères |  | Formulaire
+NUM_CADASTRE3 | Numéro parcelle cadastrale 3 |  |  | Alphanumérique, 4 caractères |  | Formulaire
+SEC_CADASTRE4 | Section cadastrale 4 | Introduit en octobre 2026 |  | Alphanumérique, 2 caractères |  | Formulaire
+NUM_CADASTRE4 | Numéro parcelle cadastrale 4 | Introduit en octobre 2026 |  | Alphanumérique, 4 caractères |  | Formulaire
+SEC_CADASTRE5 | Section cadastrale 5 | Introduit en octobre 2026 |  | Alphanumérique, 2 caractères |  | Formulaire
+NUM_CADASTRE5 | Numéro parcelle cadastrale 5 | Introduit en octobre 2026 |  | Alphanumérique, 4 caractères |  | Formulaire
+SEC_CADASTRE6 | Section cadastrale 6 | Introduit en octobre 2026 |  | Alphanumérique, 2 caractères |  | Formulaire
+NUM_CADASTRE6 | Numéro parcelle cadastrale 6 | Introduit en octobre 2026 |  | Alphanumérique, 4 caractères |  | Formulaire
+SEC_CADASTRE7 | Section cadastrale 7 | Introduit en octobre 2026 |  | Alphanumérique, 2 caractères |  | Formulaire
+NUM_CADASTRE7 | Numéro parcelle cadastrale 7 | Introduit en octobre 2026 |  | Alphanumérique, 4 caractères |  | Formulaire
+SEC_CADASTRE8 | Section cadastrale 8 | Introduit en octobre 2026 |  | Alphanumérique, 2 caractères |  | Formulaire
+NUM_CADASTRE8 | Numéro parcelle cadastrale 8 | Introduit en octobre 2026 |  | Alphanumérique, 4 caractères |  | Formulaire
+SEC_CADASTRE9 | Section cadastrale 9 | Introduit en octobre 2026 |  | Alphanumérique, 2 caractères |  | Formulaire
+NUM_CADASTRE9 | Numéro parcelle cadastrale 9 | Introduit en octobre 2026 |  | Alphanumérique, 4 caractères |  | Formulaire
+SEC_CADASTRE10 | Section cadastrale 10 | Introduit en octobre 2026 |  | Alphanumérique, 2 caractères |  | Formulaire
+NUM_CADASTRE10 | Numéro parcelle cadastrale 10 | Introduit en octobre 2026 |  | Alphanumérique, 4 caractères |  | Formulaire
+SEC_CADASTRE11 | Section cadastrale 11 | Introduit en octobre 2026 |  | Alphanumérique, 2 caractères |  | Formulaire
+NUM_CADASTRE11 | Numéro parcelle cadastrale 11 | Introduit en octobre 2026 |  | Alphanumérique, 4 caractères |  | Formulaire
+SEC_CADASTRE12 | Section cadastrale 12 | Introduit en octobre 2026 |  | Alphanumérique, 2 caractères |  | Formulaire
+NUM_CADASTRE12 | Numéro parcelle cadastrale 12 | Introduit en octobre 2026 |  | Alphanumérique, 4 caractères |  | Formulaire
+SEC_CADASTRE13 | Section cadastrale 13 | Introduit en octobre 2026 |  | Alphanumérique, 2 caractères |  | Formulaire
+NUM_CADASTRE13 | Numéro parcelle cadastrale 13 | Introduit en octobre 2026 |  | Alphanumérique, 4 caractères |  | Formulaire
+SEC_CADASTRE14 | Section cadastrale 14 | Introduit en octobre 2026 |  | Alphanumérique, 2 caractères |  | Formulaire
+NUM_CADASTRE14 | Numéro parcelle cadastrale 14 | Introduit en octobre 2026 |  | Alphanumérique, 4 caractères |  | Formulaire
+SEC_CADASTRE15 | Section cadastrale 15 | Introduit en octobre 2026 |  | Alphanumérique, 2 caractères |  | Formulaire
+NUM_CADASTRE15 | Numéro parcelle cadastrale 15 | Introduit en octobre 2026 |  | Alphanumérique, 4 caractères |  | Formulaire
+SEC_CADASTRE16 | Section cadastrale 16 | Introduit en octobre 2026 |  | Alphanumérique, 2 caractères |  | Formulaire
+NUM_CADASTRE16 | Numéro parcelle cadastrale 16 | Introduit en octobre 2026 |  | Alphanumérique, 4 caractères |  | Formulaire
+SEC_CADASTRE17 | Section cadastrale 17 | Introduit en octobre 2026 |  | Alphanumérique, 2 caractères |  | Formulaire
+NUM_CADASTRE17 | Numéro parcelle cadastrale 17 | Introduit en octobre 2026 |  | Alphanumérique, 4 caractères |  | Formulaire
+SEC_CADASTRE18 | Section cadastrale 18 | Introduit en octobre 2026 |  | Alphanumérique, 2 caractères |  | Formulaire
+NUM_CADASTRE18 | Numéro parcelle cadastrale 18 | Introduit en octobre 2026 |  | Alphanumérique, 4 caractères |  | Formulaire
+SEC_CADASTRE19 | Section cadastrale 19 | Introduit en octobre 2026 |  | Alphanumérique, 2 caractères |  | Formulaire
+NUM_CADASTRE19 | Numéro parcelle cadastrale 19 | Introduit en octobre 2026 |  | Alphanumérique, 4 caractères |  | Formulaire
+SEC_CADASTRE20 | Section cadastrale 20 | Introduit en octobre 2026 |  | Alphanumérique, 2 caractères |  | Formulaire
+NUM_CADASTRE20 | Numéro parcelle cadastrale 20 | Introduit en octobre 2026 |  | Alphanumérique, 4 caractères |  | Formulaire
+SEC_CADASTRE21 | Section cadastrale 21 | Introduit en octobre 2026 |  | Alphanumérique, 2 caractères |  | Formulaire
+NUM_CADASTRE21 | Numéro parcelle cadastrale 21 | Introduit en octobre 2026 |  | Alphanumérique, 4 caractères |  | Formulaire
+SEC_CADASTRE22 | Section cadastrale 22 | Introduit en octobre 2026 |  | Alphanumérique, 2 caractères |  | Formulaire
+NUM_CADASTRE22 | Numéro parcelle cadastrale 22 | Introduit en octobre 2026 |  | Alphanumérique, 4 caractères |  | Formulaire
+SEC_CADASTRE23 | Section cadastrale 23 | Introduit en octobre 2026 |  | Alphanumérique, 2 caractères |  | Formulaire
+NUM_CADASTRE23 | Numéro parcelle cadastrale 23 | Introduit en octobre 2026 |  | Alphanumérique, 4 caractères |  | Formulaire
+SEC_CADASTRE24 | Section cadastrale 24 | Introduit en octobre 2026 |  | Alphanumérique, 2 caractères |  | Formulaire
+NUM_CADASTRE24 | Numéro parcelle cadastrale 24 | Introduit en octobre 2026 |  | Alphanumérique, 4 caractères |  | Formulaire
+SEC_CADASTRE25 | Section cadastrale 25 | Introduit en octobre 2026 |  | Alphanumérique, 2 caractères |  | Formulaire
+NUM_CADASTRE25 | Numéro parcelle cadastrale 25 | Introduit en octobre 2026 |  | Alphanumérique, 4 caractères |  | Formulaire
+AGRIVOLTAIQUE | Projet portant sur une installation photovoltaïque | Introduit en octobre 2026 | 1 si oui, 0 si non, vide si non renseigné | Booléen, 1 caractère |  | Formulaire
+EMPRISE_SOL_AVANT | Emprise au sol avant travaux (en m2) | Introduit en octobre 2026 |  | Numérique, max. 8 chiffres |  | Formulaire
+EMPRISE_SOL_CREEE | Emprise au sol créée (en m2) | Introduit en octobre 2026 |  | Numérique, max. 8 chiffres |  | Formulaire
+EMPRISE_SOL_SUPPRIMEE | Emprise au sol supprimée (en m2) | Introduit en octobre 2026 |  | Numérique, max. 8 chiffres |  | Formulaire
+SUPERFICIE_TERRAIN | Superficie du terrain (en m2) |  |  | Numérique, max. 8 chiffres |  | Formulaire
+ZONE_OP | Code "zone opératoire" |  | 1 = Lotissement
+2 = ZAC
+3 = AFU
+4 = Hors zones ou ne sais pas | Numérique, 1 chiffre | Très insuffisamment renseigné | Formulaire
+NATURE_PROJET_DECLAREE | Nature du projet déclarée par le demandeur |  | 1 = nouvelle construction
+2 = travaux sur construction existante | Numérique, 1 chiffre |  | Formulaire
+NATURE_PROJET_COMPLETEE | Nature de projet détaillée | Introduit en mai 2022 | 1 = nouvelle construction
+2 = transformation sans extension ni diminution de surface (inclut les changements de destination, réhabilitations, scissions/regroupements de logements ...)
+3 = transformation avec extension de surface
+4 = transformation avec diminution de surface
+5 = extension de surface sans transformation
+6 = diminution de surface sans transformation | Numérique, 1 chiffre | A partir du tableau des surfaces de plancher et de la nature de projet déclarée : une petite partie des "nouvelles constructions" déclarées sont recodifiées en travaux sur existant | Codification par le SDES 
+DESTINATION_PRINCIPALE | Destination principale | Introduit en mai 2022 | 1 = logements
+2 = non résidentiel | Numérique, 1 chiffre | Non résidentiel si la surface créée en non résidentiel est supérieure à la surface créée en habitation | Codification par le SDES
+TYPE_PRINCIP_LOGTS_CREES | Type principal des logements créés | Introduit en mai 2022 | 1 = un logement individuel
+2 = plusieurs logements individuels
+3 = collectif hors résidence
+4 = résidence | Numérique, 1 chiffre | Type principal selon le nombre de logements créés : il peut donc y avoir des logements individuels dans un permis de type "collectif hors résidences" | Codification par le SDES
+TYPE_TRANSFO_PRINCIPAL | Type principal de transformation | Introduit en mai 2022 | 1 = transformation de locaux en logements (changement de destination)
+2 = transformation de logements (réhabilitation, scission, regroupement ...)
+3 = transformation de logements en locaux non résidentiels (changement de destination)
+4 = transformation de locaux non résidentiels (changement de destination, réhabilitation, scission, regroupement ...) | Numérique, 1 chiffre | Selon que la surface transformée et la surface issue de la transformation sont majoritairement des surfaces de logements ou de locaux | Codification par le SDES 
+TYPE_PRINCIP_LOCAUX_TRANSFORMES | Type principal des locaux d'origine transformés | Introduit en mai 2022 | 1 = logements 
+3 =  bureaux
+4 = commerce
+6 = industrie
+7 = agriculture
+8 = entrepôt
+9 = service public ou d'intérêt collectif | Numérique, 1 chiffre | Selon la première destination d'origine des surfaces transformées | Codification par le SDES 
+I_EXTENSION | Indicateur d'extension |  | 1 si oui, 0 si non | Booléen, 1 caractère |  | Formulaire
+I_SURELEVATION | Indicateur de surélévation |  | 1 si oui, 0 si non | Booléen, 1 caractère |  | Formulaire
+I_NIVSUPP | Indicateur de création de niveau(x) supplémentaire(s) |  | 1 si oui, 0 si non | Booléen, 1 caractère |  | Formulaire
+NB_NIV_MAX | Nombre de niveaux du bâtiment le plus élevé |  |  | Numérique, max. 2 chiffres | Nombre de niveaux au-dessus du sol depuis le nouveau formulaire de 2020, très insuffisamment renseigné | Formulaire
+UTILISATION | Utilisation visée des locaux à construire |  | 1 = Occupation personnelle
+2 = Vente
+3 = Location 
+4 = vente - location
+5 = non rempli | Numérique, 1 chiffre | Assez mal renseigné | Formulaire
+RES_PRINCIP_OU_SECOND | Type d'habitation principale ou secondaire |  | 1 = résidence principale
+2 = résidence secondaire
+3 = non rempli | Numérique, 1 chiffre | Seulement si occupation personnelle normalement | Formulaire
+TYP_ANNEXE | Type d'annexe |  | 1 = Piscine
+2 = Garage
+3 = Véranda
+4 = Abri de Jardin
+5 = Autre annexe
+6 = plusieurs annexes
+7 = pas d’annexe | Numérique, 1 chiffre |  | Recodification des cases du formulaire suivantes
+I_PISCINE | Présence d'une piscine dans le projet | Introduit en mai 2022 | 1 si oui, 0 si non | Booléen, 1 caractère |  | Formulaire
+I_GARAGE | Présence d'un garage dans le projet | Introduit en mai 2022 | 1 si oui, 0 si non | Booléen, 1 caractère |  | Formulaire
+I_VERANDA | Présence d'une véranda dans le projet | Introduit en mai 2022 | 1 si oui, 0 si non | Booléen, 1 caractère |  | Formulaire
+I_ABRI_JARDIN | Présence d'un abri de jardin dans le projet | Introduit en mai 2022 | 1 si oui, 0 si non | Booléen, 1 caractère |  | Formulaire
+I_AUTRE_ANNEXE | Présence d'une autre annexe dans le projet | Introduit en mai 2022 | 1 si oui, 0 si non | Booléen, 1 caractère |  | Formulaire
+RESIDENCE | Type de résidence |  | 1 = res pour personnes âgées
+2 = res étudiantes
+3 = res de tourisme
+4 = res hôtelière à vocation sociale
+5 = res sociale
+6 = res pour handicapés
+7 = autre résidence
+8 = projet mixte
+9 = Non rempli | Numérique, 1 caractère | Pour les projets mixtes (logements ordinaires / résidence), on fait en sorte que cette catégorie ne soit définie que si la résidence représente la majorité des logements du projet. | Recodification des cases du formulaire suivantes
+RES_PERS_AGEES | Présence d'une résidence pour personnes âgées | Introduit en mai 2022 | 1 si oui, 0 si non | Booléen, 1 caractère |  | Formulaire
+RES_ETUDIANTS | Présence d'une résidence étudiante | Introduit en mai 2022 | 1 si oui, 0 si non | Booléen, 1 caractère |  | Formulaire
+RES_TOURISME | Présence d'une résidence de tourisme | Introduit en mai 2022 | 1 si oui, 0 si non | Booléen, 1 caractère |  | Formulaire
+RES_HOTEL_SOCIALE | Présence d'une résidence hôtelière à vocation sociale | Introduit en mai 2022 | 1 si oui, 0 si non | Booléen, 1 caractère |  | Formulaire
+RES_SOCIALE | Présence d'une résidence sociale | Introduit en mai 2022 | 1 si oui, 0 si non | Booléen, 1 caractère |  | Formulaire
+RES_HANDICAPES | Présence d'une résidence pour personnes handicapées | Introduit en mai 2022 | 1 si oui, 0 si non | Booléen, 1 caractère |  | Formulaire
+RES_AUTRE | Présence d'un autre type de résidence | Introduit en mai 2022 | 1 si oui, 0 si non | Booléen, 1 caractère |  | Formulaire
+NB_LGT_TOT_CREES | Nombre total de logements créés |  |  | Numérique, max. 3 chiffres | Une transformation d'un 3 pièces en 2 studios est généralement considérée comme créant 2 logements | Formulaire
+NB_LGT_IND_CREES | Nombre de logements individuels créés |  |  | Numérique, max. 3 chiffres | Une maison individuelle peut comporter 2 logements individuels (au maximum) | Formulaire
+NB_LGT_COL_CREES | Nombre de logements collectifs créés |  |  | Numérique, max. 3 chiffres | Les logements collectifs font partie d’un bâtiment dans lequel sont superposés plus de deux logements distincts dont l'accès nécessite d'emprunter des parties communes | Formulaire
+NB_LGT_INDIV_PURS | Nombre de logements individuels purs créés | Introduit en mai 2022 |  | Numérique, max. 3 chiffres | Un logement individuel pur fait l’objet d’un permis de construire relatif à un seul logement individuel | Recodification SDES
+NB_LGT_INDIV_GROUPES | Nombre de logements individuels groupés créés (hors résidence) | Introduit en mai 2022 |  | Numérique, max. 3 chiffres | Les logements individuels groupés font l’objet d’un permis de construire relatif à la construction de plusieurs logements individuels (par exemple en lotissement ou dans une maison individuelle de deux logements), ou d'un logement individuel associés à des logements collectifs ou des locaux non résidentiels | Recodification SDES
+NB_LGT_RES | Nombre de logements en résidence créés | Introduit en mai 2022 |  | Numérique, max. 3 chiffres | Les logements en résidence sont des logements (individuels ou collectifs) construits en vue d’une occupation par un public ciblé selon la nature de la résidence, avec généralement mise à disposition de services adaptés | Recodification SDES
+NB_LGT_COL_HORS_RES | Nombre de logements collectifs créés hors résidence | Introduit en mai 2022 |  | Numérique, max. 3 chiffres | Les logements collectifs font partie d’un bâtiment dans lequel sont superposés plus de deux logements distincts dont l'accès nécessite d'emprunter des parties communes | Recodification SDES
+NB_LGT_DEMOLIS | Nombre de logements démolis |  |  | Numérique, max. 3 chiffres | Insuffisamment renseigné | Formulaire
+NB_LGT_1P | Nombre de logements de 1 pièce créés |  |  | Numérique, max. 3 chiffres | Moyennement renseigné | Formulaire
+NB_LGT_2P | Nombre de logements de 2 pièces créés |  |  | Numérique, max. 3 chiffres | Moyennement renseigné | Formulaire
+NB_LGT_3P | Nombre de logements de 3 pièces créés |  |  | Numérique, max. 3 chiffres | Moyennement renseigné | Formulaire
+NB_LGT_4P | Nombre de logements de 4 pièces créés |  |  | Numérique, max. 3 chiffres | Moyennement renseigné | Formulaire
+NB_LGT_5P | Nombre de logements de 5 pièces créés |  |  | Numérique, max. 3 chiffres | Moyennement renseigné | Formulaire
+NB_LGT_6P_PLUS | Nombre de logements de 6 pièces et plus créés |  |  | Numérique, max. 3 chiffres | Moyennement renseigné | Formulaire
+NB_LGT_PRET_LOC_SOCIAL | Nb de logements locatifs sociaux |  |  | Numérique, max. 3 chiffres | Pas toujours connu au moment du dépôt du formulaire, et rarement corrigé ensuite ; insuffisamment renseigné | Formulaire
+NB_LGT_ACC_SOC_HORS_PTZ | Nb de logements aidé (hors ptz) |  |  | Numérique, max. 3 chiffres | Pas toujours connu au moment du dépôt du formulaire, et rarement corrigé ensuite ; insuffisamment renseigné | Formulaire
+NB_LGT_PTZ | Nb de logements ptz |  |  | Numérique, max. 3 chiffres | Pas toujours connu au moment du dépôt du formulaire, et rarement corrigé ensuite ; insuffisamment renseigné | Formulaire
+SURF_HAB_AVANT | Surface de plancher de la destination ' Habitation ' existante avant travaux |  |  | Numérique, max. 7 chiffres |  | Formulaire, contrôles de cohérence du SDES
+SURF_HAB_CREEE | Surface de plancher de la destination ' Habitation ' nouvelle construite |  |  | Numérique, max. 7 chiffres | Lorsque le projet crée des chambres (sans coin cuisine indépendant) et non des logements, on utilise plutôt la sous-destination "Hébergement" de la destination "Habitation" | Formulaire, contrôles de cohérence du SDES
+SURF_HAB_ISSUE_TRANSFO | Surface de plancher de la destination ' Habitation ' issue d'une transformation (changement de destination, réhabilitation, scission, regroupement …) |  |  | Numérique, max. 7 chiffres | Surface issue d'un changement de destination ou d'un mouvement interne (cas où les surfaces supprimée et créée sont identiques sur une même ligne, qui correspondent le plus souvent à des réhabilitations, scissions, regroupements …) | Formulaire, contrôles de cohérence du SDES
+SURF_HAB_DEMOLIE | Surface de plancher de la destination ' Habitation ' supprimée (démolie) |  |  | Numérique, max. 7 chiffres |  | Formulaire, contrôles de cohérence du SDES
+SURF_HAB_TRANSFORMEE | Surface de plancher de la destination ' Habitation ' transformée (changement de destination, réhabilitation, scission, regroupement ...) |  |  | Numérique, max. 7 chiffres | Surface changée de destination ou faisant l'objet d'un mouvement interne (cas où les surfaces supprimée et créée sont identiques sur une même ligne, qui correspondent le plus souvent à des réhabilitations, scissions, regroupements … | Formulaire, contrôles de cohérence du SDES
+SURF_LOC_AVANT | Surface de plancher de locaux non résidentiels (i.e. autres que d'habitation) existante avant travaux |  |  | Numérique, max. 7 chiffres | Locaux=autres destinations qu'habitation | Formulaire, contrôles de cohérence du SDES
+SURF_LOC_CREEE | Surface de plancher de locaux non résidentiels (i.e. autres que d'habitation) nouvelle construite |  |  | Numérique, max. 7 chiffres |  | Formulaire, contrôles de cohérence du SDES
+SURF_LOC_ISSUE_TRANSFO | Surface de plancher de locaux non résidentiels (i.e. autres que d'habitation) issue d'une transformation (changement de destination, réhabilitation, scission, regroupement …) |  |  | Numérique, max. 7 chiffres |  | Formulaire, contrôles de cohérence du SDES
+SURF_LOC_DEMOLIE | Surface de plancher de locaux non résidentiels (i.e. autres que d'habitation) démolie |  |  | Numérique, max. 7 chiffres |  | Formulaire, contrôles de cohérence du SDES
+SURF_LOC_TRANSFORMEE | Surface de plancher de locaux non résidentiels (i.e. autres que d'habitation) transformée (changement de destination, réhabilitation, scission, regroupement ...) |  |  | Numérique, max. 7 chiffres |  | Formulaire, contrôles de cohérence du SDES
+SURF_AUTR_TRANSFORMEE | Surface d'autres activités des secteurs primaires, secondaire ou tertiaire transformée (changement de destination, réhabilitation, scission, regroupement ...) |  |  |  |  | 
+SURF_COM_TRANSFORMEE | Surface de commerce et activités de service transformée (changement de destination, réhabilitation, scission, regroupement ...) | Introduit en mai 2022 |  | Numérique, max. 7 chiffres |  | Formulaire, contrôles de cohérence du SDES
+SURF_AGR_TRANSFORMEE | Surface d'exploitation agricole et forestière transformée (changement de destination, réhabilitation, scission, regroupement ...) | Introduit en mai 2022 |  | Numérique, max. 7 chiffres |  | Formulaire, contrôles de cohérence du SDES
+SURF_PUB_TRANSFORMEE | Surface d'équipement d'intérêt collectif et services publics transformée (changement de destination, réhabilitation, scission, regroupement ...) | Introduit en mai 2022 |  | Numérique, max. 7 chiffres |  | Formulaire, contrôles de cohérence du SDES
+

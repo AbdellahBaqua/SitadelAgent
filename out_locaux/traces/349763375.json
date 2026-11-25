@@ -1,0 +1,111 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "349763375"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "349763375"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "349763375"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "349763375"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "GROUPE FLO",
+     "nb_permis_PC": 1,
+     "annees_depot": [
+      "2019"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 0,
+     "surface_locaux_non_residentiels_creee_m2": 52,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 0
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "349763375",
+      "nom": "BERTRAND CASUAL FOOD",
+      "nature_juridique": "5710",
+      "naf_actuel": "70.10Z",
+      "etat": "A",
+      "date_creation": "1989-02-13",
+      "categorie": "GE",
+      "effectif": "02",
+      "nb_etablissements": 119,
+      "nb_etablissements_ouverts": 21,
+      "siege_actuel": {
+       "siret": "34976337501143",
+       "naf": "70.10Z",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "34976337500814",
+       "naf_dans_permis": "70.10Z",
+       "nb_permis": 1,
+       "annees_depot": [
+        "2019"
+       ],
+       "etat_actuel": "fermé",
+       "date_creation": "2005-04-25",
+       "date_fermeture": "2023-07-03"
+      }
+     ],
+     "alertes": [
+      "SIRET 34976337500814 (permis 2019) fermé le 2023-07-03 : le NAF 70.10Z du permis vient d'un établissement fermé"
+     ],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/349763375"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "70.10Z",
+      "libelle": "Activités des sièges sociaux"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5599",
+     "libelle": "SA à conseil d'administration (s.a.i.)"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"entreprise_autre\",\"confiance\":\"haute\",\"indices\":[\"permis_du_demandeur : 1 permis en 2019, 0 logement créé, 52 m² de surface non résidentielle créée, pas de résidence déclarée, pas de logement social\",\"fiche_entreprise : nom réel de l'entreprise = BERTRAND CASUAL FOOD (pas GROUPE FLO), nature juridique 5710 (SA à conseil d'administration selon libelle_cj 5599), NAF actuel 70.10Z (Activités des sièges sociaux), entreprise active, grande entreprise (GE), effectif 10-19, 119 établissements dont 21 ouverts\",\"libelle_naf : 70.10Z = Activités des sièges sociaux (holding, siège social)\",\"libelle_cj : 5599 = SA à conseil d'administration (s.a.i.)\",\"fiche_entreprise (alertes) : l'établissement du permis (SIRET 34976337500814) est fermé depuis 2023, le NAF du permis (70.10Z) est historique\",\"dénomination : GROUPE FLO apparaît comme nom d'enseigne/groupe, l'entité juridique est BERTRAND CASUAL FOOD, holding de restauration\"],\"limites\":\"Aucune incertitude majeure : l'activité de holding de restauration (siège social) et le permis pour des locaux non résidentiels (probablement un restaurant) excluent les familles immobilières spécialisées (bailleur, promoteur, foncière, association ESS, exploitant santé/social, collectivité, copropriété).\"}"
+   }
+  ]
+ }
+]

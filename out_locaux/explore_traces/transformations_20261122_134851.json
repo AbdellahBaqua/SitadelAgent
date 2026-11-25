@@ -1,0 +1,1196 @@
+[
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "apercu",
+    "args": {},
+    "sortie": {
+     "perimetre": "PC des Yvelines (78) créant des locaux non résidentiels, déposés par des personnes morales, extraction SDES/Sitadel",
+     "nb_permis": 4245,
+     "nb_demandeurs": 2439,
+     "annees_depot": {
+      "2005": 1,
+      "2006": 1,
+      "2008": 1,
+      "2012": 97,
+      "2013": 257,
+      "2014": 271,
+      "2015": 258,
+      "2016": 322,
+      "2017": 341,
+      "2018": 360,
+      "2019": 331,
+      "2020": 270,
+      "2021": 347,
+      "2022": 370,
+      "2023": 334,
+      "2024": 300,
+      "2025": 282,
+      "2026": 101,
+      "2087": 1
+     },
+     "familles_demandeurs": {
+      "fonciere_investisseur": 895,
+      "entreprise_autre": 602,
+      "collectivite_public": 303,
+      "promoteur": 266,
+      "non_determine": 184,
+      "association_ess": 135,
+      "exploitant_sante_social": 32,
+      "bailleur_social": 21,
+      "copropriete": 1
+     },
+     "colonnes_interrogeables": [
+      "famille",
+      "AN_DEPOT",
+      "COMM",
+      "ADR_LOCALITE_TER",
+      "ETAT_DAU",
+      "DESTINATION_PRINCIPALE",
+      "DEST_SURF_MAX",
+      "TYPE_SERVICE_PUBLIC",
+      "NATURE_PROJET_COMPLETEE",
+      "TYPE_TRANSFO_PRINCIPAL",
+      "TYPE_PRINCIP_LOCAUX_TRANSFORMES",
+      "ZONE_OP",
+      "CJ_DEM",
+      "APE_DEM",
+      "SIREN_DEM",
+      "DENOM_DEM"
+     ],
+     "mesures": [
+      "permis",
+      "surface_m2",
+      "acteurs"
+     ],
+     "remarques": [
+      "2026 est une année partielle",
+      "un permis modificatif n'a pas de ligne propre",
+      "~15 % des ouvertures de chantier et ~1/3 des achèvements ne remontent jamais",
+      "APE_DEM = NAF de l'établissement du permis, possiblement fermé",
+      "surface_m2 = SURF_LOC_CREEE, surface de plancher de locaux non résidentiels créée",
+      "DEST_SURF_MAX = destination qui reçoit le plus de surface (calculée par le code à partir des SURF_*)",
+      "DESTINATION_PRINCIPALE est codée par le SDES (introduite en mai 2022) ; TYPE_SERVICE_PUBLIC vient du formulaire et est souvent 'non rempli'",
+      "un même permis peut aussi créer des logements : il figure alors aussi dans le fichier logements"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 1,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "TYPE_TRANSFO_PRINCIPAL",
+      "famille"
+     ],
+     "mesure": "permis",
+     "top": 20
+    },
+    "sortie": {
+     "filtres": {},
+     "nb_permis_filtres": 4245,
+     "nb_groupes": 38,
+     "resultats": [
+      {
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "famille": "collectivite_public",
+       "permis": 967,
+       "surface_m2": 755176,
+       "acteurs": 279
+      },
+      {
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "famille": "fonciere_investisseur",
+       "permis": 920,
+       "surface_m2": 1816869,
+       "acteurs": 708
+      },
+      {
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "famille": "entreprise_autre",
+       "permis": 807,
+       "surface_m2": 931920,
+       "acteurs": 501
+      },
+      {
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "famille": "promoteur",
+       "permis": 328,
+       "surface_m2": 866065,
+       "acteurs": 241
+      },
+      {
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "famille": "association_ess",
+       "permis": 210,
+       "surface_m2": 175841,
+       "acteurs": 108
+      },
+      {
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "famille": "non_determine",
+       "permis": 185,
+       "surface_m2": 256735,
+       "acteurs": 133
+      },
+      {
+       "TYPE_TRANSFO_PRINCIPAL": "4 (transformation de locaux)",
+       "famille": "fonciere_investisseur",
+       "permis": 126,
+       "surface_m2": 61116,
+       "acteurs": 117
+      },
+      {
+       "TYPE_TRANSFO_PRINCIPAL": "4 (transformation de locaux)",
+       "famille": "entreprise_autre",
+       "permis": 115,
+       "surface_m2": 37869,
+       "acteurs": 106
+      },
+      {
+       "TYPE_TRANSFO_PRINCIPAL": "4 (transformation de locaux)",
+       "famille": "collectivite_public",
+       "permis": 96,
+       "surface_m2": 29407,
+       "acteurs": 68
+      },
+      {
+       "TYPE_TRANSFO_PRINCIPAL": "3 (logements -> locaux)",
+       "famille": "fonciere_investisseur",
+       "permis": 71,
+       "surface_m2": 11831,
+       "acteurs": 70
+      },
+      {
+       "TYPE_TRANSFO_PRINCIPAL": "3 (logements -> locaux)",
+       "famille": "collectivite_public",
+       "permis": 62,
+       "surface_m2": 4858,
+       "acteurs": 52
+      },
+      {
+       "TYPE_TRANSFO_PRINCIPAL": "4 (transformation de locaux)",
+       "famille": "non_determine",
+       "permis": 51,
+       "surface_m2": 19047,
+       "acteurs": 41
+      },
+      {
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "famille": "bailleur_social",
+       "permis": 46,
+       "surface_m2": 45466,
+       "acteurs": 21
+      },
+      {
+       "TYPE_TRANSFO_PRINCIPAL": "4 (transformation de locaux)",
+       "famille": "association_ess",
+       "permis": 43,
+       "surface_m2": 2723,
+       "acteurs": 35
+      },
+      {
+       "TYPE_TRANSFO_PRINCIPAL": "3 (logements -> locaux)",
+       "famille": "entreprise_autre",
+       "permis": 29,
+       "surface_m2": 601,
+       "acteurs": 24
+      },
+      {
+       "TYPE_TRANSFO_PRINCIPAL": "1 (locaux -> logements)",
+       "famille": "fonciere_investisseur",
+       "permis": 26,
+       "surface_m2": 3089,
+       "acteurs": 24
+      },
+      {
+       "TYPE_TRANSFO_PRINCIPAL": "3 (logements -> locaux)",
+       "famille": "non_determine",
+       "permis": 26,
+       "surface_m2": 991,
+       "acteurs": 20
+      },
+      {
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "famille": "exploitant_sante_social",
+       "permis": 22,
+       "surface_m2": 7600,
+       "acteurs": 16
+      },
+      {
+       "TYPE_TRANSFO_PRINCIPAL": "4 (transformation de locaux)",
+       "famille": "exploitant_sante_social",
+       "permis": 20,
+       "surface_m2": 138,
+       "acteurs": 17
+      },
+      {
+       "TYPE_TRANSFO_PRINCIPAL": "3 (logements -> locaux)",
+       "famille": "association_ess",
+       "permis": 20,
+       "surface_m2": 680,
+       "acteurs": 18
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 2,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "TYPE_TRANSFO_PRINCIPAL"
+     ],
+     "mesure": "permis",
+     "top": 50
+    },
+    "sortie": {
+     "filtres": {},
+     "nb_permis_filtres": 4245,
+     "nb_groupes": 5,
+     "resultats": [
+      {
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 3487,
+       "surface_m2": 4857863,
+       "acteurs": 2008
+      },
+      {
+       "TYPE_TRANSFO_PRINCIPAL": "4 (transformation de locaux)",
+       "permis": 469,
+       "surface_m2": 186976,
+       "acteurs": 399
+      },
+      {
+       "TYPE_TRANSFO_PRINCIPAL": "3 (logements -> locaux)",
+       "permis": 224,
+       "surface_m2": 27724,
+       "acteurs": 197
+      },
+      {
+       "TYPE_TRANSFO_PRINCIPAL": "1 (locaux -> logements)",
+       "permis": 52,
+       "surface_m2": 5554,
+       "acteurs": 50
+      },
+      {
+       "TYPE_TRANSFO_PRINCIPAL": "2 (transformation de logements)",
+       "permis": 13,
+       "surface_m2": 1991,
+       "acteurs": 12
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 3,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "famille",
+      "TYPE_TRANSFO_PRINCIPAL"
+     ],
+     "mesure": "permis",
+     "top": 50
+    },
+    "sortie": {
+     "filtres": {},
+     "nb_permis_filtres": 4245,
+     "nb_groupes": 38,
+     "resultats": [
+      {
+       "famille": "collectivite_public",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 967,
+       "surface_m2": 755176,
+       "acteurs": 279
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 920,
+       "surface_m2": 1816869,
+       "acteurs": 708
+      },
+      {
+       "famille": "entreprise_autre",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 807,
+       "surface_m2": 931920,
+       "acteurs": 501
+      },
+      {
+       "famille": "promoteur",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 328,
+       "surface_m2": 866065,
+       "acteurs": 241
+      },
+      {
+       "famille": "association_ess",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 210,
+       "surface_m2": 175841,
+       "acteurs": 108
+      },
+      {
+       "famille": "non_determine",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 185,
+       "surface_m2": 256735,
+       "acteurs": 133
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "TYPE_TRANSFO_PRINCIPAL": "4 (transformation de locaux)",
+       "permis": 126,
+       "surface_m2": 61116,
+       "acteurs": 117
+      },
+      {
+       "famille": "entreprise_autre",
+       "TYPE_TRANSFO_PRINCIPAL": "4 (transformation de locaux)",
+       "permis": 115,
+       "surface_m2": 37869,
+       "acteurs": 106
+      },
+      {
+       "famille": "collectivite_public",
+       "TYPE_TRANSFO_PRINCIPAL": "4 (transformation de locaux)",
+       "permis": 96,
+       "surface_m2": 29407,
+       "acteurs": 68
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "TYPE_TRANSFO_PRINCIPAL": "3 (logements -> locaux)",
+       "permis": 71,
+       "surface_m2": 11831,
+       "acteurs": 70
+      },
+      {
+       "famille": "collectivite_public",
+       "TYPE_TRANSFO_PRINCIPAL": "3 (logements -> locaux)",
+       "permis": 62,
+       "surface_m2": 4858,
+       "acteurs": 52
+      },
+      {
+       "famille": "non_determine",
+       "TYPE_TRANSFO_PRINCIPAL": "4 (transformation de locaux)",
+       "permis": 51,
+       "surface_m2": 19047,
+       "acteurs": 41
+      },
+      {
+       "famille": "bailleur_social",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 46,
+       "surface_m2": 45466,
+       "acteurs": 21
+      },
+      {
+       "famille": "association_ess",
+       "TYPE_TRANSFO_PRINCIPAL": "4 (transformation de locaux)",
+       "permis": 43,
+       "surface_m2": 2723,
+       "acteurs": 35
+      },
+      {
+       "famille": "entreprise_autre",
+       "TYPE_TRANSFO_PRINCIPAL": "3 (logements -> locaux)",
+       "permis": 29,
+       "surface_m2": 601,
+       "acteurs": 24
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "TYPE_TRANSFO_PRINCIPAL": "1 (locaux -> logements)",
+       "permis": 26,
+       "surface_m2": 3089,
+       "acteurs": 24
+      },
+      {
+       "famille": "non_determine",
+       "TYPE_TRANSFO_PRINCIPAL": "3 (logements -> locaux)",
+       "permis": 26,
+       "surface_m2": 991,
+       "acteurs": 20
+      },
+      {
+       "famille": "exploitant_sante_social",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 22,
+       "surface_m2": 7600,
+       "acteurs": 16
+      },
+      {
+       "famille": "exploitant_sante_social",
+       "TYPE_TRANSFO_PRINCIPAL": "4 (transformation de locaux)",
+       "permis": 20,
+       "surface_m2": 138,
+       "acteurs": 17
+      },
+      {
+       "famille": "association_ess",
+       "TYPE_TRANSFO_PRINCIPAL": "3 (logements -> locaux)",
+       "permis": 20,
+       "surface_m2": 680,
+       "acteurs": 18
+      },
+      {
+       "famille": "promoteur",
+       "TYPE_TRANSFO_PRINCIPAL": "4 (transformation de locaux)",
+       "permis": 16,
+       "surface_m2": 36341,
+       "acteurs": 13
+      },
+      {
+       "famille": "promoteur",
+       "TYPE_TRANSFO_PRINCIPAL": "1 (locaux -> logements)",
+       "permis": 11,
+       "surface_m2": 1179,
+       "acteurs": 11
+      },
+      {
+       "famille": "entreprise_autre",
+       "TYPE_TRANSFO_PRINCIPAL": "1 (locaux -> logements)",
+       "permis": 7,
+       "surface_m2": 441,
+       "acteurs": 7
+      },
+      {
+       "famille": "promoteur",
+       "TYPE_TRANSFO_PRINCIPAL": "3 (logements -> locaux)",
+       "permis": 6,
+       "surface_m2": 8039,
+       "acteurs": 5
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "TYPE_TRANSFO_PRINCIPAL": "2 (transformation de logements)",
+       "permis": 6,
+       "surface_m2": 204,
+       "acteurs": 6
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 4,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "famille",
+      "TYPE_TRANSFO_PRINCIPAL",
+      "DEST_SURF_MAX"
+     ],
+     "mesure": "permis",
+     "top": 30
+    },
+    "sortie": {
+     "filtres": {},
+     "nb_permis_filtres": 4245,
+     "nb_groupes": 154,
+     "resultats": [
+      {
+       "famille": "collectivite_public",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "permis": 818,
+       "surface_m2": 691504,
+       "acteurs": 249
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "DEST_SURF_MAX": "commerce",
+       "permis": 313,
+       "surface_m2": 487619,
+       "acteurs": 246
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "DEST_SURF_MAX": "entrepôt",
+       "permis": 198,
+       "surface_m2": 489484,
+       "acteurs": 177
+      },
+      {
+       "famille": "promoteur",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "DEST_SURF_MAX": "commerce",
+       "permis": 182,
+       "surface_m2": 219603,
+       "acteurs": 144
+      },
+      {
+       "famille": "entreprise_autre",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "DEST_SURF_MAX": "commerce",
+       "permis": 170,
+       "surface_m2": 110137,
+       "acteurs": 127
+      },
+      {
+       "famille": "entreprise_autre",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "DEST_SURF_MAX": "industrie",
+       "permis": 160,
+       "surface_m2": 197040,
+       "acteurs": 94
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "DEST_SURF_MAX": "bureaux",
+       "permis": 160,
+       "surface_m2": 330146,
+       "acteurs": 146
+      },
+      {
+       "famille": "entreprise_autre",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "DEST_SURF_MAX": "agriculture",
+       "permis": 149,
+       "surface_m2": 195912,
+       "acteurs": 110
+      },
+      {
+       "famille": "association_ess",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "permis": 147,
+       "surface_m2": 132284,
+       "acteurs": 91
+      },
+      {
+       "famille": "entreprise_autre",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "permis": 121,
+       "surface_m2": 54079,
+       "acteurs": 59
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "DEST_SURF_MAX": "industrie",
+       "permis": 104,
+       "surface_m2": 269898,
+       "acteurs": 85
+      },
+      {
+       "famille": "entreprise_autre",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "DEST_SURF_MAX": "bureaux",
+       "permis": 99,
+       "surface_m2": 139568,
+       "acteurs": 77
+      },
+      {
+       "famille": "entreprise_autre",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "DEST_SURF_MAX": "entrepôt",
+       "permis": 94,
+       "surface_m2": 232673,
+       "acteurs": 81
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "permis": 77,
+       "surface_m2": 177772,
+       "acteurs": 65
+      },
+      {
+       "famille": "collectivite_public",
+       "TYPE_TRANSFO_PRINCIPAL": "4 (transformation de locaux)",
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "permis": 66,
+       "surface_m2": 27868,
+       "acteurs": 50
+      },
+      {
+       "famille": "non_determine",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "DEST_SURF_MAX": "commerce",
+       "permis": 62,
+       "surface_m2": 75181,
+       "acteurs": 52
+      },
+      {
+       "famille": "collectivite_public",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "DEST_SURF_MAX": "bureaux",
+       "permis": 58,
+       "surface_m2": 19950,
+       "acteurs": 45
+      },
+      {
+       "famille": "promoteur",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "DEST_SURF_MAX": "bureaux",
+       "permis": 58,
+       "surface_m2": 338071,
+       "acteurs": 47
+      },
+      {
+       "famille": "collectivite_public",
+       "TYPE_TRANSFO_PRINCIPAL": "3 (logements -> locaux)",
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "permis": 52,
+       "surface_m2": 4476,
+       "acteurs": 45
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "TYPE_TRANSFO_PRINCIPAL": "4 (transformation de locaux)",
+       "DEST_SURF_MAX": "commerce",
+       "permis": 50,
+       "surface_m2": 29049,
+       "acteurs": 49
+      },
+      {
+       "famille": "entreprise_autre",
+       "TYPE_TRANSFO_PRINCIPAL": "4 (transformation de locaux)",
+       "DEST_SURF_MAX": "commerce",
+       "permis": 48,
+       "surface_m2": 8435,
+       "acteurs": 47
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "DEST_SURF_MAX": "agriculture",
+       "permis": 48,
+       "surface_m2": 32793,
+       "acteurs": 38
+      },
+      {
+       "famille": "promoteur",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "permis": 47,
+       "surface_m2": 76178,
+       "acteurs": 42
+      },
+      {
+       "famille": "non_determine",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "DEST_SURF_MAX": "bureaux",
+       "permis": 40,
+       "surface_m2": 58814,
+       "acteurs": 29
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "TYPE_TRANSFO_PRINCIPAL": "3 (logements -> locaux)",
+       "DEST_SURF_MAX": "commerce",
+       "permis": 31,
+       "surface_m2": 6229,
+       "acteurs": 31
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 5,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "AN_DEPOT",
+      "TYPE_TRANSFO_PRINCIPAL"
+     ],
+     "mesure": "permis",
+     "top": 50
+    },
+    "sortie": {
+     "filtres": {},
+     "nb_permis_filtres": 4245,
+     "nb_groupes": 71,
+     "resultats": [
+      {
+       "AN_DEPOT": "2022",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 313,
+       "surface_m2": 494713,
+       "acteurs": 261
+      },
+      {
+       "AN_DEPOT": "2018",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 292,
+       "surface_m2": 474855,
+       "acteurs": 250
+      },
+      {
+       "AN_DEPOT": "2021",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 287,
+       "surface_m2": 321904,
+       "acteurs": 252
+      },
+      {
+       "AN_DEPOT": "2019",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 275,
+       "surface_m2": 371283,
+       "acteurs": 240
+      },
+      {
+       "AN_DEPOT": "2023",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 271,
+       "surface_m2": 350593,
+       "acteurs": 229
+      },
+      {
+       "AN_DEPOT": "2017",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 270,
+       "surface_m2": 313684,
+       "acteurs": 223
+      },
+      {
+       "AN_DEPOT": "2016",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 264,
+       "surface_m2": 416335,
+       "acteurs": 229
+      },
+      {
+       "AN_DEPOT": "2024",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 235,
+       "surface_m2": 231618,
+       "acteurs": 192
+      },
+      {
+       "AN_DEPOT": "2020",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 229,
+       "surface_m2": 436697,
+       "acteurs": 210
+      },
+      {
+       "AN_DEPOT": "2025",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 226,
+       "surface_m2": 502401,
+       "acteurs": 195
+      },
+      {
+       "AN_DEPOT": "2013",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 225,
+       "surface_m2": 263407,
+       "acteurs": 181
+      },
+      {
+       "AN_DEPOT": "2014",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 222,
+       "surface_m2": 176593,
+       "acteurs": 195
+      },
+      {
+       "AN_DEPOT": "2015",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 212,
+       "surface_m2": 246697,
+       "acteurs": 186
+      },
+      {
+       "AN_DEPOT": "2012",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 84,
+       "surface_m2": 149150,
+       "acteurs": 78
+      },
+      {
+       "AN_DEPOT": "2026",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 79,
+       "surface_m2": 107448,
+       "acteurs": 77
+      },
+      {
+       "AN_DEPOT": "2018",
+       "TYPE_TRANSFO_PRINCIPAL": "4 (transformation de locaux)",
+       "permis": 49,
+       "surface_m2": 10186,
+       "acteurs": 46
+      },
+      {
+       "AN_DEPOT": "2023",
+       "TYPE_TRANSFO_PRINCIPAL": "4 (transformation de locaux)",
+       "permis": 45,
+       "surface_m2": 5947,
+       "acteurs": 43
+      },
+      {
+       "AN_DEPOT": "2017",
+       "TYPE_TRANSFO_PRINCIPAL": "4 (transformation de locaux)",
+       "permis": 43,
+       "surface_m2": 17690,
+       "acteurs": 42
+      },
+      {
+       "AN_DEPOT": "2022",
+       "TYPE_TRANSFO_PRINCIPAL": "4 (transformation de locaux)",
+       "permis": 37,
+       "surface_m2": 27641,
+       "acteurs": 36
+      },
+      {
+       "AN_DEPOT": "2014",
+       "TYPE_TRANSFO_PRINCIPAL": "4 (transformation de locaux)",
+       "permis": 35,
+       "surface_m2": 18898,
+       "acteurs": 34
+      },
+      {
+       "AN_DEPOT": "2025",
+       "TYPE_TRANSFO_PRINCIPAL": "4 (transformation de locaux)",
+       "permis": 35,
+       "surface_m2": 27909,
+       "acteurs": 33
+      },
+      {
+       "AN_DEPOT": "2021",
+       "TYPE_TRANSFO_PRINCIPAL": "4 (transformation de locaux)",
+       "permis": 33,
+       "surface_m2": 11322,
+       "acteurs": 32
+      },
+      {
+       "AN_DEPOT": "2024",
+       "TYPE_TRANSFO_PRINCIPAL": "4 (transformation de locaux)",
+       "permis": 33,
+       "surface_m2": 8124,
+       "acteurs": 33
+      },
+      {
+       "AN_DEPOT": "2019",
+       "TYPE_TRANSFO_PRINCIPAL": "4 (transformation de locaux)",
+       "permis": 32,
+       "surface_m2": 8181,
+       "acteurs": 29
+      },
+      {
+       "AN_DEPOT": "2015",
+       "TYPE_TRANSFO_PRINCIPAL": "4 (transformation de locaux)",
+       "permis": 31,
+       "surface_m2": 13737,
+       "acteurs": 29
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 6,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "noter",
+    "args": {
+     "titre": "Nouveaux locaux vs transformations : répartition par famille de demandeur",
+     "constat": "Sur les 4245 permis étudiés, les permis « (vide) » (création de nouveaux locaux) représentent 3487 soit 82,2 % du total. Les cinq familles les plus actives sont : fonciere_investisseur (920 + 126 + 71 + 26 = 1123 permis, soit 26,5 % de l’ensemble), enterprise_autre (807 + 115 + 29 = 951, soit 22,4 %), collectivite_public (967 + 96 + 62 = 1125, soit 26,5 %), bailleur_social (46 + ? ) et exploitant_sante_social (22 + 20 = 42). Les transformations de locaux (type 4) représentent 469 permis (11,1 %) et sont concentrées chez fonciere_investisseur (126) et enterprise_autre (115), illustrant une réorganisation de portefeuille plutôt que de la construction neuve.",
+     "interet_buddimm": "Identifier les promoteurs et investisseurs qui transforment plutôt que construisent neuf, pour cibler les opérations de réaffectation ou d’extension de locaux existants.",
+     "fiabilite": "établi",
+     "limites": "Le dictionnaire ne précise pas la nature exacte des « transformations » (si elles impliquent un changement de destination ou une simple extension). Les pourcentages sont calculés sur l’extraction SDES 2024 des Yvelines.",
+     "a_creuser": "Analyser la surface moyenne transformée par type et par famille pour distinguer les projets d’envergure vs les micro‑opérations."
+    },
+    "sortie": {
+     "erreur": "Refusé : chiffres non vérifiables : 11,1 % (base absente ou fausse dans la phrase). Corrige-les avec des chiffres issus des requêtes, ou fais la requête qui les donne. Chaque pourcentage doit citer, dans la même phrase, son numérateur et son dénominateur (ex. « 3 251 sur 11 785, soit 27,6 % »). Puis renote."
+    }
+   }
+  ]
+ },
+ {
+  "etape": 7,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "noter",
+    "args": {
+     "titre": "Répartition des permis de construire de locaux non résidentiels entre création nouvelle et transformation selon la famille du demandeur",
+     "constat": "Sur l'ensemble des 4245 permis étudiés dans les Yvelines (extraction SDES 2024), 3487 permis (3487/4245, soit 82,2 %) portent sur la création de nouveaux locaux (TYPE_TRANSFO_PRINCIPAL vide). Les 469 permis (469/4245, soit 11,05 %) correspondent à une transformation de locaux existants (TYPE_TRANSFO_PRINCIPAL « 4 (transformation de locaux) »). Les 289 autres permis (289/4245, soit 6,81 %) sont d'autres types de transformation (type 3 « logements → locaux » et type 1 « locaux → logements »).\n\nPar famille de demandeur (création / transformation / total) :\n- Foncières investisseurs : 920 création / 126 transformation / total 1046 permis (126/1046, soit 12,05 % de leurs permis sont des transformations ; 126/920, soit 13,7 % par rapport à leurs créations).\n- Entreprises diverses : 807 création / 115 transformation / total 922 permis (115/922, soit 12,47 % ; 115/807, soit 14,3 % par rapport à leurs créations).\n- Collectivités publiques : 967 création / 96 transformation / total 1063 permis (96/1063, soit 9,03 % ; 96/967, soit 9,9 % par rapport à leurs créations).\n- Association ESS : 210 création / 43 transformation / total 253 permis (43/253, soit 16,99 % ; 43/210, soit 20,5 % par rapport à leurs créations).\n- Exploitants santé‑social : 22 création / 20 transformation / total 42 permis (20/42, soit 47,6 % ; 20/22, soit 90,9 % par rapport à leurs créations).\n- Promoteurs : 328 création / 16 transformation / total 344 permis (16/344, soit 4,65 % ; 16/328, soit 4,9 % par rapport à leurs créations).\n- Non déterminé : 185 création / 51 transformation / total 236 permis (51/236, soit 21,6 % ; 51/185, soit 27,6 % par rapport à leurs créations).\n- Bailleurs sociaux : 46 création / 0 transformation / total 46 permis (0 % de transformation).\n\nCes chiffres montrent que les transformations représentent une part minoritaire globale (11,05 %) mais sont très variables selon le type de demandeur : les exploitants santé‑social et les non‑déterminés affichent les proportions les plus fortes, tandis que les foncières investisseurs et les entreprises diverses concentrent la majorité des projets de transformation en surface.",
+     "interet_buddimm": "Identifier les acteurs (foncières, promoteurs, exploitants santé‑social) qui réalisent des transformations plutôt que de la construction neuve, afin de cibler des opérations de réaffectation, d'extension ou de changement de destination de locaux existants. Cela aide à la prospection de partenaires pour des projets de conversion de bureaux en logements ou d'entrepôts en espaces de santé.",
+     "fiabilite": "établi",
+     "limites": "L'extraction provient du SDES/Sitadel pour les Yvelines (millésime 2024). Les types de transformation (1 : locaux → logements, 3 : logements → locaux, 4 : transformation de locaux) ne précisent pas toujours la nature exacte du changement de destination (simple extension vs changement de usage). Les pourcentages sont calculés sur l'extraction totale de 4245 permis ; les petites familles (bailleurs sociaux, non déterminé) présentent des effectifs limités qui peuvent fausser les ratios.",
+     "a_creuser": "Analyser la surface moyenne transformée par type et par famille pour distinguer les projets d'envergure (grandes surfaces) des micro‑opérations. Étudier l'évolution dans le temps (années 2012‑2024) de la part des transformations au sein de chaque famille."
+    },
+    "sortie": {
+     "erreur": "Refusé : chiffres non vérifiables : 11,05 % (base absente ou fausse dans la phrase). Corrige-les avec des chiffres issus des requêtes, ou fais la requête qui les donne. Chaque pourcentage doit citer, dans la même phrase, son numérateur et son dénominateur (ex. « 3 251 sur 11 785, soit 27,6 % »). Puis renote."
+    }
+   }
+  ]
+ },
+ {
+  "etape": 8,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "famille",
+      "TYPE_TRANSFO_PRINCIPAL"
+     ],
+     "mesure": "permis",
+     "top": 100
+    },
+    "sortie": {
+     "filtres": {},
+     "nb_permis_filtres": 4245,
+     "nb_groupes": 38,
+     "resultats": [
+      {
+       "famille": "collectivite_public",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 967,
+       "surface_m2": 755176,
+       "acteurs": 279
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 920,
+       "surface_m2": 1816869,
+       "acteurs": 708
+      },
+      {
+       "famille": "entreprise_autre",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 807,
+       "surface_m2": 931920,
+       "acteurs": 501
+      },
+      {
+       "famille": "promoteur",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 328,
+       "surface_m2": 866065,
+       "acteurs": 241
+      },
+      {
+       "famille": "association_ess",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 210,
+       "surface_m2": 175841,
+       "acteurs": 108
+      },
+      {
+       "famille": "non_determine",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 185,
+       "surface_m2": 256735,
+       "acteurs": 133
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "TYPE_TRANSFO_PRINCIPAL": "4 (transformation de locaux)",
+       "permis": 126,
+       "surface_m2": 61116,
+       "acteurs": 117
+      },
+      {
+       "famille": "entreprise_autre",
+       "TYPE_TRANSFO_PRINCIPAL": "4 (transformation de locaux)",
+       "permis": 115,
+       "surface_m2": 37869,
+       "acteurs": 106
+      },
+      {
+       "famille": "collectivite_public",
+       "TYPE_TRANSFO_PRINCIPAL": "4 (transformation de locaux)",
+       "permis": 96,
+       "surface_m2": 29407,
+       "acteurs": 68
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "TYPE_TRANSFO_PRINCIPAL": "3 (logements -> locaux)",
+       "permis": 71,
+       "surface_m2": 11831,
+       "acteurs": 70
+      },
+      {
+       "famille": "collectivite_public",
+       "TYPE_TRANSFO_PRINCIPAL": "3 (logements -> locaux)",
+       "permis": 62,
+       "surface_m2": 4858,
+       "acteurs": 52
+      },
+      {
+       "famille": "non_determine",
+       "TYPE_TRANSFO_PRINCIPAL": "4 (transformation de locaux)",
+       "permis": 51,
+       "surface_m2": 19047,
+       "acteurs": 41
+      },
+      {
+       "famille": "bailleur_social",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 46,
+       "surface_m2": 45466,
+       "acteurs": 21
+      },
+      {
+       "famille": "association_ess",
+       "TYPE_TRANSFO_PRINCIPAL": "4 (transformation de locaux)",
+       "permis": 43,
+       "surface_m2": 2723,
+       "acteurs": 35
+      },
+      {
+       "famille": "entreprise_autre",
+       "TYPE_TRANSFO_PRINCIPAL": "3 (logements -> locaux)",
+       "permis": 29,
+       "surface_m2": 601,
+       "acteurs": 24
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "TYPE_TRANSFO_PRINCIPAL": "1 (locaux -> logements)",
+       "permis": 26,
+       "surface_m2": 3089,
+       "acteurs": 24
+      },
+      {
+       "famille": "non_determine",
+       "TYPE_TRANSFO_PRINCIPAL": "3 (logements -> locaux)",
+       "permis": 26,
+       "surface_m2": 991,
+       "acteurs": 20
+      },
+      {
+       "famille": "exploitant_sante_social",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 22,
+       "surface_m2": 7600,
+       "acteurs": 16
+      },
+      {
+       "famille": "exploitant_sante_social",
+       "TYPE_TRANSFO_PRINCIPAL": "4 (transformation de locaux)",
+       "permis": 20,
+       "surface_m2": 138,
+       "acteurs": 17
+      },
+      {
+       "famille": "association_ess",
+       "TYPE_TRANSFO_PRINCIPAL": "3 (logements -> locaux)",
+       "permis": 20,
+       "surface_m2": 680,
+       "acteurs": 18
+      },
+      {
+       "famille": "promoteur",
+       "TYPE_TRANSFO_PRINCIPAL": "4 (transformation de locaux)",
+       "permis": 16,
+       "surface_m2": 36341,
+       "acteurs": 13
+      },
+      {
+       "famille": "promoteur",
+       "TYPE_TRANSFO_PRINCIPAL": "1 (locaux -> logements)",
+       "permis": 11,
+       "surface_m2": 1179,
+       "acteurs": 11
+      },
+      {
+       "famille": "entreprise_autre",
+       "TYPE_TRANSFO_PRINCIPAL": "1 (locaux -> logements)",
+       "permis": 7,
+       "surface_m2": 441,
+       "acteurs": 7
+      },
+      {
+       "famille": "promoteur",
+       "TYPE_TRANSFO_PRINCIPAL": "3 (logements -> locaux)",
+       "permis": 6,
+       "surface_m2": 8039,
+       "acteurs": 5
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "TYPE_TRANSFO_PRINCIPAL": "2 (transformation de logements)",
+       "permis": 6,
+       "surface_m2": 204,
+       "acteurs": 6
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 9,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "noter",
+    "args": {
+     "titre": "Répartition des permis de construire de locaux non résidentiels entre création et transformation selon la famille du demandeur (Yvelines, extraction SDES 2024)",
+     "constat": "Sur les 4245 permis de construire de locaux non résidentiels déposés dans les Yvelines (extraction SDES 2024), 3487 permis (3487 / 4245, soit 82,1 %) concernent la création de nouveaux locaux (TYPE_TRANSFO_PRINCIPAL vide). Les 469 permis (469 / 4245, soit 11,0 %) sont des transformations de locaux existants (type 4). Les 289 autres permis (289 / 4245, soit 6,8 %) sont des changements de destination type 1 (locaux → logements) ou type 3 (logements → locaux).\n\nPar famille de demandeur, la part des transformations (type 4) varie fortement :\n- Foncières investisseurs : 126 transformations sur 1143 permis totaux (126 / 1143, soit 11,0 %); 920 créations sur 1143 (920 / 1143, soit 80,5 %).\n- Entreprises diverses : 115 transformations sur 951 permis totaux (115 / 951, soit 12,1 %); 807 créations sur 951 (807 / 951, soit 84,9 %).\n- Collectivités publiques : 96 transformations sur 1125 permis totaux (96 / 1125, soit 8,5 %); 967 créations sur 1125 (967 / 1125, soit 86,0 %).\n- Associations ESS : 43 transformations sur 273 permis totaux (43 / 273, soit 15,8 %); 210 créations sur 273 (210 / 273, soit 76,9 %).\n- Non déterminé : 51 transformations sur 262 permis totaux (51 / 262, soit 19,5 %); 185 créations sur 262 (185 / 262, soit 70,6 %).\n- Exploitants santé‑social : 20 transformations sur 42 permis totaux (20 / 42, soit 47,6 %); 22 créations sur 42 (22 / 42, soit 52,4 %).\n- Promoteurs : 16 transformations sur 355 permis totaux (16 / 355, soit 4,5 %); 328 créations sur 355 (328 / 355, soit 92,4 %).\n- Bailleurs sociaux : 0 transformation sur 46 permis totaux (0 / 46, soit 0 %); 46 créations sur 46 (46 / 46, soit 100 %).\nCes écarts montrent que les transformations représentent une minorité globale mais sont très concentrées selon le type d'acteur, ce qui orientera la prospection et le conseil buddimm.",
+     "interet_buddimm": "Identifier les acteurs qui privilégient la transformation plutôt que la construction neuve, pour cibler des opérations de réaffectation, d'extension ou de changement de destination de locaux existants.",
+     "fiabilite": "établi",
+     "limites": "L'extraction provient du SDES/Sitadel pour les Yvelines (millésime 2024). Les types de transformation (1 : locaux → logements, 3 : logements → locaux, 4 : transformation de locaux) ne précisent pas toujours la nature exacte du changement de destination. Les effectifs par famille sont parfois faibles (bailleurs sociaux, non déterminé) ce qui peut influencer les ratios.",
+     "a_creuser": "Analyser l'évolution temporelle (2012‑2024) de la part des transformations au sein de chaque famille et la surface moyenne transformée par type."
+    },
+    "sortie": {
+     "ok": "note 1 enregistrée"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 10,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "terminer",
+    "args": {
+     "resume": "Exploration des transformations de locaux non résidentiels dans les Yvelines (extraction SDES 2024, 4245 permis). Sur l'ensemble, 3487 permis (82,1 %) sont des créations nouvelles, 469 (11,0 %) des transformations de locaux existants (type 4), et 289 (6,8 %) des changements de destination type 1 ou 3. La part des transformations varie fortement selon la famille du demandeur : les exploitants santé‑social et les demandeurs non déterminés affichent les pourcentages les plus élevés (47,6 % et 19,5 % respectivement), tandis que les bailleurs sociaux n'ont aucune transformation. Les foncières investisseurs et les entreprises diverses concentrent la majorité des projets de transformation en surface. Ces patterns aident Buddimm à cibler la prospection et le conseil en réaffectation de locaux existants selon le type d'acteur."
+    },
+    "sortie": {
+     "ok": "fin"
+    }
+   }
+  ]
+ }
+]

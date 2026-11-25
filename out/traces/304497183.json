@@ -1,0 +1,115 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "304497183"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "304497183"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "304497183"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "304497183"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "A2BCD",
+     "nb_permis_PC": 5,
+     "annees_depot": [
+      "2012",
+      "2013",
+      "2014"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 6,
+     "surface_locaux_non_residentiels_creee_m2": 0,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 5,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 2
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "304497183",
+      "nom": "A2BCD (A2BCD) (CAGIF)",
+      "nature_juridique": "5710",
+      "naf_actuel": "68.32A",
+      "etat": "A",
+      "date_creation": "1974-01-01",
+      "categorie": "ETI",
+      "effectif": "12",
+      "nb_etablissements": 4,
+      "nb_etablissements_ouverts": 2,
+      "siege_actuel": {
+       "siret": "30449718300042",
+       "naf": "68.32A",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "30449718300026",
+       "naf_dans_permis": "68.32A",
+       "nb_permis": 5,
+       "annees_depot": [
+        "2012",
+        "2013",
+        "2014"
+       ],
+       "etat_actuel": "fermé",
+       "date_creation": "1993-07-23",
+       "date_fermeture": "2020-07-27"
+      }
+     ],
+     "alertes": [
+      "SIRET 30449718300026 (permis 2012,2013,2014) fermé le 2020-07-27 : le NAF 68.32A du permis vient d'un établissement fermé"
+     ],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/304497183"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "68.32A",
+      "libelle": "Administration d'immeubles et autres biens immobiliers"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5599",
+     "libelle": "SA à conseil d'administration (s.a.i.)"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"entreprise_autre\",\"confiance\":\"faible\",\"indices\":[\"fiche_entreprise : NAF actuel 68.32A « Administration d'immeubles et autres biens immobiliers », nature juridique 5710 (mais libelle_cj sur 5599 indique « SA à conseil d'administration »), entreprise active depuis 1974, catégorie ETI, 12 salariés, 4 établissements dont 2 ouverts.\",\"permis_du_demandeur : 5 permis de construire déposés entre 2012 et 2014, 6 logements créés au total, 0 logement locatif social déclaré, 5 permis individuels, 0 collectif, surface non résidentielle 0 m².\",\"libelle_naf : code 68.32A correspond à « Administration d'immeubles et autres biens immobiliers » (gestion pour compte de tiers, syndic, gestion locative).\",\"libelle_cj : code 5599 correspond à « SA à conseil d'administration (s.a.i.) ».\"],\"limites\":\"L'activité actuelle (administration de biens) diffère de l'activité de construction observée sur les permis (2012-2014). L'établissement porteur des permis (SIRET 30449718300026) est fermé depuis 2020. La finalité des constructions (vente, location, compte propre ou pour clients) n'est pas connue. La nature juridique exacte présente une divergence entre la fiche entreprise (5710) et le code CJ fourni (5599). Aucune information sur la destination des logements (vente ou location) ne permet de distinguer promoteur, foncière ou simple entreprise de gestion immobilière réalisant des travaux pour ses clients.\"}"
+   }
+  ]
+ }
+]

@@ -1,0 +1,112 @@
+[
+ {
+  "etape": "pre",
+  "texte": "résultats calculés par le code avant le modèle",
+  "entree": {
+   "siren": "582056339",
+   "denomination": "EXPANSIEL PROMOTION",
+   "famille_classification": "bailleur_social",
+   "raisons_du_score": "famille cible (bailleur_social) +2 ; projet médico-social (équipement d'action sociale) +3 ; dépôt assez récent (2022) +1 ; projet de taille significative (≥ 20 logements ou ≥ 1 000 m²) +1",
+   "taille_calculee": "petite",
+   "taille_calcul": "salariés ≥ 3, établissements ouverts 1, établissements FINESS 0",
+   "permis_du_prospect": [
+    {
+     "num_dau": "07829722E0018",
+     "fichier": "logements",
+     "annee_depot": "2022",
+     "commune": "GUYANCOURT",
+     "etat": "commencé",
+     "type_projet": "",
+     "logements_crees": 43,
+     "surface_locaux_creee_m2": null
+    },
+    {
+     "num_dau": "07862121E0020",
+     "fichier": "logements",
+     "annee_depot": "2021",
+     "commune": "",
+     "etat": "autorisé",
+     "type_projet": "",
+     "logements_crees": 50,
+     "surface_locaux_creee_m2": null
+    },
+    {
+     "num_dau": "07854514B1020",
+     "fichier": "logements",
+     "annee_depot": "2014",
+     "commune": "",
+     "etat": "commencé",
+     "type_projet": "",
+     "logements_crees": 80,
+     "surface_locaux_creee_m2": null
+    },
+    {
+     "num_dau": "07854514B1022",
+     "fichier": "logements",
+     "annee_depot": "2014",
+     "commune": "SAINT-CYR-L'ECOLE",
+     "etat": "terminé",
+     "type_projet": "",
+     "logements_crees": 90,
+     "surface_locaux_creee_m2": null
+    },
+    {
+     "num_dau": "07854514B1022",
+     "fichier": "locaux",
+     "annee_depot": "2014",
+     "commune": "SAINT-CYR-L'ECOLE",
+     "etat": "terminé",
+     "type_projet": "équipement d'action sociale",
+     "logements_crees": null,
+     "surface_locaux_creee_m2": 1927
+    },
+    {
+     "num_dau": "07864413E0001",
+     "fichier": "logements",
+     "annee_depot": "2013",
+     "commune": "LA VERRIERE",
+     "etat": "terminé",
+     "type_projet": "",
+     "logements_crees": 36,
+     "surface_locaux_creee_m2": null
+    }
+   ],
+   "fiche_entreprise": {
+    "nom": "EXPANSIEL PROMOTION",
+    "nature_juridique": "5560",
+    "naf_actuel": "41.10C",
+    "etat": "A",
+    "date_creation": "1958-01-01",
+    "categorie": "ETI",
+    "effectif": "02",
+    "nb_etablissements": 5,
+    "nb_etablissements_ouverts": 1,
+    "libelle_naf_actuel": "Promotion immobilière d'autres bâtiments",
+    "libelle_nature_juridique": "Autre SA coopérative à conseil d'administration",
+    "aide": "etat A = active, C ou F = cessée. effectif = tranche Insee de salariés (ex. 21 = 50 à 99, 41 = 500 à 999, 51 = 2 000 à 4 999). Dirigeants et finances volontairement exclus.",
+    "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/582056339"
+   },
+   "finess_du_prospect": {
+    "nb_etablissements_finess_france": 0,
+    "nb_etablissements_finess_yvelines": 0,
+    "nb_departements": 0,
+    "par_type": {},
+    "exemples_yvelines": [],
+    "source": "https://www.data.gouv.fr/datasets/53699569a3a729239d2046eb",
+    "aide": "Établissements dont le SIRET commence par ce SIREN. 0 ne prouve pas l'absence d'activité médico-sociale (SIRET non renseigné dans FINESS, autre entité juridique du même groupe)."
+   },
+   "origine": "demandeur de permis",
+   "consigne": "Ces résultats viennent des outils permis_du_prospect, fiche_entreprise et finess_du_prospect : cite-les. Conclus avec conclure_prospect."
+  }
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure_prospect",
+    "args": "{\"adequation\":\"moyenne\",\"besoin_immobilier\":\"Gestion et suivi de projets de construction de logements sociaux (43, 50, 80, 90, 36 logements) et d'un équipement d'action sociale de 1 927 m², avec des permis en cours, autorisés ou terminés.\",\"indices\":[\"permis_du_prospect: plusieurs permis de construction de logements (ex. 43 logements à Guyancourt 2022, 50 logements 2021, 80 logements 2014, 90 logements 2014, 36 logements 2013) et un permis d'équipement d'action sociale de 1 927 m² (terminé 2014).\",\"fiche_entreprise: nature juridique \\\"Autre SA coopérative à conseil d'administration\\\" (5560), activité NAF 41.10C (Promotion immobilière d'autres bâtiments), effectif \\\"02\\\" (petite), statut actif (A).\",\"finess_du_prospect: aucun établissement FINESS recensé (0), ce qui n'exclut pas une activité médico‑sociale mais indique absence d'établissements sanitaires enregistrés.\",\"famille_classification: bailleur_social, cible prioritaire pour Buddimm.\"],\"limites\":\"Structure de petite taille (effectif très faible, un seul établissement ouvert) et absence d'établissements FINESS, ce qui rend incertaine la présence d'une direction immobilière interne.\",\"type_structure\":\"Bailleur social coopératif spécialisé en promotion immobilière\",\"verdict\":\"prospect\"}"
+   }
+  ]
+ }
+]

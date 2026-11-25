@@ -1,0 +1,106 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "885053405"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "885053405"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "885053405"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "885053405"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "L'IMMOBILIER SOLIDAIRE & ASSOCIATIF",
+     "nb_permis_PC": 1,
+     "annees_depot": [
+      "2021"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 2,
+     "surface_locaux_non_residentiels_creee_m2": 0,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 1,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 1
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "885053405",
+      "nom": "L'IMMOBILIER SOLIDAIRE & ASSOCIATIF (L'ISA)",
+      "nature_juridique": "5710",
+      "naf_actuel": "82.99Z",
+      "etat": "A",
+      "date_creation": "2020-07-01",
+      "categorie": "PME",
+      "effectif": "01",
+      "nb_etablissements": 2,
+      "nb_etablissements_ouverts": 1,
+      "siege_actuel": {
+       "siret": "88505340500027",
+       "naf": "82.99Z",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "?",
+       "naf_dans_permis": "82.99Z",
+       "nb_permis": 1,
+       "annees_depot": [
+        "2021"
+       ]
+      }
+     ],
+     "alertes": [],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/885053405"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "82.99Z",
+      "libelle": "Autres activités de soutien aux entreprises n.c.a."
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5710",
+     "libelle": "SAS, société par actions simplifiée"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"association_ess\",\"confiance\":\"moyenne\",\"indices\":[\"denomination : L'IMMOBILIER SOLIDAIRE & ASSOCIATIF (L'ISA) - nom explicite évoquant l'ESS et la solidarité\",\"fiche_entreprise : nature_juridique 5710 (SAS) - forme commerciale mais compatible avec une entreprise ESS à mission sociale\",\"fiche_entreprise : naf_actuel 82.99Z (Autres activités de soutien aux entreprises n.c.a.) - activité de soutien, pas directement immobilière mais peut masquer une activité de portage/facilitation immobilière solidaire\",\"permis_du_demandeur : 1 permis en 2021 pour 2 logements individuels, 0 logements locatifs sociaux déclarés - activité immobilière modeste, pas de production de logement social visible\",\"libelle_cj : 5710 = SAS, société par actions simplifiée - pas une association loi 1901, mais les structures ESS peuvent prendre forme de SAS\"],\"limites\":\"La forme juridique SAS (5710) n'est pas celle d'une association classique. Le NAF 82.99Z est générique (soutien aux entreprises) et ne signale pas explicitement une activité d'utilité sociale. Le permis unique porte sur 2 logements individuels sans volet social déclaré. L'appartenance à l'ESS repose principalement sur la dénomination, sans preuve juridique (agrément ESUS, statuts) ni activité NAF/permis concordante.\"}"
+   }
+  ]
+ }
+]

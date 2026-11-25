@@ -1,0 +1,72 @@
+[
+ {
+  "etape": "pre",
+  "texte": "résultats calculés par le code avant le modèle",
+  "entree": {
+   "siren": "510469661",
+   "denomination": "COALLIA HABITAT",
+   "famille_classification": "bailleur_social",
+   "raisons_du_score": "famille cible (bailleur_social) +2 ; projet médico-social (résidence sociale) +3 ; dépôt récent (2025) +2 ; 1 permis autorisé(s) depuis moins de 3 ans, pas encore commencé(s) +2 ; projet de taille significative (≥ 20 logements ou ≥ 1 000 m²) +1",
+   "taille_calculee": "petite",
+   "taille_calcul": "salariés ≥ 20, établissements ouverts 4, établissements FINESS 0",
+   "permis_du_prospect": [
+    {
+     "num_dau": "0785862501046",
+     "fichier": "logements",
+     "annee_depot": "2025",
+     "commune": "SARTROUVILLE",
+     "etat": "autorisé",
+     "type_projet": "résidence sociale",
+     "logements_crees": 115,
+     "surface_locaux_creee_m2": null
+    },
+    {
+     "num_dau": "07836119Y0036",
+     "fichier": "logements",
+     "annee_depot": "2019",
+     "commune": "MANTES-LA-JOLIE",
+     "etat": "terminé",
+     "type_projet": "",
+     "logements_crees": 180,
+     "surface_locaux_creee_m2": null
+    }
+   ],
+   "fiche_entreprise": {
+    "nom": "BATIGERE HABITATS SOLIDAIRES",
+    "nature_juridique": "5546",
+    "naf_actuel": "68.20A",
+    "etat": "A",
+    "date_creation": "2009-02-04",
+    "categorie": "ETI",
+    "effectif": "12",
+    "nb_etablissements": 6,
+    "nb_etablissements_ouverts": 4,
+    "libelle_naf_actuel": "Location de logements",
+    "libelle_nature_juridique": "SA de HLM à conseil d'administration",
+    "aide": "etat A = active, C ou F = cessée. effectif = tranche Insee de salariés (ex. 21 = 50 à 99, 41 = 500 à 999, 51 = 2 000 à 4 999). Dirigeants et finances volontairement exclus.",
+    "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/510469661"
+   },
+   "finess_du_prospect": {
+    "nb_etablissements_finess_france": 0,
+    "nb_etablissements_finess_yvelines": 0,
+    "nb_departements": 0,
+    "par_type": {},
+    "exemples_yvelines": [],
+    "source": "https://www.data.gouv.fr/datasets/53699569a3a729239d2046eb",
+    "aide": "Établissements dont le SIRET commence par ce SIREN. 0 ne prouve pas l'absence d'activité médico-sociale (SIRET non renseigné dans FINESS, autre entité juridique du même groupe)."
+   },
+   "origine": "demandeur de permis",
+   "consigne": "Ces résultats viennent des outils permis_du_prospect, fiche_entreprise et finess_du_prospect : cite-les. Conclus avec conclure_prospect."
+  }
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure_prospect",
+    "args": "{\"verdict\":\"prospect\",\"adequation\":\"forte\",\"type_structure\":\"Bailleur social (SA de HLM) exploitant des résidences sociales\",\"besoin_immobilier\":\"Projet de résidence sociale de 115 logements autorisé en 2025 à Sartrouville non encore commencé, plus projet de 180 logements terminé en 2019 à Mantes-la-Jolie.\",\"indices\":[\"permis_du_prospect : 1 permis autorisé 2025 (résidence sociale, 115 logements, Sartrouville) non commencé ; 1 permis terminé 2019 (180 logements, Mantes-la-Jolie)\",\"fiche_entreprise : SIREN 510469661, dénomination BATIGERE HABITATS SOLIDAIRES, nature juridique SA de HLM à conseil d'administration (5546), NAF 68.20A Location de logements, état A (active), catégorie ETI, effectif tranche 12, 4 établissements ouverts\",\"finess_du_prospect : 0 établissement FINESS (ne prouve pas l'absence d'activité médico-sociale pour un bailleur social)\",\"dénomination : COALLIA HABITAT (nom d'usage) / BATIGERE HABITATS SOLIDAIRES (nom légal), famille cible bailleur_social\"],\"limites\":\"La fiche entreprise indique un effectif tranche 12 (faible) mais catégorie ETI et 4 établissements ouverts ; la taille_calculee \\\"petite\\\" semble sous-estimée au vu des projets (115 et 180 logements). Le nom d'usage (COALLIA HABITAT) diffère du nom légal (BATIGERE HABITATS SOLIDAIRES), suggérant une structure de groupe.\"}"
+   }
+  ]
+ }
+]

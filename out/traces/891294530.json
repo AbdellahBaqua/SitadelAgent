@@ -1,0 +1,114 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "891294530"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "891294530"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "891294530"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "891294530"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "LCSC GRESSET SUISSES",
+     "nb_permis_PC": 3,
+     "annees_depot": [
+      "2021",
+      "2022"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 8,
+     "surface_locaux_non_residentiels_creee_m2": 0,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 3,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 0
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "891294530",
+      "nom": "LCSC GRESSET SUISSES",
+      "nature_juridique": "5710",
+      "naf_actuel": "41.10A",
+      "etat": "A",
+      "date_creation": "2020-11-02",
+      "categorie": "PME",
+      "effectif": "NN",
+      "nb_etablissements": 2,
+      "nb_etablissements_ouverts": 1,
+      "siege_actuel": {
+       "siret": "89129453000029",
+       "naf": "41.10A",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "?",
+       "naf_dans_permis": "68.31Z",
+       "nb_permis": 3,
+       "annees_depot": [
+        "2021",
+        "2022"
+       ]
+      }
+     ],
+     "alertes": [
+      "NAF du permis ['68.31Z'] différent du NAF actuel de l'entreprise 41.10A"
+     ],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/891294530"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "41.10A",
+      "libelle": "Promotion immobilière de logements"
+     },
+     {
+      "code": "68.31Z",
+      "libelle": "Agences immobilières"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5710",
+     "libelle": "SAS, société par actions simplifiée"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"promoteur\",\"confiance\":\"haute\",\"indices\":[\"fiche_entreprise : NAF actuel 41.10A « Promotion immobilière de logements » (activité actuelle de l'entreprise)\",\"libelle_naf : 41.10A correspond à la promotion immobilière de logements, cœur de métier des promoteurs (construire pour vendre)\",\"permis_du_demandeur : 3 permis de construire individuels déposés en 2021-2022, 8 logements créés au total, 0 logement locatif social déclaré\",\"libelle_cj : catégorie juridique 5710 = SAS, forme commerciale classique pour un promoteur\",\"fiche_entreprise : alerte confirmant que le NAF du permis (68.31Z « Agences immobilières ») est historique et différent du NAF actuel 41.10A\"],\"limites\":\"Aucune limite majeure : le NAF actuel de l'entreprise (source fiable, établissement siège ouvert) et le profil des permis (construction de maisons individuelles à vendre) convergent vers la famille promoteur.\"}"
+   }
+  ]
+ }
+]

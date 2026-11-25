@@ -1,0 +1,111 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "410133433"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "410133433"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "410133433"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "410133433"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "JMP EXPANSION",
+     "nb_permis_PC": 2,
+     "annees_depot": [
+      "2016",
+      "2019"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 0,
+     "surface_locaux_non_residentiels_creee_m2": 145,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 1
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "410133433",
+      "nom": "JMP EXPANSION (JMP)",
+      "nature_juridique": "5699",
+      "naf_actuel": "68.31Z",
+      "etat": "A",
+      "date_creation": "1996-11-25",
+      "categorie": "PME",
+      "effectif": "02",
+      "nb_etablissements": 1,
+      "nb_etablissements_ouverts": 1,
+      "siege_actuel": {
+       "siret": "41013343300012",
+       "naf": "68.31Z",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "41013343300012",
+       "naf_dans_permis": "68.31Z",
+       "nb_permis": 2,
+       "annees_depot": [
+        "2016",
+        "2019"
+       ],
+       "etat_actuel": "ouvert",
+       "date_creation": "1996-11-25",
+       "date_fermeture": null
+      }
+     ],
+     "alertes": [],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/410133433"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "68.31Z",
+      "libelle": "Agences immobilières"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5699",
+     "libelle": "SA à directoire (s.a.i.)"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"entreprise_autre\",\"confiance\":\"moyenne\",\"indices\":[\"fiche_entreprise : NAF actuel 68.31Z « Agences immobilières » (confirmé par libelle_naf)\",\"fiche_entreprise : Nature juridique 5699 « SA à directoire (s.a.i.) » (confirmé par libelle_cj)\",\"permis_du_demandeur : 2 permis de construire déposés (2016, 2019), 145 m² de surface non-résidentielle créée, 0 logement créé, 0 logement social déclaré\",\"dénomination : « JMP EXPANSION » suggère une activité de développement/expansion immobilière\"],\"limites\":\"L'activité principale (agence immobilière, NAF 68.31Z) ne correspond pas exactement aux familles cibles (promoteur, foncière, bailleur social, etc.). Les permis portent uniquement sur de la surface non-résidentielle (145 m²) sans création de logements. La structure est une PME de 2 employés, active depuis 1996. L'appartenance à une famille précise (promoteur vs foncière vs autre) n'est pas tranchée par les données disponibles.\"}"
+   }
+  ]
+ }
+]

@@ -1,0 +1,1793 @@
+[
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "apercu",
+    "args": {},
+    "sortie": {
+     "perimetre": "PC des Yvelines (78) créant des logements, déposés par des personnes morales, extraction SDES/Sitadel",
+     "nb_permis": 3363,
+     "nb_demandeurs": 2048,
+     "annees_depot": {
+      "2011": 3,
+      "2012": 100,
+      "2013": 222,
+      "2014": 235,
+      "2015": 258,
+      "2016": 266,
+      "2017": 290,
+      "2018": 247,
+      "2019": 256,
+      "2020": 231,
+      "2021": 356,
+      "2022": 247,
+      "2023": 221,
+      "2024": 185,
+      "2025": 168,
+      "2026": 77,
+      "2091": 1
+     },
+     "familles_demandeurs": {
+      "fonciere_investisseur": 1014,
+      "promoteur": 690,
+      "non_determine": 172,
+      "collectivite_public": 79,
+      "bailleur_social": 31,
+      "entreprise_autre": 29,
+      "association_ess": 26,
+      "copropriete": 4,
+      "exploitant_sante_social": 3
+     },
+     "colonnes_interrogeables": [
+      "famille",
+      "AN_DEPOT",
+      "COMM",
+      "ADR_LOCALITE_TER",
+      "ETAT_DAU",
+      "RESIDENCE",
+      "TYPE_PRINCIP_LOGTS_CREES",
+      "NATURE_PROJET_COMPLETEE",
+      "TYPE_TRANSFO_PRINCIPAL",
+      "TYPE_PRINCIP_LOCAUX_TRANSFORMES",
+      "UTILISATION",
+      "DESTINATION_PRINCIPALE",
+      "ZONE_OP",
+      "CJ_DEM",
+      "APE_DEM",
+      "SIREN_DEM",
+      "DENOM_DEM"
+     ],
+     "mesures": [
+      "permis",
+      "logements",
+      "acteurs"
+     ],
+     "remarques": [
+      "2026 est une année partielle",
+      "un permis modificatif n'a pas de ligne propre",
+      "~15 % des ouvertures de chantier et ~1/3 des achèvements ne remontent jamais",
+      "APE_DEM = NAF de l'établissement du permis, possiblement fermé",
+      "RESIDENCE est rempli sur une petite minorité de permis (souvent 'non rempli') ; les drapeaux RES_* n'existent que depuis mai 2022",
+      "NATURE_PROJET_COMPLETEE et TYPE_TRANSFO_* sont dits 'introduits en mai 2022' mais sont renseignés dès 2012 dans le fichier (recodage SDES probable)"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 1,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "famille",
+      "TYPE_PRINCIP_LOGTS_CREES"
+     ],
+     "mesure": "logements",
+     "top": 30
+    },
+    "sortie": {
+     "filtres": {},
+     "nb_permis_filtres": 3363,
+     "nb_groupes": 34,
+     "resultats": [
+      {
+       "famille": "promoteur",
+       "TYPE_PRINCIP_LOGTS_CREES": "3 (collectif hors résidence)",
+       "permis": 852,
+       "logements": 52595,
+       "acteurs": 560
+      },
+      {
+       "famille": "bailleur_social",
+       "TYPE_PRINCIP_LOGTS_CREES": "3 (collectif hors résidence)",
+       "permis": 247,
+       "logements": 8789,
+       "acteurs": 29
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "TYPE_PRINCIP_LOGTS_CREES": "3 (collectif hors résidence)",
+       "permis": 497,
+       "logements": 7852,
+       "acteurs": 368
+      },
+      {
+       "famille": "promoteur",
+       "TYPE_PRINCIP_LOGTS_CREES": "4 (résidence)",
+       "permis": 48,
+       "logements": 6406,
+       "acteurs": 44
+      },
+      {
+       "famille": "bailleur_social",
+       "TYPE_PRINCIP_LOGTS_CREES": "4 (résidence)",
+       "permis": 29,
+       "logements": 2762,
+       "acteurs": 14
+      },
+      {
+       "famille": "promoteur",
+       "TYPE_PRINCIP_LOGTS_CREES": "2 (plusieurs individuels)",
+       "permis": 132,
+       "logements": 2313,
+       "acteurs": 105
+      },
+      {
+       "famille": "non_determine",
+       "TYPE_PRINCIP_LOGTS_CREES": "3 (collectif hors résidence)",
+       "permis": 78,
+       "logements": 2078,
+       "acteurs": 70
+      },
+      {
+       "famille": "non_determine",
+       "TYPE_PRINCIP_LOGTS_CREES": "4 (résidence)",
+       "permis": 9,
+       "logements": 1328,
+       "acteurs": 9
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "TYPE_PRINCIP_LOGTS_CREES": "4 (résidence)",
+       "permis": 12,
+       "logements": 982,
+       "acteurs": 12
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "TYPE_PRINCIP_LOGTS_CREES": "2 (plusieurs individuels)",
+       "permis": 224,
+       "logements": 924,
+       "acteurs": 206
+      },
+      {
+       "famille": "collectivite_public",
+       "TYPE_PRINCIP_LOGTS_CREES": "3 (collectif hors résidence)",
+       "permis": 62,
+       "logements": 911,
+       "acteurs": 38
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "TYPE_PRINCIP_LOGTS_CREES": "1 (1 logement individuel)",
+       "permis": 677,
+       "logements": 677,
+       "acteurs": 518
+      },
+      {
+       "famille": "entreprise_autre",
+       "TYPE_PRINCIP_LOGTS_CREES": "3 (collectif hors résidence)",
+       "permis": 24,
+       "logements": 592,
+       "acteurs": 12
+      },
+      {
+       "famille": "association_ess",
+       "TYPE_PRINCIP_LOGTS_CREES": "3 (collectif hors résidence)",
+       "permis": 14,
+       "logements": 366,
+       "acteurs": 11
+      },
+      {
+       "famille": "bailleur_social",
+       "TYPE_PRINCIP_LOGTS_CREES": "2 (plusieurs individuels)",
+       "permis": 14,
+       "logements": 226,
+       "acteurs": 9
+      },
+      {
+       "famille": "non_determine",
+       "TYPE_PRINCIP_LOGTS_CREES": "2 (plusieurs individuels)",
+       "permis": 44,
+       "logements": 207,
+       "acteurs": 37
+      },
+      {
+       "famille": "association_ess",
+       "TYPE_PRINCIP_LOGTS_CREES": "4 (résidence)",
+       "permis": 5,
+       "logements": 190,
+       "acteurs": 5
+      },
+      {
+       "famille": "entreprise_autre",
+       "TYPE_PRINCIP_LOGTS_CREES": "2 (plusieurs individuels)",
+       "permis": 19,
+       "logements": 150,
+       "acteurs": 8
+      },
+      {
+       "famille": "collectivite_public",
+       "TYPE_PRINCIP_LOGTS_CREES": "2 (plusieurs individuels)",
+       "permis": 28,
+       "logements": 125,
+       "acteurs": 21
+      },
+      {
+       "famille": "non_determine",
+       "TYPE_PRINCIP_LOGTS_CREES": "1 (1 logement individuel)",
+       "permis": 116,
+       "logements": 116,
+       "acteurs": 80
+      },
+      {
+       "famille": "copropriete",
+       "TYPE_PRINCIP_LOGTS_CREES": "3 (collectif hors résidence)",
+       "permis": 3,
+       "logements": 110,
+       "acteurs": 3
+      },
+      {
+       "famille": "entreprise_autre",
+       "TYPE_PRINCIP_LOGTS_CREES": "4 (résidence)",
+       "permis": 2,
+       "logements": 97,
+       "acteurs": 1
+      },
+      {
+       "famille": "collectivite_public",
+       "TYPE_PRINCIP_LOGTS_CREES": "4 (résidence)",
+       "permis": 3,
+       "logements": 92,
+       "acteurs": 3
+      },
+      {
+       "famille": "promoteur",
+       "TYPE_PRINCIP_LOGTS_CREES": "1 (1 logement individuel)",
+       "permis": 80,
+       "logements": 80,
+       "acteurs": 50
+      },
+      {
+       "famille": "collectivite_public",
+       "TYPE_PRINCIP_LOGTS_CREES": "1 (1 logement individuel)",
+       "permis": 72,
+       "logements": 72,
+       "acteurs": 44
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 2,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "famille",
+      "NATURE_PROJET_COMPLETEE"
+     ],
+     "mesure": "logements",
+     "top": 30
+    },
+    "sortie": {
+     "filtres": {},
+     "nb_permis_filtres": 3363,
+     "nb_groupes": 47,
+     "resultats": [
+      {
+       "famille": "promoteur",
+       "NATURE_PROJET_COMPLETEE": "1 (nouvelle construction)",
+       "permis": 942,
+       "logements": 52438,
+       "acteurs": 573
+      },
+      {
+       "famille": "bailleur_social",
+       "NATURE_PROJET_COMPLETEE": "1 (nouvelle construction)",
+       "permis": 225,
+       "logements": 9506,
+       "acteurs": 30
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "NATURE_PROJET_COMPLETEE": "1 (nouvelle construction)",
+       "permis": 880,
+       "logements": 7586,
+       "acteurs": 616
+      },
+      {
+       "famille": "promoteur",
+       "NATURE_PROJET_COMPLETEE": "5 (extension sans transformation)",
+       "permis": 107,
+       "logements": 6774,
+       "acteurs": 96
+      },
+      {
+       "famille": "non_determine",
+       "NATURE_PROJET_COMPLETEE": "1 (nouvelle construction)",
+       "permis": 166,
+       "logements": 2466,
+       "acteurs": 115
+      },
+      {
+       "famille": "promoteur",
+       "NATURE_PROJET_COMPLETEE": "3 (transformation avec extension)",
+       "permis": 42,
+       "logements": 1519,
+       "acteurs": 38
+      },
+      {
+       "famille": "bailleur_social",
+       "NATURE_PROJET_COMPLETEE": "5 (extension sans transformation)",
+       "permis": 35,
+       "logements": 1318,
+       "acteurs": 12
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "NATURE_PROJET_COMPLETEE": "3 (transformation avec extension)",
+       "permis": 180,
+       "logements": 1129,
+       "acteurs": 161
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "NATURE_PROJET_COMPLETEE": "5 (extension sans transformation)",
+       "permis": 187,
+       "logements": 1040,
+       "acteurs": 174
+      },
+      {
+       "famille": "collectivite_public",
+       "NATURE_PROJET_COMPLETEE": "1 (nouvelle construction)",
+       "permis": 108,
+       "logements": 774,
+       "acteurs": 55
+      },
+      {
+       "famille": "entreprise_autre",
+       "NATURE_PROJET_COMPLETEE": "1 (nouvelle construction)",
+       "permis": 67,
+       "logements": 750,
+       "acteurs": 25
+      },
+      {
+       "famille": "bailleur_social",
+       "NATURE_PROJET_COMPLETEE": "3 (transformation avec extension)",
+       "permis": 23,
+       "logements": 704,
+       "acteurs": 12
+      },
+      {
+       "famille": "non_determine",
+       "NATURE_PROJET_COMPLETEE": "3 (transformation avec extension)",
+       "permis": 23,
+       "logements": 587,
+       "acteurs": 22
+      },
+      {
+       "famille": "promoteur",
+       "NATURE_PROJET_COMPLETEE": "4 (transformation avec diminution)",
+       "permis": 11,
+       "logements": 577,
+       "acteurs": 10
+      },
+      {
+       "famille": "association_ess",
+       "NATURE_PROJET_COMPLETEE": "1 (nouvelle construction)",
+       "permis": 22,
+       "logements": 462,
+       "acteurs": 13
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "NATURE_PROJET_COMPLETEE": "4 (transformation avec diminution)",
+       "permis": 65,
+       "logements": 382,
+       "acteurs": 62
+      },
+      {
+       "famille": "non_determine",
+       "NATURE_PROJET_COMPLETEE": "5 (extension sans transformation)",
+       "permis": 27,
+       "logements": 292,
+       "acteurs": 25
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "NATURE_PROJET_COMPLETEE": "2 (transformation sans extension)",
+       "permis": 84,
+       "logements": 245,
+       "acteurs": 81
+      },
+      {
+       "famille": "non_determine",
+       "NATURE_PROJET_COMPLETEE": "2 (transformation sans extension)",
+       "permis": 19,
+       "logements": 237,
+       "acteurs": 17
+      },
+      {
+       "famille": "collectivite_public",
+       "NATURE_PROJET_COMPLETEE": "3 (transformation avec extension)",
+       "permis": 16,
+       "logements": 169,
+       "acteurs": 13
+      },
+      {
+       "famille": "bailleur_social",
+       "NATURE_PROJET_COMPLETEE": "6 (diminution sans transformation)",
+       "permis": 1,
+       "logements": 150,
+       "acteurs": 1
+      },
+      {
+       "famille": "entreprise_autre",
+       "NATURE_PROJET_COMPLETEE": "3 (transformation avec extension)",
+       "permis": 5,
+       "logements": 112,
+       "acteurs": 5
+      },
+      {
+       "famille": "collectivite_public",
+       "NATURE_PROJET_COMPLETEE": "2 (transformation sans extension)",
+       "permis": 17,
+       "logements": 107,
+       "acteurs": 15
+      },
+      {
+       "famille": "non_determine",
+       "NATURE_PROJET_COMPLETEE": "6 (diminution sans transformation)",
+       "permis": 2,
+       "logements": 103,
+       "acteurs": 2
+      },
+      {
+       "famille": "copropriete",
+       "NATURE_PROJET_COMPLETEE": "1 (nouvelle construction)",
+       "permis": 3,
+       "logements": 98,
+       "acteurs": 3
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 3,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "famille",
+      "APE_DEM"
+     ],
+     "mesure": "logements",
+     "top": 40
+    },
+    "sortie": {
+     "filtres": {},
+     "nb_permis_filtres": 3363,
+     "nb_groupes": 130,
+     "resultats": [
+      {
+       "famille": "promoteur",
+       "APE_DEM": "41.10D (Supports juridiques de programmes)",
+       "permis": 584,
+       "logements": 32917,
+       "acteurs": 487
+      },
+      {
+       "famille": "promoteur",
+       "APE_DEM": "41.10A (Promotion immobilière de logements)",
+       "permis": 417,
+       "logements": 23084,
+       "acteurs": 140
+      },
+      {
+       "famille": "bailleur_social",
+       "APE_DEM": "68.20A (Location de logements)",
+       "permis": 268,
+       "logements": 9403,
+       "acteurs": 28
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "APE_DEM": "68.20B (Location de terrains et d'autres biens immobiliers)",
+       "permis": 891,
+       "logements": 4871,
+       "acteurs": 724
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "APE_DEM": "68.10Z (Activités des marchands de biens immobiliers)",
+       "permis": 351,
+       "logements": 3584,
+       "acteurs": 177
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "APE_DEM": "68.20A (Location de logements)",
+       "permis": 130,
+       "logements": 1871,
+       "acteurs": 82
+      },
+      {
+       "famille": "bailleur_social",
+       "APE_DEM": "55.90Z (Autres hébergements)",
+       "permis": 11,
+       "logements": 1530,
+       "acteurs": 1
+      },
+      {
+       "famille": "promoteur",
+       "APE_DEM": "41.10C (Promotion immobilière d'autres bâtiments)",
+       "permis": 35,
+       "logements": 1525,
+       "acteurs": 22
+      },
+      {
+       "famille": "promoteur",
+       "APE_DEM": "68.10Z (Activités des marchands de biens immobiliers)",
+       "permis": 31,
+       "logements": 1002,
+       "acteurs": 14
+      },
+      {
+       "famille": "promoteur",
+       "APE_DEM": "35.11Z (Production d'électricité)",
+       "permis": 5,
+       "logements": 722,
+       "acteurs": 1
+      },
+      {
+       "famille": "non_determine",
+       "APE_DEM": "64.20Z (Activités des sociétés holding)",
+       "permis": 31,
+       "logements": 652,
+       "acteurs": 20
+      },
+      {
+       "famille": "collectivite_public",
+       "APE_DEM": "68.20A (Location de logements)",
+       "permis": 29,
+       "logements": 613,
+       "acteurs": 5
+      },
+      {
+       "famille": "promoteur",
+       "APE_DEM": "41.10B (Promotion immobilière de bureaux)",
+       "permis": 8,
+       "logements": 498,
+       "acteurs": 7
+      },
+      {
+       "famille": "non_determine",
+       "APE_DEM": "66.30Z (Gestion de fonds)",
+       "permis": 4,
+       "logements": 498,
+       "acteurs": 4
+      },
+      {
+       "famille": "promoteur",
+       "APE_DEM": "68.32A (Administration d'immeubles et autres biens immobiliers)",
+       "permis": 6,
+       "logements": 489,
+       "acteurs": 2
+      },
+      {
+       "famille": "promoteur",
+       "APE_DEM": "68.31Z (Agences immobilières)",
+       "permis": 2,
+       "logements": 479,
+       "acteurs": 2
+      },
+      {
+       "famille": "non_determine",
+       "APE_DEM": "71.11Z (Activités d'architecture)",
+       "permis": 13,
+       "logements": 425,
+       "acteurs": 13
+      },
+      {
+       "famille": "collectivite_public",
+       "APE_DEM": "84.11Z (Administration publique générale)",
+       "permis": 121,
+       "logements": 409,
+       "acteurs": 63
+      },
+      {
+       "famille": "non_determine",
+       "APE_DEM": "63.11Z (Traitement de données, hébergement et activités connexes)",
+       "permis": 1,
+       "logements": 365,
+       "acteurs": 1
+      },
+      {
+       "famille": "bailleur_social",
+       "APE_DEM": "68.20B (Location de terrains et d'autres biens immobiliers)",
+       "permis": 9,
+       "logements": 345,
+       "acteurs": 1
+      },
+      {
+       "famille": "non_determine",
+       "APE_DEM": "71.12B (Ingénierie, études techniques)",
+       "permis": 17,
+       "logements": 329,
+       "acteurs": 7
+      },
+      {
+       "famille": "non_determine",
+       "APE_DEM": "68.31Z (Agences immobilières)",
+       "permis": 44,
+       "logements": 312,
+       "acteurs": 33
+      },
+      {
+       "famille": "entreprise_autre",
+       "APE_DEM": "42.99Z (Construction d'autres ouvrages de génie civil n.c.a.)",
+       "permis": 24,
+       "logements": 287,
+       "acteurs": 4
+      },
+      {
+       "famille": "promoteur",
+       "APE_DEM": "70.10Z (Activités des sièges sociaux)",
+       "permis": 8,
+       "logements": 258,
+       "acteurs": 8
+      },
+      {
+       "famille": "non_determine",
+       "APE_DEM": "70.10Z (Activités des sièges sociaux)",
+       "permis": 18,
+       "logements": 251,
+       "acteurs": 14
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 4,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "SIREN_DEM",
+      "DENOM_DEM",
+      "famille",
+      "APE_DEM"
+     ],
+     "filtres": {
+      "APE_DEM": "35.11Z"
+     },
+     "mesure": "logements",
+     "top": 10
+    },
+    "sortie": {
+     "erreur": "group_by : 1 à 3 colonnes parmi la liste",
+     "colonnes_autorisees": [
+      "famille",
+      "AN_DEPOT",
+      "COMM",
+      "ADR_LOCALITE_TER",
+      "ETAT_DAU",
+      "RESIDENCE",
+      "TYPE_PRINCIP_LOGTS_CREES",
+      "NATURE_PROJET_COMPLETEE",
+      "TYPE_TRANSFO_PRINCIPAL",
+      "TYPE_PRINCIP_LOCAUX_TRANSFORMES",
+      "UTILISATION",
+      "DESTINATION_PRINCIPALE",
+      "ZONE_OP",
+      "CJ_DEM",
+      "APE_DEM",
+      "SIREN_DEM",
+      "DENOM_DEM"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 5,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "SIREN_DEM",
+      "DENOM_DEM",
+      "APE_DEM"
+     ],
+     "filtres": {
+      "APE_DEM": "35.11Z"
+     },
+     "mesure": "logements",
+     "top": 10
+    },
+    "sortie": {
+     "filtres": {
+      "APE_DEM": "35.11Z"
+     },
+     "nb_permis_filtres": 8,
+     "nb_groupes": 2,
+     "resultats": [
+      {
+       "SIREN_DEM": "562091546",
+       "DENOM_DEM": "BOUYGUES IMMOBILIER",
+       "APE_DEM": "35.11Z (Production d'électricité)",
+       "permis": 5,
+       "logements": 722,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "552081317",
+       "DENOM_DEM": "ELECTRICITE DE FRANCE",
+       "APE_DEM": "35.11Z (Production d'électricité)",
+       "permis": 3,
+       "logements": 3,
+       "acteurs": 1
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 6,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "profil_acteur",
+    "args": {
+     "siren": "562091546"
+    },
+    "sortie": {
+     "denomination": "BOUYGUES IMMOBILIER",
+     "famille": "promoteur",
+     "cj": "5599 (SA à conseil d'administration (s.a.i.))",
+     "nb_permis": 48,
+     "logements": 3617,
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/562091546",
+     "permis": [
+      {
+       "num": "07864612V0149",
+       "annee": "2012",
+       "commune": "VERSAILLES",
+       "logements": 35,
+       "etat": "6 (terminé)",
+       "type": "3 (collectif hors résidence)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "07801513Y0004",
+       "annee": "2013",
+       "commune": "ANDRESY",
+       "logements": 100,
+       "etat": "6 (terminé)",
+       "type": "3 (collectif hors résidence)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "07820613M0001",
+       "annee": "2013",
+       "commune": "ECQUEVILLY",
+       "logements": 75,
+       "etat": "4 (annulé)",
+       "type": "3 (collectif hors résidence)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "07844013Y0027",
+       "annee": "2013",
+       "commune": "LES MUREAUX",
+       "logements": 49,
+       "etat": "6 (terminé)",
+       "type": "3 (collectif hors résidence)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "07854513B1009",
+       "annee": "2013",
+       "commune": "SAINT CYR L'ECOLE",
+       "logements": 101,
+       "etat": "5 (commencé)",
+       "type": "3 (collectif hors résidence)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "07858613G1064",
+       "annee": "2013",
+       "commune": "SARTROUVILLE",
+       "logements": 24,
+       "etat": "2 (autorisé)",
+       "type": "2 (plusieurs individuels)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "07858613G1100",
+       "annee": "2013",
+       "commune": "SARTROUVILLE",
+       "logements": 37,
+       "etat": "6 (terminé)",
+       "type": "3 (collectif hors résidence)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "07862113E0014",
+       "annee": "2013",
+       "commune": "TRAPPES",
+       "logements": 53,
+       "etat": "6 (terminé)",
+       "type": "3 (collectif hors résidence)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "07829714E0003",
+       "annee": "2014",
+       "commune": "GUYANCOURT",
+       "logements": 38,
+       "etat": "6 (terminé)",
+       "type": "3 (collectif hors résidence)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "07836714G0013",
+       "annee": "2014",
+       "commune": "",
+       "logements": 25,
+       "etat": "5 (commencé)",
+       "type": "3 (collectif hors résidence)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "07842314E0005",
+       "annee": "2014",
+       "commune": "MONTIGNY-LE-BRETONNEUX",
+       "logements": 66,
+       "etat": "4 (annulé)",
+       "type": "4 (résidence)",
+       "residence": "1 (personnes âgées)"
+      },
+      {
+       "num": "07849814Y0023",
+       "annee": "2014",
+       "commune": "POISSY",
+       "logements": 133,
+       "etat": "6 (terminé)",
+       "type": "3 (collectif hors résidence)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "07854514B1011",
+       "annee": "2014",
+       "commune": "SAINT CYR L ECOLE",
+       "logements": 97,
+       "etat": "6 (terminé)",
+       "type": "3 (collectif hors résidence)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "07862114E0015",
+       "annee": "2014",
+       "commune": "TRAPPES",
+       "logements": 83,
+       "etat": "6 (terminé)",
+       "type": "3 (collectif hors résidence)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "07800515A0020",
+       "annee": "2015",
+       "commune": "ACHERES",
+       "logements": 48,
+       "etat": "2 (autorisé)",
+       "type": "3 (collectif hors résidence)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "07813815G0007",
+       "annee": "2015",
+       "commune": "CHANTELOUP-LES-VIGNES",
+       "logements": 47,
+       "etat": "6 (terminé)",
+       "type": "3 (collectif hors résidence)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "07829915M0008",
+       "annee": "2015",
+       "commune": "HARDRICOURT",
+       "logements": 140,
+       "etat": "5 (commencé)",
+       "type": "3 (collectif hors résidence)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "0783581501032",
+       "annee": "2015",
+       "commune": "MAISONS LAFFITTE",
+       "logements": 45,
+       "etat": "2 (autorisé)",
+       "type": "3 (collectif hors résidence)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "07840115M0009",
+       "annee": "2015",
+       "commune": "MEULAN",
+       "logements": 44,
+       "etat": "5 (commencé)",
+       "type": "3 (collectif hors résidence)",
+       "residence": "9 (non rempli)"
+      },
+      {
+       "num": "07842315E0016",
+       "annee": "2015",
+       "commune": "MONTIGNY-LE-BRETONNEUX",
+       "logements": 82,
+       "etat": "6 (terminé)",
+       "type": "3 (collectif hors résidence)",
+       "residence": "9 (non rempli)"
+      }
+     ],
+     "tronque": true
+    }
+   }
+  ]
+ },
+ {
+  "etape": 7,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "SIREN_DEM",
+      "DENOM_DEM",
+      "APE_DEM"
+     ],
+     "filtres": {
+      "famille": "non_determine",
+      "APE_DEM": "64.20Z"
+     },
+     "mesure": "logements",
+     "top": 20
+    },
+    "sortie": {
+     "filtres": {
+      "famille": "non_determine",
+      "APE_DEM": "64.20Z"
+     },
+     "nb_permis_filtres": 31,
+     "nb_groupes": 20,
+     "resultats": [
+      {
+       "SIREN_DEM": "505235143",
+       "DENOM_DEM": "FINANCIERE OGIC",
+       "APE_DEM": "64.20Z (Activités des sociétés holding)",
+       "permis": 1,
+       "logements": 139,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "519059497",
+       "DENOM_DEM": "SOCIETE FINANCIERE POUR L'HABITAT AIDE",
+       "APE_DEM": "64.20Z (Activités des sociétés holding)",
+       "permis": 1,
+       "logements": 131,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "391929502",
+       "DENOM_DEM": "FINANCIERE DU DOME",
+       "APE_DEM": "64.20Z (Activités des sociétés holding)",
+       "permis": 1,
+       "logements": 114,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "533601118",
+       "DENOM_DEM": "H ET A",
+       "APE_DEM": "64.20Z (Activités des sociétés holding)",
+       "permis": 2,
+       "logements": 76,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "448238105",
+       "DENOM_DEM": "MBC HOLDING",
+       "APE_DEM": "64.20Z (Activités des sociétés holding)",
+       "permis": 3,
+       "logements": 65,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "789593092",
+       "DENOM_DEM": "HPL GROUPE",
+       "APE_DEM": "64.20Z (Activités des sociétés holding)",
+       "permis": 1,
+       "logements": 38,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "303265391",
+       "DENOM_DEM": "BEUVELET GESTION INVESTISSEMENT",
+       "APE_DEM": "64.20Z (Activités des sociétés holding)",
+       "permis": 2,
+       "logements": 35,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "433811155",
+       "DENOM_DEM": "FINANCIERE AXEL INVESTISSEMENT",
+       "APE_DEM": "64.20Z (Activités des sociétés holding)",
+       "permis": 2,
+       "logements": 13,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "788459543",
+       "DENOM_DEM": "L.M.H.",
+       "APE_DEM": "64.20Z (Activités des sociétés holding)",
+       "permis": 1,
+       "logements": 7,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "830343950",
+       "DENOM_DEM": "PROMEGE HOLDING",
+       "APE_DEM": "64.20Z (Activités des sociétés holding)",
+       "permis": 1,
+       "logements": 7,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "498821289",
+       "DENOM_DEM": "SFC",
+       "APE_DEM": "64.20Z (Activités des sociétés holding)",
+       "permis": 2,
+       "logements": 5,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "482052735",
+       "DENOM_DEM": "FINANCIERE DE LA GOMMERIE",
+       "APE_DEM": "64.20Z (Activités des sociétés holding)",
+       "permis": 1,
+       "logements": 5,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "894451046",
+       "DENOM_DEM": "HOLDING JSF",
+       "APE_DEM": "64.20Z (Activités des sociétés holding)",
+       "permis": 1,
+       "logements": 4,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "384077889",
+       "DENOM_DEM": "CLAPHINE",
+       "APE_DEM": "64.20Z (Activités des sociétés holding)",
+       "permis": 4,
+       "logements": 4,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "829754662",
+       "DENOM_DEM": "D6B",
+       "APE_DEM": "64.20Z (Activités des sociétés holding)",
+       "permis": 2,
+       "logements": 3,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "884296393",
+       "DENOM_DEM": "LAZARE",
+       "APE_DEM": "64.20Z (Activités des sociétés holding)",
+       "permis": 2,
+       "logements": 2,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "834194078",
+       "DENOM_DEM": "STERENN INVEST",
+       "APE_DEM": "64.20Z (Activités des sociétés holding)",
+       "permis": 1,
+       "logements": 1,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "389320615",
+       "DENOM_DEM": "REY INVEST",
+       "APE_DEM": "64.20Z (Activités des sociétés holding)",
+       "permis": 1,
+       "logements": 1,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "399506062",
+       "DENOM_DEM": "GROUPE GALLY",
+       "APE_DEM": "64.20Z (Activités des sociétés holding)",
+       "permis": 1,
+       "logements": 1,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "341305555",
+       "DENOM_DEM": "COMPAGNIE D'INVESTISSEMENTS IMMOBILIERS ET FINANCIERS",
+       "APE_DEM": "64.20Z (Activités des sociétés holding)",
+       "permis": 1,
+       "logements": 1,
+       "acteurs": 1
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 8,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "SIREN_DEM",
+      "DENOM_DEM",
+      "APE_DEM"
+     ],
+     "filtres": {
+      "famille": "exploitant_sante_social"
+     },
+     "mesure": "logements",
+     "top": 30
+    },
+    "sortie": {
+     "filtres": {
+      "famille": "exploitant_sante_social"
+     },
+     "nb_permis_filtres": 6,
+     "nb_groupes": 3,
+     "resultats": [
+      {
+       "SIREN_DEM": "818338311",
+       "DENOM_DEM": "BABYBULLE",
+       "APE_DEM": "88.91A (Accueil de jeunes enfants)",
+       "permis": 3,
+       "logements": 3,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "482818986",
+       "DENOM_DEM": "MEDIPART",
+       "APE_DEM": "86.10Z (Activités hospitalières)",
+       "permis": 2,
+       "logements": 3,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "520223546",
+       "DENOM_DEM": "LES PETITES CANAILLES",
+       "APE_DEM": "88.91A (Accueil de jeunes enfants)",
+       "permis": 1,
+       "logements": 1,
+       "acteurs": 1
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 9,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "SIREN_DEM",
+      "DENOM_DEM",
+      "APE_DEM"
+     ],
+     "filtres": {
+      "famille": "association_ess"
+     },
+     "mesure": "logements",
+     "top": 30
+    },
+    "sortie": {
+     "filtres": {
+      "famille": "association_ess"
+     },
+     "nb_permis_filtres": 40,
+     "nb_groupes": 26,
+     "resultats": [
+      {
+       "SIREN_DEM": "784073306",
+       "DENOM_DEM": "ASS APPRENTIS INDUSTRIEL COMMERCIAL",
+       "APE_DEM": "85.32Z (Enseignement secondaire technique ou professionnel)",
+       "permis": 1,
+       "logements": 122,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "785424532",
+       "DENOM_DEM": "ASS GEST STE FOY INSTIT ST DOMINIQUE",
+       "APE_DEM": "85.20Z (Enseignement primaire)",
+       "permis": 1,
+       "logements": 119,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "383349107",
+       "DENOM_DEM": "FREHA",
+       "APE_DEM": "68.20A (Location de logements)",
+       "permis": 3,
+       "logements": 93,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "350394136",
+       "DENOM_DEM": "FONDATION BRIGITTE BARDOT",
+       "APE_DEM": "94.99Z (Autres organisations fonctionnant par adhésion volontaire)",
+       "permis": 3,
+       "logements": 60,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "775657612",
+       "DENOM_DEM": "FONDATION COGNACQ JAY",
+       "APE_DEM": "87.90B (Hébergement social pour adultes et familles en difficultés et autre hébergement social)",
+       "permis": 1,
+       "logements": 50,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "785150194",
+       "DENOM_DEM": "ASSOCIATION DIOCESAINE DE VERSAILLES",
+       "APE_DEM": "94.91Z (Activités des organisations religieuses)",
+       "permis": 6,
+       "logements": 25,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "785098294",
+       "DENOM_DEM": "FONDATION ANNE DE GAULLE",
+       "APE_DEM": "70.10Z (Activités des sièges sociaux)",
+       "permis": 1,
+       "logements": 25,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "340800754",
+       "DENOM_DEM": "ASS L ARCHE D AIGREFOIN",
+       "APE_DEM": "88.10C (Aide par le travail)",
+       "permis": 1,
+       "logements": 22,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "853337756",
+       "DENOM_DEM": "MAISON MADELEINE",
+       "APE_DEM": "88.99B (Action sociale sans hébergement n.c.a.)",
+       "permis": 1,
+       "logements": 16,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "775667181",
+       "DENOM_DEM": "FONDATION MALLET",
+       "APE_DEM": "86.10Z (Activités hospitalières)",
+       "permis": 6,
+       "logements": 11,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "785039058",
+       "DENOM_DEM": "AVENIR APEI",
+       "APE_DEM": "88.10B (Accueil ou accompagnement sans hébergement d’adultes handicapés ou de  personnes âgées)",
+       "permis": 1,
+       "logements": 8,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "304048705",
+       "DENOM_DEM": "OGEC SAINTE THERESE",
+       "APE_DEM": "85.31Z (Enseignement secondaire général)",
+       "permis": 1,
+       "logements": 7,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "340317601",
+       "DENOM_DEM": "COMMUNAUTE DES JEUNES DE COURBEVOIE",
+       "APE_DEM": "94.99Z (Autres organisations fonctionnant par adhésion volontaire)",
+       "permis": 1,
+       "logements": 5,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "775672272",
+       "DENOM_DEM": "CROIX ROUGE FRANCAISE",
+       "APE_DEM": "88.99B (Action sociale sans hébergement n.c.a.)",
+       "permis": 1,
+       "logements": 3,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "404079022",
+       "DENOM_DEM": "ASSSOC ACCUEIL PERS HANDIC PERS AGEES",
+       "APE_DEM": "87.20A (Hébergement social pour handicapés mentaux et malades mentaux)",
+       "permis": 1,
+       "logements": 2,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "775672165",
+       "DENOM_DEM": "FONDATION LEOPOLD BELLAN",
+       "APE_DEM": "88.99B (Action sociale sans hébergement n.c.a.)",
+       "permis": 1,
+       "logements": 2,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "418093738",
+       "DENOM_DEM": "ECOLE CHIEN GUIDE AVEUGLE PARIS REGPARI",
+       "APE_DEM": "94.99Z (Autres organisations fonctionnant par adhésion volontaire)",
+       "permis": 1,
+       "logements": 1,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "419824669",
+       "DENOM_DEM": "LA GERBE",
+       "APE_DEM": "93.29Z (Autres activités récréatives et de loisirs)",
+       "permis": 1,
+       "logements": 1,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "781669601",
+       "DENOM_DEM": "FONDATION JOHN BOST",
+       "APE_DEM": "86.10Z (Activités hospitalières)",
+       "permis": 1,
+       "logements": 1,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "775682024",
+       "DENOM_DEM": "SCOUTS ET GUIDES DE FRANCE",
+       "APE_DEM": "93.29Z (Autres activités récréatives et de loisirs)",
+       "permis": 1,
+       "logements": 1,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "775671316",
+       "DENOM_DEM": "FEDERATION FRANCAISE DES CLUBS ALPINS ET DE MONTAGNE",
+       "APE_DEM": "93.12Z (Activités de clubs de sports)",
+       "permis": 1,
+       "logements": 1,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "500291075",
+       "DENOM_DEM": "FEDERATION CULTURELLE DES ASSOCIATIONS MUSULMANES DE MONTREUIL",
+       "APE_DEM": "94.99Z (Autres organisations fonctionnant par adhésion volontaire)",
+       "permis": 1,
+       "logements": 1,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "409943545",
+       "DENOM_DEM": "EGLISE EVANGELIQUE DE PENTECOTE",
+       "APE_DEM": "94.91Z (Activités des organisations religieuses)",
+       "permis": 1,
+       "logements": 1,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "785138926",
+       "DENOM_DEM": "ASSOCIATION NOTRE DAME DE VERNEUIL",
+       "APE_DEM": "85.31Z (Enseignement secondaire général)",
+       "permis": 1,
+       "logements": 1,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "844905679",
+       "DENOM_DEM": "CONFEDERATION ISLAMIQUE MILLI GORUS COMMUNE DE POISSY (CIMG-POISSY)",
+       "APE_DEM": "94.99Z (Autres organisations fonctionnant par adhésion volontaire)",
+       "permis": 1,
+       "logements": 1,
+       "acteurs": 1
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 10,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "SIREN_DEM",
+      "DENOM_DEM",
+      "APE_DEM"
+     ],
+     "filtres": {
+      "famille": "entreprise_autre"
+     },
+     "mesure": "logements",
+     "top": 30
+    },
+    "sortie": {
+     "filtres": {
+      "famille": "entreprise_autre"
+     },
+     "nb_permis_filtres": 79,
+     "nb_groupes": 31,
+     "resultats": [
+      {
+       "SIREN_DEM": "444476048",
+       "DENOM_DEM": "CHAUVEAU TECHNIQUES",
+       "APE_DEM": "43.22B (Travaux d'installation d'équipements thermiques et de climatisation)",
+       "permis": 1,
+       "logements": 140,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "785067679",
+       "DENOM_DEM": "E.N.P.",
+       "APE_DEM": "43.99C (Travaux de maçonnerie générale et gros œuvre de bâtiment)",
+       "permis": 3,
+       "logements": 132,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "433160900",
+       "DENOM_DEM": "EDF ENR SOLAIRE",
+       "APE_DEM": "43.21A (Travaux d'installation électrique dans tous locaux)",
+       "permis": 1,
+       "logements": 114,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "398661017",
+       "DENOM_DEM": "CABINET VILLAIN SA",
+       "APE_DEM": "42.99Z (Construction d'autres ouvrages de génie civil n.c.a.)",
+       "permis": 16,
+       "logements": 85,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "477488597",
+       "DENOM_DEM": "TEPACTER",
+       "APE_DEM": "42.99Z (Construction d'autres ouvrages de génie civil n.c.a.)",
+       "permis": 1,
+       "logements": 77,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "718206725",
+       "DENOM_DEM": "SOCIETE DAVRIL",
+       "APE_DEM": "42.99Z (Construction d'autres ouvrages de génie civil n.c.a.)",
+       "permis": 2,
+       "logements": 66,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "716350137",
+       "DENOM_DEM": "SOC ECONOM MIXTE POUR DEVELL AUNIS SAINT",
+       "APE_DEM": "42.99Z (Construction d'autres ouvrages de génie civil n.c.a.)",
+       "permis": 5,
+       "logements": 59,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "552025314",
+       "DENOM_DEM": "COLAS SA",
+       "APE_DEM": "42.11Z (Construction de routes et autoroutes)",
+       "permis": 2,
+       "logements": 47,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "851147413",
+       "DENOM_DEM": "GROUPE E.T.E",
+       "APE_DEM": "43.22B (Travaux d'installation d'équipements thermiques et de climatisation)",
+       "permis": 1,
+       "logements": 47,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "445240997",
+       "DENOM_DEM": "ETIMMO",
+       "APE_DEM": "41.20A (Construction de maisons individuelles)",
+       "permis": 17,
+       "logements": 39,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "328131586",
+       "DENOM_DEM": "ZLATIC CONSTRUCTIONS",
+       "APE_DEM": "43.99C (Travaux de maçonnerie générale et gros œuvre de bâtiment)",
+       "permis": 1,
+       "logements": 15,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "487514267",
+       "DENOM_DEM": "MAISONS PIERRE",
+       "APE_DEM": "41.20A (Construction de maisons individuelles)",
+       "permis": 9,
+       "logements": 9,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "831012794",
+       "DENOM_DEM": "PHOTO CLIM",
+       "APE_DEM": "43.21A (Travaux d'installation électrique dans tous locaux)",
+       "permis": 1,
+       "logements": 8,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "313998700",
+       "DENOM_DEM": "SA NORMANDIE DRAINAGE",
+       "APE_DEM": "43.12B (Travaux de terrassement spécialisés ou de grande masse)",
+       "permis": 1,
+       "logements": 7,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "818941999",
+       "DENOM_DEM": "BAT IMMO",
+       "APE_DEM": "41.20B (Construction d'autres bâtiments)",
+       "permis": 1,
+       "logements": 4,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "815172325",
+       "DENOM_DEM": "P S I",
+       "APE_DEM": "43.31Z (Travaux de plâtrerie)",
+       "permis": 2,
+       "logements": 4,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "487993768",
+       "DENOM_DEM": "V.T.I.",
+       "APE_DEM": "41.20A (Construction de maisons individuelles)",
+       "permis": 1,
+       "logements": 3,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "321920563",
+       "DENOM_DEM": "SOCIETE EUROPEENNE D'ETANCHEITE FLEISCHMAN",
+       "APE_DEM": "43.34Z (Travaux de peinture et vitrerie)",
+       "permis": 1,
+       "logements": 2,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "321920563",
+       "DENOM_DEM": "SOCIETE EUROPEENNE D'ETANCHEITE FLEISCHMAN",
+       "APE_DEM": "43.29A (Travaux d'isolation)",
+       "permis": 1,
+       "logements": 2,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "811793835",
+       "DENOM_DEM": "ACTION ENERGIES",
+       "APE_DEM": "41.20B (Construction d'autres bâtiments)",
+       "permis": 1,
+       "logements": 2,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "487514267",
+       "DENOM_DEM": "MAISONS PIERRE",
+       "APE_DEM": "64.20Z (Activités des sociétés holding)",
+       "permis": 1,
+       "logements": 1,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "418036844",
+       "DENOM_DEM": "C M K",
+       "APE_DEM": "41.20A (Construction de maisons individuelles)",
+       "permis": 1,
+       "logements": 1,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "493496988",
+       "DENOM_DEM": "A.D.I. RENOV",
+       "APE_DEM": "43.29A (Travaux d'isolation)",
+       "permis": 1,
+       "logements": 1,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "391106804",
+       "DENOM_DEM": "MAISONS FRANCE STYLE",
+       "APE_DEM": "41.20A (Construction de maisons individuelles)",
+       "permis": 1,
+       "logements": 1,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "482322278",
+       "DENOM_DEM": "K.R.M. BATIMENT",
+       "APE_DEM": "41.20A (Construction de maisons individuelles)",
+       "permis": 1,
+       "logements": 1,
+       "acteurs": 1
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 11,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "SIREN_DEM",
+      "DENOM_DEM",
+      "APE_DEM"
+     ],
+     "filtres": {
+      "famille": "copropriete"
+     },
+     "mesure": "logements",
+     "top": 30
+    },
+    "sortie": {
+     "filtres": {
+      "famille": "copropriete"
+     },
+     "nb_permis_filtres": 4,
+     "nb_groupes": 4,
+     "resultats": [
+      {
+       "SIREN_DEM": "039075460",
+       "DENOM_DEM": "SYND COPR DU 79 RUE LEMERCIER 75017 PARI",
+       "APE_DEM": "81.10Z (Activités combinées de soutien lié aux bâtiments)",
+       "permis": 1,
+       "logements": 76,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "038771689",
+       "DENOM_DEM": "S.C. IMMOBILIERE RES BEL AIR 2 6 RUE STE",
+       "APE_DEM": "81.10Z (Activités combinées de soutien lié aux bâtiments)",
+       "permis": 1,
+       "logements": 20,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "307157677",
+       "DENOM_DEM": "ASS SYND LIBRE VALLON CHAVENAY",
+       "APE_DEM": "93.11Z (Gestion d'installations sportives)",
+       "permis": 1,
+       "logements": 14,
+       "acteurs": 1
+      },
+      {
+       "SIREN_DEM": "398610170",
+       "DENOM_DEM": "COPROPRIETE 3 RUE RAMBUTEAU",
+       "APE_DEM": "81.10Z (Activités combinées de soutien lié aux bâtiments)",
+       "permis": 1,
+       "logements": 2,
+       "acteurs": 1
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 12,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "noter",
+    "args": {
+     "titre": "Entreprises du BTP (non promoteurs) déposent des permis créant des volumes significatifs de logements",
+     "constat": "La famille \"entreprise_autre\" compte 79 permis pour 1 044 logements (31 acteurs). Trois acteurs majeurs sortent du lot : CHAUVEAU TECHNIQUES (plomberie/chauffage, APE 43.22B) 1 permis / 140 logements ; E.N.P. (maçonnerie/gros œuvre, APE 43.99C) 3 permis / 132 logements ; EDF ENR SOLAIRE (électricité, APE 43.21A) 1 permis / 114 logements. À eux trois : 386 logements sur 5 permis (37 % du volume de la famille). Ces entreprises de réalisation, non classées \"promoteur\", portent la maîtrise d'ouvrage ou signent les permis en VEFA / marchés de promotion déléguée.",
+     "interet_buddimm": "Prospection : ces structures sont des donneurs d'ordre \"cachés\" pour de la MOE, AMO, pilotage de chantier ou montage juridique. Conseil : identifier les montages (VEFA, CPI, promotion déléguée) pour qualifier le risque et l'ingénierie nécessaire. Veille : signaler à nos clients bailleurs/associations que certains chantiers sont portés par des constructeurs purs, avec des garanties différentes.",
+     "fiabilite": "établi",
+     "limites": "Le fichier ne distingue pas le montage juridique (VEFA, CPI, promotion déléguée, maîtrise d'ouvrage directe). Le volume exact par acteur peut être sous-estimé si d'autres permis sont classés sous d'autres familles.",
+     "a_creuser": "Croiser avec les données de démarrage de chantier (DROC) pour confirmer la réalisation. Identifier les donneurs d'ordre finaux (bailleurs, promoteurs, institutionnels) derrière ces permis."
+    },
+    "sortie": {
+     "erreur": "Refusé : chiffres non vérifiables : 1 044, 37 % (base absente ou fausse dans la phrase). Corrige-les avec des chiffres issus des requêtes, ou fais la requête qui les donne. Chaque pourcentage doit citer, dans la même phrase, son numérateur et son dénominateur (ex. « 3 251 sur 11 785, soit 27,6 % »). Puis renote."
+    }
+   }
+  ]
+ },
+ {
+  "etape": 13,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": "[\"famille\"]",
+     "filtres": "{\"famille\": \"entreprise_autre\"}",
+     "mesure": "logements"
+    },
+    "sortie": {
+     "erreur": "group_by : 1 à 3 colonnes parmi la liste",
+     "colonnes_autorisees": [
+      "famille",
+      "AN_DEPOT",
+      "COMM",
+      "ADR_LOCALITE_TER",
+      "ETAT_DAU",
+      "RESIDENCE",
+      "TYPE_PRINCIP_LOGTS_CREES",
+      "NATURE_PROJET_COMPLETEE",
+      "TYPE_TRANSFO_PRINCIPAL",
+      "TYPE_PRINCIP_LOCAUX_TRANSFORMES",
+      "UTILISATION",
+      "DESTINATION_PRINCIPALE",
+      "ZONE_OP",
+      "CJ_DEM",
+      "APE_DEM",
+      "SIREN_DEM",
+      "DENOM_DEM"
+     ]
+    }
+   }
+  ]
+ }
+]

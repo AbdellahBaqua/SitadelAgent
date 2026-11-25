@@ -1,0 +1,72 @@
+[
+ {
+  "etape": "pre",
+  "texte": "résultats calculés par le code avant le modèle",
+  "entree": {
+   "siren": "510469661",
+   "denomination": "COALLIA HABITAT",
+   "famille_classification": "bailleur_social",
+   "raisons_du_score": "famille cible (bailleur_social) +2 ; projet médico-social (résidence sociale) +3 ; dépôt récent (2025) +2 ; 1 permis autorisé(s) depuis moins de 3 ans, pas encore commencé(s) +2 ; projet de taille significative (≥ 20 logements ou ≥ 1 000 m²) +1",
+   "taille_calculee": "petite",
+   "taille_calcul": "salariés ≥ 20, établissements ouverts 4, établissements FINESS 0",
+   "permis_du_prospect": [
+    {
+     "num_dau": "0785862501046",
+     "fichier": "logements",
+     "annee_depot": "2025",
+     "commune": "SARTROUVILLE",
+     "etat": "autorisé",
+     "type_projet": "résidence sociale",
+     "logements_crees": 115,
+     "surface_locaux_creee_m2": null
+    },
+    {
+     "num_dau": "07836119Y0036",
+     "fichier": "logements",
+     "annee_depot": "2019",
+     "commune": "MANTES-LA-JOLIE",
+     "etat": "terminé",
+     "type_projet": "",
+     "logements_crees": 180,
+     "surface_locaux_creee_m2": null
+    }
+   ],
+   "fiche_entreprise": {
+    "nom": "BATIGERE HABITATS SOLIDAIRES",
+    "nature_juridique": "5546",
+    "naf_actuel": "68.20A",
+    "etat": "A",
+    "date_creation": "2009-02-04",
+    "categorie": "ETI",
+    "effectif": "12",
+    "nb_etablissements": 6,
+    "nb_etablissements_ouverts": 4,
+    "libelle_naf_actuel": "Location de logements",
+    "libelle_nature_juridique": "SA de HLM à conseil d'administration",
+    "aide": "etat A = active, C ou F = cessée. effectif = tranche Insee de salariés (ex. 21 = 50 à 99, 41 = 500 à 999, 51 = 2 000 à 4 999). Dirigeants et finances volontairement exclus.",
+    "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/510469661"
+   },
+   "finess_du_prospect": {
+    "nb_etablissements_finess_france": 0,
+    "nb_etablissements_finess_yvelines": 0,
+    "nb_departements": 0,
+    "par_type": {},
+    "exemples_yvelines": [],
+    "source": "https://www.data.gouv.fr/datasets/53699569a3a729239d2046eb",
+    "aide": "Établissements dont le SIRET commence par ce SIREN. 0 ne prouve pas l'absence d'activité médico-sociale (SIRET non renseigné dans FINESS, autre entité juridique du même groupe)."
+   },
+   "origine": "demandeur de permis",
+   "consigne": "Ces résultats viennent des outils permis_du_prospect, fiche_entreprise et finess_du_prospect : cite-les. Conclus avec conclure_prospect."
+  }
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure_prospect",
+    "args": "{\"adequation\":\"moyenne\",\"besoin_immobilier\":\"Résidence sociale de 115 logements autorisée en 2025 à Sartrouville (Yvelines), projet non démarré, indique un besoin de pilotage immobilier pour la mise en œuvre.\",\"indices\":[\"permis_du_prospect: autorisation 2025 pour résidence sociale (115 logements) – projet en cours\",\"permis_du_prospect: projet terminé 2019 de 180 logements – historique de projets immobiliers\",\"fiche_entreprise: activité \\\"Location de logements\\\" (NAF 68.20A), SA de HLM, effectif 12, 4 établissements ouverts – bailleur social\",\"finess_du_prospect: 0 établissements FINESS – absence de preuve d'activité médico‑sociale, mais non excluant pour bailleur social\"],\"limites\":\"Taille petite (effectif 12) peut limiter le volume de projets, mais présence d'un permis autorisé récent montre un besoin immédiat.\",\"type_structure\":\"Bailleur social (SA de HLM)\",\"verdict\":\"prospect\"}"
+   }
+  ]
+ }
+]

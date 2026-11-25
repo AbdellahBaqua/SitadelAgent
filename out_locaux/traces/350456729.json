@@ -1,0 +1,109 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "350456729"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "350456729"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "350456729"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "350456729"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "SCI AMETO",
+     "nb_permis_PC": 1,
+     "annees_depot": [
+      "2018"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 0,
+     "surface_locaux_non_residentiels_creee_m2": 220,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 0
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "350456729",
+      "nom": "SCI AMETO",
+      "nature_juridique": "6599",
+      "naf_actuel": "68.32A",
+      "etat": "A",
+      "date_creation": "1989-03-03",
+      "categorie": null,
+      "effectif": "NN",
+      "nb_etablissements": 1,
+      "nb_etablissements_ouverts": 1,
+      "siege_actuel": {
+       "siret": "35045672900010",
+       "naf": "68.32A",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "35045672900010",
+       "naf_dans_permis": "68.32A",
+       "nb_permis": 1,
+       "annees_depot": [
+        "2018"
+       ],
+       "etat_actuel": "ouvert",
+       "date_creation": "1989-03-03",
+       "date_fermeture": null
+      }
+     ],
+     "alertes": [],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/350456729"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "68.32A",
+      "libelle": "Administration d'immeubles et autres biens immobiliers"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "6599",
+     "libelle": "Autre société civile"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"fonciere_investisseur\",\"confiance\":\"moyenne\",\"indices\":[\"fiche_entreprise : nature_juridique 6599 (Autre société civile) - forme juridique typique de SCI patrimoniale\",\"fiche_entreprise : naf_actuel 68.32A (Administration d'immeubles et autres biens immobiliers) - activité de gestion/location de patrimoine\",\"libelle_cj : code 6599 = 'Autre société civile' - confirme la forme de société civile immobilière\",\"libelle_naf : code 68.32A = 'Administration d'immeubles et autres biens immobiliers' - activité de foncière/gestion d'immeubles\",\"permis_du_demandeur : 1 permis en 2018 pour 220 m² de locaux non résidentiels, 0 logement social - cohérent avec un investisseur foncier développant du non-résidentiel\"],\"limites\":\"Un seul permis déposé (2018) ; pas de preuve directe de location effective du patrimoine (mais l'activité NAF 68.32A le suggère). La dénomination 'SCI AMETO' seule ne permet pas d'exclure une SCI familiale sans vocation locative, mais la combinaison forme juridique + activité actuelle oriente vers foncière/investisseur.\"}"
+   }
+  ]
+ }
+]

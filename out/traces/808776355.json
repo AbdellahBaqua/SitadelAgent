@@ -1,0 +1,115 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "808776355"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "808776355"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "808776355"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "808776355"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "GRAND PARIS HABITAT",
+     "nb_permis_PC": 1,
+     "annees_depot": [
+      "2018"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 30,
+     "surface_locaux_non_residentiels_creee_m2": 0,
+     "nb_permis_collectif": 1,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 15,
+     "permis_autorises_pas_remontes_comme_commences": 0
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "808776355",
+      "nom": "GRAND PARIS HABITAT",
+      "nature_juridique": "6220",
+      "naf_actuel": "41.10A",
+      "etat": "A",
+      "date_creation": "2014-12-22",
+      "categorie": "GE",
+      "effectif": "NN",
+      "nb_etablissements": 2,
+      "nb_etablissements_ouverts": 1,
+      "siege_actuel": {
+       "siret": "80877635500022",
+       "naf": "41.10A",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "80877635500022",
+       "naf_dans_permis": "70.10Z",
+       "nb_permis": 1,
+       "annees_depot": [
+        "2018"
+       ],
+       "etat_actuel": "ouvert",
+       "date_creation": "2018-11-05",
+       "date_fermeture": null
+      }
+     ],
+     "alertes": [
+      "NAF du permis ['70.10Z'] différent du NAF actuel de l'entreprise 41.10A"
+     ],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/808776355"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "41.10A",
+      "libelle": "Promotion immobilière de logements"
+     },
+     {
+      "code": "70.10Z",
+      "libelle": "Activités des sièges sociaux"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "6220",
+     "libelle": "Groupement d'intérêt économique (GIE)"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"promoteur\",\"confiance\":\"moyenne\",\"indices\":[\"fiche_entreprise : naf_actuel 41.10A « Promotion immobilière de logements » (activité actuelle de l'entreprise)\",\"libelle_naf : 41.10A correspond à la promotion immobilière de logements\",\"permis_du_demandeur : 1 permis en 2018 créant 30 logements dont 15 locatifs sociaux, type collectif\",\"libelle_cj : catégorie juridique 6220 « Groupement d'intérêt économique (GIE) », forme non listée parmi les bailleurs sociaux (OPH, SA HLM, coopérative HLM, SEM)\"],\"limites\":\"La production de logements locatifs sociaux (15 sur 30) pourrait suggérer un lien avec le secteur HLM, mais la forme juridique (GIE) et l'activité actuelle (promotion immobilière) orientent vers un promoteur, éventuellement véhicule de promotion pour des bailleurs sociaux. L'établissement du permis (70.10Z « Activités des sièges sociaux ») diffère du NAF actuel, mais l'établissement est encore ouvert.\"}"
+   }
+  ]
+ }
+]

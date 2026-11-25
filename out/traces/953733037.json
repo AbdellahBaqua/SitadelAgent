@@ -1,0 +1,115 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "953733037"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "953733037"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "953733037"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "953733037"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "FONCIM",
+     "nb_permis_PC": 1,
+     "annees_depot": [
+      "2025"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 1,
+     "surface_locaux_non_residentiels_creee_m2": 0,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 1,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 1
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "953733037",
+      "nom": "FONCIM",
+      "nature_juridique": "5710",
+      "naf_actuel": "74.90A",
+      "etat": "A",
+      "date_creation": "2023-06-22",
+      "categorie": "PME",
+      "effectif": "NN",
+      "nb_etablissements": 1,
+      "nb_etablissements_ouverts": 1,
+      "siege_actuel": {
+       "siret": "95373303700014",
+       "naf": "74.90A",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "95373303700014",
+       "naf_dans_permis": "70.10Z",
+       "nb_permis": 1,
+       "annees_depot": [
+        "2025"
+       ],
+       "etat_actuel": "ouvert",
+       "date_creation": "2023-06-22",
+       "date_fermeture": null
+      }
+     ],
+     "alertes": [
+      "NAF du permis ['70.10Z'] différent du NAF actuel de l'entreprise 74.90A"
+     ],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/953733037"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "70.10Z",
+      "libelle": "Activités des sièges sociaux"
+     },
+     {
+      "code": "74.90A",
+      "libelle": "Activité des économistes de la construction"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5710",
+     "libelle": "SAS, société par actions simplifiée"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"entreprise_autre\",\"confiance\":\"moyenne\",\"indices\":[\"fiche_entreprise : forme juridique SAS (cj 5710), entreprise active créée en 2023, NAF actuel 74.90A « Activité des économistes de la construction »\",\"libelle_naf : 74.90A = Activité des économistes de la construction (prestation de services techniques pour la construction) ; 70.10Z = Activités des sièges sociaux (holding)\",\"permis_du_demandeur : 1 seul permis en 2025, maison individuelle (1 logement, 0 logement social, 0 collectif), pas de patrimoine locatif social déclaré\",\"fiche_entreprise (alerte) : NAF du permis (70.10Z) différent du NAF actuel de l'entreprise (74.90A), l'établissement du permis est le siège et est ouvert\"],\"limites\":\"L'entreprise porte un nom évoquant le foncier (FONCIM) et a déposé un permis pour une maison individuelle via une structure en holding (NAF 70.10Z dans le permis), mais son activité principale déclarée aujourd'hui est l'économie de la construction (74.90A), soit une prestation de services techniques. Aucun élément ne rattache cette SAS à une activité de promotion immobilière (vente en l'état futur d'achèvement), de foncière (détention/location de patrimoine), de bailleur social ou d'acteur de l'ESS. Le cas reste atypique : une société de services qui réalise un projet pour compte propre (maison individuelle). La classification « entreprise_autre » reflète cette activité de service à la construction qui ne rentre dans aucune famille ciblée.\"}"
+   }
+  ]
+ }
+]

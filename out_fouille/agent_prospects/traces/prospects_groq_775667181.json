@@ -1,0 +1,272 @@
+[
+ {
+  "etape": "pre",
+  "texte": "résultats calculés par le code avant le modèle",
+  "entree": {
+   "siren": "775667181",
+   "denomination": "FONDATION MALLET",
+   "famille_classification": "association_ess",
+   "raisons_du_score": "famille cible (association_ess) +3 ; dépôt récent (2025) +2 ; 2 permis autorisé(s) depuis moins de 3 ans, pas encore commencé(s) +2 ; projet de taille significative (≥ 20 logements ou ≥ 1 000 m²) +1",
+   "taille_calculee": "grande",
+   "taille_calcul": "salariés ≥ 500, établissements ouverts 10, établissements FINESS 9",
+   "permis_du_prospect": [
+    {
+     "num_dau": "07838125M0001",
+     "fichier": "logements",
+     "annee_depot": "2025",
+     "commune": "MAULETTE",
+     "etat": "terminé",
+     "type_projet": "",
+     "logements_crees": 1,
+     "surface_locaux_creee_m2": null
+    },
+    {
+     "num_dau": "07852024M0002",
+     "fichier": "logements",
+     "annee_depot": "2024",
+     "commune": "RICHEBOURG",
+     "etat": "autorisé",
+     "type_projet": "",
+     "logements_crees": 1,
+     "surface_locaux_creee_m2": null
+    },
+    {
+     "num_dau": "0784742300005",
+     "fichier": "logements",
+     "annee_depot": "2023",
+     "commune": "ORVILLIERS",
+     "etat": "terminé",
+     "type_projet": "",
+     "logements_crees": 1,
+     "surface_locaux_creee_m2": null
+    },
+    {
+     "num_dau": "07831023M0001",
+     "fichier": "locaux",
+     "annee_depot": "2023",
+     "commune": "HOUDAN",
+     "etat": "autorisé",
+     "type_projet": "",
+     "logements_crees": null,
+     "surface_locaux_creee_m2": 362
+    },
+    {
+     "num_dau": "07852023M0007",
+     "fichier": "locaux",
+     "annee_depot": "2023",
+     "commune": "RICHEBOURG",
+     "etat": "autorisé",
+     "type_projet": "",
+     "logements_crees": null,
+     "surface_locaux_creee_m2": 240
+    },
+    {
+     "num_dau": "07852022M0008",
+     "fichier": "logements",
+     "annee_depot": "2022",
+     "commune": "RICHEBOURG",
+     "etat": "autorisé",
+     "type_projet": "",
+     "logements_crees": 1,
+     "surface_locaux_creee_m2": null
+    },
+    {
+     "num_dau": "07831022M0011",
+     "fichier": "locaux",
+     "annee_depot": "2022",
+     "commune": "HOUDAN",
+     "etat": "autorisé",
+     "type_projet": "",
+     "logements_crees": null,
+     "surface_locaux_creee_m2": 222
+    },
+    {
+     "num_dau": "07852022M0007",
+     "fichier": "locaux",
+     "annee_depot": "2022",
+     "commune": "RICHEBOURG",
+     "etat": "autorisé",
+     "type_projet": "",
+     "logements_crees": null,
+     "surface_locaux_creee_m2": 147
+    },
+    {
+     "num_dau": "0783102100004",
+     "fichier": "logements",
+     "annee_depot": "2021",
+     "commune": "HOUDAN",
+     "etat": "autorisé",
+     "type_projet": "",
+     "logements_crees": 6,
+     "surface_locaux_creee_m2": null
+    },
+    {
+     "num_dau": "0783102100011",
+     "fichier": "locaux",
+     "annee_depot": "2021",
+     "commune": "HOUDAN",
+     "etat": "autorisé",
+     "type_projet": "",
+     "logements_crees": null,
+     "surface_locaux_creee_m2": 885
+    },
+    {
+     "num_dau": "0783102100018",
+     "fichier": "locaux",
+     "annee_depot": "2021",
+     "commune": "HOUDAN",
+     "etat": "terminé",
+     "type_projet": "",
+     "logements_crees": null,
+     "surface_locaux_creee_m2": 156
+    },
+    {
+     "num_dau": "0783102100021",
+     "fichier": "locaux",
+     "annee_depot": "2021",
+     "commune": "HOUDAN",
+     "etat": "autorisé",
+     "type_projet": "",
+     "logements_crees": null,
+     "surface_locaux_creee_m2": 0
+    },
+    {
+     "num_dau": "07804820M0012",
+     "fichier": "locaux",
+     "annee_depot": "2020",
+     "commune": "BAZAINVILLE",
+     "etat": "autorisé",
+     "type_projet": "",
+     "logements_crees": null,
+     "surface_locaux_creee_m2": 2263
+    },
+    {
+     "num_dau": "07804820M0023",
+     "fichier": "locaux",
+     "annee_depot": "2020",
+     "commune": "BAZAINVILLE",
+     "etat": "autorisé",
+     "type_projet": "",
+     "logements_crees": null,
+     "surface_locaux_creee_m2": 4587
+    },
+    {
+     "num_dau": "07831020M0006",
+     "fichier": "locaux",
+     "annee_depot": "2020",
+     "commune": "HOUDAN",
+     "etat": "autorisé",
+     "type_projet": "",
+     "logements_crees": null,
+     "surface_locaux_creee_m2": 24
+    }
+   ],
+   "fiche_entreprise": {
+    "nom": "FONDATION MALLET",
+    "nature_juridique": "9300",
+    "naf_actuel": "86.10Z",
+    "etat": "A",
+    "date_creation": "1900-01-01",
+    "categorie": "ETI",
+    "effectif": "41",
+    "nb_etablissements": 10,
+    "nb_etablissements_ouverts": 10,
+    "libelle_naf_actuel": "Activités hospitalières",
+    "libelle_nature_juridique": "Fondation",
+    "aide": "etat A = active, C ou F = cessée. effectif = tranche Insee de salariés (ex. 21 = 50 à 99, 41 = 500 à 999, 51 = 2 000 à 4 999). Dirigeants et finances volontairement exclus.",
+    "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/775667181"
+   },
+   "finess_du_prospect": {
+    "nb_etablissements_finess_france": 9,
+    "nb_etablissements_finess_yvelines": 9,
+    "nb_departements": 1,
+    "par_type": {
+     "Etab. et Services d'Hébergement pour Adultes Handicapés": 5,
+     "Etab.et Services de Travail Protégé pour Adultes Handicapés": 1,
+     "Services à Domicile ou Ambulatoires pour Handicapés": 1,
+     "Etablissements d'Education Spéciale pour Handicapés Moteurs": 1,
+     "Etablissements de santé privé autorisés en SSR": 1
+    },
+    "exemples_yvelines": [
+     {
+      "finess": "780010468",
+      "nom": "FOYER HEBERGEMENT ADULTES HANDICAPES",
+      "ville": "STE MESME",
+      "categorie": "Foyer Hébergement Adultes Handicapés",
+      "ouverture": "2007-09-01"
+     },
+     {
+      "finess": "780010518",
+      "nom": "FOYER DE VIE FONTAINE BOUILLANTE",
+      "ville": "STE MESME",
+      "categorie": "Foyer de Vie pour Adultes Handicapés",
+      "ouverture": "2007-09-01"
+     },
+     {
+      "finess": "780012878",
+      "nom": "ETABLISSEMENT ET SERVICE D AIDE PAR LE TRAVAIL",
+      "ville": "STE MESME",
+      "categorie": "Etablissement et Service d'Aide par le Travail (E.S.A.T.)",
+      "ouverture": "2007-09-24"
+     },
+     {
+      "finess": "780018214",
+      "nom": "EAM LA SABLONNIERE",
+      "ville": "RICHEBOURG",
+      "categorie": "Etab.Acc.Médicalisé en tout ou partie personnes handicapées",
+      "ouverture": "2003-07-01"
+     },
+     {
+      "finess": "780023511",
+      "nom": "SESSAD DE RICHEBOURG",
+      "ville": "RICHEBOURG",
+      "categorie": "Service d'Éducation Spéciale et de Soins à Domicile",
+      "ouverture": "2017-01-17"
+     },
+     {
+      "finess": "780690368",
+      "nom": "INSTITUT D EDUCATION MOTRICE",
+      "ville": "RICHEBOURG",
+      "categorie": "Institut d'éducation motrice",
+      "ouverture": "1947-10-27"
+     },
+     {
+      "finess": "780823290",
+      "nom": "FOYER D ACCUEIL MEDICALISE",
+      "ville": "RICHEBOURG",
+      "categorie": "Foyer d'Accueil Médicalisé pour Adultes Handicapés (F.A.M.)",
+      "ouverture": "1991-10-01"
+     },
+     {
+      "finess": "780825816",
+      "nom": "POLE MEDECINE PHYSIQUE ET DE READAPTATION-FONDATION MALLET",
+      "ville": "RICHEBOURG",
+      "categorie": "Etablissement de santé privé autorisé en SSR",
+      "ouverture": "1978-08-23"
+     },
+     {
+      "finess": "780826186",
+      "nom": "FOYER DE VIE LA MAISON DES BOIS",
+      "ville": "RICHEBOURG",
+      "categorie": "Foyer de Vie pour Adultes Handicapés",
+      "ouverture": "1904-04-04"
+     }
+    ],
+    "source": "https://www.data.gouv.fr/datasets/53699569a3a729239d2046eb",
+    "aide": "Établissements dont le SIRET commence par ce SIREN. 0 ne prouve pas l'absence d'activité médico-sociale (SIRET non renseigné dans FINESS, autre entité juridique du même groupe)."
+   },
+   "origine": "demandeur de permis",
+   "consigne": "Ces résultats viennent des outils permis_du_prospect, fiche_entreprise et finess_du_prospect : cite-les. Conclus avec conclure_prospect."
+  }
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure_prospect",
+    "args": "{\"adequation\":\"forte\",\"besoin_immobilier\":\"Multiples projets de construction et de réhabilitation de locaux et de logements autorisés depuis 2020, dont plusieurs restent à lancer (ex. locaux de 362 m² à Houdan, 240 m² à Richebourg, 885 m² à Houdan, etc.)\",\"indices\":[\"permis_du_prospect: autorisations récentes (2025, 2024, 2023) de logements et de locaux, plusieurs projets toujours en état \\\"autorisé\\\" et non démarrés\",\"fiche_entreprise: nature juridique \\\"Fondation\\\", activité hospitalière (86.10Z), effectif 41 (500‑999 salariés), 10 établissements ouverts, statut actif (A)\",\"finess_du_prospect: 9 établissements FINESS en Yvelines, tous médico‑sociaux (foyers d’hébergement, services d’aide, SSR, etc.)\"],\"limites\":\"Aucun détail sur le budget ou la priorité des projets, mais la présence d’autorisation non démarrée indique un besoin immobilier potentiel.\",\"type_structure\":\"Fondation du secteur hospitalier, gestionnaire d’établissements médico‑sociaux\",\"verdict\":\"prospect\"}"
+   }
+  ]
+ }
+]

@@ -1,0 +1,96 @@
+[
+ {
+  "modele": "claude-opus-5-5 (session Claude Code)",
+  "theme": "medico_social",
+  "titre": "Les résidences médico-sociales et sociales des Yvelines sont portées par les promoteurs et les bailleurs, presque jamais par les associations",
+  "fiabilite": "fragile",
+  "constat": "64 PC déclarent une résidence pour personnes âgées, hôtelière sociale, sociale ou pour handicapés (RESIDENCE 1, 4, 5 ou 6). Les promoteurs en déposent 26 (2 698 logements) et les bailleurs sociaux 23 (2 229 logements), soit 49 permis sur 64, environ 77 %. Les associations n'en déposent que 4 (56 logements). Les résidences pour personnes âgées, 33 PC, suivent un rythme de 3 à 5 permis par an de 2017 à 2021, puis 2 en 2022, 2 en 2023 et 1 en 2024.",
+  "interet_buddimm": "Dans les Yvelines, les gestionnaires médico-sociaux ne construisent pas eux-mêmes leurs résidences : un promoteur ou un bailleur porte le permis. Pour Buddimm, l'enjeu est d'accompagner l'association dans ce montage (choix du porteur, programme, VEFA ou bail), pas seulement de la repérer comme demandeur.",
+  "chiffres_non_verifies": []
+ },
+ {
+  "modele": "claude-opus-5-5 (session Claude Code)",
+  "theme": "libre",
+  "titre": "Reconversion d'équipements publics en logements : beaucoup de petites opérations de collectivités, quelques grosses de promoteurs",
+  "fiabilite": "fragile",
+  "constat": "38 PC transforment principalement des locaux de service public ou d'intérêt collectif en logements. Les collectivités en portent 11, soit 29 % (11 sur 38), mais seulement 69 logements. Les promoteurs en portent 7 pour 261 logements, les foncières 9 pour 183, les bailleurs sociaux 5 pour 55 et les associations 3 pour 34.",
+  "interet_buddimm": "Ces reconversions (bâtiments communaux, anciens équipements) sont des montages complexes. Les petites opérations de collectivités signalent des communes des Yvelines qui valorisent leur patrimoine bâti : des bâtiments publics potentiellement mobilisables pour un projet associatif ou de logement social.",
+  "chiffres_non_verifies": []
+ },
+ {
+  "modele": "nvidia/nemotron-3.5-lightning-30b-a3b",
+  "theme": "geographie",
+  "titre": "Dominance des promoteurs",
+  "fiabilite": "établi",
+  "constat": "Sur les 3363 permis analysés, les promoteurs ont déposé 1146 permis (34,1 % du total), générant 62 906 logements, soit la part la plus élevée parmi les familles de demandeurs.",
+  "interet_buddimm": "Prospection ciblée vers les promoteurs pour les opérations de conseil en développement immobilier et identification de territoires à fort potentiel promoteur.",
+  "chiffres_non_verifies": []
+ },
+ {
+  "modele": "nvidia/nemotron-3.5-lightning-30b-a3b",
+  "theme": "transformations",
+  "titre": "Promoteurs en tête des reconversions bureaux → logements",
+  "fiabilite": "établi",
+  "constat": "Sur les 360 permis de transformation de locaux en logements (type 1), 50 sont déposés par des promoteurs, représentant 1 % des 3 363 permis totaux et 13,9 % des permis de type 1 (50/360). Ces 50 permis génèrent 1 998 logements, soit 51,1 % des logements issus de type 1 (1 998/3 908).",
+  "interet_buddimm": "Identifier les promoteurs actifs sur les reconversions permet cibler des opérations de conseil ou de partenariat pour Buddimm, notamment auprès de ceux qui réalisent le plus de logements par permis.",
+  "chiffres_non_verifies": []
+ },
+ {
+  "modele": "nvidia/nemotron-3.5-lightning-30b-a3b",
+  "theme": "dynamique",
+  "titre": "Répartition des permis par famille de demandeur",
+  "fiabilite": "établi",
+  "constat": "Sur 3363 permis analysés (période 2011-2023), la famille « fonciere_investisseur » dépose 1462 permis (43,5 %), « promoteur » 1146 permis (34,1 %), « bailleur_social » 300 permis (8,9 %), « entreprise_autre » 204 permis (6,1 %), « collectivite_public » 166 permis (4,9 %), « association_ess » 41 permis (1,2 %), « non_determine » 34 permis (1,0 %), « exploitant_sante_social » 6 permis (0,2 %) et « copropriete » 4 permis (0,1 %).",
+  "interet_buddimm": "Identifier les familles d’acteurs dominantes pour orienter la prospection et le conseil immobilier (ex: prioriser les promoteurs et foncières investisseuses).",
+  "chiffres_non_verifies": []
+ },
+ {
+  "modele": "nvidia/nemotron-3.5-lightning-30b-a3b",
+  "theme": "dynamique",
+  "titre": "Pic des dépôts en 2021 puis recul",
+  "fiabilite": "établi",
+  "constat": "Le nombre de permis déposés par an atteint son pic en 2021 avec 356 permis, soit 10,6 % des 3363 permis totaux (356 / 3363). Après 2021, on observe un recul régulier : 247 permis en 2022, 221 en 2023 et 185 en 2024 (5,5 % soit 185 / 3363).",
+  "interet_buddimm": "Identifier les années de forte activité pour ajuster les cycles de prospection et anticiper les périodes de baisse.",
+  "chiffres_non_verifies": []
+ },
+ {
+  "modele": "nvidia/nemotron-3.5-lightning-30b-a3b",
+  "theme": "libre",
+  "titre": "Foncier investisseur : spécialiste du logement individuel",
+  "fiabilite": "établi",
+  "constat": "Sur les 1462 permis fonciers investisseurs répertoriés dans les Yvelines, 704 (48,2 % soit 704 sur 1462) concernent un seul logement individuel (TYPE_PRINCIP_LOGTS_CREES = 1), représentant 704 logements. Les 758 autres permis (51,8 % soit 758 sur 1462) produisent principalement des logements collectifs (type 3) ou plusieurs individuels, soit 10 198 logements au total (10 902 − 704).",
+  "interet_buddimm": "Identifier des opportunités de prospection pour des projets de petits lots ou de rénovation individuelle, et cibler les promoteurs fonciers pour des opérations de division foncière.",
+  "chiffres_non_verifies": [
+   "10 198",
+   "51,8 % (base absente ou fausse dans la phrase)",
+   "758"
+  ]
+ },
+ {
+  "modele": "claude-opus-5-5 (session Claude Code)",
+  "theme": "medico_social",
+  "titre": "Les associations sont des maîtres d'ouvrage occasionnels, et le champ RESIDENCE ne les voit presque pas",
+  "fiabilite": "établi",
+  "constat": "30 demandeurs des familles association_ess ou exploitant_sante_social déposent 47 PC. Seuls 6 en déposent plus d'un (6, 6, 3, 3, 3 et 2 permis) : les autres n'ont qu'un permis sur toute la période. Sur ces 47 permis, 41 ont RESIDENCE non rempli, soit 87 % (41 sur 47), alors que ces structures portent souvent de l'hébergement spécifique.",
+  "interet_buddimm": "C'est le profil d'un client de direction immobilière externalisée : une structure qui construit rarement et sans équipe immobilière. Pour les repérer, il faut partir de la forme juridique du demandeur (association, fondation) et non du champ RESIDENCE.",
+  "chiffres_non_verifies": []
+ },
+ {
+  "modele": "claude-opus-5-5 (session Claude Code)",
+  "theme": "medico_social",
+  "titre": "La promotion des Yvelines passe surtout par des sociétés de construction-vente à usage unique : le vrai promoteur est masqué",
+  "fiabilite": "établi",
+  "constat": "La famille promoteur dépose 1 146 PC. Les SCI de construction-vente (CJ 6541) en déposent 484, soit 42,2 % (484 sur 1 146), pour 27 254 logements, mais ce sont 426 sociétés différentes : à peine plus d'un permis chacune. À l'inverse, les SAS déposent 299 permis pour 123 demandeurs et les SNC 140 permis pour 52 demandeurs.",
+  "interet_buddimm": "Compter les permis par SIREN sous-estime fortement la récurrence des grands promoteurs. Pour savoir qui construit régulièrement (partenaires possibles en VEFA pour un bailleur ou une association), il faut rattacher chaque société de programme à son groupe.",
+  "chiffres_non_verifies": []
+ },
+ {
+  "modele": "nvidia/nemotron-3.5-lightning-30b-a3b",
+  "theme": "libre",
+  "titre": "Promoteur dominant et focus sur le collectif",
+  "fiabilite": "établi",
+  "constat": "Sur les 3363 permis déposés dans les Yvelines, les promoteurs déposent 1146 permis (34,1 % soit 1146 / 3363) et produisent 62 906 logements (69,8 % soit 62 906 / 90 115). Ces projets sont majoritairement des logements collectifs (type 3 : collectif hors résidence) représentant 53 467 logements sur les 62 906 soit 84,9 % de leurs productions.",
+  "interet_buddimm": "Prospection ciblée auprès des promoteurs pour des opérations de densification, regroupement ou transformation de projets existants.",
+  "chiffres_non_verifies": []
+ }
+]

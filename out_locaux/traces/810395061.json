@@ -1,0 +1,115 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "810395061"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "810395061"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "810395061"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "810395061"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "SELARL LOGEREAU MARTINOLES",
+     "nb_permis_PC": 1,
+     "annees_depot": [
+      "2017"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 0,
+     "surface_locaux_non_residentiels_creee_m2": 23,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 1
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "810395061",
+      "nom": "SELARL LOGEREAU MARTINOLES",
+      "nature_juridique": "5485",
+      "naf_actuel": "47.73Z",
+      "etat": "A",
+      "date_creation": "2015-03-24",
+      "categorie": "PME",
+      "effectif": "02",
+      "nb_etablissements": 1,
+      "nb_etablissements_ouverts": 1,
+      "siege_actuel": {
+       "siret": "81039506100015",
+       "naf": "47.73Z",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "81039506100015",
+       "naf_dans_permis": "70.10Z",
+       "nb_permis": 1,
+       "annees_depot": [
+        "2017"
+       ],
+       "etat_actuel": "ouvert",
+       "date_creation": "2015-03-24",
+       "date_fermeture": null
+      }
+     ],
+     "alertes": [
+      "NAF du permis ['70.10Z'] différent du NAF actuel de l'entreprise 47.73Z"
+     ],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/810395061"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "47.73Z",
+      "libelle": "Commerce de détail de produits pharmaceutiques en magasin spécialisé"
+     },
+     {
+      "code": "70.10Z",
+      "libelle": "Activités des sièges sociaux"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5485",
+     "libelle": "Société d'exercice libéral à responsabilité limitée"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"entreprise_autre\",\"confiance\":\"moyenne\",\"indices\":[\"fiche_entreprise : NAF actuel 47.73Z « Commerce de détail de produits pharmaceutiques en magasin spécialisé » (pharmacie)\",\"fiche_entreprise : forme juridique 5485 « Société d'exercice libéral à responsabilité limitée » (SELARL), structure d'exercice libéral (pharmaciens)\",\"permis_du_demandeur : 1 permis en 2017, 0 logement créé, 23 m² de surface non résidentielle créée (local commercial probable)\",\"libelle_naf : confirmation que 47.73Z = commerce de détail pharmaceutique, 70.10Z (permis) = activités des sièges sociaux (indice historique, établissement ouvert)\"],\"limites\":\"Le permis ne porte que sur 23 m² non résidentiels (pas de logement), ce qui écarte bailleur_social, promoteur, foncière. La SELARL est une forme commerciale libérale, pas une association ESS ni un exploitant médico-social au sens hébergement/soins. L'activité actuelle est une pharmacie (commerce), non un opérateur de santé/social. La famille « entreprise_autre » convient pour une société commerciale hors catégories ciblées.\"}"
+   }
+  ]
+ }
+]

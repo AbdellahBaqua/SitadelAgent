@@ -1,0 +1,115 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "931154785"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "931154785"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "931154785"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "931154785"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "HTBY 2",
+     "nb_permis_PC": 1,
+     "annees_depot": [
+      "2024"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 0,
+     "surface_locaux_non_residentiels_creee_m2": 0,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 0
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "931154785",
+      "nom": "HTBY 2 (LES CHERUBINS DES CLAYES)",
+      "nature_juridique": "5499",
+      "naf_actuel": "88.91A",
+      "etat": "A",
+      "date_creation": "2024-06-17",
+      "categorie": "PME",
+      "effectif": "NN",
+      "nb_etablissements": 1,
+      "nb_etablissements_ouverts": 1,
+      "siege_actuel": {
+       "siret": "93115478500014",
+       "naf": "88.91A",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "93115478500014",
+       "naf_dans_permis": "70.10Z",
+       "nb_permis": 1,
+       "annees_depot": [
+        "2024"
+       ],
+       "etat_actuel": "ouvert",
+       "date_creation": "2024-06-17",
+       "date_fermeture": null
+      }
+     ],
+     "alertes": [
+      "NAF du permis ['70.10Z'] différent du NAF actuel de l'entreprise 88.91A"
+     ],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/931154785"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "70.10Z",
+      "libelle": "Activités des sièges sociaux"
+     },
+     {
+      "code": "88.91A",
+      "libelle": "Accueil de jeunes enfants"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5499",
+     "libelle": "Société à responsabilité limitée (sans autre indication)"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"exploitant_sante_social\",\"confiance\":\"haute\",\"indices\":[\"fiche_entreprise : naf_actuel = 88.91A « Accueil de jeunes enfants » (activité actuelle de l'entreprise)\",\"libelle_naf : 88.91A correspond à l'accueil de jeunes enfants (petite enfance)\",\"dénomination : « HTBY 2 (LES CHERUBINS DES CLAYES) » – « Les Cherubins » évoque une structure d'accueil de jeunes enfants\",\"fiche_entreprise : nature_juridique 5499 (SARL) – opérateur privé, non association\",\"permis_du_demandeur : 1 permis en 2024, aucun logement créé, aucun logement social déclaré – cohérent avec un équipement petite enfance\"],\"limites\":\"Le NAF du permis (70.10Z « Activités des sièges sociaux ») diffère du NAF actuel ; il s'agit d'un indice historique d'un établissement qui est toujours ouvert. L'objet précis du permis (construction d'une crèche ?) n'est pas détaillé dans les données disponibles.\"}"
+   }
+  ]
+ }
+]

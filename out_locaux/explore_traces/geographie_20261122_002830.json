@@ -1,0 +1,1651 @@
+[
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "apercu",
+    "args": {},
+    "sortie": {
+     "perimetre": "PC des Yvelines (78) créant des locaux non résidentiels, déposés par des personnes morales, extraction SDES/Sitadel",
+     "nb_permis": 4245,
+     "nb_demandeurs": 2439,
+     "annees_depot": {
+      "2005": 1,
+      "2006": 1,
+      "2008": 1,
+      "2012": 97,
+      "2013": 257,
+      "2014": 271,
+      "2015": 258,
+      "2016": 322,
+      "2017": 341,
+      "2018": 360,
+      "2019": 331,
+      "2020": 270,
+      "2021": 347,
+      "2022": 370,
+      "2023": 334,
+      "2024": 300,
+      "2025": 282,
+      "2026": 101,
+      "2087": 1
+     },
+     "familles_demandeurs": {
+      "fonciere_investisseur": 895,
+      "entreprise_autre": 602,
+      "collectivite_public": 303,
+      "promoteur": 266,
+      "non_determine": 184,
+      "association_ess": 135,
+      "exploitant_sante_social": 32,
+      "bailleur_social": 21,
+      "copropriete": 1
+     },
+     "colonnes_interrogeables": [
+      "famille",
+      "AN_DEPOT",
+      "COMM",
+      "ADR_LOCALITE_TER",
+      "ETAT_DAU",
+      "DESTINATION_PRINCIPALE",
+      "DEST_SURF_MAX",
+      "TYPE_SERVICE_PUBLIC",
+      "NATURE_PROJET_COMPLETEE",
+      "TYPE_TRANSFO_PRINCIPAL",
+      "TYPE_PRINCIP_LOCAUX_TRANSFORMES",
+      "ZONE_OP",
+      "CJ_DEM",
+      "APE_DEM",
+      "SIREN_DEM",
+      "DENOM_DEM"
+     ],
+     "mesures": [
+      "permis",
+      "surface_m2",
+      "acteurs"
+     ],
+     "remarques": [
+      "2026 est une année partielle",
+      "un permis modificatif n'a pas de ligne propre",
+      "~15 % des ouvertures de chantier et ~1/3 des achèvements ne remontent jamais",
+      "APE_DEM = NAF de l'établissement du permis, possiblement fermé",
+      "surface_m2 = SURF_LOC_CREEE, surface de plancher de locaux non résidentiels créée",
+      "DEST_SURF_MAX = destination qui reçoit le plus de surface (calculée par le code à partir des SURF_*)",
+      "DESTINATION_PRINCIPALE est codée par le SDES (introduite en mai 2022) ; TYPE_SERVICE_PUBLIC vient du formulaire et est souvent 'non rempli'",
+      "un même permis peut aussi créer des logements : il figure alors aussi dans le fichier logements"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 1,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "COMM",
+      "DEST_SURF_MAX"
+     ],
+     "mesure": "surface_m2",
+     "top": 30
+    },
+    "sortie": {
+     "filtres": {},
+     "nb_permis_filtres": 4245,
+     "nb_groupes": 834,
+     "resultats": [
+      {
+       "COMM": "78423",
+       "DEST_SURF_MAX": "bureaux",
+       "permis": 22,
+       "surface_m2": 244446,
+       "acteurs": 19
+      },
+      {
+       "COMM": "78640",
+       "DEST_SURF_MAX": "bureaux",
+       "permis": 24,
+       "surface_m2": 194236,
+       "acteurs": 19
+      },
+      {
+       "COMM": "78551",
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "permis": 59,
+       "surface_m2": 160117,
+       "acteurs": 35
+      },
+      {
+       "COMM": "78238",
+       "DEST_SURF_MAX": "entrepôt",
+       "permis": 3,
+       "surface_m2": 120311,
+       "acteurs": 3
+      },
+      {
+       "COMM": "78003",
+       "DEST_SURF_MAX": "entrepôt",
+       "permis": 15,
+       "surface_m2": 118169,
+       "acteurs": 11
+      },
+      {
+       "COMM": "78498",
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "permis": 48,
+       "surface_m2": 108973,
+       "acteurs": 23
+      },
+      {
+       "COMM": "78640",
+       "DEST_SURF_MAX": "commerce",
+       "permis": 24,
+       "surface_m2": 102380,
+       "acteurs": 21
+      },
+      {
+       "COMM": "78297",
+       "DEST_SURF_MAX": "bureaux",
+       "permis": 27,
+       "surface_m2": 97602,
+       "acteurs": 24
+      },
+      {
+       "COMM": "78640",
+       "DEST_SURF_MAX": "industrie",
+       "permis": 11,
+       "surface_m2": 92798,
+       "acteurs": 6
+      },
+      {
+       "COMM": "78490",
+       "DEST_SURF_MAX": "commerce",
+       "permis": 31,
+       "surface_m2": 85933,
+       "acteurs": 24
+      },
+      {
+       "COMM": "78335",
+       "DEST_SURF_MAX": "entrepôt",
+       "permis": 11,
+       "surface_m2": 70866,
+       "acteurs": 11
+      },
+      {
+       "COMM": "78361",
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "permis": 58,
+       "surface_m2": 70127,
+       "acteurs": 31
+      },
+      {
+       "COMM": "78118",
+       "DEST_SURF_MAX": "commerce",
+       "permis": 20,
+       "surface_m2": 65277,
+       "acteurs": 15
+      },
+      {
+       "COMM": "78440",
+       "DEST_SURF_MAX": "industrie",
+       "permis": 19,
+       "surface_m2": 62439,
+       "acteurs": 12
+      },
+      {
+       "COMM": "78490",
+       "DEST_SURF_MAX": "industrie",
+       "permis": 9,
+       "surface_m2": 57886,
+       "acteurs": 8
+      },
+      {
+       "COMM": "78646",
+       "DEST_SURF_MAX": "bureaux",
+       "permis": 28,
+       "surface_m2": 56044,
+       "acteurs": 25
+      },
+      {
+       "COMM": "78029",
+       "DEST_SURF_MAX": "commerce",
+       "permis": 14,
+       "surface_m2": 55301,
+       "acteurs": 8
+      },
+      {
+       "COMM": "78418",
+       "DEST_SURF_MAX": "commerce",
+       "permis": 6,
+       "surface_m2": 54365,
+       "acteurs": 6
+      },
+      {
+       "COMM": "78646",
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "permis": 51,
+       "surface_m2": 47200,
+       "acteurs": 30
+      },
+      {
+       "COMM": "78138",
+       "DEST_SURF_MAX": "entrepôt",
+       "permis": 11,
+       "surface_m2": 47186,
+       "acteurs": 9
+      },
+      {
+       "COMM": "78498",
+       "DEST_SURF_MAX": "bureaux",
+       "permis": 8,
+       "surface_m2": 46260,
+       "acteurs": 8
+      },
+      {
+       "COMM": "78029",
+       "DEST_SURF_MAX": "entrepôt",
+       "permis": 18,
+       "surface_m2": 45081,
+       "acteurs": 16
+      },
+      {
+       "COMM": "78440",
+       "DEST_SURF_MAX": "entrepôt",
+       "permis": 11,
+       "surface_m2": 43374,
+       "acteurs": 10
+      },
+      {
+       "COMM": "78644",
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "permis": 6,
+       "surface_m2": 41779,
+       "acteurs": 4
+      },
+      {
+       "COMM": "78640",
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "permis": 14,
+       "surface_m2": 41055,
+       "acteurs": 11
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 2,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "DEST_SURF_MAX",
+      "famille"
+     ],
+     "mesure": "surface_m2",
+     "top": 30
+    },
+    "sortie": {
+     "filtres": {},
+     "nb_permis_filtres": 4245,
+     "nb_groupes": 56,
+     "resultats": [
+      {
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "famille": "collectivite_public",
+       "permis": 938,
+       "surface_m2": 724425,
+       "acteurs": 268
+      },
+      {
+       "DEST_SURF_MAX": "commerce",
+       "famille": "fonciere_investisseur",
+       "permis": 401,
+       "surface_m2": 523123,
+       "acteurs": 327
+      },
+      {
+       "DEST_SURF_MAX": "entrepôt",
+       "famille": "fonciere_investisseur",
+       "permis": 217,
+       "surface_m2": 505226,
+       "acteurs": 194
+      },
+      {
+       "DEST_SURF_MAX": "bureaux",
+       "famille": "promoteur",
+       "permis": 61,
+       "surface_m2": 339876,
+       "acteurs": 50
+      },
+      {
+       "DEST_SURF_MAX": "bureaux",
+       "famille": "fonciere_investisseur",
+       "permis": 218,
+       "surface_m2": 336015,
+       "acteurs": 201
+      },
+      {
+       "DEST_SURF_MAX": "industrie",
+       "famille": "fonciere_investisseur",
+       "permis": 109,
+       "surface_m2": 273660,
+       "acteurs": 89
+      },
+      {
+       "DEST_SURF_MAX": "entrepôt",
+       "famille": "entreprise_autre",
+       "permis": 105,
+       "surface_m2": 241120,
+       "acteurs": 89
+      },
+      {
+       "DEST_SURF_MAX": "commerce",
+       "famille": "promoteur",
+       "permis": 200,
+       "surface_m2": 226285,
+       "acteurs": 158
+      },
+      {
+       "DEST_SURF_MAX": "industrie",
+       "famille": "entreprise_autre",
+       "permis": 166,
+       "surface_m2": 202494,
+       "acteurs": 98
+      },
+      {
+       "DEST_SURF_MAX": "agriculture",
+       "famille": "entreprise_autre",
+       "permis": 151,
+       "surface_m2": 196611,
+       "acteurs": 110
+      },
+      {
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "famille": "fonciere_investisseur",
+       "permis": 110,
+       "surface_m2": 187115,
+       "acteurs": 89
+      },
+      {
+       "DEST_SURF_MAX": "industrie",
+       "famille": "promoteur",
+       "permis": 23,
+       "surface_m2": 153723,
+       "acteurs": 18
+      },
+      {
+       "DEST_SURF_MAX": "bureaux",
+       "famille": "entreprise_autre",
+       "permis": 133,
+       "surface_m2": 146242,
+       "acteurs": 106
+      },
+      {
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "famille": "association_ess",
+       "permis": 192,
+       "surface_m2": 134966,
+       "acteurs": 113
+      },
+      {
+       "DEST_SURF_MAX": "commerce",
+       "famille": "entreprise_autre",
+       "permis": 231,
+       "surface_m2": 118715,
+       "acteurs": 179
+      },
+      {
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "famille": "promoteur",
+       "permis": 53,
+       "surface_m2": 95241,
+       "acteurs": 47
+      },
+      {
+       "DEST_SURF_MAX": "commerce",
+       "famille": "non_determine",
+       "permis": 84,
+       "surface_m2": 75987,
+       "acteurs": 73
+      },
+      {
+       "DEST_SURF_MAX": "bureaux",
+       "famille": "non_determine",
+       "permis": 67,
+       "surface_m2": 68634,
+       "acteurs": 46
+      },
+      {
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "famille": "entreprise_autre",
+       "permis": 146,
+       "surface_m2": 55439,
+       "acteurs": 73
+      },
+      {
+       "DEST_SURF_MAX": "industrie",
+       "famille": "non_determine",
+       "permis": 31,
+       "surface_m2": 53190,
+       "acteurs": 20
+      },
+      {
+       "DEST_SURF_MAX": "entrepôt",
+       "famille": "promoteur",
+       "permis": 10,
+       "surface_m2": 48808,
+       "acteurs": 9
+      },
+      {
+       "DEST_SURF_MAX": "hôtels / hébergement",
+       "famille": "promoteur",
+       "permis": 10,
+       "surface_m2": 48278,
+       "acteurs": 9
+      },
+      {
+       "DEST_SURF_MAX": "entrepôt",
+       "famille": "non_determine",
+       "permis": 21,
+       "surface_m2": 45016,
+       "acteurs": 18
+      },
+      {
+       "DEST_SURF_MAX": "agriculture",
+       "famille": "fonciere_investisseur",
+       "permis": 59,
+       "surface_m2": 37558,
+       "acteurs": 47
+      },
+      {
+       "DEST_SURF_MAX": "hôtels / hébergement",
+       "famille": "fonciere_investisseur",
+       "permis": 28,
+       "surface_m2": 30412,
+       "acteurs": 25
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 3,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "COMM",
+      "DEST_SURF_MAX",
+      "famille"
+     ],
+     "mesure": "surface_m2",
+     "top": 40
+    },
+    "sortie": {
+     "filtres": {},
+     "nb_permis_filtres": 4245,
+     "nb_groupes": 1755,
+     "resultats": [
+      {
+       "COMM": "78423",
+       "DEST_SURF_MAX": "bureaux",
+       "famille": "promoteur",
+       "permis": 12,
+       "surface_m2": 145506,
+       "acteurs": 10
+      },
+      {
+       "COMM": "78238",
+       "DEST_SURF_MAX": "entrepôt",
+       "famille": "fonciere_investisseur",
+       "permis": 2,
+       "surface_m2": 117027,
+       "acteurs": 2
+      },
+      {
+       "COMM": "78551",
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "famille": "collectivite_public",
+       "permis": 33,
+       "surface_m2": 116572,
+       "acteurs": 10
+      },
+      {
+       "COMM": "78640",
+       "DEST_SURF_MAX": "bureaux",
+       "famille": "promoteur",
+       "permis": 8,
+       "surface_m2": 93129,
+       "acteurs": 4
+      },
+      {
+       "COMM": "78003",
+       "DEST_SURF_MAX": "entrepôt",
+       "famille": "entreprise_autre",
+       "permis": 6,
+       "surface_m2": 90595,
+       "acteurs": 5
+      },
+      {
+       "COMM": "78640",
+       "DEST_SURF_MAX": "industrie",
+       "famille": "fonciere_investisseur",
+       "permis": 5,
+       "surface_m2": 86104,
+       "acteurs": 1
+      },
+      {
+       "COMM": "78640",
+       "DEST_SURF_MAX": "commerce",
+       "famille": "fonciere_investisseur",
+       "permis": 9,
+       "surface_m2": 69766,
+       "acteurs": 6
+      },
+      {
+       "COMM": "78490",
+       "DEST_SURF_MAX": "commerce",
+       "famille": "fonciere_investisseur",
+       "permis": 12,
+       "surface_m2": 69194,
+       "acteurs": 8
+      },
+      {
+       "COMM": "78335",
+       "DEST_SURF_MAX": "entrepôt",
+       "famille": "fonciere_investisseur",
+       "permis": 7,
+       "surface_m2": 68141,
+       "acteurs": 7
+      },
+      {
+       "COMM": "78498",
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "famille": "fonciere_investisseur",
+       "permis": 4,
+       "surface_m2": 67438,
+       "acteurs": 3
+      },
+      {
+       "COMM": "78640",
+       "DEST_SURF_MAX": "bureaux",
+       "famille": "fonciere_investisseur",
+       "permis": 6,
+       "surface_m2": 67023,
+       "acteurs": 5
+      },
+      {
+       "COMM": "78418",
+       "DEST_SURF_MAX": "commerce",
+       "famille": "fonciere_investisseur",
+       "permis": 4,
+       "surface_m2": 53906,
+       "acteurs": 4
+      },
+      {
+       "COMM": "78423",
+       "DEST_SURF_MAX": "bureaux",
+       "famille": "entreprise_autre",
+       "permis": 5,
+       "surface_m2": 51260,
+       "acteurs": 4
+      },
+      {
+       "COMM": "78118",
+       "DEST_SURF_MAX": "commerce",
+       "famille": "fonciere_investisseur",
+       "permis": 10,
+       "surface_m2": 48531,
+       "acteurs": 7
+      },
+      {
+       "COMM": "78029",
+       "DEST_SURF_MAX": "commerce",
+       "famille": "fonciere_investisseur",
+       "permis": 9,
+       "surface_m2": 47800,
+       "acteurs": 3
+      },
+      {
+       "COMM": "78297",
+       "DEST_SURF_MAX": "bureaux",
+       "famille": "fonciere_investisseur",
+       "permis": 15,
+       "surface_m2": 44679,
+       "acteurs": 13
+      },
+      {
+       "COMM": "78361",
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "famille": "collectivite_public",
+       "permis": 28,
+       "surface_m2": 42716,
+       "acteurs": 8
+      },
+      {
+       "COMM": "78490",
+       "DEST_SURF_MAX": "industrie",
+       "famille": "fonciere_investisseur",
+       "permis": 3,
+       "surface_m2": 41411,
+       "acteurs": 2
+      },
+      {
+       "COMM": "78498",
+       "DEST_SURF_MAX": "bureaux",
+       "famille": "fonciere_investisseur",
+       "permis": 4,
+       "surface_m2": 40121,
+       "acteurs": 4
+      },
+      {
+       "COMM": "78029",
+       "DEST_SURF_MAX": "entrepôt",
+       "famille": "fonciere_investisseur",
+       "permis": 11,
+       "surface_m2": 40054,
+       "acteurs": 9
+      },
+      {
+       "COMM": "78297",
+       "DEST_SURF_MAX": "bureaux",
+       "famille": "promoteur",
+       "permis": 3,
+       "surface_m2": 38773,
+       "acteurs": 3
+      },
+      {
+       "COMM": "78646",
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "famille": "collectivite_public",
+       "permis": 29,
+       "surface_m2": 38342,
+       "acteurs": 11
+      },
+      {
+       "COMM": "78440",
+       "DEST_SURF_MAX": "entrepôt",
+       "famille": "fonciere_investisseur",
+       "permis": 7,
+       "surface_m2": 36844,
+       "acteurs": 6
+      },
+      {
+       "COMM": "78644",
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "famille": "association_ess",
+       "permis": 1,
+       "surface_m2": 36628,
+       "acteurs": 1
+      },
+      {
+       "COMM": "78440",
+       "DEST_SURF_MAX": "industrie",
+       "famille": "entreprise_autre",
+       "permis": 12,
+       "surface_m2": 36577,
+       "acteurs": 6
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 4,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "COMM",
+      "DEST_SURF_MAX"
+     ],
+     "mesure": "surface_m2",
+     "top": 50
+    },
+    "sortie": {
+     "filtres": {},
+     "nb_permis_filtres": 4245,
+     "nb_groupes": 834,
+     "resultats": [
+      {
+       "COMM": "78423",
+       "DEST_SURF_MAX": "bureaux",
+       "permis": 22,
+       "surface_m2": 244446,
+       "acteurs": 19
+      },
+      {
+       "COMM": "78640",
+       "DEST_SURF_MAX": "bureaux",
+       "permis": 24,
+       "surface_m2": 194236,
+       "acteurs": 19
+      },
+      {
+       "COMM": "78551",
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "permis": 59,
+       "surface_m2": 160117,
+       "acteurs": 35
+      },
+      {
+       "COMM": "78238",
+       "DEST_SURF_MAX": "entrepôt",
+       "permis": 3,
+       "surface_m2": 120311,
+       "acteurs": 3
+      },
+      {
+       "COMM": "78003",
+       "DEST_SURF_MAX": "entrepôt",
+       "permis": 15,
+       "surface_m2": 118169,
+       "acteurs": 11
+      },
+      {
+       "COMM": "78498",
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "permis": 48,
+       "surface_m2": 108973,
+       "acteurs": 23
+      },
+      {
+       "COMM": "78640",
+       "DEST_SURF_MAX": "commerce",
+       "permis": 24,
+       "surface_m2": 102380,
+       "acteurs": 21
+      },
+      {
+       "COMM": "78297",
+       "DEST_SURF_MAX": "bureaux",
+       "permis": 27,
+       "surface_m2": 97602,
+       "acteurs": 24
+      },
+      {
+       "COMM": "78640",
+       "DEST_SURF_MAX": "industrie",
+       "permis": 11,
+       "surface_m2": 92798,
+       "acteurs": 6
+      },
+      {
+       "COMM": "78490",
+       "DEST_SURF_MAX": "commerce",
+       "permis": 31,
+       "surface_m2": 85933,
+       "acteurs": 24
+      },
+      {
+       "COMM": "78335",
+       "DEST_SURF_MAX": "entrepôt",
+       "permis": 11,
+       "surface_m2": 70866,
+       "acteurs": 11
+      },
+      {
+       "COMM": "78361",
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "permis": 58,
+       "surface_m2": 70127,
+       "acteurs": 31
+      },
+      {
+       "COMM": "78118",
+       "DEST_SURF_MAX": "commerce",
+       "permis": 20,
+       "surface_m2": 65277,
+       "acteurs": 15
+      },
+      {
+       "COMM": "78440",
+       "DEST_SURF_MAX": "industrie",
+       "permis": 19,
+       "surface_m2": 62439,
+       "acteurs": 12
+      },
+      {
+       "COMM": "78490",
+       "DEST_SURF_MAX": "industrie",
+       "permis": 9,
+       "surface_m2": 57886,
+       "acteurs": 8
+      },
+      {
+       "COMM": "78646",
+       "DEST_SURF_MAX": "bureaux",
+       "permis": 28,
+       "surface_m2": 56044,
+       "acteurs": 25
+      },
+      {
+       "COMM": "78029",
+       "DEST_SURF_MAX": "commerce",
+       "permis": 14,
+       "surface_m2": 55301,
+       "acteurs": 8
+      },
+      {
+       "COMM": "78418",
+       "DEST_SURF_MAX": "commerce",
+       "permis": 6,
+       "surface_m2": 54365,
+       "acteurs": 6
+      },
+      {
+       "COMM": "78646",
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "permis": 51,
+       "surface_m2": 47200,
+       "acteurs": 30
+      },
+      {
+       "COMM": "78138",
+       "DEST_SURF_MAX": "entrepôt",
+       "permis": 11,
+       "surface_m2": 47186,
+       "acteurs": 9
+      },
+      {
+       "COMM": "78498",
+       "DEST_SURF_MAX": "bureaux",
+       "permis": 8,
+       "surface_m2": 46260,
+       "acteurs": 8
+      },
+      {
+       "COMM": "78029",
+       "DEST_SURF_MAX": "entrepôt",
+       "permis": 18,
+       "surface_m2": 45081,
+       "acteurs": 16
+      },
+      {
+       "COMM": "78440",
+       "DEST_SURF_MAX": "entrepôt",
+       "permis": 11,
+       "surface_m2": 43374,
+       "acteurs": 10
+      },
+      {
+       "COMM": "78644",
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "permis": 6,
+       "surface_m2": 41779,
+       "acteurs": 4
+      },
+      {
+       "COMM": "78640",
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "permis": 14,
+       "surface_m2": 41055,
+       "acteurs": 11
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 5,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "DEST_SURF_MAX"
+     ],
+     "mesure": "surface_m2",
+     "top": 20
+    },
+    "sortie": {
+     "filtres": {},
+     "nb_permis_filtres": 4245,
+     "nb_groupes": 8,
+     "resultats": [
+      {
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "permis": 1547,
+       "surface_m2": 1243500,
+       "acteurs": 664
+      },
+      {
+       "DEST_SURF_MAX": "commerce",
+       "permis": 1006,
+       "surface_m2": 972154,
+       "acteurs": 800
+      },
+      {
+       "DEST_SURF_MAX": "bureaux",
+       "permis": 597,
+       "surface_m2": 944570,
+       "acteurs": 488
+      },
+      {
+       "DEST_SURF_MAX": "entrepôt",
+       "permis": 385,
+       "surface_m2": 853651,
+       "acteurs": 335
+      },
+      {
+       "DEST_SURF_MAX": "industrie",
+       "permis": 358,
+       "surface_m2": 706608,
+       "acteurs": 244
+      },
+      {
+       "DEST_SURF_MAX": "agriculture",
+       "permis": 253,
+       "surface_m2": 255264,
+       "acteurs": 186
+      },
+      {
+       "DEST_SURF_MAX": "hôtels / hébergement",
+       "permis": 82,
+       "surface_m2": 104361,
+       "acteurs": 71
+      },
+      {
+       "DEST_SURF_MAX": "aucune",
+       "permis": 17,
+       "surface_m2": 0,
+       "acteurs": 16
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 6,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "COMM",
+      "DEST_SURF_MAX"
+     ],
+     "mesure": "surface_m2",
+     "filtres": {
+      "DEST_SURF_MAX": "bureaux"
+     },
+     "top": 20
+    },
+    "sortie": {
+     "filtres": {
+      "DEST_SURF_MAX": "bureaux"
+     },
+     "nb_permis_filtres": 597,
+     "nb_groupes": 131,
+     "resultats": [
+      {
+       "COMM": "78423",
+       "DEST_SURF_MAX": "bureaux",
+       "permis": 22,
+       "surface_m2": 244446,
+       "acteurs": 19
+      },
+      {
+       "COMM": "78640",
+       "DEST_SURF_MAX": "bureaux",
+       "permis": 24,
+       "surface_m2": 194236,
+       "acteurs": 19
+      },
+      {
+       "COMM": "78297",
+       "DEST_SURF_MAX": "bureaux",
+       "permis": 27,
+       "surface_m2": 97602,
+       "acteurs": 24
+      },
+      {
+       "COMM": "78646",
+       "DEST_SURF_MAX": "bureaux",
+       "permis": 28,
+       "surface_m2": 56044,
+       "acteurs": 25
+      },
+      {
+       "COMM": "78498",
+       "DEST_SURF_MAX": "bureaux",
+       "permis": 8,
+       "surface_m2": 46260,
+       "acteurs": 8
+      },
+      {
+       "COMM": "78551",
+       "DEST_SURF_MAX": "bureaux",
+       "permis": 30,
+       "surface_m2": 35101,
+       "acteurs": 28
+      },
+      {
+       "COMM": "78208",
+       "DEST_SURF_MAX": "bureaux",
+       "permis": 16,
+       "surface_m2": 34947,
+       "acteurs": 9
+      },
+      {
+       "COMM": "78005",
+       "DEST_SURF_MAX": "bureaux",
+       "permis": 4,
+       "surface_m2": 22798,
+       "acteurs": 4
+      },
+      {
+       "COMM": "78165",
+       "DEST_SURF_MAX": "bureaux",
+       "permis": 3,
+       "surface_m2": 15287,
+       "acteurs": 3
+      },
+      {
+       "COMM": "78361",
+       "DEST_SURF_MAX": "bureaux",
+       "permis": 18,
+       "surface_m2": 14757,
+       "acteurs": 16
+      },
+      {
+       "COMM": "78164",
+       "DEST_SURF_MAX": "bureaux",
+       "permis": 6,
+       "surface_m2": 14686,
+       "acteurs": 3
+      },
+      {
+       "COMM": "78575",
+       "DEST_SURF_MAX": "bureaux",
+       "permis": 12,
+       "surface_m2": 13498,
+       "acteurs": 1
+      },
+      {
+       "COMM": "78238",
+       "DEST_SURF_MAX": "bureaux",
+       "permis": 4,
+       "surface_m2": 12384,
+       "acteurs": 3
+      },
+      {
+       "COMM": "78269",
+       "DEST_SURF_MAX": "bureaux",
+       "permis": 14,
+       "surface_m2": 11965,
+       "acteurs": 13
+      },
+      {
+       "COMM": "78356",
+       "DEST_SURF_MAX": "bureaux",
+       "permis": 9,
+       "surface_m2": 8811,
+       "acteurs": 4
+      },
+      {
+       "COMM": "78311",
+       "DEST_SURF_MAX": "bureaux",
+       "permis": 6,
+       "surface_m2": 8640,
+       "acteurs": 6
+      },
+      {
+       "COMM": "78440",
+       "DEST_SURF_MAX": "bureaux",
+       "permis": 9,
+       "surface_m2": 7440,
+       "acteurs": 9
+      },
+      {
+       "COMM": "78586",
+       "DEST_SURF_MAX": "bureaux",
+       "permis": 12,
+       "surface_m2": 5627,
+       "acteurs": 10
+      },
+      {
+       "COMM": "78620",
+       "DEST_SURF_MAX": "bureaux",
+       "permis": 7,
+       "surface_m2": 5299,
+       "acteurs": 4
+      },
+      {
+       "COMM": "78490",
+       "DEST_SURF_MAX": "bureaux",
+       "permis": 12,
+       "surface_m2": 4831,
+       "acteurs": 10
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 7,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "COMM",
+      "DEST_SURF_MAX"
+     ],
+     "mesure": "surface_m2",
+     "filtres": {
+      "DEST_SURF_MAX": "entrepôt"
+     },
+     "top": 20
+    },
+    "sortie": {
+     "filtres": {
+      "DEST_SURF_MAX": "entrepôt"
+     },
+     "nb_permis_filtres": 385,
+     "nb_groupes": 99,
+     "resultats": [
+      {
+       "COMM": "78238",
+       "DEST_SURF_MAX": "entrepôt",
+       "permis": 3,
+       "surface_m2": 120311,
+       "acteurs": 3
+      },
+      {
+       "COMM": "78003",
+       "DEST_SURF_MAX": "entrepôt",
+       "permis": 15,
+       "surface_m2": 118169,
+       "acteurs": 11
+      },
+      {
+       "COMM": "78335",
+       "DEST_SURF_MAX": "entrepôt",
+       "permis": 11,
+       "surface_m2": 70866,
+       "acteurs": 11
+      },
+      {
+       "COMM": "78138",
+       "DEST_SURF_MAX": "entrepôt",
+       "permis": 11,
+       "surface_m2": 47186,
+       "acteurs": 9
+      },
+      {
+       "COMM": "78029",
+       "DEST_SURF_MAX": "entrepôt",
+       "permis": 18,
+       "surface_m2": 45081,
+       "acteurs": 16
+      },
+      {
+       "COMM": "78440",
+       "DEST_SURF_MAX": "entrepôt",
+       "permis": 11,
+       "surface_m2": 43374,
+       "acteurs": 10
+      },
+      {
+       "COMM": "78621",
+       "DEST_SURF_MAX": "entrepôt",
+       "permis": 8,
+       "surface_m2": 34938,
+       "acteurs": 7
+      },
+      {
+       "COMM": "78118",
+       "DEST_SURF_MAX": "entrepôt",
+       "permis": 3,
+       "surface_m2": 33567,
+       "acteurs": 3
+      },
+      {
+       "COMM": "78172",
+       "DEST_SURF_MAX": "entrepôt",
+       "permis": 6,
+       "surface_m2": 31435,
+       "acteurs": 6
+      },
+      {
+       "COMM": "78168",
+       "DEST_SURF_MAX": "entrepôt",
+       "permis": 16,
+       "surface_m2": 30673,
+       "acteurs": 13
+      },
+      {
+       "COMM": "78255",
+       "DEST_SURF_MAX": "entrepôt",
+       "permis": 21,
+       "surface_m2": 23746,
+       "acteurs": 16
+      },
+      {
+       "COMM": "78310",
+       "DEST_SURF_MAX": "entrepôt",
+       "permis": 9,
+       "surface_m2": 20820,
+       "acteurs": 8
+      },
+      {
+       "COMM": "78208",
+       "DEST_SURF_MAX": "entrepôt",
+       "permis": 8,
+       "surface_m2": 16106,
+       "acteurs": 8
+      },
+      {
+       "COMM": "78640",
+       "DEST_SURF_MAX": "entrepôt",
+       "permis": 4,
+       "surface_m2": 14546,
+       "acteurs": 4
+      },
+      {
+       "COMM": "78644",
+       "DEST_SURF_MAX": "entrepôt",
+       "permis": 3,
+       "surface_m2": 13278,
+       "acteurs": 3
+      },
+      {
+       "COMM": "78466",
+       "DEST_SURF_MAX": "entrepôt",
+       "permis": 11,
+       "surface_m2": 12992,
+       "acteurs": 8
+      },
+      {
+       "COMM": "78550",
+       "DEST_SURF_MAX": "entrepôt",
+       "permis": 25,
+       "surface_m2": 12018,
+       "acteurs": 25
+      },
+      {
+       "COMM": "78073",
+       "DEST_SURF_MAX": "entrepôt",
+       "permis": 3,
+       "surface_m2": 10607,
+       "acteurs": 3
+      },
+      {
+       "COMM": "78206",
+       "DEST_SURF_MAX": "entrepôt",
+       "permis": 6,
+       "surface_m2": 9338,
+       "acteurs": 6
+      },
+      {
+       "COMM": "78297",
+       "DEST_SURF_MAX": "entrepôt",
+       "permis": 6,
+       "surface_m2": 7842,
+       "acteurs": 4
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 8,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "COMM",
+      "DEST_SURF_MAX"
+     ],
+     "mesure": "surface_m2",
+     "filtres": {
+      "DEST_SURF_MAX": "commerce"
+     },
+     "top": 20
+    },
+    "sortie": {
+     "filtres": {
+      "DEST_SURF_MAX": "commerce"
+     },
+     "nb_permis_filtres": 1006,
+     "nb_groupes": 144,
+     "resultats": [
+      {
+       "COMM": "78640",
+       "DEST_SURF_MAX": "commerce",
+       "permis": 24,
+       "surface_m2": 102380,
+       "acteurs": 21
+      },
+      {
+       "COMM": "78490",
+       "DEST_SURF_MAX": "commerce",
+       "permis": 31,
+       "surface_m2": 85933,
+       "acteurs": 24
+      },
+      {
+       "COMM": "78118",
+       "DEST_SURF_MAX": "commerce",
+       "permis": 20,
+       "surface_m2": 65277,
+       "acteurs": 15
+      },
+      {
+       "COMM": "78029",
+       "DEST_SURF_MAX": "commerce",
+       "permis": 14,
+       "surface_m2": 55301,
+       "acteurs": 8
+      },
+      {
+       "COMM": "78418",
+       "DEST_SURF_MAX": "commerce",
+       "permis": 6,
+       "surface_m2": 54365,
+       "acteurs": 6
+      },
+      {
+       "COMM": "78621",
+       "DEST_SURF_MAX": "commerce",
+       "permis": 27,
+       "surface_m2": 35910,
+       "acteurs": 25
+      },
+      {
+       "COMM": "78208",
+       "DEST_SURF_MAX": "commerce",
+       "permis": 7,
+       "surface_m2": 33968,
+       "acteurs": 7
+      },
+      {
+       "COMM": "78383",
+       "DEST_SURF_MAX": "commerce",
+       "permis": 10,
+       "surface_m2": 30440,
+       "acteurs": 10
+      },
+      {
+       "COMM": "78643",
+       "DEST_SURF_MAX": "commerce",
+       "permis": 2,
+       "surface_m2": 25279,
+       "acteurs": 2
+      },
+      {
+       "COMM": "78586",
+       "DEST_SURF_MAX": "commerce",
+       "permis": 41,
+       "surface_m2": 20535,
+       "acteurs": 36
+      },
+      {
+       "COMM": "78551",
+       "DEST_SURF_MAX": "commerce",
+       "permis": 22,
+       "surface_m2": 19527,
+       "acteurs": 21
+      },
+      {
+       "COMM": "78168",
+       "DEST_SURF_MAX": "commerce",
+       "permis": 23,
+       "surface_m2": 18623,
+       "acteurs": 22
+      },
+      {
+       "COMM": "78133",
+       "DEST_SURF_MAX": "commerce",
+       "permis": 21,
+       "surface_m2": 18546,
+       "acteurs": 19
+      },
+      {
+       "COMM": "78466",
+       "DEST_SURF_MAX": "commerce",
+       "permis": 17,
+       "surface_m2": 16050,
+       "acteurs": 13
+      },
+      {
+       "COMM": "78269",
+       "DEST_SURF_MAX": "commerce",
+       "permis": 16,
+       "surface_m2": 15308,
+       "acteurs": 15
+      },
+      {
+       "COMM": "78517",
+       "DEST_SURF_MAX": "commerce",
+       "permis": 18,
+       "surface_m2": 14498,
+       "acteurs": 15
+      },
+      {
+       "COMM": "78362",
+       "DEST_SURF_MAX": "commerce",
+       "permis": 20,
+       "surface_m2": 14447,
+       "acteurs": 18
+      },
+      {
+       "COMM": "78389",
+       "DEST_SURF_MAX": "commerce",
+       "permis": 13,
+       "surface_m2": 13681,
+       "acteurs": 12
+      },
+      {
+       "COMM": "78498",
+       "DEST_SURF_MAX": "commerce",
+       "permis": 21,
+       "surface_m2": 12225,
+       "acteurs": 20
+      },
+      {
+       "COMM": "78238",
+       "DEST_SURF_MAX": "commerce",
+       "permis": 12,
+       "surface_m2": 12053,
+       "acteurs": 10
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 9,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "COMM",
+      "DEST_SURF_MAX"
+     ],
+     "mesure": "surface_m2",
+     "filtres": {
+      "DEST_SURF_MAX": "service public / intérêt collectif"
+     },
+     "top": 20
+    },
+    "sortie": {
+     "filtres": {
+      "DEST_SURF_MAX": "service public / intérêt collectif"
+     },
+     "nb_permis_filtres": 1547,
+     "nb_groupes": 209,
+     "resultats": [
+      {
+       "COMM": "78551",
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "permis": 59,
+       "surface_m2": 160117,
+       "acteurs": 35
+      },
+      {
+       "COMM": "78498",
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "permis": 48,
+       "surface_m2": 108973,
+       "acteurs": 23
+      },
+      {
+       "COMM": "78361",
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "permis": 58,
+       "surface_m2": 70127,
+       "acteurs": 31
+      },
+      {
+       "COMM": "78646",
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "permis": 51,
+       "surface_m2": 47200,
+       "acteurs": 30
+      },
+      {
+       "COMM": "78644",
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "permis": 6,
+       "surface_m2": 41779,
+       "acteurs": 4
+      },
+      {
+       "COMM": "78640",
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "permis": 14,
+       "surface_m2": 41055,
+       "acteurs": 11
+      },
+      {
+       "COMM": "78117",
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "permis": 20,
+       "surface_m2": 40929,
+       "acteurs": 10
+      },
+      {
+       "COMM": "78362",
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "permis": 38,
+       "surface_m2": 36867,
+       "acteurs": 14
+      },
+      {
+       "COMM": "78123",
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "permis": 27,
+       "surface_m2": 32489,
+       "acteurs": 14
+      },
+      {
+       "COMM": "78423",
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "permis": 39,
+       "surface_m2": 28113,
+       "acteurs": 16
+      },
+      {
+       "COMM": "78440",
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "permis": 35,
+       "surface_m2": 26524,
+       "acteurs": 20
+      },
+      {
+       "COMM": "78615",
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "permis": 6,
+       "surface_m2": 23216,
+       "acteurs": 2
+      },
+      {
+       "COMM": "78297",
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "permis": 19,
+       "surface_m2": 22901,
+       "acteurs": 10
+      },
+      {
+       "COMM": "78586",
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "permis": 25,
+       "surface_m2": 19448,
+       "acteurs": 16
+      },
+      {
+       "COMM": "78322",
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "permis": 6,
+       "surface_m2": 19237,
+       "acteurs": 5
+      },
+      {
+       "COMM": "78621",
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "permis": 35,
+       "surface_m2": 18756,
+       "acteurs": 15
+      },
+      {
+       "COMM": "78545",
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "permis": 18,
+       "surface_m2": 16142,
+       "acteurs": 10
+      },
+      {
+       "COMM": "78358",
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "permis": 22,
+       "surface_m2": 15996,
+       "acteurs": 12
+      },
+      {
+       "COMM": "78674",
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "permis": 8,
+       "surface_m2": 13973,
+       "acteurs": 3
+      },
+      {
+       "COMM": "78073",
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "permis": 13,
+       "surface_m2": 13186,
+       "acteurs": 5
+      }
+     ]
+    }
+   }
+  ]
+ }
+]

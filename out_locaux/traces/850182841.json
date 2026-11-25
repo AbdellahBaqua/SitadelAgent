@@ -1,0 +1,115 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "850182841"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "850182841"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "850182841"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "850182841"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "H.M",
+     "nb_permis_PC": 1,
+     "annees_depot": [
+      "2025"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 0,
+     "surface_locaux_non_residentiels_creee_m2": 331,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 1
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "850182841",
+      "nom": "H.M (WOK GRILL)",
+      "nature_juridique": "5499",
+      "naf_actuel": "56.10A",
+      "etat": "A",
+      "date_creation": "2019-03-05",
+      "categorie": "PME",
+      "effectif": "12",
+      "nb_etablissements": 1,
+      "nb_etablissements_ouverts": 1,
+      "siege_actuel": {
+       "siret": "85018284100013",
+       "naf": "56.10A",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "85018284100013",
+       "naf_dans_permis": "70.10Z",
+       "nb_permis": 1,
+       "annees_depot": [
+        "2025"
+       ],
+       "etat_actuel": "ouvert",
+       "date_creation": "2019-03-05",
+       "date_fermeture": null
+      }
+     ],
+     "alertes": [
+      "NAF du permis ['70.10Z'] différent du NAF actuel de l'entreprise 56.10A"
+     ],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/850182841"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "56.10A",
+      "libelle": "Restauration traditionnelle"
+     },
+     {
+      "code": "70.10Z",
+      "libelle": "Activités des sièges sociaux"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5499",
+     "libelle": "Société à responsabilité limitée (sans autre indication)"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"entreprise_autre\",\"confiance\":\"haute\",\"indices\":[\"fiche_entreprise : nom commercial « H.M (WOK GRILL) », nature juridique 5499 (SARL), naf_actuel 56.10A « Restauration traditionnelle », entreprise active (état A), 12 salariés, 1 établissement ouvert\",\"libelle_naf : 56.10A = « Restauration traditionnelle » (activité actuelle), 70.10Z = « Activités des sièges sociaux » (NAF historique du permis, différent)\",\"libelle_cj : 5499 = « Société à responsabilité limitée (sans autre indication) »\",\"permis_du_demandeur : 1 permis en 2025, 0 logement créé, 331 m² de surface non résidentielle créée, pas de logement social, pas de résidence déclarée → projet non résidentiel cohérent avec une activité de restauration\"],\"limites\":\"Le NAF du permis (70.10Z) diffère du NAF actuel (56.10A) ; l'alerte de fiche_entreprise le signale. La dénomination « H.M » seule est générique, mais le nom commercial « WOK GRILL » et le NAF actuel lèvent l'ambiguïté.\"}"
+   }
+  ]
+ }
+]

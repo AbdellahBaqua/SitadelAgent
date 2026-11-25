@@ -1,0 +1,109 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "797778651"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "797778651"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "797778651"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "797778651"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "JIDOLEUM",
+     "nb_permis_PC": 1,
+     "annees_depot": [
+      "2026"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 0,
+     "surface_locaux_non_residentiels_creee_m2": 3135,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 1
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "797778651",
+      "nom": "JIDOLEUM",
+      "nature_juridique": "5499",
+      "naf_actuel": "64.20Z",
+      "etat": "A",
+      "date_creation": "2013-10-01",
+      "categorie": "PME",
+      "effectif": "NN",
+      "nb_etablissements": 2,
+      "nb_etablissements_ouverts": 1,
+      "siege_actuel": {
+       "siret": "79777865100027",
+       "naf": "64.20Z",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "79777865100027",
+       "naf_dans_permis": "64.20Z",
+       "nb_permis": 1,
+       "annees_depot": [
+        "2026"
+       ],
+       "etat_actuel": "ouvert",
+       "date_creation": "2017-07-01",
+       "date_fermeture": null
+      }
+     ],
+     "alertes": [],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/797778651"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "64.20Z",
+      "libelle": "Activités des sociétés holding"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5499",
+     "libelle": "Société à responsabilité limitée (sans autre indication)"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"fonciere_investisseur\",\"confiance\":\"moyenne\",\"indices\":[\"fiche_entreprise : NAF actuel 64.20Z « Activités des sociétés holding » (holding), forme juridique 5499 SARL, entreprise active depuis 2013\",\"libelle_naf : 64.20Z = « Activités des sociétés holding »\",\"libelle_cj : 5499 = « Société à responsabilité limitée (sans autre indication) »\",\"permis_du_demandeur : 1 permis en 2026, 0 logement, 3 135 m² de surface non résidentielle créée, pas de logement social déclaré\",\"permis_du_demandeur : établissement siège (79777865100027) ouvert, NAF 64.20Z cohérent avec l'entreprise\"],\"limites\":\"L'activité « holding » (64.20Z) ne distingue pas entre holding animatrice de groupe, holding de patrimoine immobilier ou véhicule d'investissement. Le permis porte sur du non-résidentiel (3 135 m²) sans précision sur la destination (bureaux, commerce, locaux d'activité) ni sur l'intention (conserver/louer vs vendre). Une SARL holding peut réaliser une opération ponctuelle pour son propre compte sans être une foncière au sens strict. L'absence de mention de logements sociaux, d'objet social associatif, de forme publique ou de copropriété écarte les autres familles, mais ne confirme pas formellement une stratégie d'investissement locatif.\"}"
+   }
+  ]
+ }
+]

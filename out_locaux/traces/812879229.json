@@ -1,0 +1,116 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "812879229"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "812879229"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "812879229"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "812879229"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "IXCAMPUS",
+     "nb_permis_PC": 1,
+     "annees_depot": [
+      "2019"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 0,
+     "surface_locaux_non_residentiels_creee_m2": 1100,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 0
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "812879229",
+      "nom": "IXCAMPUS",
+      "nature_juridique": "5710",
+      "naf_actuel": "96.09Z",
+      "etat": "A",
+      "date_creation": "2015-10-15",
+      "categorie": "PME",
+      "effectif": "11",
+      "nb_etablissements": 2,
+      "nb_etablissements_ouverts": 1,
+      "siege_actuel": {
+       "siret": "81287922900027",
+       "naf": "96.09Z",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "81287922900019",
+       "naf_dans_permis": "68.32A",
+       "nb_permis": 1,
+       "annees_depot": [
+        "2019"
+       ],
+       "etat_actuel": "fermé",
+       "date_creation": "2015-10-15",
+       "date_fermeture": "2021-04-14"
+      }
+     ],
+     "alertes": [
+      "SIRET 81287922900019 (permis 2019) fermé le 2021-04-14 : le NAF 68.32A du permis vient d'un établissement fermé",
+      "NAF du permis ['68.32A'] différent du NAF actuel de l'entreprise 96.09Z"
+     ],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/812879229"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "68.32A",
+      "libelle": "Administration d'immeubles et autres biens immobiliers"
+     },
+     {
+      "code": "96.09Z",
+      "libelle": "Autres services personnels n.c.a."
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5710",
+     "libelle": "SAS, société par actions simplifiée"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"non_determine\",\"confiance\":\"faible\",\"indices\":[\"permis_du_demandeur : 1 permis en 2019, 0 logement créé, 1100 m² de surface non résidentielle, pas de résidence déclarée, 0 logement social\",\"fiche_entreprise : forme juridique SAS (cj 5710), entreprise active, PME 11 salariés, NAF actuel 96.09Z « Autres services personnels n.c.a. »\",\"fiche_entreprise : l'établissement du permis (SIRET 81287922900019, NAF 68.32A « Administration d'immeubles ») est fermé depuis 2021\",\"libelle_naf : 96.09Z = « Autres services personnels n.c.a. » (fourre-tout), 68.32A = « Administration d'immeubles et autres biens immobiliers »\",\"libelle_cj : 5710 = SAS, société par actions simplifiée (structure privée lucrative)\",\"dénomination : IXCAMPUS (évocation campus/enseignement, mais non vérifiée)\"],\"limites\":\"L'activité actuelle (96.09Z) est un code fourre-tout qui ne permet pas de rattacher l'entreprise à une famille métier précise. Le permis unique de 2019 porte sur du non-résidentiel sans logement social, et l'établissement concerné est fermé. Aucun élément ne permet d'identifier un bailleur social, un promoteur, une foncière, une association ESS, un exploitant santé/social, une collectivité ou une copropriété. L'hypothèse « entreprise_autre » est possible mais non étayée par une activité identifiable.\"}"
+   }
+  ]
+ }
+]

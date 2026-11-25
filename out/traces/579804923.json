@@ -1,0 +1,116 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "579804923"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "579804923"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "579804923"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "579804923"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "ECOLE DU MONTCEL SA",
+     "nb_permis_PC": 1,
+     "annees_depot": [
+      "2014"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 19,
+     "surface_locaux_non_residentiels_creee_m2": 2899,
+     "nb_permis_collectif": 1,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 0
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "579804923",
+      "nom": "DOMAINE DU MONTCEL",
+      "nature_juridique": "5710",
+      "naf_actuel": "55.10Z",
+      "etat": "A",
+      "date_creation": "1957-01-01",
+      "categorie": "PME",
+      "effectif": "22",
+      "nb_etablissements": 7,
+      "nb_etablissements_ouverts": 2,
+      "siege_actuel": {
+       "siret": "57980492300087",
+       "naf": "55.10Z",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "57980492300053",
+       "naf_dans_permis": "85.20Z",
+       "nb_permis": 1,
+       "annees_depot": [
+        "2014"
+       ],
+       "etat_actuel": "fermé",
+       "date_creation": "2013-07-12",
+       "date_fermeture": "2017-01-23"
+      }
+     ],
+     "alertes": [
+      "SIRET 57980492300053 (permis 2014) fermé le 2017-01-23 : le NAF 85.20Z du permis vient d'un établissement fermé",
+      "NAF du permis ['85.20Z'] différent du NAF actuel de l'entreprise 55.10Z"
+     ],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/579804923"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "55.10Z",
+      "libelle": "Hôtels et hébergement similaire"
+     },
+     {
+      "code": "85.20Z",
+      "libelle": "Enseignement primaire"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5599",
+     "libelle": "SA à conseil d'administration (s.a.i.)"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"non_determine\",\"confiance\":\"faible\",\"indices\":[\"permis_du_demandeur : 1 PC en 2014, 19 logements créés + 2 899 m² non-résidentiels, 0 logement social déclaré\",\"fiche_entreprise : nom actuel « DOMAINE DU MONTCEL », NAF actuel 55.10Z « Hôtels et hébergement similaire », SA (nature juridique 5710), active, 22 salariés, 2 établissements ouverts\",\"fiche_entreprise (alertes) : l'établissement du permis (SIRET 57980492300053) est fermé depuis 2017 ; son NAF 85.20Z « Enseignement primaire » est historique\",\"libelle_naf : 55.10Z = Hôtels et hébergement similaire ; 85.20Z = Enseignement primaire\",\"libelle_cj : 5599 = SA à conseil d'administration (s.a.i.) (cohérent avec la nature juridique 5710 de la fiche entreprise)\"],\"limites\":\"L'activité actuelle (hôtellerie, NAF 55.10Z) ne correspond à aucune famille ciblée (bailleur social, promoteur, foncière, association ESS, exploitant santé/social, collectivité, copropriété). L'activité historique du permis (enseignement primaire) ne permet pas non plus de rattacher la structure à « exploitant_sante_social » (pas de code médico-social, petite enfance ou hébergement social identifié). La dénomination « ECOLE DU MONTCEL SA » suggère un passé scolaire, mais la structure est aujourd'hui une SA exploitant un hôtel/hébergement sans lien avéré avec le secteur social ou médico-social. Aucune source ne permet d'affirmer qu'il s'agit d'une foncière, d'un promoteur ou d'un bailleur social.\"}"
+   }
+  ]
+ }
+]

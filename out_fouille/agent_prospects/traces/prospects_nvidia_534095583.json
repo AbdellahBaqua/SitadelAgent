@@ -1,0 +1,72 @@
+[
+ {
+  "etape": "pre",
+  "texte": "résultats calculés par le code avant le modèle",
+  "entree": {
+   "siren": "534095583",
+   "denomination": "ASSOCIATION DES MUSULMANS DE PLAISIR",
+   "famille_classification": "association_ess",
+   "raisons_du_score": "famille cible (association_ess) +3 ; dépôt assez récent (2022) +1 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1",
+   "taille_calculee": "petite",
+   "taille_calcul": "salariés ≥ 10, établissements ouverts 1, établissements FINESS 0",
+   "permis_du_prospect": [
+    {
+     "num_dau": "07849022E0007",
+     "fichier": "locaux",
+     "annee_depot": "2022",
+     "commune": "PLAISIR",
+     "etat": "commencé",
+     "type_projet": "",
+     "logements_crees": null,
+     "surface_locaux_creee_m2": 50
+    },
+    {
+     "num_dau": "0784901601004",
+     "fichier": "locaux",
+     "annee_depot": "2016",
+     "commune": "PLAISIR",
+     "etat": "terminé",
+     "type_projet": "",
+     "logements_crees": null,
+     "surface_locaux_creee_m2": 638
+    }
+   ],
+   "fiche_entreprise": {
+    "nom": "ASSOCIATION DES MUSULMANS DE PLAISIR (AMP)",
+    "nature_juridique": "9220",
+    "naf_actuel": "94.99Z",
+    "etat": "A",
+    "date_creation": "2010-02-21",
+    "categorie": "PME",
+    "effectif": "11",
+    "nb_etablissements": 1,
+    "nb_etablissements_ouverts": 1,
+    "libelle_naf_actuel": "Autres organisations fonctionnant par adhésion volontaire",
+    "libelle_nature_juridique": "Association déclarée",
+    "aide": "etat A = active, C ou F = cessée. effectif = tranche Insee de salariés (ex. 21 = 50 à 99, 41 = 500 à 999, 51 = 2 000 à 4 999). Dirigeants et finances volontairement exclus.",
+    "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/534095583"
+   },
+   "finess_du_prospect": {
+    "nb_etablissements_finess_france": 0,
+    "nb_etablissements_finess_yvelines": 0,
+    "nb_departements": 0,
+    "par_type": {},
+    "exemples_yvelines": [],
+    "source": "https://www.data.gouv.fr/datasets/53699569a3a729239d2046eb",
+    "aide": "Établissements dont le SIRET commence par ce SIREN. 0 ne prouve pas l'absence d'activité médico-sociale (SIRET non renseigné dans FINESS, autre entité juridique du même groupe)."
+   },
+   "origine": "demandeur de permis",
+   "consigne": "Ces résultats viennent des outils permis_du_prospect, fiche_entreprise et finess_du_prospect : cite-les. Conclus avec conclure_prospect."
+  }
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure_prospect",
+    "args": "{\"verdict\":\"faux_positif\",\"adequation\":\"faible\",\"type_structure\":\"association cultuelle (musulmane) de petite taille\",\"besoin_immobilier\":\"Deux permis de construire pour des locaux (2016 : 638 m² achevé ; 2022 : 50 m² en cours) à Plaisir, indiquant une gestion de patrimoine immobilier propre, probablement pour un lieu de culte ou un centre culturel.\",\"indices\":[\"denomination : « ASSOCIATION DES MUSULMANS DE PLAISIR » – nom à connotation religieuse (culte).\",\"fiche_entreprise : NAF 94.99Z « Autres organisations fonctionnant par adhésion volontaire », nature juridique « Association déclarée », état active, effectif 11 (tranche petite).\",\"permis_du_prospect : deux permis locaux (2016 terminé 638 m², 2022 commencé 50 m²) à Plaisir, suggérant un projet immobilier propre (lieu de culte ou centre culturel).\",\"finess_du_prospect : 0 établissement FINESS, pas d'activité sanitaire, sociale ou médico-sociale identifiée.\"],\"limites\":\"L'activité réelle pourrait inclure des volets sociaux ou culturels non apparents dans le code NAF ; une vérification des statuts ou du site web de l'association permettrait de confirmer ou d'infirmer la dimension purement cultuelle.\"}"
+   }
+  ]
+ }
+]

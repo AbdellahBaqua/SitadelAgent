@@ -1,0 +1,111 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "381067784"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "381067784"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "381067784"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "381067784"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "CAISSE ALLOCATIONS FAMILIALES YVELINES",
+     "nb_permis_PC": 2,
+     "annees_depot": [
+      "2013"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 0,
+     "surface_locaux_non_residentiels_creee_m2": 85,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 1
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "381067784",
+      "nom": "CAISSE ALLOCATIONS FAMILIALES YVELINES (C A F 78)",
+      "nature_juridique": "8110",
+      "naf_actuel": "84.30C",
+      "etat": "A",
+      "date_creation": "1991-01-01",
+      "categorie": "ETI",
+      "effectif": "41",
+      "nb_etablissements": 11,
+      "nb_etablissements_ouverts": 3,
+      "siege_actuel": {
+       "siret": "38106778400102",
+       "naf": "84.30C",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "38106778400011",
+       "naf_dans_permis": "84.30C",
+       "nb_permis": 2,
+       "annees_depot": [
+        "2013"
+       ],
+       "etat_actuel": "fermé",
+       "date_creation": "1991-01-01",
+       "date_fermeture": "2018-12-03"
+      }
+     ],
+     "alertes": [
+      "SIRET 38106778400011 (permis 2013) fermé le 2018-12-03 : le NAF 84.30C du permis vient d'un établissement fermé"
+     ],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/381067784"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "84.30C",
+      "libelle": "Distribution sociale de revenus"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "8110",
+     "libelle": "Régime général de la Sécurité Sociale"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"collectivite_public\",\"confiance\":\"haute\",\"indices\":[\"fiche_entreprise : nature_juridique 8110 « Régime général de la Sécurité Sociale » (organisme public de sécurité sociale)\",\"libelle_cj : code 8110 correspond à un régime de base de la Sécurité sociale, structure de droit public\",\"libelle_naf : NAF actuel 84.30C « Distribution sociale de revenus » – activité caractéristique des CAF\",\"dénomination : « CAISSE ALLOCATIONS FAMILIALES YVELINES (C A F 78) » identifie sans ambiguïté un organisme public de sécurité sociale\",\"permis_du_demandeur : 2 permis en 2013 pour 85 m² de locaux non résidentiels (bureaux), cohérent avec une administration publique\"],\"limites\":\"Les permis datent de 2013 et l'établissement porteur (SIRET 38106778400011) est fermé depuis 2018, mais l'entreprise (SIREN) est active et sa nature juridique n'a pas changé.\"}"
+   }
+  ]
+ }
+]

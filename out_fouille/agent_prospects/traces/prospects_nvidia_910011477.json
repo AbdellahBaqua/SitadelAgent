@@ -1,0 +1,62 @@
+[
+ {
+  "etape": "pre",
+  "texte": "résultats calculés par le code avant le modèle",
+  "entree": {
+   "siren": "910011477",
+   "denomination": "LES P'TITES FOURMIS",
+   "famille_classification": "exploitant_sante_social",
+   "raisons_du_score": "famille cible (exploitant_sante_social) +2 ; projet médico-social (équipement d'action sociale) +3 ; dépôt assez récent (2022) +1 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1",
+   "taille_calculee": "inconnue",
+   "taille_calcul": "salariés ≥ ?, établissements ouverts 1, établissements FINESS 0",
+   "permis_du_prospect": [
+    {
+     "num_dau": "0782062200008",
+     "fichier": "locaux",
+     "annee_depot": "2022",
+     "commune": "ECQUEVILLY",
+     "etat": "autorisé",
+     "type_projet": "équipement d'action sociale",
+     "logements_crees": null,
+     "surface_locaux_creee_m2": 49
+    }
+   ],
+   "fiche_entreprise": {
+    "nom": "LES P'TITES FOURMIS",
+    "nature_juridique": "5710",
+    "naf_actuel": "88.91A",
+    "etat": "A",
+    "date_creation": "2021-12-28",
+    "categorie": "PME",
+    "effectif": "NN",
+    "nb_etablissements": 1,
+    "nb_etablissements_ouverts": 1,
+    "libelle_naf_actuel": "Accueil de jeunes enfants",
+    "libelle_nature_juridique": "SAS, société par actions simplifiée",
+    "aide": "etat A = active, C ou F = cessée. effectif = tranche Insee de salariés (ex. 21 = 50 à 99, 41 = 500 à 999, 51 = 2 000 à 4 999). Dirigeants et finances volontairement exclus.",
+    "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/910011477"
+   },
+   "finess_du_prospect": {
+    "nb_etablissements_finess_france": 0,
+    "nb_etablissements_finess_yvelines": 0,
+    "nb_departements": 0,
+    "par_type": {},
+    "exemples_yvelines": [],
+    "source": "https://www.data.gouv.fr/datasets/53699569a3a729239d2046eb",
+    "aide": "Établissements dont le SIRET commence par ce SIREN. 0 ne prouve pas l'absence d'activité médico-sociale (SIRET non renseigné dans FINESS, autre entité juridique du même groupe)."
+   },
+   "origine": "demandeur de permis",
+   "consigne": "Ces résultats viennent des outils permis_du_prospect, fiche_entreprise et finess_du_prospect : cite-les. Conclus avec conclure_prospect."
+  }
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure_prospect",
+    "args": "{\"verdict\":\"prospect\",\"adequation\":\"faible\",\"type_structure\":\"SAS exploitant une crèche privée (accueil de jeunes enfants)\",\"besoin_immobilier\":\"Un permis autorisé en 2022 pour un équipement d'action sociale de 49 m² à Ecquevilly, suggérant un projet de crèche de petite taille.\",\"indices\":[\"permis_du_prospect : 1 permis déposé en 2022 (numéro 0782062200008) pour un « équipement d'action sociale » de 49 m² à Ecquevilly, état « autorisé »\",\"fiche_entreprise : nature juridique 5710 (SAS), NAF 88.91A « Accueil de jeunes enfants », état A (active), créée en décembre 2021, catégorie PME, effectif NN (non renseigné), 1 établissement ouvert\",\"finess_du_prospect : 0 établissement FINESS en France et dans les Yvelines (mais 0 ne prouve pas l'absence d'activité médico-sociale)\",\"dénomination : « LES P'TITES FOURMIS » évoque une structure d'accueil de jeunes enfants\"],\"limites\":\"Structure commerciale (SAS) non ESS, adéquation faible selon l'hypothèse de travail de Buddimm (crèche privée commerciale = au mieux faible) ; effectif et taille exacts inconnus (effectif NN) ; 0 établissement FINESS (mais la source précise que cela ne prouve pas l'absence d'activité) ; un seul permis identifié, projet de très petite surface (49 m²).\"}"
+   }
+  ]
+ }
+]

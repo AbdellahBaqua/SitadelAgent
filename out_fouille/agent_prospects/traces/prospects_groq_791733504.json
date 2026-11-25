@@ -1,0 +1,62 @@
+[
+ {
+  "etape": "pre",
+  "texte": "résultats calculés par le code avant le modèle",
+  "entree": {
+   "siren": "791733504",
+   "denomination": "ASSOCIATION AVICENNE EDUCATION",
+   "famille_classification": "association_ess",
+   "raisons_du_score": "famille cible (association_ess) +3 ; dépôt récent (2024) +2 ; 1 permis autorisé(s) depuis moins de 3 ans, pas encore commencé(s) +2 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1",
+   "taille_calculee": "petite",
+   "taille_calcul": "salariés ≥ 10, établissements ouverts 1, établissements FINESS 0",
+   "permis_du_prospect": [
+    {
+     "num_dau": "07833524L0006",
+     "fichier": "locaux",
+     "annee_depot": "2024",
+     "commune": "LIMAY",
+     "etat": "autorisé",
+     "type_projet": "",
+     "logements_crees": null,
+     "surface_locaux_creee_m2": 213
+    }
+   ],
+   "fiche_entreprise": {
+    "nom": "ASSOCIATION AVICENNE EDUCATION",
+    "nature_juridique": "9220",
+    "naf_actuel": "88.99B",
+    "etat": "A",
+    "date_creation": "2011-03-20",
+    "categorie": "PME",
+    "effectif": "11",
+    "nb_etablissements": 1,
+    "nb_etablissements_ouverts": 1,
+    "libelle_naf_actuel": "Action sociale sans hébergement n.c.a.",
+    "libelle_nature_juridique": "Association déclarée",
+    "aide": "etat A = active, C ou F = cessée. effectif = tranche Insee de salariés (ex. 21 = 50 à 99, 41 = 500 à 999, 51 = 2 000 à 4 999). Dirigeants et finances volontairement exclus.",
+    "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/791733504"
+   },
+   "finess_du_prospect": {
+    "nb_etablissements_finess_france": 0,
+    "nb_etablissements_finess_yvelines": 0,
+    "nb_departements": 0,
+    "par_type": {},
+    "exemples_yvelines": [],
+    "source": "https://www.data.gouv.fr/datasets/53699569a3a729239d2046eb",
+    "aide": "Établissements dont le SIRET commence par ce SIREN. 0 ne prouve pas l'absence d'activité médico-sociale (SIRET non renseigné dans FINESS, autre entité juridique du même groupe)."
+   },
+   "origine": "demandeur de permis",
+   "consigne": "Ces résultats viennent des outils permis_du_prospect, fiche_entreprise et finess_du_prospect : cite-les. Conclus avec conclure_prospect."
+  }
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure_prospect",
+    "args": "{\"adequation\":\"faible\",\"besoin_immobilier\":\"Projet de création ou rénovation de locaux de 213 m² autorisé en 2024, non démarré.\",\"indices\":[\"permis_du_prospect: autorisation d'un permis de construire pour 213 m² de locaux (2024, LIMAY).\",\"fiche_entreprise: association déclarée (nature juridique 9220), activité \\\"Action sociale sans hébergement n.c.a.\\\" (NAF 88.99B), 11 salariés, petite taille.\",\"finess_du_prospect: aucun établissement FINESS recensé (0), ce qui n'exclut pas une activité sociale mais indique absence d'établissements médico‑sociaux.\"],\"limites\":\"Structure petite (11 salariés, 1 établissement) ; activité sans hébergement et sans établissements FINESS, ce qui réduit l'ampleur potentielle des projets immobiliers.\",\"type_structure\":\"Association d'action sociale (ESS)\",\"verdict\":\"prospect\"}"
+   }
+  ]
+ }
+]

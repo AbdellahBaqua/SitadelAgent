@@ -1,0 +1,111 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "490205184"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "490205184"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "490205184"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "490205184"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "FONCIA MANSART",
+     "nb_permis_PC": 2,
+     "annees_depot": [
+      "2017",
+      "2018"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 3,
+     "surface_locaux_non_residentiels_creee_m2": 0,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 2,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 0
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "490205184",
+      "nom": "FONCIA MANSART",
+      "nature_juridique": "5710",
+      "naf_actuel": "68.32A",
+      "etat": "A",
+      "date_creation": "2006-05-18",
+      "categorie": "GE",
+      "effectif": "22",
+      "nb_etablissements": 19,
+      "nb_etablissements_ouverts": 12,
+      "siege_actuel": {
+       "siret": "49020518400016",
+       "naf": "68.32A",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "49020518400099",
+       "naf_dans_permis": "68.32A",
+       "nb_permis": 2,
+       "annees_depot": [
+        "2017",
+        "2018"
+       ],
+       "etat_actuel": "ouvert",
+       "date_creation": "2020-08-01",
+       "date_fermeture": null
+      }
+     ],
+     "alertes": [],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/490205184"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "68.32A",
+      "libelle": "Administration d'immeubles et autres biens immobiliers"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5710",
+     "libelle": "SAS, société par actions simplifiée"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"entreprise_autre\",\"confiance\":\"moyenne\",\"indices\":[\"permis_du_demandeur : 2 permis individuels déposés en 2017-2018, 3 logements créés, 0 logement social déclaré, activité de construction très limitée\",\"fiche_entreprise : entreprise active (SAS, GE, 22 salariés, 19 établissements), NAF actuel 68.32A « Administration d'immeubles et autres biens immobiliers »\",\"libelle_naf : 68.32A = Administration d'immeubles et autres biens immobiliers (gestion immobilière, syndic)\",\"libelle_cj : 5710 = SAS, société par actions simplifiée (forme juridique privée lucrative)\",\"dénomination : FONCIA MANSART — marque du groupe Foncia, acteur majeur de la gestion immobilière (syndic, gestion locative) en France\"],\"limites\":\"L'entreprise dépose quelques permis individuels, mais son cœur de métier (NAF actuel, effectif, notoriété) est la prestation de services de gestion immobilière, non la promotion, l'investissement locatif ou le logement social. Aucune preuve d'activité de bailleur social, promoteur, foncière, association, exploitant santé, collectivité ou copropriété.\"}"
+   }
+  ]
+ }
+]

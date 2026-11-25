@@ -1,0 +1,109 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "800158412"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "800158412"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "800158412"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "800158412"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "L & F BROTHERS",
+     "nb_permis_PC": 1,
+     "annees_depot": [
+      "2023"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 4,
+     "surface_locaux_non_residentiels_creee_m2": 0,
+     "nb_permis_collectif": 1,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 1
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "800158412",
+      "nom": "L & F BROTHERS (L & F) (L & F)",
+      "nature_juridique": "5499",
+      "naf_actuel": "71.11Z",
+      "etat": "A",
+      "date_creation": "2014-01-20",
+      "categorie": "PME",
+      "effectif": "01",
+      "nb_etablissements": 1,
+      "nb_etablissements_ouverts": 1,
+      "siege_actuel": {
+       "siret": "80015841200018",
+       "naf": "71.11Z",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "80015841200018",
+       "naf_dans_permis": "71.11Z",
+       "nb_permis": 1,
+       "annees_depot": [
+        "2023"
+       ],
+       "etat_actuel": "ouvert",
+       "date_creation": "2014-01-20",
+       "date_fermeture": null
+      }
+     ],
+     "alertes": [],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/800158412"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "71.11Z",
+      "libelle": "Activités d'architecture"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5499",
+     "libelle": "Société à responsabilité limitée (sans autre indication)"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"entreprise_autre\",\"confiance\":\"moyenne\",\"indices\":[\"fiche_entreprise : nature_juridique 5499 (SARL), naf_actuel 71.11Z (Activités d'architecture), entreprise active, PME, 1 salarié\",\"permis_du_demandeur : 1 permis en 2023, 4 logements créés, 1 permis collectif, 0 logements locatifs sociaux déclarés\",\"libelle_naf : 71.11Z = Activités d'architecture\",\"libelle_cj : 5499 = Société à responsabilité limitée\",\"dénomination : L & F BROTHERS (ne suggère pas de secteur spécifique)\"],\"limites\":\"L'activité principale est l'architecture (NAF 71.11Z), mais le dépôt d'un permis pour 4 logements en collectif laisse penser que la société peut agir comme maître d'ouvrage (promoteur occasionnel). Aucune information sur la destination des logements (vente ou location) ni sur d'autres activités de promotion immobilière. Le faible effectif (1 salarié) et l'unicité du permis ne permettent pas de confirmer une activité de promoteur à titre principal.\"}"
+   }
+  ]
+ }
+]

@@ -1,0 +1,109 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "622028777"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "622028777"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "622028777"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "622028777"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "VORWERK FRANCE",
+     "nb_permis_PC": 1,
+     "annees_depot": [
+      "2019"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 0,
+     "surface_locaux_non_residentiels_creee_m2": 0,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 1
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "622028777",
+      "nom": "VORWERK FRANCE",
+      "nature_juridique": "5306",
+      "naf_actuel": "47.99A",
+      "etat": "A",
+      "date_creation": "1969-01-01",
+      "categorie": "ETI",
+      "effectif": "42",
+      "nb_etablissements": 332,
+      "nb_etablissements_ouverts": 92,
+      "siege_actuel": {
+       "siret": "62202877702677",
+       "naf": "47.99A",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "62202877702677",
+       "naf_dans_permis": "47.99A",
+       "nb_permis": 1,
+       "annees_depot": [
+        "2019"
+       ],
+       "etat_actuel": "ouvert",
+       "date_creation": "2013-10-07",
+       "date_fermeture": null
+      }
+     ],
+     "alertes": [],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/622028777"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "47.99A",
+      "libelle": "Vente à domicile"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5306",
+     "libelle": "Société en commandite simple"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"entreprise_autre\",\"confiance\":\"haute\",\"indices\":[\"permis_du_demandeur : 1 permis en 2019, 0 logement créé, 0 surface non-résidentielle créée, pas de résidence déclarée, pas de logement social\",\"fiche_entreprise : entreprise active (ETI, 42 salariés), NAF actuel 47.99A, forme juridique 5306 (Société en commandite simple), 332 établissements dont 92 ouverts\",\"libelle_naf : 47.99A = 'Vente à domicile' (activité de vente directe de biens d'équipement ménager)\",\"libelle_cj : 5306 = 'Société en commandite simple' (forme commerciale)\",\"dénomination : VORWERK FRANCE (enseigne connue de vente directe : Thermomix, Kobold)\"],\"limites\":\"Le permis unique de 2019 ne précise pas la nature exacte du projet (bureaux, entrepôt, showroom), mais l'activité de l'entreprise est clairement commerciale et sans lien avec l'immobilier social, la promotion, la foncière, l'ESS, la santé ou le public.\"}"
+   }
+  ]
+ }
+]

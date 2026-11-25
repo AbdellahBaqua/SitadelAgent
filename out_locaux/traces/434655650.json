@@ -1,0 +1,111 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "434655650"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "434655650"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "434655650"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "434655650"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "GIE SOUFFLERIES AEROACOUSTIQUES AUTOMOBI",
+     "nb_permis_PC": 2,
+     "annees_depot": [
+      "2015",
+      "2016"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 0,
+     "surface_locaux_non_residentiels_creee_m2": 405,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 0
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "434655650",
+      "nom": "SOUFFLERIES AEROACOUSTIQUES AUTOMOBI",
+      "nature_juridique": "6220",
+      "naf_actuel": "82.99Z",
+      "etat": "A",
+      "date_creation": "2001-02-19",
+      "categorie": "PME",
+      "effectif": "12",
+      "nb_etablissements": 2,
+      "nb_etablissements_ouverts": 1,
+      "siege_actuel": {
+       "siret": "43465565000027",
+       "naf": "82.99Z",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "43465565000027",
+       "naf_dans_permis": "82.99Z",
+       "nb_permis": 2,
+       "annees_depot": [
+        "2015",
+        "2016"
+       ],
+       "etat_actuel": "ouvert",
+       "date_creation": "2003-12-01",
+       "date_fermeture": null
+      }
+     ],
+     "alertes": [],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/434655650"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "82.99Z",
+      "libelle": "Autres activités de soutien aux entreprises n.c.a."
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "6220",
+     "libelle": "Groupement d'intérêt économique (GIE)"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"entreprise_autre\",\"confiance\":\"moyenne\",\"indices\":[\"permis_du_demandeur : 2 permis déposés en 2015-2016, 0 logement créé, 405 m² de surface non résidentielle créée, aucun logement locatif social déclaré\",\"fiche_entreprise : entreprise active (état A), forme juridique GIE (catégorie juridique 6220), effectif 12, NAF actuel 82.99Z\",\"libelle_cj : code 6220 = Groupement d'intérêt économique (GIE)\",\"libelle_naf : code 82.99Z = Autres activités de soutien aux entreprises n.c.a.\",\"dénomination : GIE SOUFFLERIES AEROACOUSTIQUES AUTOMOBI (activité liée aux souffleries aéroacoustiques automobiles/aéronautiques)\"],\"limites\":\"L'entité est un GIE (groupement d'intérêt économique) dont l'objet est le soutien aux entreprises (tests aéroacoustiques), ce qui ne correspond à aucune famille spécialisée (bailleur, promoteur, foncière, association ESS, exploitant santé/social, collectivité, copropriété). La qualification « entreprise_autre » convient par défaut, mais la nature particulière du GIE (structure de mutualisation entre entreprises) pourrait justifier une catégorie à part si elle existait.\"}"
+   }
+  ]
+ }
+]

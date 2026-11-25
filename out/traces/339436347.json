@@ -1,0 +1,145 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "339436347"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "339436347"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "339436347"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "339436347"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "IMMOBILIER ET INFORMATIQUE",
+     "nb_permis_PC": 20,
+     "annees_depot": [
+      "2012",
+      "2013",
+      "2014",
+      "2015",
+      "2016",
+      "2018",
+      "2019",
+      "2020",
+      "2021",
+      "2024"
+     ],
+     "nb_communes": 12,
+     "logements_crees_total": 40,
+     "surface_locaux_non_residentiels_creee_m2": 0,
+     "nb_permis_collectif": 4,
+     "nb_permis_individuel": 16,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 7
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "339436347",
+      "nom": "IMMOBILIER ET INFORMATIQUE",
+      "nature_juridique": "5499",
+      "naf_actuel": "70.22Z",
+      "etat": "A",
+      "date_creation": "1986-11-18",
+      "categorie": "PME",
+      "effectif": "01",
+      "nb_etablissements": 6,
+      "nb_etablissements_ouverts": 1,
+      "siege_actuel": {
+       "siret": "33943634700068",
+       "naf": "70.22Z",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "33943634700050",
+       "naf_dans_permis": "73.20Z",
+       "nb_permis": 8,
+       "annees_depot": [
+        "2012",
+        "2013",
+        "2014",
+        "2015",
+        "2016"
+       ],
+       "etat_actuel": "fermé",
+       "date_creation": "2006-01-01",
+       "date_fermeture": "2016-06-01"
+      },
+      {
+       "siret": "33943634700068",
+       "naf_dans_permis": "73.20Z",
+       "nb_permis": 12,
+       "annees_depot": [
+        "2015",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2024"
+       ],
+       "etat_actuel": "ouvert",
+       "date_creation": "2016-06-01",
+       "date_fermeture": null
+      }
+     ],
+     "alertes": [
+      "SIRET 33943634700050 (permis 2012,2013,2014,2015,2016) fermé le 2016-06-01 : le NAF 73.20Z du permis vient d'un établissement fermé",
+      "NAF du permis ['73.20Z'] différent du NAF actuel de l'entreprise 70.22Z"
+     ],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/339436347"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "70.22Z",
+      "libelle": "Conseil pour les affaires et autres conseils de gestion"
+     },
+     {
+      "code": "73.20Z",
+      "libelle": "Études de marché et sondages"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5499",
+     "libelle": "Société à responsabilité limitée (sans autre indication)"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"entreprise_autre\",\"confiance\":\"faible\",\"indices\":[\"permis_du_demandeur : 20 permis de construire déposés entre 2012 et 2024, 40 logements créés au total, 0 logement locatif social déclaré, 12 communes concernées\",\"fiche_entreprise : activité actuelle (naf_actuel) 70.22Z « Conseil pour les affaires et autres conseils de gestion », forme juridique 5499 (SARL), entreprise active, 1 salarié, siège à l'établissement 33943634700068 (ouvert)\",\"libelle_naf : 70.22Z = conseil en gestion ; 73.20Z (NAF des établissements dans les permis) = études de marché et sondages\",\"libelle_cj : 5499 = société à responsabilité limitée (sans autre indication)\",\"fiche_entreprise (alertes) : les deux établissements cités dans les permis avaient un NAF 73.20Z (études de marché) différent du NAF actuel 70.22Z ; l'établissement 33943634700050 est fermé depuis 2016\"],\"limites\":\"L'activité actuelle déclarée est du conseil en gestion (70.22Z), sans lien apparent avec l'immobilier. Pourtant, la dénomination « IMMOBILIER ET INFORMATIQUE » et l'historique de 20 permis (40 logements sur 12 ans) suggèrent une activité de promotion ou de détention immobilière, soit passée, soit exercée en parallèle. Aucune preuve de statut bailleur social, d'association ESS, d'exploitant santé/social, de collectivité ou de copropriété. Le volume de permis est trop faible pour un promoteur professionnel typique, mais trop régulier pour une simple entreprise « autre » sans lien avec l'immobilier. L'absence de logements sociaux déclarés et la forme SARL classique ne permettent pas de trancher entre promoteur occasionnel, foncière familiale ou entreprise diversifiée.\"}"
+   }
+  ]
+ }
+]

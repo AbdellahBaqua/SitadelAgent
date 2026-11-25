@@ -1,0 +1,182 @@
+[
+ {
+  "etape": "pre",
+  "texte": "résultats calculés par le code avant le modèle",
+  "entree": {
+   "siren": "775672165",
+   "denomination": "FONDATION LEOPOLD BELLAN",
+   "famille_classification": "association_ess",
+   "raisons_du_score": "famille cible (association_ess) +3 ; projet médico-social (équipement de santé) +3 ; dépôt assez récent (2023) +1 ; projet de taille significative (≥ 20 logements ou ≥ 1 000 m²) +1",
+   "taille_calculee": "très grande",
+   "taille_calcul": "salariés ≥ 2000, établissements ouverts 81, établissements FINESS 56",
+   "permis_du_prospect": [
+    {
+     "num_dau": "07861823T0003",
+     "fichier": "logements",
+     "annee_depot": "2023",
+     "commune": "TILLY",
+     "etat": "commencé",
+     "type_projet": "",
+     "logements_crees": 2,
+     "surface_locaux_creee_m2": null
+    },
+    {
+     "num_dau": "0783542300002",
+     "fichier": "locaux",
+     "annee_depot": "2023",
+     "commune": "MAGNANVILLE",
+     "etat": "terminé",
+     "type_projet": "équipement de santé",
+     "logements_crees": null,
+     "surface_locaux_creee_m2": 5787
+    },
+    {
+     "num_dau": "07859123M0007",
+     "fichier": "locaux",
+     "annee_depot": "2023",
+     "commune": "SEPTEUIL",
+     "etat": "terminé",
+     "type_projet": "équipement de santé",
+     "logements_crees": null,
+     "surface_locaux_creee_m2": 22
+    },
+    {
+     "num_dau": "07841819G1025",
+     "fichier": "locaux",
+     "annee_depot": "2019",
+     "commune": "MONTESSON",
+     "etat": "terminé",
+     "type_projet": "équipement de santé",
+     "logements_crees": null,
+     "surface_locaux_creee_m2": 237
+    },
+    {
+     "num_dau": "07861819T0004",
+     "fichier": "locaux",
+     "annee_depot": "2019",
+     "commune": "TILLY",
+     "etat": "autorisé",
+     "type_projet": "",
+     "logements_crees": null,
+     "surface_locaux_creee_m2": 94
+    }
+   ],
+   "fiche_entreprise": {
+    "nom": "FONDATION LEOPOLD BELLAN",
+    "nature_juridique": "9300",
+    "naf_actuel": "88.99B",
+    "etat": "A",
+    "date_creation": "1900-01-01",
+    "categorie": "ETI",
+    "effectif": "51",
+    "nb_etablissements": 97,
+    "nb_etablissements_ouverts": 81,
+    "libelle_naf_actuel": "Action sociale sans hébergement n.c.a.",
+    "libelle_nature_juridique": "Fondation",
+    "aide": "etat A = active, C ou F = cessée. effectif = tranche Insee de salariés (ex. 21 = 50 à 99, 41 = 500 à 999, 51 = 2 000 à 4 999). Dirigeants et finances volontairement exclus.",
+    "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/775672165"
+   },
+   "finess_du_prospect": {
+    "nb_etablissements_finess_france": 56,
+    "nb_etablissements_finess_yvelines": 12,
+    "nb_departements": 10,
+    "par_type": {
+     "Etablissements d'Hébergement pour Personnes Âgées": 9,
+     "Etab. et Services d'Hébergement pour Adultes Handicapés": 8,
+     "Etab.et Services de Travail Protégé pour Adultes Handicapés": 8,
+     "Services à Domicile ou Ambulatoires pour Handicapés": 7,
+     "Etab.Educ.Spéciale pour Déficients Mentaux et Handicapés": 4,
+     "Etablissements de Soins de Courte Durée": 4,
+     "Etablissements de l'Aide Sociale à l'Enfance": 4,
+     "Etablissements et services multi-clientèles": 3
+    },
+    "exemples_yvelines": [
+     {
+      "finess": "780005278",
+      "nom": "ETABLISSEMENT D ACCUEIL MEDICALISE LEOPOLD BELLAN",
+      "ville": "SEPTEUIL",
+      "categorie": "Etab.Acc.Médicalisé en tout ou partie personnes handicapées",
+      "ouverture": "2005-10-14"
+     },
+     {
+      "finess": "780013678",
+      "nom": "ESAT DE MAGNANVILLE",
+      "ville": "MAGNANVILLE",
+      "categorie": "Etablissement et Service d'Aide par le Travail (E.S.A.T.)",
+      "ouverture": "2008-09-01"
+     },
+     {
+      "finess": "780018792",
+      "nom": "EHPAD LEOPOLD BELLAN DE MANTES LA JOLI",
+      "ville": "MANTES LA JOLIE",
+      "categorie": "Etablissement d'hébergement pour personnes âgées dépendantes",
+      "ouverture": "2011-11-14"
+     },
+     {
+      "finess": "780019840",
+      "nom": "SERVICE D ACCOMPAGNEMENT A LA VIE SOCIALE",
+      "ville": "SARTROUVILLE",
+      "categorie": "Service d'Accompagnement à la Vie Sociale (S.A.V.S.)",
+      "ouverture": "2006-01-01"
+     },
+     {
+      "finess": "780022364",
+      "nom": "EHPAD LEOPOLD BELLAN DE MONTESSON",
+      "ville": "MONTESSON",
+      "categorie": "Etablissement d'hébergement pour personnes âgées dépendantes",
+      "ouverture": "2018-08-07"
+     },
+     {
+      "finess": "780023545",
+      "nom": "HOSPITALISATION A DOMICILE LEOPOLD BELLAN",
+      "ville": "MAGNANVILLE",
+      "categorie": "Hospitalisation à Domicile",
+      "ouverture": "2017-02-06"
+     },
+     {
+      "finess": "780700803",
+      "nom": "EHPAD CENTRE DE GERONTOLOGIE CLINIQUE LEOPOLD BELLAN",
+      "ville": "MAGNANVILLE",
+      "categorie": "Etablissement d'hébergement pour personnes âgées dépendantes",
+      "ouverture": "1957-11-01"
+     },
+     {
+      "finess": "780700902",
+      "nom": "RESIDENCE DE RETRAITE L BELLAN CHATEAU DE SEPTEUIL",
+      "ville": "SEPTEUIL",
+      "categorie": "Etablissement d'hébergement pour personnes âgées dépendantes",
+      "ouverture": "1955-03-01"
+     },
+     {
+      "finess": "780820387",
+      "nom": "FOYER HEBERGEMENT ADULTES HANDICAPES",
+      "ville": "MONTESSON",
+      "categorie": "Foyer Hébergement Adultes Handicapés",
+      "ouverture": "1904-04-04"
+     },
+     {
+      "finess": "780823613",
+      "nom": "SSIAD DE MAGNANVILLE",
+      "ville": "MAGNANVILLE",
+      "categorie": "Service de Soins Infirmiers A Domicile (S.S.I.A.D)",
+      "ouverture": "1989-12-01"
+     }
+    ],
+    "source": "https://www.data.gouv.fr/datasets/53699569a3a729239d2046eb",
+    "aide": "Établissements dont le SIRET commence par ce SIREN. 0 ne prouve pas l'absence d'activité médico-sociale (SIRET non renseigné dans FINESS, autre entité juridique du même groupe)."
+   },
+   "origine": "demandeur de permis",
+   "consigne": "Ces résultats viennent des outils permis_du_prospect, fiche_entreprise et finess_du_prospect : cite-les. Conclus avec conclure_prospect."
+  }
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure_prospect",
+    "args": "{\"adequation\":\"moyenne\",\"besoin_immobilier\":\"Projets d'équipement de santé récents (2023) et autorisation de nouveaux locaux (94 m²) montrent un besoin immobilier continu pour développer ou rénover ses établissements médico‑sociaux.\",\"indices\":[\"permis_du_prospect: plusieurs permis 2023 (logements, locaux d'équipement de santé) dont un autorisé (94 m²) et des projets terminés (5787 m², 22 m²)\",\"fiche_entreprise: nature juridique Fondation, NAF 88.99B (action sociale), effectif 51 (tranche 2000‑4999), 81 établissements ouverts\",\"finess_du_prospect: 56 établissements FINESS dont 9 EHPAD, 8 ESAT, etc., 12 en Yvelines\"],\"limites\":\"Très grande taille (salariés ≥2000, 81 établissements) suggère qu'elle possède déjà une direction immobilière interne, ce qui diminue l'adéquation maximale à moyenne.\",\"type_structure\":\"Fondation du secteur médico‑social, association de l'ESS, très grande structure avec de nombreux établissements sanitaires et sociaux.\",\"verdict\":\"prospect\"}"
+   }
+  ]
+ }
+]

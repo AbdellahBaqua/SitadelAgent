@@ -1,0 +1,109 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "421625377"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "421625377"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "421625377"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "421625377"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "OUB'HAM",
+     "nb_permis_PC": 1,
+     "annees_depot": [
+      "2013"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 12,
+     "surface_locaux_non_residentiels_creee_m2": 115,
+     "nb_permis_collectif": 1,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 0
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "421625377",
+      "nom": "OUB'HAM",
+      "nature_juridique": "5499",
+      "naf_actuel": "56.10A",
+      "etat": "A",
+      "date_creation": "1999-01-26",
+      "categorie": "PME",
+      "effectif": "NN",
+      "nb_etablissements": 2,
+      "nb_etablissements_ouverts": 2,
+      "siege_actuel": {
+       "siret": "42162537700021",
+       "naf": "56.10A",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "42162537700013",
+       "naf_dans_permis": "56.10A",
+       "nb_permis": 1,
+       "annees_depot": [
+        "2013"
+       ],
+       "etat_actuel": "ouvert",
+       "date_creation": "1999-01-26",
+       "date_fermeture": null
+      }
+     ],
+     "alertes": [],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/421625377"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "56.10A",
+      "libelle": "Restauration traditionnelle"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5499",
+     "libelle": "Société à responsabilité limitée (sans autre indication)"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"entreprise_autre\",\"confiance\":\"moyenne\",\"indices\":[\"permis_du_demandeur : 1 permis en 2013, 12 logements créés, 115 m² de surface non résidentielle, 0 logement social déclaré\",\"fiche_entreprise : entreprise active (SARL, code 5499), NAF actuel 56.10A (Restauration traditionnelle), 2 établissements ouverts\",\"libelle_naf : 56.10A = Restauration traditionnelle\",\"libelle_cj : 5499 = Société à responsabilité limitée (sans autre indication)\"],\"limites\":\"L'entreprise est une SARL dont l'activité principale est la restauration traditionnelle. Le permis de 2013 porte sur un projet mixte (12 logements + 115 m² non résidentiels), ce qui peut correspondre à un restaurateur construisant un immeuble avec logements au-dessus de son commerce. Aucune indication d'activité immobilière professionnelle (promotion, bailleur social, foncière). L'absence de logements sociaux déclarés et la nature juridique (SARL) écartent les familles bailleur_social, association_ess, collectivite_public, copropriete. L'activité NAF actuelle confirme une exploitation de restauration, pas de promotion ou d'investissement immobilier.\"}"
+   }
+  ]
+ }
+]

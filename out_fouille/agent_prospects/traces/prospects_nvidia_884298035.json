@@ -1,0 +1,72 @@
+[
+ {
+  "etape": "pre",
+  "texte": "résultats calculés par le code avant le modèle",
+  "entree": {
+   "siren": "884298035",
+   "denomination": "FERME ECOLE GRAINES D'AVENIR",
+   "famille_classification": "association_ess",
+   "raisons_du_score": "famille cible (association_ess) +3 ; dépôt assez récent (2023) +1 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1",
+   "taille_calculee": "petite",
+   "taille_calcul": "salariés ≥ 10, établissements ouverts 1, établissements FINESS 1",
+   "permis_du_prospect": [
+    {
+     "num_dau": "07835623E0005",
+     "fichier": "locaux",
+     "annee_depot": "2023",
+     "commune": "MAGNY-LES-HAMEAUX",
+     "etat": "terminé",
+     "type_projet": "",
+     "logements_crees": null,
+     "surface_locaux_creee_m2": 0
+    }
+   ],
+   "fiche_entreprise": {
+    "nom": "FERME ECOLE GRAINES D'AVENIR",
+    "nature_juridique": "9220",
+    "naf_actuel": "85.32Z",
+    "etat": "A",
+    "date_creation": "2020-05-20",
+    "categorie": "PME",
+    "effectif": "11",
+    "nb_etablissements": 2,
+    "nb_etablissements_ouverts": 1,
+    "libelle_naf_actuel": "Enseignement secondaire technique ou professionnel",
+    "libelle_nature_juridique": "Association déclarée",
+    "aide": "etat A = active, C ou F = cessée. effectif = tranche Insee de salariés (ex. 21 = 50 à 99, 41 = 500 à 999, 51 = 2 000 à 4 999). Dirigeants et finances volontairement exclus.",
+    "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/884298035"
+   },
+   "finess_du_prospect": {
+    "nb_etablissements_finess_france": 1,
+    "nb_etablissements_finess_yvelines": 1,
+    "nb_departements": 1,
+    "par_type": {
+     "Etablissements et services multi-clientèles": 1
+    },
+    "exemples_yvelines": [
+     {
+      "finess": "780030839",
+      "nom": "LIEU DE VIE INNOVANT GRAINES D'AVENIR FERME DE BULOYER",
+      "ville": "MAGNY LES HAMEAUX",
+      "categorie": "Lieux de Vie et d'Accueil",
+      "ouverture": "2023-09-01"
+     }
+    ],
+    "source": "https://www.data.gouv.fr/datasets/53699569a3a729239d2046eb",
+    "aide": "Établissements dont le SIRET commence par ce SIREN. 0 ne prouve pas l'absence d'activité médico-sociale (SIRET non renseigné dans FINESS, autre entité juridique du même groupe)."
+   },
+   "origine": "demandeur de permis",
+   "consigne": "Ces résultats viennent des outils permis_du_prospect, fiche_entreprise et finess_du_prospect : cite-les. Conclus avec conclure_prospect."
+  }
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure_prospect",
+    "args": "{\"verdict\":\"prospect\",\"adequation\":\"moyenne\",\"type_structure\":\"Association ESS gérant un Lieu de Vie et d'Accueil (FINESS) et une ferme école (enseignement professionnel)\",\"besoin_immobilier\":\"Permis de construire 2023 pour des locaux à Magny-les-Hameaux (terminé), suggérant un projet immobilier récent pour son Lieu de Vie.\",\"indices\":[\"dénomination : FERME ECOLE GRAINES D'AVENIR (nom évocateur d'une ferme pédagogique)\",\"fiche_entreprise : nature juridique 9220 (Association déclarée), NAF 85.32Z (Enseignement secondaire technique ou professionnel), état A (active), effectif 11 (10-19 salariés), 1 établissement ouvert\",\"finess_du_prospect : 1 établissement FINESS dans les Yvelines, type « Établissements et services multi-clientèles » (catégorie Lieux de Vie et d'Accueil), ouvert le 2023-09-01\",\"permis_du_prospect : 1 permis déposé en 2023 pour des locaux à Magny-les-Hameaux, état terminé, surface créée 0 m²\"],\"limites\":\"Le permis indique une surface créée de 0 m² (possible rénovation ou changement de destination sans extension). L'activité principale (NAF) est l'enseignement, mais l'établissement FINESS confirme une activité médico-sociale (Lieu de Vie). La structure est petite (10-19 salariés), ce qui peut limiter le volume de projets futurs.\"}"
+   }
+  ]
+ }
+]

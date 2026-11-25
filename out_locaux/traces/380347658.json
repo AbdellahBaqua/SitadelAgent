@@ -1,0 +1,109 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "380347658"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "380347658"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "380347658"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "380347658"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "SARRAIL FOCH",
+     "nb_permis_PC": 1,
+     "annees_depot": [
+      "2019"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 0,
+     "surface_locaux_non_residentiels_creee_m2": 95,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 1
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "380347658",
+      "nom": "SARRAIL FOCH",
+      "nature_juridique": "6599",
+      "naf_actuel": "68.31Z",
+      "etat": "A",
+      "date_creation": "1991-01-01",
+      "categorie": "PME",
+      "effectif": "NN",
+      "nb_etablissements": 3,
+      "nb_etablissements_ouverts": 1,
+      "siege_actuel": {
+       "siret": "38034765800037",
+       "naf": "68.31Z",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "38034765800037",
+       "naf_dans_permis": "68.31Z",
+       "nb_permis": 1,
+       "annees_depot": [
+        "2019"
+       ],
+       "etat_actuel": "ouvert",
+       "date_creation": "2014-03-28",
+       "date_fermeture": null
+      }
+     ],
+     "alertes": [],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/380347658"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "68.31Z",
+      "libelle": "Agences immobilières"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "6599",
+     "libelle": "Autre société civile"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"entreprise_autre\",\"confiance\":\"moyenne\",\"indices\":[\"fiche_entreprise : nature_juridique 6599 = « Autre société civile » (libelle_cj), forme civile non spécifique au logement social ni à la promotion\",\"fiche_entreprise : naf_actuel 68.31Z = « Agences immobilières » (libelle_naf), activité d'intermédiation immobilière, pas de promotion (41.10A) ni de location de patrimoine (68.20A/B)\",\"permis_du_demandeur : 1 permis en 2019, 0 logement créé, 95 m² de surface non résidentielle créée, 0 logement locatif social déclaré\",\"denomination : « SARRAIL FOCH » ne suggère pas une structure associative, publique, de santé/social, ni un bailleur social connu\"],\"limites\":\"L'objet précis du permis (bureaux, local commercial, rénovation ?) n'est pas détaillé. La société civile pourrait être une SCI détenant un bien pour le compte de l'agence, mais l'activité principale reste l'intermédiation (68.31Z). Aucune preuve d'activité de promotion, de foncière d'investissement, ni de vocation sociale.\"}"
+   }
+  ]
+ }
+]

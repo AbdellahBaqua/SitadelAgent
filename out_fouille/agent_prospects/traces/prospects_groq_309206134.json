@@ -1,0 +1,62 @@
+[
+ {
+  "etape": "pre",
+  "texte": "résultats calculés par le code avant le modèle",
+  "entree": {
+   "siren": "309206134",
+   "denomination": "ARAM ATELIERS RECH ARTIS ARTIST MAULDRE",
+   "famille_classification": "association_ess",
+   "raisons_du_score": "famille cible (association_ess) +3 ; dépôt assez récent (2022) +1 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1",
+   "taille_calculee": "inconnue",
+   "taille_calcul": "salariés ≥ ?, établissements ouverts 1, établissements FINESS 0",
+   "permis_du_prospect": [
+    {
+     "num_dau": "07805022Y0008",
+     "fichier": "locaux",
+     "annee_depot": "2022",
+     "commune": "BAZOCHES SUR GUYONNE",
+     "etat": "commencé",
+     "type_projet": "",
+     "logements_crees": null,
+     "surface_locaux_creee_m2": 0
+    }
+   ],
+   "fiche_entreprise": {
+    "nom": "ARAM ATELIERS RECH ARTIS ARTIST MAULDRE",
+    "nature_juridique": "9220",
+    "naf_actuel": "94.99Z",
+    "etat": "A",
+    "date_creation": "1900-01-01",
+    "categorie": "PME",
+    "effectif": "NN",
+    "nb_etablissements": 2,
+    "nb_etablissements_ouverts": 1,
+    "libelle_naf_actuel": "Autres organisations fonctionnant par adhésion volontaire",
+    "libelle_nature_juridique": "Association déclarée",
+    "aide": "etat A = active, C ou F = cessée. effectif = tranche Insee de salariés (ex. 21 = 50 à 99, 41 = 500 à 999, 51 = 2 000 à 4 999). Dirigeants et finances volontairement exclus.",
+    "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/309206134"
+   },
+   "finess_du_prospect": {
+    "nb_etablissements_finess_france": 0,
+    "nb_etablissements_finess_yvelines": 0,
+    "nb_departements": 0,
+    "par_type": {},
+    "exemples_yvelines": [],
+    "source": "https://www.data.gouv.fr/datasets/53699569a3a729239d2046eb",
+    "aide": "Établissements dont le SIRET commence par ce SIREN. 0 ne prouve pas l'absence d'activité médico-sociale (SIRET non renseigné dans FINESS, autre entité juridique du même groupe)."
+   },
+   "origine": "demandeur de permis",
+   "consigne": "Ces résultats viennent des outils permis_du_prospect, fiche_entreprise et finess_du_prospect : cite-les. Conclus avec conclure_prospect."
+  }
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure_prospect",
+    "args": "{\"adequation\":\"faible\",\"besoin_immobilier\":\"Projet de création ou rénovation de locaux (type non précisé) en cours depuis 2022, indiqué par le permis 'locaux' déposé en 2022 et en état 'commencé'.\",\"indices\":[\"permis_du_prospect: dépôt d'un permis de locaux en 2022 (num_dau 07805022Y0008) à Bazoches-sur-Guyonne, état 'commencé', type_projet non renseigné.\",\"fiche_entreprise: association déclarée (nature juridique 9220), NAF 94.99Z – Autres organisations fonctionnant par adhésion volontaire, état actif, 2 établissements dont 1 ouvert, effectif inconnu.\",\"finess_du_prospect: aucun établissement FINESS (0) en Yvelines ni en France.\"],\"limites\":\"L'activité de l'association (artisanal/artistique) n'est pas clairement liée au secteur social, médico‑social ou à l'ESS à forte dimension d'action sociale. Absence d'établissements FINESS et de projet immobilier clairement orienté vers des besoins d'action sociale.\",\"type_structure\":\"Association culturelle/artistique (ESS) sans activité médico‑sociale apparente.\",\"verdict\":\"faux_positif\"}"
+   }
+  ]
+ }
+]

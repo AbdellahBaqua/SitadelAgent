@@ -1,0 +1,135 @@
+[
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "{\"siren\":\"921158564\"}"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "LE CLOS DES ALLUETS",
+     "nb_permis_PC": 3,
+     "annees_depot": [
+      "2022",
+      "2023"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 40,
+     "surface_locaux_non_residentiels_creee_m2": 0,
+     "nb_permis_collectif": 2,
+     "nb_permis_individuel": 1,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 26,
+     "permis_autorises_pas_remontes_comme_commences": 0
+    }
+   }
+  ]
+ },
+ {
+  "etape": 1,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "fiche_entreprise",
+    "args": "{\"siren\":\"921158564\"}"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "921158564",
+      "nom": "LE CLOS DES ALLUETS",
+      "nature_juridique": "6599",
+      "naf_actuel": "41.10D",
+      "etat": "A",
+      "date_creation": "2022-11-07",
+      "categorie": "PME",
+      "effectif": "NN",
+      "nb_etablissements": 1,
+      "nb_etablissements_ouverts": 1,
+      "siege_actuel": {
+       "siret": "92115856400010",
+       "naf": "41.10D",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "92115856400010",
+       "naf_dans_permis": "70.10Z",
+       "nb_permis": 3,
+       "annees_depot": [
+        "2022",
+        "2023"
+       ],
+       "etat_actuel": "ouvert",
+       "date_creation": "2022-11-07",
+       "date_fermeture": null
+      }
+     ],
+     "alertes": [
+      "NAF du permis ['70.10Z'] différent du NAF actuel de l'entreprise 41.10D"
+     ],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/921158564"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 2,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "libelle_cj",
+    "args": "{\"code\":\"6599\"}"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "6599",
+     "libelle": "Autre société civile"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 3,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "libelle_naf",
+    "args": "{\"code\":\"41.10D\"}"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "libelle_naf",
+    "sortie": {
+     "code": "41.10D",
+     "libelle": "Supports juridiques de programmes"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 4,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"promoteur\",\"confiance\":\"haute\",\"indices\":[\"fiche_entreprise : naf_actuel = 41.10D « Supports juridiques de programmes » (explicitement listé dans la définition de la famille promoteur : « y compris SCI de construction-vente et supports juridiques de programmes ») \",\"libelle_naf : 41.10D = « Supports juridiques de programmes » \",\"libelle_cj : 6599 = « Autre société civile » (forme juridique cohérente avec une SCI utilisée comme support juridique de programme) \",\"permis_du_demandeur : 3 permis déposés en 2022-2023, 40 logements créés dont 26 locatifs sociaux, activité de promotion immobilière (construction pour vente ou pour le compte de bailleurs) \"],\"limites\":\"La dénomination « LE CLOS DES ALLUETS » ressemble à un nom de programme immobilier, ce qui est typique d'un véhicule de promotion (support juridique de programme). La part de logements sociaux (26/40) suggère une opération réalisée pour le compte d'un bailleur social, mais l'entité elle-même est un promoteur (support de programme).\"}"
+   }
+  ]
+ }
+]

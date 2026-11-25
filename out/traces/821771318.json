@@ -1,0 +1,111 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "821771318"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "821771318"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "821771318"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "821771318"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "SCA DE LA VIELLE EGLISE",
+     "nb_permis_PC": 1,
+     "annees_depot": [
+      "2015"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 8,
+     "surface_locaux_non_residentiels_creee_m2": 0,
+     "nb_permis_collectif": 1,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 0
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "821771318",
+      "nom": "SCA DE LA VIELLE EGLISE",
+      "nature_juridique": "6542",
+      "naf_actuel": "68.32A",
+      "etat": "C",
+      "date_creation": "2016-07-28",
+      "categorie": null,
+      "effectif": "NN",
+      "nb_etablissements": 1,
+      "nb_etablissements_ouverts": 0,
+      "siege_actuel": {
+       "siret": "82177131800010",
+       "naf": "68.32A",
+       "etat": "F"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "82177131800010",
+       "naf_dans_permis": "68.32A",
+       "nb_permis": 1,
+       "annees_depot": [
+        "2015"
+       ],
+       "etat_actuel": "fermé",
+       "date_creation": "2016-07-28",
+       "date_fermeture": "2025-06-30"
+      }
+     ],
+     "alertes": [
+      "SIRET 82177131800010 (permis 2015) fermé le 2025-06-30 : le NAF 68.32A du permis vient d'un établissement fermé"
+     ],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/821771318"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "68.32A",
+      "libelle": "Administration d'immeubles et autres biens immobiliers"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "6542",
+     "libelle": "Société civile d'attribution"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"non_determine\",\"confiance\":\"faible\",\"indices\":[\"permis_du_demandeur : 1 permis en 2015, 8 logements créés en collectif, 0 logement social déclaré\",\"fiche_entreprise : nature juridique 6542 (Société civile d'attribution), NAF actuel 68.32A, entreprise fermée (état C), établissement unique fermé depuis 2025-06-30\",\"libelle_cj : 6542 = Société civile d'attribution\",\"libelle_naf : 68.32A = Administration d'immeubles et autres biens immobiliers\"],\"limites\":\"La forme juridique (SCA) n'est pas directement mappée aux familles cibles : ce n'est ni un bailleur social (pas de HLM, pas de logement social déclaré), ni un promoteur classique (construction-vente), ni une foncière/SCI d'investissement (la SCA vise l'attribution de jouissance, pas la détention-location), ni une association ESS, ni un exploitant santé/social, ni une collectivité, ni un syndicat de copropriétaires. L'unique permis (2015) montre une opération de 8 logements mais sans qualification de résidence ni de secteur social. L'entreprise est fermée, l'établissement unique aussi. Les indices sont trop minces pour rattacher cette SCA à l'une des familles avec certitude.\"}"
+   }
+  ]
+ }
+]

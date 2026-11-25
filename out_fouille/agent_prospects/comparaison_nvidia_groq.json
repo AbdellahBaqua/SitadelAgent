@@ -1,0 +1,38 @@
+{
+ "modeles": {
+  "nvidia": "nvidia/nemotron-3-ultra-550b-a55b",
+  "groq": "openai/gpt-oss-120b"
+ },
+ "tires": 25,
+ "exclus_par_le_code": 3,
+ "cas": 22,
+ "accord_verdict": 17,
+ "accord_adequation": 10,
+ "accord_verdict_apres_garde_fou": 20,
+ "verdicts_apres_garde_fou": {
+  "nvidia": {
+   "a_verifier": 5,
+   "prospect": 17
+  },
+  "groq": {
+   "faux_positif": 1,
+   "prospect": 16,
+   "a_verifier": 5
+  }
+ },
+ "duree_mediane_s": {
+  "nvidia": 73,
+  "groq": 17
+ },
+ "verdicts": {
+  "nvidia": {
+   "prospect": 20,
+   "a_verifier": 2
+  },
+  "groq": {
+   "faux_positif": 1,
+   "prospect": 19,
+   "a_verifier": 2
+  }
+ }
+}

@@ -1,0 +1,131 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "442131322"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "442131322"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "442131322"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "442131322"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "AMETIS",
+     "nb_permis_PC": 4,
+     "annees_depot": [
+      "2015",
+      "2018",
+      "2020",
+      "2025"
+     ],
+     "nb_communes": 3,
+     "logements_crees_total": 199,
+     "surface_locaux_non_residentiels_creee_m2": 76,
+     "nb_permis_collectif": 3,
+     "nb_permis_individuel": 1,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 102,
+     "permis_autorises_pas_remontes_comme_commences": 2
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "442131322",
+      "nom": "AMETIS (GROUPE AMETIS)",
+      "nature_juridique": "5710",
+      "naf_actuel": "41.10A",
+      "etat": "A",
+      "date_creation": "2002-04-02",
+      "categorie": "ETI",
+      "effectif": "12",
+      "nb_etablissements": 15,
+      "nb_etablissements_ouverts": 7,
+      "siege_actuel": {
+       "siret": "44213132200046",
+       "naf": "41.10A",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "44213132200038",
+       "naf_dans_permis": "71.12B",
+       "nb_permis": 3,
+       "annees_depot": [
+        "2015",
+        "2018",
+        "2020"
+       ],
+       "etat_actuel": "fermé",
+       "date_creation": "2008-12-15",
+       "date_fermeture": "2014-11-24"
+      },
+      {
+       "siret": "44213132200046",
+       "naf_dans_permis": "41.10A",
+       "nb_permis": 1,
+       "annees_depot": [
+        "2025"
+       ],
+       "etat_actuel": "ouvert",
+       "date_creation": "2014-11-24",
+       "date_fermeture": null
+      }
+     ],
+     "alertes": [
+      "SIRET 44213132200038 (permis 2015,2018,2020) fermé le 2014-11-24 : le NAF 71.12B du permis vient d'un établissement fermé"
+     ],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/442131322"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "41.10A",
+      "libelle": "Promotion immobilière de logements"
+     },
+     {
+      "code": "71.12B",
+      "libelle": "Ingénierie, études techniques"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5710",
+     "libelle": "SAS, société par actions simplifiée"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"promoteur\",\"confiance\":\"haute\",\"indices\":[\"fiche_entreprise : NAF actuel de l'entreprise = 41.10A « Promotion immobilière de logements » (activité actuelle, établissement siège ouvert)\",\"libelle_naf : 41.10A correspond à la promotion immobilière de logements (construction pour vente)\",\"permis_du_demandeur : 4 permis de construire déposés (2015-2025), 199 logements créés au total, dont 3 collectifs et 1 individuel, 102 logements locatifs sociaux déclarés (probablement en VEFA pour bailleurs)\",\"fiche_entreprise : forme juridique SAS (5710), catégorie ETI, 12 salariés, 15 établissements dont 7 ouverts — profil cohérent avec un promoteur immobilier structuré\",\"permis_du_demandeur : surface non résidentielle de 76 m² créée, indiquant des programmes mixtes ou accessoires, typiques de la promotion\"],\"limites\":\"Les 102 logements locatifs sociaux déclarés pourraient suggérer un lien avec le logement social, mais la structure juridique (SAS) et l'activité principale (promotion) orientent vers un promoteur qui réalise des programmes en VEFA pour des bailleurs sociaux. L'ancien établissement (SIRET 44213132200038) avec NAF 71.12B (ingénierie) est fermé depuis 2014 et ne reflète plus l'activité.\"}"
+   }
+  ]
+ }
+]

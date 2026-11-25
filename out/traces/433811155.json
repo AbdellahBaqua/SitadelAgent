@@ -1,0 +1,111 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "433811155"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "433811155"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "433811155"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "433811155"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "FINANCIERE AXEL INVESTISSEMENT",
+     "nb_permis_PC": 2,
+     "annees_depot": [
+      "2023",
+      "2026"
+     ],
+     "nb_communes": 2,
+     "logements_crees_total": 13,
+     "surface_locaux_non_residentiels_creee_m2": 0,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 2,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 2
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "433811155",
+      "nom": "FINANCIERE AXEL INVESTISSEMENT",
+      "nature_juridique": "5499",
+      "naf_actuel": "64.20Z",
+      "etat": "A",
+      "date_creation": "2000-01-01",
+      "categorie": "PME",
+      "effectif": "02",
+      "nb_etablissements": 3,
+      "nb_etablissements_ouverts": 1,
+      "siege_actuel": {
+       "siret": "43381115500038",
+       "naf": "64.20Z",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "43381115500038",
+       "naf_dans_permis": "64.20Z",
+       "nb_permis": 2,
+       "annees_depot": [
+        "2023",
+        "2026"
+       ],
+       "etat_actuel": "ouvert",
+       "date_creation": "2017-09-03",
+       "date_fermeture": null
+      }
+     ],
+     "alertes": [],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/433811155"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "64.20Z",
+      "libelle": "Activités des sociétés holding"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5499",
+     "libelle": "Société à responsabilité limitée (sans autre indication)"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"fonciere_investisseur\",\"confiance\":\"moyenne\",\"indices\":[\"fiche_entreprise : NAF actuel 64.20Z « Activités des sociétés holding » (libelle_naf), forme juridique SARL (cj 5499, libelle_cj), entreprise active, 2 salariés\",\"permis_du_demandeur : 2 permis individuels (2023, 2026), 13 logements créés au total, 0 logement locatif social déclaré, 0 surface non résidentielle\",\"dénomination : « FINANCIERE AXEL INVESTISSEMENT » évoque une structure financière d'investissement / holding\"],\"limites\":\"L'activité holding (64.20Z) peut être une coquille financière qui détient des filiales opérationnelles ; les permis sont déposés au nom de cette holding elle-même, ce qui suggère une activité directe de portage ou de promotion, mais le faible effectif (2) et l'absence de NAF promoteur (41.10Z) ou foncière (68.20B) laissent une marge d'incertitude. Aucune preuve de location/gestion de patrimoine en propre n'apparaît dans les données disponibles.\"}"
+   }
+  ]
+ }
+]

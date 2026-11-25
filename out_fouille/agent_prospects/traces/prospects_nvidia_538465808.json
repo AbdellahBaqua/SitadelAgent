@@ -1,0 +1,88 @@
+[
+ {
+  "etape": "pre",
+  "texte": "résultats calculés par le code avant le modèle",
+  "entree": {
+   "siren": "538465808",
+   "denomination": "AUTISME EN YVELINES",
+   "famille_classification": "association_ess",
+   "raisons_du_score": "famille cible (association_ess) +3 ; projet médico-social (équipement de santé) +3 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1 ; projet de taille significative (≥ 20 logements ou ≥ 1 000 m²) +1",
+   "taille_calculee": "moyenne",
+   "taille_calcul": "salariés ≥ 250, établissements ouverts 13, établissements FINESS 8",
+   "permis_du_prospect": [
+    {
+     "num_dau": "07801016G0013",
+     "fichier": "locaux",
+     "annee_depot": "2016",
+     "commune": "LES ALLUETS-LE-ROI",
+     "etat": "commencé",
+     "type_projet": "équipement de santé",
+     "logements_crees": null,
+     "surface_locaux_creee_m2": 2440
+    }
+   ],
+   "fiche_entreprise": {
+    "nom": "AUTISME EN ILE DE FRANCE (AUTISME EN ILE DE FRANCE SIEGE) (AEIDF)",
+    "nature_juridique": "9220",
+    "naf_actuel": "88.99B",
+    "etat": "A",
+    "date_creation": "2010-11-04",
+    "categorie": "ETI",
+    "effectif": "32",
+    "nb_etablissements": 20,
+    "nb_etablissements_ouverts": 13,
+    "libelle_naf_actuel": "Action sociale sans hébergement n.c.a.",
+    "libelle_nature_juridique": "Association déclarée",
+    "aide": "etat A = active, C ou F = cessée. effectif = tranche Insee de salariés (ex. 21 = 50 à 99, 41 = 500 à 999, 51 = 2 000 à 4 999). Dirigeants et finances volontairement exclus.",
+    "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/538465808"
+   },
+   "finess_du_prospect": {
+    "nb_etablissements_finess_france": 8,
+    "nb_etablissements_finess_yvelines": 3,
+    "nb_departements": 4,
+    "par_type": {
+     "Etab.Educ.Spéciale pour Déficients Mentaux et Handicapés": 4,
+     "Services à Domicile ou Ambulatoires pour Handicapés": 3,
+     "Etab. et Services d'Hébergement pour Adultes Handicapés": 1
+    },
+    "exemples_yvelines": [
+     {
+      "finess": "780018602",
+      "nom": "IME NOTRE ECOLE",
+      "ville": "CARRIERES SOUS POISSY",
+      "categorie": "Institut Médico-Educatif (I.M.E.)",
+      "ouverture": "2003-08-08"
+     },
+     {
+      "finess": "780702353",
+      "nom": "SERVICE D EDUCATION SPECIALE ET DE SOINS A DOMICILE AIDERA",
+      "ville": "NOISY LE ROI",
+      "categorie": "Service d'Éducation Spéciale et de Soins à Domicile",
+      "ouverture": "1993-09-13"
+     },
+     {
+      "finess": "780820429",
+      "nom": "FOYER D ACCUEIL MEDICALISE LE CLAIR BOIS",
+      "ville": "LES ALLUETS LE ROI",
+      "categorie": "Foyer d'Accueil Médicalisé pour Adultes Handicapés (F.A.M.)",
+      "ouverture": "1989-02-13"
+     }
+    ],
+    "source": "https://www.data.gouv.fr/datasets/53699569a3a729239d2046eb",
+    "aide": "Établissements dont le SIRET commence par ce SIREN. 0 ne prouve pas l'absence d'activité médico-sociale (SIRET non renseigné dans FINESS, autre entité juridique du même groupe)."
+   },
+   "origine": "demandeur de permis",
+   "consigne": "Ces résultats viennent des outils permis_du_prospect, fiche_entreprise et finess_du_prospect : cite-les. Conclus avec conclure_prospect."
+  }
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure_prospect",
+    "args": "{\"verdict\":\"prospect\",\"adequation\":\"forte\",\"type_structure\":\"Association ESS (association déclarée) gérant 8 établissements médico-sociaux (IME, SESSAD, FAM) dont 3 dans les Yvelines\",\"besoin_immobilier\":\"Permis 2016 pour un équipement de santé de 2 440 m² aux Alluets-le-Roi (site d'un FAM), état « commencé » : projet significatif d'extension ou reconstruction en cours.\",\"indices\":[\"dénomination : AUTISME EN YVELINES (nom d'usage) / fiche_entreprise : AUTISME EN ILE DE FRANCE (siège), association déclarée (9220), NAF 88.99B « Action sociale sans hébergement n.c.a. », active (état A), 13 établissements ouverts, catégorie ETI, effectif 32 (tranche Insee).\",\"finess_du_prospect : 8 établissements FINESS en France (4 IME, 3 SESSAD, 1 FAM), dont 3 dans les Yvelines (IME Notre École, SESSAD AIDERA, FAM Le Clair Bois).\",\"permis_du_prospect : 1 permis (2016) aux Alluets-le-Roi, type « équipement de santé », surface 2 440 m², état « commencé » – projet médico-social de taille significative.\",\"taille_calculee : moyenne (cœur de cible Buddimm).\"],\"limites\":\"Un seul permis visible (2016) ; l'état « commencé » ne garantit pas que le projet est récent. Cependant, la gestion de 8 établissements médico-sociaux laisse présager des besoins récurrents (rénovation, extension, mise aux normes).\"}"
+   }
+  ]
+ }
+]

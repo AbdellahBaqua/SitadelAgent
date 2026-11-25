@@ -1,0 +1,115 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "508616604"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "508616604"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "508616604"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "508616604"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "PROPRABAIL",
+     "nb_permis_PC": 1,
+     "annees_depot": [
+      "2022"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 12,
+     "surface_locaux_non_residentiels_creee_m2": 0,
+     "nb_permis_collectif": 1,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 1
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "508616604",
+      "nom": "PROPRABAIL",
+      "nature_juridique": "5499",
+      "naf_actuel": "68.10Z",
+      "etat": "A",
+      "date_creation": "2008-10-02",
+      "categorie": "PME",
+      "effectif": "NN",
+      "nb_etablissements": 2,
+      "nb_etablissements_ouverts": 1,
+      "siege_actuel": {
+       "siret": "50861660400023",
+       "naf": "68.10Z",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "50861660400023",
+       "naf_dans_permis": "68.31Z",
+       "nb_permis": 1,
+       "annees_depot": [
+        "2022"
+       ],
+       "etat_actuel": "ouvert",
+       "date_creation": "2012-02-17",
+       "date_fermeture": null
+      }
+     ],
+     "alertes": [
+      "NAF du permis ['68.31Z'] différent du NAF actuel de l'entreprise 68.10Z"
+     ],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/508616604"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "68.10Z",
+      "libelle": "Activités des marchands de biens immobiliers"
+     },
+     {
+      "code": "68.31Z",
+      "libelle": "Agences immobilières"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5499",
+     "libelle": "Société à responsabilité limitée (sans autre indication)"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"fonciere_investisseur\",\"confiance\":\"moyenne\",\"indices\":[\"fiche_entreprise : NAF actuel 68.10Z « Activités des marchands de biens immobiliers » (marchand de biens listé explicitement dans la définition de fonciere_investisseur)\",\"fiche_entreprise : forme juridique 5499 (SARL), entreprise active, PME créée en 2008\",\"permis_du_demandeur : 1 PC en 2022, 12 logements collectifs créés, 0 logement social déclaré\",\"libelle_naf : 68.10Z = marchands de biens immobiliers ; 68.31Z (permis) = agences immobilières, établissement ouvert mais NAF historique\",\"dénomination : PROPRABAIL évoque propriété/bail, cohérent avec activité patrimoniale\"],\"limites\":\"Aucune preuve de statut HLM, d'agrément ESS, de vocation médico-sociale ou de qualité de collectivité. Le permis montre de la production neuve (12 logements collectifs) ce qui peut aussi relever d'une activité de promotion, mais l'activité principale actuelle (NAF 68.10Z) est marchand de biens, classé dans fonciere_investisseur. Confiance moyenne car l'objet du permis (construction neuve) n'est pas typique d'un pur marchand de biens, mais la définition de la famille inclut explicitement ce code NAF.\"}"
+   }
+  ]
+ }
+]

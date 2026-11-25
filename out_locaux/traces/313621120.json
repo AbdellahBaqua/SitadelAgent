@@ -1,0 +1,115 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "313621120"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "313621120"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "313621120"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "313621120"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "SOCIETE SAINT LOUP",
+     "nb_permis_PC": 1,
+     "annees_depot": [
+      "2014"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 0,
+     "surface_locaux_non_residentiels_creee_m2": 318,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 1
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "313621120",
+      "nom": "SOCIETE SAINT LOUP",
+      "nature_juridique": "5599",
+      "naf_actuel": "68.20B",
+      "etat": "A",
+      "date_creation": "1978-01-01",
+      "categorie": "PME",
+      "effectif": "NN",
+      "nb_etablissements": 1,
+      "nb_etablissements_ouverts": 1,
+      "siege_actuel": {
+       "siret": "31362112000010",
+       "naf": "68.20B",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "31362112000010",
+       "naf_dans_permis": "68.32A",
+       "nb_permis": 1,
+       "annees_depot": [
+        "2014"
+       ],
+       "etat_actuel": "ouvert",
+       "date_creation": "1978-01-01",
+       "date_fermeture": null
+      }
+     ],
+     "alertes": [
+      "NAF du permis ['68.32A'] différent du NAF actuel de l'entreprise 68.20B"
+     ],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/313621120"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "68.20B",
+      "libelle": "Location de terrains et d'autres biens immobiliers"
+     },
+     {
+      "code": "68.32A",
+      "libelle": "Administration d'immeubles et autres biens immobiliers"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5599",
+     "libelle": "SA à conseil d'administration (s.a.i.)"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"fonciere_investisseur\",\"confiance\":\"moyenne\",\"indices\":[\"fiche_entreprise : NAF actuel 68.20B « Location de terrains et d'autres biens immobiliers » – activité de détention et location de patrimoine immobilier\",\"fiche_entreprise : Forme juridique 5599 « SA à conseil d'administration (s.a.i.) » – société anonyme commerciale, compatible avec une foncière\",\"permis_du_demandeur : 1 permis en 2014 pour 318 m² de surface non résidentielle créée, 0 logement créé, 0 logement social déclaré – pas d'activité de promotion ni de logement social\",\"libelle_naf : 68.20B = location immobilière (patrimoine), 68.32A = administration d'immeubles (gestion) – cohérent avec une foncière\",\"dénomination : « SOCIETE SAINT LOUP » – ne contient pas d'indicateur HLM, association, mutuelle, collectivité ou copropriété\"],\"limites\":\"Aucune information sur l'actionnariat, la mission sociale éventuelle ou l'historique précis de la société. Le nom « Saint Loup » pourrait évoquer une origine religieuse ou sociale, mais la forme SA et l'activité de location orientent vers une foncière classique. L'absence de logements sociaux dans le permis ne permet pas d'exclure totalement une activité accessoire de bailleur social, mais rien ne le suggère.\"}"
+   }
+  ]
+ }
+]

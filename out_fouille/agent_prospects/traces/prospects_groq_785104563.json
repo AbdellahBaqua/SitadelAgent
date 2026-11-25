@@ -1,0 +1,62 @@
+[
+ {
+  "etape": "pre",
+  "texte": "résultats calculés par le code avant le modèle",
+  "entree": {
+   "siren": "785104563",
+   "denomination": "CPO FC CENTRE DE FORMATION PROFESIONNELLE CONTINUE",
+   "famille_classification": "association_ess",
+   "raisons_du_score": "famille cible (association_ess) +3 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1",
+   "taille_calculee": "moyenne",
+   "taille_calcul": "salariés ≥ ?, établissements ouverts 6, établissements FINESS 0",
+   "permis_du_prospect": [
+    {
+     "num_dau": "07862414Y0020",
+     "fichier": "locaux",
+     "annee_depot": "2014",
+     "commune": "TRIEL-SUR-SEINE",
+     "etat": "annulé",
+     "type_projet": "",
+     "logements_crees": null,
+     "surface_locaux_creee_m2": 230
+    }
+   ],
+   "fiche_entreprise": {
+    "nom": "CPO FC CENTRE DE FORMATION PROFESIONNELLE CONTINUE (CPO)",
+    "nature_juridique": "9220",
+    "naf_actuel": "85.59A",
+    "etat": "A",
+    "date_creation": "1900-01-01",
+    "categorie": "PME",
+    "effectif": "NN",
+    "nb_etablissements": 10,
+    "nb_etablissements_ouverts": 6,
+    "libelle_naf_actuel": "Formation continue d'adultes",
+    "libelle_nature_juridique": "Association déclarée",
+    "aide": "etat A = active, C ou F = cessée. effectif = tranche Insee de salariés (ex. 21 = 50 à 99, 41 = 500 à 999, 51 = 2 000 à 4 999). Dirigeants et finances volontairement exclus.",
+    "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/785104563"
+   },
+   "finess_du_prospect": {
+    "nb_etablissements_finess_france": 0,
+    "nb_etablissements_finess_yvelines": 0,
+    "nb_departements": 0,
+    "par_type": {},
+    "exemples_yvelines": [],
+    "source": "https://www.data.gouv.fr/datasets/53699569a3a729239d2046eb",
+    "aide": "Établissements dont le SIRET commence par ce SIREN. 0 ne prouve pas l'absence d'activité médico-sociale (SIRET non renseigné dans FINESS, autre entité juridique du même groupe)."
+   },
+   "origine": "demandeur de permis",
+   "consigne": "Ces résultats viennent des outils permis_du_prospect, fiche_entreprise et finess_du_prospect : cite-les. Conclus avec conclure_prospect."
+  }
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure_prospect",
+    "args": "{\"adequation\":\"moyenne\",\"besoin_immobilier\":\"Aucun projet immobilier en cours ; seul permis de locaux (230 m²) déposé en 2014 a été annulé, aucune indication de nouveaux besoins.\",\"indices\":[\"permis_du_prospect: permis de locaux de 230 m² déposé en 2014 à Triel‑sur‑Seine, état annulé\",\"fiche_entreprise: association déclarée (nature juridique 9220), activité \\\"Formation continue d'adultes\\\" (NAF 85.59A), taille moyenne (6 établissements ouverts)\",\"finess_du_prospect: aucun établissement FINESS répertorié (0), ce qui ne prouve pas d'activité médico‑sociale mais indique absence d'établissements sanitaires\"],\"limites\":\"Pas de projet immobilier actif ou récent ; l'activité principale est la formation, pas directement liée au secteur social/medical ciblé.\",\"type_structure\":\"Association de formation continue d'adultes\",\"verdict\":\"a_verifier\"}"
+   }
+  ]
+ }
+]

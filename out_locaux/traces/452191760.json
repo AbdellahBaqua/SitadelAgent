@@ -1,0 +1,118 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "452191760"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "452191760"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "452191760"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "452191760"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "FONTENOY IMMOBILIER MANTES",
+     "nb_permis_PC": 2,
+     "annees_depot": [
+      "2014",
+      "2018"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 0,
+     "surface_locaux_non_residentiels_creee_m2": 370,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 0
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "452191760",
+      "nom": "FONCIA MANTES IMMOBILIER",
+      "nature_juridique": "5710",
+      "naf_actuel": "68.20B",
+      "etat": "C",
+      "date_creation": "2004-02-18",
+      "categorie": null,
+      "effectif": "NN",
+      "nb_etablissements": 5,
+      "nb_etablissements_ouverts": 0,
+      "siege_actuel": {
+       "siret": "45219176000050",
+       "naf": "68.20B",
+       "etat": "F"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "45219176000027",
+       "naf_dans_permis": "68.32A",
+       "nb_permis": 2,
+       "annees_depot": [
+        "2014",
+        "2018"
+       ],
+       "etat_actuel": "fermé",
+       "date_creation": "2005-06-01",
+       "date_fermeture": "2019-03-29"
+      }
+     ],
+     "alertes": [
+      "SIRET 45219176000027 (permis 2014,2018) fermé le 2019-03-29 : le NAF 68.32A du permis vient d'un établissement fermé",
+      "NAF du permis ['68.32A'] différent du NAF actuel de l'entreprise 68.20B"
+     ],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/452191760"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "68.20B",
+      "libelle": "Location de terrains et d'autres biens immobiliers"
+     },
+     {
+      "code": "68.32A",
+      "libelle": "Administration d'immeubles et autres biens immobiliers"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5499",
+     "libelle": "Société à responsabilité limitée (sans autre indication)"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"fonciere_investisseur\",\"confiance\":\"moyenne\",\"indices\":[\"fiche_entreprise : NAF actuel 68.20B « Location de terrains et d'autres biens immobiliers » – activité de détention et location de patrimoine, cœur de métier des foncières/investisseurs\",\"fiche_entreprise : nature juridique 5710 (SARL) – structure privée compatible avec une foncière ou une SCI, exclut association/collectivité\",\"permis_du_demandeur : 2 permis (2014, 2018), 0 logement créé, 370 m² de surface non résidentielle – opérations sur du tertiaire/commercial, pas de promotion résidentielle ni de logement social\",\"libelle_naf : 68.20B confirme l'activité de location immobilière (vs 68.32A du permis, qui est de l'administration de biens, établissement fermé depuis 2019)\",\"dénomination : « FONCIA MANTES IMMOBILIER » – groupe connu pour la gestion et la location immobilière, cohérent avec un profil investisseur/patrimonial\"],\"limites\":\"Entreprise fermée (état « C », 0 établissement ouvert), permis anciens (2014-2018), établissement porteur des permis fermé en 2019. Impossible de vérifier la détention effective d'un patrimoine locatif actuel. La qualification « fonciere_investisseur » repose sur le NAF actuel et la dénomination, sans preuve d'actifs en portefeuille.\"}"
+   }
+  ]
+ }
+]

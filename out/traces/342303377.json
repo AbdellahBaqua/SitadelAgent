@@ -1,0 +1,109 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "342303377"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "342303377"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "342303377"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "342303377"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "BECKER FRANCE",
+     "nb_permis_PC": 1,
+     "annees_depot": [
+      "2021"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 1,
+     "surface_locaux_non_residentiels_creee_m2": 0,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 1,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 0
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "342303377",
+      "nom": "BECKER FRANCE",
+      "nature_juridique": "5499",
+      "naf_actuel": "46.69B",
+      "etat": "A",
+      "date_creation": "1987-09-01",
+      "categorie": "PME",
+      "effectif": "12",
+      "nb_etablissements": 4,
+      "nb_etablissements_ouverts": 2,
+      "siege_actuel": {
+       "siret": "34230337700036",
+       "naf": "46.69B",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "34230337700036",
+       "naf_dans_permis": "46.69B",
+       "nb_permis": 1,
+       "annees_depot": [
+        "2021"
+       ],
+       "etat_actuel": "ouvert",
+       "date_creation": "1992-06-29",
+       "date_fermeture": null
+      }
+     ],
+     "alertes": [],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/342303377"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "46.69B",
+      "libelle": "Commerce de gros (commerce interentreprises) de fournitures et équipements industriels divers"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5499",
+     "libelle": "Société à responsabilité limitée (sans autre indication)"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"entreprise_autre\",\"confiance\":\"haute\",\"indices\":[\"fiche_entreprise : entreprise de type SARL (CJ 5499), NAF actuel 46.69B « Commerce de gros (commerce interentreprises) de fournitures et équipements industriels divers »\",\"libelle_naf : code 46.69B correspond à une activité de commerce de gros, non immobilière\",\"libelle_cj : code 5499 = « Société à responsabilité limitée (sans autre indication) »\",\"permis_du_demandeur : 1 permis déposé en 2021 pour une maison individuelle (nb_permis_individuel=1), 1 logement créé, 0 logement locatif social, 0 surface non résidentielle\",\"dénomination : « BECKER FRANCE » ne suggère pas une vocation sociale, médicale, publique, de promotion immobilière ou de foncière\"],\"limites\":\"L'unique permis concerne une maison individuelle, ce qui pourrait correspondre à une construction pour usage propre (siège, logement de fonction) mais l'activité de l'entreprise est le commerce de gros, pas l'immobilier. Aucune preuve d'activité de bailleur social, promoteur, foncière, association, exploitant santé, collectivité ou copropriété.\"}"
+   }
+  ]
+ }
+]

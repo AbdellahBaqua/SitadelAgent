@@ -1,0 +1,109 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "849403373"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "849403373"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "849403373"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "849403373"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "POOLS",
+     "nb_permis_PC": 1,
+     "annees_depot": [
+      "2021"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 0,
+     "surface_locaux_non_residentiels_creee_m2": 293,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 0
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "849403373",
+      "nom": "POOLS",
+      "nature_juridique": "5499",
+      "naf_actuel": "66.30Z",
+      "etat": "A",
+      "date_creation": "2019-03-12",
+      "categorie": "PME",
+      "effectif": "02",
+      "nb_etablissements": 1,
+      "nb_etablissements_ouverts": 1,
+      "siege_actuel": {
+       "siret": "84940337300012",
+       "naf": "66.30Z",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "84940337300012",
+       "naf_dans_permis": "66.30Z",
+       "nb_permis": 1,
+       "annees_depot": [
+        "2021"
+       ],
+       "etat_actuel": "ouvert",
+       "date_creation": "2019-03-12",
+       "date_fermeture": null
+      }
+     ],
+     "alertes": [],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/849403373"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "66.30Z",
+      "libelle": "Gestion de fonds"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5499",
+     "libelle": "Société à responsabilité limitée (sans autre indication)"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"fonciere_investisseur\",\"confiance\":\"faible\",\"indices\":[\"fiche_entreprise : NAF actuel 66.30Z « Gestion de fonds » (libelle_naf) — activité de gestion de portefeuilles, compatible avec une société de gestion de SCPI/OPCI ou une foncière sous forme de SARL\",\"fiche_entreprise : forme juridique 5499 « Société à responsabilité limitée » (libelle_cj) — structure classique pour une foncière ou une société de gestion\",\"permis_du_demandeur : 1 PC en 2021 pour 293 m² de surface non résidentielle, 0 logement — opération tertiaire/commerciale, type d'actif détenu par une foncière ou un fonds géré\"],\"limites\":\"Le NAF 66.30Z couvre toute gestion de fonds (immobilier, actions, obligataire, etc.) : rien ne prouve que POOLS gère spécifiquement des fonds immobiliers. La dénomination « POOLS » est générique. Un seul permis, sans logement social ni résidence déclarée, ne permet pas d'affirmer une activité foncière récurrente. Aucune information sur la détention patrimoniale effective.\"}"
+   }
+  ]
+ }
+]

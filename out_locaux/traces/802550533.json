@@ -1,0 +1,116 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "802550533"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "802550533"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "802550533"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "802550533"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "MARIE",
+     "nb_permis_PC": 1,
+     "annees_depot": [
+      "2017"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 0,
+     "surface_locaux_non_residentiels_creee_m2": 96,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 1
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "802550533",
+      "nom": "MARIE",
+      "nature_juridique": "5710",
+      "naf_actuel": "68.31Z",
+      "etat": "C",
+      "date_creation": "2014-05-28",
+      "categorie": null,
+      "effectif": "NN",
+      "nb_etablissements": 2,
+      "nb_etablissements_ouverts": 0,
+      "siege_actuel": {
+       "siret": "80255053300029",
+       "naf": "68.31Z",
+       "etat": "F"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "80255053300011",
+       "naf_dans_permis": "70.10Z",
+       "nb_permis": 1,
+       "annees_depot": [
+        "2017"
+       ],
+       "etat_actuel": "fermé",
+       "date_creation": "2014-05-28",
+       "date_fermeture": "2021-12-31"
+      }
+     ],
+     "alertes": [
+      "SIRET 80255053300011 (permis 2017) fermé le 2021-12-31 : le NAF 70.10Z du permis vient d'un établissement fermé",
+      "NAF du permis ['70.10Z'] différent du NAF actuel de l'entreprise 68.31Z"
+     ],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/802550533"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "68.31Z",
+      "libelle": "Agences immobilières"
+     },
+     {
+      "code": "70.10Z",
+      "libelle": "Activités des sièges sociaux"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5499",
+     "libelle": "Société à responsabilité limitée (sans autre indication)"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"non_determine\",\"confiance\":\"faible\",\"indices\":[\"fiche_entreprise : NAF actuel 68.31Z « Agences immobilières » (libelle_naf)\",\"fiche_entreprise : Nature juridique SARL (code 5499 « Société à responsabilité limitée » selon libelle_cj)\",\"fiche_entreprise : Entreprise fermée (état C, 0 établissements ouverts, siège fermé)\",\"permis_du_demandeur : 1 permis en 2017, 96 m² de surface non résidentielle créée, 0 logement\",\"permis_du_demandeur : Établissement dépositaire du permis (SIRET 80255053300011) fermé depuis 2021-12-31 (alerte fiche_entreprise)\",\"libelle_naf : NAF du permis 70.10Z « Activités des sièges sociaux » (historique, établissement fermé)\",\"dénomination : « MARIE » ne permet pas d'identifier une famille spécifique\"],\"limites\":\"Entreprise fermée depuis plusieurs années ; un seul permis ancien (2017) pour une surface non résidentielle modeste ; activité actuelle (agence immobilière) non confirmée comme étant de promotion, de bailleur social, de foncière, d'association ESS, d'exploitant santé/social, de collectivité ou de copropriété. La nature juridique (SARL) et le NAF actuel orientent vers une entreprise privée classique, mais sans preuve d'appartenance à l'une des familles ciblées.\"}"
+   }
+  ]
+ }
+]

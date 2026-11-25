@@ -1,0 +1,497 @@
+{
+ "permis": {
+  "logements": 3363,
+  "locaux": 4245,
+  "mixtes": 516,
+  "mixtes_par_famille": {
+   "promoteur": 233,
+   "fonciere_investisseur": 159,
+   "collectivite_public": 40,
+   "bailleur_social": 34,
+   "entreprise_autre": 26,
+   "association_ess": 12,
+   "non_determine": 8,
+   "exploitant_sante_social": 3,
+   "copropriete": 1
+  },
+  "mixtes_avec_equipement": {
+   "autre": 455,
+   "action sociale": 40,
+   "santé": 21
+  },
+  "mixtes_logements": 26498,
+  "mixtes_surface_m2": 430398
+ },
+ "acteurs": {
+  "logements": 2048,
+  "locaux": 2439,
+  "deux_fichiers": 530,
+  "deux_fichiers_par_famille": {
+   "promoteur": 195,
+   "fonciere_investisseur": 183,
+   "collectivite_public": 58,
+   "entreprise_autre": 47,
+   "association_ess": 19,
+   "bailleur_social": 18,
+   "non_determine": 7,
+   "exploitant_sante_social": 2,
+   "copropriete": 1
+  },
+  "familles_differentes": 15
+ },
+ "medico_mixte": [
+  {
+   "siren": "227806460",
+   "denomination": "DEPARTEMENT DES YVELINES",
+   "famille_logements": "collectivite_public",
+   "permis_logements": 11,
+   "logements": 44,
+   "residences_medico": 0,
+   "permis_locaux": 54,
+   "equipements_medico": 6,
+   "surface_m2": 115560,
+   "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/227806460"
+  },
+  {
+   "siren": "562091546",
+   "denomination": "BOUYGUES IMMOBILIER",
+   "famille_logements": "promoteur",
+   "permis_logements": 48,
+   "logements": 3617,
+   "residences_medico": 1,
+   "permis_locaux": 14,
+   "equipements_medico": 2,
+   "surface_m2": 35710,
+   "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/562091546"
+  },
+  {
+   "siren": "552141533",
+   "denomination": "IMMOBILIERE 3F",
+   "famille_logements": "bailleur_social",
+   "permis_logements": 44,
+   "logements": 1552,
+   "residences_medico": 0,
+   "permis_locaux": 10,
+   "equipements_medico": 1,
+   "surface_m2": 1545,
+   "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/552141533"
+  },
+  {
+   "siren": "450341847",
+   "denomination": "IMMOBILIERE DES ORMES",
+   "famille_logements": "fonciere_investisseur",
+   "permis_logements": 39,
+   "logements": 101,
+   "residences_medico": 0,
+   "permis_locaux": 11,
+   "equipements_medico": 1,
+   "surface_m2": 6078,
+   "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/450341847"
+  },
+  {
+   "siren": "308435460",
+   "denomination": "LES RESIDENCES SOCIETE ANONYME D'HABITATIONS A LOYER MODERE",
+   "famille_logements": "bailleur_social",
+   "permis_logements": 35,
+   "logements": 700,
+   "residences_medico": 1,
+   "permis_locaux": 7,
+   "equipements_medico": 1,
+   "surface_m2": 2357,
+   "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/308435460"
+  },
+  {
+   "siren": "315518803",
+   "denomination": "ANTIN RESIDENCES SA HABITAT LOYER MODERE",
+   "famille_logements": "bailleur_social",
+   "permis_logements": 30,
+   "logements": 1442,
+   "residences_medico": 3,
+   "permis_locaux": 2,
+   "equipements_medico": 1,
+   "surface_m2": 9412,
+   "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/315518803"
+  },
+  {
+   "siren": "592001648",
+   "denomination": "ENTREPRISE SOCIALE POUR L'HABITAT DOMNIS",
+   "famille_logements": "bailleur_social",
+   "permis_logements": 29,
+   "logements": 933,
+   "residences_medico": 2,
+   "permis_locaux": 2,
+   "equipements_medico": 1,
+   "surface_m2": 377,
+   "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/592001648"
+  },
+  {
+   "siren": "200059889",
+   "denomination": "GRAND PARIS SEINE ET OISE",
+   "famille_logements": "collectivite_public",
+   "permis_logements": 1,
+   "logements": 53,
+   "residences_medico": 0,
+   "permis_locaux": 29,
+   "equipements_medico": 2,
+   "surface_m2": 6261,
+   "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/200059889"
+  },
+  {
+   "siren": "210205506",
+   "denomination": "COMMUNE D'ORGEVAL",
+   "famille_logements": "collectivite_public",
+   "permis_logements": 11,
+   "logements": 42,
+   "residences_medico": 0,
+   "permis_locaux": 16,
+   "equipements_medico": 1,
+   "surface_m2": 9670,
+   "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/210205506"
+  },
+  {
+   "siren": "824350763",
+   "denomination": "NEXITY IR PROGRAMMES GRAND PARIS",
+   "famille_logements": "promoteur",
+   "permis_logements": 19,
+   "logements": 1848,
+   "residences_medico": 0,
+   "permis_locaux": 7,
+   "equipements_medico": 1,
+   "surface_m2": 3840,
+   "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/824350763"
+  },
+  {
+   "siren": "379445679",
+   "denomination": "KAUFMAN & BROAD HOMES",
+   "famille_logements": "promoteur",
+   "permis_logements": 19,
+   "logements": 1762,
+   "residences_medico": 0,
+   "permis_locaux": 5,
+   "equipements_medico": 1,
+   "surface_m2": 17053,
+   "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/379445679"
+  },
+  {
+   "siren": "419750252",
+   "denomination": "MARIGNAN RESIDENCES",
+   "famille_logements": "promoteur",
+   "permis_logements": 18,
+   "logements": 951,
+   "residences_medico": 0,
+   "permis_locaux": 5,
+   "equipements_medico": 1,
+   "surface_m2": 1160,
+   "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/419750252"
+  },
+  {
+   "siren": "339436347",
+   "denomination": "IMMOBILIER ET INFORMATIQUE",
+   "famille_logements": "entreprise_autre",
+   "permis_logements": 20,
+   "logements": 40,
+   "residences_medico": 0,
+   "permis_locaux": 2,
+   "equipements_medico": 1,
+   "surface_m2": 167,
+   "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/339436347"
+  },
+  {
+   "siren": "217804988",
+   "denomination": "COMMUNE DE POISSY",
+   "famille_logements": "collectivite_public",
+   "permis_logements": 2,
+   "logements": 5,
+   "residences_medico": 0,
+   "permis_locaux": 19,
+   "equipements_medico": 3,
+   "surface_m2": 11548,
+   "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/217804988"
+  },
+  {
+   "siren": "552046484",
+   "denomination": "CDC HABITAT SOCIAL SOCIETE ANONYME D'HABITATIONS A LOYER MODERE",
+   "famille_logements": "bailleur_social",
+   "permis_logements": 15,
+   "logements": 436,
+   "residences_medico": 1,
+   "permis_locaux": 5,
+   "equipements_medico": 3,
+   "surface_m2": 1256,
+   "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/552046484"
+  },
+  {
+   "siren": "217806215",
+   "denomination": "COMMUNE DE TRAPPES",
+   "famille_logements": "collectivite_public",
+   "permis_logements": 2,
+   "logements": 3,
+   "residences_medico": 0,
+   "permis_locaux": 16,
+   "equipements_medico": 4,
+   "surface_m2": 8676,
+   "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/217806215"
+  },
+  {
+   "siren": "353708746",
+   "denomination": "DEMATHIEU ET BARD IMMOBILIER",
+   "famille_logements": "fonciere_investisseur",
+   "permis_logements": 10,
+   "logements": 571,
+   "residences_medico": 0,
+   "permis_locaux": 7,
+   "equipements_medico": 1,
+   "surface_m2": 22940,
+   "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/353708746"
+  },
+  {
+   "siren": "217804186",
+   "denomination": "COMMUNE DE MONTESSON",
+   "famille_logements": "collectivite_public",
+   "permis_logements": 5,
+   "logements": 10,
+   "residences_medico": 0,
+   "permis_locaux": 12,
+   "equipements_medico": 2,
+   "surface_m2": 7149,
+   "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/217804186"
+  },
+  {
+   "siren": "287800536",
+   "denomination": "SCE DEPARTEMENTAL INCENDIE ET SECOURS",
+   "famille_logements": "collectivite_public",
+   "permis_logements": 1,
+   "logements": 1,
+   "residences_medico": 0,
+   "permis_locaux": 14,
+   "equipements_medico": 6,
+   "surface_m2": 6135,
+   "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/287800536"
+  },
+  {
+   "siren": "217803618",
+   "denomination": "COMMUNE DE MANTES LA JOLIE",
+   "famille_logements": "collectivite_public",
+   "permis_logements": 1,
+   "logements": 1,
+   "residences_medico": 0,
+   "permis_locaux": 13,
+   "equipements_medico": 1,
+   "surface_m2": 10853,
+   "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/217803618"
+  },
+  {
+   "siren": "785086505",
+   "denomination": "SOVAL ENTREPRISE SOCIALE POUR L'HABITAT DU VAL DE SEINE",
+   "famille_logements": "bailleur_social",
+   "permis_logements": 8,
+   "logements": 118,
+   "residences_medico": 1,
+   "permis_locaux": 5,
+   "equipements_medico": 1,
+   "surface_m2": 3630,
+   "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/785086505"
+  },
+  {
+   "siren": "217803345",
+   "denomination": "COMMUNE DE LEVIS SAINT NOM",
+   "famille_logements": "collectivite_public",
+   "permis_logements": 4,
+   "logements": 7,
+   "residences_medico": 0,
+   "permis_locaux": 9,
+   "equipements_medico": 2,
+   "surface_m2": 2304,
+   "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/217803345"
+  },
+  {
+   "siren": "217803832",
+   "denomination": "COMMUNE DE MAUREPAS",
+   "famille_logements": "collectivite_public",
+   "permis_logements": 4,
+   "logements": 6,
+   "residences_medico": 0,
+   "permis_locaux": 9,
+   "equipements_medico": 1,
+   "surface_m2": 4341,
+   "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/217803832"
+  },
+  {
+   "siren": "217804905",
+   "denomination": "COMMUNE DE PLAISIR",
+   "famille_logements": "collectivite_public",
+   "permis_logements": 1,
+   "logements": 1,
+   "residences_medico": 0,
+   "permis_locaux": 12,
+   "equipements_medico": 3,
+   "surface_m2": 4237,
+   "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/217804905"
+  },
+  {
+   "siren": "844198960",
+   "denomination": "SNC IP1R",
+   "famille_logements": "promoteur",
+   "permis_logements": 10,
+   "logements": 547,
+   "residences_medico": 0,
+   "permis_locaux": 2,
+   "equipements_medico": 1,
+   "surface_m2": 655,
+   "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/844198960"
+  },
+  {
+   "siren": "716350137",
+   "denomination": "SOC ECONOM MIXTE POUR DEVELL AUNIS SAINT",
+   "famille_logements": "entreprise_autre",
+   "permis_logements": 5,
+   "logements": 59,
+   "residences_medico": 0,
+   "permis_locaux": 6,
+   "equipements_medico": 1,
+   "surface_m2": 2061,
+   "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/716350137"
+  },
+  {
+   "siren": "217800739",
+   "denomination": "COMMUNE DE BOIS D ARCY",
+   "famille_logements": "collectivite_public",
+   "permis_logements": 1,
+   "logements": 6,
+   "residences_medico": 0,
+   "permis_locaux": 10,
+   "equipements_medico": 1,
+   "surface_m2": 12881,
+   "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/217800739"
+  },
+  {
+   "siren": "520605049",
+   "denomination": "SOCIETE CIVILE IMMOBILIERE DOUCET HOCHE",
+   "famille_logements": "fonciere_investisseur",
+   "permis_logements": 6,
+   "logements": 176,
+   "residences_medico": 0,
+   "permis_locaux": 5,
+   "equipements_medico": 1,
+   "surface_m2": 16876,
+   "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/520605049"
+  },
+  {
+   "siren": "582008728",
+   "denomination": "EFIDIS SA HABITATION LOYER MODERE",
+   "famille_logements": "bailleur_social",
+   "permis_logements": 9,
+   "logements": 349,
+   "residences_medico": 1,
+   "permis_locaux": 2,
+   "equipements_medico": 1,
+   "surface_m2": 655,
+   "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/582008728"
+  },
+  {
+   "siren": "217804400",
+   "denomination": "COMMUNE DE LES MUREAUX",
+   "famille_logements": "collectivite_public",
+   "permis_logements": 2,
+   "logements": 2,
+   "residences_medico": 0,
+   "permis_locaux": 9,
+   "equipements_medico": 2,
+   "surface_m2": 5382,
+   "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/217804400"
+  }
+ ],
+ "nb_medico_mixte": 103,
+ "desaccords_exemples": [
+  {
+   "siren": "304497183",
+   "denomination": "A2BCD",
+   "famille_logements": "entreprise_autre",
+   "famille_locaux": "fonciere_investisseur"
+  },
+  {
+   "siren": "393542428",
+   "denomination": "LOGISTART STE ANONYME D'HABITATION A LOYER MODERE",
+   "famille_logements": "bailleur_social",
+   "famille_locaux": "fonciere_investisseur"
+  },
+  {
+   "siren": "349220269",
+   "denomination": "SOCIETE D'ECONOMIE MIXTE POUR L'ATTRACTIVITE DE POISSY",
+   "famille_logements": "non_determine",
+   "famille_locaux": "entreprise_autre"
+  },
+  {
+   "siren": "582056339",
+   "denomination": "EXPANSIEL PROMOTION",
+   "famille_logements": "promoteur",
+   "famille_locaux": "bailleur_social"
+  },
+  {
+   "siren": "751508292",
+   "denomination": "AXIOM DEVELOPPEMENT",
+   "famille_logements": "fonciere_investisseur",
+   "famille_locaux": "promoteur"
+  },
+  {
+   "siren": "442131322",
+   "denomination": "AMETIS",
+   "famille_logements": "promoteur",
+   "famille_locaux": "entreprise_autre"
+  },
+  {
+   "siren": "530010669",
+   "denomination": "ASTIOM",
+   "famille_logements": "promoteur",
+   "famille_locaux": "entreprise_autre"
+  },
+  {
+   "siren": "326399649",
+   "denomination": "SOISYDIS",
+   "famille_logements": "non_determine",
+   "famille_locaux": "fonciere_investisseur"
+  },
+  {
+   "siren": "391929502",
+   "denomination": "FINANCIERE DU DOME",
+   "famille_logements": "fonciere_investisseur",
+   "famille_locaux": "non_determine"
+  },
+  {
+   "siren": "303032668",
+   "denomination": "FERME DE LA TREMBLAYE",
+   "famille_logements": "entreprise_autre",
+   "famille_locaux": "fonciere_investisseur"
+  },
+  {
+   "siren": "800296741",
+   "denomination": "IPTIS",
+   "famille_logements": "non_determine",
+   "famille_locaux": "fonciere_investisseur"
+  },
+  {
+   "siren": "399506062",
+   "denomination": "GROUPE GALLY",
+   "famille_logements": "non_determine",
+   "famille_locaux": "entreprise_autre"
+  },
+  {
+   "siren": "579804923",
+   "denomination": "ECOLE DU MONTCEL SA",
+   "famille_logements": "non_determine",
+   "famille_locaux": "entreprise_autre"
+  },
+  {
+   "siren": "902693571",
+   "denomination": "LOUISE PATRIMONIALE IMMO",
+   "famille_logements": "fonciere_investisseur",
+   "famille_locaux": "non_determine"
+  },
+  {
+   "siren": "945109841",
+   "denomination": "ALTA NDC VELIZY",
+   "famille_logements": "non_determine",
+   "famille_locaux": "entreprise_autre"
+  }
+ ]
+}

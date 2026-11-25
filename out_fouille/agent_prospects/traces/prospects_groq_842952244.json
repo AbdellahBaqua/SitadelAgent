@@ -1,0 +1,62 @@
+[
+ {
+  "etape": "pre",
+  "texte": "résultats calculés par le code avant le modèle",
+  "entree": {
+   "siren": "842952244",
+   "denomination": "LA CENSE FONDS DE DOTATION",
+   "famille_classification": "association_ess",
+   "raisons_du_score": "famille cible (association_ess) +3 ; dépôt récent (2025) +2 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1 ; projet de taille significative (≥ 20 logements ou ≥ 1 000 m²) +1",
+   "taille_calculee": "petite",
+   "taille_calcul": "salariés ≥ 1, établissements ouverts 1, établissements FINESS 0",
+   "permis_du_prospect": [
+    {
+     "num_dau": "07852225C0003",
+     "fichier": "locaux",
+     "annee_depot": "2025",
+     "commune": "ROCHEFORT-EN-YVELINES",
+     "etat": "commencé",
+     "type_projet": "",
+     "logements_crees": null,
+     "surface_locaux_creee_m2": 2856
+    }
+   ],
+   "fiche_entreprise": {
+    "nom": "LA CENSE FONDS DE DOTATION",
+    "nature_juridique": "9300",
+    "naf_actuel": "94.99Z",
+    "etat": "A",
+    "date_creation": "2018-05-30",
+    "categorie": "PME",
+    "effectif": "01",
+    "nb_etablissements": 1,
+    "nb_etablissements_ouverts": 1,
+    "libelle_naf_actuel": "Autres organisations fonctionnant par adhésion volontaire",
+    "libelle_nature_juridique": "Fondation",
+    "aide": "etat A = active, C ou F = cessée. effectif = tranche Insee de salariés (ex. 21 = 50 à 99, 41 = 500 à 999, 51 = 2 000 à 4 999). Dirigeants et finances volontairement exclus.",
+    "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/842952244"
+   },
+   "finess_du_prospect": {
+    "nb_etablissements_finess_france": 0,
+    "nb_etablissements_finess_yvelines": 0,
+    "nb_departements": 0,
+    "par_type": {},
+    "exemples_yvelines": [],
+    "source": "https://www.data.gouv.fr/datasets/53699569a3a729239d2046eb",
+    "aide": "Établissements dont le SIRET commence par ce SIREN. 0 ne prouve pas l'absence d'activité médico-sociale (SIRET non renseigné dans FINESS, autre entité juridique du même groupe)."
+   },
+   "origine": "demandeur de permis",
+   "consigne": "Ces résultats viennent des outils permis_du_prospect, fiche_entreprise et finess_du_prospect : cite-les. Conclus avec conclure_prospect."
+  }
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure_prospect",
+    "args": "{\"adequation\":\"faible\",\"besoin_immobilier\":\"Projet de construction de locaux de 2856 m² en cours (déposé 2025)\",\"indices\":[\"permis_du_prospect: dépôt 2025 d’un permis de construire de 2856 m² à Rochefort‑en‑Yvelines, état « commencé »\",\"fiche_entreprise: association ESS de type fondation (NAF 94.99Z), 1 salarié, 1 établissement ouvert, statut actif\",\"finess_du_prospect: aucun établissement FINESS répertorié\"],\"limites\":\"Structure très petite (1 salarié), aucune activité médico‑sociale ou sanitaire identifiée dans FINESS, activité principale non précisée comme sociale ou médico‑sociale\",\"type_structure\":\"Fondation (association de l'ESS)\",\"verdict\":\"prospect\"}"
+   }
+  ]
+ }
+]

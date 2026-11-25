@@ -1,0 +1,109 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "818080830"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "818080830"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "818080830"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "818080830"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "HYFA ARCHITECTURE",
+     "nb_permis_PC": 1,
+     "annees_depot": [
+      "2025"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 2,
+     "surface_locaux_non_residentiels_creee_m2": 34,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 1,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 1
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "818080830",
+      "nom": "HYFA ARCHITECTURE (AGENCE HYFA) (APC)",
+      "nature_juridique": "5499",
+      "naf_actuel": "71.11Z",
+      "etat": "A",
+      "date_creation": "2016-01-22",
+      "categorie": "PME",
+      "effectif": "NN",
+      "nb_etablissements": 2,
+      "nb_etablissements_ouverts": 1,
+      "siege_actuel": {
+       "siret": "81808083000024",
+       "naf": "71.11Z",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "81808083000024",
+       "naf_dans_permis": "71.11Z",
+       "nb_permis": 1,
+       "annees_depot": [
+        "2025"
+       ],
+       "etat_actuel": "ouvert",
+       "date_creation": "2019-03-27",
+       "date_fermeture": null
+      }
+     ],
+     "alertes": [],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/818080830"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "71.11Z",
+      "libelle": "Activités d'architecture"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5499",
+     "libelle": "Société à responsabilité limitée (sans autre indication)"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"entreprise_autre\",\"confiance\":\"haute\",\"indices\":[\"fiche_entreprise : NAF actuel 71.11Z (Activités d'architecture), nature juridique 5499 (SARL), entreprise active depuis 2016\",\"libelle_naf : 71.11Z = Activités d'architecture\",\"libelle_cj : 5499 = Société à responsabilité limitée\",\"permis_du_demandeur : 1 permis en 2025, maison individuelle (2 logements, 34 m² non résidentiels), 0 logement social, profil cohérent avec un architecte déposant pour le compte d'un maître d'ouvrage\"],\"limites\":\"Le permis ne précise pas le rôle exact (architecte mandataire vs maître d'ouvrage), mais l'activité principale et la forme juridique orientent vers une agence d'architecture privée, hors familles ciblées.\"}"
+   }
+  ]
+ }
+]

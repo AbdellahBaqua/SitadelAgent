@@ -1,0 +1,118 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "851921478"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "851921478"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "851921478"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "851921478"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "LAFFITTE EDUCATION",
+     "nb_permis_PC": 5,
+     "annees_depot": [
+      "2021",
+      "2022"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 0,
+     "surface_locaux_non_residentiels_creee_m2": 893,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 5
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "851921478",
+      "nom": "LAFFITTE EDUCATION",
+      "nature_juridique": "5710",
+      "naf_actuel": "66.30Z",
+      "etat": "A",
+      "date_creation": "2019-06-24",
+      "categorie": "PME",
+      "effectif": "00",
+      "nb_etablissements": 2,
+      "nb_etablissements_ouverts": 1,
+      "siege_actuel": {
+       "siret": "85192147800026",
+       "naf": "66.30Z",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "85192147800018",
+       "naf_dans_permis": "64.20Z",
+       "nb_permis": 5,
+       "annees_depot": [
+        "2021",
+        "2022"
+       ],
+       "etat_actuel": "fermé",
+       "date_creation": "2019-06-24",
+       "date_fermeture": "2023-12-20"
+      }
+     ],
+     "alertes": [
+      "SIRET 85192147800018 (permis 2021,2022) fermé le 2023-12-20 : le NAF 64.20Z du permis vient d'un établissement fermé",
+      "NAF du permis ['64.20Z'] différent du NAF actuel de l'entreprise 66.30Z"
+     ],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/851921478"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "64.20Z",
+      "libelle": "Activités des sociétés holding"
+     },
+     {
+      "code": "66.30Z",
+      "libelle": "Gestion de fonds"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5710",
+     "libelle": "SAS, société par actions simplifiée"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"fonciere_investisseur\",\"confiance\":\"moyenne\",\"indices\":[\"fiche_entreprise : NAF actuel 66.30Z « Gestion de fonds » (activité financière de holding/foncière)\",\"fiche_entreprise : NAF du permis 64.20Z « Activités des sociétés holding » (établissement fermé, mais indice historique cohérent)\",\"libelle_naf : 64.20Z = holding, 66.30Z = gestion de fonds — tous deux codes de structure d'investissement/patrimoine\",\"libelle_cj : 5710 = SAS, forme commerciale compatible avec une foncière ou société de gestion\",\"permis_du_demandeur : 5 PC, 0 logement, 893 m² de locaux non résidentiels créés — profil construction de patrimoine (bureaux, commerces, équipements) plutôt que promotion-vente ou logement social\",\"dénomination : « LAFFITTE EDUCATION » suggère une spécialisation possible dans l'immobilier d'enseignement, mais l'activité déclarée reste financière\"],\"limites\":\"L'activité réelle (construction pour louer ? pour exploiter ?) n'est pas directement observable : le NAF financier ne distingue pas une foncière pure d'une société holding de groupe exploitant. Le nom « EDUCATION » pourrait indiquer un exploitant (exploitant_sante_social) mais le code NAF et la forme juridique ne le confirment pas. Aucun lien avec du logement social, de la promotion-vente, de l'ESS ou du public n'apparaît.\"}"
+   }
+  ]
+ }
+]

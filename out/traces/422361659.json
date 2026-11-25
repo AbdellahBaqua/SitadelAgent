@@ -1,0 +1,117 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "422361659"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "422361659"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "422361659"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "422361659"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "GALAXY",
+     "nb_permis_PC": 2,
+     "annees_depot": [
+      "2015",
+      "2025"
+     ],
+     "nb_communes": 2,
+     "logements_crees_total": 6,
+     "surface_locaux_non_residentiels_creee_m2": 0,
+     "nb_permis_collectif": 1,
+     "nb_permis_individuel": 1,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 2
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "422361659",
+      "nom": "GALAXY (GALAXY)",
+      "nature_juridique": "5499",
+      "naf_actuel": "68.20B",
+      "etat": "A",
+      "date_creation": "1999-03-12",
+      "categorie": "PME",
+      "effectif": "00",
+      "nb_etablissements": 2,
+      "nb_etablissements_ouverts": 1,
+      "siege_actuel": {
+       "siret": "42236165900028",
+       "naf": "68.20B",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "42236165900028",
+       "naf_dans_permis": "68.31Z",
+       "nb_permis": 2,
+       "annees_depot": [
+        "2015",
+        "2025"
+       ],
+       "etat_actuel": "ouvert",
+       "date_creation": "2008-01-01",
+       "date_fermeture": null
+      }
+     ],
+     "alertes": [
+      "NAF du permis ['68.31Z'] différent du NAF actuel de l'entreprise 68.20B"
+     ],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/422361659"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "68.20B",
+      "libelle": "Location de terrains et d'autres biens immobiliers"
+     },
+     {
+      "code": "68.31Z",
+      "libelle": "Agences immobilières"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5499",
+     "libelle": "Société à responsabilité limitée (sans autre indication)"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"fonciere_investisseur\",\"confiance\":\"moyenne\",\"indices\":[\"fiche_entreprise : NAF actuel 68.20B « Location de terrains et d'autres biens immobiliers » – activité cœur de foncière (détention/location de patrimoine).\",\"fiche_entreprise : CJ 5499 (SARL), effectif 00, 1 établissement ouvert – structure holding sans salarié, typique d'une société de portage immobilier.\",\"permis_du_demandeur : 2 permis sur 10 ans (2015, 2025), 6 logements créés au total, 0 logement social déclaré – volume faible, compatible avec une constitution de patrimoine pour location plutôt qu'une promotion en série.\",\"libelle_naf : 68.20B = location immobilière (actuel) ; 68.31Z = agences immobilières (historique, permis).\",\"libelle_cj : 5499 = Société à responsabilité limitée (sans autre indication).\"],\"limites\":\"L'entreprise a déposé des permis de construire (activité de promotion occasionnelle), mais son NAF actuel et sa structure (SARL sans effectif) orientent vers de la détention de patrimoine. Une activité mixte (promotion pour compte propre puis location) n'est pas exclue, mais l'indice principal reste la location immobilière.\"}"
+   }
+  ]
+ }
+]

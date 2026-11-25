@@ -1,0 +1,115 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "441580594"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "441580594"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "441580594"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "441580594"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "GCC IMMOBILIER",
+     "nb_permis_PC": 1,
+     "annees_depot": [
+      "2019"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 0,
+     "surface_locaux_non_residentiels_creee_m2": 2432,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 0
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "441580594",
+      "nom": "GCC IMMOBILIER",
+      "nature_juridique": "5710",
+      "naf_actuel": "41.10C",
+      "etat": "A",
+      "date_creation": "2002-03-22",
+      "categorie": "ETI",
+      "effectif": "NN",
+      "nb_etablissements": 5,
+      "nb_etablissements_ouverts": 1,
+      "siege_actuel": {
+       "siret": "44158059400055",
+       "naf": "41.10C",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "44158059400055",
+       "naf_dans_permis": "66.19B",
+       "nb_permis": 1,
+       "annees_depot": [
+        "2019"
+       ],
+       "etat_actuel": "ouvert",
+       "date_creation": "2017-06-06",
+       "date_fermeture": null
+      }
+     ],
+     "alertes": [
+      "NAF du permis ['66.19B'] différent du NAF actuel de l'entreprise 41.10C"
+     ],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/441580594"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "41.10C",
+      "libelle": "Promotion immobilière d'autres bâtiments"
+     },
+     {
+      "code": "66.19B",
+      "libelle": "Autres activités auxiliaires de services financiers, hors assurance et caisses de retraite, n.c.a."
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5710",
+     "libelle": "SAS, société par actions simplifiée"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"promoteur\",\"confiance\":\"haute\",\"indices\":[\"fiche_entreprise : NAF actuel 41.10C « Promotion immobilière d'autres bâtiments » (activité de promotion immobilière, construction pour vente)\",\"libelle_naf : confirmation que 41.10C correspond à de la promotion immobilière\",\"permis_du_demandeur : 1 permis en 2019 créant 2 432 m² de surface non résidentielle, 0 logement, typique d'un programme de promoteur\",\"dénomination : « GCC IMMOBILIER » cohérent avec une activité de promotion immobilière\",\"libelle_cj : catégorie juridique 5710 = SAS, structure commerciale adaptée à un promoteur\"],\"limites\":\"Le NAF figurant dans le permis (66.19B, activités financières) diffère du NAF actuel de l'entreprise ; l'alerte de fiche_entreprise signale cette divergence. Cependant, le NAF actuel (41.10C) est celui de l'entreprise aujourd'hui et prime selon la méthode. L'établissement du permis est toujours ouvert, mais son NAF a été mis à jour.\"}"
+   }
+  ]
+ }
+]

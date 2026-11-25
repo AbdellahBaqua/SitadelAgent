@@ -1,0 +1,115 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "790543441"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "790543441"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "790543441"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "790543441"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "VENDOME PATRIMOINE",
+     "nb_permis_PC": 1,
+     "annees_depot": [
+      "2013"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 1,
+     "surface_locaux_non_residentiels_creee_m2": 0,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 1,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 0
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "790543441",
+      "nom": "VENDOME PATRIMOINE",
+      "nature_juridique": "5710",
+      "naf_actuel": "68.20B",
+      "etat": "A",
+      "date_creation": "2012-12-18",
+      "categorie": "PME",
+      "effectif": "02",
+      "nb_etablissements": 1,
+      "nb_etablissements_ouverts": 1,
+      "siege_actuel": {
+       "siret": "79054344100014",
+       "naf": "68.20B",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "79054344100014",
+       "naf_dans_permis": "68.31Z",
+       "nb_permis": 1,
+       "annees_depot": [
+        "2013"
+       ],
+       "etat_actuel": "ouvert",
+       "date_creation": "2012-12-18",
+       "date_fermeture": null
+      }
+     ],
+     "alertes": [
+      "NAF du permis ['68.31Z'] différent du NAF actuel de l'entreprise 68.20B"
+     ],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/790543441"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "68.20B",
+      "libelle": "Location de terrains et d'autres biens immobiliers"
+     },
+     {
+      "code": "68.31Z",
+      "libelle": "Agences immobilières"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5710",
+     "libelle": "SAS, société par actions simplifiée"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"fonciere_investisseur\",\"confiance\":\"moyenne\",\"indices\":[\"fiche_entreprise : NAF actuel 68.20B « Location de terrains et d'autres biens immobiliers » → activité de détention/location de patrimoine immobilier\",\"fiche_entreprise : nature juridique 5710 (SAS) → forme compatible avec une foncière ou une SCI\",\"dénomination : « VENDOME PATRIMOINE » → évoque la gestion de patrimoine\",\"permis_du_demandeur : 1 seul permis en 2013 pour 1 maison individuelle, 0 logement social → pas d'indice bailleur social ni promoteur à grande échelle\",\"libelle_naf : 68.20B = location immobilière (actuel) ; 68.31Z = agences immobilières (historique, établissement du permis)\"],\"limites\":\"Un seul permis ancien (2013) ; l'entreprise est une PME de 2 salariés sans permis récents connus dans les Yvelines. L'appartenance à une foncière/SCI n'est pas certifiée par un registre spécifique, mais l'activité actuelle (location immobilière) et la dénomination orientent vers cette famille.\"}"
+   }
+  ]
+ }
+]

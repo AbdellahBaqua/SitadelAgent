@@ -1,0 +1,62 @@
+[
+ {
+  "etape": "pre",
+  "texte": "résultats calculés par le code avant le modèle",
+  "entree": {
+   "siren": "951272566",
+   "denomination": "AMBRE",
+   "famille_classification": "exploitant_sante_social",
+   "raisons_du_score": "famille cible (exploitant_sante_social) +2 ; projet médico-social (équipement d'action sociale) +3 ; dépôt assez récent (2023) +1 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1",
+   "taille_calculee": "petite",
+   "taille_calcul": "salariés ≥ 3, établissements ouverts 1, établissements FINESS 0",
+   "permis_du_prospect": [
+    {
+     "num_dau": "07864323V0006",
+     "fichier": "locaux",
+     "annee_depot": "2023",
+     "commune": "VERNOUILLET",
+     "etat": "autorisé",
+     "type_projet": "équipement d'action sociale",
+     "logements_crees": null,
+     "surface_locaux_creee_m2": 0
+    }
+   ],
+   "fiche_entreprise": {
+    "nom": "AMBRE",
+    "nature_juridique": "5710",
+    "naf_actuel": "88.91A",
+    "etat": "A",
+    "date_creation": "2023-03-28",
+    "categorie": "PME",
+    "effectif": "02",
+    "nb_etablissements": 1,
+    "nb_etablissements_ouverts": 1,
+    "libelle_naf_actuel": "Accueil de jeunes enfants",
+    "libelle_nature_juridique": "SAS, société par actions simplifiée",
+    "aide": "etat A = active, C ou F = cessée. effectif = tranche Insee de salariés (ex. 21 = 50 à 99, 41 = 500 à 999, 51 = 2 000 à 4 999). Dirigeants et finances volontairement exclus.",
+    "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/951272566"
+   },
+   "finess_du_prospect": {
+    "nb_etablissements_finess_france": 0,
+    "nb_etablissements_finess_yvelines": 0,
+    "nb_departements": 0,
+    "par_type": {},
+    "exemples_yvelines": [],
+    "source": "https://www.data.gouv.fr/datasets/53699569a3a729239d2046eb",
+    "aide": "Établissements dont le SIRET commence par ce SIREN. 0 ne prouve pas l'absence d'activité médico-sociale (SIRET non renseigné dans FINESS, autre entité juridique du même groupe)."
+   },
+   "origine": "demandeur de permis",
+   "consigne": "Ces résultats viennent des outils permis_du_prospect, fiche_entreprise et finess_du_prospect : cite-les. Conclus avec conclure_prospect."
+  }
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure_prospect",
+    "args": "{\"adequation\":\"faible\",\"besoin_immobilier\":\"Projet d'aménagement ou de création de locaux d'accueil de jeunes enfants (équipement d'action sociale) à Vernouillet, autorisé en 2023.\",\"indices\":[\"permis_du_prospect: type_projet = équipement d'action sociale, année de dépôt 2023, état autorisé, commune Vernouillet\",\"fiche_entreprise: activité NAF 88.91A (Accueil de jeunes enfants), nature juridique SAS, effectif 02, statut actif\",\"finess_du_prospect: nb_etablissements_finess_france = 0 (absence d'établissements FINESS)\"],\"limites\":\"Structure très petite (2 salariés), aucune présence dans le registre FINESS, statut juridique privé (SAS) non ESS, ce qui peut limiter le volume et la fréquence des projets immobiliers.\",\"type_structure\":\"SAS d'accueil de jeunes enfants (crèche)\",\"verdict\":\"prospect\"}"
+   }
+  ]
+ }
+]

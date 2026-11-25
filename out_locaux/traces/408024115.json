@@ -1,0 +1,115 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "408024115"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "408024115"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "408024115"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "408024115"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "TELEHOUSE INT CORPORATION EUROPE LIMITED",
+     "nb_permis_PC": 5,
+     "annees_depot": [
+      "2018",
+      "2021",
+      "2023",
+      "2024"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 0,
+     "surface_locaux_non_residentiels_creee_m2": 23447,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 1
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "408024115",
+      "nom": "TELEHOUSE INT CORPORATION EUROPE LIMITED",
+      "nature_juridique": "3120",
+      "naf_actuel": "63.11Z",
+      "etat": "A",
+      "date_creation": "1996-07-01",
+      "categorie": "ETI",
+      "effectif": "22",
+      "nb_etablissements": 4,
+      "nb_etablissements_ouverts": 4,
+      "siege_actuel": {
+       "siret": "40802411500037",
+       "naf": "61.90Z",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "40802411500037",
+       "naf_dans_permis": "63.11Z",
+       "nb_permis": 5,
+       "annees_depot": [
+        "2018",
+        "2021",
+        "2023",
+        "2024"
+       ],
+       "etat_actuel": "ouvert",
+       "date_creation": "2002-05-21",
+       "date_fermeture": null
+      }
+     ],
+     "alertes": [],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/408024115"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "63.11Z",
+      "libelle": "Traitement de données, hébergement et activités connexes"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "3120",
+     "libelle": "Société commerciale étrangère immatriculée au RCS"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"entreprise_autre\",\"confiance\":\"haute\",\"indices\":[\"permis_du_demandeur : 5 permis de construire déposés entre 2018 et 2024, tous non résidentiels (23 447 m² créés), 0 logement créé, 0 logement social, 1 commune concernée\",\"fiche_entreprise : entreprise active (ETI, 22 salariés), forme juridique 3120 (société commerciale étrangère immatriculée au RCS), NAF actuel 63.11Z (traitement de données, hébergement), siège NAF 61.90Z (autres télécommunications)\",\"libelle_cj : code 3120 = « Société commerciale étrangère immatriculée au RCS »\",\"libelle_naf : code 63.11Z = « Traitement de données, hébergement et activités connexes »\",\"dénomination : TELEHOUSE INT CORPORATION EUROPE LIMITED (opérateur mondial de data centers, filiale du groupe japonais KDDI)\"],\"limites\":\"Aucune : l'activité (hébergement de données / data centers), la forme juridique (société commerciale étrangère), l'historique des permis (bâtiments non résidentiels techniques) et le modèle économique connu convergent vers une entreprise privée d'exploitation d'infrastructures numériques, hors champs bailleur social, promoteur, foncière, association ESS, exploitant santé/social, collectivité ou copropriété.\"}"
+   }
+  ]
+ }
+]

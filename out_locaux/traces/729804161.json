@@ -1,0 +1,115 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "729804161"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "729804161"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "729804161"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "729804161"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "C O D I R",
+     "nb_permis_PC": 1,
+     "annees_depot": [
+      "2014"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 0,
+     "surface_locaux_non_residentiels_creee_m2": 91,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 1
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "729804161",
+      "nom": "C O D I R",
+      "nature_juridique": "5710",
+      "naf_actuel": "46.19A",
+      "etat": "A",
+      "date_creation": "1900-01-01",
+      "categorie": "ETI",
+      "effectif": "32",
+      "nb_etablissements": 2,
+      "nb_etablissements_ouverts": 1,
+      "siege_actuel": {
+       "siret": "72980416100028",
+       "naf": "46.19A",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "72980416100028",
+       "naf_dans_permis": "70.22Z",
+       "nb_permis": 1,
+       "annees_depot": [
+        "2014"
+       ],
+       "etat_actuel": "ouvert",
+       "date_creation": "2009-01-29",
+       "date_fermeture": null
+      }
+     ],
+     "alertes": [
+      "NAF du permis ['70.22Z'] différent du NAF actuel de l'entreprise 46.19A"
+     ],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/729804161"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "46.19A",
+      "libelle": "Centrales d'achat non alimentaires"
+     },
+     {
+      "code": "70.22Z",
+      "libelle": "Conseil pour les affaires et autres conseils de gestion"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5710",
+     "libelle": "SAS, société par actions simplifiée"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"entreprise_autre\",\"confiance\":\"haute\",\"indices\":[\"fiche_entreprise : nature_juridique 5710 (SAS), naf_actuel 46.19A (Centrales d'achat non alimentaires), entreprise active (ETI, 32 salariés), siège ouvert\",\"libelle_naf : 46.19A = Centrales d'achat non alimentaires (activité de commerce de gros/intermédiation), 70.22Z = Conseil pour les affaires (historique, établissement du permis)\",\"libelle_cj : 5710 = SAS, société par actions simplifiée (forme commerciale)\",\"permis_du_demandeur : 1 permis en 2014 pour 91 m² de surface non résidentielle, 0 logement créé, 0 logement locatif social, pas de résidence déclarée\"],\"limites\":\"Le permis date de 2010 (établissement créé 2009) et l'activité de l'établissement à l'époque était du conseil (70.22Z), mais l'entreprise actuelle est une centrale d'achat non alimentaire (46.19A). Aucune indication d'activité immobilière, sociale, ou de promotion.\"}"
+   }
+  ]
+ }
+]

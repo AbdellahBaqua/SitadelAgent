@@ -1,0 +1,111 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "789418605"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "789418605"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "789418605"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "789418605"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "DIVIMAJA",
+     "nb_permis_PC": 2,
+     "annees_depot": [
+      "2020",
+      "2021"
+     ],
+     "nb_communes": 2,
+     "logements_crees_total": 0,
+     "surface_locaux_non_residentiels_creee_m2": 240,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 0
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "789418605",
+      "nom": "DIVIMAJA",
+      "nature_juridique": "5710",
+      "naf_actuel": "70.10Z",
+      "etat": "A",
+      "date_creation": "2012-11-06",
+      "categorie": "PME",
+      "effectif": "NN",
+      "nb_etablissements": 2,
+      "nb_etablissements_ouverts": 1,
+      "siege_actuel": {
+       "siret": "78941860500026",
+       "naf": "70.10Z",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "78941860500026",
+       "naf_dans_permis": "70.10Z",
+       "nb_permis": 2,
+       "annees_depot": [
+        "2020",
+        "2021"
+       ],
+       "etat_actuel": "ouvert",
+       "date_creation": "2016-07-08",
+       "date_fermeture": null
+      }
+     ],
+     "alertes": [],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/789418605"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "70.10Z",
+      "libelle": "Activités des sièges sociaux"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5710",
+     "libelle": "SAS, société par actions simplifiée"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"non_determine\",\"confiance\":\"faible\",\"indices\":[\"permis_du_demandeur : 2 permis déposés en 2020-2021, 240 m² de surface non résidentielle créée, 0 logement, 0 logement social déclaré\",\"fiche_entreprise : forme juridique SAS (cj 5710), NAF actuel 70.10Z (Activités des sièges sociaux), entreprise active depuis 2012, catégorie PME\",\"libelle_naf : 70.10Z = Activités des sièges sociaux\",\"libelle_cj : 5710 = SAS, société par actions simplifiée\",\"dénomination : DIVIMAJA (aucune indication sectorielle évidente)\"],\"limites\":\"Aucune information sur la finalité des permis (vente ou location), pas de lien avec du logement social, de la santé/social, du public ou de l'ESS. Le NAF 70.10Z (siège social) peut correspondre à une holding détenant des filiales immobilières (foncière, promoteur) ou à une entreprise construisant pour son propre compte. Les preuves sont insuffisantes pour rattacher la structure à l'une des familles ciblées.\"}"
+   }
+  ]
+ }
+]

@@ -1,0 +1,113 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "913783031"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "913783031"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "913783031"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "913783031"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "CETTEFAMILLE PATRIMOINE 2",
+     "nb_permis_PC": 1,
+     "annees_depot": [
+      "2023"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 1,
+     "surface_locaux_non_residentiels_creee_m2": 0,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 1,
+     "types_residence_declares": [
+      "1"
+     ],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 0
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "913783031",
+      "nom": "CETTEFAMILLE PATRIMOINE 2",
+      "nature_juridique": "5710",
+      "naf_actuel": "68.31Z",
+      "etat": "A",
+      "date_creation": "2022-05-12",
+      "categorie": "PME",
+      "effectif": "NN",
+      "nb_etablissements": 2,
+      "nb_etablissements_ouverts": 1,
+      "siege_actuel": {
+       "siret": "91378303100028",
+       "naf": "68.31Z",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "91378303100010",
+       "naf_dans_permis": "68.31Z",
+       "nb_permis": 1,
+       "annees_depot": [
+        "2023"
+       ],
+       "etat_actuel": "fermé",
+       "date_creation": "2022-05-12",
+       "date_fermeture": "2024-09-01"
+      }
+     ],
+     "alertes": [
+      "SIRET 91378303100010 (permis 2023) fermé le 2024-09-01 : le NAF 68.31Z du permis vient d'un établissement fermé"
+     ],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/913783031"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "68.31Z",
+      "libelle": "Agences immobilières"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5710",
+     "libelle": "SAS, société par actions simplifiée"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"non_determine\",\"confiance\":\"faible\",\"indices\":[\"fiche_entreprise : NAF actuel 68.31Z « Agences immobilières » (confirmé par libelle_naf)\",\"fiche_entreprise : Forme juridique SAS (code 5710, confirmé par libelle_cj)\",\"permis_du_demandeur : 1 seul permis en 2023 pour 1 logement individuel, 0 logement social déclaré\",\"fiche_entreprise : L'établissement du permis (SIRET 91378303100010) est fermé depuis le 2024-09-01\",\"dénomination : « CETTEFAMILLE PATRIMOINE 2 » évoque une structure de gestion de patrimoine\"],\"limites\":\"Le NAF 68.31Z correspond à de l'intermédiation immobilière (agence), pas directement à de la promotion, de l'investissement locatif ou du bailleur social. Un unique permis pour une maison individuelle ne permet pas de caractériser le métier (promoteur occasionnel, marchand de biens, particulier via société, etc.). Le nom « PATRIMOINE » est un indice faible non corroboré par l'activité déclarée ni par un volume de permis significatif.\"}"
+   }
+  ]
+ }
+]

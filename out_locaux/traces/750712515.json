@@ -1,0 +1,112 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "750712515"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "750712515"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "750712515"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "750712515"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "S.K.S.",
+     "nb_permis_PC": 1,
+     "annees_depot": [
+      "2014"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 0,
+     "surface_locaux_non_residentiels_creee_m2": 3,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 1
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "750712515",
+      "nom": "S.K.S. (LES ARCHANGES)",
+      "nature_juridique": "5499",
+      "naf_actuel": "56.10A",
+      "etat": "A",
+      "date_creation": "2012-04-03",
+      "categorie": "PME",
+      "effectif": "03",
+      "nb_etablissements": 1,
+      "nb_etablissements_ouverts": 1,
+      "siege_actuel": {
+       "siret": "75071251500014",
+       "naf": "56.10A",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "?",
+       "naf_dans_permis": "70.10Z",
+       "nb_permis": 1,
+       "annees_depot": [
+        "2014"
+       ]
+      }
+     ],
+     "alertes": [
+      "NAF du permis ['70.10Z'] différent du NAF actuel de l'entreprise 56.10A"
+     ],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/750712515"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "56.10A",
+      "libelle": "Restauration traditionnelle"
+     },
+     {
+      "code": "70.10Z",
+      "libelle": "Activités des sièges sociaux"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5499",
+     "libelle": "Société à responsabilité limitée (sans autre indication)"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"entreprise_autre\",\"confiance\":\"haute\",\"indices\":[\"fiche_entreprise : entreprise active (état A), forme juridique SARL (cj 5499), NAF actuel 56.10A « Restauration traditionnelle », effectif 03, 1 établissement ouvert\",\"libelle_naf : 56.10A = « Restauration traditionnelle » (activité courante), 70.10Z = « Activités des sièges sociaux » (NAF historique du permis, différent)\",\"libelle_cj : 5499 = « Société à responsabilité limitée (sans autre indication) »\",\"permis_du_demandeur : 1 seul permis en 2014, 0 logement créé, 3 m² de surface non résidentielle, aucun logement social, aucune résidence déclarée\"],\"limites\":\"Le permis date de 2014 et l'établissement concerné n'est pas identifié (SIRET « ? ») ; le NAF du permis (70.10Z) ne correspond pas à l'activité actuelle. Toutefois, l'activité actuelle de l'entreprise (restauration) et sa forme juridique (SARL classique) sont bien documentées et ne correspondent à aucune des familles spécialisées.\"}"
+   }
+  ]
+ }
+]

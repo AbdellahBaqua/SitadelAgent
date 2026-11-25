@@ -1,0 +1,111 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "389320615"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "389320615"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "389320615"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "389320615"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "REY INVEST",
+     "nb_permis_PC": 1,
+     "annees_depot": [
+      "2014"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 1,
+     "surface_locaux_non_residentiels_creee_m2": 0,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 1,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 0
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "389320615",
+      "nom": "REY INVEST (REY-INVEST)",
+      "nature_juridique": "5499",
+      "naf_actuel": "64.20Z",
+      "etat": "A",
+      "date_creation": "1992-12-01",
+      "categorie": "PME",
+      "effectif": "NN",
+      "nb_etablissements": 4,
+      "nb_etablissements_ouverts": 2,
+      "siege_actuel": {
+       "siret": "38932061500047",
+       "naf": "55.10Z",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "38932061500039",
+       "naf_dans_permis": "64.20Z",
+       "nb_permis": 1,
+       "annees_depot": [
+        "2014"
+       ],
+       "etat_actuel": "fermé",
+       "date_creation": "2006-04-01",
+       "date_fermeture": "2025-06-24"
+      }
+     ],
+     "alertes": [
+      "SIRET 38932061500039 (permis 2014) fermé le 2025-06-24 : le NAF 64.20Z du permis vient d'un établissement fermé"
+     ],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/389320615"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "64.20Z",
+      "libelle": "Activités des sociétés holding"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5499",
+     "libelle": "Société à responsabilité limitée (sans autre indication)"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"fonciere_investisseur\",\"confiance\":\"faible\",\"indices\":[\"fiche_entreprise : NAF actuel 64.20Z « Activités des sociétés holding » – activité caractéristique d'une structure de portage/d'investissement\",\"fiche_entreprise : Dénomination « REY INVEST » – évocation explicite d'une activité d'investissement\",\"fiche_entreprise : Forme juridique 5499 (SARL) – forme compatible avec une foncière ou une société de portage immobilier\",\"permis_du_demandeur : 1 seul permis (2014) pour une maison individuelle, 0 logement social – pas de profil promoteur (pas de programmes collectifs, pas de revente en l'état futur d'achèvement)\",\"fiche_entreprise : Siège actuel (SIRET 38932061500047) en NAF 55.10Z « Hôtels et hébergement similaire » – l'exploitation hôtelière peut être l'actif détenu par la holding\"],\"limites\":\"Un seul permis ancien (2014) porté par un établissement depuis fermé ; l'activité actuelle du siège est l'exploitation hôtelière (55.10Z), non la détention/location de patrimoine résidentiel ou tertiaire classique. Aucune preuve directe de portage immobilier locatif (pas de SCI, pas de SCPI, pas de mention de patrimoine). La classification « fonciere_investisseur » repose sur l'indice du NAF holding + dénomination, mais l'activité réelle pourrait être « entreprise_autre » (exploitation hôtelière via une holding).\"}"
+   }
+  ]
+ }
+]

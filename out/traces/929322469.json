@@ -1,0 +1,106 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "929322469"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "929322469"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "929322469"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "929322469"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "LEVITAN",
+     "nb_permis_PC": 1,
+     "annees_depot": [
+      "2024"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 1,
+     "surface_locaux_non_residentiels_creee_m2": 0,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 1,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 0
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "929322469",
+      "nom": "LEVITAN",
+      "nature_juridique": "6599",
+      "naf_actuel": "68.32A",
+      "etat": "A",
+      "date_creation": "2024-05-07",
+      "categorie": null,
+      "effectif": "NN",
+      "nb_etablissements": 1,
+      "nb_etablissements_ouverts": 1,
+      "siege_actuel": {
+       "siret": "92932246900016",
+       "naf": "68.32A",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "?",
+       "naf_dans_permis": "68.32A",
+       "nb_permis": 1,
+       "annees_depot": [
+        "2024"
+       ]
+      }
+     ],
+     "alertes": [],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/929322469"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "68.32A",
+      "libelle": "Administration d'immeubles et autres biens immobiliers"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "6599",
+     "libelle": "Autre société civile"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"fonciere_investisseur\",\"confiance\":\"faible\",\"indices\":[\"permis_du_demandeur : 1 permis de construire individuel déposé en 2024, 1 logement créé, 0 logement social, pas de collectif\",\"fiche_entreprise : nature juridique 6599 « Autre société civile » (libelle_cj), forme souvent utilisée pour des SCI de détention/location\",\"fiche_entreprise : naf_actuel 68.32A « Administration d'immeubles et autres biens immobiliers » (libelle_naf), activité de gestion/administration de patrimoine immobilier\",\"fiche_entreprise : entreprise créée en mai 2024, 1 établissement ouvert, effectif non renseigné (NN)\"],\"limites\":\"L'entreprise est très récente (création 2024) et ne compte qu'un seul permis (maison individuelle). Le NAF 68.32A correspond à de l'administration de biens, pas nécessairement à de l'investissement locatif ; la forme « Autre société civile » peut aussi servir à une SCI familiale pour usage propre. Aucune preuve de location effective, de patrimoine détenu, ni de vocation sociale. Le nombre de logements sociaux déclarés est 0 mais ce champ est peu fiable.\"}"
+   }
+  ]
+ }
+]

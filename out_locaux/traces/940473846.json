@@ -1,0 +1,109 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "940473846"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "940473846"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "940473846"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "940473846"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "UNITED FRANCE 2025 DEV PROPCO SNC",
+     "nb_permis_PC": 1,
+     "annees_depot": [
+      "2025"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 0,
+     "surface_locaux_non_residentiels_creee_m2": 492,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 0
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "940473846",
+      "nom": "UNITED FRANCE 2025 DEV PROPCO SNC",
+      "nature_juridique": "5202",
+      "naf_actuel": "68.32A",
+      "etat": "A",
+      "date_creation": "2025-01-30",
+      "categorie": null,
+      "effectif": "NN",
+      "nb_etablissements": 1,
+      "nb_etablissements_ouverts": 1,
+      "siege_actuel": {
+       "siret": "94047384600019",
+       "naf": "68.32A",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "94047384600019",
+       "naf_dans_permis": "68.32A",
+       "nb_permis": 1,
+       "annees_depot": [
+        "2025"
+       ],
+       "etat_actuel": "ouvert",
+       "date_creation": "2025-01-30",
+       "date_fermeture": null
+      }
+     ],
+     "alertes": [],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/940473846"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "68.32A",
+      "libelle": "Administration d'immeubles et autres biens immobiliers"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5202",
+     "libelle": "Société en nom collectif"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"fonciere_investisseur\",\"confiance\":\"moyenne\",\"indices\":[\"permis_du_demandeur : 1 permis en 2025, 0 logement créé, 492 m² de surface non résidentielle créée, 0 logement locatif social déclaré\",\"fiche_entreprise : entreprise active créée le 2025-01-30, forme juridique SNC (catégorie 5202), NAF actuel 68.32A, 1 établissement ouvert\",\"libelle_naf : 68.32A = 'Administration d'immeubles et autres biens immobiliers' (activité de gestion/patrimoine immobilier)\",\"libelle_cj : 5202 = 'Société en nom collectif' (forme souvent utilisée pour des véhicules d'investissement immobilier)\",\"dénomination : 'UNITED FRANCE 2025 DEV PROPCO SNC' contient 'PROPCO' (abréviation courante pour property company / foncière) et 'DEV' (développement), nom typique d'un véhicule d'investissement/développement immobilier\"],\"limites\":\"Entreprise très récente (créée 2025) avec un seul permis connu ; l'activité exacte (investissement locatif pur vs promotion pour revente) n'est pas pleinement confirmée par l'historique. Le NAF 68.32A correspond à de l'administration de biens plutôt qu'à de la promotion immobilière (41.10D), ce qui penche pour foncière_investisseur, mais la mention 'DEV' dans le nom laisse une ambiguïté.\"}"
+   }
+  ]
+ }
+]

@@ -1,0 +1,117 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "884296393"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "884296393"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "884296393"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "884296393"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "LAZARE",
+     "nb_permis_PC": 2,
+     "annees_depot": [
+      "2022",
+      "2024"
+     ],
+     "nb_communes": 2,
+     "logements_crees_total": 2,
+     "surface_locaux_non_residentiels_creee_m2": 0,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 2,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 2
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "884296393",
+      "nom": "LAZARE",
+      "nature_juridique": "5710",
+      "naf_actuel": "68.31Z",
+      "etat": "A",
+      "date_creation": "2020-06-01",
+      "categorie": "PME",
+      "effectif": "NN",
+      "nb_etablissements": 1,
+      "nb_etablissements_ouverts": 1,
+      "siege_actuel": {
+       "siret": "88429639300017",
+       "naf": "68.31Z",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "88429639300017",
+       "naf_dans_permis": "64.20Z",
+       "nb_permis": 2,
+       "annees_depot": [
+        "2022",
+        "2024"
+       ],
+       "etat_actuel": "ouvert",
+       "date_creation": "2020-06-01",
+       "date_fermeture": null
+      }
+     ],
+     "alertes": [
+      "NAF du permis ['64.20Z'] différent du NAF actuel de l'entreprise 68.31Z"
+     ],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/884296393"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "64.20Z",
+      "libelle": "Activités des sociétés holding"
+     },
+     {
+      "code": "68.31Z",
+      "libelle": "Agences immobilières"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5710",
+     "libelle": "SAS, société par actions simplifiée"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"promoteur\",\"confiance\":\"moyenne\",\"indices\":[\"permis_du_demandeur : 2 permis de construire déposés (2022, 2024) pour 2 maisons individuelles (2 logements au total), 0 logement social déclaré\",\"fiche_entreprise : forme juridique SAS (cj 5710), entreprise active créée en 2020\",\"fiche_entreprise : NAF actuel 68.31Z « Agences immobilières » (libelle_naf), activité d'intermédiation immobilière\",\"permis_du_demandeur + fiche_entreprise : le demandeur construit des maisons individuelles (type promoteur petit volume), bien que le NAF actuel soit agence immobilière et non développement de projets (41.10D)\"],\"limites\":\"Le NAF actuel (68.31Z) correspond à de l'intermédiation (agence immobilière) et non à de la promotion immobilière (41.10D). L'alerte signale que le NAF du permis (64.20Z, holding) diffère du NAF actuel. L'échantillon est faible (2 permis individuels sur 2 ans). Aucune preuve explicite de construction-vente (SCI de construction-vente, montage de programmes). La qualification « promoteur » repose sur le fait que le demandeur dépose des PC pour construire des logements neufs, mais l'activité déclarée reste une agence.\"}"
+   }
+  ]
+ }
+]

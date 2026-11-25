@@ -1,0 +1,115 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "592047542"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "592047542"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "592047542"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "592047542"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "TMF OPERATING",
+     "nb_permis_PC": 1,
+     "annees_depot": [
+      "2023"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 0,
+     "surface_locaux_non_residentiels_creee_m2": 1428,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 1
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "592047542",
+      "nom": "TMF OPERATING (COSITRAF)",
+      "nature_juridique": "5710",
+      "naf_actuel": "52.29B",
+      "etat": "A",
+      "date_creation": "1959-01-01",
+      "categorie": "ETI",
+      "effectif": "31",
+      "nb_etablissements": 65,
+      "nb_etablissements_ouverts": 17,
+      "siege_actuel": {
+       "siret": "59204754200630",
+       "naf": "70.10Z",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "59204754200630",
+       "naf_dans_permis": "70.10Z",
+       "nb_permis": 1,
+       "annees_depot": [
+        "2023"
+       ],
+       "etat_actuel": "ouvert",
+       "date_creation": "2014-07-15",
+       "date_fermeture": null
+      }
+     ],
+     "alertes": [
+      "NAF du permis ['70.10Z'] différent du NAF actuel de l'entreprise 52.29B"
+     ],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/592047542"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "52.29B",
+      "libelle": "Affrètement et organisation des transports"
+     },
+     {
+      "code": "70.10Z",
+      "libelle": "Activités des sièges sociaux"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5710",
+     "libelle": "SAS, société par actions simplifiée"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"entreprise_autre\",\"confiance\":\"moyenne\",\"indices\":[\"fiche_entreprise : NAF actuel 52.29B « Affrètement et organisation des transports », forme juridique SAS (5710), entreprise active (ETI, 31 salariés, 65 établissements dont 17 ouverts).\",\"permis_du_demandeur : 1 permis déposé en 2023, 0 logement créé, 1 428 m² de surface non résidentielle créée, aucun logement social déclaré, pas de permis collectif ni individuel.\",\"libelle_naf : 52.29B = activité de transport/logistique ; 70.10Z = activités des sièges sociaux (NAF de l'établissement siège mentionné dans le permis).\",\"libelle_cj : 5710 = SAS, société par actions simplifiée.\"],\"limites\":\"L'objet précis du permis (bureaux, entrepôt logistique, local d'activité) n'est pas détaillé ; l'établissement siège (SIRET 59204754200630) porte un NAF 70.10Z (siège social) différent de l'activité principale du groupe (transport). Aucune indication de vocation sociale, de promotion immobilière, de portage foncier ou de gestion de patrimoine locatif social.\"}"
+   }
+  ]
+ }
+]

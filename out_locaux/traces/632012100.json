@@ -1,0 +1,132 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "632012100"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "632012100"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "632012100"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "632012100"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "L'OREAL",
+     "nb_permis_PC": 5,
+     "annees_depot": [
+      "2012",
+      "2014",
+      "2022",
+      "2023"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 0,
+     "surface_locaux_non_residentiels_creee_m2": 1883,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 2
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "632012100",
+      "nom": "L'OREAL (KERASTASE ; MIZANI ; L'OREAL PROFESSIONNEL PARIS ; ESSIE PROFESSIONNEL ; BAXTER OF CALIFORNIA ; BIOL)",
+      "nature_juridique": "5599",
+      "naf_actuel": "77.40Z",
+      "etat": "A",
+      "date_creation": "1963-01-01",
+      "categorie": "GE",
+      "effectif": "52",
+      "nb_etablissements": 183,
+      "nb_etablissements_ouverts": 36,
+      "siege_actuel": {
+       "siret": "63201210000012",
+       "naf": "46.45Z",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "63201210000673",
+       "naf_dans_permis": "70.10Z",
+       "nb_permis": 2,
+       "annees_depot": [
+        "2012",
+        "2014"
+       ],
+       "etat_actuel": "fermé",
+       "date_creation": "1997-05-01",
+       "date_fermeture": "2013-04-30"
+      },
+      {
+       "siret": "63201210001127",
+       "naf_dans_permis": "20.42Z",
+       "nb_permis": 3,
+       "annees_depot": [
+        "2022",
+        "2023"
+       ],
+       "etat_actuel": "ouvert",
+       "date_creation": "2016-04-05",
+       "date_fermeture": null
+      }
+     ],
+     "alertes": [
+      "SIRET 63201210000673 (permis 2012,2014) fermé le 2013-04-30 : le NAF 70.10Z du permis vient d'un établissement fermé",
+      "NAF du permis ['20.42Z', '70.10Z'] différent du NAF actuel de l'entreprise 77.40Z"
+     ],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/632012100"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "70.10Z",
+      "libelle": "Activités des sièges sociaux"
+     },
+     {
+      "code": "77.40Z",
+      "libelle": "Location-bail de propriété intellectuelle et de produits similaires, à l'exception des œuvres soumises à copyright"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5599",
+     "libelle": "SA à conseil d'administration (s.a.i.)"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"entreprise_autre\",\"confiance\":\"haute\",\"indices\":[\"fiche_entreprise : entreprise L'OREAL, nature juridique 5599 (SA à conseil d'administration), NAF actuel 77.40Z (Location-bail de propriété intellectuelle), catégorie GE (grande entreprise), 52 employés, 183 établissements dont 36 ouverts\",\"permis_du_demandeur : 5 permis de construire (2012-2023), 0 logement créé, 1 883 m² de surface non résidentielle créée, 0 logement locatif social, 0 permis collectif/individuel\",\"libelle_naf : 77.40Z = Location-bail de propriété intellectuelle et de produits similaires (activité de holding/gestion de marques), 70.10Z = Activités des sièges sociaux (établissement fermé), 20.42Z = Fabrication de parfums et produits de toilette (établissement ouvert avec permis récents)\",\"libelle_cj : 5599 = SA à conseil d'administration (société anonyme), forme juridique commerciale classique\",\"dénomination : L'OREAL, groupe cosmétique mondial connu, activité industrielle et commerciale\"],\"limites\":\"Aucune : les sources convergent vers une grande entreprise privée du secteur cosmétique, sans lien avec le logement social, la promotion immobilière, la foncière, l'ESS, la santé/social, le public ou la copropriété.\"}"
+   }
+  ]
+ }
+]

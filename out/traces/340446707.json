@@ -1,0 +1,111 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "340446707"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "340446707"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "340446707"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "340446707"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "FINAMUR",
+     "nb_permis_PC": 1,
+     "annees_depot": [
+      "2023"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 1,
+     "surface_locaux_non_residentiels_creee_m2": 0,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 1,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 1
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "340446707",
+      "nom": "FINAMUR",
+      "nature_juridique": "5599",
+      "naf_actuel": "64.91Z",
+      "etat": "A",
+      "date_creation": "1987-02-04",
+      "categorie": "GE",
+      "effectif": "NN",
+      "nb_etablissements": 4,
+      "nb_etablissements_ouverts": 1,
+      "siege_actuel": {
+       "siret": "34044670700044",
+       "naf": "64.91Z",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "34044670700036",
+       "naf_dans_permis": "64.91Z",
+       "nb_permis": 1,
+       "annees_depot": [
+        "2023"
+       ],
+       "etat_actuel": "fermé",
+       "date_creation": "2004-04-13",
+       "date_fermeture": "2012-12-31"
+      }
+     ],
+     "alertes": [
+      "SIRET 34044670700036 (permis 2023) fermé le 2012-12-31 : le NAF 64.91Z du permis vient d'un établissement fermé"
+     ],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/340446707"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "64.91Z",
+      "libelle": "Crédit-bail"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5599",
+     "libelle": "SA à conseil d'administration (s.a.i.)"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"entreprise_autre\",\"confiance\":\"faible\",\"indices\":[\"fiche_entreprise : NAF actuel 64.91Z (Crédit-bail) – activité de crédit-bail (location financière), pas de promotion ni de logement social\",\"fiche_entreprise : nature juridique 5599 (SA à conseil d'administration) – société anonyme, pas une structure HLM, association ou foncière identifiée\",\"permis_du_demandeur : 1 permis en 2023 pour une maison individuelle (nb_permis_individuel=1), 0 logement locatif social, 0 collectif – pas de programme de promotion ni de patrimoine locatif social\",\"libelle_naf : 64.91Z = Crédit-bail (activité financière de location avec option d'achat, souvent matériel, parfois immobilier)\",\"libelle_cj : 5599 = SA à conseil d'administration (s.a.i.)\",\"fiche_entreprise : l'établissement du permis (SIRET 34044670700036) est fermé depuis 2012, le NAF du permis est donc historique ; le siège actuel (SIRET 34044670700044) a le même NAF 64.91Z et est ouvert\"],\"limites\":\"L'activité de crédit-bail peut inclure de l'immobilier (crédit-bail immobilier), ce qui rapprocherait l'entreprise d'une foncière_investisseur, mais aucune preuve de patrimoine locatif détenu n'est disponible. Le permis unique pour une maison individuelle peut correspondre à un besoin propre (siège, agence) plutôt qu'à un investissement locatif. Aucune information sur la détention d'actifs immobiliers en propre.\"}"
+   }
+  ]
+ }
+]

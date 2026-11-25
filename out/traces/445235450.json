@@ -1,0 +1,111 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "445235450"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "445235450"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "445235450"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "445235450"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "GIM.CO",
+     "nb_permis_PC": 1,
+     "annees_depot": [
+      "2015"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 6,
+     "surface_locaux_non_residentiels_creee_m2": 0,
+     "nb_permis_collectif": 1,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 0
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "445235450",
+      "nom": "GIM.CO",
+      "nature_juridique": "5499",
+      "naf_actuel": "71.12B",
+      "etat": "A",
+      "date_creation": "2003-02-01",
+      "categorie": "PME",
+      "effectif": "01",
+      "nb_etablissements": 2,
+      "nb_etablissements_ouverts": 1,
+      "siege_actuel": {
+       "siret": "44523545000027",
+       "naf": "71.12B",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "44523545000019",
+       "naf_dans_permis": "71.12B",
+       "nb_permis": 1,
+       "annees_depot": [
+        "2015"
+       ],
+       "etat_actuel": "fermé",
+       "date_creation": "2003-02-01",
+       "date_fermeture": "2015-03-01"
+      }
+     ],
+     "alertes": [
+      "SIRET 44523545000019 (permis 2015) fermé le 2015-03-01 : le NAF 71.12B du permis vient d'un établissement fermé"
+     ],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/445235450"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "71.12B",
+      "libelle": "Ingénierie, études techniques"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5499",
+     "libelle": "Société à responsabilité limitée (sans autre indication)"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"entreprise_autre\",\"confiance\":\"moyenne\",\"indices\":[\"fiche_entreprise : NAF actuel 71.12B (Ingénierie, études techniques), forme juridique SARL (cj 5499), entreprise active, PME 1 salarié\",\"libelle_naf : 71.12B = Ingénierie, études techniques\",\"libelle_cj : 5499 = Société à responsabilité limitée (sans autre indication)\",\"permis_du_demandeur : 1 permis en 2015, 6 logements créés en collectif, 0 logements locatifs sociaux déclarés\"],\"limites\":\"L'entreprise est une SARL d'ingénierie (études techniques) qui a déposé un permis pour 6 logements collectifs en 2015. Son activité principale n'est pas la promotion immobilière, la gestion de patrimoine, l'exploitation médico-sociale ni l'action associative. Elle ne correspond à aucune famille spécifique (bailleur, promoteur, foncière, association, exploitant, collectivité, copropriété). Le fait qu'elle ait déposé un permis ne suffit pas à la classer comme promoteur, car son NAF et sa forme juridique indiquent une activité d'ingénierie. L'établissement ayant déposé le permis est fermé depuis 2015.\"}"
+   }
+  ]
+ }
+]

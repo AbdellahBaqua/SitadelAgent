@@ -1,0 +1,109 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "804833515"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "804833515"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "804833515"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "804833515"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "SAS HOSKOHOME",
+     "nb_permis_PC": 1,
+     "annees_depot": [
+      "2015"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 1,
+     "surface_locaux_non_residentiels_creee_m2": 0,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 1,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 0
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "804833515",
+      "nom": "SAS HOSKOHOME",
+      "nature_juridique": "5710",
+      "naf_actuel": "71.12B",
+      "etat": "A",
+      "date_creation": "2014-10-01",
+      "categorie": "PME",
+      "effectif": "NN",
+      "nb_etablissements": 1,
+      "nb_etablissements_ouverts": 1,
+      "siege_actuel": {
+       "siret": "80483351500013",
+       "naf": "71.12B",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "80483351500013",
+       "naf_dans_permis": "71.12B",
+       "nb_permis": 1,
+       "annees_depot": [
+        "2015"
+       ],
+       "etat_actuel": "ouvert",
+       "date_creation": "2014-10-01",
+       "date_fermeture": null
+      }
+     ],
+     "alertes": [],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/804833515"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "71.12B",
+      "libelle": "Ingénierie, études techniques"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5710",
+     "libelle": "SAS, société par actions simplifiée"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"entreprise_autre\",\"confiance\":\"moyenne\",\"indices\":[\"fiche_entreprise : NAF actuel 71.12B (Ingénierie, études techniques), forme juridique SAS (5710), entreprise active (état A), créée en 2014\",\"permis_du_demandeur : 1 permis de construire individuel déposé en 2015, 1 logement créé, 0 logement social, 0 surface non résidentielle\",\"libelle_naf : 71.12B = Ingénierie, études techniques\",\"libelle_cj : 5710 = SAS, société par actions simplifiée\"],\"limites\":\"Un seul permis ancien (2015) pour une maison individuelle ; l'activité principale de la société est l'ingénierie/études techniques, pas la promotion immobilière. Aucune preuve d'activité récurrente de construction-vente, de gestion de patrimoine locatif, ni de vocation sociale/santé. La classification « entreprise_autre » est un fourre-tout pour les sociétés privées ne rentrant pas dans les autres familles.\"}"
+   }
+  ]
+ }
+]

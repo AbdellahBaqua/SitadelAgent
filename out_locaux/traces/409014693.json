@@ -1,0 +1,116 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "409014693"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "409014693"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "409014693"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "409014693"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "OJIREL",
+     "nb_permis_PC": 2,
+     "annees_depot": [
+      "2014"
+     ],
+     "nb_communes": 2,
+     "logements_crees_total": 0,
+     "surface_locaux_non_residentiels_creee_m2": 16636,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 0
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "409014693",
+      "nom": "OJIREL",
+      "nature_juridique": "5710",
+      "naf_actuel": "41.10B",
+      "etat": "A",
+      "date_creation": "1996-08-29",
+      "categorie": "ETI",
+      "effectif": "NN",
+      "nb_etablissements": 5,
+      "nb_etablissements_ouverts": 1,
+      "siege_actuel": {
+       "siret": "40901469300058",
+       "naf": "41.10B",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "40901469300025",
+       "naf_dans_permis": "64.20Z",
+       "nb_permis": 2,
+       "annees_depot": [
+        "2014"
+       ],
+       "etat_actuel": "fermé",
+       "date_creation": "2003-06-26",
+       "date_fermeture": "2022-06-29"
+      }
+     ],
+     "alertes": [
+      "SIRET 40901469300025 (permis 2014) fermé le 2022-06-29 : le NAF 64.20Z du permis vient d'un établissement fermé",
+      "NAF du permis ['64.20Z'] différent du NAF actuel de l'entreprise 41.10B"
+     ],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/409014693"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "41.10B",
+      "libelle": "Promotion immobilière de bureaux"
+     },
+     {
+      "code": "64.20Z",
+      "libelle": "Activités des sociétés holding"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5710",
+     "libelle": "SAS, société par actions simplifiée"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"promoteur\",\"confiance\":\"haute\",\"indices\":[\"fiche_entreprise : NAF actuel 41.10B « Promotion immobilière de bureaux »\",\"libelle_naf : 41.10B = Promotion immobilière de bureaux (activité de promotion immobilière, construction pour vente)\",\"permis_du_demandeur : 2 permis en 2014, 16 636 m² de surface non résidentielle créée, 0 logement créé\",\"fiche_entreprise : forme juridique SAS (catégorie juridique 5710), structure typique de promoteur\",\"fiche_entreprise : alerte – le NAF du permis (64.20Z, holding) provient d’un établissement fermé en 2022, différent du NAF actuel de l’entreprise (41.10B)\"],\"limites\":\"Les permis datent de 2014 (10 ans) ; l’établissement qui les a déposés était une holding (64.20Z) depuis fermée. L’entreprise affiche aujourd’hui une activité de promotion de bureaux (41.10B) au siège unique ouvert. La cohérence entre l’activité actuelle et les permis (surfaces non résidentielles) soutient la classification.\"}"
+   }
+  ]
+ }
+]

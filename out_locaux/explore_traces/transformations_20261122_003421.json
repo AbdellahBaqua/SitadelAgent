@@ -1,0 +1,1401 @@
+[
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "apercu",
+    "args": {},
+    "sortie": {
+     "perimetre": "PC des Yvelines (78) créant des locaux non résidentiels, déposés par des personnes morales, extraction SDES/Sitadel",
+     "nb_permis": 4245,
+     "nb_demandeurs": 2439,
+     "annees_depot": {
+      "2005": 1,
+      "2006": 1,
+      "2008": 1,
+      "2012": 97,
+      "2013": 257,
+      "2014": 271,
+      "2015": 258,
+      "2016": 322,
+      "2017": 341,
+      "2018": 360,
+      "2019": 331,
+      "2020": 270,
+      "2021": 347,
+      "2022": 370,
+      "2023": 334,
+      "2024": 300,
+      "2025": 282,
+      "2026": 101,
+      "2087": 1
+     },
+     "familles_demandeurs": {
+      "fonciere_investisseur": 895,
+      "entreprise_autre": 602,
+      "collectivite_public": 303,
+      "promoteur": 266,
+      "non_determine": 184,
+      "association_ess": 135,
+      "exploitant_sante_social": 32,
+      "bailleur_social": 21,
+      "copropriete": 1
+     },
+     "colonnes_interrogeables": [
+      "famille",
+      "AN_DEPOT",
+      "COMM",
+      "ADR_LOCALITE_TER",
+      "ETAT_DAU",
+      "DESTINATION_PRINCIPALE",
+      "DEST_SURF_MAX",
+      "TYPE_SERVICE_PUBLIC",
+      "NATURE_PROJET_COMPLETEE",
+      "TYPE_TRANSFO_PRINCIPAL",
+      "TYPE_PRINCIP_LOCAUX_TRANSFORMES",
+      "ZONE_OP",
+      "CJ_DEM",
+      "APE_DEM",
+      "SIREN_DEM",
+      "DENOM_DEM"
+     ],
+     "mesures": [
+      "permis",
+      "surface_m2",
+      "acteurs"
+     ],
+     "remarques": [
+      "2026 est une année partielle",
+      "un permis modificatif n'a pas de ligne propre",
+      "~15 % des ouvertures de chantier et ~1/3 des achèvements ne remontent jamais",
+      "APE_DEM = NAF de l'établissement du permis, possiblement fermé",
+      "surface_m2 = SURF_LOC_CREEE, surface de plancher de locaux non résidentiels créée",
+      "DEST_SURF_MAX = destination qui reçoit le plus de surface (calculée par le code à partir des SURF_*)",
+      "DESTINATION_PRINCIPALE est codée par le SDES (introduite en mai 2022) ; TYPE_SERVICE_PUBLIC vient du formulaire et est souvent 'non rempli'",
+      "un même permis peut aussi créer des logements : il figure alors aussi dans le fichier logements"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 1,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "TYPE_TRANSFO_PRINCIPAL"
+     ],
+     "mesure": "permis",
+     "top": 20
+    },
+    "sortie": {
+     "filtres": {},
+     "nb_permis_filtres": 4245,
+     "nb_groupes": 5,
+     "resultats": [
+      {
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 3487,
+       "surface_m2": 4857863,
+       "acteurs": 2008
+      },
+      {
+       "TYPE_TRANSFO_PRINCIPAL": "4 (transformation de locaux)",
+       "permis": 469,
+       "surface_m2": 186976,
+       "acteurs": 399
+      },
+      {
+       "TYPE_TRANSFO_PRINCIPAL": "3 (logements -> locaux)",
+       "permis": 224,
+       "surface_m2": 27724,
+       "acteurs": 197
+      },
+      {
+       "TYPE_TRANSFO_PRINCIPAL": "1 (locaux -> logements)",
+       "permis": 52,
+       "surface_m2": 5554,
+       "acteurs": 50
+      },
+      {
+       "TYPE_TRANSFO_PRINCIPAL": "2 (transformation de logements)",
+       "permis": 13,
+       "surface_m2": 1991,
+       "acteurs": 12
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 2,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "TYPE_PRINCIP_LOCAUX_TRANSFORMES"
+     ],
+     "mesure": "permis",
+     "top": 20
+    },
+    "sortie": {
+     "filtres": {},
+     "nb_permis_filtres": 4245,
+     "nb_groupes": 9,
+     "resultats": [
+      {
+       "TYPE_PRINCIP_LOCAUX_TRANSFORMES": "(vide)",
+       "permis": 3487,
+       "surface_m2": 4857863,
+       "acteurs": 2008
+      },
+      {
+       "TYPE_PRINCIP_LOCAUX_TRANSFORMES": "1 (habitation)",
+       "permis": 238,
+       "surface_m2": 36705,
+       "acteurs": 207
+      },
+      {
+       "TYPE_PRINCIP_LOCAUX_TRANSFORMES": "4 (commerce)",
+       "permis": 137,
+       "surface_m2": 41482,
+       "acteurs": 130
+      },
+      {
+       "TYPE_PRINCIP_LOCAUX_TRANSFORMES": "3 (bureaux)",
+       "permis": 115,
+       "surface_m2": 32732,
+       "acteurs": 111
+      },
+      {
+       "TYPE_PRINCIP_LOCAUX_TRANSFORMES": "8 (entrepôt)",
+       "permis": 100,
+       "surface_m2": 23977,
+       "acteurs": 95
+      },
+      {
+       "TYPE_PRINCIP_LOCAUX_TRANSFORMES": "9 (service public / intérêt collectif)",
+       "permis": 89,
+       "surface_m2": 42421,
+       "acteurs": 75
+      },
+      {
+       "TYPE_PRINCIP_LOCAUX_TRANSFORMES": "7 (agriculture)",
+       "permis": 36,
+       "surface_m2": 10480,
+       "acteurs": 35
+      },
+      {
+       "TYPE_PRINCIP_LOCAUX_TRANSFORMES": "6 (industrie)",
+       "permis": 35,
+       "surface_m2": 21943,
+       "acteurs": 28
+      },
+      {
+       "TYPE_PRINCIP_LOCAUX_TRANSFORMES": "2 (hôtels)",
+       "permis": 8,
+       "surface_m2": 12505,
+       "acteurs": 8
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 3,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "DEST_SURF_MAX"
+     ],
+     "filtres": {
+      "TYPE_TRANSFO_PRINCIPAL": "4 (transformation de locaux)"
+     },
+     "mesure": "permis",
+     "top": 20
+    },
+    "sortie": {
+     "filtres": {
+      "TYPE_TRANSFO_PRINCIPAL": "4 (transformation de locaux)"
+     },
+     "nb_permis_filtres": 469,
+     "nb_groupes": 7,
+     "resultats": [
+      {
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "permis": 167,
+       "surface_m2": 58513,
+       "acteurs": 132
+      },
+      {
+       "DEST_SURF_MAX": "commerce",
+       "permis": 139,
+       "surface_m2": 41426,
+       "acteurs": 135
+      },
+      {
+       "DEST_SURF_MAX": "bureaux",
+       "permis": 93,
+       "surface_m2": 21872,
+       "acteurs": 82
+      },
+      {
+       "DEST_SURF_MAX": "entrepôt",
+       "permis": 29,
+       "surface_m2": 28789,
+       "acteurs": 27
+      },
+      {
+       "DEST_SURF_MAX": "hôtels / hébergement",
+       "permis": 23,
+       "surface_m2": 23386,
+       "acteurs": 22
+      },
+      {
+       "DEST_SURF_MAX": "industrie",
+       "permis": 13,
+       "surface_m2": 9987,
+       "acteurs": 13
+      },
+      {
+       "DEST_SURF_MAX": "agriculture",
+       "permis": 5,
+       "surface_m2": 3003,
+       "acteurs": 5
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 4,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "TYPE_PRINCIP_LOCAUX_TRANSFORMES",
+      "DEST_SURF_MAX"
+     ],
+     "filtres": {
+      "TYPE_TRANSFO_PRINCIPAL": "4 (transformation de locaux)"
+     },
+     "mesure": "permis",
+     "top": 30
+    },
+    "sortie": {
+     "filtres": {
+      "TYPE_TRANSFO_PRINCIPAL": "4 (transformation de locaux)"
+     },
+     "nb_permis_filtres": 469,
+     "nb_groupes": 39,
+     "resultats": [
+      {
+       "TYPE_PRINCIP_LOCAUX_TRANSFORMES": "9 (service public / intérêt collectif)",
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "permis": 56,
+       "surface_m2": 37567,
+       "acteurs": 46
+      },
+      {
+       "TYPE_PRINCIP_LOCAUX_TRANSFORMES": "4 (commerce)",
+       "DEST_SURF_MAX": "commerce",
+       "permis": 44,
+       "surface_m2": 24593,
+       "acteurs": 42
+      },
+      {
+       "TYPE_PRINCIP_LOCAUX_TRANSFORMES": "4 (commerce)",
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "permis": 40,
+       "surface_m2": 968,
+       "acteurs": 39
+      },
+      {
+       "TYPE_PRINCIP_LOCAUX_TRANSFORMES": "3 (bureaux)",
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "permis": 39,
+       "surface_m2": 6671,
+       "acteurs": 36
+      },
+      {
+       "TYPE_PRINCIP_LOCAUX_TRANSFORMES": "8 (entrepôt)",
+       "DEST_SURF_MAX": "bureaux",
+       "permis": 37,
+       "surface_m2": 7770,
+       "acteurs": 34
+      },
+      {
+       "TYPE_PRINCIP_LOCAUX_TRANSFORMES": "8 (entrepôt)",
+       "DEST_SURF_MAX": "commerce",
+       "permis": 33,
+       "surface_m2": 8338,
+       "acteurs": 33
+      },
+      {
+       "TYPE_PRINCIP_LOCAUX_TRANSFORMES": "3 (bureaux)",
+       "DEST_SURF_MAX": "commerce",
+       "permis": 28,
+       "surface_m2": 5078,
+       "acteurs": 28
+      },
+      {
+       "TYPE_PRINCIP_LOCAUX_TRANSFORMES": "4 (commerce)",
+       "DEST_SURF_MAX": "bureaux",
+       "permis": 27,
+       "surface_m2": 1340,
+       "acteurs": 25
+      },
+      {
+       "TYPE_PRINCIP_LOCAUX_TRANSFORMES": "9 (service public / intérêt collectif)",
+       "DEST_SURF_MAX": "commerce",
+       "permis": 19,
+       "surface_m2": 2449,
+       "acteurs": 18
+      },
+      {
+       "TYPE_PRINCIP_LOCAUX_TRANSFORMES": "8 (entrepôt)",
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "permis": 16,
+       "surface_m2": 4854,
+       "acteurs": 15
+      },
+      {
+       "TYPE_PRINCIP_LOCAUX_TRANSFORMES": "3 (bureaux)",
+       "DEST_SURF_MAX": "bureaux",
+       "permis": 12,
+       "surface_m2": 4525,
+       "acteurs": 12
+      },
+      {
+       "TYPE_PRINCIP_LOCAUX_TRANSFORMES": "3 (bureaux)",
+       "DEST_SURF_MAX": "entrepôt",
+       "permis": 10,
+       "surface_m2": 12339,
+       "acteurs": 9
+      },
+      {
+       "TYPE_PRINCIP_LOCAUX_TRANSFORMES": "6 (industrie)",
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "permis": 9,
+       "surface_m2": 1422,
+       "acteurs": 6
+      },
+      {
+       "TYPE_PRINCIP_LOCAUX_TRANSFORMES": "7 (agriculture)",
+       "DEST_SURF_MAX": "commerce",
+       "permis": 9,
+       "surface_m2": 897,
+       "acteurs": 9
+      },
+      {
+       "TYPE_PRINCIP_LOCAUX_TRANSFORMES": "4 (commerce)",
+       "DEST_SURF_MAX": "hôtels / hébergement",
+       "permis": 7,
+       "surface_m2": 8654,
+       "acteurs": 7
+      },
+      {
+       "TYPE_PRINCIP_LOCAUX_TRANSFORMES": "6 (industrie)",
+       "DEST_SURF_MAX": "bureaux",
+       "permis": 7,
+       "surface_m2": 2740,
+       "acteurs": 4
+      },
+      {
+       "TYPE_PRINCIP_LOCAUX_TRANSFORMES": "3 (bureaux)",
+       "DEST_SURF_MAX": "hôtels / hébergement",
+       "permis": 7,
+       "surface_m2": 935,
+       "acteurs": 7
+      },
+      {
+       "TYPE_PRINCIP_LOCAUX_TRANSFORMES": "6 (industrie)",
+       "DEST_SURF_MAX": "industrie",
+       "permis": 6,
+       "surface_m2": 7974,
+       "acteurs": 6
+      },
+      {
+       "TYPE_PRINCIP_LOCAUX_TRANSFORMES": "4 (commerce)",
+       "DEST_SURF_MAX": "entrepôt",
+       "permis": 6,
+       "surface_m2": 4390,
+       "acteurs": 6
+      },
+      {
+       "TYPE_PRINCIP_LOCAUX_TRANSFORMES": "9 (service public / intérêt collectif)",
+       "DEST_SURF_MAX": "bureaux",
+       "permis": 6,
+       "surface_m2": 56,
+       "acteurs": 6
+      },
+      {
+       "TYPE_PRINCIP_LOCAUX_TRANSFORMES": "6 (industrie)",
+       "DEST_SURF_MAX": "entrepôt",
+       "permis": 6,
+       "surface_m2": 9661,
+       "acteurs": 5
+      },
+      {
+       "TYPE_PRINCIP_LOCAUX_TRANSFORMES": "6 (industrie)",
+       "DEST_SURF_MAX": "commerce",
+       "permis": 5,
+       "surface_m2": 3,
+       "acteurs": 5
+      },
+      {
+       "TYPE_PRINCIP_LOCAUX_TRANSFORMES": "8 (entrepôt)",
+       "DEST_SURF_MAX": "entrepôt",
+       "permis": 5,
+       "surface_m2": 2021,
+       "acteurs": 5
+      },
+      {
+       "TYPE_PRINCIP_LOCAUX_TRANSFORMES": "7 (agriculture)",
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "permis": 5,
+       "surface_m2": 209,
+       "acteurs": 5
+      },
+      {
+       "TYPE_PRINCIP_LOCAUX_TRANSFORMES": "7 (agriculture)",
+       "DEST_SURF_MAX": "agriculture",
+       "permis": 4,
+       "surface_m2": 2659,
+       "acteurs": 4
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 5,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "AN_DEPOT",
+      "TYPE_TRANSFO_PRINCIPAL"
+     ],
+     "mesure": "permis",
+     "top": 50
+    },
+    "sortie": {
+     "filtres": {},
+     "nb_permis_filtres": 4245,
+     "nb_groupes": 71,
+     "resultats": [
+      {
+       "AN_DEPOT": "2022",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 313,
+       "surface_m2": 494713,
+       "acteurs": 261
+      },
+      {
+       "AN_DEPOT": "2018",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 292,
+       "surface_m2": 474855,
+       "acteurs": 250
+      },
+      {
+       "AN_DEPOT": "2021",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 287,
+       "surface_m2": 321904,
+       "acteurs": 252
+      },
+      {
+       "AN_DEPOT": "2019",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 275,
+       "surface_m2": 371283,
+       "acteurs": 240
+      },
+      {
+       "AN_DEPOT": "2023",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 271,
+       "surface_m2": 350593,
+       "acteurs": 229
+      },
+      {
+       "AN_DEPOT": "2017",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 270,
+       "surface_m2": 313684,
+       "acteurs": 223
+      },
+      {
+       "AN_DEPOT": "2016",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 264,
+       "surface_m2": 416335,
+       "acteurs": 229
+      },
+      {
+       "AN_DEPOT": "2024",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 235,
+       "surface_m2": 231618,
+       "acteurs": 192
+      },
+      {
+       "AN_DEPOT": "2020",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 229,
+       "surface_m2": 436697,
+       "acteurs": 210
+      },
+      {
+       "AN_DEPOT": "2025",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 226,
+       "surface_m2": 502401,
+       "acteurs": 195
+      },
+      {
+       "AN_DEPOT": "2013",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 225,
+       "surface_m2": 263407,
+       "acteurs": 181
+      },
+      {
+       "AN_DEPOT": "2014",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 222,
+       "surface_m2": 176593,
+       "acteurs": 195
+      },
+      {
+       "AN_DEPOT": "2015",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 212,
+       "surface_m2": 246697,
+       "acteurs": 186
+      },
+      {
+       "AN_DEPOT": "2012",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 84,
+       "surface_m2": 149150,
+       "acteurs": 78
+      },
+      {
+       "AN_DEPOT": "2026",
+       "TYPE_TRANSFO_PRINCIPAL": "(vide)",
+       "permis": 79,
+       "surface_m2": 107448,
+       "acteurs": 77
+      },
+      {
+       "AN_DEPOT": "2018",
+       "TYPE_TRANSFO_PRINCIPAL": "4 (transformation de locaux)",
+       "permis": 49,
+       "surface_m2": 10186,
+       "acteurs": 46
+      },
+      {
+       "AN_DEPOT": "2023",
+       "TYPE_TRANSFO_PRINCIPAL": "4 (transformation de locaux)",
+       "permis": 45,
+       "surface_m2": 5947,
+       "acteurs": 43
+      },
+      {
+       "AN_DEPOT": "2017",
+       "TYPE_TRANSFO_PRINCIPAL": "4 (transformation de locaux)",
+       "permis": 43,
+       "surface_m2": 17690,
+       "acteurs": 42
+      },
+      {
+       "AN_DEPOT": "2022",
+       "TYPE_TRANSFO_PRINCIPAL": "4 (transformation de locaux)",
+       "permis": 37,
+       "surface_m2": 27641,
+       "acteurs": 36
+      },
+      {
+       "AN_DEPOT": "2014",
+       "TYPE_TRANSFO_PRINCIPAL": "4 (transformation de locaux)",
+       "permis": 35,
+       "surface_m2": 18898,
+       "acteurs": 34
+      },
+      {
+       "AN_DEPOT": "2025",
+       "TYPE_TRANSFO_PRINCIPAL": "4 (transformation de locaux)",
+       "permis": 35,
+       "surface_m2": 27909,
+       "acteurs": 33
+      },
+      {
+       "AN_DEPOT": "2021",
+       "TYPE_TRANSFO_PRINCIPAL": "4 (transformation de locaux)",
+       "permis": 33,
+       "surface_m2": 11322,
+       "acteurs": 32
+      },
+      {
+       "AN_DEPOT": "2024",
+       "TYPE_TRANSFO_PRINCIPAL": "4 (transformation de locaux)",
+       "permis": 33,
+       "surface_m2": 8124,
+       "acteurs": 33
+      },
+      {
+       "AN_DEPOT": "2019",
+       "TYPE_TRANSFO_PRINCIPAL": "4 (transformation de locaux)",
+       "permis": 32,
+       "surface_m2": 8181,
+       "acteurs": 29
+      },
+      {
+       "AN_DEPOT": "2015",
+       "TYPE_TRANSFO_PRINCIPAL": "4 (transformation de locaux)",
+       "permis": 31,
+       "surface_m2": 13737,
+       "acteurs": 29
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 6,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "AN_DEPOT"
+     ],
+     "filtres": {
+      "TYPE_TRANSFO_PRINCIPAL": "4 (transformation de locaux)"
+     },
+     "mesure": "permis",
+     "top": 20
+    },
+    "sortie": {
+     "filtres": {
+      "TYPE_TRANSFO_PRINCIPAL": "4 (transformation de locaux)"
+     },
+     "nb_permis_filtres": 469,
+     "nb_groupes": 16,
+     "resultats": [
+      {
+       "AN_DEPOT": "2018",
+       "permis": 49,
+       "surface_m2": 10186,
+       "acteurs": 46
+      },
+      {
+       "AN_DEPOT": "2023",
+       "permis": 45,
+       "surface_m2": 5947,
+       "acteurs": 43
+      },
+      {
+       "AN_DEPOT": "2017",
+       "permis": 43,
+       "surface_m2": 17690,
+       "acteurs": 42
+      },
+      {
+       "AN_DEPOT": "2022",
+       "permis": 37,
+       "surface_m2": 27641,
+       "acteurs": 36
+      },
+      {
+       "AN_DEPOT": "2014",
+       "permis": 35,
+       "surface_m2": 18898,
+       "acteurs": 34
+      },
+      {
+       "AN_DEPOT": "2025",
+       "permis": 35,
+       "surface_m2": 27909,
+       "acteurs": 33
+      },
+      {
+       "AN_DEPOT": "2021",
+       "permis": 33,
+       "surface_m2": 11322,
+       "acteurs": 32
+      },
+      {
+       "AN_DEPOT": "2024",
+       "permis": 33,
+       "surface_m2": 8124,
+       "acteurs": 33
+      },
+      {
+       "AN_DEPOT": "2019",
+       "permis": 32,
+       "surface_m2": 8181,
+       "acteurs": 29
+      },
+      {
+       "AN_DEPOT": "2015",
+       "permis": 31,
+       "surface_m2": 13737,
+       "acteurs": 29
+      },
+      {
+       "AN_DEPOT": "2016",
+       "permis": 31,
+       "surface_m2": 18775,
+       "acteurs": 29
+      },
+      {
+       "AN_DEPOT": "2013",
+       "permis": 27,
+       "surface_m2": 7261,
+       "acteurs": 23
+      },
+      {
+       "AN_DEPOT": "2020",
+       "permis": 21,
+       "surface_m2": 4929,
+       "acteurs": 21
+      },
+      {
+       "AN_DEPOT": "2026",
+       "permis": 10,
+       "surface_m2": 3523,
+       "acteurs": 10
+      },
+      {
+       "AN_DEPOT": "2012",
+       "permis": 6,
+       "surface_m2": 2853,
+       "acteurs": 6
+      },
+      {
+       "AN_DEPOT": "2005",
+       "permis": 1,
+       "surface_m2": 0,
+       "acteurs": 1
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 7,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "AN_DEPOT"
+     ],
+     "filtres": {
+      "TYPE_TRANSFO_PRINCIPAL": "3 (logements -> locaux)"
+     },
+     "mesure": "permis",
+     "top": 20
+    },
+    "sortie": {
+     "filtres": {
+      "TYPE_TRANSFO_PRINCIPAL": "3 (logements -> locaux)"
+     },
+     "nb_permis_filtres": 224,
+     "nb_groupes": 15,
+     "resultats": [
+      {
+       "AN_DEPOT": "2024",
+       "permis": 30,
+       "surface_m2": 12585,
+       "acteurs": 29
+      },
+      {
+       "AN_DEPOT": "2017",
+       "permis": 24,
+       "surface_m2": 2945,
+       "acteurs": 23
+      },
+      {
+       "AN_DEPOT": "2016",
+       "permis": 23,
+       "surface_m2": 1754,
+       "acteurs": 23
+      },
+      {
+       "AN_DEPOT": "2019",
+       "permis": 17,
+       "surface_m2": 427,
+       "acteurs": 17
+      },
+      {
+       "AN_DEPOT": "2021",
+       "permis": 17,
+       "surface_m2": 3280,
+       "acteurs": 16
+      },
+      {
+       "AN_DEPOT": "2018",
+       "permis": 15,
+       "surface_m2": 589,
+       "acteurs": 13
+      },
+      {
+       "AN_DEPOT": "2020",
+       "permis": 15,
+       "surface_m2": 1118,
+       "acteurs": 14
+      },
+      {
+       "AN_DEPOT": "2022",
+       "permis": 15,
+       "surface_m2": 874,
+       "acteurs": 13
+      },
+      {
+       "AN_DEPOT": "2023",
+       "permis": 15,
+       "surface_m2": 1754,
+       "acteurs": 15
+      },
+      {
+       "AN_DEPOT": "2025",
+       "permis": 14,
+       "surface_m2": 192,
+       "acteurs": 14
+      },
+      {
+       "AN_DEPOT": "2014",
+       "permis": 12,
+       "surface_m2": 303,
+       "acteurs": 12
+      },
+      {
+       "AN_DEPOT": "2015",
+       "permis": 9,
+       "surface_m2": 1219,
+       "acteurs": 9
+      },
+      {
+       "AN_DEPOT": "2026",
+       "permis": 7,
+       "surface_m2": 108,
+       "acteurs": 7
+      },
+      {
+       "AN_DEPOT": "2012",
+       "permis": 6,
+       "surface_m2": 73,
+       "acteurs": 6
+      },
+      {
+       "AN_DEPOT": "2013",
+       "permis": 5,
+       "surface_m2": 503,
+       "acteurs": 5
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 8,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "famille"
+     ],
+     "filtres": {
+      "TYPE_TRANSFO_PRINCIPAL": "4 (transformation de locaux)"
+     },
+     "mesure": "permis",
+     "top": 20
+    },
+    "sortie": {
+     "filtres": {
+      "TYPE_TRANSFO_PRINCIPAL": "4 (transformation de locaux)"
+     },
+     "nb_permis_filtres": 469,
+     "nb_groupes": 8,
+     "resultats": [
+      {
+       "famille": "fonciere_investisseur",
+       "permis": 126,
+       "surface_m2": 61116,
+       "acteurs": 117
+      },
+      {
+       "famille": "entreprise_autre",
+       "permis": 115,
+       "surface_m2": 37869,
+       "acteurs": 106
+      },
+      {
+       "famille": "collectivite_public",
+       "permis": 96,
+       "surface_m2": 29407,
+       "acteurs": 68
+      },
+      {
+       "famille": "non_determine",
+       "permis": 51,
+       "surface_m2": 19047,
+       "acteurs": 41
+      },
+      {
+       "famille": "association_ess",
+       "permis": 43,
+       "surface_m2": 2723,
+       "acteurs": 35
+      },
+      {
+       "famille": "exploitant_sante_social",
+       "permis": 20,
+       "surface_m2": 138,
+       "acteurs": 17
+      },
+      {
+       "famille": "promoteur",
+       "permis": 16,
+       "surface_m2": 36341,
+       "acteurs": 13
+      },
+      {
+       "famille": "bailleur_social",
+       "permis": 2,
+       "surface_m2": 335,
+       "acteurs": 2
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 9,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "famille"
+     ],
+     "filtres": {
+      "TYPE_TRANSFO_PRINCIPAL": "3 (logements -> locaux)"
+     },
+     "mesure": "permis",
+     "top": 20
+    },
+    "sortie": {
+     "filtres": {
+      "TYPE_TRANSFO_PRINCIPAL": "3 (logements -> locaux)"
+     },
+     "nb_permis_filtres": 224,
+     "nb_groupes": 8,
+     "resultats": [
+      {
+       "famille": "fonciere_investisseur",
+       "permis": 71,
+       "surface_m2": 11831,
+       "acteurs": 70
+      },
+      {
+       "famille": "collectivite_public",
+       "permis": 62,
+       "surface_m2": 4858,
+       "acteurs": 52
+      },
+      {
+       "famille": "entreprise_autre",
+       "permis": 29,
+       "surface_m2": 601,
+       "acteurs": 24
+      },
+      {
+       "famille": "non_determine",
+       "permis": 26,
+       "surface_m2": 991,
+       "acteurs": 20
+      },
+      {
+       "famille": "association_ess",
+       "permis": 20,
+       "surface_m2": 680,
+       "acteurs": 18
+      },
+      {
+       "famille": "promoteur",
+       "permis": 6,
+       "surface_m2": 8039,
+       "acteurs": 5
+      },
+      {
+       "famille": "exploitant_sante_social",
+       "permis": 6,
+       "surface_m2": 122,
+       "acteurs": 4
+      },
+      {
+       "famille": "bailleur_social",
+       "permis": 4,
+       "surface_m2": 602,
+       "acteurs": 4
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 10,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "TYPE_PRINCIP_LOCAUX_TRANSFORMES",
+      "DEST_SURF_MAX"
+     ],
+     "filtres": {
+      "TYPE_TRANSFO_PRINCIPAL": "4 (transformation de locaux)"
+     },
+     "mesure": "surface_m2",
+     "top": 30
+    },
+    "sortie": {
+     "filtres": {
+      "TYPE_TRANSFO_PRINCIPAL": "4 (transformation de locaux)"
+     },
+     "nb_permis_filtres": 469,
+     "nb_groupes": 39,
+     "resultats": [
+      {
+       "TYPE_PRINCIP_LOCAUX_TRANSFORMES": "9 (service public / intérêt collectif)",
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "permis": 56,
+       "surface_m2": 37567,
+       "acteurs": 46
+      },
+      {
+       "TYPE_PRINCIP_LOCAUX_TRANSFORMES": "4 (commerce)",
+       "DEST_SURF_MAX": "commerce",
+       "permis": 44,
+       "surface_m2": 24593,
+       "acteurs": 42
+      },
+      {
+       "TYPE_PRINCIP_LOCAUX_TRANSFORMES": "3 (bureaux)",
+       "DEST_SURF_MAX": "entrepôt",
+       "permis": 10,
+       "surface_m2": 12339,
+       "acteurs": 9
+      },
+      {
+       "TYPE_PRINCIP_LOCAUX_TRANSFORMES": "6 (industrie)",
+       "DEST_SURF_MAX": "entrepôt",
+       "permis": 6,
+       "surface_m2": 9661,
+       "acteurs": 5
+      },
+      {
+       "TYPE_PRINCIP_LOCAUX_TRANSFORMES": "4 (commerce)",
+       "DEST_SURF_MAX": "hôtels / hébergement",
+       "permis": 7,
+       "surface_m2": 8654,
+       "acteurs": 7
+      },
+      {
+       "TYPE_PRINCIP_LOCAUX_TRANSFORMES": "8 (entrepôt)",
+       "DEST_SURF_MAX": "commerce",
+       "permis": 33,
+       "surface_m2": 8338,
+       "acteurs": 33
+      },
+      {
+       "TYPE_PRINCIP_LOCAUX_TRANSFORMES": "6 (industrie)",
+       "DEST_SURF_MAX": "industrie",
+       "permis": 6,
+       "surface_m2": 7974,
+       "acteurs": 6
+      },
+      {
+       "TYPE_PRINCIP_LOCAUX_TRANSFORMES": "8 (entrepôt)",
+       "DEST_SURF_MAX": "bureaux",
+       "permis": 37,
+       "surface_m2": 7770,
+       "acteurs": 34
+      },
+      {
+       "TYPE_PRINCIP_LOCAUX_TRANSFORMES": "1 (habitation)",
+       "DEST_SURF_MAX": "hôtels / hébergement",
+       "permis": 1,
+       "surface_m2": 6990,
+       "acteurs": 1
+      },
+      {
+       "TYPE_PRINCIP_LOCAUX_TRANSFORMES": "2 (hôtels)",
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "permis": 2,
+       "surface_m2": 6822,
+       "acteurs": 2
+      },
+      {
+       "TYPE_PRINCIP_LOCAUX_TRANSFORMES": "3 (bureaux)",
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "permis": 39,
+       "surface_m2": 6671,
+       "acteurs": 36
+      },
+      {
+       "TYPE_PRINCIP_LOCAUX_TRANSFORMES": "2 (hôtels)",
+       "DEST_SURF_MAX": "bureaux",
+       "permis": 2,
+       "surface_m2": 5441,
+       "acteurs": 2
+      },
+      {
+       "TYPE_PRINCIP_LOCAUX_TRANSFORMES": "3 (bureaux)",
+       "DEST_SURF_MAX": "commerce",
+       "permis": 28,
+       "surface_m2": 5078,
+       "acteurs": 28
+      },
+      {
+       "TYPE_PRINCIP_LOCAUX_TRANSFORMES": "7 (agriculture)",
+       "DEST_SURF_MAX": "hôtels / hébergement",
+       "permis": 1,
+       "surface_m2": 5017,
+       "acteurs": 1
+      },
+      {
+       "TYPE_PRINCIP_LOCAUX_TRANSFORMES": "8 (entrepôt)",
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "permis": 16,
+       "surface_m2": 4854,
+       "acteurs": 15
+      },
+      {
+       "TYPE_PRINCIP_LOCAUX_TRANSFORMES": "3 (bureaux)",
+       "DEST_SURF_MAX": "bureaux",
+       "permis": 12,
+       "surface_m2": 4525,
+       "acteurs": 12
+      },
+      {
+       "TYPE_PRINCIP_LOCAUX_TRANSFORMES": "4 (commerce)",
+       "DEST_SURF_MAX": "entrepôt",
+       "permis": 6,
+       "surface_m2": 4390,
+       "acteurs": 6
+      },
+      {
+       "TYPE_PRINCIP_LOCAUX_TRANSFORMES": "6 (industrie)",
+       "DEST_SURF_MAX": "bureaux",
+       "permis": 7,
+       "surface_m2": 2740,
+       "acteurs": 4
+      },
+      {
+       "TYPE_PRINCIP_LOCAUX_TRANSFORMES": "7 (agriculture)",
+       "DEST_SURF_MAX": "agriculture",
+       "permis": 4,
+       "surface_m2": 2659,
+       "acteurs": 4
+      },
+      {
+       "TYPE_PRINCIP_LOCAUX_TRANSFORMES": "9 (service public / intérêt collectif)",
+       "DEST_SURF_MAX": "commerce",
+       "permis": 19,
+       "surface_m2": 2449,
+       "acteurs": 18
+      },
+      {
+       "TYPE_PRINCIP_LOCAUX_TRANSFORMES": "8 (entrepôt)",
+       "DEST_SURF_MAX": "entrepôt",
+       "permis": 5,
+       "surface_m2": 2021,
+       "acteurs": 5
+      },
+      {
+       "TYPE_PRINCIP_LOCAUX_TRANSFORMES": "9 (service public / intérêt collectif)",
+       "DEST_SURF_MAX": "hôtels / hébergement",
+       "permis": 3,
+       "surface_m2": 1616,
+       "acteurs": 3
+      },
+      {
+       "TYPE_PRINCIP_LOCAUX_TRANSFORMES": "6 (industrie)",
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "permis": 9,
+       "surface_m2": 1422,
+       "acteurs": 6
+      },
+      {
+       "TYPE_PRINCIP_LOCAUX_TRANSFORMES": "4 (commerce)",
+       "DEST_SURF_MAX": "bureaux",
+       "permis": 27,
+       "surface_m2": 1340,
+       "acteurs": 25
+      },
+      {
+       "TYPE_PRINCIP_LOCAUX_TRANSFORMES": "4 (commerce)",
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "permis": 40,
+       "surface_m2": 968,
+       "acteurs": 39
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 11,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "TYPE_PRINCIP_LOCAUX_TRANSFORMES",
+      "DEST_SURF_MAX"
+     ],
+     "filtres": {
+      "TYPE_TRANSFO_PRINCIPAL": "3 (logements -> locaux)"
+     },
+     "mesure": "permis",
+     "top": 30
+    },
+    "sortie": {
+     "filtres": {
+      "TYPE_TRANSFO_PRINCIPAL": "3 (logements -> locaux)"
+     },
+     "nb_permis_filtres": 224,
+     "nb_groupes": 7,
+     "resultats": [
+      {
+       "TYPE_PRINCIP_LOCAUX_TRANSFORMES": "1 (habitation)",
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "permis": 100,
+       "surface_m2": 8489,
+       "acteurs": 83
+      },
+      {
+       "TYPE_PRINCIP_LOCAUX_TRANSFORMES": "1 (habitation)",
+       "DEST_SURF_MAX": "commerce",
+       "permis": 64,
+       "surface_m2": 9729,
+       "acteurs": 63
+      },
+      {
+       "TYPE_PRINCIP_LOCAUX_TRANSFORMES": "1 (habitation)",
+       "DEST_SURF_MAX": "bureaux",
+       "permis": 45,
+       "surface_m2": 1860,
+       "acteurs": 43
+      },
+      {
+       "TYPE_PRINCIP_LOCAUX_TRANSFORMES": "1 (habitation)",
+       "DEST_SURF_MAX": "hôtels / hébergement",
+       "permis": 9,
+       "surface_m2": 6237,
+       "acteurs": 9
+      },
+      {
+       "TYPE_PRINCIP_LOCAUX_TRANSFORMES": "1 (habitation)",
+       "DEST_SURF_MAX": "entrepôt",
+       "permis": 3,
+       "surface_m2": 148,
+       "acteurs": 3
+      },
+      {
+       "TYPE_PRINCIP_LOCAUX_TRANSFORMES": "1 (habitation)",
+       "DEST_SURF_MAX": "agriculture",
+       "permis": 2,
+       "surface_m2": 1261,
+       "acteurs": 2
+      },
+      {
+       "TYPE_PRINCIP_LOCAUX_TRANSFORMES": "1 (habitation)",
+       "DEST_SURF_MAX": "aucune",
+       "permis": 1,
+       "surface_m2": 0,
+       "acteurs": 1
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 12,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "noter",
+    "args": {
+     "titre": "Les transformations de locaux (type 4) sont dominées par les foncières/investisseurs et les entreprises, pas par les acteurs de l'ESS/santé-social",
+     "constat": "Sur 469 permis de transformation de locaux (type 4), les foncières_investisseur mènent avec 126 permis (61 116 m², 117 acteurs distincts), suivies par entreprise_autre (115 permis, 37 869 m²) et collectivite_public (96 permis, 29 407 m²). Les associations_ess ne font que 43 permis (2 723 m², 35 acteurs) et exploitants_sante_social seulement 20 permis (138 m², 17 acteurs). Les bailleurs_sociaux sont quasi absents (2 permis, 335 m²).",
+     "interet_buddimm": "Prospection : les foncières/investisseurs et entreprises sont les vrais moteurs de la transformation de locaux existants. Buddimm devrait cibler ces profils pour de l'AMO transformation/réhabilitation, plutôt que de se concentrer uniquement sur les associations ESS/santé-social qui portent peu de ces projets.",
+     "fiabilite": "établi",
+     "limites": "La variable famille est une classification interne ; surface_m2 faible pour associations/ESS peut masquer des projets nombreux mais petits.",
+     "a_creuser": "Identifier les foncières/investisseurs les plus actifs (top 10) et leurs typologies de transformation (bureaux→entrepôt, commerce→commerce, etc.)."
+    },
+    "sortie": {
+     "ok": "note 1 enregistrée"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 13,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "noter",
+    "args": {
+     "titre": "Flux de transformation dominants : bureaux→entrepôt (surfaces), entrepôt→bureaux (volumes), et service public→service public (stabilité publique)",
+     "constat": "Sur les 469 transformations de locaux (type 4), les 3 plus gros flux en surface créée : 1) Bureaux → Entrepôt : 12 339 m² (10 permis, 9 acteurs) ; 2) Industrie → Entrepôt : 9 661 m² (6 permis) ; 3) Service public → Service public : 37 567 m² (56 permis) mais réhabilitation interne. En nombre de permis : Entrepôt → Bureaux (37 permis, 7 770 m²), Entrepôt → Commerce (33 permis, 8 338 m²), Bureaux → Service public (39 permis, 6 671 m²). Le flux Commerce → Commerce (44 permis, 24 593 m²) montre un churn commercial.",
+     "interet_buddimm": "Conseil/veille : la conversion bureaux→entrepôt (logistique urbaine) et entrepôt→bureaux (tertiairisation) sont deux tendances lourdes. Buddimm peut conseiller les collectivités sur l'anticipation de ces mutations (PLU, foncier) et accompagner les foncières sur la reprogrammation d'actifs obsolètes.",
+     "fiabilite": "établi",
+     "limites": "Surface_m2 = surface créée (pas surface totale du bâtiment) ; quelques gros permis peuvent biaiser (ex: 1 permis habitation→hôtel 6 990 m²).",
+     "a_creuser": "Croiser avec localisation (communes) pour identifier les pôles de logistique urbaine et de tertiairisation d'entrepôts."
+    },
+    "sortie": {
+     "ok": "note 2 enregistrée"
+    }
+   }
+  ]
+ }
+]

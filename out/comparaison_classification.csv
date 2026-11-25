@@ -1,0 +1,26 @@
+﻿siren;denomination;modele_ref;famille_ref;confiance_ref;modele_test;famille_test;confiance_test;accord;secondes
+391929502;FINANCIERE DU DOME;nvidia/nemotron-3-ultra-550b-a55b;fonciere_investisseur;moyenne;nvidia/nemotron-3.5-lightning-30b-a3b;non_determine;faible;0;14.1
+423736222;EARL MAISON GAILLARD;nvidia/nemotron-3-ultra-550b-a55b;entreprise_autre;haute;nvidia/nemotron-3.5-lightning-30b-a3b;entreprise_autre;haute;1;8.3
+921158564;LE CLOS DES ALLUETS;nvidia/nemotron-3-ultra-550b-a55b;promoteur;moyenne;nvidia/nemotron-3.5-lightning-30b-a3b;promoteur;moyenne;1;14.1
+795237551;NOGUEIRA EEC;nvidia/nemotron-3-ultra-550b-a55b;fonciere_investisseur;moyenne;nvidia/nemotron-3.5-lightning-30b-a3b;fonciere_investisseur;moyenne;1;17.0
+402987622;SNL-PROLOGUES;nvidia/nemotron-3-ultra-550b-a55b;fonciere_investisseur;moyenne;nvidia/nemotron-3.5-lightning-30b-a3b;fonciere_investisseur;moyenne;1;18.5
+827857954;EARL FERME DE L'HIRONDELLE;nvidia/nemotron-3-ultra-550b-a55b;entreprise_autre;haute;nvidia/nemotron-3.5-lightning-30b-a3b;entreprise_autre;faible;1;7.1
+709804850;AGENCE CHARLES KATZ;nvidia/nemotron-3-ultra-550b-a55b;entreprise_autre;moyenne;nvidia/nemotron-3.5-lightning-30b-a3b;non_determine;faible;0;10.5
+852998426;BLABLA WOOD;nvidia/nemotron-3-ultra-550b-a55b;entreprise_autre;moyenne;nvidia/nemotron-3.5-lightning-30b-a3b;promoteur;faible;0;10.2
+448238105;MBC HOLDING;nvidia/nemotron-3-ultra-550b-a55b;promoteur;moyenne;nvidia/nemotron-3.5-lightning-30b-a3b;fonciere_investisseur;moyenne;0;17.4
+808776355;GRAND PARIS HABITAT;nvidia/nemotron-3-ultra-550b-a55b;promoteur;moyenne;nvidia/nemotron-3.5-lightning-30b-a3b;promoteur;moyenne;1;12.7
+851005900;ADL ARCHITECTE;nvidia/nemotron-3-ultra-550b-a55b;entreprise_autre;moyenne;nvidia/nemotron-3.5-lightning-30b-a3b;non_determine;faible;0;10.1
+505240127;GROUPEMENT FORESTIER DU NOUVEAU BUISSON BREANT;nvidia/nemotron-3-ultra-550b-a55b;entreprise_autre;moyenne;nvidia/nemotron-3.5-lightning-30b-a3b;non_determine;faible;0;9.2
+531912285;LE HARAS DU PIN CREUX;nvidia/nemotron-3-ultra-550b-a55b;fonciere_investisseur;moyenne;nvidia/nemotron-3.5-lightning-30b-a3b;fonciere_investisseur;moyenne;1;8.9
+508616604;PROPRABAIL;nvidia/nemotron-3-ultra-550b-a55b;fonciere_investisseur;moyenne;nvidia/nemotron-3.5-lightning-30b-a3b;fonciere_investisseur;moyenne;1;10.4
+813202173;IGT HABITAT;nvidia/nemotron-3-ultra-550b-a55b;fonciere_investisseur;moyenne;nvidia/nemotron-3.5-lightning-30b-a3b;promoteur;moyenne;0;16.8
+326399649;SOISYDIS;nvidia/nemotron-3-ultra-550b-a55b;non_determine;faible;nvidia/nemotron-3.5-lightning-30b-a3b;entreprise_autre;faible;0;9.9
+834194078;STERENN INVEST;nvidia/nemotron-3-ultra-550b-a55b;non_determine;faible;nvidia/nemotron-3.5-lightning-30b-a3b;fonciere_investisseur;moyenne;0;7.0
+498821289;SFC;nvidia/nemotron-3-ultra-550b-a55b;fonciere_investisseur;moyenne;nvidia/nemotron-3.5-lightning-30b-a3b;entreprise_autre;faible;0;10.1
+429420755;HABITAT ET COMMERCE;nvidia/nemotron-3-ultra-550b-a55b;promoteur;moyenne;nvidia/nemotron-3.5-lightning-30b-a3b;promoteur;moyenne;1;8.2
+654800689;CIMENTS CALCIA;nvidia/nemotron-3-ultra-550b-a55b;entreprise_autre;haute;nvidia/nemotron-3.5-lightning-30b-a3b;entreprise_autre;faible;1;11.6
+878796051;LE CLOS DE BREVAL;nvidia/nemotron-3-ultra-550b-a55b;promoteur;moyenne;nvidia/nemotron-3.5-lightning-30b-a3b;promoteur;moyenne;1;8.1
+325356079;LES NOUVEAUX CONSTRUCTEUR INVESTISSEMENT;nvidia/nemotron-3-ultra-550b-a55b;promoteur;moyenne;nvidia/nemotron-3.5-lightning-30b-a3b;promoteur;moyenne;1;8.8
+389320615;REY INVEST;nvidia/nemotron-3-ultra-550b-a55b;fonciere_investisseur;faible;nvidia/nemotron-3.5-lightning-30b-a3b;non_determine;faible;0;12.1
+339436347;IMMOBILIER ET INFORMATIQUE;nvidia/nemotron-3-ultra-550b-a55b;entreprise_autre;faible;nvidia/nemotron-3.5-lightning-30b-a3b;entreprise_autre;faible;1;4.5
+433811155;FINANCIERE AXEL INVESTISSEMENT;nvidia/nemotron-3-ultra-550b-a55b;fonciere_investisseur;moyenne;nvidia/nemotron-3.5-lightning-30b-a3b;fonciere_investisseur;moyenne;1;9.4

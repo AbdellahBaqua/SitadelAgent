@@ -1,0 +1,111 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "398754911"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "398754911"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "398754911"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "398754911"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "SEDABA",
+     "nb_permis_PC": 2,
+     "annees_depot": [
+      "2014",
+      "2016"
+     ],
+     "nb_communes": 2,
+     "logements_crees_total": 5,
+     "surface_locaux_non_residentiels_creee_m2": 0,
+     "nb_permis_collectif": 1,
+     "nb_permis_individuel": 1,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 0
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "398754911",
+      "nom": "SEDABA",
+      "nature_juridique": "5710",
+      "naf_actuel": "01.21Z",
+      "etat": "A",
+      "date_creation": "1994-10-27",
+      "categorie": null,
+      "effectif": "01",
+      "nb_etablissements": 2,
+      "nb_etablissements_ouverts": 1,
+      "siege_actuel": {
+       "siret": "39875491100020",
+       "naf": "01.21Z",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "39875491100020",
+       "naf_dans_permis": "01.21Z",
+       "nb_permis": 2,
+       "annees_depot": [
+        "2014",
+        "2016"
+       ],
+       "etat_actuel": "ouvert",
+       "date_creation": "1997-01-01",
+       "date_fermeture": null
+      }
+     ],
+     "alertes": [],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/398754911"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "01.21Z",
+      "libelle": "Culture de la vigne"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5710",
+     "libelle": "SAS, société par actions simplifiée"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"entreprise_autre\",\"confiance\":\"faible\",\"indices\":[\"fiche_entreprise : entreprise SEDABA, SAS (cj 5710), NAF actuel 01.21Z (Culture de la vigne), active, effectif 01\",\"libelle_naf : 01.21Z = Culture de la vigne\",\"libelle_cj : 5710 = SAS, société par actions simplifiée\",\"permis_du_demandeur : 2 permis déposés en 2014 et 2016, 5 logements créés au total, 0 logements locatifs sociaux déclarés, 1 permis collectif et 1 individuel\"],\"limites\":\"L'activité principale de l'entreprise est agricole (viticulture), pas immobilière. Les permis montrent une construction de logements mais sans indication de vocation sociale, de promotion immobilière ou d'investissement locatif. La nature exacte de l'opération (logements liés à l'exploitation agricole, résidence principale, location?) n'est pas connue. Aucune preuve ne permet de rattacher cette structure à une famille spécialisée (bailleur social, promoteur, foncière, association ESS, exploitant santé/social, collectivité, copropriété).\"}"
+   }
+  ]
+ }
+]

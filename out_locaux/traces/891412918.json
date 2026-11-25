@@ -1,0 +1,115 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "891412918"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "891412918"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "891412918"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "891412918"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "SAS TRIOLET",
+     "nb_permis_PC": 1,
+     "annees_depot": [
+      "2025"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 0,
+     "surface_locaux_non_residentiels_creee_m2": 11,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 1
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "891412918",
+      "nom": "SAS TRIOLET",
+      "nature_juridique": "5710",
+      "naf_actuel": "41.10A",
+      "etat": "A",
+      "date_creation": "2020-11-19",
+      "categorie": "ETI",
+      "effectif": "NN",
+      "nb_etablissements": 1,
+      "nb_etablissements_ouverts": 1,
+      "siege_actuel": {
+       "siret": "89141291800015",
+       "naf": "41.10A",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "89141291800015",
+       "naf_dans_permis": "66.30Z",
+       "nb_permis": 1,
+       "annees_depot": [
+        "2025"
+       ],
+       "etat_actuel": "ouvert",
+       "date_creation": "2020-11-19",
+       "date_fermeture": null
+      }
+     ],
+     "alertes": [
+      "NAF du permis ['66.30Z'] différent du NAF actuel de l'entreprise 41.10A"
+     ],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/891412918"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "41.10A",
+      "libelle": "Promotion immobilière de logements"
+     },
+     {
+      "code": "66.30Z",
+      "libelle": "Gestion de fonds"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5710",
+     "libelle": "SAS, société par actions simplifiée"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"promoteur\",\"confiance\":\"haute\",\"indices\":[\"fiche_entreprise : NAF actuel de l'entreprise = 41.10A (Promotion immobilière de logements)\",\"libelle_naf : 41.10A correspond à « Promotion immobilière de logements »\",\"libelle_cj : 5710 = SAS, société par actions simplifiée (forme juridique courante pour les promoteurs)\",\"permis_du_demandeur : 1 permis en 2025, 0 logement créé, 11 m² de surface non résidentielle créée (projet possiblement tertiaire ou mixte, mais cœur d'activité promotion logement)\"],\"limites\":\"Le permis déposé ne porte pas sur de la création de logements (0 logement, 11 m² non résidentiel), ce qui pourrait suggérer une opération tertiaire ou un petit programme mixte. Toutefois, le NAF actuel de l'entreprise (niveau entreprise, pas établissement) est sans ambiguïté « Promotion immobilière de logements ». Le NAF du permis (66.30Z = Gestion de fonds) est historique et différent, mais l'établissement est encore ouvert ; il peut s'agir d'une ancienne activité ou d'une erreur de codage au dépôt.\"}"
+   }
+  ]
+ }
+]

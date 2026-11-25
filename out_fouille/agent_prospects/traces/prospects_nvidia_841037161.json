@@ -1,0 +1,64 @@
+[
+ {
+  "etape": "pre",
+  "texte": "résultats calculés par le code avant le modèle",
+  "entree": {
+   "siren": "841037161",
+   "denomination": "LA MAISON DES PLUS PETITS",
+   "famille_classification": "association_ess",
+   "raisons_du_score": "famille cible (association_ess) +3 ; projet médico-social (équipement de santé) +3 ; dépôt assez récent (2023) +1 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1",
+   "taille_calculee": "petite",
+   "taille_calcul": "salariés ≥ 6, établissements ouverts 3, établissements FINESS 1",
+   "permis_du_prospect": [
+    {
+     "num_dau": "07816823E0002",
+     "fichier": "locaux",
+     "annee_depot": "2023",
+     "commune": "COIGNIERES",
+     "etat": "autorisé",
+     "type_projet": "équipement de santé",
+     "logements_crees": null,
+     "surface_locaux_creee_m2": 28
+    }
+   ],
+   "fiche_entreprise": {
+    "nom": "LA MAISON DES PLUS PETITS",
+    "nature_juridique": "9220",
+    "naf_actuel": "88.91A",
+    "etat": "A",
+    "date_creation": "2017-10-11",
+    "categorie": "PME",
+    "effectif": "03",
+    "nb_etablissements": 3,
+    "nb_etablissements_ouverts": 3,
+    "libelle_naf_actuel": "Accueil de jeunes enfants",
+    "libelle_nature_juridique": "Association déclarée",
+    "aide": "etat A = active, C ou F = cessée. effectif = tranche Insee de salariés (ex. 21 = 50 à 99, 41 = 500 à 999, 51 = 2 000 à 4 999). Dirigeants et finances volontairement exclus.",
+    "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/841037161"
+   },
+   "finess_du_prospect": {
+    "nb_etablissements_finess_france": 1,
+    "nb_etablissements_finess_yvelines": 0,
+    "nb_departements": 1,
+    "par_type": {
+     "Etablissements et services multi-clientèles": 1
+    },
+    "exemples_yvelines": [],
+    "source": "https://www.data.gouv.fr/datasets/53699569a3a729239d2046eb",
+    "aide": "Établissements dont le SIRET commence par ce SIREN. 0 ne prouve pas l'absence d'activité médico-sociale (SIRET non renseigné dans FINESS, autre entité juridique du même groupe)."
+   },
+   "origine": "demandeur de permis",
+   "consigne": "Ces résultats viennent des outils permis_du_prospect, fiche_entreprise et finess_du_prospect : cite-les. Conclus avec conclure_prospect."
+  }
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure_prospect",
+    "args": "{\"verdict\":\"prospect\",\"adequation\":\"moyenne\",\"type_structure\":\"Association déclarée (ESS) gérant des structures d'accueil de jeunes enfants (crèches)\",\"besoin_immobilier\":\"Permis 2023 pour un équipement de santé de 28 m² à Coignières (autorisé), suggérant un petit projet d'extension ou de création de crèche.\",\"indices\":[\"fiche_entreprise : nature juridique 9220 (Association déclarée), etat A (active), NAF 88.91A (Accueil de jeunes enfants), effectif 03 (3-5 salariés), 3 établissements ouverts\",\"permis_du_prospect : permis 07816823E0002 déposé en 2023 à Coignières, type projet « équipement de santé », surface 28 m², état autorisé\",\"finess_du_prospect : 1 établissement FINESS en France (type « Etablissements et services multi-clientèles »), 0 en Yvelines\",\"taille_calculee : petite (selon code)\",\"famille_classification : association_ess (cible prioritaire Buddimm)\"],\"limites\":\"Structure petite (effectif 3-5, 3 établissements), projet immobilier unique et de faible surface (28 m²) ; FINESS ne montre pas d'établissement en Yvelines (le permis y est pourtant situé).\"}"
+   }
+  ]
+ }
+]

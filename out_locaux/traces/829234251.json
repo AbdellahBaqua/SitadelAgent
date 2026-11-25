@@ -1,0 +1,119 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "829234251"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "829234251"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "829234251"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "829234251"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "LES COLORIES",
+     "nb_permis_PC": 7,
+     "annees_depot": [
+      "2018",
+      "2021",
+      "2022"
+     ],
+     "nb_communes": 5,
+     "logements_crees_total": 0,
+     "surface_locaux_non_residentiels_creee_m2": 149,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 3
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "829234251",
+      "nom": "LES COLORIES",
+      "nature_juridique": "5710",
+      "naf_actuel": "88.91A",
+      "etat": "A",
+      "date_creation": "2017-04-25",
+      "categorie": "PME",
+      "effectif": "22",
+      "nb_etablissements": 34,
+      "nb_etablissements_ouverts": 33,
+      "siege_actuel": {
+       "siret": "82923425100017",
+       "naf": "70.10Z",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "82923425100017",
+       "naf_dans_permis": "70.10Z",
+       "nb_permis": 7,
+       "annees_depot": [
+        "2018",
+        "2021",
+        "2022"
+       ],
+       "etat_actuel": "ouvert",
+       "date_creation": "2017-04-25",
+       "date_fermeture": null
+      }
+     ],
+     "alertes": [
+      "NAF du permis ['70.10Z'] différent du NAF actuel de l'entreprise 88.91A"
+     ],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/829234251"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "70.10Z",
+      "libelle": "Activités des sièges sociaux"
+     },
+     {
+      "code": "88.91A",
+      "libelle": "Accueil de jeunes enfants"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5710",
+     "libelle": "SAS, société par actions simplifiée"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"exploitant_sante_social\",\"confiance\":\"haute\",\"indices\":[\"fiche_entreprise : NAF actuel de l'entreprise 88.91A (Accueil de jeunes enfants), forme juridique SAS (5710), 33 établissements ouverts sur 34, effectif 22 salariés.\",\"libelle_naf : 88.91A = « Accueil de jeunes enfants » (petite enfance), activité médico-sociale / sociale relevant de la petite enfance.\",\"permis_du_demandeur : 7 permis de construire (2018, 2021, 2022) sur 5 communes, 149 m² de surface non-résidentielle créée, 0 logement créé, 0 logement social déclaré – cohérent avec des équipements d'accueil de jeunes enfants.\",\"libelle_cj : 5710 = SAS, société par actions simplifiée, structure privée (non association).\"],\"limites\":\"Les permis ne détaillent pas la nature exacte des locaux non-résidentiels (crèches, micro-crèches, bureaux d'exploitation), mais la convergence entre l'activité actuelle (88.91A), la forme juridique privée (SAS) et les surfaces créées sans logement oriente fortement vers un exploitant privé de structures petite enfance.\"}"
+   }
+  ]
+ }
+]

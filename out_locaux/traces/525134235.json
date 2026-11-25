@@ -1,0 +1,116 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "525134235"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "525134235"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "525134235"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "525134235"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "ATELIER FAIDHERBE",
+     "nb_permis_PC": 1,
+     "annees_depot": [
+      "2022"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 0,
+     "surface_locaux_non_residentiels_creee_m2": 420,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 0
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "525134235",
+      "nom": "ATELIER FAIDHERBE (ATELIERS ALLURE CHROME & FAIDHERBE)",
+      "nature_juridique": "5710",
+      "naf_actuel": "45.20A",
+      "etat": "A",
+      "date_creation": "2010-09-24",
+      "categorie": "PME",
+      "effectif": "01",
+      "nb_etablissements": 2,
+      "nb_etablissements_ouverts": 1,
+      "siege_actuel": {
+       "siret": "52513423500023",
+       "naf": "45.20A",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "52513423500015",
+       "naf_dans_permis": "70.10Z",
+       "nb_permis": 1,
+       "annees_depot": [
+        "2022"
+       ],
+       "etat_actuel": "fermé",
+       "date_creation": "2010-09-24",
+       "date_fermeture": "2021-04-01"
+      }
+     ],
+     "alertes": [
+      "SIRET 52513423500015 (permis 2022) fermé le 2021-04-01 : le NAF 70.10Z du permis vient d'un établissement fermé",
+      "NAF du permis ['70.10Z'] différent du NAF actuel de l'entreprise 45.20A"
+     ],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/525134235"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "45.20A",
+      "libelle": "Entretien et réparation de véhicules automobiles légers"
+     },
+     {
+      "code": "70.10Z",
+      "libelle": "Activités des sièges sociaux"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5710",
+     "libelle": "SAS, société par actions simplifiée"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"entreprise_autre\",\"confiance\":\"moyenne\",\"indices\":[\"fiche_entreprise : nature_juridique 5710 = SAS (société commerciale classique)\",\"fiche_entreprise : naf_actuel 45.20A = Entretien et réparation de véhicules automobiles légers (activité artisanale/commerciale, sans lien avec l'immobilier)\",\"permis_du_demandeur : 1 permis en 2022, 0 logement créé, 420 m² de surface non résidentielle créée (probablement pour ses propres locaux atelier/garage)\",\"permis_du_demandeur : aucun logement locatif social déclaré, pas de résidence collective/individuelle\",\"fiche_entreprise + alertes : l'établissement ayant déposé le permis (SIRET 52513423500015, NAF 70.10Z = activités des sièges sociaux) est fermé depuis avril 2021 ; le NAF du permis est donc un indice historique obsolète\",\"dénomination : « ATELIER FAIDHERBE » cohérent avec une activité de réparation automobile (atelier)\"],\"limites\":\"Le permis a été déposé sous un établissement (siège social, NAF 70.10Z) aujourd'hui fermé, ce qui laisse une incertitude résiduelle sur la structure exacte qui a porté l'opération (holding ?). Toutefois, l'activité actuelle et durable de l'entreprise est la réparation automobile, sans aucun marqueur de bailleur social, promoteur, foncière, association ESS, exploitant santé/social, collectivité ou copropriété.\"}"
+   }
+  ]
+ }
+]

@@ -1,0 +1,206 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "422916981"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "422916981"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "422916981"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "422916981"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "SCI BRIAND LES MUREAUX",
+     "nb_permis_PC": 1,
+     "annees_depot": [
+      "2022"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 0,
+     "surface_locaux_non_residentiels_creee_m2": 530,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 1
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "erreur": "introuvable"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": []
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "",
+     "libelle": null,
+     "note": "code inconnu"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"non_determine\",\"confiance\":\"faible\",\"indices\":[\"denomination : SCI BRIAND LES MUREAUX – forme juridique SCI (société civile immobilière), souvent utilisée pour la détention/location de patrimoine (foncière) ou comme véhicule de promotion (construction-vente).\",\"permis_du_demandeur : 1 permis en 2022, 530 m² de surface non résidentielle créée, 0 logement, 0 logement social. Projet non résidentiel unique.\",\"fiche_entreprise : introuvable (erreur « introuvable ») – impossible de connaître l'activité actuelle, la forme juridique exacte, la taille ou l'état des établissements.\",\"libelle_naf : aucun code NAF disponible.\",\"libelle_cj : code catégorie juridique inconnu.\"],\"limites\":\"Fiche entreprise introuvable, pas de code NAF ni CJ, un seul permis non résidentiel ne permet pas de distinguer un promoteur (construction pour vente) d'une foncière/investisseur (construction pour location). La dénomination « SCI » est un indice faible sans confirmation de l'activité réelle.\"}"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "conclure",
+    "sortie": {
+     "erreur": "Refusé : appelle d'abord fiche_entreprise, puis conclus."
+    }
+   }
+  ]
+ },
+ {
+  "etape": 1,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "fiche_entreprise",
+    "args": "{\"siren\":\"422916981\"}"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "erreur": "introuvable"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 2,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"non_determine\",\"confiance\":\"faible\",\"indices\":[\"denomination : SCI BRIAND LES MUREAUX – forme juridique SCI (société civile immobilière), souvent utilisée pour la détention/location de patrimoine (foncière) ou comme véhicule de promotion (construction-vente).\",\"permis_du_demandeur : 1 permis en 2022, 530 m² de surface non résidentielle créée, 0 logement, 0 logement social. Projet non résidentiel unique.\",\"fiche_entreprise : introuvable (erreur « introuvable ») – impossible de connaître l'activité actuelle, la forme juridique exacte, la taille ou l'état des établissements.\",\"libelle_naf : aucun code NAF disponible.\",\"libelle_cj : code catégorie juridique inconnu.\"],\"limites\":\"Fiche entreprise introuvable, pas de code NAF ni CJ, un seul permis non résidentiel ne permet pas de distinguer un promoteur (construction pour vente) d'une foncière/investisseur (construction pour location). La dénomination « SCI » est un indice faible sans confirmation de l'activité réelle.\"}"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "conclure",
+    "sortie": {
+     "erreur": "Refusé : appelle d'abord fiche_entreprise, puis conclus."
+    }
+   }
+  ]
+ },
+ {
+  "etape": 3,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "fiche_entreprise",
+    "args": "{\"siren\":\"422916981\"}"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "erreur": "introuvable"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 4,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "fiche_entreprise",
+    "args": "{\"siren\":\"422916981\"}"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "erreur": "introuvable"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 5,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "fiche_entreprise",
+    "args": "{\"siren\":\"422916981\"}"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "erreur": "introuvable"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 6,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "fiche_entreprise",
+    "args": "{\"siren\":\"422916981\"}"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "erreur": "introuvable"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 7,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "fiche_entreprise",
+    "args": "{\"siren\":\"422916981\"}"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "erreur": "introuvable"
+    }
+   }
+  ]
+ }
+]

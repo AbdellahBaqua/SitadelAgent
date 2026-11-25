@@ -1,0 +1,118 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "751508292"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "751508292"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "751508292"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "751508292"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "AXIOM DEVELOPPEMENT",
+     "nb_permis_PC": 2,
+     "annees_depot": [
+      "2017",
+      "2021"
+     ],
+     "nb_communes": 2,
+     "logements_crees_total": 0,
+     "surface_locaux_non_residentiels_creee_m2": 891,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 0
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "751508292",
+      "nom": "AXIOM DEVELOPPEMENT",
+      "nature_juridique": "5499",
+      "naf_actuel": "41.10A",
+      "etat": "A",
+      "date_creation": "2012-03-30",
+      "categorie": "PME",
+      "effectif": "02",
+      "nb_etablissements": 4,
+      "nb_etablissements_ouverts": 1,
+      "siege_actuel": {
+       "siret": "75150829200040",
+       "naf": "41.10A",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "75150829200024",
+       "naf_dans_permis": "68.31Z",
+       "nb_permis": 2,
+       "annees_depot": [
+        "2017",
+        "2021"
+       ],
+       "etat_actuel": "fermé",
+       "date_creation": "2014-11-01",
+       "date_fermeture": "2021-04-01"
+      }
+     ],
+     "alertes": [
+      "SIRET 75150829200024 (permis 2017,2021) fermé le 2021-04-01 : le NAF 68.31Z du permis vient d'un établissement fermé",
+      "NAF du permis ['68.31Z'] différent du NAF actuel de l'entreprise 41.10A"
+     ],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/751508292"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "41.10A",
+      "libelle": "Promotion immobilière de logements"
+     },
+     {
+      "code": "68.31Z",
+      "libelle": "Agences immobilières"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5499",
+     "libelle": "Société à responsabilité limitée (sans autre indication)"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"promoteur\",\"confiance\":\"haute\",\"indices\":[\"fiche_entreprise : naf_actuel = 41.10A (Promotion immobilière de logements)\",\"libelle_naf : 41.10A = Promotion immobilière de logements\",\"dénomination : AXIOM DEVELOPPEMENT (terme « développement » cohérent avec promotion)\",\"fiche_entreprise : nature_juridique 5499 (SARL), forme classique pour un promoteur\",\"permis_du_demandeur : 2 permis déposés (2017, 2021) pour 891 m² de locaux non résidentiels, activité de construction pour vente/location\"],\"limites\":\"Les permis déclarent 0 logement créé et 891 m² de non-résidentiel ; cela peut correspondre à de la promotion de bureaux/commerces ou à des programmes mixtes où la part logement n'est pas encore renseignée. L'établissement qui a déposé les permis est fermé depuis 2021, mais l'entreprise est active (siège ouvert) avec le même NAF promoteur.\"}"
+   }
+  ]
+ }
+]

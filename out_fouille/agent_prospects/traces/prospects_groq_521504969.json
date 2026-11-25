@@ -1,0 +1,71 @@
+[
+ {
+  "etape": "pre",
+  "texte": "résultats calculés par le code avant le modèle",
+  "entree": {
+   "siren": "521504969",
+   "denomination": "FONDATION DIACONESSES DE REUILLY",
+   "famille_classification": "association_ess",
+   "raisons_du_score": "famille cible (association_ess) +3 ; projet médico-social (équipement de santé) +3 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1 ; projet de taille significative (≥ 20 logements ou ≥ 1 000 m²) +1",
+   "taille_calculee": "très grande",
+   "taille_calcul": "salariés ≥ 2000, établissements ouverts 63, établissements FINESS 53",
+   "permis_du_prospect": [
+    {
+     "num_dau": "07864619V0019",
+     "fichier": "locaux",
+     "annee_depot": "2019",
+     "commune": "VERSAILLES",
+     "etat": "autorisé",
+     "type_projet": "équipement de santé",
+     "logements_crees": null,
+     "surface_locaux_creee_m2": 2594
+    }
+   ],
+   "fiche_entreprise": {
+    "nom": "FONDATION DIACONESSES DE REUILLY",
+    "nature_juridique": "9300",
+    "naf_actuel": "88.99B",
+    "etat": "A",
+    "date_creation": "2009-11-24",
+    "categorie": "ETI",
+    "effectif": "51",
+    "nb_etablissements": 76,
+    "nb_etablissements_ouverts": 63,
+    "libelle_naf_actuel": "Action sociale sans hébergement n.c.a.",
+    "libelle_nature_juridique": "Fondation",
+    "aide": "etat A = active, C ou F = cessée. effectif = tranche Insee de salariés (ex. 21 = 50 à 99, 41 = 500 à 999, 51 = 2 000 à 4 999). Dirigeants et finances volontairement exclus.",
+    "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/521504969"
+   },
+   "finess_du_prospect": {
+    "nb_etablissements_finess_france": 53,
+    "nb_etablissements_finess_yvelines": 0,
+    "nb_departements": 14,
+    "par_type": {
+     "Etablissements d'Hébergement pour Personnes Âgées": 14,
+     "Etablissements pour Adultes et Familles en Difficulté": 11,
+     "Etablissements de l'Aide Sociale à l'Enfance": 6,
+     "Autres Etablissements médico-sociaux": 5,
+     "Logements en Structure Collective": 3,
+     "Etablissements et services multi-clientèles": 3,
+     "Etablissements de santé privé autorisés en SSR": 3,
+     "Services de Maintien à Domicile pour Handicapés": 2
+    },
+    "exemples_yvelines": [],
+    "source": "https://www.data.gouv.fr/datasets/53699569a3a729239d2046eb",
+    "aide": "Établissements dont le SIRET commence par ce SIREN. 0 ne prouve pas l'absence d'activité médico-sociale (SIRET non renseigné dans FINESS, autre entité juridique du même groupe)."
+   },
+   "origine": "demandeur de permis",
+   "consigne": "Ces résultats viennent des outils permis_du_prospect, fiche_entreprise et finess_du_prospect : cite-les. Conclus avec conclure_prospect."
+  }
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure_prospect",
+    "args": "{\"adequation\":\"moyenne\",\"besoin_immobilier\":\"Projet d'équipement de santé de 2594 m² autorisé en 2019 à Versailles (Yvelines), non encore réalisé, indiquant un besoin immobilier potentiel.\",\"indices\":[\"permis_du_prospect: autorisation 2019, type projet équipement de santé, surface 2594 m², commune Versailles, état autorisé.\",\"fiche_entreprise: nature juridique Fondation, activité 88.99B (action sociale sans hébergement), état actif, taille très grande (effectif code 51 = 2000‑4999 salariés, 63 établissements ouverts).\",\"finess_du_prospect: 53 établissements FINESS en France, dont 14 EHPAD, 11 établissements pour adultes en difficulté, 6 ASE, etc., montrant activité médico‑sociale importante.\"],\"limites\":\"Pas d'information sur le démarrage du projet autorisé ; on ne sait pas si le permis a été mis en œuvre ou s'il reste à réaliser.\",\"type_structure\":\"Fondation de l'ESS gérant de nombreux établissements médico‑sociaux.\",\"verdict\":\"prospect\"}"
+   }
+  ]
+ }
+]

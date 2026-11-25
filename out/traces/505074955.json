@@ -1,0 +1,116 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "505074955"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "505074955"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "505074955"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "505074955"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "ENZO ET COMPAGNIE",
+     "nb_permis_PC": 1,
+     "annees_depot": [
+      "2015"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 1,
+     "surface_locaux_non_residentiels_creee_m2": 0,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 1,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 0
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "505074955",
+      "nom": "ENZO ET COMPAGNIE",
+      "nature_juridique": "5710",
+      "naf_actuel": "41.20B",
+      "etat": "C",
+      "date_creation": "2008-05-27",
+      "categorie": null,
+      "effectif": "NN",
+      "nb_etablissements": 2,
+      "nb_etablissements_ouverts": 0,
+      "siege_actuel": {
+       "siret": "50507495500020",
+       "naf": "41.20B",
+       "etat": "F"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "50507495500012",
+       "naf_dans_permis": "74.90A",
+       "nb_permis": 1,
+       "annees_depot": [
+        "2015"
+       ],
+       "etat_actuel": "fermé",
+       "date_creation": "2008-05-27",
+       "date_fermeture": "2020-11-04"
+      }
+     ],
+     "alertes": [
+      "SIRET 50507495500012 (permis 2015) fermé le 2020-11-04 : le NAF 74.90A du permis vient d'un établissement fermé",
+      "NAF du permis ['74.90A'] différent du NAF actuel de l'entreprise 41.20B"
+     ],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/505074955"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "41.20B",
+      "libelle": "Construction d'autres bâtiments"
+     },
+     {
+      "code": "74.90A",
+      "libelle": "Activité des économistes de la construction"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5499",
+     "libelle": "Société à responsabilité limitée (sans autre indication)"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"entreprise_autre\",\"confiance\":\"faible\",\"indices\":[\"fiche_entreprise : nature_juridique 5710 (SARL), naf_actuel 41.20B « Construction d'autres bâtiments », entreprise fermée (état C), aucun établissement ouvert\",\"permis_du_demandeur : 1 permis de construire déposé en 2015, maison individuelle (1 logement), aucun logement social déclaré\",\"libelle_naf : 41.20B = « Construction d'autres bâtiments » (activité actuelle de l'entreprise)\",\"libelle_cj : 5499 = « Société à responsabilité limitée (sans autre indication) »\"],\"limites\":\"Entreprise fermée depuis 2020, un seul permis ancien (2015) porté par un établissement lui-même fermé (NAF 74.90A « économistes de la construction » à l'époque). Aucune preuve d'activité de promotion immobilière (vente en VEFA, programmes collectifs) ni de détention de patrimoine locatif. La classification « entreprise_autre » repose sur l'activité de construction (NAF 41.20B) mais ne permet pas d'exclure une activité de promoteur occasionnel.\"}"
+   }
+  ]
+ }
+]

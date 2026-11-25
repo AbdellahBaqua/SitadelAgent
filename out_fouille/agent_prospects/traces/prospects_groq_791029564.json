@@ -1,0 +1,62 @@
+[
+ {
+  "etape": "pre",
+  "texte": "résultats calculés par le code avant le modèle",
+  "entree": {
+   "siren": "791029564",
+   "denomination": "ASSOCIATION IMMOBILIERE SCOLAIRE DIOCESAINE DE LOUVRES",
+   "famille_classification": "association_ess",
+   "raisons_du_score": "famille cible (association_ess) +3 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1",
+   "taille_calculee": "inconnue",
+   "taille_calcul": "salariés ≥ ?, établissements ouverts 1, établissements FINESS 0",
+   "permis_du_prospect": [
+    {
+     "num_dau": "07855117Z0022",
+     "fichier": "locaux",
+     "annee_depot": "2017",
+     "commune": "SAINT-GERMAIN-EN-LAYE",
+     "etat": "commencé",
+     "type_projet": "",
+     "logements_crees": null,
+     "surface_locaux_creee_m2": 296
+    }
+   ],
+   "fiche_entreprise": {
+    "nom": "ASSOCIATION IMMOBILIERE SCOLAIRE DIOCESAINE DE LOUVRES (AISDL)",
+    "nature_juridique": "9220",
+    "naf_actuel": "94.99Z",
+    "etat": "A",
+    "date_creation": "2013-01-28",
+    "categorie": "PME",
+    "effectif": "NN",
+    "nb_etablissements": 2,
+    "nb_etablissements_ouverts": 1,
+    "libelle_naf_actuel": "Autres organisations fonctionnant par adhésion volontaire",
+    "libelle_nature_juridique": "Association déclarée",
+    "aide": "etat A = active, C ou F = cessée. effectif = tranche Insee de salariés (ex. 21 = 50 à 99, 41 = 500 à 999, 51 = 2 000 à 4 999). Dirigeants et finances volontairement exclus.",
+    "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/791029564"
+   },
+   "finess_du_prospect": {
+    "nb_etablissements_finess_france": 0,
+    "nb_etablissements_finess_yvelines": 0,
+    "nb_departements": 0,
+    "par_type": {},
+    "exemples_yvelines": [],
+    "source": "https://www.data.gouv.fr/datasets/53699569a3a729239d2046eb",
+    "aide": "Établissements dont le SIRET commence par ce SIREN. 0 ne prouve pas l'absence d'activité médico-sociale (SIRET non renseigné dans FINESS, autre entité juridique du même groupe)."
+   },
+   "origine": "demandeur de permis",
+   "consigne": "Ces résultats viennent des outils permis_du_prospect, fiche_entreprise et finess_du_prospect : cite-les. Conclus avec conclure_prospect."
+  }
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure_prospect",
+    "args": "{\"adequation\":\"faible\",\"besoin_immobilier\":\"Projet de construction/aménagement de locaux de 296 m² à Saint‑Germain‑en‑Laye (déposé 2017, état « commencé »).\",\"indices\":[\"permis_du_prospect: projet de locaux de 296 m², état commencé, 2017, Saint‑Germain‑en‑Laye\",\"fiche_entreprise: association déclarée (nature juridique 9220), NAF 94.99Z – Autres organisations fonctionnant par adhésion volontaire, active (état A)\",\"finess_du_prospect: aucun établissement FINESS répertorié (0), ce qui ne prouve pas d’activité médico‑sociale\"],\"limites\":\"L’activité porte sur l’immobilier scolaire (association diocésaine), relevant du secteur de l’enseignement, exclu du ciblage de Buddimm. Absence de lien direct avec le social, le médico‑social ou l’ESS au sens recherché.\",\"type_structure\":\"Association déclarée d’action immobilière scolaire (diocésaine)\",\"verdict\":\"faux_positif\"}"
+   }
+  ]
+ }
+]

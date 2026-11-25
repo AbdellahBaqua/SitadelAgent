@@ -1,0 +1,109 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "914611835"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "914611835"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "914611835"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "914611835"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "A&B SOLUTIONS",
+     "nb_permis_PC": 1,
+     "annees_depot": [
+      "2024"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 2,
+     "surface_locaux_non_residentiels_creee_m2": 0,
+     "nb_permis_collectif": 1,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 0
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "914611835",
+      "nom": "A&B SOLUTIONS",
+      "nature_juridique": "5710",
+      "naf_actuel": "70.22Z",
+      "etat": "A",
+      "date_creation": "2022-06-09",
+      "categorie": "PME",
+      "effectif": "NN",
+      "nb_etablissements": 1,
+      "nb_etablissements_ouverts": 1,
+      "siege_actuel": {
+       "siret": "91461183500010",
+       "naf": "70.22Z",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "91461183500010",
+       "naf_dans_permis": "70.22Z",
+       "nb_permis": 1,
+       "annees_depot": [
+        "2024"
+       ],
+       "etat_actuel": "ouvert",
+       "date_creation": "2022-06-09",
+       "date_fermeture": null
+      }
+     ],
+     "alertes": [],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/914611835"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "70.22Z",
+      "libelle": "Conseil pour les affaires et autres conseils de gestion"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5710",
+     "libelle": "SAS, société par actions simplifiée"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"non_determine\",\"confiance\":\"faible\",\"indices\":[\"permis_du_demandeur : 1 permis déposé en 2024 pour 2 logements collectifs, 0 logement social déclaré\",\"fiche_entreprise : SAS (cj 5710), NAF actuel 70.22Z (conseil pour les affaires et autres conseils de gestion), entreprise active depuis 2022, PME\",\"libelle_naf : 70.22Z = Conseil pour les affaires et autres conseils de gestion\",\"libelle_cj : 5710 = SAS, société par actions simplifiée\",\"dénomination : A&B SOLUTIONS – nom générique sans évocation immobilière\"],\"limites\":\"L'activité déclarée (conseil en gestion) ne correspond pas aux métiers de l'immobilier (promotion, foncière, bailleur). Un seul permis de construire pour 2 logements collectifs ne permet pas d'inférer une activité récurrente de promoteur ou d'investisseur. La société est jeune (2022) et son objet social apparent est le conseil. Impossible de savoir si les logements sont destinés à la vente, à la location libre ou à un usage propre. Aucune autre source (historique de permis multiples, NAF immobilier, forme juridique type SCI/SA HLM) ne vient corroborer une famille précise.\"}"
+   }
+  ]
+ }
+]

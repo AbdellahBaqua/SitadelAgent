@@ -1,0 +1,115 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "880182191"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "880182191"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "880182191"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "880182191"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "SAS AZAKAL",
+     "nb_permis_PC": 1,
+     "annees_depot": [
+      "2025"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 0,
+     "surface_locaux_non_residentiels_creee_m2": 44,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 1
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "880182191",
+      "nom": "SAS AZAKAL (SUPER EAT)",
+      "nature_juridique": "5710",
+      "naf_actuel": "47.11B",
+      "etat": "A",
+      "date_creation": "2019-12-30",
+      "categorie": "PME",
+      "effectif": "02",
+      "nb_etablissements": 1,
+      "nb_etablissements_ouverts": 1,
+      "siege_actuel": {
+       "siret": "88018219100010",
+       "naf": "47.11B",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "88018219100010",
+       "naf_dans_permis": "70.10Z",
+       "nb_permis": 1,
+       "annees_depot": [
+        "2025"
+       ],
+       "etat_actuel": "ouvert",
+       "date_creation": "2019-12-30",
+       "date_fermeture": null
+      }
+     ],
+     "alertes": [
+      "NAF du permis ['70.10Z'] différent du NAF actuel de l'entreprise 47.11B"
+     ],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/880182191"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "47.11B",
+      "libelle": "Commerce d'alimentation générale"
+     },
+     {
+      "code": "70.10Z",
+      "libelle": "Activités des sièges sociaux"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5710",
+     "libelle": "SAS, société par actions simplifiée"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"entreprise_autre\",\"confiance\":\"haute\",\"indices\":[\"fiche_entreprise : NAF actuel 47.11B « Commerce d'alimentation générale » (activité de supermarché / supérette), forme juridique SAS (5710), entreprise active, 2 salariés\",\"permis_du_demandeur : 1 permis en 2025 créant 44 m² de surface non résidentielle, 0 logement, 0 logement social, pas de résidence collective/individuelle déclarée\",\"libelle_naf : 47.11B = commerce d'alimentation générale ; 70.10Z (NAF du permis) = activités des sièges sociaux (indice historique, établissement ouvert mais activité principale différente)\",\"libelle_cj : 5710 = SAS, société par actions simplifiée (forme commerciale de droit commun)\",\"dénomination : « SAS AZAKAL (SUPER EAT) » cohérente avec une enseigne de commerce alimentaire\"],\"limites\":\"Le NAF du permis (70.10Z) diffère du NAF actuel (47.11B) ; l'alerte de fiche_entreprise signale cette divergence. Toutefois, l'établissement est toujours ouvert et l'activité réelle de l'entreprise est le commerce alimentaire. Le permis porte sur une surface non résidentielle (44 m²), sans création de logement, ce qui correspond à des travaux pour l'exploitation commerciale (agrandissement, rénovation, drive, etc.).\"}"
+   }
+  ]
+ }
+]

@@ -1,0 +1,120 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "448238105"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "448238105"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "448238105"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "448238105"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "MBC HOLDING",
+     "nb_permis_PC": 3,
+     "annees_depot": [
+      "2014",
+      "2017",
+      "2019"
+     ],
+     "nb_communes": 3,
+     "logements_crees_total": 65,
+     "surface_locaux_non_residentiels_creee_m2": 0,
+     "nb_permis_collectif": 1,
+     "nb_permis_individuel": 2,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 18,
+     "permis_autorises_pas_remontes_comme_commences": 1
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "448238105",
+      "nom": "MBC HOLDING",
+      "nature_juridique": "5710",
+      "naf_actuel": "66.30Z",
+      "etat": "A",
+      "date_creation": "2003-04-16",
+      "categorie": "PME",
+      "effectif": "01",
+      "nb_etablissements": 3,
+      "nb_etablissements_ouverts": 1,
+      "siege_actuel": {
+       "siret": "44823810500036",
+       "naf": "66.30Z",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "44823810500028",
+       "naf_dans_permis": "64.20Z",
+       "nb_permis": 3,
+       "annees_depot": [
+        "2014",
+        "2017",
+        "2019"
+       ],
+       "etat_actuel": "fermé",
+       "date_creation": "2008-05-01",
+       "date_fermeture": "2022-10-01"
+      }
+     ],
+     "alertes": [
+      "SIRET 44823810500028 (permis 2014,2017,2019) fermé le 2022-10-01 : le NAF 64.20Z du permis vient d'un établissement fermé",
+      "NAF du permis ['64.20Z'] différent du NAF actuel de l'entreprise 66.30Z"
+     ],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/448238105"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "64.20Z",
+      "libelle": "Activités des sociétés holding"
+     },
+     {
+      "code": "66.30Z",
+      "libelle": "Gestion de fonds"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5710",
+     "libelle": "SAS, société par actions simplifiée"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"promoteur\",\"confiance\":\"moyenne\",\"indices\":[\"permis_du_demandeur : 3 permis de construire (2014, 2017, 2019) pour 65 logements créés dont 18 locatifs sociaux, 1 collectif et 2 individuels → activité de production immobilière\",\"fiche_entreprise : SAS (CJ 5710), NAF actuel 66.30Z (Gestion de fonds), établissement porteur des PC (SIRET 44823810500028) fermé depuis 2022, NAF historique 64.20Z (Activités des sociétés holding)\",\"libelle_naf : 64.20Z = Activités des sociétés holding ; 66.30Z = Gestion de fonds\",\"libelle_cj : 5710 = SAS, société par actions simplifiée\",\"dénomination : MBC HOLDING → nom évocateur de structure holding\"],\"limites\":\"Le NAF actuel de l'entreprise (66.30Z, Gestion de fonds) diffère du NAF typique d'un promoteur (41.10Z). L'entité est une holding qui a déposé les permis via un établissement désormais fermé. Cela peut correspondre à un « support juridique de programme » (inclus dans la famille promoteur) ou à une foncière développant pour patrimoine propre. L'absence de détail sur la destination des logements (vente vs location) laisse une ambiguïté.\"}"
+   }
+  ]
+ }
+]

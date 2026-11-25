@@ -1,0 +1,6345 @@
+[
+ {
+  "siren": "592001648",
+  "denomination": "ENTREPRISE SOCIALE POUR L'HABITAT DOMNIS",
+  "famille": "bailleur_social",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (bailleur_social) +2 ; projet médico-social (résidence handicapés, résidence sociale, équipement d'action sociale) +3 ; dépôt récent (2024) +2 ; 2 permis autorisé(s) depuis moins de 3 ans, pas encore commencé(s) +2 ; projet de taille significative (≥ 20 logements ou ≥ 1 000 m²) +1",
+  "permis": [
+   {
+    "num_dau": "0784662400038",
+    "fichier": "logements",
+    "annee_depot": "2024",
+    "commune": "ORGEVAL",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": 23,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "0784662400039",
+    "fichier": "logements",
+    "annee_depot": "2024",
+    "commune": "ORGEVAL",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": 50,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07849824Y0002",
+    "fichier": "logements",
+    "annee_depot": "2024",
+    "commune": "POISSY",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 2,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07836723G0010",
+    "fichier": "logements",
+    "annee_depot": "2023",
+    "commune": "MAREIL-MARLY",
+    "etat": "commencé",
+    "type_projet": "résidence sociale",
+    "logements_crees": 14,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "0780432100006",
+    "fichier": "logements",
+    "annee_depot": "2021",
+    "commune": "BAILLY",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": 36,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "0780432100008",
+    "fichier": "logements",
+    "annee_depot": "2021",
+    "commune": "BAILLY",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": 36,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07822021E0019",
+    "fichier": "logements",
+    "annee_depot": "2021",
+    "commune": "LES ESSARTS-LE-ROI",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": 22,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07836721G0005",
+    "fichier": "logements",
+    "annee_depot": "2021",
+    "commune": "MAREIL-MARLY",
+    "etat": "commencé",
+    "type_projet": "résidence handicapés",
+    "logements_crees": 32,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07846621G0056",
+    "fichier": "logements",
+    "annee_depot": "2021",
+    "commune": "ORGEVAL",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": 6,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07855121Z0099",
+    "fichier": "logements",
+    "annee_depot": "2021",
+    "commune": "SAINT-GERMAIN-EN-LAYE",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 154,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07855120Z0053",
+    "fichier": "logements",
+    "annee_depot": "2020",
+    "commune": "SAINT-GERMAIN-EN-LAYE",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": 28,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07800519A0009",
+    "fichier": "logements",
+    "annee_depot": "2019",
+    "commune": "ACHERES",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": 2,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07800519A0010",
+    "fichier": "logements",
+    "annee_depot": "2019",
+    "commune": "ACHERES",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": 2,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07822419E0014",
+    "fichier": "logements",
+    "annee_depot": "2019",
+    "commune": "L ETANG-LA-VILLE",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": 25,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07826919C0017",
+    "fichier": "logements",
+    "annee_depot": "2019",
+    "commune": "GAZERAN",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 65,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07832119Y0050",
+    "fichier": "logements",
+    "annee_depot": "2019",
+    "commune": "JOUARS-PONTCHARTRAIN",
+    "etat": "annulé",
+    "type_projet": "",
+    "logements_crees": 18,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07864219V0013",
+    "fichier": "logements",
+    "annee_depot": "2019",
+    "commune": "VERNEUIL-SUR-SEINE",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": 26,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07832118Y0011",
+    "fichier": "logements",
+    "annee_depot": "2018",
+    "commune": "JOUARS-PONTCHARTRAIN",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 31,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07800517A0015",
+    "fichier": "logements",
+    "annee_depot": "2017",
+    "commune": "ACHERES",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 31,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07800517A0016",
+    "fichier": "logements",
+    "annee_depot": "2017",
+    "commune": "ACHERES",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": 49,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07800517A0016",
+    "fichier": "locaux",
+    "annee_depot": "2017",
+    "commune": "ACHERES",
+    "etat": "commencé",
+    "type_projet": "équipement d'action sociale",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 107
+   },
+   {
+    "num_dau": "07835016G0093",
+    "fichier": "logements",
+    "annee_depot": "2016",
+    "commune": "LOUVECIENNES",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": 64,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07846616G0051",
+    "fichier": "logements",
+    "annee_depot": "2016",
+    "commune": "ORGEVAL",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": 8,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07825115G0016",
+    "fichier": "logements",
+    "annee_depot": "2015",
+    "commune": "FOURQUEUX",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 10,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07855115Z0003",
+    "fichier": "logements",
+    "annee_depot": "2015",
+    "commune": "SAINT-GERMAIN-EN-LAYE",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 116,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07855115Z0043",
+    "fichier": "logements",
+    "annee_depot": "2015",
+    "commune": "SAINT-GERMAIN-EN-LAYE",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 12,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07832114Y0011",
+    "fichier": "logements",
+    "annee_depot": "2014",
+    "commune": "JOUARS-PONTCHARTRAIN",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 8,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07846614G0078",
+    "fichier": "logements",
+    "annee_depot": "2014",
+    "commune": "ORGEVAL",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 8,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07855114Z0029",
+    "fichier": "logements",
+    "annee_depot": "2014",
+    "commune": "SAINT-GERMAIN-EN-LAYE",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 9,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07855112Z0085",
+    "fichier": "logements",
+    "annee_depot": "2012",
+    "commune": "SAINT-GERMAIN-EN-LAYE",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 46,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07855112Z0085",
+    "fichier": "locaux",
+    "annee_depot": "2012",
+    "commune": "SAINT-GERMAIN-EN-LAYE",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 270
+   }
+  ]
+ },
+ {
+  "siren": "475680815",
+  "denomination": "VILOGIA SOCIETE ANONYME D'HLM",
+  "famille": "bailleur_social",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (bailleur_social) +2 ; dépôt récent (2025) +2 ; 2 permis autorisé(s) depuis moins de 3 ans, pas encore commencé(s) +2 ; projet de taille significative (≥ 20 logements ou ≥ 1 000 m²) +1",
+  "permis": [
+   {
+    "num_dau": "0783212500004",
+    "fichier": "logements",
+    "annee_depot": "2025",
+    "commune": "JOUARS PONTCHARTRAIN",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": 12,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "0783212500006",
+    "fichier": "logements",
+    "annee_depot": "2025",
+    "commune": "JOUARS PONTCHARTRAIN",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": 12,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "0783582410055",
+    "fichier": "logements",
+    "annee_depot": "2024",
+    "commune": "MAISONS-LAFFITTE",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": 22,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07832121Y0044",
+    "fichier": "logements",
+    "annee_depot": "2021",
+    "commune": "JOUARS-PONTCHARTRAIN",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": 11,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07801017G0001",
+    "fichier": "logements",
+    "annee_depot": "2017",
+    "commune": "LES ALLUETS-LE-ROI",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 21,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07835615E0009",
+    "fichier": "logements",
+    "annee_depot": "2015",
+    "commune": "MAGNY-LES-HAMEAUX",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 75,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07849815Y0025",
+    "fichier": "logements",
+    "annee_depot": "2015",
+    "commune": "POISSY",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 23,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07849815Y0026",
+    "fichier": "logements",
+    "annee_depot": "2015",
+    "commune": "POISSY",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 10,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07849815Y0055",
+    "fichier": "logements",
+    "annee_depot": "2015",
+    "commune": "POISSY",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 15,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07849815Y0055",
+    "fichier": "locaux",
+    "annee_depot": "2015",
+    "commune": "POISSY",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 236
+   }
+  ]
+ },
+ {
+  "siren": "552046484",
+  "denomination": "CDC HABITAT SOCIAL SOCIETE ANONYME D'HABITATIONS A LOYER MODERE",
+  "famille": "bailleur_social",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (bailleur_social) +2 ; projet médico-social (résidence sociale, équipement d'action sociale, équipement de santé) +3 ; dépôt récent (2025) +2 ; 5 permis autorisé(s) depuis moins de 3 ans, pas encore commencé(s) +2 ; projet de taille significative (≥ 20 logements ou ≥ 1 000 m²) +1",
+  "permis": [
+   {
+    "num_dau": "0780152500015",
+    "fichier": "logements",
+    "annee_depot": "2025",
+    "commune": "ANDRÉSY",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": 50,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "0780152400026",
+    "fichier": "logements",
+    "annee_depot": "2024",
+    "commune": "ANDRESY",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": 25,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07838224U0004",
+    "fichier": "logements",
+    "annee_depot": "2024",
+    "commune": "MAURECOURT",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": 30,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07825523F0024",
+    "fichier": "logements",
+    "annee_depot": "2023",
+    "commune": "FRENEUSE",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": 44,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07825523F0051",
+    "fichier": "logements",
+    "annee_depot": "2023",
+    "commune": "FRENEUSE",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": 44,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "0782672300032",
+    "fichier": "logements",
+    "annee_depot": "2023",
+    "commune": "GARGENVILLE",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": 41,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07831123G0085",
+    "fichier": "locaux",
+    "annee_depot": "2023",
+    "commune": "HOUILLES",
+    "etat": "autorisé",
+    "type_projet": "équipement d'action sociale",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 63
+   },
+   {
+    "num_dau": "07836123Y0032",
+    "fichier": "locaux",
+    "annee_depot": "2023",
+    "commune": "MANTES-LA-JOLIE",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 0
+   },
+   {
+    "num_dau": "07831121G0037",
+    "fichier": "logements",
+    "annee_depot": "2021",
+    "commune": "",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": 38,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07861521Y0016",
+    "fichier": "logements",
+    "annee_depot": "2021",
+    "commune": "THIVERVAL-GRIGNON",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": 35,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "0786242100060",
+    "fichier": "logements",
+    "annee_depot": "2021",
+    "commune": "TRIEL-SUR-SEINE",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 20,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07832120Y0023",
+    "fichier": "logements",
+    "annee_depot": "2020",
+    "commune": "JOUARS PONTCHARTRAIN",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": 22,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07862120E0010",
+    "fichier": "logements",
+    "annee_depot": "2020",
+    "commune": "TRAPPES",
+    "etat": "terminé",
+    "type_projet": "résidence sociale",
+    "logements_crees": 4,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07865020G0018",
+    "fichier": "logements",
+    "annee_depot": "2020",
+    "commune": "LE VESINET",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 1,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07815819C0002",
+    "fichier": "locaux",
+    "annee_depot": "2019",
+    "commune": "LE CHESNAY",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 81
+   },
+   {
+    "num_dau": "07862417Y0027",
+    "fichier": "logements",
+    "annee_depot": "2017",
+    "commune": "TRIEL-SUR-SEINE",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": 20,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07844016M0014",
+    "fichier": "logements",
+    "annee_depot": "2016",
+    "commune": "LES MUREAUX",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 42,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07855116Z0025",
+    "fichier": "logements",
+    "annee_depot": "2016",
+    "commune": "SAINT-GERMAIN-EN-LAYE",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 20,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07862416Y0024",
+    "fichier": "locaux",
+    "annee_depot": "2016",
+    "commune": "TRIEL-SUR-SEINE",
+    "etat": "terminé",
+    "type_projet": "équipement d'action sociale",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 41
+   },
+   {
+    "num_dau": "07864316V1016",
+    "fichier": "locaux",
+    "annee_depot": "2016",
+    "commune": "VERNOUILLET",
+    "etat": "autorisé",
+    "type_projet": "équipement de santé",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 1071
+   }
+  ]
+ },
+ {
+  "siren": "552141533",
+  "denomination": "IMMOBILIERE 3F",
+  "famille": "bailleur_social",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (bailleur_social) +2 ; projet médico-social (équipement d'action sociale) +3 ; dépôt récent (2026) +2 ; 9 permis autorisé(s) depuis moins de 3 ans, pas encore commencé(s) +2 ; projet de taille significative (≥ 20 logements ou ≥ 1 000 m²) +1",
+  "permis": [
+   {
+    "num_dau": "0785172600005",
+    "fichier": "logements",
+    "annee_depot": "2026",
+    "commune": "RAMBOUILLET",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": 7,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "0783112500034",
+    "fichier": "logements",
+    "annee_depot": "2025",
+    "commune": "HOUILLES",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": 75,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "0783112500036",
+    "fichier": "logements",
+    "annee_depot": "2025",
+    "commune": "HOUILLES",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": 51,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "0786242500009",
+    "fichier": "logements",
+    "annee_depot": "2025",
+    "commune": "TRIEL-SUR-SEINE",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": 30,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "0783112500034",
+    "fichier": "locaux",
+    "annee_depot": "2025",
+    "commune": "HOUILLES",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 96
+   },
+   {
+    "num_dau": "07815824C0033",
+    "fichier": "logements",
+    "annee_depot": "2024",
+    "commune": "LE CHESNAY - ROCQUENCOURT",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": 28,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07837224G0012",
+    "fichier": "logements",
+    "annee_depot": "2024",
+    "commune": "MARLY-LE-ROI",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": 21,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "0786242400001",
+    "fichier": "logements",
+    "annee_depot": "2024",
+    "commune": "TRIEL SUR SEINE",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": 15,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "0786242400002",
+    "fichier": "logements",
+    "annee_depot": "2024",
+    "commune": "TRIEL-SUR-SEINE",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": 14,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "0786242400023",
+    "fichier": "logements",
+    "annee_depot": "2024",
+    "commune": "TRIEL-SUR-SEINE",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": 12,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07820824E0006",
+    "fichier": "locaux",
+    "annee_depot": "2024",
+    "commune": "ELANCOURT",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 40
+   },
+   {
+    "num_dau": "07809222G0012",
+    "fichier": "logements",
+    "annee_depot": "2022",
+    "commune": "BOUGIVAL",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": 96,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07835022G0077",
+    "fichier": "logements",
+    "annee_depot": "2022",
+    "commune": "LOUVECIENNES",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": 3,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07812621G0014",
+    "fichier": "logements",
+    "annee_depot": "2021",
+    "commune": "LA CELLE-SAINT-CLOUD",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 71,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07812621G0034",
+    "fichier": "logements",
+    "annee_depot": "2021",
+    "commune": "LA CELLE-SAINT-CLOUD",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": 48,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07831121G0050",
+    "fichier": "logements",
+    "annee_depot": "2021",
+    "commune": "HOUILLES",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": 30,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07849021E0042",
+    "fichier": "logements",
+    "annee_depot": "2021",
+    "commune": "PLAISIR",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": 21,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07851721R1029",
+    "fichier": "logements",
+    "annee_depot": "2021",
+    "commune": "RAMBOUILLET",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 34,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07865021G0049",
+    "fichier": "logements",
+    "annee_depot": "2021",
+    "commune": "LE VESINET",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": 21,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "0786722110040",
+    "fichier": "logements",
+    "annee_depot": "2021",
+    "commune": "VILLENNES SUR SEINE",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": 12,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07849021E0042",
+    "fichier": "locaux",
+    "annee_depot": "2021",
+    "commune": "PLAISIR",
+    "etat": "commencé",
+    "type_projet": "équipement d'action sociale",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 159
+   },
+   {
+    "num_dau": "07849821Y0036",
+    "fichier": "locaux",
+    "annee_depot": "2021",
+    "commune": "POISSY",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 64
+   },
+   {
+    "num_dau": "07865021G0049",
+    "fichier": "locaux",
+    "annee_depot": "2021",
+    "commune": "LE VESINET",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 90
+   },
+   {
+    "num_dau": "07812620G0037",
+    "fichier": "logements",
+    "annee_depot": "2020",
+    "commune": "LA CELLE-SAINT-CLOUD",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 69,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07812620G0037",
+    "fichier": "locaux",
+    "annee_depot": "2020",
+    "commune": "LA CELLE-SAINT-CLOUD",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 674
+   },
+   {
+    "num_dau": "07831119G0054",
+    "fichier": "logements",
+    "annee_depot": "2019",
+    "commune": "HOUILLES",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": 4,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07831119G0088",
+    "fichier": "logements",
+    "annee_depot": "2019",
+    "commune": "HOUILLES",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": 17,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07831119G0099",
+    "fichier": "logements",
+    "annee_depot": "2019",
+    "commune": "HOUILLES",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": 51,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07831119G0100",
+    "fichier": "logements",
+    "annee_depot": "2019",
+    "commune": "HOUILLES",
+    "etat": "annulé",
+    "type_projet": "",
+    "logements_crees": 16,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07831119G0108",
+    "fichier": "logements",
+    "annee_depot": "2019",
+    "commune": "HOUILLES",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": 17,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07835019G0024",
+    "fichier": "logements",
+    "annee_depot": "2019",
+    "commune": "LOUVECIENNES",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 44,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07841819G1024",
+    "fichier": "logements",
+    "annee_depot": "2019",
+    "commune": "MONTESSON",
+    "etat": "annulé",
+    "type_projet": "",
+    "logements_crees": 5,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07853719C0006",
+    "fichier": "logements",
+    "annee_depot": "2019",
+    "commune": "SAINT-ARNOULT-EN-YVELINES",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": 55,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07803018C0025",
+    "fichier": "logements",
+    "annee_depot": "2018",
+    "commune": "AUFFARGIS",
+    "etat": "annulé",
+    "type_projet": "",
+    "logements_crees": 8,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07807318B1005",
+    "fichier": "logements",
+    "annee_depot": "2018",
+    "commune": "",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": 30,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07830718C0004",
+    "fichier": "logements",
+    "annee_depot": "2018",
+    "commune": "HERMERAY",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 11,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07868818E0007",
+    "fichier": "logements",
+    "annee_depot": "2018",
+    "commune": "VOISINS-LE-BRETONNEUX",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 18,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07812617G0019",
+    "fichier": "logements",
+    "annee_depot": "2017",
+    "commune": "LA CELLE-SAINT-CLOUD",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": 78,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07815817C0006",
+    "fichier": "logements",
+    "annee_depot": "2017",
+    "commune": "LE CHESNAY",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 26,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07865017G0030",
+    "fichier": "logements",
+    "annee_depot": "2017",
+    "commune": "LE VESINET",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 59,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "0782171600028",
+    "fichier": "logements",
+    "annee_depot": "2016",
+    "commune": "EPONE",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 18,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "0782171600029",
+    "fichier": "logements",
+    "annee_depot": "2016",
+    "commune": "EPONE",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 19,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07853716M0025",
+    "fichier": "logements",
+    "annee_depot": "2016",
+    "commune": "SAINT-ARNOULT-EN-YVELINES",
+    "etat": "annulé",
+    "type_projet": "",
+    "logements_crees": 55,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07831416M0005",
+    "fichier": "locaux",
+    "annee_depot": "2016",
+    "commune": "ISSOU",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 0
+   },
+   {
+    "num_dau": "07864016V1016",
+    "fichier": "locaux",
+    "annee_depot": "2016",
+    "commune": "VELIZY-VILLACOUBLAY",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 110
+   },
+   {
+    "num_dau": "07849815Y0060",
+    "fichier": "logements",
+    "annee_depot": "2015",
+    "commune": "POISSY",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 66,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07802914A0018",
+    "fichier": "logements",
+    "annee_depot": "2014",
+    "commune": "AUBERGENVILLE",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": 75,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "0781721400019",
+    "fichier": "logements",
+    "annee_depot": "2014",
+    "commune": "CONFLANS SAINTE HONORINE",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 15,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "0781721400019",
+    "fichier": "locaux",
+    "annee_depot": "2014",
+    "commune": "CONFLANS SAINTE HONORINE",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 112
+   },
+   {
+    "num_dau": "07809213G0012",
+    "fichier": "logements",
+    "annee_depot": "2013",
+    "commune": "BOUGIVAL",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 45,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07841813G1012",
+    "fichier": "logements",
+    "annee_depot": "2013",
+    "commune": "MONTESSON",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": 25,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07849813Y0033",
+    "fichier": "logements",
+    "annee_depot": "2013",
+    "commune": "POISSY",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": 68,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07857513M0039",
+    "fichier": "logements",
+    "annee_depot": "2013",
+    "commune": "SAINT-REMY-LES-CHEVREUSE",
+    "etat": "annulé",
+    "type_projet": "",
+    "logements_crees": 69,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07849813Y0033",
+    "fichier": "locaux",
+    "annee_depot": "2013",
+    "commune": "POISSY",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 200
+   }
+  ]
+ },
+ {
+  "siren": "818338311",
+  "denomination": "BABYBULLE",
+  "famille": "exploitant_sante_social",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (exploitant_sante_social) +2 ; projet médico-social (équipement d'action sociale) +3 ; dépôt assez récent (2023) +1",
+  "permis": [
+   {
+    "num_dau": "0781232300006",
+    "fichier": "locaux",
+    "annee_depot": "2023",
+    "commune": "CARRIERES-SOUS-POISSY",
+    "etat": "commencé",
+    "type_projet": "équipement d'action sociale",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 65
+   },
+   {
+    "num_dau": "0781232100010",
+    "fichier": "logements",
+    "annee_depot": "2021",
+    "commune": "CARRIERES-SOUS-POISSY",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": 1,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "0781232100010",
+    "fichier": "locaux",
+    "annee_depot": "2021",
+    "commune": "CARRIERES-SOUS-POISSY",
+    "etat": "autorisé",
+    "type_projet": "équipement d'action sociale",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 39
+   },
+   {
+    "num_dau": "07802920Y0039",
+    "fichier": "logements",
+    "annee_depot": "2020",
+    "commune": "AUBERGENVILLE",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": 1,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07802918Y0008",
+    "fichier": "logements",
+    "annee_depot": "2018",
+    "commune": "AUBERGENVILLE",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": 1,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07802918Y0008",
+    "fichier": "locaux",
+    "annee_depot": "2018",
+    "commune": "AUBERGENVILLE",
+    "etat": "commencé",
+    "type_projet": "équipement d'action sociale",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 0
+   },
+   {
+    "num_dau": "07812318Y0003",
+    "fichier": "locaux",
+    "annee_depot": "2018",
+    "commune": "CARRIERES-SOUS-POISSY",
+    "etat": "terminé",
+    "type_projet": "équipement d'action sociale",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 18
+   }
+  ]
+ },
+ {
+  "siren": "308435460",
+  "denomination": "LES RESIDENCES SOCIETE ANONYME D'HABITATIONS A LOYER MODERE",
+  "famille": "bailleur_social",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (bailleur_social) +2 ; projet médico-social (résidence sociale, équipement de santé) +3 ; dépôt récent (2026) +2 ; 3 permis autorisé(s) depuis moins de 3 ans, pas encore commencé(s) +2 ; projet de taille significative (≥ 20 logements ou ≥ 1 000 m²) +1",
+  "permis": [
+   {
+    "num_dau": "07816026E0005",
+    "fichier": "logements",
+    "annee_depot": "2026",
+    "commune": "CHEVREUSE",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": 2,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "0782062500018",
+    "fichier": "logements",
+    "annee_depot": "2025",
+    "commune": "ECQUEVILLY",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": 33,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "0783612500018",
+    "fichier": "logements",
+    "annee_depot": "2025",
+    "commune": "MANTES-LA-JOLIE",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": 69,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "0783612500019",
+    "fichier": "logements",
+    "annee_depot": "2025",
+    "commune": "MANTES-LA-JOLIE",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": 51,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07844025M0013",
+    "fichier": "logements",
+    "annee_depot": "2025",
+    "commune": "LES MUREAUX",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": 4,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "0780432400001",
+    "fichier": "logements",
+    "annee_depot": "2024",
+    "commune": "BAILLY",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": 27,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07844024M0034",
+    "fichier": "logements",
+    "annee_depot": "2024",
+    "commune": "LES MUREAUX",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": 5,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07816023E0001",
+    "fichier": "logements",
+    "annee_depot": "2023",
+    "commune": "CHEVREUSE",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": 1,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07817122M0012",
+    "fichier": "logements",
+    "annee_depot": "2022",
+    "commune": "CONDE SUR VESGRE",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": 33,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "0782382200003",
+    "fichier": "logements",
+    "annee_depot": "2022",
+    "commune": "FLINS-SUR-SEINE",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": 9,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "0785312200010",
+    "fichier": "logements",
+    "annee_depot": "2022",
+    "commune": "ROSNY SUR SEINE",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": 10,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07854522B0019",
+    "fichier": "logements",
+    "annee_depot": "2022",
+    "commune": "SAINT-CYR-L'ECOLE",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": 5,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07854522B0020",
+    "fichier": "logements",
+    "annee_depot": "2022",
+    "commune": "SAINT-CYR-L'ECOLE",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": 32,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07854522B0021",
+    "fichier": "logements",
+    "annee_depot": "2022",
+    "commune": "SAINT-CYR-L'ECOLE",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": 10,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07854522B0022",
+    "fichier": "logements",
+    "annee_depot": "2022",
+    "commune": "SAINT-CYR-L'ECOLE",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": 19,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07854522B0020",
+    "fichier": "locaux",
+    "annee_depot": "2022",
+    "commune": "SAINT-CYR-L'ECOLE",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 63
+   },
+   {
+    "num_dau": "07854522B0022",
+    "fichier": "locaux",
+    "annee_depot": "2022",
+    "commune": "SAINT-CYR-L'ECOLE",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 173
+   },
+   {
+    "num_dau": "07816021E0023",
+    "fichier": "logements",
+    "annee_depot": "2021",
+    "commune": "CHEVREUSE",
+    "etat": "autorisé",
+    "type_projet": "résidence sociale",
+    "logements_crees": 4,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "0781722100105",
+    "fichier": "logements",
+    "annee_depot": "2021",
+    "commune": "CONFLANS STE HONORINE",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 36,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07854521B0018",
+    "fichier": "logements",
+    "annee_depot": "2021",
+    "commune": "SAINT-CYR-L'ECOLE",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": 1,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07855121Z0076",
+    "fichier": "logements",
+    "annee_depot": "2021",
+    "commune": "SAINT-GERMAIN-EN-LAYE",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": 70,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07854521B0015",
+    "fichier": "locaux",
+    "annee_depot": "2021",
+    "commune": "SAINT-CYR-L'ECOLE",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 130
+   },
+   {
+    "num_dau": "07855121Z0076",
+    "fichier": "locaux",
+    "annee_depot": "2021",
+    "commune": "SAINT-GERMAIN-EN-LAYE",
+    "etat": "commencé",
+    "type_projet": "équipement de santé",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 1563
+   },
+   {
+    "num_dau": "07804820M0017",
+    "fichier": "logements",
+    "annee_depot": "2020",
+    "commune": "BAZAINVILLE",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": 3,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07804820M0022",
+    "fichier": "logements",
+    "annee_depot": "2020",
+    "commune": "BAZAINVILLE",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": 6,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07820620Y0008",
+    "fichier": "logements",
+    "annee_depot": "2020",
+    "commune": "ECQUEVILLY",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": 6,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07813819G0017",
+    "fichier": "logements",
+    "annee_depot": "2019",
+    "commune": "CHANTELOUP-LES-VIGNES",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 29,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07820619Y0007",
+    "fichier": "logements",
+    "annee_depot": "2019",
+    "commune": "ECQUEVILLY",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": 6,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07820619Y0008",
+    "fichier": "logements",
+    "annee_depot": "2019",
+    "commune": "ECQUEVILLY",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": 9,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07820619Y0009",
+    "fichier": "logements",
+    "annee_depot": "2019",
+    "commune": "ECQUEVILLY",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": 9,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07820619Y0010",
+    "fichier": "logements",
+    "annee_depot": "2019",
+    "commune": "ECQUEVILLY",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": 5,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07820619Y0011",
+    "fichier": "logements",
+    "annee_depot": "2019",
+    "commune": "ECQUEVILLY",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": 6,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07836119Y0037",
+    "fichier": "logements",
+    "annee_depot": "2019",
+    "commune": "MANTES-LA-JOLIE",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": 53,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "0784021900012",
+    "fichier": "logements",
+    "annee_depot": "2019",
+    "commune": "MEZIERES SUR SEINE",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": 5,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07836119Y0037",
+    "fichier": "locaux",
+    "annee_depot": "2019",
+    "commune": "MANTES-LA-JOLIE",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 0
+   },
+   {
+    "num_dau": "0784021900012",
+    "fichier": "locaux",
+    "annee_depot": "2019",
+    "commune": "MEZIERES SUR SEINE",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 29
+   },
+   {
+    "num_dau": "07829717E0006",
+    "fichier": "logements",
+    "annee_depot": "2017",
+    "commune": "GUYANCOURT",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": 15,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07868317Y0001",
+    "fichier": "logements",
+    "annee_depot": "2017",
+    "commune": "VILLIERS-SAINT-FREDERIC",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 50,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07831115G0033",
+    "fichier": "logements",
+    "annee_depot": "2015",
+    "commune": "HOUILLES",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": 9,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07844014Y0027",
+    "fichier": "logements",
+    "annee_depot": "2014",
+    "commune": "LES MUREAUX",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": 43,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07855112Z0084",
+    "fichier": "logements",
+    "annee_depot": "2012",
+    "commune": "SAINT-GERMAIN-EN-LAYE",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": 25,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07855112Z0084",
+    "fichier": "locaux",
+    "annee_depot": "2012",
+    "commune": "SAINT-GERMAIN-EN-LAYE",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 399
+   }
+  ]
+ },
+ {
+  "siren": "418093738",
+  "denomination": "ECOLE CHIEN GUIDE AVEUGLE PARIS REGPARI",
+  "famille": "association_ess",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (association_ess) +3 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1",
+  "permis": [
+   {
+    "num_dau": "07811712K0010",
+    "fichier": "logements",
+    "annee_depot": "2012",
+    "commune": "BUC",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": 1,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07811712K0010",
+    "fichier": "locaux",
+    "annee_depot": "2012",
+    "commune": "BUC",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 948
+   }
+  ]
+ },
+ {
+  "siren": "304708589",
+  "denomination": "APILOGIS SOCIETE ANONYME COOPERATIVE D'INTERET COLLECTIF D'HABITATIONS A LOYER MODERE, SOCIETE A CAPITAL VARIABLE",
+  "famille": "bailleur_social",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (bailleur_social) +2 ; dépôt récent (2025) +2 ; 1 permis autorisé(s) depuis moins de 3 ans, pas encore commencé(s) +2 ; projet de taille significative (≥ 20 logements ou ≥ 1 000 m²) +1",
+  "permis": [
+   {
+    "num_dau": "07811725G0010",
+    "fichier": "logements",
+    "annee_depot": "2025",
+    "commune": "BUC",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": 7,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07858624G1033",
+    "fichier": "logements",
+    "annee_depot": "2024",
+    "commune": "SARTROUVILLE",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": 124,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07868622G1004",
+    "fichier": "logements",
+    "annee_depot": "2022",
+    "commune": "VIROFLAY",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 21,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07816519B0032",
+    "fichier": "logements",
+    "annee_depot": "2019",
+    "commune": "LES CLAYES SOUS BOIS",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": 53,
+    "surface_locaux_creee_m2": null
+   }
+  ]
+ },
+ {
+  "siren": "552022105",
+  "denomination": "ICF LA SABLIERE SA D'HLM",
+  "famille": "bailleur_social",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (bailleur_social) +2 ; dépôt assez récent (2022) +1 ; projet de taille significative (≥ 20 logements ou ≥ 1 000 m²) +1",
+  "permis": [
+   {
+    "num_dau": "07868622G1010",
+    "fichier": "logements",
+    "annee_depot": "2022",
+    "commune": "VIROFLAY",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": 84,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07839619G0012",
+    "fichier": "locaux",
+    "annee_depot": "2019",
+    "commune": "LE MESNIL LE ROI",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 42
+   },
+   {
+    "num_dau": "0783581710044",
+    "fichier": "logements",
+    "annee_depot": "2017",
+    "commune": "MAISONS LAFFITTE",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 55,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07811815Y0008",
+    "fichier": "logements",
+    "annee_depot": "2015",
+    "commune": "BUCHELAY",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 52,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07836215Y0036",
+    "fichier": "logements",
+    "annee_depot": "2015",
+    "commune": "MANTES-LA-VILLE",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 28,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07811815Y0008",
+    "fichier": "locaux",
+    "annee_depot": "2015",
+    "commune": "BUCHELAY",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 848
+   },
+   {
+    "num_dau": "07855113Z0042",
+    "fichier": "logements",
+    "annee_depot": "2013",
+    "commune": "SAINT-GERMAIN-EN-LAYE",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 153,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07864212V0034",
+    "fichier": "logements",
+    "annee_depot": "2012",
+    "commune": "VERNEUIL SUR SEINE",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": 21,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07864212V0035",
+    "fichier": "logements",
+    "annee_depot": "2012",
+    "commune": "VERNEUIL SUR SEINE",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": 17,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07864212V0036",
+    "fichier": "logements",
+    "annee_depot": "2012",
+    "commune": "VERNEUIL SUR SEINE",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": 10,
+    "surface_locaux_creee_m2": null
+   }
+  ]
+ },
+ {
+  "siren": "582142816",
+  "denomination": "SA D'H L M FRANCE HABITATION",
+  "famille": "bailleur_social",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (bailleur_social) +2 ; dépôt récent (2024) +2 ; projet de taille significative (≥ 20 logements ou ≥ 1 000 m²) +1",
+  "permis": [
+   {
+    "num_dau": "07820824E0008",
+    "fichier": "logements",
+    "annee_depot": "2024",
+    "commune": "ELANCOURT",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": 1,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07820824E0008",
+    "fichier": "locaux",
+    "annee_depot": "2024",
+    "commune": "ELANCOURT",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 492
+   },
+   {
+    "num_dau": "07864424E0003",
+    "fichier": "locaux",
+    "annee_depot": "2024",
+    "commune": "LA VERRIERE",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 71
+   },
+   {
+    "num_dau": "07815822C0006",
+    "fichier": "logements",
+    "annee_depot": "2022",
+    "commune": "LE CHESNAY",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": 54,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07815822C0007",
+    "fichier": "logements",
+    "annee_depot": "2022",
+    "commune": "LE CHESNAY",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": 33,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07837222G0013",
+    "fichier": "logements",
+    "annee_depot": "2022",
+    "commune": "MARLY-LE-ROI",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": 23,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07837222G0014",
+    "fichier": "logements",
+    "annee_depot": "2022",
+    "commune": "MARLY-LE-ROI",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": 18,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07815822C0006",
+    "fichier": "locaux",
+    "annee_depot": "2022",
+    "commune": "LE CHESNAY",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 124
+   },
+   {
+    "num_dau": "07815822C0007",
+    "fichier": "locaux",
+    "annee_depot": "2022",
+    "commune": "LE CHESNAY",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 60
+   },
+   {
+    "num_dau": "07839721E0021",
+    "fichier": "logements",
+    "annee_depot": "2021",
+    "commune": "LE MESNIL ST DENIS",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": 30,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07812420G0014",
+    "fichier": "logements",
+    "annee_depot": "2020",
+    "commune": "CARRIERES SUR SEINE",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 108,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07814620G1036",
+    "fichier": "logements",
+    "annee_depot": "2020",
+    "commune": "CHATOU",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 63,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07851719R1042",
+    "fichier": "logements",
+    "annee_depot": "2019",
+    "commune": "RAMBOUILLET",
+    "etat": "annulé",
+    "type_projet": "",
+    "logements_crees": 15,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07841818G1024",
+    "fichier": "logements",
+    "annee_depot": "2018",
+    "commune": "MONTESSON",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 112,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07815817C0029",
+    "fichier": "logements",
+    "annee_depot": "2017",
+    "commune": "LE CHESNAY",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 51,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07837217G0011",
+    "fichier": "logements",
+    "annee_depot": "2017",
+    "commune": "MARLY-LE-ROI",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 35,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07865017G0015",
+    "fichier": "logements",
+    "annee_depot": "2017",
+    "commune": "LE VESINET",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 23,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07865017G0040",
+    "fichier": "logements",
+    "annee_depot": "2017",
+    "commune": "LE V2SINET",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 63,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07812416G0011",
+    "fichier": "logements",
+    "annee_depot": "2016",
+    "commune": "CARRIERES SUR SEINE",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 39,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07837216G0001",
+    "fichier": "logements",
+    "annee_depot": "2016",
+    "commune": "MARLY-LE-ROI",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": 18,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07837215G0002",
+    "fichier": "logements",
+    "annee_depot": "2015",
+    "commune": "MARLY-LE-ROI",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 10,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07837215G0005",
+    "fichier": "logements",
+    "annee_depot": "2015",
+    "commune": "MARLY-LE-ROI",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": 23,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07835014G0056",
+    "fichier": "logements",
+    "annee_depot": "2014",
+    "commune": "LOUVECIENNES",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 29,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07837214G0006",
+    "fichier": "logements",
+    "annee_depot": "2014",
+    "commune": "MARLY-LE-ROI",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 27,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07855114Z0055",
+    "fichier": "logements",
+    "annee_depot": "2014",
+    "commune": "SAINT-GERMAIN-EN-LAYE",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 40,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07865014G0038",
+    "fichier": "logements",
+    "annee_depot": "2014",
+    "commune": "LE VESINET",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 48,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07855114Z0055",
+    "fichier": "locaux",
+    "annee_depot": "2014",
+    "commune": "SAINT-GERMAIN-EN-LAYE",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 138
+   },
+   {
+    "num_dau": "07831113G0042",
+    "fichier": "logements",
+    "annee_depot": "2013",
+    "commune": "HOUILLES",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": 16,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07831113G0043",
+    "fichier": "logements",
+    "annee_depot": "2013",
+    "commune": "",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": 24,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07831113G0044",
+    "fichier": "logements",
+    "annee_depot": "2013",
+    "commune": "HOUILLES",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": 26,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07831113G0045",
+    "fichier": "logements",
+    "annee_depot": "2013",
+    "commune": "HOUILLES",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": 22,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07831113G0046",
+    "fichier": "logements",
+    "annee_depot": "2013",
+    "commune": "HOUILLES",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": 9,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07837212G0014",
+    "fichier": "logements",
+    "annee_depot": "2012",
+    "commune": "MARLY LE ROI",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 13,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07849812Y0053",
+    "fichier": "logements",
+    "annee_depot": "2012",
+    "commune": "POISSY",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 18,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07849812Y0054",
+    "fichier": "logements",
+    "annee_depot": "2012",
+    "commune": "POISSY",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 33,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07849812Y0055",
+    "fichier": "logements",
+    "annee_depot": "2012",
+    "commune": "POISSY",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 35,
+    "surface_locaux_creee_m2": null
+   }
+  ]
+ },
+ {
+  "siren": "572150175",
+  "denomination": "SOCIETE ANONYME D'HABITATIONS A LOYER MODERE TOIT ET JOIE",
+  "famille": "bailleur_social",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (bailleur_social) +2 ; projet de taille significative (≥ 20 logements ou ≥ 1 000 m²) +1",
+  "permis": [
+   {
+    "num_dau": "07812620G0010",
+    "fichier": "logements",
+    "annee_depot": "2020",
+    "commune": "LA CELLE-SAINT-CLOUD",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 4,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07848617M0040",
+    "fichier": "logements",
+    "annee_depot": "2017",
+    "commune": "LE PERRAY EN YVELINES",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": 24,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07848617M0041",
+    "fichier": "logements",
+    "annee_depot": "2017",
+    "commune": "LE PERRAY EN YVELINES",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": 9,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07842316E0012",
+    "fichier": "logements",
+    "annee_depot": "2016",
+    "commune": "MONTIGNY LE BRETONNEUX",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 56,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07857512M0029",
+    "fichier": "logements",
+    "annee_depot": "2012",
+    "commune": "SAINT-REMY-LES-CHEVREUSE",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": 20,
+    "surface_locaux_creee_m2": null
+   }
+  ]
+ },
+ {
+  "siren": "552038200",
+  "denomination": "ELOGIE - SIEMP",
+  "famille": "bailleur_social",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (bailleur_social) +2 ; dépôt récent (2024) +2 ; 1 permis autorisé(s) depuis moins de 3 ans, pas encore commencé(s) +2 ; projet de taille significative (≥ 20 logements ou ≥ 1 000 m²) +1",
+  "permis": [
+   {
+    "num_dau": "07812624G0020",
+    "fichier": "logements",
+    "annee_depot": "2024",
+    "commune": "LA CELLE-SAINT-CLOUD",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": 40,
+    "surface_locaux_creee_m2": null
+   }
+  ]
+ },
+ {
+  "siren": "086180387",
+  "denomination": "VALLOIRE HABITAT",
+  "famille": "bailleur_social",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (bailleur_social) +2 ; dépôt assez récent (2023) +1 ; 1 permis autorisé(s) depuis moins de 3 ans, pas encore commencé(s) +2",
+  "permis": [
+   {
+    "num_dau": "07812823C0008",
+    "fichier": "logements",
+    "annee_depot": "2023",
+    "commune": "CERNAY-LA-VILLE",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": 11,
+    "surface_locaux_creee_m2": null
+   }
+  ]
+ },
+ {
+  "siren": "775657612",
+  "denomination": "FONDATION COGNACQ JAY",
+  "famille": "association_ess",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (association_ess) +3 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1 ; projet de taille significative (≥ 20 logements ou ≥ 1 000 m²) +1",
+  "permis": [
+   {
+    "num_dau": "07814615G1027",
+    "fichier": "logements",
+    "annee_depot": "2015",
+    "commune": "CHATOU",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 50,
+    "surface_locaux_creee_m2": null
+   }
+  ]
+ },
+ {
+  "siren": "383349107",
+  "denomination": "FREHA",
+  "famille": "association_ess",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (association_ess) +3 ; projet de taille significative (≥ 20 logements ou ≥ 1 000 m²) +1",
+  "permis": [
+   {
+    "num_dau": "07814620G1061",
+    "fichier": "logements",
+    "annee_depot": "2020",
+    "commune": "CHATOU",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": 6,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "0782171800013",
+    "fichier": "logements",
+    "annee_depot": "2018",
+    "commune": "EPONE",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 62,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07838317E0011",
+    "fichier": "logements",
+    "annee_depot": "2017",
+    "commune": "MAUREPAS",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 25,
+    "surface_locaux_creee_m2": null
+   }
+  ]
+ },
+ {
+  "siren": "672022084",
+  "denomination": "SA HLM PIERRES ET LUMIERES",
+  "famille": "bailleur_social",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (bailleur_social) +2 ; projet de taille significative (≥ 20 logements ou ≥ 1 000 m²) +1",
+  "permis": [
+   {
+    "num_dau": "07816021E0014",
+    "fichier": "logements",
+    "annee_depot": "2021",
+    "commune": "CHEVREUSE",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 9,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07844221Y0009",
+    "fichier": "logements",
+    "annee_depot": "2021",
+    "commune": "NEAUPHLE-LE-CHATEAU",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": 28,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07868321Y0016",
+    "fichier": "logements",
+    "annee_depot": "2021",
+    "commune": "VILLIERS-SAINT-FREDERIC",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": 22,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07868312Y0019",
+    "fichier": "logements",
+    "annee_depot": "2012",
+    "commune": "VILLIERS-SAINT-FREDERIC",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 33,
+    "surface_locaux_creee_m2": null
+   }
+  ]
+ },
+ {
+  "siren": "393542428",
+  "denomination": "LOGISTART STE ANONYME D'HABITATION A LOYER MODERE",
+  "famille": "bailleur_social",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (bailleur_social) +2 ; projet médico-social (résidence personnes âgées, résidence sociale, équipement d'action sociale) +3 ; dépôt récent (2025) +2 ; 2 permis autorisé(s) depuis moins de 3 ans, pas encore commencé(s) +2 ; projet de taille significative (≥ 20 logements ou ≥ 1 000 m²) +1",
+  "permis": [
+   {
+    "num_dau": "0781232500019",
+    "fichier": "locaux",
+    "annee_depot": "2025",
+    "commune": "CARRIERES-SOUS-POISSY",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 47
+   },
+   {
+    "num_dau": "07865024G0020",
+    "fichier": "logements",
+    "annee_depot": "2024",
+    "commune": "LE VESINET",
+    "etat": "autorisé",
+    "type_projet": "résidence sociale",
+    "logements_crees": 22,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07816523B0035",
+    "fichier": "logements",
+    "annee_depot": "2023",
+    "commune": "CLAYESSOUSBOIS",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": 58,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07867422E0009",
+    "fichier": "logements",
+    "annee_depot": "2022",
+    "commune": "VILLEPREUX",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": 54,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07829722E0009",
+    "fichier": "locaux",
+    "annee_depot": "2022",
+    "commune": "GUYANCOURT",
+    "etat": "commencé",
+    "type_projet": "équipement d'action sociale",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 0
+   },
+   {
+    "num_dau": "07867422E0009",
+    "fichier": "locaux",
+    "annee_depot": "2022",
+    "commune": "VILLEPREUX",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 1182
+   },
+   {
+    "num_dau": "0781722100102",
+    "fichier": "logements",
+    "annee_depot": "2021",
+    "commune": "CONFLANS SAINTE-HONORINE",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": 24,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07816519B0004",
+    "fichier": "logements",
+    "annee_depot": "2019",
+    "commune": "LES CLAYES SOUS BOIS",
+    "etat": "commencé",
+    "type_projet": "résidence personnes âgées",
+    "logements_crees": 108,
+    "surface_locaux_creee_m2": null
+   }
+  ]
+ },
+ {
+  "siren": "495286098",
+  "denomination": "RESIDENCES SOCIALES DE FRANCE",
+  "famille": "bailleur_social",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (bailleur_social) +2 ; projet médico-social (résidence sociale) +3 ; projet de taille significative (≥ 20 logements ou ≥ 1 000 m²) +1",
+  "permis": [
+   {
+    "num_dau": "07816816E0008",
+    "fichier": "logements",
+    "annee_depot": "2016",
+    "commune": "COIGNIERES",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 94,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "0784901501027",
+    "fichier": "logements",
+    "annee_depot": "2015",
+    "commune": "PLAISIR",
+    "etat": "terminé",
+    "type_projet": "résidence sociale",
+    "logements_crees": 174,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07832213O0002",
+    "fichier": "logements",
+    "annee_depot": "2013",
+    "commune": "JOUY EN JOSAS",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": 48,
+    "surface_locaux_creee_m2": null
+   }
+  ]
+ },
+ {
+  "siren": "788058030",
+  "denomination": "ADOMA",
+  "famille": "bailleur_social",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (bailleur_social) +2 ; projet médico-social (résidence sociale) +3 ; dépôt récent (2025) +2 ; 1 permis autorisé(s) depuis moins de 3 ans, pas encore commencé(s) +2 ; projet de taille significative (≥ 20 logements ou ≥ 1 000 m²) +1 ; exploitant probable (moyenne) de « RESIDENCE SOCIALE - LES PRES », projet résidence sociale déposé par ADOMA (permis 07820816E0015) +3 ; exploitant probable (moyenne) de « RS JEUNES ACTIFS - LA COLLINE », projet résidence sociale déposé par ADOMA (permis 07820816K0016) +3 ; exploitant probable (moyenne) de « FTM BRAUNSTEIN », projet résidence sociale déposé par ADOMA (permis 07836119Z0022) +3 ; exploitant probable (haute) de « RESIDENCE SOCIALE - SAINT EXUPERY », projet résidence sociale déposé par ADOMA (permis 07858619G1092) +3 ; exploitant probable (haute) de « RESIDENCE SOCIALE - SAINT EXUPERY », projet résidence sociale déposé par ADOMA (permis 07858619Z1092) +3",
+  "permis": [
+   {
+    "num_dau": "0783212500017",
+    "fichier": "logements",
+    "annee_depot": "2025",
+    "commune": "JOUARS-PONTCHARTRAIN",
+    "etat": "autorisé",
+    "type_projet": "résidence sociale",
+    "logements_crees": 31,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07864621V0030",
+    "fichier": "logements",
+    "annee_depot": "2021",
+    "commune": "VERSAILLES",
+    "etat": "terminé",
+    "type_projet": "résidence sociale",
+    "logements_crees": 175,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07817220Z0027",
+    "fichier": "logements",
+    "annee_depot": "2020",
+    "commune": "CONFLANS-SAINTE-HONORINE",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": 40,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07836120Z0026",
+    "fichier": "logements",
+    "annee_depot": "2020",
+    "commune": "MANTES-LA-JOLIE",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 130,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07805020Z0005",
+    "fichier": "locaux",
+    "annee_depot": "2020",
+    "commune": "BAZOCHES-SUR-GUYONNE",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 109
+   },
+   {
+    "num_dau": "07836119Z0022",
+    "fichier": "logements",
+    "annee_depot": "2019",
+    "commune": "MANTES-LA-JOLIE",
+    "etat": "terminé",
+    "type_projet": "résidence sociale",
+    "logements_crees": 150,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07858619G1092",
+    "fichier": "logements",
+    "annee_depot": "2019",
+    "commune": "SARTROUVILLE",
+    "etat": "terminé",
+    "type_projet": "résidence sociale",
+    "logements_crees": 136,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07858619Z1092",
+    "fichier": "logements",
+    "annee_depot": "2019",
+    "commune": "SARTROUVILLE",
+    "etat": "terminé",
+    "type_projet": "résidence sociale",
+    "logements_crees": 283,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07836119Z0022",
+    "fichier": "logements",
+    "annee_depot": "2019",
+    "commune": "MANTES-LA-JOLIE",
+    "etat": "terminé",
+    "type_projet": "résidence sociale",
+    "logements_crees": 150,
+    "surface_locaux_creee_m2": null,
+    "depose_par": "ADOMA"
+   },
+   {
+    "num_dau": "07858619G1092",
+    "fichier": "logements",
+    "annee_depot": "2019",
+    "commune": "SARTROUVILLE",
+    "etat": "terminé",
+    "type_projet": "résidence sociale",
+    "logements_crees": 136,
+    "surface_locaux_creee_m2": null,
+    "depose_par": "ADOMA"
+   },
+   {
+    "num_dau": "07858619Z1092",
+    "fichier": "logements",
+    "annee_depot": "2019",
+    "commune": "SARTROUVILLE",
+    "etat": "terminé",
+    "type_projet": "résidence sociale",
+    "logements_crees": 283,
+    "surface_locaux_creee_m2": null,
+    "depose_par": "ADOMA"
+   },
+   {
+    "num_dau": "07820816E0015",
+    "fichier": "logements",
+    "annee_depot": "2016",
+    "commune": "ELANCOURT",
+    "etat": "terminé",
+    "type_projet": "résidence sociale",
+    "logements_crees": 190,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07820816K0016",
+    "fichier": "logements",
+    "annee_depot": "2016",
+    "commune": "ELANCOURT",
+    "etat": "terminé",
+    "type_projet": "résidence sociale",
+    "logements_crees": 100,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07820816E0015",
+    "fichier": "logements",
+    "annee_depot": "2016",
+    "commune": "ELANCOURT",
+    "etat": "terminé",
+    "type_projet": "résidence sociale",
+    "logements_crees": 190,
+    "surface_locaux_creee_m2": null,
+    "depose_par": "ADOMA"
+   },
+   {
+    "num_dau": "07820816K0016",
+    "fichier": "logements",
+    "annee_depot": "2016",
+    "commune": "ELANCOURT",
+    "etat": "terminé",
+    "type_projet": "résidence sociale",
+    "logements_crees": 100,
+    "surface_locaux_creee_m2": null,
+    "depose_par": "ADOMA"
+   },
+   {
+    "num_dau": "07862115Z0007",
+    "fichier": "logements",
+    "annee_depot": "2015",
+    "commune": "TRAPPES",
+    "etat": "terminé",
+    "type_projet": "résidence sociale",
+    "logements_crees": 165,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07862115Z0008",
+    "fichier": "logements",
+    "annee_depot": "2015",
+    "commune": "TRAPPES",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 130,
+    "surface_locaux_creee_m2": null
+   }
+  ]
+ },
+ {
+  "siren": "572161321",
+  "denomination": "SA IMMO MOULIN VERT-SA HAB LOYER MODERE",
+  "famille": "bailleur_social",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (bailleur_social) +2 ; projet de taille significative (≥ 20 logements ou ≥ 1 000 m²) +1",
+  "permis": [
+   {
+    "num_dau": "07837218G0017",
+    "fichier": "logements",
+    "annee_depot": "2018",
+    "commune": "MARLY-LE-ROI",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 60,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07837218G0017",
+    "fichier": "locaux",
+    "annee_depot": "2018",
+    "commune": "MARLY-LE-ROI",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 635
+   },
+   {
+    "num_dau": "07819015G0004",
+    "fichier": "logements",
+    "annee_depot": "2015",
+    "commune": "",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 182,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07819014G0007",
+    "fichier": "logements",
+    "annee_depot": "2014",
+    "commune": "",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": 174,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07822414M0014",
+    "fichier": "logements",
+    "annee_depot": "2014",
+    "commune": "L  TANG-LA-VILLE",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": 20,
+    "surface_locaux_creee_m2": null
+   }
+  ]
+ },
+ {
+  "siren": "419824669",
+  "denomination": "LA GERBE",
+  "famille": "association_ess",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (association_ess) +3 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1",
+  "permis": [
+   {
+    "num_dau": "07820613Y0003",
+    "fichier": "logements",
+    "annee_depot": "2013",
+    "commune": "ECQUEVILLY",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 1,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07820613Y0003",
+    "fichier": "locaux",
+    "annee_depot": "2013",
+    "commune": "ECQUEVILLY",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 0
+   }
+  ]
+ },
+ {
+  "siren": "572204014",
+  "denomination": "VALOPHIS SAREPA  - SOCIETE ANONYME D'HLM",
+  "famille": "bailleur_social",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (bailleur_social) +2 ; projet médico-social (résidence personnes âgées, résidence sociale) +3 ; projet de taille significative (≥ 20 logements ou ≥ 1 000 m²) +1",
+  "permis": [
+   {
+    "num_dau": "07862121E0016",
+    "fichier": "logements",
+    "annee_depot": "2021",
+    "commune": "TRAPPES",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 86,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07868821E0004",
+    "fichier": "logements",
+    "annee_depot": "2021",
+    "commune": "VOISINS-LE-BRETONNEUX",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 20,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07868821E0014",
+    "fichier": "logements",
+    "annee_depot": "2021",
+    "commune": "VOISINS-LE-BRETONNEUX",
+    "etat": "terminé",
+    "type_projet": "résidence sociale",
+    "logements_crees": 45,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07868821E0015",
+    "fichier": "logements",
+    "annee_depot": "2021",
+    "commune": "VOISINS-LE-BRETONNEUX",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 45,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07862121E0016",
+    "fichier": "locaux",
+    "annee_depot": "2021",
+    "commune": "TRAPPES",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 595
+   },
+   {
+    "num_dau": "07868821E0015",
+    "fichier": "locaux",
+    "annee_depot": "2021",
+    "commune": "VOISINS-LE-BRETONNEUX",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 1108
+   },
+   {
+    "num_dau": "07862118E0021",
+    "fichier": "logements",
+    "annee_depot": "2018",
+    "commune": "TRAPPES",
+    "etat": "annulé",
+    "type_projet": "résidence personnes âgées",
+    "logements_crees": 65,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07862114E0008",
+    "fichier": "logements",
+    "annee_depot": "2014",
+    "commune": "TRAPPES",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 51,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07862113E0028",
+    "fichier": "logements",
+    "annee_depot": "2013",
+    "commune": "TRAPPES",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 94,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07829712K0018",
+    "fichier": "logements",
+    "annee_depot": "2012",
+    "commune": "GUYANCOURT",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 0,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07829712K0018",
+    "fichier": "locaux",
+    "annee_depot": "2012",
+    "commune": "GUYANCOURT",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 3450
+   }
+  ]
+ },
+ {
+  "siren": "582056339",
+  "denomination": "EXPANSIEL PROMOTION",
+  "famille": "bailleur_social",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (bailleur_social) +2 ; projet médico-social (équipement d'action sociale) +3 ; dépôt assez récent (2022) +1 ; projet de taille significative (≥ 20 logements ou ≥ 1 000 m²) +1",
+  "permis": [
+   {
+    "num_dau": "07829722E0018",
+    "fichier": "logements",
+    "annee_depot": "2022",
+    "commune": "GUYANCOURT",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": 43,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07862121E0020",
+    "fichier": "logements",
+    "annee_depot": "2021",
+    "commune": "",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": 50,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07854514B1020",
+    "fichier": "logements",
+    "annee_depot": "2014",
+    "commune": "",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": 80,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07854514B1022",
+    "fichier": "logements",
+    "annee_depot": "2014",
+    "commune": "SAINT-CYR-L'ECOLE",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 90,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07854514B1022",
+    "fichier": "locaux",
+    "annee_depot": "2014",
+    "commune": "SAINT-CYR-L'ECOLE",
+    "etat": "terminé",
+    "type_projet": "équipement d'action sociale",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 1927
+   },
+   {
+    "num_dau": "07864413E0001",
+    "fichier": "logements",
+    "annee_depot": "2013",
+    "commune": "LA VERRIERE",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 36,
+    "surface_locaux_creee_m2": null
+   }
+  ]
+ },
+ {
+  "siren": "781669601",
+  "denomination": "FONDATION JOHN BOST",
+  "famille": "association_ess",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (association_ess) +3 ; projet médico-social (résidence handicapés) +3 ; dépôt récent (2025) +2 ; 1 permis autorisé(s) depuis moins de 3 ans, pas encore commencé(s) +2 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1",
+  "permis": [
+   {
+    "num_dau": "07829725E0001",
+    "fichier": "logements",
+    "annee_depot": "2025",
+    "commune": "GUYANCOURT",
+    "etat": "autorisé",
+    "type_projet": "résidence handicapés",
+    "logements_crees": 1,
+    "surface_locaux_creee_m2": null
+   }
+  ]
+ },
+ {
+  "siren": "775667181",
+  "denomination": "FONDATION MALLET",
+  "famille": "association_ess",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (association_ess) +3 ; dépôt récent (2025) +2 ; 2 permis autorisé(s) depuis moins de 3 ans, pas encore commencé(s) +2 ; projet de taille significative (≥ 20 logements ou ≥ 1 000 m²) +1",
+  "permis": [
+   {
+    "num_dau": "07838125M0001",
+    "fichier": "logements",
+    "annee_depot": "2025",
+    "commune": "MAULETTE",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 1,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07852024M0002",
+    "fichier": "logements",
+    "annee_depot": "2024",
+    "commune": "RICHEBOURG",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": 1,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "0784742300005",
+    "fichier": "logements",
+    "annee_depot": "2023",
+    "commune": "ORVILLIERS",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 1,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07831023M0001",
+    "fichier": "locaux",
+    "annee_depot": "2023",
+    "commune": "HOUDAN",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 362
+   },
+   {
+    "num_dau": "07852023M0007",
+    "fichier": "locaux",
+    "annee_depot": "2023",
+    "commune": "RICHEBOURG",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 240
+   },
+   {
+    "num_dau": "07852022M0008",
+    "fichier": "logements",
+    "annee_depot": "2022",
+    "commune": "RICHEBOURG",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": 1,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07831022M0011",
+    "fichier": "locaux",
+    "annee_depot": "2022",
+    "commune": "HOUDAN",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 222
+   },
+   {
+    "num_dau": "07852022M0007",
+    "fichier": "locaux",
+    "annee_depot": "2022",
+    "commune": "RICHEBOURG",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 147
+   },
+   {
+    "num_dau": "0783102100004",
+    "fichier": "logements",
+    "annee_depot": "2021",
+    "commune": "HOUDAN",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": 6,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "0783102100011",
+    "fichier": "locaux",
+    "annee_depot": "2021",
+    "commune": "HOUDAN",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 885
+   },
+   {
+    "num_dau": "0783102100018",
+    "fichier": "locaux",
+    "annee_depot": "2021",
+    "commune": "HOUDAN",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 156
+   },
+   {
+    "num_dau": "0783102100021",
+    "fichier": "locaux",
+    "annee_depot": "2021",
+    "commune": "HOUDAN",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 0
+   },
+   {
+    "num_dau": "07804820M0012",
+    "fichier": "locaux",
+    "annee_depot": "2020",
+    "commune": "BAZAINVILLE",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 2263
+   },
+   {
+    "num_dau": "07804820M0023",
+    "fichier": "locaux",
+    "annee_depot": "2020",
+    "commune": "BAZAINVILLE",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 4587
+   },
+   {
+    "num_dau": "07831020M0006",
+    "fichier": "locaux",
+    "annee_depot": "2020",
+    "commune": "HOUDAN",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 24
+   },
+   {
+    "num_dau": "07831019M0006",
+    "fichier": "logements",
+    "annee_depot": "2019",
+    "commune": "HOUDAN",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": 1,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07831019M0006",
+    "fichier": "locaux",
+    "annee_depot": "2019",
+    "commune": "HOUDAN",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 0
+   },
+   {
+    "num_dau": "07831019M0011",
+    "fichier": "locaux",
+    "annee_depot": "2019",
+    "commune": "HOUDAN",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 0
+   },
+   {
+    "num_dau": "07831019M0013",
+    "fichier": "locaux",
+    "annee_depot": "2019",
+    "commune": "HOUDAN",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 0
+   },
+   {
+    "num_dau": "07838119M0008",
+    "fichier": "locaux",
+    "annee_depot": "2019",
+    "commune": "",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 32
+   },
+   {
+    "num_dau": "07831018M0118",
+    "fichier": "locaux",
+    "annee_depot": "2018",
+    "commune": "HOUDAN",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 1390
+   },
+   {
+    "num_dau": "07831018M0128",
+    "fichier": "locaux",
+    "annee_depot": "2018",
+    "commune": "HOUDAN",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 96
+   },
+   {
+    "num_dau": "07852018M0008",
+    "fichier": "locaux",
+    "annee_depot": "2018",
+    "commune": "RICHEBOURG",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 83
+   },
+   {
+    "num_dau": "07804817M0010",
+    "fichier": "locaux",
+    "annee_depot": "2017",
+    "commune": "BAZAINVILLE",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 211
+   },
+   {
+    "num_dau": "07804817M0011",
+    "fichier": "locaux",
+    "annee_depot": "2017",
+    "commune": "BAZAINVILLE",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 303
+   },
+   {
+    "num_dau": "07831016M0049",
+    "fichier": "locaux",
+    "annee_depot": "2016",
+    "commune": "HOUDAN",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 489
+   },
+   {
+    "num_dau": "07831016M0051",
+    "fichier": "locaux",
+    "annee_depot": "2016",
+    "commune": "HOUDAN",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 136
+   },
+   {
+    "num_dau": "07831016M0057",
+    "fichier": "locaux",
+    "annee_depot": "2016",
+    "commune": "HOUDAN",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 690
+   },
+   {
+    "num_dau": "07831016M0063",
+    "fichier": "locaux",
+    "annee_depot": "2016",
+    "commune": "HOUDAN",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 370
+   },
+   {
+    "num_dau": "07838116M0005",
+    "fichier": "locaux",
+    "annee_depot": "2016",
+    "commune": "MAULETTE",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 55
+   },
+   {
+    "num_dau": "07831015M0026",
+    "fichier": "locaux",
+    "annee_depot": "2015",
+    "commune": "HOUDAN",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 26
+   },
+   {
+    "num_dau": "07831015M0027",
+    "fichier": "locaux",
+    "annee_depot": "2015",
+    "commune": "HOUDAN",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 48
+   },
+   {
+    "num_dau": "07831015M0029",
+    "fichier": "locaux",
+    "annee_depot": "2015",
+    "commune": "HOUDAN",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 453
+   },
+   {
+    "num_dau": "07861614E0010",
+    "fichier": "locaux",
+    "annee_depot": "2014",
+    "commune": "THOIRY",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 0
+   }
+  ]
+ },
+ {
+  "siren": "602049199",
+  "denomination": "AXIMO",
+  "famille": "bailleur_social",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (bailleur_social) +2",
+  "permis": [
+   {
+    "num_dau": "07832113Y0061",
+    "fichier": "logements",
+    "annee_depot": "2013",
+    "commune": "JOUARS PONTCHARTRAIN",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 4,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07832113Y0062",
+    "fichier": "logements",
+    "annee_depot": "2013",
+    "commune": "JOUARS-PONTCHARTRAIN",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 7,
+    "surface_locaux_creee_m2": null
+   }
+  ]
+ },
+ {
+  "siren": "015450638",
+  "denomination": "SOCIETE ANONYME D'HABITATIONS A LOYER MODERE VILLEO",
+  "famille": "bailleur_social",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (bailleur_social) +2 ; projet de taille significative (≥ 20 logements ou ≥ 1 000 m²) +1",
+  "permis": [
+   {
+    "num_dau": "07832218O0011",
+    "fichier": "logements",
+    "annee_depot": "2018",
+    "commune": "JOUY-EN-JOSAS",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": 20,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07832218O0011",
+    "fichier": "locaux",
+    "annee_depot": "2018",
+    "commune": "JOUY-EN-JOSAS",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 78
+   }
+  ]
+ },
+ {
+  "siren": "885053405",
+  "denomination": "L'IMMOBILIER SOLIDAIRE & ASSOCIATIF",
+  "famille": "association_ess",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (association_ess) +3 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1",
+  "permis": [
+   {
+    "num_dau": "07832221O0025",
+    "fichier": "logements",
+    "annee_depot": "2021",
+    "commune": "JOUY-EN-JOSAS",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": 2,
+    "surface_locaux_creee_m2": null
+   }
+  ]
+ },
+ {
+  "siren": "559896535",
+  "denomination": "HLM INTERPROFESSIONNELLE REGION PARIS",
+  "famille": "bailleur_social",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (bailleur_social) +2 ; projet médico-social (équipement d'action sociale) +3 ; dépôt assez récent (2023) +1 ; projet de taille significative (≥ 20 logements ou ≥ 1 000 m²) +1",
+  "permis": [
+   {
+    "num_dau": "07834323G0006",
+    "fichier": "logements",
+    "annee_depot": "2023",
+    "commune": "LOGES EN JOSAS",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 3,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07834323G0006",
+    "fichier": "locaux",
+    "annee_depot": "2023",
+    "commune": "LOGES EN JOSAS",
+    "etat": "terminé",
+    "type_projet": "équipement d'action sociale",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 213
+   },
+   {
+    "num_dau": "07855121Z0031",
+    "fichier": "logements",
+    "annee_depot": "2021",
+    "commune": "SAINT-GERMAIN-EN-LAYE",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 4,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07836116Y0013",
+    "fichier": "logements",
+    "annee_depot": "2016",
+    "commune": "MANTES-LA-JOLIE",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 6,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07836112Y0033",
+    "fichier": "locaux",
+    "annee_depot": "2012",
+    "commune": "MANTES-LA-JOLIE",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 1349
+   }
+  ]
+ },
+ {
+  "siren": "853337756",
+  "denomination": "MAISON MADELEINE",
+  "famille": "association_ess",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (association_ess) +3 ; projet médico-social (équipement d'action sociale) +3 ; dépôt récent (2024) +2 ; 2 permis autorisé(s) depuis moins de 3 ans, pas encore commencé(s) +2 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1",
+  "permis": [
+   {
+    "num_dau": "07835624E0005",
+    "fichier": "logements",
+    "annee_depot": "2024",
+    "commune": "MAGNY-LES-HAMEAUX",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": 16,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07835624E0005",
+    "fichier": "locaux",
+    "annee_depot": "2024",
+    "commune": "MAGNY-LES-HAMEAUX",
+    "etat": "autorisé",
+    "type_projet": "équipement d'action sociale",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 205
+   }
+  ]
+ },
+ {
+  "siren": "510469661",
+  "denomination": "COALLIA HABITAT",
+  "famille": "bailleur_social",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (bailleur_social) +2 ; projet médico-social (résidence sociale) +3 ; dépôt récent (2025) +2 ; 1 permis autorisé(s) depuis moins de 3 ans, pas encore commencé(s) +2 ; projet de taille significative (≥ 20 logements ou ≥ 1 000 m²) +1",
+  "permis": [
+   {
+    "num_dau": "0785862501046",
+    "fichier": "logements",
+    "annee_depot": "2025",
+    "commune": "SARTROUVILLE",
+    "etat": "autorisé",
+    "type_projet": "résidence sociale",
+    "logements_crees": 115,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07836119Y0036",
+    "fichier": "logements",
+    "annee_depot": "2019",
+    "commune": "MANTES-LA-JOLIE",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 180,
+    "surface_locaux_creee_m2": null
+   }
+  ]
+ },
+ {
+  "siren": "520223546",
+  "denomination": "LES PETITES CANAILLES",
+  "famille": "exploitant_sante_social",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (exploitant_sante_social) +2 ; projet médico-social (équipement d'action sociale) +3 ; dépôt assez récent (2023) +1",
+  "permis": [
+   {
+    "num_dau": "07837223G0012",
+    "fichier": "logements",
+    "annee_depot": "2023",
+    "commune": "MARLY-LE-ROI",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": 1,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07837223G0012",
+    "fichier": "locaux",
+    "annee_depot": "2023",
+    "commune": "MARLY-LE-ROI",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 0
+   },
+   {
+    "num_dau": "07855117Z0086",
+    "fichier": "locaux",
+    "annee_depot": "2017",
+    "commune": "SAINT-GERMAIN-EN-LAYE",
+    "etat": "autorisé",
+    "type_projet": "équipement d'action sociale",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 4
+   }
+  ]
+ },
+ {
+  "siren": "350394136",
+  "denomination": "FONDATION BRIGITTE BARDOT",
+  "famille": "association_ess",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (association_ess) +3 ; projet de taille significative (≥ 20 logements ou ≥ 1 000 m²) +1",
+  "permis": [
+   {
+    "num_dau": "07851817E0001",
+    "fichier": "logements",
+    "annee_depot": "2017",
+    "commune": "RENNEMOULIN",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": 10,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07851817E0002",
+    "fichier": "logements",
+    "annee_depot": "2017",
+    "commune": "RENNEMOULIN",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": 2,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07839712E0025",
+    "fichier": "logements",
+    "annee_depot": "2012",
+    "commune": "LE MESNIL ST DENIS",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": 48,
+    "surface_locaux_creee_m2": null
+   }
+  ]
+ },
+ {
+  "siren": "805920048",
+  "denomination": "SOCIETE ANONYME EURE ET LOIR HABITAT SOCIETE ANONYME D'HABITATIONS A LOYER MODERE",
+  "famille": "bailleur_social",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (bailleur_social) +2",
+  "permis": [
+   {
+    "num_dau": "07851618C0004",
+    "fichier": "logements",
+    "annee_depot": "2018",
+    "commune": "RAIZEUX",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 4,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07846413E0006",
+    "fichier": "logements",
+    "annee_depot": "2013",
+    "commune": "ORCEMONT",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 4,
+    "surface_locaux_creee_m2": null
+   }
+  ]
+ },
+ {
+  "siren": "775672272",
+  "denomination": "CROIX ROUGE FRANCAISE",
+  "famille": "association_ess",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (association_ess) +3 ; dépôt assez récent (2022) +1",
+  "permis": [
+   {
+    "num_dau": "07836122Y0027",
+    "fichier": "locaux",
+    "annee_depot": "2022",
+    "commune": "MANTES-LA-JOLIE",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 542
+   },
+   {
+    "num_dau": "07829721E0022",
+    "fichier": "locaux",
+    "annee_depot": "2021",
+    "commune": "GUYANCOURT",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 193
+   },
+   {
+    "num_dau": "07851321Y0011",
+    "fichier": "locaux",
+    "annee_depot": "2021",
+    "commune": "LA QUEUE LEZ YVELINES",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 0
+   },
+   {
+    "num_dau": "07851320Y0008",
+    "fichier": "logements",
+    "annee_depot": "2020",
+    "commune": "LA QUEUE LEZ YVELINES",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": 3,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07851320Y0008",
+    "fichier": "locaux",
+    "annee_depot": "2020",
+    "commune": "LA QUEUE LEZ YVELINES",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 0
+   }
+  ]
+ },
+ {
+  "siren": "340800754",
+  "denomination": "ASS L ARCHE D AIGREFOIN",
+  "famille": "association_ess",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (association_ess) +3 ; projet médico-social (résidence handicapés) +3 ; dépôt assez récent (2023) +1 ; 1 permis autorisé(s) depuis moins de 3 ans, pas encore commencé(s) +2 ; projet de taille significative (≥ 20 logements ou ≥ 1 000 m²) +1",
+  "permis": [
+   {
+    "num_dau": "07856123E0004",
+    "fichier": "locaux",
+    "annee_depot": "2023",
+    "commune": "SAINT LAMBERT",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 120
+   },
+   {
+    "num_dau": "0785612100001",
+    "fichier": "locaux",
+    "annee_depot": "2021",
+    "commune": "SAINT LAMBERT",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 143
+   },
+   {
+    "num_dau": "0785612000003",
+    "fichier": "locaux",
+    "annee_depot": "2020",
+    "commune": "SAINT LAMBERT",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 117
+   },
+   {
+    "num_dau": "07857520M0001",
+    "fichier": "locaux",
+    "annee_depot": "2020",
+    "commune": "SAINT-REMY-LES-CHEVREUSE",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 2
+   },
+   {
+    "num_dau": "0785611900003",
+    "fichier": "locaux",
+    "annee_depot": "2019",
+    "commune": "",
+    "etat": "annulé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 816
+   },
+   {
+    "num_dau": "07857515M0027",
+    "fichier": "logements",
+    "annee_depot": "2015",
+    "commune": "SAINT-REMY-LES-CHEVREUSE",
+    "etat": "terminé",
+    "type_projet": "résidence handicapés",
+    "logements_crees": 22,
+    "surface_locaux_creee_m2": null
+   }
+  ]
+ },
+ {
+  "siren": "775672165",
+  "denomination": "FONDATION LEOPOLD BELLAN",
+  "famille": "association_ess",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (association_ess) +3 ; projet médico-social (équipement de santé) +3 ; dépôt assez récent (2023) +1 ; projet de taille significative (≥ 20 logements ou ≥ 1 000 m²) +1",
+  "permis": [
+   {
+    "num_dau": "07861823T0003",
+    "fichier": "logements",
+    "annee_depot": "2023",
+    "commune": "TILLY",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": 2,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "0783542300002",
+    "fichier": "locaux",
+    "annee_depot": "2023",
+    "commune": "MAGNANVILLE",
+    "etat": "terminé",
+    "type_projet": "équipement de santé",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 5787
+   },
+   {
+    "num_dau": "07859123M0007",
+    "fichier": "locaux",
+    "annee_depot": "2023",
+    "commune": "SEPTEUIL",
+    "etat": "terminé",
+    "type_projet": "équipement de santé",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 22
+   },
+   {
+    "num_dau": "07841819G1025",
+    "fichier": "locaux",
+    "annee_depot": "2019",
+    "commune": "MONTESSON",
+    "etat": "terminé",
+    "type_projet": "équipement de santé",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 237
+   },
+   {
+    "num_dau": "07861819T0004",
+    "fichier": "locaux",
+    "annee_depot": "2019",
+    "commune": "TILLY",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 94
+   }
+  ]
+ },
+ {
+  "siren": "578208878",
+  "denomination": "DOMEFI",
+  "famille": "bailleur_social",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (bailleur_social) +2 ; projet de taille significative (≥ 20 logements ou ≥ 1 000 m²) +1",
+  "permis": [
+   {
+    "num_dau": "07862121E0007",
+    "fichier": "logements",
+    "annee_depot": "2021",
+    "commune": "TRAPPES",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 40,
+    "surface_locaux_creee_m2": null
+   }
+  ]
+ },
+ {
+  "siren": "844905679",
+  "denomination": "CONFEDERATION ISLAMIQUE MILLI GORUS COMMUNE DE POISSY (CIMG-POISSY)",
+  "famille": "association_ess",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (association_ess) +3 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1",
+  "permis": [
+   {
+    "num_dau": "07864319Y0007",
+    "fichier": "logements",
+    "annee_depot": "2019",
+    "commune": "VERNOUILLET",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": 1,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07864319Y0007",
+    "fichier": "locaux",
+    "annee_depot": "2019",
+    "commune": "VERNOUILLET",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 485
+   }
+  ]
+ },
+ {
+  "siren": "785098294",
+  "denomination": "FONDATION ANNE DE GAULLE",
+  "famille": "association_ess",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (association_ess) +3 ; projet médico-social (résidence sociale, équipement de santé) +3 ; projet de taille significative (≥ 20 logements ou ≥ 1 000 m²) +1",
+  "permis": [
+   {
+    "num_dau": "07864618V0094",
+    "fichier": "logements",
+    "annee_depot": "2018",
+    "commune": "VERSAILLES",
+    "etat": "terminé",
+    "type_projet": "résidence sociale",
+    "logements_crees": 25,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07864616V0046",
+    "fichier": "locaux",
+    "annee_depot": "2016",
+    "commune": "VERSAILLES",
+    "etat": "autorisé",
+    "type_projet": "équipement de santé",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 62
+   },
+   {
+    "num_dau": "07864614V0145",
+    "fichier": "locaux",
+    "annee_depot": "2014",
+    "commune": "VERSAILLES",
+    "etat": "autorisé",
+    "type_projet": "équipement de santé",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 168
+   }
+  ]
+ },
+ {
+  "siren": "390392488",
+  "denomination": "ASS FONCIERE DE L'ILE DE FRANCE",
+  "famille": "association_ess",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (association_ess) +3 ; dépôt assez récent (2022) +1",
+  "permis": [
+   {
+    "num_dau": "07864622V0094",
+    "fichier": "logements",
+    "annee_depot": "2022",
+    "commune": "VERSAILLES",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": 1,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07864616V0034",
+    "fichier": "locaux",
+    "annee_depot": "2016",
+    "commune": "VERSAILLES",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 5
+   },
+   {
+    "num_dau": "07864615V0115",
+    "fichier": "locaux",
+    "annee_depot": "2015",
+    "commune": "VERSAILLES",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 109
+   }
+  ]
+ },
+ {
+  "siren": "304537525",
+  "denomination": "SEQENS SOLIDARITES SOCIETE ANONYME D'HABITATIONS A LOYER MODERE",
+  "famille": "bailleur_social",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (bailleur_social) +2 ; projet de taille significative (≥ 20 logements ou ≥ 1 000 m²) +1",
+  "permis": [
+   {
+    "num_dau": "07865021G0037",
+    "fichier": "logements",
+    "annee_depot": "2021",
+    "commune": "LE VESINET",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": 98,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07865021G0037",
+    "fichier": "locaux",
+    "annee_depot": "2021",
+    "commune": "LE VESINET",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 646
+   }
+  ]
+ },
+ {
+  "siren": "785039058",
+  "denomination": "AVENIR APEI",
+  "famille": "association_ess",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (association_ess) +3 ; projet médico-social (résidence handicapés, équipement d'action sociale, équipement de santé) +3 ; dépôt récent (2025) +2 ; 3 permis autorisé(s) depuis moins de 3 ans, pas encore commencé(s) +2",
+  "permis": [
+   {
+    "num_dau": "07865025G0014",
+    "fichier": "logements",
+    "annee_depot": "2025",
+    "commune": "LE VESINET",
+    "etat": "autorisé",
+    "type_projet": "résidence handicapés",
+    "logements_crees": 8,
+    "surface_locaux_creee_m2": null
+   },
+   {
+    "num_dau": "07812625G0014",
+    "fichier": "locaux",
+    "annee_depot": "2025",
+    "commune": "LA CELLE-SAINT-CLOUD",
+    "etat": "autorisé",
+    "type_projet": "équipement d'action sociale",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 564
+   },
+   {
+    "num_dau": "0784812500009",
+    "fichier": "locaux",
+    "annee_depot": "2025",
+    "commune": "LE PECQ",
+    "etat": "commencé",
+    "type_projet": "équipement d'action sociale",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 0
+   },
+   {
+    "num_dau": "07812624G0021",
+    "fichier": "locaux",
+    "annee_depot": "2024",
+    "commune": "LA CELLE-SAINT-CLOUD",
+    "etat": "autorisé",
+    "type_projet": "équipement d'action sociale",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 576
+   },
+   {
+    "num_dau": "0781722200052",
+    "fichier": "locaux",
+    "annee_depot": "2022",
+    "commune": "CONFLANS-SAINTE-HONORINE",
+    "etat": "terminé",
+    "type_projet": "équipement d'action sociale",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 20
+   },
+   {
+    "num_dau": "07812420G0011",
+    "fichier": "locaux",
+    "annee_depot": "2020",
+    "commune": "CARRIERES-SUR-SEINE",
+    "etat": "commencé",
+    "type_projet": "équipement de santé",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 634
+   },
+   {
+    "num_dau": "07812418G0011",
+    "fichier": "locaux",
+    "annee_depot": "2018",
+    "commune": "CARRIERES-SUR-SEINE",
+    "etat": "terminé",
+    "type_projet": "équipement d'action sociale",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 769
+   },
+   {
+    "num_dau": "07855117Z0078",
+    "fichier": "locaux",
+    "annee_depot": "2017",
+    "commune": "SAINT-GERMAIN-EN-LAYE",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 756
+   },
+   {
+    "num_dau": "07812416G0009",
+    "fichier": "locaux",
+    "annee_depot": "2016",
+    "commune": "CARRIERES SUR SEINE",
+    "etat": "annulé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 272
+   },
+   {
+    "num_dau": "07819016G0020",
+    "fichier": "locaux",
+    "annee_depot": "2016",
+    "commune": "CROISSY-SUR-SEINE",
+    "etat": "commencé",
+    "type_projet": "équipement de santé",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 116
+   }
+  ]
+ },
+ {
+  "siren": "538465808",
+  "denomination": "AUTISME EN YVELINES",
+  "famille": "association_ess",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (association_ess) +3 ; projet médico-social (équipement de santé) +3 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1 ; projet de taille significative (≥ 20 logements ou ≥ 1 000 m²) +1",
+  "permis": [
+   {
+    "num_dau": "07801016G0013",
+    "fichier": "locaux",
+    "annee_depot": "2016",
+    "commune": "LES ALLUETS-LE-ROI",
+    "etat": "commencé",
+    "type_projet": "équipement de santé",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 2440
+   }
+  ]
+ },
+ {
+  "siren": "829234251",
+  "denomination": "LES COLORIES",
+  "famille": "exploitant_sante_social",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (exploitant_sante_social) +2 ; projet médico-social (équipement d'action sociale) +3 ; dépôt assez récent (2022) +1 ; projet annulé récemment (besoin possible de sécurisation) +1",
+  "permis": [
+   {
+    "num_dau": "0780152200005",
+    "fichier": "locaux",
+    "annee_depot": "2022",
+    "commune": "ANDRESY",
+    "etat": "annulé",
+    "type_projet": "équipement d'action sociale",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 0
+   },
+   {
+    "num_dau": "0781232200013",
+    "fichier": "locaux",
+    "annee_depot": "2022",
+    "commune": "CARRIERES-SOUS-POISSY",
+    "etat": "commencé",
+    "type_projet": "équipement d'action sociale",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 96
+   },
+   {
+    "num_dau": "07835622E0003",
+    "fichier": "locaux",
+    "annee_depot": "2022",
+    "commune": "MAGNY-LES-HAMEAUX",
+    "etat": "terminé",
+    "type_projet": "équipement d'action sociale",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 46
+   },
+   {
+    "num_dau": "0781232100004",
+    "fichier": "locaux",
+    "annee_depot": "2021",
+    "commune": "CARRIERES-SOUS-POISSY",
+    "etat": "commencé",
+    "type_projet": "équipement d'action sociale",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 0
+   },
+   {
+    "num_dau": "07816521B0007",
+    "fichier": "locaux",
+    "annee_depot": "2021",
+    "commune": "LES CLAYES SOUS BOIS",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 7
+   },
+   {
+    "num_dau": "0782912100008",
+    "fichier": "locaux",
+    "annee_depot": "2021",
+    "commune": "GUERVILLE",
+    "etat": "autorisé",
+    "type_projet": "équipement d'action sociale",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 0
+   },
+   {
+    "num_dau": "07812318Y0010",
+    "fichier": "locaux",
+    "annee_depot": "2018",
+    "commune": "CARRIERES-SOUS-POISSY",
+    "etat": "autorisé",
+    "type_projet": "équipement d'action sociale",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 0
+   }
+  ]
+ },
+ {
+  "siren": "304425598",
+  "denomination": "APAJH COMITE DES YVELINES",
+  "famille": "association_ess",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (association_ess) +3 ; projet médico-social (équipement d'action sociale, équipement de santé) +3 ; dépôt récent (2024) +2",
+  "permis": [
+   {
+    "num_dau": "0780152400003",
+    "fichier": "locaux",
+    "annee_depot": "2024",
+    "commune": "ANDRESY",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 87
+   },
+   {
+    "num_dau": "07820824E0012",
+    "fichier": "locaux",
+    "annee_depot": "2024",
+    "commune": "ELANCOURT",
+    "etat": "commencé",
+    "type_projet": "équipement d'action sociale",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 97
+   },
+   {
+    "num_dau": "07858624G1051",
+    "fichier": "locaux",
+    "annee_depot": "2024",
+    "commune": "SARTROUVILLE",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 64
+   },
+   {
+    "num_dau": "07858624G1059",
+    "fichier": "locaux",
+    "annee_depot": "2024",
+    "commune": "SARTROUVILLE",
+    "etat": "commencé",
+    "type_projet": "équipement de santé",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 682
+   },
+   {
+    "num_dau": "07835619E0022",
+    "fichier": "locaux",
+    "annee_depot": "2019",
+    "commune": "MAGNY-LES-HAMEAUX",
+    "etat": "terminé",
+    "type_projet": "équipement d'action sociale",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 68
+   },
+   {
+    "num_dau": "07813813Y0030",
+    "fichier": "locaux",
+    "annee_depot": "2013",
+    "commune": "CHANTELOUP-LES-VIGNES",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 148
+   }
+  ]
+ },
+ {
+  "siren": "775666530",
+  "denomination": "SOC PHILANTHROPIQUE",
+  "famille": "association_ess",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (association_ess) +3 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1",
+  "permis": [
+   {
+    "num_dau": "0780431910003",
+    "fichier": "locaux",
+    "annee_depot": "2019",
+    "commune": "BAILLY",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 65
+   }
+  ]
+ },
+ {
+  "siren": "309206134",
+  "denomination": "ARAM ATELIERS RECH ARTIS ARTIST MAULDRE",
+  "famille": "association_ess",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (association_ess) +3 ; dépôt assez récent (2022) +1 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1",
+  "permis": [
+   {
+    "num_dau": "07805022Y0008",
+    "fichier": "locaux",
+    "annee_depot": "2022",
+    "commune": "BAZOCHES SUR GUYONNE",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 0
+   }
+  ]
+ },
+ {
+  "siren": "479182750",
+  "denomination": "PEOPLE AND BABY",
+  "famille": "exploitant_sante_social",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (exploitant_sante_social) +2 ; projet médico-social (équipement d'action sociale) +3",
+  "permis": [
+   {
+    "num_dau": "07806214Y0003",
+    "fichier": "locaux",
+    "annee_depot": "2014",
+    "commune": "BEYNES",
+    "etat": "autorisé",
+    "type_projet": "équipement d'action sociale",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 31
+   },
+   {
+    "num_dau": "07842314E0007",
+    "fichier": "locaux",
+    "annee_depot": "2014",
+    "commune": "MONTIGNY-LE-BRETONNEUX",
+    "etat": "terminé",
+    "type_projet": "équipement d'action sociale",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 4
+   },
+   {
+    "num_dau": "07864614V0041",
+    "fichier": "locaux",
+    "annee_depot": "2014",
+    "commune": "VERSAILLES",
+    "etat": "commencé",
+    "type_projet": "équipement d'action sociale",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 0
+   }
+  ]
+ },
+ {
+  "siren": "814590204",
+  "denomination": "LES VIGNERONS DE BEYNES",
+  "famille": "association_ess",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (association_ess) +3 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1",
+  "permis": [
+   {
+    "num_dau": "07806218B0010",
+    "fichier": "locaux",
+    "annee_depot": "2018",
+    "commune": "BEYNES",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 35
+   }
+  ]
+ },
+ {
+  "siren": "980929277",
+  "denomination": "JSMLC",
+  "famille": "exploitant_sante_social",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (exploitant_sante_social) +2 ; projet médico-social (équipement d'action sociale) +3 ; dépôt récent (2024) +2 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1",
+  "permis": [
+   {
+    "num_dau": "07808424Y0001",
+    "fichier": "locaux",
+    "annee_depot": "2024",
+    "commune": "BOISSY-SANS-AVOIR",
+    "etat": "terminé",
+    "type_projet": "équipement d'action sociale",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 0
+   }
+  ]
+ },
+ {
+  "siren": "380690511",
+  "denomination": "ASSOCIATION DELOS APEI 78",
+  "famille": "association_ess",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (association_ess) +3 ; projet médico-social (équipement de santé) +3 ; dépôt assez récent (2023) +1 ; projet de taille significative (≥ 20 logements ou ≥ 1 000 m²) +1",
+  "permis": [
+   {
+    "num_dau": "07849023E0010",
+    "fichier": "locaux",
+    "annee_depot": "2023",
+    "commune": "PLAISIR",
+    "etat": "commencé",
+    "type_projet": "équipement de santé",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 333
+   },
+   {
+    "num_dau": "07833521L0045",
+    "fichier": "locaux",
+    "annee_depot": "2021",
+    "commune": "LIMAY",
+    "etat": "commencé",
+    "type_projet": "équipement de santé",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 1035
+   },
+   {
+    "num_dau": "07862118E0008",
+    "fichier": "locaux",
+    "annee_depot": "2018",
+    "commune": "TRAPPES",
+    "etat": "commencé",
+    "type_projet": "équipement de santé",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 55
+   },
+   {
+    "num_dau": "07833517L0048",
+    "fichier": "locaux",
+    "annee_depot": "2017",
+    "commune": "LIMAY",
+    "etat": "autorisé",
+    "type_projet": "équipement de santé",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 1062
+   },
+   {
+    "num_dau": "0781041300001",
+    "fichier": "locaux",
+    "annee_depot": "2013",
+    "commune": "BREUIL-BOIS-ROBERT",
+    "etat": "commencé",
+    "type_projet": "équipement de santé",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 733
+   },
+   {
+    "num_dau": "0784901301032",
+    "fichier": "locaux",
+    "annee_depot": "2013",
+    "commune": "PLAISIR",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 56
+   }
+  ]
+ },
+ {
+  "siren": "775708746",
+  "denomination": "SAUVEGARDE ENFANCE ADOLESCENCE YVELINES",
+  "famille": "association_ess",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (association_ess) +3 ; projet médico-social (équipement d'action sociale, équipement de santé) +3 ; dépôt récent (2025) +2 ; 1 permis autorisé(s) depuis moins de 3 ans, pas encore commencé(s) +2",
+  "permis": [
+   {
+    "num_dau": "07844025Y0028",
+    "fichier": "locaux",
+    "annee_depot": "2025",
+    "commune": "LES MUREAUX",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 44
+   },
+   {
+    "num_dau": "07811723G0003",
+    "fichier": "locaux",
+    "annee_depot": "2023",
+    "commune": "BUC",
+    "etat": "commencé",
+    "type_projet": "équipement de santé",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 25
+   },
+   {
+    "num_dau": "0783612100022",
+    "fichier": "locaux",
+    "annee_depot": "2021",
+    "commune": "MANTES-LA-JOLIE",
+    "etat": "terminé",
+    "type_projet": "équipement d'action sociale",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 567
+   },
+   {
+    "num_dau": "07855119Z0061",
+    "fichier": "locaux",
+    "annee_depot": "2019",
+    "commune": "SAINT-GERMAIN-EN-LAYE",
+    "etat": "commencé",
+    "type_projet": "équipement d'action sociale",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 0
+   }
+  ]
+ },
+ {
+  "siren": "393964010",
+  "denomination": "ASSOCIATION AMICALE FRANCO TURQUE",
+  "famille": "association_ess",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (association_ess) +3 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1 ; projet de taille significative (≥ 20 logements ou ≥ 1 000 m²) +1",
+  "permis": [
+   {
+    "num_dau": "07812319Y0006",
+    "fichier": "locaux",
+    "annee_depot": "2019",
+    "commune": "",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 2725
+   },
+   {
+    "num_dau": "07812316Y0015",
+    "fichier": "locaux",
+    "annee_depot": "2016",
+    "commune": "CARRIERES-SOUS-POISSY",
+    "etat": "annulé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 3090
+   }
+  ]
+ },
+ {
+  "siren": "880738570",
+  "denomination": "ALEF BETH CHAOUL",
+  "famille": "association_ess",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (association_ess) +3 ; dépôt récent (2025) +2 ; 2 permis autorisé(s) depuis moins de 3 ans, pas encore commencé(s) +2 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1",
+  "permis": [
+   {
+    "num_dau": "07812625G0001",
+    "fichier": "locaux",
+    "annee_depot": "2025",
+    "commune": "",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 256
+   },
+   {
+    "num_dau": "07812625G0006",
+    "fichier": "locaux",
+    "annee_depot": "2025",
+    "commune": "LA CELLE-SAINT-CLOUD",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 704
+   }
+  ]
+ },
+ {
+  "siren": "487733891",
+  "denomination": "SAS MDF CHATEAU DE CHAMBOURCY",
+  "famille": "exploitant_sante_social",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (exploitant_sante_social) +2 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1 ; projet de taille significative (≥ 20 logements ou ≥ 1 000 m²) +1",
+  "permis": [
+   {
+    "num_dau": "07813317G0003",
+    "fichier": "locaux",
+    "annee_depot": "2017",
+    "commune": "CHAMBOURCY",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 3193
+   }
+  ]
+ },
+ {
+  "siren": "803045921",
+  "denomination": "POUSSIN & CHATON",
+  "famille": "exploitant_sante_social",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (exploitant_sante_social) +2 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1",
+  "permis": [
+   {
+    "num_dau": "0781402100002",
+    "fichier": "locaux",
+    "annee_depot": "2021",
+    "commune": "CHAPET",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 123
+   }
+  ]
+ },
+ {
+  "siren": "402443816",
+  "denomination": "ASS MTO SHAHMAGHSOUDI",
+  "famille": "association_ess",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (association_ess) +3 ; dépôt assez récent (2023) +1 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1",
+  "permis": [
+   {
+    "num_dau": "07814623G1031",
+    "fichier": "locaux",
+    "annee_depot": "2023",
+    "commune": "CHATOU",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 9
+   }
+  ]
+ },
+ {
+  "siren": "775672462",
+  "denomination": "ASSOC ENTRAIDE UNIVERSITAIRE",
+  "famille": "association_ess",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (association_ess) +3 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1",
+  "permis": [
+   {
+    "num_dau": "07816515B1019",
+    "fichier": "locaux",
+    "annee_depot": "2015",
+    "commune": "LES CLAYES SOUS BOIS",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 175
+   }
+  ]
+ },
+ {
+  "siren": "828341982",
+  "denomination": "BULAPI & ONIDOO - LCSB",
+  "famille": "exploitant_sante_social",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (exploitant_sante_social) +2 ; projet médico-social (équipement d'action sociale) +3 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1",
+  "permis": [
+   {
+    "num_dau": "07816517B1013",
+    "fichier": "locaux",
+    "annee_depot": "2017",
+    "commune": "LES CLAYES SOUS BOIS",
+    "etat": "terminé",
+    "type_projet": "équipement d'action sociale",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 0
+   }
+  ]
+ },
+ {
+  "siren": "332468032",
+  "denomination": "ACTIONS ET RESSOURCES POUR L'INSERTION SOCIALE PAR LE SOIN ET L'EDUCATION",
+  "famille": "association_ess",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (association_ess) +3 ; projet médico-social (équipement d'action sociale, équipement de santé) +3 ; dépôt récent (2024) +2",
+  "permis": [
+   {
+    "num_dau": "07829724E0004",
+    "fichier": "locaux",
+    "annee_depot": "2024",
+    "commune": "GUYANCOURT",
+    "etat": "commencé",
+    "type_projet": "équipement de santé",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 527
+   },
+   {
+    "num_dau": "0783612200001",
+    "fichier": "locaux",
+    "annee_depot": "2022",
+    "commune": "MANTES-LA-JOLIE",
+    "etat": "commencé",
+    "type_projet": "équipement de santé",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 475
+   },
+   {
+    "num_dau": "07816521B1024",
+    "fichier": "locaux",
+    "annee_depot": "2021",
+    "commune": "LES CLAYES-SOUS-BOIS",
+    "etat": "annulé",
+    "type_projet": "équipement de santé",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 400
+   },
+   {
+    "num_dau": "07829713E0013",
+    "fichier": "locaux",
+    "annee_depot": "2013",
+    "commune": "GUYANCOURT",
+    "etat": "autorisé",
+    "type_projet": "équipement d'action sociale",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 47
+   }
+  ]
+ },
+ {
+  "siren": "931154785",
+  "denomination": "HTBY 2",
+  "famille": "exploitant_sante_social",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (exploitant_sante_social) +2 ; projet médico-social (équipement d'action sociale) +3 ; dépôt récent (2024) +2 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1",
+  "permis": [
+   {
+    "num_dau": "07816524B0010",
+    "fichier": "locaux",
+    "annee_depot": "2024",
+    "commune": "CLAYESSOUSBOIS",
+    "etat": "commencé",
+    "type_projet": "équipement d'action sociale",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 0
+   }
+  ]
+ },
+ {
+  "siren": "942215757",
+  "denomination": "ASSOCIATION ECHANGE ET PARTAGE LES CLAYES - VILLEPREUX",
+  "famille": "association_ess",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (association_ess) +3 ; dépôt récent (2025) +2 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1",
+  "permis": [
+   {
+    "num_dau": "0781652500028",
+    "fichier": "locaux",
+    "annee_depot": "2025",
+    "commune": "CLAYESSOUSBOIS",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 0
+   }
+  ]
+ },
+ {
+  "siren": "453456014",
+  "denomination": "CRECHES DE FRANCE",
+  "famille": "exploitant_sante_social",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (exploitant_sante_social) +2 ; projet médico-social (équipement d'action sociale) +3 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1",
+  "permis": [
+   {
+    "num_dau": "07816817E0003",
+    "fichier": "locaux",
+    "annee_depot": "2017",
+    "commune": "COIGNIERES",
+    "etat": "terminé",
+    "type_projet": "équipement d'action sociale",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 0
+   }
+  ]
+ },
+ {
+  "siren": "841037161",
+  "denomination": "LA MAISON DES PLUS PETITS",
+  "famille": "association_ess",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (association_ess) +3 ; projet médico-social (équipement de santé) +3 ; dépôt assez récent (2023) +1 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1",
+  "permis": [
+   {
+    "num_dau": "07816823E0002",
+    "fichier": "locaux",
+    "annee_depot": "2023",
+    "commune": "COIGNIERES",
+    "etat": "autorisé",
+    "type_projet": "équipement de santé",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 28
+   }
+  ]
+ },
+ {
+  "siren": "842441982",
+  "denomination": "ASSOCIATION VIVRE ENSEMBLE NOS CULTURES A COIGNIERES  (AVECC)",
+  "famille": "association_ess",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (association_ess) +3 ; dépôt assez récent (2023) +1 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1",
+  "permis": [
+   {
+    "num_dau": "07816823E0006",
+    "fichier": "locaux",
+    "annee_depot": "2023",
+    "commune": "COIGNIERES",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 619
+   }
+  ]
+ },
+ {
+  "siren": "389270349",
+  "denomination": "SNC CLEMENCEAU",
+  "famille": "exploitant_sante_social",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (exploitant_sante_social) +2 ; projet médico-social (équipement de santé) +3 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1",
+  "permis": [
+   {
+    "num_dau": "0786422100021",
+    "fichier": "locaux",
+    "annee_depot": "2021",
+    "commune": "VERNEUIL-SUR-SEINE",
+    "etat": "commencé",
+    "type_projet": "équipement de santé",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 90
+   },
+   {
+    "num_dau": "0781721500057",
+    "fichier": "locaux",
+    "annee_depot": "2015",
+    "commune": "CONFLANS STE HONORINE",
+    "etat": "commencé",
+    "type_projet": "équipement de santé",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 131
+   }
+  ]
+ },
+ {
+  "siren": "427986518",
+  "denomination": "ASS  ZONE ACTIVITE DU PETIT PARC -AZAP-",
+  "famille": "association_ess",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (association_ess) +3 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1",
+  "permis": [
+   {
+    "num_dau": "07820613M0005",
+    "fichier": "locaux",
+    "annee_depot": "2013",
+    "commune": "ECQUEVILLY",
+    "etat": "annulé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 275
+   }
+  ]
+ },
+ {
+  "siren": "910011477",
+  "denomination": "LES P'TITES FOURMIS",
+  "famille": "exploitant_sante_social",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (exploitant_sante_social) +2 ; projet médico-social (équipement d'action sociale) +3 ; dépôt assez récent (2022) +1 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1",
+  "permis": [
+   {
+    "num_dau": "0782062200008",
+    "fichier": "locaux",
+    "annee_depot": "2022",
+    "commune": "ECQUEVILLY",
+    "etat": "autorisé",
+    "type_projet": "équipement d'action sociale",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 49
+   }
+  ]
+ },
+ {
+  "siren": "844513945",
+  "denomination": "LOVELY 6 BB SAS",
+  "famille": "exploitant_sante_social",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (exploitant_sante_social) +2 ; projet médico-social (équipement d'action sociale) +3 ; dépôt assez récent (2022) +1 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1",
+  "permis": [
+   {
+    "num_dau": "0782342200001",
+    "fichier": "locaux",
+    "annee_depot": "2022",
+    "commune": "FLACOURT",
+    "etat": "autorisé",
+    "type_projet": "équipement d'action sociale",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 0
+   }
+  ]
+ },
+ {
+  "siren": "797545423",
+  "denomination": "FME SERVICES",
+  "famille": "exploitant_sante_social",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (exploitant_sante_social) +2 ; projet médico-social (équipement d'action sociale) +3 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1",
+  "permis": [
+   {
+    "num_dau": "07855115Z0012",
+    "fichier": "locaux",
+    "annee_depot": "2015",
+    "commune": "SAINT-GERMAIN-EN-LAYE",
+    "etat": "terminé",
+    "type_projet": "équipement d'action sociale",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 0
+   },
+   {
+    "num_dau": "07825114G0001",
+    "fichier": "locaux",
+    "annee_depot": "2014",
+    "commune": "FOURQUEUX",
+    "etat": "autorisé",
+    "type_projet": "équipement d'action sociale",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 15
+   }
+  ]
+ },
+ {
+  "siren": "438182453",
+  "denomination": "IMAGERIE MEDICALE SUD YVELINES",
+  "famille": "exploitant_sante_social",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (exploitant_sante_social) +2 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1",
+  "permis": [
+   {
+    "num_dau": "07826917C0006",
+    "fichier": "locaux",
+    "annee_depot": "2017",
+    "commune": "GAZERAN",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 668
+   }
+  ]
+ },
+ {
+  "siren": "447729880",
+  "denomination": "HESTIA 78",
+  "famille": "association_ess",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (association_ess) +3 ; projet médico-social (équipement d'action sociale, équipement de santé) +3 ; dépôt récent (2026) +2 ; 2 permis autorisé(s) depuis moins de 3 ans, pas encore commencé(s) +2",
+  "permis": [
+   {
+    "num_dau": "0785172600014",
+    "fichier": "locaux",
+    "annee_depot": "2026",
+    "commune": "RAMBOUILLET",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 36
+   },
+   {
+    "num_dau": "07826924C0003",
+    "fichier": "locaux",
+    "annee_depot": "2024",
+    "commune": "RAMBOUILLET",
+    "etat": "commencé",
+    "type_projet": "équipement de santé",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 798
+   },
+   {
+    "num_dau": "07867424E0001",
+    "fichier": "locaux",
+    "annee_depot": "2024",
+    "commune": "VILLEPREUX",
+    "etat": "autorisé",
+    "type_projet": "équipement d'action sociale",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 310
+   },
+   {
+    "num_dau": "07838021M0020",
+    "fichier": "locaux",
+    "annee_depot": "2021",
+    "commune": "MAULE",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 0
+   }
+  ]
+ },
+ {
+  "siren": "775666803",
+  "denomination": "FONDATION SOS VILLAGES D'ENFANTS",
+  "famille": "association_ess",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (association_ess) +3 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1",
+  "permis": [
+   {
+    "num_dau": "0782912000019",
+    "fichier": "locaux",
+    "annee_depot": "2020",
+    "commune": "GUERVILLE",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 0
+   },
+   {
+    "num_dau": "07849019E0030",
+    "fichier": "locaux",
+    "annee_depot": "2019",
+    "commune": "PLAISIR",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 0
+   }
+  ]
+ },
+ {
+  "siren": "390074193",
+  "denomination": "HANDI VAL DE SEINE ASSOCIATION DE GESTION",
+  "famille": "association_ess",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (association_ess) +3 ; projet médico-social (équipement de santé) +3 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1 ; projet de taille significative (≥ 20 logements ou ≥ 1 000 m²) +1 ; exploitant probable (haute) de « RESIDENCE ACCUEIL FLLAINVILLE-DENNEMONT », projet résidence sociale déposé par LOGEMENT FRANCILIEN (permis 07823913Y0005) +3",
+  "permis": [
+   {
+    "num_dau": "0782992000006",
+    "fichier": "locaux",
+    "annee_depot": "2020",
+    "commune": "HARDRICOURT",
+    "etat": "terminé",
+    "type_projet": "équipement de santé",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 2634
+   },
+   {
+    "num_dau": "07833516L0027",
+    "fichier": "locaux",
+    "annee_depot": "2016",
+    "commune": "LIMAY",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 77
+   },
+   {
+    "num_dau": "07823913Y0005",
+    "fichier": "logements",
+    "annee_depot": "2013",
+    "commune": "FOLLAINVILLE-DENNEMONT",
+    "etat": "terminé",
+    "type_projet": "résidence sociale",
+    "logements_crees": 30,
+    "surface_locaux_creee_m2": null,
+    "depose_par": "LOGEMENT FRANCILIEN"
+   }
+  ]
+ },
+ {
+  "siren": "791733504",
+  "denomination": "ASSOCIATION AVICENNE EDUCATION",
+  "famille": "association_ess",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (association_ess) +3 ; dépôt récent (2024) +2 ; 1 permis autorisé(s) depuis moins de 3 ans, pas encore commencé(s) +2 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1",
+  "permis": [
+   {
+    "num_dau": "07833524L0006",
+    "fichier": "locaux",
+    "annee_depot": "2024",
+    "commune": "LIMAY",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 213
+   }
+  ]
+ },
+ {
+  "siren": "420855553",
+  "denomination": "SERIENCE SOINS DE SUITE ET DE READAPTATION",
+  "famille": "exploitant_sante_social",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (exploitant_sante_social) +2 ; projet médico-social (équipement de santé) +3 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1",
+  "permis": [
+   {
+    "num_dau": "07835019G0106",
+    "fichier": "locaux",
+    "annee_depot": "2019",
+    "commune": "LOUVECIENNES",
+    "etat": "commencé",
+    "type_projet": "équipement de santé",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 220
+   }
+  ]
+ },
+ {
+  "siren": "832043277",
+  "denomination": "MCM",
+  "famille": "exploitant_sante_social",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (exploitant_sante_social) +2 ; projet médico-social (équipement d'action sociale) +3 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1",
+  "permis": [
+   {
+    "num_dau": "07835417Y0003",
+    "fichier": "locaux",
+    "annee_depot": "2017",
+    "commune": "MAGNANVILLE",
+    "etat": "commencé",
+    "type_projet": "équipement d'action sociale",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 20
+   }
+  ]
+ },
+ {
+  "siren": "320204530",
+  "denomination": "ENSEMBLE SCOLAIRE TERRE ET AVENIR",
+  "famille": "association_ess",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (association_ess) +3 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1",
+  "permis": [
+   {
+    "num_dau": "0783541800004",
+    "fichier": "locaux",
+    "annee_depot": "2018",
+    "commune": "MAGNANVILLE",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 582
+   }
+  ]
+ },
+ {
+  "siren": "884298035",
+  "denomination": "FERME ECOLE GRAINES D'AVENIR",
+  "famille": "association_ess",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (association_ess) +3 ; dépôt assez récent (2023) +1 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1",
+  "permis": [
+   {
+    "num_dau": "07835623E0005",
+    "fichier": "locaux",
+    "annee_depot": "2023",
+    "commune": "MAGNY-LES-HAMEAUX",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 0
+   }
+  ]
+ },
+ {
+  "siren": "589806207",
+  "denomination": "CASTEL FLEURI",
+  "famille": "exploitant_sante_social",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (exploitant_sante_social) +2 ; projet médico-social (équipement de santé) +3 ; dépôt assez récent (2022) +1 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1",
+  "permis": [
+   {
+    "num_dau": "0783582210039",
+    "fichier": "locaux",
+    "annee_depot": "2022",
+    "commune": "MAISONS-LAFFITTE",
+    "etat": "autorisé",
+    "type_projet": "équipement de santé",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 369
+   }
+  ]
+ },
+ {
+  "siren": "830926101",
+  "denomination": "CRECHE BIBOU",
+  "famille": "exploitant_sante_social",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (exploitant_sante_social) +2 ; projet médico-social (équipement d'action sociale) +3 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1",
+  "permis": [
+   {
+    "num_dau": "07836117Y0021",
+    "fichier": "locaux",
+    "annee_depot": "2017",
+    "commune": "MANTES-LA-JOLIE",
+    "etat": "terminé",
+    "type_projet": "équipement d'action sociale",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 0
+   }
+  ]
+ },
+ {
+  "siren": "814869236",
+  "denomination": "OXENCE",
+  "famille": "exploitant_sante_social",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (exploitant_sante_social) +2 ; projet médico-social (équipement d'action sociale) +3 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1",
+  "permis": [
+   {
+    "num_dau": "0783621600001",
+    "fichier": "locaux",
+    "annee_depot": "2016",
+    "commune": "MANTES-LA-VILLE",
+    "etat": "terminé",
+    "type_projet": "équipement d'action sociale",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 0
+   }
+  ]
+ },
+ {
+  "siren": "785121294",
+  "denomination": "VIVRE ENSEMBLE",
+  "famille": "association_ess",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (association_ess) +3 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1",
+  "permis": [
+   {
+    "num_dau": "07836713G0008",
+    "fichier": "locaux",
+    "annee_depot": "2013",
+    "commune": "MAREIL-MARLY",
+    "etat": "annulé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 790
+   }
+  ]
+ },
+ {
+  "siren": "786950329",
+  "denomination": "LOGIRYS STE ANONYME D'HABITATION A LOYER MODERE",
+  "famille": "bailleur_social",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (bailleur_social) +2 ; projet médico-social (équipement de santé) +3 ; projet de taille significative (≥ 20 logements ou ≥ 1 000 m²) +1",
+  "permis": [
+   {
+    "num_dau": "07838016M0010",
+    "fichier": "locaux",
+    "annee_depot": "2016",
+    "commune": "",
+    "etat": "commencé",
+    "type_projet": "équipement de santé",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 6050
+   }
+  ]
+ },
+ {
+  "siren": "890089824",
+  "denomination": "ASSOCIATION LA VALLEE DE LA MILLIERE",
+  "famille": "association_ess",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (association_ess) +3 ; dépôt assez récent (2023) +1 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1",
+  "permis": [
+   {
+    "num_dau": "07839823Y0002",
+    "fichier": "locaux",
+    "annee_depot": "2023",
+    "commune": "LES MESNULS",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 29
+   }
+  ]
+ },
+ {
+  "siren": "775676349",
+  "denomination": "FONDATION L ELAN RETROUVE",
+  "famille": "association_ess",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (association_ess) +3 ; projet médico-social (équipement de santé) +3 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1",
+  "permis": [
+   {
+    "num_dau": "0784012000011",
+    "fichier": "locaux",
+    "annee_depot": "2020",
+    "commune": "MEULAN",
+    "etat": "commencé",
+    "type_projet": "équipement de santé",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 941
+   }
+  ]
+ },
+ {
+  "siren": "530342740",
+  "denomination": "FONDATION DES AMIS DE L'ATELIER",
+  "famille": "association_ess",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (association_ess) +3 ; projet médico-social (équipement de santé) +3 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1 ; projet de taille significative (≥ 20 logements ou ≥ 1 000 m²) +1",
+  "permis": [
+   {
+    "num_dau": "07844018Y0034",
+    "fichier": "locaux",
+    "annee_depot": "2018",
+    "commune": "LES MUREAUX",
+    "etat": "terminé",
+    "type_projet": "équipement de santé",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 9587
+   }
+  ]
+ },
+ {
+  "siren": "750557779",
+  "denomination": "INSERTION SOLIDARITE AUTONOMIE",
+  "famille": "association_ess",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (association_ess) +3 ; projet médico-social (équipement d'action sociale) +3 ; dépôt récent (2026) +2 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1",
+  "permis": [
+   {
+    "num_dau": "07844026M0001",
+    "fichier": "locaux",
+    "annee_depot": "2026",
+    "commune": "LES MUREAUX",
+    "etat": "commencé",
+    "type_projet": "équipement d'action sociale",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 0
+   }
+  ]
+ },
+ {
+  "siren": "933141350",
+  "denomination": "ENTRAIDE FRANCE-TURQUIE, EDUCATION, AVENIR DE LA JEUNESSE",
+  "famille": "association_ess",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (association_ess) +3 ; dépôt récent (2026) +2 ; 1 permis autorisé(s) depuis moins de 3 ans, pas encore commencé(s) +2 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1",
+  "permis": [
+   {
+    "num_dau": "07844026Y0003",
+    "fichier": "locaux",
+    "annee_depot": "2026",
+    "commune": "LES MUREAUX",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 110
+   }
+  ]
+ },
+ {
+  "siren": "802949230",
+  "denomination": "BABY VILLAGE DU VEXIN",
+  "famille": "exploitant_sante_social",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (exploitant_sante_social) +2 ; projet médico-social (équipement d'action sociale) +3 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1",
+  "permis": [
+   {
+    "num_dau": "07846014M0007",
+    "fichier": "locaux",
+    "annee_depot": "2014",
+    "commune": "OINVILLE-SUR-MONTCIENT",
+    "etat": "commencé",
+    "type_projet": "équipement d'action sociale",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 0
+   }
+  ]
+ },
+ {
+  "siren": "524480191",
+  "denomination": "LA RONDE DES DOUDOUS",
+  "famille": "association_ess",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (association_ess) +3 ; projet médico-social (équipement d'action sociale) +3",
+  "permis": [
+   {
+    "num_dau": "07846617Y0073",
+    "fichier": "locaux",
+    "annee_depot": "2017",
+    "commune": "ORGEVAL",
+    "etat": "commencé",
+    "type_projet": "équipement d'action sociale",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 239
+   },
+   {
+    "num_dau": "07849817Y0006",
+    "fichier": "locaux",
+    "annee_depot": "2017",
+    "commune": "POISSY",
+    "etat": "commencé",
+    "type_projet": "équipement d'action sociale",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 63
+   },
+   {
+    "num_dau": "07846614Y0083",
+    "fichier": "locaux",
+    "annee_depot": "2014",
+    "commune": "ORGEVAL",
+    "etat": "autorisé",
+    "type_projet": "équipement d'action sociale",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 243
+   }
+  ]
+ },
+ {
+  "siren": "525068649",
+  "denomination": "DOMA",
+  "famille": "exploitant_sante_social",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (exploitant_sante_social) +2 ; projet médico-social (équipement d'action sociale) +3 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1",
+  "permis": [
+   {
+    "num_dau": "0784901501031",
+    "fichier": "locaux",
+    "annee_depot": "2015",
+    "commune": "PLAISIR",
+    "etat": "commencé",
+    "type_projet": "équipement d'action sociale",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 0
+   }
+  ]
+ },
+ {
+  "siren": "775685506",
+  "denomination": "JEUNESSE CULTURE LOISIRS TECHNIQUE",
+  "famille": "association_ess",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (association_ess) +3 ; projet médico-social (équipement d'action sociale) +3 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1",
+  "permis": [
+   {
+    "num_dau": "0784901601009",
+    "fichier": "locaux",
+    "annee_depot": "2016",
+    "commune": "PLAISIR",
+    "etat": "terminé",
+    "type_projet": "équipement d'action sociale",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 0
+   }
+  ]
+ },
+ {
+  "siren": "775691991",
+  "denomination": "SOCIETE PROTECTRICE DES ANIMAUX",
+  "famille": "association_ess",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (association_ess) +3 ; dépôt récent (2026) +2 ; 1 permis autorisé(s) depuis moins de 3 ans, pas encore commencé(s) +2 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1",
+  "permis": [
+   {
+    "num_dau": "07849026E0006",
+    "fichier": "locaux",
+    "annee_depot": "2026",
+    "commune": "PLAISIR",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 22
+   }
+  ]
+ },
+ {
+  "siren": "788545879",
+  "denomination": "MOD2GARDE",
+  "famille": "association_ess",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (association_ess) +3 ; projet médico-social (équipement d'action sociale) +3 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1",
+  "permis": [
+   {
+    "num_dau": "07849816Y0012",
+    "fichier": "locaux",
+    "annee_depot": "2016",
+    "commune": "POISSY",
+    "etat": "commencé",
+    "type_projet": "équipement d'action sociale",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 0
+   }
+  ]
+ },
+ {
+  "siren": "403706807",
+  "denomination": "ASSOCIATION LES CHEMINS DE L'EVEIL",
+  "famille": "association_ess",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (association_ess) +3 ; projet médico-social (équipement de santé) +3 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1",
+  "permis": [
+   {
+    "num_dau": "07849819Y0006",
+    "fichier": "locaux",
+    "annee_depot": "2019",
+    "commune": "POISSY",
+    "etat": "autorisé",
+    "type_projet": "équipement de santé",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 603
+   },
+   {
+    "num_dau": "07855116Z0030",
+    "fichier": "locaux",
+    "annee_depot": "2016",
+    "commune": "SAINT-GERMAIN-EN-LAYE",
+    "etat": "terminé",
+    "type_projet": "équipement de santé",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 694
+   }
+  ]
+ },
+ {
+  "siren": "843651753",
+  "denomination": "ESPERANCE BANLIEUES POISSY",
+  "famille": "association_ess",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (association_ess) +3 ; dépôt récent (2024) +2 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1",
+  "permis": [
+   {
+    "num_dau": "07849824Y0028",
+    "fichier": "locaux",
+    "annee_depot": "2024",
+    "commune": "POISSY",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 56
+   }
+  ]
+ },
+ {
+  "siren": "431749548",
+  "denomination": "VISION EDUCATION CHRETIENNE",
+  "famille": "association_ess",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (association_ess) +3 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1",
+  "permis": [
+   {
+    "num_dau": "0785011900025",
+    "fichier": "locaux",
+    "annee_depot": "2019",
+    "commune": "PORCHEVILLE",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 74
+   }
+  ]
+ },
+ {
+  "siren": "819528639",
+  "denomination": "MCV",
+  "famille": "exploitant_sante_social",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (exploitant_sante_social) +2 ; projet médico-social (équipement d'action sociale) +3 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1",
+  "permis": [
+   {
+    "num_dau": "07851317Y0023",
+    "fichier": "locaux",
+    "annee_depot": "2017",
+    "commune": "LA QUEUE LEZ YVELINES",
+    "etat": "commencé",
+    "type_projet": "équipement d'action sociale",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 26
+   }
+  ]
+ },
+ {
+  "siren": "820301711",
+  "denomination": "OURSONS ET CIE",
+  "famille": "exploitant_sante_social",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (exploitant_sante_social) +2 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1",
+  "permis": [
+   {
+    "num_dau": "07851718R1021",
+    "fichier": "locaux",
+    "annee_depot": "2018",
+    "commune": "RAMBOUILLET",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 0
+   }
+  ]
+ },
+ {
+  "siren": "842952244",
+  "denomination": "LA CENSE FONDS DE DOTATION",
+  "famille": "association_ess",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (association_ess) +3 ; dépôt récent (2025) +2 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1 ; projet de taille significative (≥ 20 logements ou ≥ 1 000 m²) +1",
+  "permis": [
+   {
+    "num_dau": "07852225C0003",
+    "fichier": "locaux",
+    "annee_depot": "2025",
+    "commune": "ROCHEFORT-EN-YVELINES",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 2856
+   }
+  ]
+ },
+ {
+  "siren": "528570229",
+  "denomination": "LPCR GROUPE",
+  "famille": "exploitant_sante_social",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (exploitant_sante_social) +2 ; projet médico-social (équipement d'action sociale) +3 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1",
+  "permis": [
+   {
+    "num_dau": "0785241700003",
+    "fichier": "locaux",
+    "annee_depot": "2017",
+    "commune": "ROCQUENCOURT",
+    "etat": "autorisé",
+    "type_projet": "équipement d'action sociale",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 0
+   }
+  ]
+ },
+ {
+  "siren": "305405045",
+  "denomination": "AFTRAL",
+  "famille": "association_ess",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (association_ess) +3 ; dépôt assez récent (2023) +1 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1",
+  "permis": [
+   {
+    "num_dau": "0785312300037",
+    "fichier": "locaux",
+    "annee_depot": "2023",
+    "commune": "ROSNY-SUR-SEINE",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 151
+   }
+  ]
+ },
+ {
+  "siren": "785123936",
+  "denomination": "MAISON RETRAITE RELIGIEUSES AUGUSTINES",
+  "famille": "association_ess",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (association_ess) +3 ; projet médico-social (équipement de santé) +3 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1 ; projet de taille significative (≥ 20 logements ou ≥ 1 000 m²) +1",
+  "permis": [
+   {
+    "num_dau": "07855120Z0070",
+    "fichier": "locaux",
+    "annee_depot": "2020",
+    "commune": "SAINT-GERMAIN-EN-LAYE",
+    "etat": "terminé",
+    "type_projet": "équipement de santé",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 2191
+   }
+  ]
+ },
+ {
+  "siren": "401251566",
+  "denomination": "ORPEA",
+  "famille": "exploitant_sante_social",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (exploitant_sante_social) +2 ; projet médico-social (équipement de santé) +3",
+  "permis": [
+   {
+    "num_dau": "07857516M0023",
+    "fichier": "locaux",
+    "annee_depot": "2016",
+    "commune": "SAINT-REMY-LES-CHEVREUSE",
+    "etat": "commencé",
+    "type_projet": "équipement de santé",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 70
+   },
+   {
+    "num_dau": "07857515M0030",
+    "fichier": "locaux",
+    "annee_depot": "2015",
+    "commune": "SAINT-REMY-LES-CHEVREUSE",
+    "etat": "terminé",
+    "type_projet": "équipement de santé",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 411
+   },
+   {
+    "num_dau": "07857515M0036",
+    "fichier": "locaux",
+    "annee_depot": "2015",
+    "commune": "SAINT-REMY-LES-CHEVREUSE",
+    "etat": "annulé",
+    "type_projet": "équipement de santé",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 40
+   }
+  ]
+ },
+ {
+  "siren": "800014425",
+  "denomination": "COCCINELLE ET PAPILLON",
+  "famille": "exploitant_sante_social",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (exploitant_sante_social) +2 ; projet médico-social (équipement d'action sociale) +3 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1",
+  "permis": [
+   {
+    "num_dau": "07858617G1056",
+    "fichier": "locaux",
+    "annee_depot": "2017",
+    "commune": "SARTROUVILLE",
+    "etat": "commencé",
+    "type_projet": "équipement d'action sociale",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 0
+   }
+  ]
+ },
+ {
+  "siren": "775708183",
+  "denomination": "ASS POUR INSERTION EDUCATION ET SOINS",
+  "famille": "association_ess",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (association_ess) +3 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1",
+  "permis": [
+   {
+    "num_dau": "07862118E0015",
+    "fichier": "locaux",
+    "annee_depot": "2018",
+    "commune": "TRAPPES",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 102
+   },
+   {
+    "num_dau": "07862115E0018",
+    "fichier": "locaux",
+    "annee_depot": "2015",
+    "commune": "TRAPPES",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 346
+   }
+  ]
+ },
+ {
+  "siren": "310227673",
+  "denomination": "HOPITAL PRIVE DE L'OUEST PARISIEN",
+  "famille": "exploitant_sante_social",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (exploitant_sante_social) +2 ; projet médico-social (équipement de santé) +3 ; dépôt assez récent (2023) +1",
+  "permis": [
+   {
+    "num_dau": "07862123E0013",
+    "fichier": "locaux",
+    "annee_depot": "2023",
+    "commune": "TRAPPES",
+    "etat": "terminé",
+    "type_projet": "équipement de santé",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 81
+   },
+   {
+    "num_dau": "07862122E0015",
+    "fichier": "locaux",
+    "annee_depot": "2022",
+    "commune": "TRAPPES",
+    "etat": "autorisé",
+    "type_projet": "équipement de santé",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 185
+   },
+   {
+    "num_dau": "07862118E0018",
+    "fichier": "locaux",
+    "annee_depot": "2018",
+    "commune": "TRAPPES",
+    "etat": "commencé",
+    "type_projet": "équipement de santé",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 178
+   }
+  ]
+ },
+ {
+  "siren": "494969116",
+  "denomination": "FONDATION JEAN POUPELAIN",
+  "famille": "association_ess",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (association_ess) +3 ; dépôt assez récent (2023) +1 ; 1 permis autorisé(s) depuis moins de 3 ans, pas encore commencé(s) +2 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1",
+  "permis": [
+   {
+    "num_dau": "07862123E0019",
+    "fichier": "locaux",
+    "annee_depot": "2023",
+    "commune": "TRAPPES",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 62
+   }
+  ]
+ },
+ {
+  "siren": "785104563",
+  "denomination": "CPO FC CENTRE DE FORMATION PROFESIONNELLE CONTINUE",
+  "famille": "association_ess",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (association_ess) +3 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1",
+  "permis": [
+   {
+    "num_dau": "07862414Y0020",
+    "fichier": "locaux",
+    "annee_depot": "2014",
+    "commune": "TRIEL-SUR-SEINE",
+    "etat": "annulé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 230
+   }
+  ]
+ },
+ {
+  "siren": "785136557",
+  "denomination": "FACULTE LIBRE DE THEOLOGIE EVANGELIQUE",
+  "famille": "association_ess",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (association_ess) +3 ; dépôt assez récent (2022) +1 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1 ; projet de taille significative (≥ 20 logements ou ≥ 1 000 m²) +1",
+  "permis": [
+   {
+    "num_dau": "0786382200037",
+    "fichier": "locaux",
+    "annee_depot": "2022",
+    "commune": "VAUX-SUR-SEINE",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 657
+   },
+   {
+    "num_dau": "07863817M0040",
+    "fichier": "locaux",
+    "annee_depot": "2017",
+    "commune": "VAUX-SUR-SEINE",
+    "etat": "autorisé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 1085
+   }
+  ]
+ },
+ {
+  "siren": "808269708",
+  "denomination": "CHEMINS D'ESPERANCE",
+  "famille": "association_ess",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (association_ess) +3 ; projet médico-social (équipement de santé) +3 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1 ; projet de taille significative (≥ 20 logements ou ≥ 1 000 m²) +1",
+  "permis": [
+   {
+    "num_dau": "07864020V1019",
+    "fichier": "locaux",
+    "annee_depot": "2020",
+    "commune": "VELIZY-VILLACOUBLAY",
+    "etat": "terminé",
+    "type_projet": "équipement de santé",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 6591
+   }
+  ]
+ },
+ {
+  "siren": "951272566",
+  "denomination": "AMBRE",
+  "famille": "exploitant_sante_social",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (exploitant_sante_social) +2 ; projet médico-social (équipement d'action sociale) +3 ; dépôt assez récent (2023) +1 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1",
+  "permis": [
+   {
+    "num_dau": "07864323V0006",
+    "fichier": "locaux",
+    "annee_depot": "2023",
+    "commune": "VERNOUILLET",
+    "etat": "autorisé",
+    "type_projet": "équipement d'action sociale",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 0
+   }
+  ]
+ },
+ {
+  "siren": "441921962",
+  "denomination": "MGEN UNION",
+  "famille": "association_ess",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (association_ess) +3 ; projet médico-social (équipement de santé) +3 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1 ; projet de taille significative (≥ 20 logements ou ≥ 1 000 m²) +1",
+  "permis": [
+   {
+    "num_dau": "07864416E0003",
+    "fichier": "locaux",
+    "annee_depot": "2016",
+    "commune": "LA VERRIERE",
+    "etat": "commencé",
+    "type_projet": "équipement de santé",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 36628
+   },
+   {
+    "num_dau": "07864416E0006",
+    "fichier": "locaux",
+    "annee_depot": "2016",
+    "commune": "LA VERRIERE",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 349
+   }
+  ]
+ },
+ {
+  "siren": "524979853",
+  "denomination": "IEED VEDECOM",
+  "famille": "association_ess",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (association_ess) +3 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1",
+  "permis": [
+   {
+    "num_dau": "07864618K0034",
+    "fichier": "locaux",
+    "annee_depot": "2018",
+    "commune": "VERSAILLES",
+    "etat": "annulé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 364
+   },
+   {
+    "num_dau": "07864615K0033",
+    "fichier": "locaux",
+    "annee_depot": "2015",
+    "commune": "VERSAILLES",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 0
+   }
+  ]
+ },
+ {
+  "siren": "428205587",
+  "denomination": "ASS DE BETHUNE",
+  "famille": "association_ess",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (association_ess) +3 ; projet médico-social (équipement d'action sociale) +3 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1 ; projet de taille significative (≥ 20 logements ou ≥ 1 000 m²) +1",
+  "permis": [
+   {
+    "num_dau": "07864616V0165",
+    "fichier": "locaux",
+    "annee_depot": "2016",
+    "commune": "VERSAILLES",
+    "etat": "terminé",
+    "type_projet": "équipement d'action sociale",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 1004
+   }
+  ]
+ },
+ {
+  "siren": "521504969",
+  "denomination": "FONDATION DIACONESSES DE REUILLY",
+  "famille": "association_ess",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (association_ess) +3 ; projet médico-social (équipement de santé) +3 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1 ; projet de taille significative (≥ 20 logements ou ≥ 1 000 m²) +1",
+  "permis": [
+   {
+    "num_dau": "07864619V0019",
+    "fichier": "locaux",
+    "annee_depot": "2019",
+    "commune": "VERSAILLES",
+    "etat": "autorisé",
+    "type_projet": "équipement de santé",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 2594
+   }
+  ]
+ },
+ {
+  "siren": "452382369",
+  "denomination": "ASSOCIATION DU GRAND MONTREUIL",
+  "famille": "association_ess",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (association_ess) +3 ; dépôt assez récent (2022) +1 ; projet de taille significative (≥ 20 logements ou ≥ 1 000 m²) +1",
+  "permis": [
+   {
+    "num_dau": "07864622V0026",
+    "fichier": "locaux",
+    "annee_depot": "2022",
+    "commune": "VERSAILLES",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 1489
+   },
+   {
+    "num_dau": "07864622V0084",
+    "fichier": "locaux",
+    "annee_depot": "2022",
+    "commune": "VERSAILLES",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 642
+   },
+   {
+    "num_dau": "07864620V0091",
+    "fichier": "locaux",
+    "annee_depot": "2020",
+    "commune": "VERSAILLES",
+    "etat": "terminé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 0
+   }
+  ]
+ },
+ {
+  "siren": "784615379",
+  "denomination": "ASSOCIATION DES DAMES DU CALVAIRE",
+  "famille": "association_ess",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (association_ess) +3 ; dépôt récent (2025) +2 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1",
+  "permis": [
+   {
+    "num_dau": "07864625V0076",
+    "fichier": "locaux",
+    "annee_depot": "2025",
+    "commune": "VERSAILLES",
+    "etat": "commencé",
+    "type_projet": "",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 36
+   }
+  ]
+ },
+ {
+  "siren": "351525282",
+  "denomination": "ASSOCIATION LE PETIT NAVIRE",
+  "famille": "association_ess",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (association_ess) +3 ; projet médico-social (équipement d'action sociale) +3 ; dépôt récent (2025) +2 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1",
+  "permis": [
+   {
+    "num_dau": "07864625V0079",
+    "fichier": "locaux",
+    "annee_depot": "2025",
+    "commune": "VERSAILLES",
+    "etat": "commencé",
+    "type_projet": "équipement d'action sociale",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 5
+   }
+  ]
+ },
+ {
+  "siren": "301160750",
+  "denomination": "CLINEA",
+  "famille": "exploitant_sante_social",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (exploitant_sante_social) +2 ; projet médico-social (équipement de santé) +3 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1",
+  "permis": [
+   {
+    "num_dau": "07865016G0015",
+    "fichier": "locaux",
+    "annee_depot": "2016",
+    "commune": "LE VESINET",
+    "etat": "terminé",
+    "type_projet": "équipement de santé",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 27
+   }
+  ]
+ },
+ {
+  "siren": "379759954",
+  "denomination": "CLINIQUE D'YVELINE",
+  "famille": "exploitant_sante_social",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (exploitant_sante_social) +2 ; projet médico-social (équipement de santé) +3 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1",
+  "permis": [
+   {
+    "num_dau": "07865521C0010",
+    "fichier": "locaux",
+    "annee_depot": "2021",
+    "commune": "VIEILLE-EGLISE-EN-YVELINES",
+    "etat": "autorisé",
+    "type_projet": "équipement de santé",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 554
+   },
+   {
+    "num_dau": "07865515C0001",
+    "fichier": "locaux",
+    "annee_depot": "2015",
+    "commune": "VIEILLE-EGLISE-EN-YVELINES",
+    "etat": "commencé",
+    "type_projet": "équipement de santé",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 171
+   }
+  ]
+ },
+ {
+  "siren": "592025811",
+  "denomination": "SA HLM LOGIS TRANSPORTS",
+  "famille": "bailleur_social",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (bailleur_social) +2 ; projet médico-social (équipement de santé) +3",
+  "permis": [
+   {
+    "num_dau": "07868615G1005",
+    "fichier": "locaux",
+    "annee_depot": "2015",
+    "commune": "VIROFLAY",
+    "etat": "terminé",
+    "type_projet": "équipement de santé",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 243
+   }
+  ]
+ },
+ {
+  "siren": "820302479",
+  "denomination": "CAMELEON",
+  "famille": "exploitant_sante_social",
+  "origine": "demandeur de permis",
+  "raisons": "famille cible (exploitant_sante_social) +2 ; projet médico-social (équipement d'action sociale) +3 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1",
+  "permis": [
+   {
+    "num_dau": "07868816E0003",
+    "fichier": "locaux",
+    "annee_depot": "2016",
+    "commune": "VOISINS-LE-BRETONNEUX",
+    "etat": "terminé",
+    "type_projet": "équipement d'action sociale",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 0
+   }
+  ]
+ },
+ {
+  "siren": "387833825",
+  "denomination": "LE BOIS SOLEIL",
+  "famille": "exploitant_sante_social",
+  "origine": "exploitant trouvé derrière un permis déposé par un tiers",
+  "raisons": "famille cible (exploitant_sante_social) +2 ; exploitant probable (moyenne) de « EHPAD RESIDENCE DU BOIS SOLEIL », projet résidence personnes âgées déposé par EHPAD BAJT (permis 07807318B1016) +3",
+  "permis": [
+   {
+    "num_dau": "07807318B1016",
+    "fichier": "logements",
+    "annee_depot": "2018",
+    "commune": "BOIS-D'ARCY",
+    "etat": "commencé",
+    "type_projet": "résidence personnes âgées",
+    "logements_crees": 30,
+    "surface_locaux_creee_m2": null,
+    "depose_par": "EHPAD BAJT"
+   }
+  ]
+ },
+ {
+  "siren": "775661440",
+  "denomination": "ADEF HABITAT",
+  "famille": "association_ess",
+  "origine": "exploitant trouvé derrière un permis déposé par un tiers",
+  "raisons": "famille cible (association_ess) +3 ; exploitant probable (moyenne) de « RS JEUNES ACTIFS - CLAUDE BERNARD », projet résidence sociale déposé par ANTIN RESIDENCES SA HABITAT LOYER MODERE (permis 07838324E0021) +3 ; exploitant probable (moyenne) de « RESIDENCE SOCIALE - PLAISIR », projet résidence sociale déposé par RESIDENCES SOCIALES DE FRANCE (permis 0784901501027) +3 ; dépôt récent (2024) +2 ; 1 permis autorisé(s) depuis moins de 3 ans, pas encore commencé(s) +2",
+  "permis": [
+   {
+    "num_dau": "07838324E0021",
+    "fichier": "logements",
+    "annee_depot": "2024",
+    "commune": "MAUREPAS",
+    "etat": "autorisé",
+    "type_projet": "résidence sociale",
+    "logements_crees": 186,
+    "surface_locaux_creee_m2": null,
+    "depose_par": "ANTIN RESIDENCES SA HABITAT LOYER MODERE"
+   },
+   {
+    "num_dau": "0784901501027",
+    "fichier": "logements",
+    "annee_depot": "2015",
+    "commune": "PLAISIR",
+    "etat": "terminé",
+    "type_projet": "résidence sociale",
+    "logements_crees": 174,
+    "surface_locaux_creee_m2": null,
+    "depose_par": "RESIDENCES SOCIALES DE FRANCE"
+   }
+  ]
+ },
+ {
+  "siren": "775680309",
+  "denomination": "COALLIA",
+  "famille": "association_ess",
+  "origine": "exploitant trouvé derrière un permis déposé par un tiers",
+  "raisons": "famille cible (association_ess) +3 ; exploitant probable (moyenne) de « FOYER D'HEBERGEMENT A.F.T.A.M. », projet résidence sociale déposé par ANTIN RESIDENCES SA HABITAT LOYER MODERE (permis 07844023M0039) +3 ; exploitant probable (moyenne) de « FTM VAL NOTRE DAME », projet résidence sociale déposé par COALLIA HABITAT (permis 0785862501046) +3 ; dépôt récent (2025) +2 ; 1 permis autorisé(s) depuis moins de 3 ans, pas encore commencé(s) +2",
+  "permis": [
+   {
+    "num_dau": "0785862501046",
+    "fichier": "logements",
+    "annee_depot": "2025",
+    "commune": "SARTROUVILLE",
+    "etat": "autorisé",
+    "type_projet": "résidence sociale",
+    "logements_crees": 115,
+    "surface_locaux_creee_m2": null,
+    "depose_par": "COALLIA HABITAT"
+   },
+   {
+    "num_dau": "07844023M0039",
+    "fichier": "logements",
+    "annee_depot": "2023",
+    "commune": "LES MUREAUX",
+    "etat": "commencé",
+    "type_projet": "résidence sociale",
+    "logements_crees": 150,
+    "surface_locaux_creee_m2": null,
+    "depose_par": "ANTIN RESIDENCES SA HABITAT LOYER MODERE"
+   }
+  ]
+ },
+ {
+  "siren": "817797095",
+  "denomination": "ARPAVIE",
+  "famille": "association_ess",
+  "origine": "exploitant trouvé derrière un permis déposé par un tiers",
+  "raisons": "famille cible (association_ess) +3 ; exploitant probable (moyenne) de « RESIDENCE AUTONOMIE LA ROSERAIE - ARPAVIE », projet équipement d'action sociale déposé par CDC HABITAT SOCIAL SOCIETE ANONYME D'HABITATIONS A LOYER MODERE (permis 07862416Y0024) +3",
+  "permis": [
+   {
+    "num_dau": "07862416Y0024",
+    "fichier": "locaux",
+    "annee_depot": "2016",
+    "commune": "TRIEL-SUR-SEINE",
+    "etat": "terminé",
+    "type_projet": "équipement d'action sociale",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 41,
+    "depose_par": "CDC HABITAT SOCIAL SOCIETE ANONYME D'HABITATIONS A LOYER MODERE"
+   }
+  ]
+ },
+ {
+  "siren": "500374665",
+  "denomination": "HYGIE SERVICES",
+  "famille": "exploitant_sante_social",
+  "origine": "exploitant trouvé derrière un permis déposé par un tiers",
+  "raisons": "famille cible (exploitant_sante_social) +2 ; exploitant probable (moyenne) de « SAAD HYGIE SERVICES », projet équipement d'action sociale déposé par TRIBUVERTE (permis 07840314M0007) +3",
+  "permis": [
+   {
+    "num_dau": "07840314M0007",
+    "fichier": "locaux",
+    "annee_depot": "2014",
+    "commune": "MEZY-SUR-SEINE",
+    "etat": "commencé",
+    "type_projet": "équipement d'action sociale",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 0,
+    "depose_par": "TRIBUVERTE"
+   }
+  ]
+ },
+ {
+  "siren": "397545633",
+  "denomination": "EUROSCANLM-78",
+  "famille": "exploitant_sante_social",
+  "origine": "exploitant trouvé derrière un permis déposé par un tiers",
+  "raisons": "famille cible (exploitant_sante_social) +2 ; exploitant probable (moyenne) de « EUROSCANIRM - 78 MONTFORT », projet équipement de santé déposé par LA REINE ANNE (permis 0784202300005) +3 ; dépôt assez récent (2023) +1",
+  "permis": [
+   {
+    "num_dau": "0784202300005",
+    "fichier": "locaux",
+    "annee_depot": "2023",
+    "commune": "MONTFORT-L'AMAURY",
+    "etat": "terminé",
+    "type_projet": "équipement de santé",
+    "logements_crees": null,
+    "surface_locaux_creee_m2": 23,
+    "depose_par": "LA REINE ANNE"
+   }
+  ]
+ }
+]

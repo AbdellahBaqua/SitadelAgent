@@ -1,0 +1,115 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "791846918"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "791846918"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "791846918"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "791846918"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "IDEOM",
+     "nb_permis_PC": 1,
+     "annees_depot": [
+      "2019"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 16,
+     "surface_locaux_non_residentiels_creee_m2": 0,
+     "nb_permis_collectif": 1,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 0
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "791846918",
+      "nom": "IDEOM",
+      "nature_juridique": "5710",
+      "naf_actuel": "41.10A",
+      "etat": "A",
+      "date_creation": "2013-03-01",
+      "categorie": "PME",
+      "effectif": "NN",
+      "nb_etablissements": 2,
+      "nb_etablissements_ouverts": 1,
+      "siege_actuel": {
+       "siret": "79184691800021",
+       "naf": "41.10A",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "79184691800021",
+       "naf_dans_permis": "71.12B",
+       "nb_permis": 1,
+       "annees_depot": [
+        "2019"
+       ],
+       "etat_actuel": "ouvert",
+       "date_creation": "2014-11-24",
+       "date_fermeture": null
+      }
+     ],
+     "alertes": [
+      "NAF du permis ['71.12B'] différent du NAF actuel de l'entreprise 41.10A"
+     ],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/791846918"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "41.10A",
+      "libelle": "Promotion immobilière de logements"
+     },
+     {
+      "code": "71.12B",
+      "libelle": "Ingénierie, études techniques"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5710",
+     "libelle": "SAS, société par actions simplifiée"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"promoteur\",\"confiance\":\"haute\",\"indices\":[\"fiche_entreprise : NAF actuel 41.10A « Promotion immobilière de logements » – activité cœur de métier des promoteurs\",\"libelle_naf : confirmation que 41.10A correspond à la promotion immobilière de logements\",\"permis_du_demandeur : 1 permis collectif en 2019, 16 logements créés, 0 logements locatifs sociaux – profil classique de construction pour vente\",\"libelle_cj : forme juridique 5710 (SAS) – structure commerciale utilisée par les promoteurs\",\"fiche_entreprise : entreprise active (état A), PME créée en 2013, siège au même SIRET que l’établissement du permis\"],\"limites\":\"Le NAF de l’établissement dans le permis (71.12B « Ingénierie, études techniques ») diffère du NAF actuel de l’entreprise ; cela peut refléter une évolution d’activité ou une spécialisation de l’établissement, mais le NAF actuel de l’entreprise (source principale) est sans ambiguïté.\"}"
+   }
+  ]
+ }
+]

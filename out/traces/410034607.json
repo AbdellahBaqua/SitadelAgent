@@ -1,0 +1,109 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "410034607"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "410034607"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "410034607"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "410034607"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "LYONNAISE DES EAUX FRANCE",
+     "nb_permis_PC": 1,
+     "annees_depot": [
+      "2014"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 1,
+     "surface_locaux_non_residentiels_creee_m2": 0,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 1,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 0
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "410034607",
+      "nom": "SUEZ EAU FRANCE",
+      "nature_juridique": "5710",
+      "naf_actuel": "36.00Z",
+      "etat": "A",
+      "date_creation": "1996-11-21",
+      "categorie": "GE",
+      "effectif": "52",
+      "nb_etablissements": 441,
+      "nb_etablissements_ouverts": 298,
+      "siege_actuel": {
+       "siret": "41003460704252",
+       "naf": "36.00Z",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "41003460700474",
+       "naf_dans_permis": "36.00Z",
+       "nb_permis": 1,
+       "annees_depot": [
+        "2014"
+       ],
+       "etat_actuel": "ouvert",
+       "date_creation": "2001-03-01",
+       "date_fermeture": null
+      }
+     ],
+     "alertes": [],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/410034607"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "36.00Z",
+      "libelle": "Captage, traitement et distribution d'eau"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5599",
+     "libelle": "SA à conseil d'administration (s.a.i.)"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"entreprise_autre\",\"confiance\":\"haute\",\"indices\":[\"permis_du_demandeur : 1 permis de construire déposé en 2014, maison individuelle (nb_permis_individuel: 1), aucun logement social, aucune surface non résidentielle\",\"fiche_entreprise : nom actuel SUEZ EAU FRANCE (ex-LYONNAISE DES EAUX FRANCE), forme juridique SA à conseil d'administration (cj 5710), NAF actuel 36.00Z, entreprise active de grande taille (GE, 52 employés, 441 établissements)\",\"libelle_naf : 36.00Z = 'Captage, traitement et distribution d'eau' (activité de distribution d'eau)\",\"libelle_cj : 5599 = 'SA à conseil d'administration (s.a.i.)' (société anonyme classique)\",\"dénomination : LYONNAISE DES EAUX FRANCE / SUEZ EAU FRANCE, opérateur historique de l'eau, groupe Suez\"],\"limites\":\"Aucune. L'activité de distribution d'eau et la forme juridique SA excluent les familles spécialisées (bailleur social, promoteur, foncière, association ESS, exploitant santé/social, collectivité, copropriété). Le permis unique pour une maison individuelle est cohérent avec un bâtiment technique ou logement de fonction lié à l'activité de distribution d'eau.\"}"
+   }
+  ]
+ }
+]

@@ -1,0 +1,111 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "907451918"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "907451918"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "907451918"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "907451918"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "NOVE",
+     "nb_permis_PC": 2,
+     "annees_depot": [
+      "2023",
+      "2024"
+     ],
+     "nb_communes": 2,
+     "logements_crees_total": 168,
+     "surface_locaux_non_residentiels_creee_m2": 0,
+     "nb_permis_collectif": 2,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 0
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "907451918",
+      "nom": "NOVE",
+      "nature_juridique": "5710",
+      "naf_actuel": "68.32A",
+      "etat": "A",
+      "date_creation": "2021-11-12",
+      "categorie": "GE",
+      "effectif": "NN",
+      "nb_etablissements": 2,
+      "nb_etablissements_ouverts": 2,
+      "siege_actuel": {
+       "siret": "90745191800011",
+       "naf": "68.32A",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "90745191800011",
+       "naf_dans_permis": "68.32A",
+       "nb_permis": 2,
+       "annees_depot": [
+        "2023",
+        "2024"
+       ],
+       "etat_actuel": "ouvert",
+       "date_creation": "2021-11-12",
+       "date_fermeture": null
+      }
+     ],
+     "alertes": [],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/907451918"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "68.32A",
+      "libelle": "Administration d'immeubles et autres biens immobiliers"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5710",
+     "libelle": "SAS, société par actions simplifiée"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"fonciere_investisseur\",\"confiance\":\"faible\",\"indices\":[\"fiche_entreprise : nature_juridique 5710 = SAS (forme courante pour foncières et promoteurs)\",\"fiche_entreprise : naf_actuel 68.32A = 'Administration d'immeubles et autres biens immobiliers' (activité de gestion/location de patrimoine, pas de promotion)\",\"libelle_naf : 68.32A confirme l'activité d'administration de biens immobiliers\",\"permis_du_demandeur : 2 permis en 2023-2024 pour 168 logements créés au total (activité de production neuve)\",\"permis_du_demandeur : 0 logements locatifs sociaux déclarés (ne correspond pas à un bailleur social)\",\"fiche_entreprise : catégorie GE (grande entreprise), 2 établissements ouverts, siège actif\"],\"limites\":\"Le NAF 68.32A (administration d'immeubles) oriente vers une foncière qui gère son patrimoine, mais la production de 168 logements neufs en 2 ans pourrait aussi correspondre à un promoteur (NAF attendu 41.10A). La dénomination 'NOVE' ne permet pas de trancher. L'absence de logements sociaux déclarés écarte bailleur_social. La forme SAS et la taille GE sont compatibles avec les deux familles. Preuves insuffisantes pour distinguer foncière_investisseur de promoteur avec certitude.\"}"
+   }
+  ]
+ }
+]

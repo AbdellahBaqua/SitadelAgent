@@ -1,0 +1,827 @@
+[
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "apercu",
+    "args": {},
+    "sortie": {
+     "perimetre": "PC des Yvelines (78) créant des locaux non résidentiels, déposés par des personnes morales, extraction SDES/Sitadel",
+     "nb_permis": 4245,
+     "nb_demandeurs": 2439,
+     "annees_depot": {
+      "2005": 1,
+      "2006": 1,
+      "2008": 1,
+      "2012": 97,
+      "2013": 257,
+      "2014": 271,
+      "2015": 258,
+      "2016": 322,
+      "2017": 341,
+      "2018": 360,
+      "2019": 331,
+      "2020": 270,
+      "2021": 347,
+      "2022": 370,
+      "2023": 334,
+      "2024": 300,
+      "2025": 282,
+      "2026": 101,
+      "2087": 1
+     },
+     "familles_demandeurs": {
+      "fonciere_investisseur": 895,
+      "entreprise_autre": 602,
+      "collectivite_public": 303,
+      "promoteur": 266,
+      "non_determine": 184,
+      "association_ess": 135,
+      "exploitant_sante_social": 32,
+      "bailleur_social": 21,
+      "copropriete": 1
+     },
+     "colonnes_interrogeables": [
+      "famille",
+      "AN_DEPOT",
+      "COMM",
+      "ADR_LOCALITE_TER",
+      "ETAT_DAU",
+      "DESTINATION_PRINCIPALE",
+      "DEST_SURF_MAX",
+      "TYPE_SERVICE_PUBLIC",
+      "NATURE_PROJET_COMPLETEE",
+      "TYPE_TRANSFO_PRINCIPAL",
+      "TYPE_PRINCIP_LOCAUX_TRANSFORMES",
+      "ZONE_OP",
+      "CJ_DEM",
+      "APE_DEM",
+      "SIREN_DEM",
+      "DENOM_DEM"
+     ],
+     "mesures": [
+      "permis",
+      "surface_m2",
+      "acteurs"
+     ],
+     "remarques": [
+      "2026 est une année partielle",
+      "un permis modificatif n'a pas de ligne propre",
+      "~15 % des ouvertures de chantier et ~1/3 des achèvements ne remontent jamais",
+      "APE_DEM = NAF de l'établissement du permis, possiblement fermé",
+      "surface_m2 = SURF_LOC_CREEE, surface de plancher de locaux non résidentiels créée",
+      "DEST_SURF_MAX = destination qui reçoit le plus de surface (calculée par le code à partir des SURF_*)",
+      "DESTINATION_PRINCIPALE est codée par le SDES (introduite en mai 2022) ; TYPE_SERVICE_PUBLIC vient du formulaire et est souvent 'non rempli'",
+      "un même permis peut aussi créer des logements : il figure alors aussi dans le fichier logements"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 1,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "famille"
+     ],
+     "mesure": "surface_m2",
+     "top": 10
+    },
+    "sortie": {
+     "filtres": {},
+     "nb_permis_filtres": 4245,
+     "nb_groupes": 9,
+     "resultats": [
+      {
+       "famille": "fonciere_investisseur",
+       "permis": 1149,
+       "surface_m2": 1893109,
+       "acteurs": 895
+      },
+      {
+       "famille": "entreprise_autre",
+       "permis": 958,
+       "surface_m2": 970831,
+       "acteurs": 602
+      },
+      {
+       "famille": "promoteur",
+       "permis": 362,
+       "surface_m2": 912675,
+       "acteurs": 266
+      },
+      {
+       "famille": "collectivite_public",
+       "permis": 1129,
+       "surface_m2": 790045,
+       "acteurs": 303
+      },
+      {
+       "famille": "non_determine",
+       "permis": 266,
+       "surface_m2": 276846,
+       "acteurs": 184
+      },
+      {
+       "famille": "association_ess",
+       "permis": 275,
+       "surface_m2": 179244,
+       "acteurs": 135
+      },
+      {
+       "famille": "bailleur_social",
+       "permis": 56,
+       "surface_m2": 47307,
+       "acteurs": 21
+      },
+      {
+       "famille": "exploitant_sante_social",
+       "permis": 48,
+       "surface_m2": 7860,
+       "acteurs": 32
+      },
+      {
+       "famille": "copropriete",
+       "permis": 2,
+       "surface_m2": 2191,
+       "acteurs": 1
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 2,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "famille",
+      "AN_DEPOT"
+     ],
+     "mesure": "surface_m2",
+     "top": 20
+    },
+    "sortie": {
+     "filtres": {},
+     "nb_permis_filtres": 4245,
+     "nb_groupes": 121,
+     "resultats": [
+      {
+       "famille": "fonciere_investisseur",
+       "AN_DEPOT": "2025",
+       "permis": 86,
+       "surface_m2": 312752,
+       "acteurs": 77
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "AN_DEPOT": "2022",
+       "permis": 90,
+       "surface_m2": 230057,
+       "acteurs": 83
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "AN_DEPOT": "2018",
+       "permis": 91,
+       "surface_m2": 199575,
+       "acteurs": 86
+      },
+      {
+       "famille": "entreprise_autre",
+       "AN_DEPOT": "2020",
+       "permis": 70,
+       "surface_m2": 177716,
+       "acteurs": 63
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "AN_DEPOT": "2019",
+       "permis": 97,
+       "surface_m2": 157622,
+       "acteurs": 89
+      },
+      {
+       "famille": "promoteur",
+       "AN_DEPOT": "2022",
+       "permis": 39,
+       "surface_m2": 139272,
+       "acteurs": 35
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "AN_DEPOT": "2016",
+       "permis": 88,
+       "surface_m2": 132306,
+       "acteurs": 81
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "AN_DEPOT": "2017",
+       "permis": 88,
+       "surface_m2": 131600,
+       "acteurs": 84
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "AN_DEPOT": "2015",
+       "permis": 64,
+       "surface_m2": 126412,
+       "acteurs": 62
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "AN_DEPOT": "2020",
+       "permis": 86,
+       "surface_m2": 110219,
+       "acteurs": 85
+      },
+      {
+       "famille": "entreprise_autre",
+       "AN_DEPOT": "2025",
+       "permis": 64,
+       "surface_m2": 108979,
+       "acteurs": 59
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "AN_DEPOT": "2023",
+       "permis": 77,
+       "surface_m2": 106884,
+       "acteurs": 74
+      },
+      {
+       "famille": "promoteur",
+       "AN_DEPOT": "2020",
+       "permis": 28,
+       "surface_m2": 104738,
+       "acteurs": 27
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "AN_DEPOT": "2013",
+       "permis": 65,
+       "surface_m2": 99046,
+       "acteurs": 56
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "AN_DEPOT": "2021",
+       "permis": 86,
+       "surface_m2": 96886,
+       "acteurs": 79
+      },
+      {
+       "famille": "entreprise_autre",
+       "AN_DEPOT": "2016",
+       "permis": 77,
+       "surface_m2": 91145,
+       "acteurs": 65
+      },
+      {
+       "famille": "collectivite_public",
+       "AN_DEPOT": "2017",
+       "permis": 94,
+       "surface_m2": 89621,
+       "acteurs": 64
+      },
+      {
+       "famille": "promoteur",
+       "AN_DEPOT": "2021",
+       "permis": 52,
+       "surface_m2": 87422,
+       "acteurs": 48
+      },
+      {
+       "famille": "promoteur",
+       "AN_DEPOT": "2018",
+       "permis": 26,
+       "surface_m2": 86862,
+       "acteurs": 24
+      },
+      {
+       "famille": "promoteur",
+       "AN_DEPOT": "2016",
+       "permis": 27,
+       "surface_m2": 83866,
+       "acteurs": 27
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 3,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "fraicheur_donnees",
+    "args": {},
+    "sortie": {
+     "logements": {
+      "local": {
+       "millesime": "2026-10",
+       "lignes": null,
+       "recupere_le": null,
+       "note": "fiche absente : fichier fourni au départ, millésime supposé 2026-10",
+       "modifie_le": "2026-11-21T00:05:27"
+      },
+      "distant": {
+       "millesime": "2026-10",
+       "publie_le": "2026-10-28T07:45:00.000Z",
+       "titre": "Liste des autorisations d'urbanisme créant des logements"
+      },
+      "a_jour": true
+     },
+     "locaux": {
+      "local": {
+       "millesime": "2026-10",
+       "lignes": null,
+       "recupere_le": null,
+       "note": "fiche absente : fichier fourni au départ, millésime supposé 2026-10",
+       "modifie_le": "2026-11-21T23:43:39"
+      },
+      "distant": {
+       "millesime": "2026-10",
+       "publie_le": "2026-10-28T07:45:00.000Z",
+       "titre": "Liste des autorisations d'urbanisme créant des locaux non résidentiels"
+      },
+      "a_jour": true
+     }
+    }
+   }
+  ]
+ },
+ {
+  "etape": 4,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "noter",
+    "args": {
+     "titre": "Taille moyenne des permis par famille de demandeur",
+     "constat": "Parmi les 4 245 permis de construire de locaux non résidentiels dans les Yvelines, la surface moyenne créée par permis varie fortement selon la famille du demandeur : les promoteurs obtiennent en moyenne 2 521 m² (912 675 m² sur 362 permis), les foncières investisseuses 1 648 m² (1 893 109 m² sur 1 149 permis), les entreprises autres 1 013 m² (970 831 m² sur 958 permis), les collectivités publiques 700 m² (790 045 m² sur 1 129 permis), les non déterminés 1 041 m² (276 846 m² sur 266 permis), les associations ESS 652 m² (179 244 m² sur 275 permis), les bailleurs sociaux 845 m² (47 307 m² sur 56 permis), les exploitants santé/social 164 m² (7 860 m² sur 48 permis) et les copropriétés 1 095 m² (2 191 m² sur 2 permis).",
+     "interet_buddimm": "Identifier les acteurs qui génèrent le plus de surface par permis permet de cibler les prospections commerciales, d'ajuster les conseils en matière de densité de projet et de suivre l'évolution des volumes selon le type de demandeur.",
+     "fiabilite": "établi",
+     "limites": "L'année 2026 n'est que partielle (101 permis) et environ 15 % des ouvertures de chantier et 1/3 des achèvements ne sont pas remontées ; les moyennes sont donc à prendre comme indications plutôt que comme chiffres exacts.",
+     "a_creuser": "Approfondir l'analyse annuelle pour chaque famille afin de repérer les tendances de croissance ou de décroissance des surfaces créées."
+    },
+    "sortie": {
+     "erreur": "Refusé : chiffres non vérifiables : 15 % (base absente ou fausse dans la phrase). Corrige-les avec des chiffres issus des requêtes, ou fais la requête qui les donne. Chaque pourcentage doit citer, dans la même phrase, son numérateur et son dénominateur (ex. « 3 251 sur 11 785, soit 27,6 % »). Puis renote."
+    }
+   }
+  ]
+ },
+ {
+  "etape": 5,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "AN_DEPOT"
+     ],
+     "mesure": "permis",
+     "top": 35
+    },
+    "sortie": {
+     "filtres": {},
+     "nb_permis_filtres": 4245,
+     "nb_groupes": 19,
+     "resultats": [
+      {
+       "AN_DEPOT": "2022",
+       "permis": 370,
+       "surface_m2": 523757,
+       "acteurs": 303
+      },
+      {
+       "AN_DEPOT": "2018",
+       "permis": 360,
+       "surface_m2": 486857,
+       "acteurs": 298
+      },
+      {
+       "AN_DEPOT": "2021",
+       "permis": 347,
+       "surface_m2": 337850,
+       "acteurs": 299
+      },
+      {
+       "AN_DEPOT": "2017",
+       "permis": 341,
+       "surface_m2": 334963,
+       "acteurs": 282
+      },
+      {
+       "AN_DEPOT": "2023",
+       "permis": 334,
+       "surface_m2": 358518,
+       "acteurs": 283
+      },
+      {
+       "AN_DEPOT": "2019",
+       "permis": 331,
+       "surface_m2": 380496,
+       "acteurs": 285
+      },
+      {
+       "AN_DEPOT": "2016",
+       "permis": 322,
+       "surface_m2": 437364,
+       "acteurs": 273
+      },
+      {
+       "AN_DEPOT": "2024",
+       "permis": 300,
+       "surface_m2": 252398,
+       "acteurs": 250
+      },
+      {
+       "AN_DEPOT": "2025",
+       "permis": 282,
+       "surface_m2": 530847,
+       "acteurs": 243
+      },
+      {
+       "AN_DEPOT": "2014",
+       "permis": 271,
+       "surface_m2": 195930,
+       "acteurs": 236
+      },
+      {
+       "AN_DEPOT": "2020",
+       "permis": 270,
+       "surface_m2": 443821,
+       "acteurs": 244
+      },
+      {
+       "AN_DEPOT": "2015",
+       "permis": 258,
+       "surface_m2": 262460,
+       "acteurs": 225
+      },
+      {
+       "AN_DEPOT": "2013",
+       "permis": 257,
+       "surface_m2": 271171,
+       "acteurs": 199
+      },
+      {
+       "AN_DEPOT": "2026",
+       "permis": 101,
+       "surface_m2": 111115,
+       "acteurs": 98
+      },
+      {
+       "AN_DEPOT": "2012",
+       "permis": 97,
+       "surface_m2": 152076,
+       "acteurs": 89
+      },
+      {
+       "AN_DEPOT": "2008",
+       "permis": 1,
+       "surface_m2": 413,
+       "acteurs": 1
+      },
+      {
+       "AN_DEPOT": "2006",
+       "permis": 1,
+       "surface_m2": 57,
+       "acteurs": 1
+      },
+      {
+       "AN_DEPOT": "2005",
+       "permis": 1,
+       "surface_m2": 0,
+       "acteurs": 1
+      },
+      {
+       "AN_DEPOT": "2087",
+       "permis": 1,
+       "surface_m2": 15,
+       "acteurs": 1
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 6,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "famille"
+     ],
+     "mesure": "permis",
+     "top": 20
+    },
+    "sortie": {
+     "filtres": {},
+     "nb_permis_filtres": 4245,
+     "nb_groupes": 9,
+     "resultats": [
+      {
+       "famille": "fonciere_investisseur",
+       "permis": 1149,
+       "surface_m2": 1893109,
+       "acteurs": 895
+      },
+      {
+       "famille": "collectivite_public",
+       "permis": 1129,
+       "surface_m2": 790045,
+       "acteurs": 303
+      },
+      {
+       "famille": "entreprise_autre",
+       "permis": 958,
+       "surface_m2": 970831,
+       "acteurs": 602
+      },
+      {
+       "famille": "promoteur",
+       "permis": 362,
+       "surface_m2": 912675,
+       "acteurs": 266
+      },
+      {
+       "famille": "association_ess",
+       "permis": 275,
+       "surface_m2": 179244,
+       "acteurs": 135
+      },
+      {
+       "famille": "non_determine",
+       "permis": 266,
+       "surface_m2": 276846,
+       "acteurs": 184
+      },
+      {
+       "famille": "bailleur_social",
+       "permis": 56,
+       "surface_m2": 47307,
+       "acteurs": 21
+      },
+      {
+       "famille": "exploitant_sante_social",
+       "permis": 48,
+       "surface_m2": 7860,
+       "acteurs": 32
+      },
+      {
+       "famille": "copropriete",
+       "permis": 2,
+       "surface_m2": 2191,
+       "acteurs": 1
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 7,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "noter",
+    "args": {
+     "titre": "Répartition des permis de construire de locaux non résidentiels par famille de demandeur dans les Yvelines",
+     "constat": "Sur les 4 245 permis de construire de locaux non résidentiels enregistrés dans les Yvelines (extraction SDES/Sitadel), la répartition par famille de demandeur se présente ainsi (nombre de permis sur total, pourcentage correspondant) :\n- fonciere_investisseur : 1 149 permis sur 4 245, soit 27,1 %,\n- collectivite_public : 1 129 permis sur 4 245, soit 26,6 %,\n- entreprise_autre : 958 permis sur 4 245, soit 22,6 %,\n- promoteur : 362 permis sur 4 245, soit 8,5 %,\n- association_ess : 275 permis sur 4 245, soit 6,5 %,\n- non_determine : 266 permis sur 4 245, soit 6,3 %,\n- bailleur_social : 56 permis sur 4 245, soit 1,3 %,\n- exploitant_sante_social : 48 permis sur 4 245, soit 1,1 %,\n- copropriete : 2 permis sur 4 245, soit 0,05 %.\n\nCes pourcentages sont calculés sur l'ensemble des permis filtrés (4 245). La surface moyenne par permis varie aussi selon la famille (voir note précédente sur les surfaces totales).",
+     "interet_buddimm": "Cette grille de lecture permet de cibler les typologies d'acteurs les plus fréquents pour la prospection commerciale, d'ajuster les conseils en matière de densité de projet selon le type de demandeur, et de suivre l'évolution des volumes selon la famille (veille réglementaire).",
+     "fiabilite": "établi",
+     "limites": "L'année 2026 n'est représentée que par 101 permis (données partielles) ; environ 15 % des ouvertures de chantier et un tiers des achèvements ne sont pas remontés dans la base Sitadel. Les pourcentages doivent donc être considérés comme des indications plutôt que comme des chiffres exhaustifs.",
+     "a_creuser": "Analyser l'évolution annuelle de chaque famille de demandeur (surface_m2 et nombre de permis) pour identifier les tendances de croissance ou de décroissance, et croiser avec les communes les plus actives."
+    },
+    "sortie": {
+     "erreur": "Refusé : chiffres non vérifiables : 15 % (base absente ou fausse dans la phrase). Corrige-les avec des chiffres issus des requêtes, ou fais la requête qui les donne. Chaque pourcentage doit citer, dans la même phrase, son numérateur et son dénominateur (ex. « 3 251 sur 11 785, soit 27,6 % »). Puis renote."
+    }
+   }
+  ]
+ },
+ {
+  "etape": 8,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "noter",
+    "args": {
+     "titre": "Part des dépôts récents (2026) parmi les permis Yvelines",
+     "constat": "Sur les 4 245 permis de construire de locaux non résidentiels enregistrés dans les Yvelines, les dépôts de l'année 2026 représentent 101 permis, soit 2,38 % du total (101 / 4 245). Les années précédentes sont plus représentées : 2025 (282 permis, 6,64 %), 2024 (300 permis, 7,07 %), 2023 (334 permis, 7,87 %), 2022 (370 permis, 8,72 %).",
+     "interet_buddimm": "Connaître le poids des dépôts récents aide à évaluer la fraîcheur des données pour la veille et à ajuster les prévisions de surface selon l'évolution annuelle des autorisations.",
+     "fiabilite": "établi",
+     "limites": "L'année 2026 n'est dans l'extraction que partielle (101 permis) ; les tendances annuelles doivent être lues avec prudence car près de 80 % des permis totaux datent de 2012 à 2022.",
+     "a_creuser": "Suivre l'évolution du nombre de permis et de la surface créée par année pour détecter les cycles de construction et les effets des politiques locales."
+    },
+    "sortie": {
+     "erreur": "Refusé : chiffres non vérifiables : 7,07 % (base absente ou fausse dans la phrase), 7,87 % (base absente ou fausse dans la phrase), 8,72 % (base absente ou fausse dans la phrase), 80 % (base absente ou fausse dans la phrase). Corrige-les avec des chiffres issus des requêtes, ou fais la requête qui les donne. Chaque pourcentage doit citer, dans la même phrase, son numérateur et son dénominateur (ex. « 3 251 sur 11 785, soit 27,6 % »). Puis renote."
+    }
+   }
+  ]
+ },
+ {
+  "etape": 9,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "noter",
+    "args": {
+     "titre": "Part des dépôts récents (2026) parmi les permis Yvelines",
+     "constat": "Sur les 4 245 permis de construire de locaux non résidentiels enregistrés dans les Yvelines, les dépôts de l'année 2026 représentent 101 permis, soit 101 / 4 245, soit 2,38 %. Les années précédentes sont plus lourdes : 2025 (282 permis, 282 / 4 245, soit 6,64 %), 2024 (300 permis, 300 / 4 245, soit 7,07 %), 2023 (334 permis, 334 / 4 245, soit 7,87 %), 2022 (370 permis, 370 / 4 245, soit 8,72 %). L'ensemble des permis déposés entre 2012 et 2022 représente 3 224 permis sur 4 245, soit 75,95 % du total.",
+     "interet_buddimm": "Connaître le poids des dépôts récents aide à évaluer la fraîcheur des données pour la veille et à ajuster les prévisions de surface selon l'évolution annuelle des autorisations. Cela permet aussi de cibler les projets très récents pour une prospection immédiate.",
+     "fiabilite": "établi",
+     "limites": "L'année 2026 n'est dans l'extraction que partielle (101 permis) ; les tendances annuelles doivent être lues avec prudence car près de 76 % des permis totaux datent de 2012 à 2022.",
+     "a_creuser": "Suivre l'évolution du nombre de permis et de la surface créée par année pour détecter les cycles de construction et les effets des politiques locales, en particulier pour les années 2023‑2026 où les données sont encore partielles.",
+     "chiffres_non_verifies": [
+      "3 224",
+      "75,95 % (base absente ou fausse dans la phrase)",
+      "76 % (base absente ou fausse dans la phrase)"
+     ]
+    },
+    "sortie": {
+     "ok": "note 1 enregistrée avec avertissement"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 10,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "commune"
+     ],
+     "mesure": "permis",
+     "top": 10
+    },
+    "sortie": {
+     "erreur": "group_by : 1 à 3 colonnes parmi la liste",
+     "colonnes_autorisees": [
+      "famille",
+      "AN_DEPOT",
+      "COMM",
+      "ADR_LOCALITE_TER",
+      "ETAT_DAU",
+      "DESTINATION_PRINCIPALE",
+      "DEST_SURF_MAX",
+      "TYPE_SERVICE_PUBLIC",
+      "NATURE_PROJET_COMPLETEE",
+      "TYPE_TRANSFO_PRINCIPAL",
+      "TYPE_PRINCIP_LOCAUX_TRANSFORMES",
+      "ZONE_OP",
+      "CJ_DEM",
+      "APE_DEM",
+      "SIREN_DEM",
+      "DENOM_DEM"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 11,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "COMM"
+     ],
+     "mesure": "permis",
+     "top": 10
+    },
+    "sortie": {
+     "filtres": {},
+     "nb_permis_filtres": 4245,
+     "nb_groupes": 238,
+     "resultats": [
+      {
+       "COMM": "78646",
+       "permis": 129,
+       "surface_m2": 122520,
+       "acteurs": 92
+      },
+      {
+       "COMM": "78551",
+       "permis": 120,
+       "surface_m2": 219482,
+       "acteurs": 83
+      },
+      {
+       "COMM": "78361",
+       "permis": 96,
+       "surface_m2": 106641,
+       "acteurs": 62
+      },
+      {
+       "COMM": "78586",
+       "permis": 96,
+       "surface_m2": 58058,
+       "acteurs": 71
+      },
+      {
+       "COMM": "78498",
+       "permis": 95,
+       "surface_m2": 196382,
+       "acteurs": 62
+      },
+      {
+       "COMM": "78440",
+       "permis": 92,
+       "surface_m2": 155980,
+       "acteurs": 64
+      },
+      {
+       "COMM": "78621",
+       "permis": 89,
+       "surface_m2": 132106,
+       "acteurs": 64
+      },
+      {
+       "COMM": "78490",
+       "permis": 88,
+       "surface_m2": 168940,
+       "acteurs": 57
+      },
+      {
+       "COMM": "78335",
+       "permis": 80,
+       "surface_m2": 114492,
+       "acteurs": 53
+      },
+      {
+       "COMM": "78517",
+       "permis": 80,
+       "surface_m2": 36747,
+       "acteurs": 57
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 12,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "noter",
+    "args": {
+     "titre": "Répartition des permis de construire de locaux non résidentiels par famille de demandeur dans les Yvelines",
+     "constat": "Sur les 4 245 permis de construire de locaux non résidentiels enregistrés dans les Yvelines (extraction SDES/Sitadel), la répartition par famille de demandeur est la suivante (nombre de permis sur total, pourcentage correspondant) : - fonciere_investisseur : 1 149 permis sur 4 245, soit 27,1 % ; - collectivite_public : 1 129 permis sur 4 245, soit 26,6 % ; - entreprise_autre : 958 permis sur 4 245, soit 22,6 % ; - promoteur : 362 permis sur 4 245, soit 8,5 % ; - association_ess : 275 permis sur 4 245, soit 6,5 % ; - non_determine : 266 permis sur 4 245, soit 6,3 % ; - bailleur_social : 56 permis sur 4 245, soit 1,3 % ; - exploitant_sante_social : 48 permis sur 4 245, soit 1,1 % ; - copropriete : 2 permis sur 4 245, soit 0,05 %.",
+     "interet_buddimm": "Permet de cibler les typologies d'acteurs les plus fréquents pour la prospection commerciale, d'ajuster les conseils en matière de densité de projet selon le type de demandeur, et de suivre l'évolution des volumes selon la famille (veille réglementaire).",
+     "fiabilite": "établi",
+     "limites": "L'année 2026 n'est représentée que par 101 permis (données partielles) ; environ 15 % des ouvertures de chantier et un tiers des achèvements ne sont pas remontés dans la base Sitadel. Les pourcentages doivent donc être considérés comme des indications plutôt que comme des chiffres exhaustifs.",
+     "a_creuser": "Analyser l'évolution annuelle de chaque famille de demandeur (surface_m2 et nombre de permis) pour identifier les tendances de croissance ou de décroissance, et croiser avec les communes les plus actives.",
+     "chiffres_non_verifies": [
+      "15 % (base absente ou fausse dans la phrase)"
+     ]
+    },
+    "sortie": {
+     "ok": "note 2 enregistrée avec avertissement"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 13,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "noter",
+    "args": {
+     "titre": "Top 10 des communes des Yvelines pour le nombre de permis de construire de locaux non résidentiels",
+     "constat": "Parmi les 4 245 permis de construire de locaux non résidentiels dans les Yvelines, les 10 communes les plus actives en nombre de permis sont : 78646 (129 permis, soit 129 / 4 245, soit 3,04 %), 78551 (120 permis, soit 120 / 4 245, soit 2,83 %), 78361 (96 permis, soit 96 / 4 245, soit 2,26 %), 78586 (96 permis, soit 96 / 4 245, soit 2,26 %), 78498 (95 permis, soit 95 / 4 245, soit 2,24 %), 78440 (92 permis, soit 92 / 4 245, soit 2,17 %), 78621 (89 permis, soit 89 / 4 245, soit 2,10 %), 78490 (88 permis, soit 88 / 4 245, soit 2,07 %), 78335 (80 permis, soit 80 / 4 245, soit 1,89 %), 78517 (80 permis, soit 80 / 4 245, soit 1,89 %).\nCes communes concentrent à elles seules 1 065 permis sur 4 245, soit 25,1 % du total des dépôts.",
+     "interet_buddimm": "Identifier les territoires les plus dynamiques pour la prospection locale, le ciblage des relations publiques et le suivi des projets de développement territorial. Permet aussi d'ajuster les conseils en matière de densité selon la pression urbaine de chaque commune.",
+     "fiabilite": "établi",
+     "limites": "Les données de 2026 ne représentent que 101 permis sur 4 245 (2,38 %) ; les classements annuels peuvent évoluer fortement selon les années. Les adresses de communes sont codées numériquement (code INSEE) et non libellées, ce qui limite la lisibilité pour les non‑initiés.",
+     "a_creuser": "Analyser la surface totale créée par ces communes les plus actives, et suivre l'évolution annuelle de leur nombre de permis pour détecter les effets des politiques locales ou des grands projets d'aménagement."
+    },
+    "sortie": {
+     "erreur": "Refusé : chiffres non vérifiables : 1 065, 25,1 % (base absente ou fausse dans la phrase). Corrige-les avec des chiffres issus des requêtes, ou fais la requête qui les donne. Chaque pourcentage doit citer, dans la même phrase, son numérateur et son dénominateur (ex. « 3 251 sur 11 785, soit 27,6 % »). Puis renote."
+    }
+   }
+  ]
+ }
+]

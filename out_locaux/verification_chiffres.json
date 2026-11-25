@@ -1,0 +1,128 @@
+[
+ {
+  "modele": "claude-opus-5-5 (session Claude Code)",
+  "theme": "libre",
+  "titre": "Transformations de locaux : surtout des réhabilitations sans changement de destination",
+  "fiabilite": "fragile",
+  "constat": "469 PC transforment des locaux non résidentiels (TYPE_TRANSFO_PRINCIPAL 4). Le premier flux en surface reste dans le service public : 56 permis pour 37 567 m², soit 12 % des permis (56 sur 469). Vient ensuite commerce vers commerce, 44 permis pour 24 593 m². Les vrais changements de destination sont plus petits : bureaux vers entrepôt, 10 permis pour 12 339 m², et industrie vers entrepôt, 6 permis pour 9 661 m².",
+  "interet_buddimm": "Dans les Yvelines, la transformation de locaux est d'abord de la remise à niveau d'équipements publics et de commerces, pas de la reconversion massive de bureaux. Pour un acteur médico-social qui cherche des locaux, les reconversions de bureaux restent rares et ponctuelles.",
+  "chiffres_non_verifies": []
+ },
+ {
+  "modele": "claude-opus-5-5 (session Claude Code)",
+  "theme": "medico_social",
+  "titre": "Équipements de santé : les associations créent le plus de surface, mais un seul projet en pèse près de la moitié",
+  "fiabilite": "établi",
+  "constat": "176 PC créent des équipements de santé (TYPE_SERVICE_PUBLIC 3) pour 236 413 m². Les associations en créent 79 217 m², soit 33,5 % (79 217 sur 236 413), sur 32 permis portés par 21 demandeurs, devant les foncières (50 132 m²) et les collectivités (45 083 m², mais 67 permis). Un seul projet, MGEN UNION à La Verrière, compte 36 628 m², soit 46 % (36 628 sur 79 217) de la surface associative. Suivent FONDATION DES AMIS DE L'ATELIER aux Mureaux (9 587 m²), CHEMINS D'ESPERANCE à Vélizy-Villacoublay (6 591 m²) et FONDATION LEOPOLD BELLAN à Magnanville (5 787 m²).",
+  "interet_buddimm": "Les associations et fondations de santé des Yvelines construisent des équipements de taille significative, en général une seule fois : c'est le cœur de cible de Buddimm. La liste des 21 demandeurs associatifs en santé est une liste de prospects directement exploitable.",
+  "chiffres_non_verifies": []
+ },
+ {
+  "modele": "claude-opus-5-5 (session Claude Code)",
+  "theme": "medico_social",
+  "titre": "Action sociale : beaucoup de petits équipements de collectivités, peu de surface associative",
+  "fiabilite": "fragile",
+  "constat": "231 PC créent des équipements d'action sociale (TYPE_SERVICE_PUBLIC 4) pour 85 879 m². Les collectivités en déposent 93, soit 40 % (93 sur 231), pour 30 311 m². Les promoteurs en déposent 25 pour 25 730 m². Les associations en déposent aussi 25, mais pour seulement 5 568 m². Les exploitants privés de santé et de social en déposent 38, pour 1 023 m² au total : de très petites créations de surface.",
+  "interet_buddimm": "L'action sociale (crèches, centres sociaux, accueils de jour) est surtout une affaire de collectivités et de petits projets. Les associations y sont présentes mais sur de petites surfaces : besoins d'accompagnement plus légers, ou projets portés par d'autres pour leur compte.",
+  "chiffres_non_verifies": []
+ },
+ {
+  "modele": "claude-opus-5-5 (session Claude Code)",
+  "theme": "medico_social",
+  "titre": "Les grands déposants de locaux sont des collectivités, avec une exception associative : la Fondation Mallet",
+  "fiabilite": "établi",
+  "constat": "Parmi les 6 premiers déposants de PC de locaux non résidentiels des Yvelines, 5 sont des collectivités : DEPARTEMENT DES YVELINES (54 permis, 115 560 m²), GRAND PARIS SEINE ET OISE (29), REGION ILE DE FRANCE (26), COMMUNE DE MANTES LA VILLE (26) et COMMUNE DE POISSY (19). La sixième est une fondation, FONDATION MALLET (28 permis, 13 268 m²). Les collectivités déposent 1 132 permis, dont 940 en service public ou d'intérêt collectif, soit 83 % (940 sur 1 132).",
+  "interet_buddimm": "La Fondation Mallet est un maître d'ouvrage associatif récurrent, ce qui est rare : un compte à suivre de près. Les collectivités sont les premiers donneurs d'ordre d'équipements ; elles sont aussi des propriétaires de foncier et de bâtiments avec qui les associations clientes de Buddimm montent leurs projets.",
+  "chiffres_non_verifies": []
+ },
+ {
+  "modele": "nvidia/nemotron-3.5-lightning-30b-a3b",
+  "theme": "geographie",
+  "titre": "Dominance du service public / intérêt collectif",
+  "fiabilite": "établi",
+  "constat": "Les surfaces de destination 9 (service public / intérêt collectif) représentent 1 202 328 m², soit 23,7 % du total des surfaces créées (5 080 108 m²) sur l'ensemble des permis yvelinois 2005‑2025.",
+  "interet_buddimm": "Identifier les territoires et acteurs liés aux équipements collectifs pour du conseil en programmation ou de la veille.",
+  "chiffres_non_verifies": []
+ },
+ {
+  "modele": "nvidia/nemotron-3.5-lightning-30b-a3b",
+  "theme": "geographie",
+  "titre": "Dominance du service public / intérêt collectif",
+  "fiabilite": "établi",
+  "constat": "Les surfaces de destination 9 (service public / intérêt collectif) représentent 1 202 328 m² sur un total de 5 080 108 m² créé par les 4 245 permis yvelinois 2005‑2025, soit 23,7 % (1 202 328 / 5 080 108).",
+  "interet_buddimm": "Identifier les territoires et acteurs liés aux équipements collectifs pour du conseil en programmation ou de la veille.",
+  "chiffres_non_verifies": []
+ },
+ {
+  "modele": "nvidia/nemotron-3.5-lightning-30b-a3b",
+  "theme": "medico_social",
+  "titre": "Dominance des collectivités et surface moyenne par permis pour TYPE_SERVICE_PUBLIC 3",
+  "fiabilite": "établi",
+  "constat": "Sur les 176 permis TYPE_SERVICE_PUBLIC 3, les collectivités publiques obtiennent 67 permis (38,1 %), les associations ESS 32 permis (18,2 %) et les foncières investisseuses 31 permis (17,6 %). La surface moyenne par permis s'établit à 45083 m² / 67 ≈ 673 m² pour les collectivités, 79217 m² / 32 ≈ 2 476 m² pour les associations ESS et 50132 m² / 31 ≈ 1 617 m² pour les foncières investisseuses.",
+  "interet_buddimm": "Identifie les acteurs qui portent les plus grands projets d'équipements de santé/action sociale, utile pour cibler les promoteurs ou foncières dans la prospection.",
+  "chiffres_non_verifies": []
+ },
+ {
+  "modele": "nvidia/nemotron-3.5-lightning-30b-a3b",
+  "theme": "medico_social",
+  "titre": "Collectivités dominantes pour TYPE_SERVICE_PUBLIC 3",
+  "fiabilite": "établi",
+  "constat": "Sur les 176 permis TYPE_SERVICE_PUBLIC 3, les collectivités publiques obtiennent 67 permis (38,1 % sur 176), soit la part la plus importante. La surface moyenne par permis s'établit à 45 083 m² / 67 ≈ 673 m².",
+  "interet_buddimm": "Cibler les projets portés par les collectivités pour des opérations de conseil ou de prospection immobilière sur des équipements de santé/action sociale.",
+  "chiffres_non_verifies": []
+ },
+ {
+  "modele": "nvidia/nemotron-3.5-lightning-30b-a3b",
+  "theme": "transformations",
+  "titre": "Distribution des types de transformation de locaux",
+  "fiabilite": "établi",
+  "constat": "Sur les 4245 permis de construire de locaux non résidentiels dans les Yvelines, 3487 (3487 sur 4245, soit 82,2 %) concernent une création de locaux sans transformation (TYPE_TRANSFO_PRINCIPAL vide). Les 469 permis de transformation de locaux (type 4) représentent 469 sur 4245, soit 11,1 % : ils sont principalement déposés par enterprise_autre (141), fonciere_investisseur (133) et collectivite_public (98). Les 224 permis de transformation logements → locaux (type 3) représentent 224 sur 4245, soit 5,3 % : fonciere_investisseur en dépose 73, collectivite_public 62. Les 52 permis de transformation locaux → logements (type 1) représentent 52 sur 4245, soit 1,2 %. Les 13 permis de transformation logements (type 2) représentent 13 sur 4245, soit 0,3 %.",
+  "interet_buddimm": "Identifier les acteurs (bailleurs, promoteurs, foncières) les plus actifs sur les opérations de transformation, afin d’affiner la prospection et le conseil en matière de changement de destination ou de réhabilitation de locaux.",
+  "chiffres_non_verifies": []
+ },
+ {
+  "modele": "nvidia/nemotron-3.5-lightning-30b-a3b",
+  "theme": "transformations",
+  "titre": "Création de locaux sans transformation dominante",
+  "fiabilite": "établi",
+  "constat": "Sur les 4245 permis de construire de locaux non résidentiels dans les Yvelines, 3487 (3487 sur 4245, soit 82,2 %) concernent une création de locaux sans transformation (TYPE_TRANSFO_PRINCIPAL vide). Parmi ceux‑ci, les destinations principales sont : service public / intérêt collectif (1225 permis), commerce (574), bureaux (397), entrepôt (348), industrie (342), habitation (321) et agriculture (235).",
+  "interet_buddimm": "Mettre en évidence les usages dominants des nouveaux locaux (logements, commerce, bureaux, équipements publics) pour orienter la prospection de terrains ou de biens en vue de nouvelles opérations de création.",
+  "chiffres_non_verifies": []
+ },
+ {
+  "modele": "nvidia/nemotron-3.5-lightning-30b-a3b",
+  "theme": "transformations",
+  "titre": "Transformation de locaux (type 4) par acteur et destination",
+  "fiabilite": "établi",
+  "constat": "Sur les 4245 permis de locaux non résidentiels dans les Yvelines, 469 (469 sur 4245, soit 11,1 %) sont des transformations de locaux (TYPE_TRANSFO_PRINCIPAL = 4). Les trois familles d’acteurs les plus actives sont enterprise_autre (141 permis), fonciere_investisseur (133) et collectivite_public (98). Les destinations principales issues de DESTINATION_PRINCIPALE sont le commerce (126 permis, 42 892 m²), les bureaux (106 permis, 24 193 m²) et les équipements de service public / intérêt collectif (90 permis, 63 699 m²).",
+  "interet_buddimm": "Identifier les acteurs majeurs et les usages dominants (commerce, bureaux, équipements publics) pour cibler les opérations de réhabilitation ou de changement de destination de locaux existants.",
+  "chiffres_non_verifies": []
+ },
+ {
+  "modele": "nvidia/nemotron-3.5-lightning-30b-a3b",
+  "theme": "dynamique",
+  "titre": "Répartition des permis par état d'avancement",
+  "fiabilite": "établi",
+  "constat": "Sur les 4245 permis étudiés, on observe les répartitions suivantes : autorisés (ETAT_DAU=2) = 1644 soit 38,7 % (1644/4245) ; terminés (6) = 1241 soit 29,2 % (1241/4245) ; commencés (5) = 1146 soit 27,0 % (1146/4245) ; annulés (4) = 214 soit 5,0 % (214/4245).",
+  "interet_buddimm": "Permet d'évaluer la capacité d'accueil des nouveaux projets et de cibler les actions de veille sur les projets en souffrance ou abandonnés.",
+  "chiffres_non_verifies": []
+ },
+ {
+  "modele": "nvidia/nemotron-3.5-lightning-30b-a3b",
+  "theme": "libre",
+  "titre": "Promoteurs : surface moyenne par permis très élevée",
+  "fiabilite": "établi",
+  "constat": "Les 374 permis déposés par des promoteurs créent en moyenne 2 518 m² de surface (941 613 m² / 374), soit près du double de la moyenne globale du fichier (≈1 197 m² par permis). Cette famille représente 8,8 % des permis (374 sur 4 245) mais 18,5 % de la surface totale créée (941 613 m² sur 5 080 108 m²).",
+  "interet_buddimm": "Identifier les promoteurs pour des opérations de grande envergure, cibler des projets de bureaux ou d’équipements lourds.",
+  "chiffres_non_verifies": []
+ },
+ {
+  "modele": "nvidia/nemotron-3.5-lightning-30b-a3b",
+  "theme": "libre",
+  "titre": "Fonciers investisseurs : part dominante de la surface créée",
+  "fiabilite": "établi",
+  "constat": "Les 1 194 permis déposés par des fonciers investisseurs représentent 28,1 % des permis (1 194 sur 4 245) et 39,0 % de la surface totale créée (1 979 625 m² sur 5 080 108 m²). Ils sont ainsi le premier contributeur de surface malgré une moyenne de 1 658 m² par permis, supérieure à la moyenne globale (~1 197 m²).",
+  "interet_buddimm": "Cibler les opérations de fonciers investisseurs pour des opérations de plus grande envergure, identifier des terrains ou des projets de développement commercial ou logistique.",
+  "chiffres_non_verifies": []
+ }
+]

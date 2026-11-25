@@ -1,0 +1,118 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "429420755"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "429420755"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "429420755"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "429420755"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "HABITAT ET COMMERCE",
+     "nb_permis_PC": 2,
+     "annees_depot": [
+      "2021",
+      "2023"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 2,
+     "surface_locaux_non_residentiels_creee_m2": 0,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 2,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 0
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "429420755",
+      "nom": "HABITAT ET COMMERCE",
+      "nature_juridique": "5710",
+      "naf_actuel": "41.10A",
+      "etat": "A",
+      "date_creation": "2000-02-04",
+      "categorie": "PME",
+      "effectif": "02",
+      "nb_etablissements": 7,
+      "nb_etablissements_ouverts": 1,
+      "siege_actuel": {
+       "siret": "42942075500077",
+       "naf": "41.10A",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "42942075500069",
+       "naf_dans_permis": "68.31Z",
+       "nb_permis": 2,
+       "annees_depot": [
+        "2021",
+        "2023"
+       ],
+       "etat_actuel": "fermé",
+       "date_creation": "2018-06-29",
+       "date_fermeture": "2024-07-01"
+      }
+     ],
+     "alertes": [
+      "SIRET 42942075500069 (permis 2021,2023) fermé le 2024-07-01 : le NAF 68.31Z du permis vient d'un établissement fermé",
+      "NAF du permis ['68.31Z'] différent du NAF actuel de l'entreprise 41.10A"
+     ],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/429420755"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "41.10A",
+      "libelle": "Promotion immobilière de logements"
+     },
+     {
+      "code": "68.31Z",
+      "libelle": "Agences immobilières"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5710",
+     "libelle": "SAS, société par actions simplifiée"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"promoteur\",\"confiance\":\"haute\",\"indices\":[\"fiche_entreprise : naf_actuel = 41.10A « Promotion immobilière de logements » (libelle_naf) ; nature_juridique = 5710 « SAS » (libelle_cj) ; entreprise active (etat A), PME de 2 salariés, créée en 2000 ; siège actuel (SIRET 42942075500077) en NAF 41.10A et ouvert\",\"permis_du_demandeur : 2 permis déposés (2021, 2023) pour 2 logements créés au total, 0 logement locatif social déclaré, 0 permis collectif, 2 permis individuels → profil de construction pour vente\",\"libelle_naf : 41.10A correspond à l'activité de promoteur immobilier (construction-vente de logements)\",\"dénomination : « HABITAT ET COMMERCE » évoque une activité de promotion immobilière\"],\"limites\":\"L'établissement qui a déposé les permis (SIRET 42942075500069) est fermé depuis juillet 2024 et portait un NAF 68.31Z « Agences immobilières » ; mais le NAF actuel de l'entreprise (41.10A) et son siège ouvert confirment l'activité de promoteur. Le faible volume de permis (2 individuels) limite la portée statistique, mais la cohérence entre forme juridique, NAF actuel et profil des permis est forte.\"}"
+   }
+  ]
+ }
+]

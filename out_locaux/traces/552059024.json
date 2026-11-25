@@ -1,0 +1,151 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "552059024"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "552059024"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "552059024"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "552059024"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "THALES",
+     "nb_permis_PC": 9,
+     "annees_depot": [
+      "2012",
+      "2013",
+      "2016",
+      "2018",
+      "2021",
+      "2024",
+      "2026"
+     ],
+     "nb_communes": 3,
+     "logements_crees_total": 0,
+     "surface_locaux_non_residentiels_creee_m2": 4913,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 2
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "552059024",
+      "nom": "THALES",
+      "nature_juridique": "5599",
+      "naf_actuel": "70.10Z",
+      "etat": "A",
+      "date_creation": "1949-01-01",
+      "categorie": "GE",
+      "effectif": "42",
+      "nb_etablissements": 62,
+      "nb_etablissements_ouverts": 2,
+      "siege_actuel": {
+       "siret": "55205902401909",
+       "naf": "70.10Z",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "55205902400000",
+       "naf_dans_permis": "70.10Z",
+       "nb_permis": 2,
+       "annees_depot": [
+        "2013"
+       ]
+      },
+      {
+       "siret": "55205902401875",
+       "naf_dans_permis": "70.10Z",
+       "nb_permis": 2,
+       "annees_depot": [
+        "2012",
+        "2018"
+       ],
+       "etat_actuel": "fermé",
+       "date_creation": "2003-09-12",
+       "date_fermeture": "2015-01-01"
+      },
+      {
+       "siret": "55205902401891",
+       "naf_dans_permis": "70.10Z",
+       "nb_permis": 3,
+       "annees_depot": [
+        "2016",
+        "2021"
+       ],
+       "etat_actuel": "fermé",
+       "date_creation": "2015-01-01",
+       "date_fermeture": "2023-09-01"
+      },
+      {
+       "siret": "55205902401909",
+       "naf_dans_permis": "70.10Z",
+       "nb_permis": 2,
+       "annees_depot": [
+        "2024",
+        "2026"
+       ],
+       "etat_actuel": "ouvert",
+       "date_creation": "2023-09-01",
+       "date_fermeture": null
+      }
+     ],
+     "alertes": [
+      "SIRET 55205902401875 (permis 2012,2018) fermé le 2015-01-01 : le NAF 70.10Z du permis vient d'un établissement fermé",
+      "SIRET 55205902401891 (permis 2016,2021) fermé le 2023-09-01 : le NAF 70.10Z du permis vient d'un établissement fermé"
+     ],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/552059024"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "70.10Z",
+      "libelle": "Activités des sièges sociaux"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5599",
+     "libelle": "SA à conseil d'administration (s.a.i.)"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"entreprise_autre\",\"confiance\":\"haute\",\"indices\":[\"fiche_entreprise : NAF actuel 70.10Z (Activités des sièges sociaux), nature juridique 5599 (SA à conseil d'administration), catégorie GE (grande entreprise), effectif 42, 62 établissements dont 2 ouverts\",\"libelle_naf : 70.10Z = Activités des sièges sociaux (confirmant une fonction de holding/siège, non immobilière)\",\"libelle_cj : 5599 = SA à conseil d'administration (s.a.i.) (forme juridique de grande société anonyme)\",\"permis_du_demandeur : 9 permis de construire (2012-2026), 0 logement créé, 4 913 m² de surface non-résidentielle créée, 0 logement locatif social déclaré, 0 permis collectif/individuel (cohérent avec une entreprise construisant pour ses propres besoins tertiaires/industriels)\"],\"limites\":\"Aucune : l'ensemble des sources (activité actuelle, forme juridique, profil des permis) converge vers un grand groupe industriel/technologique (Thales) agissant comme entreprise utilisatrice, non comme acteur de l'immobilier résidentiel ou social.\"}"
+   }
+  ]
+ }
+]

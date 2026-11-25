@@ -1,0 +1,115 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "102224284"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "102224284"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "102224284"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "102224284"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "SEIZE BIS",
+     "nb_permis_PC": 1,
+     "annees_depot": [
+      "2026"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 1,
+     "surface_locaux_non_residentiels_creee_m2": 0,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 1,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 1
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "102224284",
+      "nom": "SEIZE BIS",
+      "nature_juridique": "5499",
+      "naf_actuel": "68.20A",
+      "etat": "A",
+      "date_creation": "2026-03-10",
+      "categorie": null,
+      "effectif": "NN",
+      "nb_etablissements": 2,
+      "nb_etablissements_ouverts": 2,
+      "siege_actuel": {
+       "siret": "10222428400012",
+       "naf": "70.10Z",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "10222428400012",
+       "naf_dans_permis": "70.10Z",
+       "nb_permis": 1,
+       "annees_depot": [
+        "2026"
+       ],
+       "etat_actuel": "ouvert",
+       "date_creation": "2026-03-10",
+       "date_fermeture": null
+      }
+     ],
+     "alertes": [
+      "NAF du permis ['70.10Z'] différent du NAF actuel de l'entreprise 68.20A"
+     ],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/102224284"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "68.20A",
+      "libelle": "Location de logements"
+     },
+     {
+      "code": "70.10Z",
+      "libelle": "Activités des sièges sociaux"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5499",
+     "libelle": "Société à responsabilité limitée (sans autre indication)"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"fonciere_investisseur\",\"confiance\":\"moyenne\",\"indices\":[\"fiche_entreprise : NAF actuel de l'entreprise 68.20A « Location de logements » (activité de détention et location de patrimoine immobilier)\",\"fiche_entreprise : forme juridique 5499 (SARL), structure compatible avec une foncière ou société d'investissement immobilier\",\"permis_du_demandeur : 1 permis de construire en 2026 pour 1 maison individuelle (nb_permis_individuel=1), 0 logement social déclaré, surface non résidentielle 0\",\"libelle_naf : 68.20A correspond à « Location de logements », cœur d'activité des foncières/investisseurs locatifs\",\"fiche_entreprise : alerte indiquant que le NAF du permis (70.10Z « Activités des sièges sociaux ») diffère du NAF actuel de l'entreprise, confirmant que le NAF du permis reflète l'établissement (siège) et non l'activité opérationnelle\"],\"limites\":\"L'entreprise est très récente (création mars 2026) et ne dépose qu'un seul permis pour une maison individuelle ; impossible d'exclure qu'il s'agisse d'une opération ponctuelle (ex. construction pour revente) plutôt que d'une activité locative pérenne. Aucun élément ne permet de confirmer un statut de bailleur social (pas d'organisme HLM, pas de logements sociaux déclarés).\"}"
+   }
+  ]
+ }
+]

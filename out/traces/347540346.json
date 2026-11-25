@@ -1,0 +1,109 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "347540346"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "347540346"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "347540346"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "347540346"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "TH INVEST",
+     "nb_permis_PC": 1,
+     "annees_depot": [
+      "2025"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 1,
+     "surface_locaux_non_residentiels_creee_m2": 0,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 1,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 1
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "347540346",
+      "nom": "TH INVEST (TH INVEST)",
+      "nature_juridique": "5499",
+      "naf_actuel": "68.32A",
+      "etat": "A",
+      "date_creation": "1988-07-19",
+      "categorie": "PME",
+      "effectif": "01",
+      "nb_etablissements": 2,
+      "nb_etablissements_ouverts": 1,
+      "siege_actuel": {
+       "siret": "34754034600033",
+       "naf": "68.32A",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "34754034600033",
+       "naf_dans_permis": "68.32A",
+       "nb_permis": 1,
+       "annees_depot": [
+        "2025"
+       ],
+       "etat_actuel": "ouvert",
+       "date_creation": "1991-11-19",
+       "date_fermeture": null
+      }
+     ],
+     "alertes": [],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/347540346"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "68.32A",
+      "libelle": "Administration d'immeubles et autres biens immobiliers"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5499",
+     "libelle": "Société à responsabilité limitée (sans autre indication)"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"non_determine\",\"confiance\":\"faible\",\"indices\":[\"fiche_entreprise : NAF actuel 68.32A « Administration d'immeubles et autres biens immobiliers » (gestion pour compte de tiers), forme juridique SARL (CJ 5499), entreprise active depuis 1988, 1 salarié, 2 établissements dont 1 ouvert.\",\"permis_du_demandeur : 1 seul permis de construire déposé en 2025, pour une maison individuelle (0 logement collectif, 0 logement social, 0 surface non résidentielle).\",\"libelle_naf : 68.32A = Administration d'immeubles et autres biens immobiliers.\",\"libelle_cj : 5499 = Société à responsabilité limitée (sans autre indication).\",\"dénomination : « TH INVEST » évoque un véhicule d'investissement immobilier, mais ne suffit pas à qualifier l'activité.\"],\"limites\":\"L'activité réelle (investissement locatif en propre vs gestion pour compte de tiers) n'est pas documentée. Un unique permis individuel ne permet pas de rattacher la structure à la famille « promoteur » (qui suppose généralement des programmes collectifs ou à répétition). Aucun indice de logement social, d'objet social ESS, d'exploitation médico-sociale, de caractère public ou de copropriété. La classification reste incertaine.\"}"
+   }
+  ]
+ }
+]

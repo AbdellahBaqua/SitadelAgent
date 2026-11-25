@@ -1,0 +1,113 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "809345812"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "809345812"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "809345812"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "809345812"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "STRUCTURE ZENITHALE",
+     "nb_permis_PC": 3,
+     "annees_depot": [
+      "2015",
+      "2017",
+      "2023"
+     ],
+     "nb_communes": 2,
+     "logements_crees_total": 0,
+     "surface_locaux_non_residentiels_creee_m2": 290,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 1
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "809345812",
+      "nom": "STRUCTURE ZENITHALE",
+      "nature_juridique": "5710",
+      "naf_actuel": "68.32A",
+      "etat": "A",
+      "date_creation": "2015-02-10",
+      "categorie": "PME",
+      "effectif": "NN",
+      "nb_etablissements": 1,
+      "nb_etablissements_ouverts": 1,
+      "siege_actuel": {
+       "siret": "80934581200014",
+       "naf": "68.32A",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "80934581200014",
+       "naf_dans_permis": "68.32A",
+       "nb_permis": 3,
+       "annees_depot": [
+        "2015",
+        "2017",
+        "2023"
+       ],
+       "etat_actuel": "ouvert",
+       "date_creation": "2015-02-10",
+       "date_fermeture": null
+      }
+     ],
+     "alertes": [],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/809345812"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "68.32A",
+      "libelle": "Administration d'immeubles et autres biens immobiliers"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5710",
+     "libelle": "SAS, société par actions simplifiée"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"entreprise_autre\",\"confiance\":\"moyenne\",\"indices\":[\"fiche_entreprise : entreprise de forme SAS (CJ 5710), NAF actuel 68.32A « Administration d'immeubles et autres biens immobiliers », active depuis 2015, PME.\",\"permis_du_demandeur : 3 permis déposés (2015, 2017, 2023) pour 290 m² de locaux non résidentiels, 0 logement créé, aucune résidence déclarée, 0 logement social.\",\"libelle_naf : 68.32A correspond à l'administration de biens immobiliers (syndic, gestion locative), pas à la promotion ou à l'investissement patrimonial.\",\"libelle_cj : 5710 = SAS, société commerciale classique, non spécifique au logement social ni à l'ESS.\",\"dénomination : « STRUCTURE ZENITHALE » ne contient pas d'indice sectoriel fort.\"],\"limites\":\"L'activité réelle (gestion pour compte de tiers vs patrimoine propre) n'est pas directement observable ; l'absence de logements sociaux ou de promotion résidentielle ne permet pas d'exclure totalement une activité d'investisseur occasionnel.\"}"
+   }
+  ]
+ }
+]

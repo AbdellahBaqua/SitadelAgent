@@ -1,0 +1,111 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "478596224"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "478596224"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "478596224"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "478596224"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "AFR IMMOBILIER",
+     "nb_permis_PC": 1,
+     "annees_depot": [
+      "2014"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 0,
+     "surface_locaux_non_residentiels_creee_m2": 38,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 0
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "478596224",
+      "nom": "AFR IMMOBILIER",
+      "nature_juridique": "5710",
+      "naf_actuel": "68.31Z",
+      "etat": "A",
+      "date_creation": "2004-10-01",
+      "categorie": "PME",
+      "effectif": "03",
+      "nb_etablissements": 8,
+      "nb_etablissements_ouverts": 3,
+      "siege_actuel": {
+       "siret": "47859622400087",
+       "naf": "68.31Z",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "47859622400012",
+       "naf_dans_permis": "68.31Z",
+       "nb_permis": 1,
+       "annees_depot": [
+        "2014"
+       ],
+       "etat_actuel": "fermé",
+       "date_creation": "2004-10-01",
+       "date_fermeture": "2019-09-08"
+      }
+     ],
+     "alertes": [
+      "SIRET 47859622400012 (permis 2014) fermé le 2019-09-08 : le NAF 68.31Z du permis vient d'un établissement fermé"
+     ],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/478596224"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "68.31Z",
+      "libelle": "Agences immobilières"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5710",
+     "libelle": "SAS, société par actions simplifiée"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"entreprise_autre\",\"confiance\":\"moyenne\",\"indices\":[\"fiche_entreprise : NAF actuel 68.31Z « Agences immobilières » (confirmé par libelle_naf)\",\"fiche_entreprise : Nature juridique 5710 « SAS, société par actions simplifiée » (confirmé par libelle_cj)\",\"permis_du_demandeur : 1 seul permis en 2014, 38 m² de surface non résidentielle créée, 0 logement, 0 logement social déclaré\",\"fiche_entreprise : Entreprise active (état A) depuis 2004, 3 établissements ouverts, effectif 3-5 salariés\",\"fiche_entreprise : L'établissement du permis (SIRET 47859622400012) est fermé depuis 2019, le NAF du permis est donc historique\"],\"limites\":\"Un seul permis ancien (2014) pour une surface non résidentielle modeste ; aucune trace d'activité de promotion, de foncière, de bailleur social, d'association ESS ou d'exploitant santé/social. L'activité actuelle est celle d'une agence immobilière (intermédiation), ce qui correspond à une entreprise de services immobiliers classique.\"}"
+   }
+  ]
+ }
+]

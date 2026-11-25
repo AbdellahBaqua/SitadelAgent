@@ -1,0 +1,116 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "414592246"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "414592246"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "414592246"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "414592246"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "IFF GESTION",
+     "nb_permis_PC": 1,
+     "annees_depot": [
+      "2013"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 16,
+     "surface_locaux_non_residentiels_creee_m2": 54,
+     "nb_permis_collectif": 1,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 0
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "414592246",
+      "nom": "IFF GESTION",
+      "nature_juridique": "5710",
+      "naf_actuel": "68.20B",
+      "etat": "A",
+      "date_creation": "1997-10-01",
+      "categorie": "PME",
+      "effectif": "11",
+      "nb_etablissements": 4,
+      "nb_etablissements_ouverts": 1,
+      "siege_actuel": {
+       "siret": "41459224600048",
+       "naf": "68.20B",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "41459224600030",
+       "naf_dans_permis": "68.32A",
+       "nb_permis": 1,
+       "annees_depot": [
+        "2013"
+       ],
+       "etat_actuel": "fermé",
+       "date_creation": "2005-09-01",
+       "date_fermeture": "2025-11-01"
+      }
+     ],
+     "alertes": [
+      "SIRET 41459224600030 (permis 2013) fermé le 2025-11-01 : le NAF 68.32A du permis vient d'un établissement fermé",
+      "NAF du permis ['68.32A'] différent du NAF actuel de l'entreprise 68.20B"
+     ],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/414592246"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "68.20B",
+      "libelle": "Location de terrains et d'autres biens immobiliers"
+     },
+     {
+      "code": "68.32A",
+      "libelle": "Administration d'immeubles et autres biens immobiliers"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5599",
+     "libelle": "SA à conseil d'administration (s.a.i.)"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"fonciere_investisseur\",\"confiance\":\"moyenne\",\"indices\":[\"fiche_entreprise : NAF actuel 68.20B « Location de terrains et d'autres biens immobiliers » (activité de détention/location de patrimoine)\",\"libelle_naf : confirmation du libellé 68.20B\",\"libelle_cj : forme juridique 5599 « SA à conseil d'administration (s.a.i.) » – société anonyme, compatible avec une foncière\",\"dénomination : « IFF GESTION » évoque une activité de gestion/location immobilière\",\"permis_du_demandeur : 1 permis en 2013 pour 16 logements créés (collectif) et 54 m² non résidentiels, 0 logement locatif social déclaré – cohérent avec une opération pour patrimoine propre à louer\"],\"limites\":\"[\\\"L'établissement porteur du permis (SIRET 41459224600030) est fermé depuis 2025-11-01 ; le NAF du permis (68.32A « Administration d'immeubles ») est historique et diffère du NAF actuel.\\\", \\\"Aucune preuve formelle que la société soit une foncière institutionnelle (SCPI, OPCI, etc.) ni qu'elle ne fasse pas de promotion occasionnelle.\\\", \\\"Le champ « logements_locatifs_sociaux_declares » à 0 ne garantit pas l'absence de vocation sociale (mal renseigné).\\\", \\\"Pas d'information sur l'actionnariat ni sur d'éventuels agréments bailleur social (SA HLM).\\\"]\"}"
+   }
+  ]
+ }
+]

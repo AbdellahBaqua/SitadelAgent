@@ -1,0 +1,116 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "521913772"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "521913772"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "521913772"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "521913772"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "MAGELLIM REIM",
+     "nb_permis_PC": 1,
+     "annees_depot": [
+      "2023"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 0,
+     "surface_locaux_non_residentiels_creee_m2": 7298,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 0
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "521913772",
+      "nom": "MAGELLIM REIM",
+      "nature_juridique": "5710",
+      "naf_actuel": "66.30Z",
+      "etat": "A",
+      "date_creation": "2010-03-19",
+      "categorie": "ETI",
+      "effectif": "12",
+      "nb_etablissements": 10,
+      "nb_etablissements_ouverts": 3,
+      "siege_actuel": {
+       "siret": "52191377200104",
+       "naf": "68.31Z",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "52191377200088",
+       "naf_dans_permis": "68.31Z",
+       "nb_permis": 1,
+       "annees_depot": [
+        "2023"
+       ],
+       "etat_actuel": "fermé",
+       "date_creation": "2018-01-25",
+       "date_fermeture": "2024-04-02"
+      }
+     ],
+     "alertes": [
+      "SIRET 52191377200088 (permis 2023) fermé le 2024-04-02 : le NAF 68.31Z du permis vient d'un établissement fermé",
+      "NAF du permis ['68.31Z'] différent du NAF actuel de l'entreprise 66.30Z"
+     ],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/521913772"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "66.30Z",
+      "libelle": "Gestion de fonds"
+     },
+     {
+      "code": "68.31Z",
+      "libelle": "Agences immobilières"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5710",
+     "libelle": "SAS, société par actions simplifiée"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"fonciere_investisseur\",\"confiance\":\"moyenne\",\"indices\":[\"fiche_entreprise : NAF actuel 66.30Z « Gestion de fonds » – activité de gestion de fonds d'investissement, typique d'une foncière / investisseur immobilier\",\"fiche_entreprise : Forme juridique SAS (catégorie juridique 5710) – société commerciale privée\",\"permis_du_demandeur : 1 permis en 2023 pour 7 298 m² de locaux non résidentiels, 0 logement social – projet d'investissement immobilier non résidentiel\",\"libelle_naf : 66.30Z = « Gestion de fonds » (activité financière immobilière)\",\"fiche_entreprise : L'établissement du permis (SIRET 52191377200088, NAF 68.31Z « Agences immobilières ») est fermé depuis avril 2024 – le NAF du permis est un indice historique\",\"dénomination : « MAGELLIM REIM » – « REIM » suggère Real Estate Investment Management\"],\"limites\":\"Pas de preuve directe de détention de patrimoine locatif (bilan, site web, communication) ; l'activité « Gestion de fonds » peut aussi correspondre à un gestionnaire de fonds pour compte de tiers sans détention propre. Cependant, la cohérence entre le permis (investissement non résidentiel) et le NAF actuel (gestion de fonds) oriente vers une foncière / investisseur.\"}"
+   }
+  ]
+ }
+]

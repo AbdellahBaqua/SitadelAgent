@@ -1,0 +1,111 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "654800689"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "654800689"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "654800689"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "654800689"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "CIMENTS CALCIA",
+     "nb_permis_PC": 2,
+     "annees_depot": [
+      "2019",
+      "2022"
+     ],
+     "nb_communes": 2,
+     "logements_crees_total": 2,
+     "surface_locaux_non_residentiels_creee_m2": 0,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 2,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 2
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "654800689",
+      "nom": "HEIDELBERG MATERIALS FRANCE CIMENTS (HM FRANCE CIMENTS)",
+      "nature_juridique": "5710",
+      "naf_actuel": "23.51Z",
+      "etat": "A",
+      "date_creation": "1965-01-01",
+      "categorie": "GE",
+      "effectif": "42",
+      "nb_etablissements": 54,
+      "nb_etablissements_ouverts": 26,
+      "siege_actuel": {
+       "siret": "65480068900543",
+       "naf": "23.51Z",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "65480068900022",
+       "naf_dans_permis": "23.51Z",
+       "nb_permis": 2,
+       "annees_depot": [
+        "2019",
+        "2022"
+       ],
+       "etat_actuel": "ouvert",
+       "date_creation": "1991-10-28",
+       "date_fermeture": null
+      }
+     ],
+     "alertes": [],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/654800689"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "23.51Z",
+      "libelle": "Fabrication de ciment"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5710",
+     "libelle": "SAS, société par actions simplifiée"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"entreprise_autre\",\"confiance\":\"haute\",\"indices\":[\"fiche_entreprise : nom actuel HEIDELBERG MATERIALS FRANCE CIMENTS (HM FRANCE CIMENTS), forme juridique SAS (5710), NAF actuel 23.51Z « Fabrication de ciment », entreprise de grande taille (GE), 42 employés, 54 établissements dont 26 ouverts\",\"libelle_naf : code 23.51Z correspond à « Fabrication de ciment » (activité industrielle)\",\"libelle_cj : code 5710 correspond à « SAS, société par actions simplifiée »\",\"permis_du_demandeur : 2 permis de construire individuels déposés en 2019 et 2022, 2 logements créés au total, 0 logement locatif social, 0 surface non résidentielle, demandeur dénommé « CIMENTS CALCIA » (ancien nom commercial)\"],\"limites\":\"Aucune incertitude majeure : l'activité industrielle (cimenterie) et la forme juridique (SAS) excluent les familles bailleur_social, promoteur, foncière_investisseur, association_ess, exploitant_sante_social, collectivité_publique, copropriété. Les permis individuels (2 logements) sont probablement liés à des besoins opérationnels ou de logement de fonction de l'industriel.\"}"
+   }
+  ]
+ }
+]

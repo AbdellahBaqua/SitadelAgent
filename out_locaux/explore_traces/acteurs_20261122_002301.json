@@ -1,0 +1,840 @@
+[
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "apercu",
+    "args": {},
+    "sortie": {
+     "perimetre": "PC des Yvelines (78) créant des locaux non résidentiels, déposés par des personnes morales, extraction SDES/Sitadel",
+     "nb_permis": 4245,
+     "nb_demandeurs": 2439,
+     "annees_depot": {
+      "2005": 1,
+      "2006": 1,
+      "2008": 1,
+      "2012": 97,
+      "2013": 257,
+      "2014": 271,
+      "2015": 258,
+      "2016": 322,
+      "2017": 341,
+      "2018": 360,
+      "2019": 331,
+      "2020": 270,
+      "2021": 347,
+      "2022": 370,
+      "2023": 334,
+      "2024": 300,
+      "2025": 282,
+      "2026": 101,
+      "2087": 1
+     },
+     "familles_demandeurs": {
+      "fonciere_investisseur": 895,
+      "entreprise_autre": 602,
+      "collectivite_public": 303,
+      "promoteur": 266,
+      "non_determine": 184,
+      "association_ess": 135,
+      "exploitant_sante_social": 32,
+      "bailleur_social": 21,
+      "copropriete": 1
+     },
+     "colonnes_interrogeables": [
+      "famille",
+      "AN_DEPOT",
+      "COMM",
+      "ADR_LOCALITE_TER",
+      "ETAT_DAU",
+      "DESTINATION_PRINCIPALE",
+      "DEST_SURF_MAX",
+      "TYPE_SERVICE_PUBLIC",
+      "NATURE_PROJET_COMPLETEE",
+      "TYPE_TRANSFO_PRINCIPAL",
+      "TYPE_PRINCIP_LOCAUX_TRANSFORMES",
+      "ZONE_OP",
+      "CJ_DEM",
+      "APE_DEM",
+      "SIREN_DEM",
+      "DENOM_DEM"
+     ],
+     "mesures": [
+      "permis",
+      "surface_m2",
+      "acteurs"
+     ],
+     "remarques": [
+      "2026 est une année partielle",
+      "un permis modificatif n'a pas de ligne propre",
+      "~15 % des ouvertures de chantier et ~1/3 des achèvements ne remontent jamais",
+      "APE_DEM = NAF de l'établissement du permis, possiblement fermé",
+      "surface_m2 = SURF_LOC_CREEE, surface de plancher de locaux non résidentiels créée",
+      "DEST_SURF_MAX = destination qui reçoit le plus de surface (calculée par le code à partir des SURF_*)",
+      "DESTINATION_PRINCIPALE est codée par le SDES (introduite en mai 2022) ; TYPE_SERVICE_PUBLIC vient du formulaire et est souvent 'non rempli'",
+      "un même permis peut aussi créer des logements : il figure alors aussi dans le fichier logements"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 1,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "filtres": {},
+     "group_by": [
+      "famille"
+     ],
+     "mesure": "surface_m2",
+     "top": 5
+    },
+    "sortie": {
+     "filtres": {},
+     "nb_permis_filtres": 4245,
+     "nb_groupes": 9,
+     "resultats": [
+      {
+       "famille": "fonciere_investisseur",
+       "permis": 1149,
+       "surface_m2": 1893109,
+       "acteurs": 895
+      },
+      {
+       "famille": "entreprise_autre",
+       "permis": 958,
+       "surface_m2": 970831,
+       "acteurs": 602
+      },
+      {
+       "famille": "promoteur",
+       "permis": 362,
+       "surface_m2": 912675,
+       "acteurs": 266
+      },
+      {
+       "famille": "collectivite_public",
+       "permis": 1129,
+       "surface_m2": 790045,
+       "acteurs": 303
+      },
+      {
+       "famille": "non_determine",
+       "permis": 266,
+       "surface_m2": 276846,
+       "acteurs": 184
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 2,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "filtres": {},
+     "group_by": [
+      "famille"
+     ],
+     "mesure": "surface_m2",
+     "top": 9
+    },
+    "sortie": {
+     "filtres": {},
+     "nb_permis_filtres": 4245,
+     "nb_groupes": 9,
+     "resultats": [
+      {
+       "famille": "fonciere_investisseur",
+       "permis": 1149,
+       "surface_m2": 1893109,
+       "acteurs": 895
+      },
+      {
+       "famille": "entreprise_autre",
+       "permis": 958,
+       "surface_m2": 970831,
+       "acteurs": 602
+      },
+      {
+       "famille": "promoteur",
+       "permis": 362,
+       "surface_m2": 912675,
+       "acteurs": 266
+      },
+      {
+       "famille": "collectivite_public",
+       "permis": 1129,
+       "surface_m2": 790045,
+       "acteurs": 303
+      },
+      {
+       "famille": "non_determine",
+       "permis": 266,
+       "surface_m2": 276846,
+       "acteurs": 184
+      },
+      {
+       "famille": "association_ess",
+       "permis": 275,
+       "surface_m2": 179244,
+       "acteurs": 135
+      },
+      {
+       "famille": "bailleur_social",
+       "permis": 56,
+       "surface_m2": 47307,
+       "acteurs": 21
+      },
+      {
+       "famille": "exploitant_sante_social",
+       "permis": 48,
+       "surface_m2": 7860,
+       "acteurs": 32
+      },
+      {
+       "famille": "copropriete",
+       "permis": 2,
+       "surface_m2": 2191,
+       "acteurs": 1
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 3,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "filtres": {},
+     "group_by": [
+      "famille",
+      "COMM"
+     ],
+     "mesure": "permis",
+     "top": 0
+    },
+    "sortie": {
+     "filtres": {},
+     "nb_permis_filtres": 4245,
+     "nb_groupes": 903,
+     "resultats": [
+      {
+       "famille": "collectivite_public",
+       "COMM": "78646",
+       "permis": 44,
+       "surface_m2": 41168,
+       "acteurs": 19
+      },
+      {
+       "famille": "collectivite_public",
+       "COMM": "78551",
+       "permis": 40,
+       "surface_m2": 117639,
+       "acteurs": 13
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "COMM": "78586",
+       "permis": 40,
+       "surface_m2": 26283,
+       "acteurs": 28
+      },
+      {
+       "famille": "entreprise_autre",
+       "COMM": "78335",
+       "permis": 38,
+       "surface_m2": 10297,
+       "acteurs": 22
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "COMM": "78255",
+       "permis": 36,
+       "surface_m2": 32139,
+       "acteurs": 27
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "COMM": "78269",
+       "permis": 33,
+       "surface_m2": 25984,
+       "acteurs": 32
+      },
+      {
+       "famille": "collectivite_public",
+       "COMM": "78361",
+       "permis": 33,
+       "surface_m2": 43082,
+       "acteurs": 9
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "COMM": "78029",
+       "permis": 32,
+       "surface_m2": 96909,
+       "acteurs": 20
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "COMM": "78550",
+       "permis": 32,
+       "surface_m2": 14016,
+       "acteurs": 29
+      },
+      {
+       "famille": "entreprise_autre",
+       "COMM": "78440",
+       "permis": 31,
+       "surface_m2": 54146,
+       "acteurs": 21
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "COMM": "78297",
+       "permis": 30,
+       "surface_m2": 77993,
+       "acteurs": 18
+      },
+      {
+       "famille": "collectivite_public",
+       "COMM": "78362",
+       "permis": 30,
+       "surface_m2": 35753,
+       "acteurs": 5
+      },
+      {
+       "famille": "collectivite_public",
+       "COMM": "78498",
+       "permis": 28,
+       "surface_m2": 34780,
+       "acteurs": 5
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "COMM": "78531",
+       "permis": 28,
+       "surface_m2": 22509,
+       "acteurs": 21
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "COMM": "78138",
+       "permis": 27,
+       "surface_m2": 31998,
+       "acteurs": 21
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 4,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "filtres": {},
+     "group_by": [
+      "famille",
+      "AN_DEPOT"
+     ],
+     "mesure": "permis",
+     "top": 0
+    },
+    "sortie": {
+     "filtres": {},
+     "nb_permis_filtres": 4245,
+     "nb_groupes": 121,
+     "resultats": [
+      {
+       "famille": "collectivite_public",
+       "AN_DEPOT": "2018",
+       "permis": 111,
+       "surface_m2": 69318,
+       "acteurs": 79
+      },
+      {
+       "famille": "collectivite_public",
+       "AN_DEPOT": "2023",
+       "permis": 98,
+       "surface_m2": 71141,
+       "acteurs": 70
+      },
+      {
+       "famille": "collectivite_public",
+       "AN_DEPOT": "2019",
+       "permis": 97,
+       "surface_m2": 56289,
+       "acteurs": 73
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "AN_DEPOT": "2019",
+       "permis": 97,
+       "surface_m2": 157622,
+       "acteurs": 89
+      },
+      {
+       "famille": "collectivite_public",
+       "AN_DEPOT": "2022",
+       "permis": 96,
+       "surface_m2": 53851,
+       "acteurs": 65
+      },
+      {
+       "famille": "collectivite_public",
+       "AN_DEPOT": "2017",
+       "permis": 94,
+       "surface_m2": 89621,
+       "acteurs": 64
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "AN_DEPOT": "2014",
+       "permis": 92,
+       "surface_m2": 66318,
+       "acteurs": 81
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "AN_DEPOT": "2018",
+       "permis": 91,
+       "surface_m2": 199575,
+       "acteurs": 86
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "AN_DEPOT": "2022",
+       "permis": 90,
+       "surface_m2": 230057,
+       "acteurs": 83
+      },
+      {
+       "famille": "collectivite_public",
+       "AN_DEPOT": "2024",
+       "permis": 89,
+       "surface_m2": 81294,
+       "acteurs": 63
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "AN_DEPOT": "2016",
+       "permis": 88,
+       "surface_m2": 132306,
+       "acteurs": 81
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "AN_DEPOT": "2017",
+       "permis": 88,
+       "surface_m2": 131600,
+       "acteurs": 84
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "AN_DEPOT": "2020",
+       "permis": 86,
+       "surface_m2": 110219,
+       "acteurs": 85
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "AN_DEPOT": "2021",
+       "permis": 86,
+       "surface_m2": 96886,
+       "acteurs": 79
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "AN_DEPOT": "2025",
+       "permis": 86,
+       "surface_m2": 312752,
+       "acteurs": 77
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 5,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "filtres": {},
+     "group_by": [
+      "famille"
+     ],
+     "mesure": "surface_m2",
+     "top": 0
+    },
+    "sortie": {
+     "filtres": {},
+     "nb_permis_filtres": 4245,
+     "nb_groupes": 9,
+     "resultats": [
+      {
+       "famille": "fonciere_investisseur",
+       "permis": 1149,
+       "surface_m2": 1893109,
+       "acteurs": 895
+      },
+      {
+       "famille": "entreprise_autre",
+       "permis": 958,
+       "surface_m2": 970831,
+       "acteurs": 602
+      },
+      {
+       "famille": "promoteur",
+       "permis": 362,
+       "surface_m2": 912675,
+       "acteurs": 266
+      },
+      {
+       "famille": "collectivite_public",
+       "permis": 1129,
+       "surface_m2": 790045,
+       "acteurs": 303
+      },
+      {
+       "famille": "non_determine",
+       "permis": 266,
+       "surface_m2": 276846,
+       "acteurs": 184
+      },
+      {
+       "famille": "association_ess",
+       "permis": 275,
+       "surface_m2": 179244,
+       "acteurs": 135
+      },
+      {
+       "famille": "bailleur_social",
+       "permis": 56,
+       "surface_m2": 47307,
+       "acteurs": 21
+      },
+      {
+       "famille": "exploitant_sante_social",
+       "permis": 48,
+       "surface_m2": 7860,
+       "acteurs": 32
+      },
+      {
+       "famille": "copropriete",
+       "permis": 2,
+       "surface_m2": 2191,
+       "acteurs": 1
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 6,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "filtres": {},
+     "group_by": [
+      "famille",
+      "COMM"
+     ],
+     "mesure": "permis",
+     "top": 0
+    },
+    "sortie": {
+     "filtres": {},
+     "nb_permis_filtres": 4245,
+     "nb_groupes": 903,
+     "resultats": [
+      {
+       "famille": "collectivite_public",
+       "COMM": "78646",
+       "permis": 44,
+       "surface_m2": 41168,
+       "acteurs": 19
+      },
+      {
+       "famille": "collectivite_public",
+       "COMM": "78551",
+       "permis": 40,
+       "surface_m2": 117639,
+       "acteurs": 13
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "COMM": "78586",
+       "permis": 40,
+       "surface_m2": 26283,
+       "acteurs": 28
+      },
+      {
+       "famille": "entreprise_autre",
+       "COMM": "78335",
+       "permis": 38,
+       "surface_m2": 10297,
+       "acteurs": 22
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "COMM": "78255",
+       "permis": 36,
+       "surface_m2": 32139,
+       "acteurs": 27
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "COMM": "78269",
+       "permis": 33,
+       "surface_m2": 25984,
+       "acteurs": 32
+      },
+      {
+       "famille": "collectivite_public",
+       "COMM": "78361",
+       "permis": 33,
+       "surface_m2": 43082,
+       "acteurs": 9
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "COMM": "78029",
+       "permis": 32,
+       "surface_m2": 96909,
+       "acteurs": 20
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "COMM": "78550",
+       "permis": 32,
+       "surface_m2": 14016,
+       "acteurs": 29
+      },
+      {
+       "famille": "entreprise_autre",
+       "COMM": "78440",
+       "permis": 31,
+       "surface_m2": 54146,
+       "acteurs": 21
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "COMM": "78297",
+       "permis": 30,
+       "surface_m2": 77993,
+       "acteurs": 18
+      },
+      {
+       "famille": "collectivite_public",
+       "COMM": "78362",
+       "permis": 30,
+       "surface_m2": 35753,
+       "acteurs": 5
+      },
+      {
+       "famille": "collectivite_public",
+       "COMM": "78498",
+       "permis": 28,
+       "surface_m2": 34780,
+       "acteurs": 5
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "COMM": "78531",
+       "permis": 28,
+       "surface_m2": 22509,
+       "acteurs": 21
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "COMM": "78138",
+       "permis": 27,
+       "surface_m2": 31998,
+       "acteurs": 21
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 7,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "noter",
+    "args": {
+     "a_creuser": "",
+     "constat": "La famille foncière_investisseur représente 1 893 109 m² (≈ 1 893 k m²) sur 1 149 permis, soit une moyenne de 1 650 m² par permis. Elle compte 895 acteurs, soit 1 149 / 895 ≈ 1,28 permis par acteur. Le nombre de permis par année reste stable autour de 90 (ex. 2019 = 97, 2020 = 86, 2022 = 90).",
+     "fiabilite": "établi",
+     "interet_buddimm": "Permet de cibler les investisseurs fonciers comme principaux clients pour des projets de grande surface, de prospection et de conseil sur les sites à forte densité.",
+     "limites": "Données limitées aux Yvelines et aux permis non résidentiels ; la répartition géographique exacte n’est pas détaillée ici.",
+     "titre": "Foncière investisseur domine le volume de construction"
+    },
+    "sortie": {
+     "erreur": "Refusé : ces chiffres ne figurent dans aucun résultat d'outil : 1 650, 1 893. Corrige-les avec des chiffres issus des requêtes, ou fais la requête qui les donne, puis renote."
+    }
+   }
+  ]
+ },
+ {
+  "etape": 8,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "filtres": {
+      "famille": "fonciere_investisseur"
+     },
+     "group_by": [
+      "COMM"
+     ],
+     "mesure": "permis",
+     "top": 0
+    },
+    "sortie": {
+     "filtres": {
+      "famille": "fonciere_investisseur"
+     },
+     "nb_permis_filtres": 1149,
+     "nb_groupes": 168,
+     "resultats": [
+      {
+       "COMM": "78586",
+       "permis": 40,
+       "surface_m2": 26283,
+       "acteurs": 28
+      },
+      {
+       "COMM": "78255",
+       "permis": 36,
+       "surface_m2": 32139,
+       "acteurs": 27
+      },
+      {
+       "COMM": "78269",
+       "permis": 33,
+       "surface_m2": 25984,
+       "acteurs": 32
+      },
+      {
+       "COMM": "78029",
+       "permis": 32,
+       "surface_m2": 96909,
+       "acteurs": 20
+      },
+      {
+       "COMM": "78550",
+       "permis": 32,
+       "surface_m2": 14016,
+       "acteurs": 29
+      },
+      {
+       "COMM": "78297",
+       "permis": 30,
+       "surface_m2": 77993,
+       "acteurs": 18
+      },
+      {
+       "COMM": "78531",
+       "permis": 28,
+       "surface_m2": 22509,
+       "acteurs": 21
+      },
+      {
+       "COMM": "78138",
+       "permis": 27,
+       "surface_m2": 31998,
+       "acteurs": 21
+      },
+      {
+       "COMM": "78640",
+       "permis": 26,
+       "surface_m2": 239348,
+       "acteurs": 15
+      },
+      {
+       "COMM": "78168",
+       "permis": 25,
+       "surface_m2": 37922,
+       "acteurs": 22
+      },
+      {
+       "COMM": "78490",
+       "permis": 24,
+       "surface_m2": 122392,
+       "acteurs": 15
+      },
+      {
+       "COMM": "78517",
+       "permis": 22,
+       "surface_m2": 13428,
+       "acteurs": 19
+      },
+      {
+       "COMM": "78551",
+       "permis": 21,
+       "surface_m2": 51372,
+       "acteurs": 18
+      },
+      {
+       "COMM": "78389",
+       "permis": 20,
+       "surface_m2": 17909,
+       "acteurs": 17
+      },
+      {
+       "COMM": "78646",
+       "permis": 20,
+       "surface_m2": 25305,
+       "acteurs": 18
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 9,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "noter",
+    "args": {
+     "a_creuser": "",
+     "constat": "La famille foncière_investisseur représente 1 893 109 m² sur 1 149 permis, 895 acteurs.",
+     "fiabilite": "établi",
+     "interet_buddimm": "Cible les investisseurs fonciers comme principaux clients pour projets de grande surface, prospection et conseil sur sites à forte densité.",
+     "limites": "Données limitées aux Yvelines et aux permis non résidentiels.",
+     "titre": "Foncière investisseur domine le volume de construction"
+    },
+    "sortie": {
+     "ok": "note 1 enregistrée"
+    }
+   }
+  ]
+ }
+]

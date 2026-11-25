@@ -1,0 +1,88 @@
+[
+ {
+  "etape": "pre",
+  "texte": "résultats calculés par le code avant le modèle",
+  "entree": {
+   "siren": "538465808",
+   "denomination": "AUTISME EN YVELINES",
+   "famille_classification": "association_ess",
+   "raisons_du_score": "famille cible (association_ess) +3 ; projet médico-social (équipement de santé) +3 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1 ; projet de taille significative (≥ 20 logements ou ≥ 1 000 m²) +1",
+   "taille_calculee": "moyenne",
+   "taille_calcul": "salariés ≥ 250, établissements ouverts 13, établissements FINESS 8",
+   "permis_du_prospect": [
+    {
+     "num_dau": "07801016G0013",
+     "fichier": "locaux",
+     "annee_depot": "2016",
+     "commune": "LES ALLUETS-LE-ROI",
+     "etat": "commencé",
+     "type_projet": "équipement de santé",
+     "logements_crees": null,
+     "surface_locaux_creee_m2": 2440
+    }
+   ],
+   "fiche_entreprise": {
+    "nom": "AUTISME EN ILE DE FRANCE (AUTISME EN ILE DE FRANCE SIEGE) (AEIDF)",
+    "nature_juridique": "9220",
+    "naf_actuel": "88.99B",
+    "etat": "A",
+    "date_creation": "2010-11-04",
+    "categorie": "ETI",
+    "effectif": "32",
+    "nb_etablissements": 20,
+    "nb_etablissements_ouverts": 13,
+    "libelle_naf_actuel": "Action sociale sans hébergement n.c.a.",
+    "libelle_nature_juridique": "Association déclarée",
+    "aide": "etat A = active, C ou F = cessée. effectif = tranche Insee de salariés (ex. 21 = 50 à 99, 41 = 500 à 999, 51 = 2 000 à 4 999). Dirigeants et finances volontairement exclus.",
+    "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/538465808"
+   },
+   "finess_du_prospect": {
+    "nb_etablissements_finess_france": 8,
+    "nb_etablissements_finess_yvelines": 3,
+    "nb_departements": 4,
+    "par_type": {
+     "Etab.Educ.Spéciale pour Déficients Mentaux et Handicapés": 4,
+     "Services à Domicile ou Ambulatoires pour Handicapés": 3,
+     "Etab. et Services d'Hébergement pour Adultes Handicapés": 1
+    },
+    "exemples_yvelines": [
+     {
+      "finess": "780018602",
+      "nom": "IME NOTRE ECOLE",
+      "ville": "CARRIERES SOUS POISSY",
+      "categorie": "Institut Médico-Educatif (I.M.E.)",
+      "ouverture": "2003-08-08"
+     },
+     {
+      "finess": "780702353",
+      "nom": "SERVICE D EDUCATION SPECIALE ET DE SOINS A DOMICILE AIDERA",
+      "ville": "NOISY LE ROI",
+      "categorie": "Service d'Éducation Spéciale et de Soins à Domicile",
+      "ouverture": "1993-09-13"
+     },
+     {
+      "finess": "780820429",
+      "nom": "FOYER D ACCUEIL MEDICALISE LE CLAIR BOIS",
+      "ville": "LES ALLUETS LE ROI",
+      "categorie": "Foyer d'Accueil Médicalisé pour Adultes Handicapés (F.A.M.)",
+      "ouverture": "1989-02-13"
+     }
+    ],
+    "source": "https://www.data.gouv.fr/datasets/53699569a3a729239d2046eb",
+    "aide": "Établissements dont le SIRET commence par ce SIREN. 0 ne prouve pas l'absence d'activité médico-sociale (SIRET non renseigné dans FINESS, autre entité juridique du même groupe)."
+   },
+   "origine": "demandeur de permis",
+   "consigne": "Ces résultats viennent des outils permis_du_prospect, fiche_entreprise et finess_du_prospect : cite-les. Conclus avec conclure_prospect."
+  }
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure_prospect",
+    "args": "{\"adequation\":\"forte\",\"besoin_immobilier\":\"Projet d'équipement de santé de 2440 m² en cours depuis 2016, indiquant un besoin de locaux pour activité médico‑sociale.\",\"indices\":[\"permis_du_prospect: {\\\"num_dau\\\":\\\"07801016G0013\\\",\\\"type_projet\\\":\\\"équipement de santé\\\",\\\"surface_locaux_creee_m2\\\":2440,\\\"etat\\\":\\\"commencé\\\"}\",\"fiche_entreprise: {\\\"nature_juridique\\\":\\\"9220\\\",\\\"libelle_naf_actuel\\\":\\\"Action sociale sans hébergement n.c.a.\\\",\\\"etat\\\":\\\"A\\\",\\\"effectif\\\":\\\"32\\\",\\\"nb_etablissements_ouverts\\\":13}\",\"finess_du_prospect: {\\\"nb_etablissements_finess_france\\\":8,\\\"par_type\\\":{\\\"Etab.Educ.Spéciale pour Déficients Mentaux et Handicapés\\\":4,\\\"Services à Domicile ou Ambulatoires pour Handicapés\\\":3,\\\"Etab. et Services d'Hébergement pour Adultes Handicapés\\\":1}}\"],\"limites\":\"Le permis date de 2016 et aucun autre projet récent n'est identifié ; il faut vérifier l’avancement actuel du projet.\",\"type_structure\":\"Association de l'ESS œuvrant dans le secteur médico‑social (IME, services à domicile, foyer d'accueil).\",\"verdict\":\"prospect\"}"
+   }
+  ]
+ }
+]

@@ -1,0 +1,1824 @@
+[
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "apercu",
+    "args": {},
+    "sortie": {
+     "perimetre": "PC des Yvelines (78) créant des logements, déposés par des personnes morales, extraction SDES/Sitadel",
+     "nb_permis": 3363,
+     "nb_demandeurs": 2048,
+     "annees_depot": {
+      "2011": 3,
+      "2012": 100,
+      "2013": 222,
+      "2014": 235,
+      "2015": 258,
+      "2016": 266,
+      "2017": 290,
+      "2018": 247,
+      "2019": 256,
+      "2020": 231,
+      "2021": 356,
+      "2022": 247,
+      "2023": 221,
+      "2024": 185,
+      "2025": 168,
+      "2026": 77,
+      "2091": 1
+     },
+     "familles_demandeurs": {
+      "fonciere_investisseur": 1014,
+      "promoteur": 690,
+      "non_determine": 172,
+      "collectivite_public": 79,
+      "bailleur_social": 31,
+      "entreprise_autre": 29,
+      "association_ess": 26,
+      "copropriete": 4,
+      "exploitant_sante_social": 3
+     },
+     "colonnes_interrogeables": [
+      "famille",
+      "AN_DEPOT",
+      "COMM",
+      "ADR_LOCALITE_TER",
+      "ETAT_DAU",
+      "RESIDENCE",
+      "TYPE_PRINCIP_LOGTS_CREES",
+      "NATURE_PROJET_COMPLETEE",
+      "TYPE_TRANSFO_PRINCIPAL",
+      "TYPE_PRINCIP_LOCAUX_TRANSFORMES",
+      "UTILISATION",
+      "DESTINATION_PRINCIPALE",
+      "ZONE_OP",
+      "CJ_DEM",
+      "APE_DEM",
+      "SIREN_DEM",
+      "DENOM_DEM"
+     ],
+     "mesures": [
+      "permis",
+      "logements",
+      "acteurs"
+     ],
+     "remarques": [
+      "2026 est une année partielle",
+      "un permis modificatif n'a pas de ligne propre",
+      "~15 % des ouvertures de chantier et ~1/3 des achèvements ne remontent jamais",
+      "APE_DEM = NAF de l'établissement du permis, possiblement fermé",
+      "RESIDENCE est rempli sur une petite minorité de permis (souvent 'non rempli') ; les drapeaux RES_* n'existent que depuis mai 2022",
+      "NATURE_PROJET_COMPLETEE et TYPE_TRANSFO_* sont dits 'introduits en mai 2022' mais sont renseignés dès 2012 dans le fichier (recodage SDES probable)"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 1,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "famille",
+      "AN_DEPOT"
+     ],
+     "filtres": {
+      "famille": [
+       "association_ess",
+       "exploitant_sante_social",
+       "bailleur_social",
+       "collectivite_public"
+      ]
+     },
+     "mesure": "logements",
+     "top": 50
+    },
+    "sortie": {
+     "filtres": {
+      "famille": [
+       "association_ess",
+       "exploitant_sante_social",
+       "bailleur_social",
+       "collectivite_public"
+      ]
+     },
+     "nb_permis_filtres": 511,
+     "nb_groupes": 48,
+     "resultats": [
+      {
+       "famille": "bailleur_social",
+       "AN_DEPOT": "2019",
+       "permis": 37,
+       "logements": 1615,
+       "acteurs": 10
+      },
+      {
+       "famille": "bailleur_social",
+       "AN_DEPOT": "2021",
+       "permis": 40,
+       "logements": 1571,
+       "acteurs": 15
+      },
+      {
+       "famille": "bailleur_social",
+       "AN_DEPOT": "2015",
+       "permis": 24,
+       "logements": 1492,
+       "acteurs": 13
+      },
+      {
+       "famille": "bailleur_social",
+       "AN_DEPOT": "2017",
+       "permis": 30,
+       "logements": 1046,
+       "acteurs": 13
+      },
+      {
+       "famille": "bailleur_social",
+       "AN_DEPOT": "2016",
+       "permis": 22,
+       "logements": 1038,
+       "acteurs": 13
+      },
+      {
+       "famille": "bailleur_social",
+       "AN_DEPOT": "2014",
+       "permis": 19,
+       "logements": 734,
+       "acteurs": 8
+      },
+      {
+       "famille": "bailleur_social",
+       "AN_DEPOT": "2013",
+       "permis": 19,
+       "logements": 729,
+       "acteurs": 10
+      },
+      {
+       "famille": "bailleur_social",
+       "AN_DEPOT": "2024",
+       "permis": 17,
+       "logements": 607,
+       "acteurs": 9
+      },
+      {
+       "famille": "bailleur_social",
+       "AN_DEPOT": "2022",
+       "permis": 20,
+       "logements": 605,
+       "acteurs": 8
+      },
+      {
+       "famille": "bailleur_social",
+       "AN_DEPOT": "2025",
+       "permis": 13,
+       "logements": 540,
+       "acteurs": 7
+      },
+      {
+       "famille": "bailleur_social",
+       "AN_DEPOT": "2018",
+       "permis": 16,
+       "logements": 488,
+       "acteurs": 11
+      },
+      {
+       "famille": "bailleur_social",
+       "AN_DEPOT": "2020",
+       "permis": 13,
+       "logements": 484,
+       "acteurs": 7
+      },
+      {
+       "famille": "bailleur_social",
+       "AN_DEPOT": "2012",
+       "permis": 16,
+       "logements": 405,
+       "acteurs": 10
+      },
+      {
+       "famille": "bailleur_social",
+       "AN_DEPOT": "2023",
+       "permis": 9,
+       "logements": 366,
+       "acteurs": 7
+      },
+      {
+       "famille": "association_ess",
+       "AN_DEPOT": "2012",
+       "permis": 4,
+       "logements": 290,
+       "acteurs": 4
+      },
+      {
+       "famille": "collectivite_public",
+       "AN_DEPOT": "2013",
+       "permis": 17,
+       "logements": 206,
+       "acteurs": 13
+      },
+      {
+       "famille": "collectivite_public",
+       "AN_DEPOT": "2017",
+       "permis": 14,
+       "logements": 176,
+       "acteurs": 10
+      },
+      {
+       "famille": "collectivite_public",
+       "AN_DEPOT": "2018",
+       "permis": 18,
+       "logements": 168,
+       "acteurs": 15
+      },
+      {
+       "famille": "collectivite_public",
+       "AN_DEPOT": "2014",
+       "permis": 18,
+       "logements": 122,
+       "acteurs": 14
+      },
+      {
+       "famille": "collectivite_public",
+       "AN_DEPOT": "2012",
+       "permis": 9,
+       "logements": 120,
+       "acteurs": 8
+      },
+      {
+       "famille": "collectivite_public",
+       "AN_DEPOT": "2023",
+       "permis": 18,
+       "logements": 117,
+       "acteurs": 11
+      },
+      {
+       "famille": "association_ess",
+       "AN_DEPOT": "2018",
+       "permis": 2,
+       "logements": 87,
+       "acteurs": 2
+      },
+      {
+       "famille": "collectivite_public",
+       "AN_DEPOT": "2024",
+       "permis": 9,
+       "logements": 77,
+       "acteurs": 8
+      },
+      {
+       "famille": "association_ess",
+       "AN_DEPOT": "2015",
+       "permis": 2,
+       "logements": 72,
+       "acteurs": 2
+      },
+      {
+       "famille": "bailleur_social",
+       "AN_DEPOT": "2011",
+       "permis": 2,
+       "logements": 56,
+       "acteurs": 1
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 2,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "famille",
+      "DENOM_DEM"
+     ],
+     "filtres": {
+      "famille": [
+       "association_ess",
+       "exploitant_sante_social"
+      ]
+     },
+     "mesure": "logements",
+     "top": 50
+    },
+    "sortie": {
+     "filtres": {
+      "famille": [
+       "association_ess",
+       "exploitant_sante_social"
+      ]
+     },
+     "nb_permis_filtres": 46,
+     "nb_groupes": 29,
+     "resultats": [
+      {
+       "famille": "association_ess",
+       "DENOM_DEM": "ASS APPRENTIS INDUSTRIEL COMMERCIAL",
+       "permis": 1,
+       "logements": 122,
+       "acteurs": 1
+      },
+      {
+       "famille": "association_ess",
+       "DENOM_DEM": "ASS GEST STE FOY INSTIT ST DOMINIQUE",
+       "permis": 1,
+       "logements": 119,
+       "acteurs": 1
+      },
+      {
+       "famille": "association_ess",
+       "DENOM_DEM": "FREHA",
+       "permis": 3,
+       "logements": 93,
+       "acteurs": 1
+      },
+      {
+       "famille": "association_ess",
+       "DENOM_DEM": "FONDATION BRIGITTE BARDOT",
+       "permis": 3,
+       "logements": 60,
+       "acteurs": 1
+      },
+      {
+       "famille": "association_ess",
+       "DENOM_DEM": "FONDATION COGNACQ JAY",
+       "permis": 1,
+       "logements": 50,
+       "acteurs": 1
+      },
+      {
+       "famille": "association_ess",
+       "DENOM_DEM": "ASSOCIATION DIOCESAINE DE VERSAILLES",
+       "permis": 6,
+       "logements": 25,
+       "acteurs": 1
+      },
+      {
+       "famille": "association_ess",
+       "DENOM_DEM": "FONDATION ANNE DE GAULLE",
+       "permis": 1,
+       "logements": 25,
+       "acteurs": 1
+      },
+      {
+       "famille": "association_ess",
+       "DENOM_DEM": "ASS L ARCHE D AIGREFOIN",
+       "permis": 1,
+       "logements": 22,
+       "acteurs": 1
+      },
+      {
+       "famille": "association_ess",
+       "DENOM_DEM": "MAISON MADELEINE",
+       "permis": 1,
+       "logements": 16,
+       "acteurs": 1
+      },
+      {
+       "famille": "association_ess",
+       "DENOM_DEM": "FONDATION MALLET",
+       "permis": 6,
+       "logements": 11,
+       "acteurs": 1
+      },
+      {
+       "famille": "association_ess",
+       "DENOM_DEM": "AVENIR APEI",
+       "permis": 1,
+       "logements": 8,
+       "acteurs": 1
+      },
+      {
+       "famille": "association_ess",
+       "DENOM_DEM": "OGEC SAINTE THERESE",
+       "permis": 1,
+       "logements": 7,
+       "acteurs": 1
+      },
+      {
+       "famille": "association_ess",
+       "DENOM_DEM": "COMMUNAUTE DES JEUNES DE COURBEVOIE",
+       "permis": 1,
+       "logements": 5,
+       "acteurs": 1
+      },
+      {
+       "famille": "exploitant_sante_social",
+       "DENOM_DEM": "BABYBULLE",
+       "permis": 3,
+       "logements": 3,
+       "acteurs": 1
+      },
+      {
+       "famille": "association_ess",
+       "DENOM_DEM": "CROIX ROUGE FRANCAISE",
+       "permis": 1,
+       "logements": 3,
+       "acteurs": 1
+      },
+      {
+       "famille": "exploitant_sante_social",
+       "DENOM_DEM": "MEDIPART",
+       "permis": 2,
+       "logements": 3,
+       "acteurs": 1
+      },
+      {
+       "famille": "association_ess",
+       "DENOM_DEM": "ASSSOC ACCUEIL PERS HANDIC PERS AGEES",
+       "permis": 1,
+       "logements": 2,
+       "acteurs": 1
+      },
+      {
+       "famille": "association_ess",
+       "DENOM_DEM": "FONDATION LEOPOLD BELLAN",
+       "permis": 1,
+       "logements": 2,
+       "acteurs": 1
+      },
+      {
+       "famille": "association_ess",
+       "DENOM_DEM": "ECOLE CHIEN GUIDE AVEUGLE PARIS REGPARI",
+       "permis": 1,
+       "logements": 1,
+       "acteurs": 1
+      },
+      {
+       "famille": "association_ess",
+       "DENOM_DEM": "LA GERBE",
+       "permis": 1,
+       "logements": 1,
+       "acteurs": 1
+      },
+      {
+       "famille": "association_ess",
+       "DENOM_DEM": "FONDATION JOHN BOST",
+       "permis": 1,
+       "logements": 1,
+       "acteurs": 1
+      },
+      {
+       "famille": "association_ess",
+       "DENOM_DEM": "SCOUTS ET GUIDES DE FRANCE",
+       "permis": 1,
+       "logements": 1,
+       "acteurs": 1
+      },
+      {
+       "famille": "association_ess",
+       "DENOM_DEM": "FEDERATION FRANCAISE DES CLUBS ALPINS ET DE MONTAGNE",
+       "permis": 1,
+       "logements": 1,
+       "acteurs": 1
+      },
+      {
+       "famille": "exploitant_sante_social",
+       "DENOM_DEM": "LES PETITES CANAILLES",
+       "permis": 1,
+       "logements": 1,
+       "acteurs": 1
+      },
+      {
+       "famille": "association_ess",
+       "DENOM_DEM": "FEDERATION CULTURELLE DES ASSOCIATIONS MUSULMANES DE MONTREUIL",
+       "permis": 1,
+       "logements": 1,
+       "acteurs": 1
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 3,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "famille",
+      "DENOM_DEM"
+     ],
+     "filtres": {
+      "famille": "bailleur_social"
+     },
+     "mesure": "logements",
+     "top": 50
+    },
+    "sortie": {
+     "filtres": {
+      "famille": "bailleur_social"
+     },
+     "nb_permis_filtres": 299,
+     "nb_groupes": 37,
+     "resultats": [
+      {
+       "famille": "bailleur_social",
+       "DENOM_DEM": "IMMOBILIERE 3F",
+       "permis": 44,
+       "logements": 1552,
+       "acteurs": 1
+      },
+      {
+       "famille": "bailleur_social",
+       "DENOM_DEM": "ADOMA",
+       "permis": 11,
+       "logements": 1530,
+       "acteurs": 1
+      },
+      {
+       "famille": "bailleur_social",
+       "DENOM_DEM": "ANTIN RESIDENCES SA HABITAT LOYER MODERE",
+       "permis": 30,
+       "logements": 1442,
+       "acteurs": 1
+      },
+      {
+       "famille": "bailleur_social",
+       "DENOM_DEM": "ENTREPRISE SOCIALE POUR L'HABITAT DOMNIS",
+       "permis": 29,
+       "logements": 933,
+       "acteurs": 1
+      },
+      {
+       "famille": "bailleur_social",
+       "DENOM_DEM": "SA D'H L M FRANCE HABITATION",
+       "permis": 23,
+       "logements": 729,
+       "acteurs": 1
+      },
+      {
+       "famille": "bailleur_social",
+       "DENOM_DEM": "LES RESIDENCES SOCIETE ANONYME D'HABITATIONS A LOYER MODERE",
+       "permis": 30,
+       "logements": 558,
+       "acteurs": 1
+      },
+      {
+       "famille": "bailleur_social",
+       "DENOM_DEM": "SA IMMO MOULIN VERT-SA HAB LOYER MODERE",
+       "permis": 4,
+       "logements": 436,
+       "acteurs": 1
+      },
+      {
+       "famille": "bailleur_social",
+       "DENOM_DEM": "ICF LA SABLIERE SA D'HLM",
+       "permis": 8,
+       "logements": 420,
+       "acteurs": 1
+      },
+      {
+       "famille": "bailleur_social",
+       "DENOM_DEM": "VALOPHIS SAREPA  - SOCIETE ANONYME D'HLM",
+       "permis": 8,
+       "logements": 406,
+       "acteurs": 1
+      },
+      {
+       "famille": "bailleur_social",
+       "DENOM_DEM": "CDC HABITAT SOCIAL SOCIETE ANONYME D'HABITATIONS A LOYER MODERE",
+       "permis": 12,
+       "logements": 354,
+       "acteurs": 1
+      },
+      {
+       "famille": "bailleur_social",
+       "DENOM_DEM": "EFIDIS SA HABITATION LOYER MODERE",
+       "permis": 9,
+       "logements": 349,
+       "acteurs": 1
+      },
+      {
+       "famille": "bailleur_social",
+       "DENOM_DEM": "SEQENS SOCIETE ANONYME D'HABITATIONS A LOYER MODERE",
+       "permis": 8,
+       "logements": 330,
+       "acteurs": 1
+      },
+      {
+       "famille": "bailleur_social",
+       "DENOM_DEM": "RESIDENCES SOCIALES DE FRANCE",
+       "permis": 3,
+       "logements": 316,
+       "acteurs": 1
+      },
+      {
+       "famille": "bailleur_social",
+       "DENOM_DEM": "LOGEMENT GEST IMMOBILIERE REG PARISIENNE",
+       "permis": 5,
+       "logements": 279,
+       "acteurs": 1
+      },
+      {
+       "famille": "bailleur_social",
+       "DENOM_DEM": "BATIGERE EN ILE DE FRANCE",
+       "permis": 10,
+       "logements": 239,
+       "acteurs": 1
+      },
+      {
+       "famille": "bailleur_social",
+       "DENOM_DEM": "APILOGIS SOCIETE ANONYME COOPERATIVE D'INTERET COLLECTIF D'HABITATIONS A LOYER MODERE, SOCIETE A CAPITAL VARIABLE",
+       "permis": 4,
+       "logements": 205,
+       "acteurs": 1
+      },
+      {
+       "famille": "bailleur_social",
+       "DENOM_DEM": "VILOGIA SOCIETE ANONYME D'HLM",
+       "permis": 9,
+       "logements": 201,
+       "acteurs": 1
+      },
+      {
+       "famille": "bailleur_social",
+       "DENOM_DEM": "DOMAXIS SOCIETE ANONYME D' HABITATIONS A LOYER MODERE",
+       "permis": 6,
+       "logements": 185,
+       "acteurs": 1
+      },
+      {
+       "famille": "bailleur_social",
+       "DENOM_DEM": "COALLIA HABITAT",
+       "permis": 1,
+       "logements": 180,
+       "acteurs": 1
+      },
+      {
+       "famille": "bailleur_social",
+       "DENOM_DEM": "LOGIREP",
+       "permis": 4,
+       "logements": 158,
+       "acteurs": 1
+      },
+      {
+       "famille": "bailleur_social",
+       "DENOM_DEM": "SA D'HLM DE L'AGGLOMERATION PARISIENNE",
+       "permis": 5,
+       "logements": 142,
+       "acteurs": 1
+      },
+      {
+       "famille": "bailleur_social",
+       "DENOM_DEM": "SOVAL ENTREPRISE SOCIALE POUR L'HABITAT DU VAL DE SEINE",
+       "permis": 8,
+       "logements": 118,
+       "acteurs": 1
+      },
+      {
+       "famille": "bailleur_social",
+       "DENOM_DEM": "BATIGERE HABITATS SOLIDAIRES",
+       "permis": 1,
+       "logements": 115,
+       "acteurs": 1
+      },
+      {
+       "famille": "bailleur_social",
+       "DENOM_DEM": "TOIT ET JOIE",
+       "permis": 4,
+       "logements": 109,
+       "acteurs": 1
+      },
+      {
+       "famille": "bailleur_social",
+       "DENOM_DEM": "LOGISTART STE ANONYME D'HABITATION A LOYER MODERE",
+       "permis": 1,
+       "logements": 108,
+       "acteurs": 1
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 4,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "famille",
+      "COMM"
+     ],
+     "filtres": {
+      "famille": [
+       "association_ess",
+       "exploitant_sante_social",
+       "bailleur_social"
+      ]
+     },
+     "mesure": "logements",
+     "top": 50
+    },
+    "sortie": {
+     "filtres": {
+      "famille": [
+       "association_ess",
+       "exploitant_sante_social",
+       "bailleur_social"
+      ]
+     },
+     "nb_permis_filtres": 345,
+     "nb_groupes": 124,
+     "resultats": [
+      {
+       "famille": "bailleur_social",
+       "COMM": "78621",
+       "permis": 11,
+       "logements": 793,
+       "acteurs": 6
+      },
+      {
+       "famille": "bailleur_social",
+       "COMM": "78551",
+       "permis": 13,
+       "logements": 694,
+       "acteurs": 7
+      },
+      {
+       "famille": "bailleur_social",
+       "COMM": "78586",
+       "permis": 4,
+       "logements": 658,
+       "acteurs": 3
+      },
+      {
+       "famille": "bailleur_social",
+       "COMM": "78361",
+       "permis": 7,
+       "logements": 639,
+       "acteurs": 4
+      },
+      {
+       "famille": "bailleur_social",
+       "COMM": "78311",
+       "permis": 17,
+       "logements": 467,
+       "acteurs": 5
+      },
+      {
+       "famille": "bailleur_social",
+       "COMM": "78650",
+       "permis": 10,
+       "logements": 415,
+       "acteurs": 7
+      },
+      {
+       "famille": "bailleur_social",
+       "COMM": "78440",
+       "permis": 9,
+       "logements": 376,
+       "acteurs": 4
+      },
+      {
+       "famille": "bailleur_social",
+       "COMM": "78190",
+       "permis": 2,
+       "logements": 356,
+       "acteurs": 1
+      },
+      {
+       "famille": "bailleur_social",
+       "COMM": "78208",
+       "permis": 4,
+       "logements": 356,
+       "acteurs": 3
+      },
+      {
+       "famille": "bailleur_social",
+       "COMM": "78688",
+       "permis": 8,
+       "logements": 346,
+       "acteurs": 3
+      },
+      {
+       "famille": "bailleur_social",
+       "COMM": "78126",
+       "permis": 5,
+       "logements": 270,
+       "acteurs": 2
+      },
+      {
+       "famille": "bailleur_social",
+       "COMM": "78498",
+       "permis": 9,
+       "logements": 270,
+       "acteurs": 4
+      },
+      {
+       "famille": "bailleur_social",
+       "COMM": "78372",
+       "permis": 10,
+       "logements": 248,
+       "acteurs": 3
+      },
+      {
+       "famille": "bailleur_social",
+       "COMM": "78624",
+       "permis": 10,
+       "logements": 245,
+       "acteurs": 5
+      },
+      {
+       "famille": "bailleur_social",
+       "COMM": "78327",
+       "permis": 6,
+       "logements": 233,
+       "acteurs": 1
+      },
+      {
+       "famille": "bailleur_social",
+       "COMM": "78165",
+       "permis": 3,
+       "logements": 219,
+       "acteurs": 2
+      },
+      {
+       "famille": "bailleur_social",
+       "COMM": "78321",
+       "permis": 11,
+       "logements": 199,
+       "acteurs": 6
+      },
+      {
+       "famille": "bailleur_social",
+       "COMM": "78490",
+       "permis": 2,
+       "logements": 195,
+       "acteurs": 2
+      },
+      {
+       "famille": "bailleur_social",
+       "COMM": "78158",
+       "permis": 5,
+       "logements": 192,
+       "acteurs": 2
+      },
+      {
+       "famille": "bailleur_social",
+       "COMM": "78350",
+       "permis": 5,
+       "logements": 191,
+       "acteurs": 4
+      },
+      {
+       "famille": "bailleur_social",
+       "COMM": "78383",
+       "permis": 1,
+       "logements": 186,
+       "acteurs": 1
+      },
+      {
+       "famille": "bailleur_social",
+       "COMM": "78172",
+       "permis": 6,
+       "logements": 175,
+       "acteurs": 6
+      },
+      {
+       "famille": "bailleur_social",
+       "COMM": "78646",
+       "permis": 1,
+       "logements": 175,
+       "acteurs": 1
+      },
+      {
+       "famille": "bailleur_social",
+       "COMM": "78124",
+       "permis": 2,
+       "logements": 147,
+       "acteurs": 1
+      },
+      {
+       "famille": "bailleur_social",
+       "COMM": "78362",
+       "permis": 3,
+       "logements": 142,
+       "acteurs": 3
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 5,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "famille",
+      "COMM"
+     ],
+     "filtres": {
+      "famille": [
+       "association_ess",
+       "exploitant_sante_social"
+      ]
+     },
+     "mesure": "logements",
+     "top": 50
+    },
+    "sortie": {
+     "filtres": {
+      "famille": [
+       "association_ess",
+       "exploitant_sante_social"
+      ]
+     },
+     "nb_permis_filtres": 46,
+     "nb_groupes": 34,
+     "resultats": [
+      {
+       "famille": "association_ess",
+       "COMM": "78005",
+       "permis": 1,
+       "logements": 122,
+       "acteurs": 1
+      },
+      {
+       "famille": "association_ess",
+       "COMM": "78640",
+       "permis": 1,
+       "logements": 119,
+       "acteurs": 1
+      },
+      {
+       "famille": "association_ess",
+       "COMM": "78217",
+       "permis": 1,
+       "logements": 62,
+       "acteurs": 1
+      },
+      {
+       "famille": "association_ess",
+       "COMM": "78146",
+       "permis": 3,
+       "logements": 57,
+       "acteurs": 3
+      },
+      {
+       "famille": "association_ess",
+       "COMM": "78397",
+       "permis": 1,
+       "logements": 48,
+       "acteurs": 1
+      },
+      {
+       "famille": "association_ess",
+       "COMM": "78646",
+       "permis": 5,
+       "logements": 34,
+       "acteurs": 4
+      },
+      {
+       "famille": "association_ess",
+       "COMM": "78383",
+       "permis": 1,
+       "logements": 25,
+       "acteurs": 1
+      },
+      {
+       "famille": "association_ess",
+       "COMM": "78517",
+       "permis": 2,
+       "logements": 25,
+       "acteurs": 2
+      },
+      {
+       "famille": "association_ess",
+       "COMM": "78575",
+       "permis": 1,
+       "logements": 22,
+       "acteurs": 1
+      },
+      {
+       "famille": "association_ess",
+       "COMM": "78356",
+       "permis": 1,
+       "logements": 16,
+       "acteurs": 1
+      },
+      {
+       "famille": "association_ess",
+       "COMM": "78518",
+       "permis": 2,
+       "logements": 12,
+       "acteurs": 1
+      },
+      {
+       "famille": "association_ess",
+       "COMM": "78650",
+       "permis": 1,
+       "logements": 8,
+       "acteurs": 1
+      },
+      {
+       "famille": "association_ess",
+       "COMM": "78310",
+       "permis": 2,
+       "logements": 7,
+       "acteurs": 1
+      },
+      {
+       "famille": "association_ess",
+       "COMM": "78520",
+       "permis": 3,
+       "logements": 4,
+       "acteurs": 2
+      },
+      {
+       "famille": "association_ess",
+       "COMM": "78513",
+       "permis": 1,
+       "logements": 3,
+       "acteurs": 1
+      },
+      {
+       "famille": "exploitant_sante_social",
+       "COMM": "78029",
+       "permis": 2,
+       "logements": 2,
+       "acteurs": 1
+      },
+      {
+       "famille": "association_ess",
+       "COMM": "78401",
+       "permis": 1,
+       "logements": 2,
+       "acteurs": 1
+      },
+      {
+       "famille": "association_ess",
+       "COMM": "78618",
+       "permis": 1,
+       "logements": 2,
+       "acteurs": 1
+      },
+      {
+       "famille": "exploitant_sante_social",
+       "COMM": "78672",
+       "permis": 1,
+       "logements": 2,
+       "acteurs": 1
+      },
+      {
+       "famille": "association_ess",
+       "COMM": "78117",
+       "permis": 1,
+       "logements": 1,
+       "acteurs": 1
+      },
+      {
+       "famille": "exploitant_sante_social",
+       "COMM": "78123",
+       "permis": 1,
+       "logements": 1,
+       "acteurs": 1
+      },
+      {
+       "famille": "association_ess",
+       "COMM": "78206",
+       "permis": 1,
+       "logements": 1,
+       "acteurs": 1
+      },
+      {
+       "famille": "association_ess",
+       "COMM": "78297",
+       "permis": 1,
+       "logements": 1,
+       "acteurs": 1
+      },
+      {
+       "famille": "association_ess",
+       "COMM": "78317",
+       "permis": 1,
+       "logements": 1,
+       "acteurs": 1
+      },
+      {
+       "famille": "association_ess",
+       "COMM": "78364",
+       "permis": 1,
+       "logements": 1,
+       "acteurs": 1
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 6,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "famille",
+      "AN_DEPOT"
+     ],
+     "filtres": {
+      "famille": [
+       "association_ess",
+       "exploitant_sante_social"
+      ]
+     },
+     "mesure": "logements",
+     "top": 50
+    },
+    "sortie": {
+     "filtres": {
+      "famille": [
+       "association_ess",
+       "exploitant_sante_social"
+      ]
+     },
+     "nb_permis_filtres": 46,
+     "nb_groupes": 18,
+     "resultats": [
+      {
+       "famille": "association_ess",
+       "AN_DEPOT": "2012",
+       "permis": 4,
+       "logements": 290,
+       "acteurs": 4
+      },
+      {
+       "famille": "association_ess",
+       "AN_DEPOT": "2018",
+       "permis": 2,
+       "logements": 87,
+       "acteurs": 2
+      },
+      {
+       "famille": "association_ess",
+       "AN_DEPOT": "2015",
+       "permis": 2,
+       "logements": 72,
+       "acteurs": 2
+      },
+      {
+       "famille": "association_ess",
+       "AN_DEPOT": "2017",
+       "permis": 4,
+       "logements": 38,
+       "acteurs": 3
+      },
+      {
+       "famille": "association_ess",
+       "AN_DEPOT": "2013",
+       "permis": 5,
+       "logements": 33,
+       "acteurs": 5
+      },
+      {
+       "famille": "association_ess",
+       "AN_DEPOT": "2024",
+       "permis": 2,
+       "logements": 17,
+       "acteurs": 2
+      },
+      {
+       "famille": "association_ess",
+       "AN_DEPOT": "2025",
+       "permis": 4,
+       "logements": 11,
+       "acteurs": 4
+      },
+      {
+       "famille": "association_ess",
+       "AN_DEPOT": "2020",
+       "permis": 2,
+       "logements": 9,
+       "acteurs": 2
+      },
+      {
+       "famille": "association_ess",
+       "AN_DEPOT": "2021",
+       "permis": 2,
+       "logements": 7,
+       "acteurs": 2
+      },
+      {
+       "famille": "association_ess",
+       "AN_DEPOT": "2022",
+       "permis": 5,
+       "logements": 7,
+       "acteurs": 4
+      },
+      {
+       "famille": "association_ess",
+       "AN_DEPOT": "2019",
+       "permis": 4,
+       "logements": 4,
+       "acteurs": 4
+      },
+      {
+       "famille": "exploitant_sante_social",
+       "AN_DEPOT": "2020",
+       "permis": 2,
+       "logements": 3,
+       "acteurs": 2
+      },
+      {
+       "famille": "association_ess",
+       "AN_DEPOT": "2023",
+       "permis": 2,
+       "logements": 3,
+       "acteurs": 2
+      },
+      {
+       "famille": "association_ess",
+       "AN_DEPOT": "2014",
+       "permis": 2,
+       "logements": 2,
+       "acteurs": 2
+      },
+      {
+       "famille": "exploitant_sante_social",
+       "AN_DEPOT": "2018",
+       "permis": 1,
+       "logements": 1,
+       "acteurs": 1
+      },
+      {
+       "famille": "exploitant_sante_social",
+       "AN_DEPOT": "2021",
+       "permis": 1,
+       "logements": 1,
+       "acteurs": 1
+      },
+      {
+       "famille": "exploitant_sante_social",
+       "AN_DEPOT": "2023",
+       "permis": 1,
+       "logements": 1,
+       "acteurs": 1
+      },
+      {
+       "famille": "exploitant_sante_social",
+       "AN_DEPOT": "2014",
+       "permis": 1,
+       "logements": 1,
+       "acteurs": 1
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 7,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "lire_dictionnaire",
+    "args": {
+     "variable": "TYPE_LOG"
+    },
+    "sortie": {
+     "variable": "TYPE_LOG",
+     "definition": "variable inconnue du dictionnaire"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 8,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "profil_acteur",
+    "args": {
+     "siren": "784120235"
+    },
+    "sortie": {
+     "erreur": "SIREN hors périmètre"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 9,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "famille",
+      "SIREN_DEM",
+      "DENOM_DEM"
+     ],
+     "filtres": {
+      "famille": [
+       "association_ess",
+       "exploitant_sante_social"
+      ]
+     },
+     "mesure": "logements",
+     "top": 20
+    },
+    "sortie": {
+     "filtres": {
+      "famille": [
+       "association_ess",
+       "exploitant_sante_social"
+      ]
+     },
+     "nb_permis_filtres": 46,
+     "nb_groupes": 29,
+     "resultats": [
+      {
+       "famille": "association_ess",
+       "SIREN_DEM": "784073306",
+       "DENOM_DEM": "ASS APPRENTIS INDUSTRIEL COMMERCIAL",
+       "permis": 1,
+       "logements": 122,
+       "acteurs": 1
+      },
+      {
+       "famille": "association_ess",
+       "SIREN_DEM": "785424532",
+       "DENOM_DEM": "ASS GEST STE FOY INSTIT ST DOMINIQUE",
+       "permis": 1,
+       "logements": 119,
+       "acteurs": 1
+      },
+      {
+       "famille": "association_ess",
+       "SIREN_DEM": "383349107",
+       "DENOM_DEM": "FREHA",
+       "permis": 3,
+       "logements": 93,
+       "acteurs": 1
+      },
+      {
+       "famille": "association_ess",
+       "SIREN_DEM": "350394136",
+       "DENOM_DEM": "FONDATION BRIGITTE BARDOT",
+       "permis": 3,
+       "logements": 60,
+       "acteurs": 1
+      },
+      {
+       "famille": "association_ess",
+       "SIREN_DEM": "775657612",
+       "DENOM_DEM": "FONDATION COGNACQ JAY",
+       "permis": 1,
+       "logements": 50,
+       "acteurs": 1
+      },
+      {
+       "famille": "association_ess",
+       "SIREN_DEM": "785150194",
+       "DENOM_DEM": "ASSOCIATION DIOCESAINE DE VERSAILLES",
+       "permis": 6,
+       "logements": 25,
+       "acteurs": 1
+      },
+      {
+       "famille": "association_ess",
+       "SIREN_DEM": "785098294",
+       "DENOM_DEM": "FONDATION ANNE DE GAULLE",
+       "permis": 1,
+       "logements": 25,
+       "acteurs": 1
+      },
+      {
+       "famille": "association_ess",
+       "SIREN_DEM": "340800754",
+       "DENOM_DEM": "ASS L ARCHE D AIGREFOIN",
+       "permis": 1,
+       "logements": 22,
+       "acteurs": 1
+      },
+      {
+       "famille": "association_ess",
+       "SIREN_DEM": "853337756",
+       "DENOM_DEM": "MAISON MADELEINE",
+       "permis": 1,
+       "logements": 16,
+       "acteurs": 1
+      },
+      {
+       "famille": "association_ess",
+       "SIREN_DEM": "775667181",
+       "DENOM_DEM": "FONDATION MALLET",
+       "permis": 6,
+       "logements": 11,
+       "acteurs": 1
+      },
+      {
+       "famille": "association_ess",
+       "SIREN_DEM": "785039058",
+       "DENOM_DEM": "AVENIR APEI",
+       "permis": 1,
+       "logements": 8,
+       "acteurs": 1
+      },
+      {
+       "famille": "association_ess",
+       "SIREN_DEM": "304048705",
+       "DENOM_DEM": "OGEC SAINTE THERESE",
+       "permis": 1,
+       "logements": 7,
+       "acteurs": 1
+      },
+      {
+       "famille": "association_ess",
+       "SIREN_DEM": "340317601",
+       "DENOM_DEM": "COMMUNAUTE DES JEUNES DE COURBEVOIE",
+       "permis": 1,
+       "logements": 5,
+       "acteurs": 1
+      },
+      {
+       "famille": "exploitant_sante_social",
+       "SIREN_DEM": "818338311",
+       "DENOM_DEM": "BABYBULLE",
+       "permis": 3,
+       "logements": 3,
+       "acteurs": 1
+      },
+      {
+       "famille": "association_ess",
+       "SIREN_DEM": "775672272",
+       "DENOM_DEM": "CROIX ROUGE FRANCAISE",
+       "permis": 1,
+       "logements": 3,
+       "acteurs": 1
+      },
+      {
+       "famille": "exploitant_sante_social",
+       "SIREN_DEM": "482818986",
+       "DENOM_DEM": "MEDIPART",
+       "permis": 2,
+       "logements": 3,
+       "acteurs": 1
+      },
+      {
+       "famille": "association_ess",
+       "SIREN_DEM": "404079022",
+       "DENOM_DEM": "ASSSOC ACCUEIL PERS HANDIC PERS AGEES",
+       "permis": 1,
+       "logements": 2,
+       "acteurs": 1
+      },
+      {
+       "famille": "association_ess",
+       "SIREN_DEM": "775672165",
+       "DENOM_DEM": "FONDATION LEOPOLD BELLAN",
+       "permis": 1,
+       "logements": 2,
+       "acteurs": 1
+      },
+      {
+       "famille": "association_ess",
+       "SIREN_DEM": "418093738",
+       "DENOM_DEM": "ECOLE CHIEN GUIDE AVEUGLE PARIS REGPARI",
+       "permis": 1,
+       "logements": 1,
+       "acteurs": 1
+      },
+      {
+       "famille": "association_ess",
+       "SIREN_DEM": "419824669",
+       "DENOM_DEM": "LA GERBE",
+       "permis": 1,
+       "logements": 1,
+       "acteurs": 1
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 10,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "famille",
+      "SIREN_DEM",
+      "DENOM_DEM"
+     ],
+     "filtres": {
+      "famille": "bailleur_social"
+     },
+     "mesure": "logements",
+     "top": 20
+    },
+    "sortie": {
+     "filtres": {
+      "famille": "bailleur_social"
+     },
+     "nb_permis_filtres": 299,
+     "nb_groupes": 37,
+     "resultats": [
+      {
+       "famille": "bailleur_social",
+       "SIREN_DEM": "552141533",
+       "DENOM_DEM": "IMMOBILIERE 3F",
+       "permis": 44,
+       "logements": 1552,
+       "acteurs": 1
+      },
+      {
+       "famille": "bailleur_social",
+       "SIREN_DEM": "788058030",
+       "DENOM_DEM": "ADOMA",
+       "permis": 11,
+       "logements": 1530,
+       "acteurs": 1
+      },
+      {
+       "famille": "bailleur_social",
+       "SIREN_DEM": "315518803",
+       "DENOM_DEM": "ANTIN RESIDENCES SA HABITAT LOYER MODERE",
+       "permis": 30,
+       "logements": 1442,
+       "acteurs": 1
+      },
+      {
+       "famille": "bailleur_social",
+       "SIREN_DEM": "592001648",
+       "DENOM_DEM": "ENTREPRISE SOCIALE POUR L'HABITAT DOMNIS",
+       "permis": 29,
+       "logements": 933,
+       "acteurs": 1
+      },
+      {
+       "famille": "bailleur_social",
+       "SIREN_DEM": "582142816",
+       "DENOM_DEM": "SA D'H L M FRANCE HABITATION",
+       "permis": 23,
+       "logements": 729,
+       "acteurs": 1
+      },
+      {
+       "famille": "bailleur_social",
+       "SIREN_DEM": "308435460",
+       "DENOM_DEM": "LES RESIDENCES SOCIETE ANONYME D'HABITATIONS A LOYER MODERE",
+       "permis": 30,
+       "logements": 558,
+       "acteurs": 1
+      },
+      {
+       "famille": "bailleur_social",
+       "SIREN_DEM": "572161321",
+       "DENOM_DEM": "SA IMMO MOULIN VERT-SA HAB LOYER MODERE",
+       "permis": 4,
+       "logements": 436,
+       "acteurs": 1
+      },
+      {
+       "famille": "bailleur_social",
+       "SIREN_DEM": "552022105",
+       "DENOM_DEM": "ICF LA SABLIERE SA D'HLM",
+       "permis": 8,
+       "logements": 420,
+       "acteurs": 1
+      },
+      {
+       "famille": "bailleur_social",
+       "SIREN_DEM": "572204014",
+       "DENOM_DEM": "VALOPHIS SAREPA  - SOCIETE ANONYME D'HLM",
+       "permis": 8,
+       "logements": 406,
+       "acteurs": 1
+      },
+      {
+       "famille": "bailleur_social",
+       "SIREN_DEM": "552046484",
+       "DENOM_DEM": "CDC HABITAT SOCIAL SOCIETE ANONYME D'HABITATIONS A LOYER MODERE",
+       "permis": 12,
+       "logements": 354,
+       "acteurs": 1
+      },
+      {
+       "famille": "bailleur_social",
+       "SIREN_DEM": "582008728",
+       "DENOM_DEM": "EFIDIS SA HABITATION LOYER MODERE",
+       "permis": 9,
+       "logements": 349,
+       "acteurs": 1
+      },
+      {
+       "famille": "bailleur_social",
+       "SIREN_DEM": "582142816",
+       "DENOM_DEM": "SEQENS SOCIETE ANONYME D'HABITATIONS A LOYER MODERE",
+       "permis": 8,
+       "logements": 330,
+       "acteurs": 1
+      },
+      {
+       "famille": "bailleur_social",
+       "SIREN_DEM": "495286098",
+       "DENOM_DEM": "RESIDENCES SOCIALES DE FRANCE",
+       "permis": 3,
+       "logements": 316,
+       "acteurs": 1
+      },
+      {
+       "famille": "bailleur_social",
+       "SIREN_DEM": "552093338",
+       "DENOM_DEM": "LOGEMENT GEST IMMOBILIERE REG PARISIENNE",
+       "permis": 5,
+       "logements": 279,
+       "acteurs": 1
+      },
+      {
+       "famille": "bailleur_social",
+       "SIREN_DEM": "582000105",
+       "DENOM_DEM": "BATIGERE EN ILE DE FRANCE",
+       "permis": 10,
+       "logements": 239,
+       "acteurs": 1
+      },
+      {
+       "famille": "bailleur_social",
+       "SIREN_DEM": "304708589",
+       "DENOM_DEM": "APILOGIS SOCIETE ANONYME COOPERATIVE D'INTERET COLLECTIF D'HABITATIONS A LOYER MODERE, SOCIETE A CAPITAL VARIABLE",
+       "permis": 4,
+       "logements": 205,
+       "acteurs": 1
+      },
+      {
+       "famille": "bailleur_social",
+       "SIREN_DEM": "475680815",
+       "DENOM_DEM": "VILOGIA SOCIETE ANONYME D'HLM",
+       "permis": 9,
+       "logements": 201,
+       "acteurs": 1
+      },
+      {
+       "famille": "bailleur_social",
+       "SIREN_DEM": "322315557",
+       "DENOM_DEM": "DOMAXIS SOCIETE ANONYME D' HABITATIONS A LOYER MODERE",
+       "permis": 6,
+       "logements": 185,
+       "acteurs": 1
+      },
+      {
+       "famille": "bailleur_social",
+       "SIREN_DEM": "510469661",
+       "DENOM_DEM": "COALLIA HABITAT",
+       "permis": 1,
+       "logements": 180,
+       "acteurs": 1
+      },
+      {
+       "famille": "bailleur_social",
+       "SIREN_DEM": "393542428",
+       "DENOM_DEM": "LOGIREP",
+       "permis": 4,
+       "logements": 158,
+       "acteurs": 1
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 11,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "famille"
+     ],
+     "mesure": "logements",
+     "top": 20
+    },
+    "sortie": {
+     "filtres": {},
+     "nb_permis_filtres": 3363,
+     "nb_groupes": 9,
+     "resultats": [
+      {
+       "famille": "promoteur",
+       "permis": 1112,
+       "logements": 61394,
+       "acteurs": 690
+      },
+      {
+       "famille": "bailleur_social",
+       "permis": 299,
+       "logements": 11785,
+       "acteurs": 31
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "permis": 1410,
+       "logements": 10435,
+       "acteurs": 1014
+      },
+      {
+       "famille": "non_determine",
+       "permis": 247,
+       "logements": 3729,
+       "acteurs": 172
+      },
+      {
+       "famille": "collectivite_public",
+       "permis": 166,
+       "logements": 1200,
+       "acteurs": 79
+      },
+      {
+       "famille": "entreprise_autre",
+       "permis": 79,
+       "logements": 873,
+       "acteurs": 29
+      },
+      {
+       "famille": "association_ess",
+       "permis": 40,
+       "logements": 580,
+       "acteurs": 26
+      },
+      {
+       "famille": "copropriete",
+       "permis": 4,
+       "logements": 112,
+       "acteurs": 4
+      },
+      {
+       "famille": "exploitant_sante_social",
+       "permis": 6,
+       "logements": 7,
+       "acteurs": 3
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 12,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "noter",
+    "args": {
+     "titre": "Poids marginal du médico-social associatif dans les permis créant des logements (Yvelines)",
+     "constat": "Les familles association_ess (40 permis, 580 logements, 26 acteurs) et exploitant_sante_social (6 permis, 7 logements, 3 acteurs) ne représentent ensemble que 46 permis pour 587 logements sur 3 363 permis et ~79 000 logements totaux (0,7 % des volumes). Les bailleurs sociaux, eux, concentrent 299 permis pour 11 785 logements (15 % des volumes) avec seulement 31 acteurs.",
+     "interet_buddimm": "Veille : le vivier de permis « médico-social pur » est très étroit ; la prospection doit cibler les rares gros dossiers (ex. 122 et 119 logements) et surtout les bailleurs sociaux qui portent l'essentiel de l'offre sociale/senior.",
+     "fiabilite": "établi",
+     "limites": "Périmètre limité aux permis créant des logements (Sitadel) ; ne capture pas les autorisations d'exploitation (ARS) ni les rénovations lourdes sans création de logements.",
+     "a_creuser": "Croiser avec les données ARS/ESSMS pour identifier les projets « invisibles » en permis de construire (transformations, extensions sans nouveaux logements)."
+    },
+    "sortie": {
+     "erreur": "Refusé : chiffres non vérifiables : 15 % (base absente ou fausse dans la phrase), 79 000. Corrige-les avec des chiffres issus des requêtes, ou fais la requête qui les donne. Chaque pourcentage doit citer, dans la même phrase, son numérateur et son dénominateur (ex. « 3 251 sur 11 785, soit 27,6 % »). Puis renote."
+    }
+   }
+  ]
+ },
+ {
+  "etape": 13,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "noter",
+    "args": {
+     "titre": "Poids marginal du médico-social associatif dans les permis créant des logements (Yvelines)",
+     "constat": "Les familles association_ess (40 permis, 580 logements, 26 acteurs) et exploitant_sante_social (6 permis, 7 logements, 3 acteurs) ne représentent ensemble que 46 permis pour 587 logements sur 3 363 permis et 90 115 logements totaux (587 sur 90 115, soit 0,65 % des volumes). Les bailleurs sociaux concentrent 299 permis pour 11 785 logements (11 785 sur 90 115, soit 13,1 % des volumes) avec seulement 31 acteurs.",
+     "interet_buddimm": "Veille : le vivier de permis « médico-social pur » est très étroit ; la prospection doit cibler les rares gros dossiers (ex. 122 et 119 logements) et surtout les bailleurs sociaux qui portent l'essentiel de l'offre sociale/senior.",
+     "fiabilite": "établi",
+     "limites": "Périmètre limité aux permis créant des logements (Sitadel) ; ne capture pas les autorisations d'exploitation (ARS) ni les rénovations lourdes sans création de logements.",
+     "a_creuser": "Croiser avec les données ARS/ESSMS pour identifier les projets « invisibles » en permis de construire (transformations, extensions sans nouveaux logements)."
+    },
+    "sortie": {
+     "ok": "note 1 enregistrée"
+    }
+   }
+  ]
+ }
+]

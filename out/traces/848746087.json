@@ -1,0 +1,109 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "848746087"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "848746087"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "848746087"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "848746087"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "LA FONCIERE MS",
+     "nb_permis_PC": 1,
+     "annees_depot": [
+      "2023"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 3,
+     "surface_locaux_non_residentiels_creee_m2": 0,
+     "nb_permis_collectif": 1,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 1
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "848746087",
+      "nom": "LA FONCIERE MS",
+      "nature_juridique": "5710",
+      "naf_actuel": "66.30Z",
+      "etat": "A",
+      "date_creation": "2019-02-15",
+      "categorie": "PME",
+      "effectif": "01",
+      "nb_etablissements": 2,
+      "nb_etablissements_ouverts": 1,
+      "siege_actuel": {
+       "siret": "84874608700024",
+       "naf": "66.30Z",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "84874608700024",
+       "naf_dans_permis": "66.30Z",
+       "nb_permis": 1,
+       "annees_depot": [
+        "2023"
+       ],
+       "etat_actuel": "ouvert",
+       "date_creation": "2021-03-12",
+       "date_fermeture": null
+      }
+     ],
+     "alertes": [],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/848746087"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "66.30Z",
+      "libelle": "Gestion de fonds"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5710",
+     "libelle": "SAS, société par actions simplifiée"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"fonciere_investisseur\",\"confiance\":\"moyenne\",\"indices\":[\"dénomination : « LA FONCIERE MS » contient le terme « FONCIERE », typique d'une société foncière d'investissement immobilier\",\"fiche_entreprise : nature_juridique 5710 (SAS), forme juridique courante pour les foncières ; naf_actuel 66.30Z (Gestion de fonds) — activité de holding/gestion de patrimoine, compatible avec une foncière ; entreprise active (état A), PME de 1 salarié, siège ouvert\",\"libelle_naf : 66.30Z = « Gestion de fonds » (activité financière de gestion d'actifs, souvent utilisée par les foncières holdings)\",\"libelle_cj : 5710 = « SAS, société par actions simplifiée »\",\"permis_du_demandeur : 1 permis en 2023, 3 logements créés en collectif, 0 logement social déclaré — opération de production immobilière locative ou en vue de location, cohérente avec une foncière investisseur\"],\"limites\":\"Le NAF actuel (66.30Z) est une activité financière (gestion de fonds) et non une activité immobilière directe (ex. 68.20B). L'entreprise n'a qu'un salarié et pourrait être une structure holding. Aucune preuve directe de détention/location de patrimoine sur le long terme (pas de bail, pas de patrimoine connu). Le permis unique ne permet pas d'exclure une activité de promotion ponctuelle, mais l'absence de logement social et le nom « FONCIERE » orientent vers de l'investissement locatif.\"}"
+   }
+  ]
+ }
+]

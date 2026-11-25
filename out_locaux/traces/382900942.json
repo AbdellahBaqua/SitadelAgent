@@ -1,0 +1,126 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "382900942"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "382900942"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "382900942"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "382900942"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "CAISSE D'EPARGNE ET DE PREVOYANCE ILE-DE-FRANCE",
+     "nb_permis_PC": 6,
+     "annees_depot": [
+      "2012",
+      "2013",
+      "2017",
+      "2021"
+     ],
+     "nb_communes": 5,
+     "logements_crees_total": 0,
+     "surface_locaux_non_residentiels_creee_m2": 393,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 1
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "382900942",
+      "nom": "CAISSE D'EPARGNE ET DE PREVOYANCE ILE-DE-FRANCE (CEIDF)",
+      "nature_juridique": "5196",
+      "naf_actuel": "64.19Z",
+      "etat": "A",
+      "date_creation": "1991-01-01",
+      "categorie": "GE",
+      "effectif": "51",
+      "nb_etablissements": 753,
+      "nb_etablissements_ouverts": 477,
+      "siege_actuel": {
+       "siret": "38290094200014",
+       "naf": "70.10Z",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "38290094200014",
+       "naf_dans_permis": "64.19Z",
+       "nb_permis": 4,
+       "annees_depot": [
+        "2012",
+        "2013",
+        "2017",
+        "2021"
+       ],
+       "etat_actuel": "ouvert",
+       "date_creation": "1991-01-01",
+       "date_fermeture": null
+      },
+      {
+       "siret": "38290094204032",
+       "naf_dans_permis": "64.19Z",
+       "nb_permis": 2,
+       "annees_depot": [
+        "2017"
+       ],
+       "etat_actuel": "ouvert",
+       "date_creation": "2003-05-01",
+       "date_fermeture": null
+      }
+     ],
+     "alertes": [],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/382900942"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "64.19Z",
+      "libelle": "Autres intermédiations monétaires"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "6100",
+     "libelle": "Caisse d'Épargne et de Prévoyance"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"entreprise_autre\",\"confiance\":\"haute\",\"indices\":[\"denomination : CAISSE D'EPARGNE ET DE PREVOYANCE ILE-DE-FRANCE → nom d'une caisse d'épargne (banque)\",\"libelle_cj (6100) : Caisse d'Épargne et de Prévoyance → forme juridique propre aux caisses d'épargne\",\"libelle_naf (64.19Z) : Autres intermédiations monétaires → activité bancaire\",\"fiche_entreprise : naf_actuel 64.19Z, nature_juridique 5196, catégorie GE, état actif, 753 établissements dont 477 ouverts → entreprise bancaire de grande taille\",\"permis_du_demandeur : 6 permis (2012-2021), 0 logement créé, 393 m² de surface non résidentielle, aucun logement social, pas de permis collectif/individuel → permis pour locaux propres (agences/bureaux)\"],\"limites\":\"La nature juridique 5196 n'a pas été décodée (libellé non demandé), mais le code catégorie juridique 6100 et la dénomination suffisent à identifier une caisse d'épargne. Les permis sont anciens (2012-2021) mais l'entreprise est active.\"}"
+   }
+  ]
+ }
+]

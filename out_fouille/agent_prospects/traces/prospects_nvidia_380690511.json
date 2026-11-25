@@ -1,0 +1,190 @@
+[
+ {
+  "etape": "pre",
+  "texte": "résultats calculés par le code avant le modèle",
+  "entree": {
+   "siren": "380690511",
+   "denomination": "ASSOCIATION DELOS APEI 78",
+   "famille_classification": "association_ess",
+   "raisons_du_score": "famille cible (association_ess) +3 ; projet médico-social (équipement de santé) +3 ; dépôt assez récent (2023) +1 ; projet de taille significative (≥ 20 logements ou ≥ 1 000 m²) +1",
+   "taille_calculee": "grande",
+   "taille_calcul": "salariés ≥ 500, établissements ouverts 20, établissements FINESS 15",
+   "permis_du_prospect": [
+    {
+     "num_dau": "07849023E0010",
+     "fichier": "locaux",
+     "annee_depot": "2023",
+     "commune": "PLAISIR",
+     "etat": "commencé",
+     "type_projet": "équipement de santé",
+     "logements_crees": null,
+     "surface_locaux_creee_m2": 333
+    },
+    {
+     "num_dau": "07833521L0045",
+     "fichier": "locaux",
+     "annee_depot": "2021",
+     "commune": "LIMAY",
+     "etat": "commencé",
+     "type_projet": "équipement de santé",
+     "logements_crees": null,
+     "surface_locaux_creee_m2": 1035
+    },
+    {
+     "num_dau": "07862118E0008",
+     "fichier": "locaux",
+     "annee_depot": "2018",
+     "commune": "TRAPPES",
+     "etat": "commencé",
+     "type_projet": "équipement de santé",
+     "logements_crees": null,
+     "surface_locaux_creee_m2": 55
+    },
+    {
+     "num_dau": "07833517L0048",
+     "fichier": "locaux",
+     "annee_depot": "2017",
+     "commune": "LIMAY",
+     "etat": "autorisé",
+     "type_projet": "équipement de santé",
+     "logements_crees": null,
+     "surface_locaux_creee_m2": 1062
+    },
+    {
+     "num_dau": "0781041300001",
+     "fichier": "locaux",
+     "annee_depot": "2013",
+     "commune": "BREUIL-BOIS-ROBERT",
+     "etat": "commencé",
+     "type_projet": "équipement de santé",
+     "logements_crees": null,
+     "surface_locaux_creee_m2": 733
+    },
+    {
+     "num_dau": "0784901301032",
+     "fichier": "locaux",
+     "annee_depot": "2013",
+     "commune": "PLAISIR",
+     "etat": "commencé",
+     "type_projet": "",
+     "logements_crees": null,
+     "surface_locaux_creee_m2": 56
+    }
+   ],
+   "fiche_entreprise": {
+    "nom": "ASSOCIATION DELOS APEI 78",
+    "nature_juridique": "9220",
+    "naf_actuel": "88.99B",
+    "etat": "A",
+    "date_creation": "1990-09-01",
+    "categorie": "ETI",
+    "effectif": "41",
+    "nb_etablissements": 40,
+    "nb_etablissements_ouverts": 20,
+    "libelle_naf_actuel": "Action sociale sans hébergement n.c.a.",
+    "libelle_nature_juridique": "Association déclarée",
+    "aide": "etat A = active, C ou F = cessée. effectif = tranche Insee de salariés (ex. 21 = 50 à 99, 41 = 500 à 999, 51 = 2 000 à 4 999). Dirigeants et finances volontairement exclus.",
+    "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/380690511"
+   },
+   "finess_du_prospect": {
+    "nb_etablissements_finess_france": 15,
+    "nb_etablissements_finess_yvelines": 15,
+    "nb_departements": 1,
+    "par_type": {
+     "Etab. et Services d'Hébergement pour Adultes Handicapés": 7,
+     "Services de Maintien à Domicile pour Handicapés": 2,
+     "Etab.Educ.Spéciale pour Déficients Mentaux et Handicapés": 2,
+     "Etab.et Services de Travail Protégé pour Adultes Handicapés": 2,
+     "Services à Domicile ou Ambulatoires pour Handicapés": 1,
+     "Autres Etablissements de Lutte contre les Maladies Mentales": 1
+    },
+    "exemples_yvelines": [
+     {
+      "finess": "780003448",
+      "nom": "SERVICE EDUCATION SOINS SPECIALISES A DOMICILE CHANT A L OIE",
+      "ville": "MANTES LA JOLIE",
+      "categorie": "Service d'Éducation Spéciale et de Soins à Domicile",
+      "ouverture": "2005-09-01"
+     },
+     {
+      "finess": "780003828",
+      "nom": "ETABLISSEMENT D ACCUEIL MEDICALISE",
+      "ville": "LIMAY",
+      "categorie": "Etab.Acc.Médicalisé en tout ou partie personnes handicapées",
+      "ouverture": "2006-09-11"
+     },
+     {
+      "finess": "780003869",
+      "nom": "FOYER D ACCUEIL POLYVALENT POUR ADULTES HANDICAPES",
+      "ville": "VERSAILLES",
+      "categorie": "Etab.Accueil Non Médicalisé pour personnes handicapées",
+      "ouverture": "2005-07-27"
+     },
+     {
+      "finess": "780016580",
+      "nom": "FOYER DE VIE PIERRE DELOMEZ",
+      "ville": "BREUIL BOIS ROBERT",
+      "categorie": "Foyer de Vie pour Adultes Handicapés",
+      "ouverture": "1998-11-01"
+     },
+     {
+      "finess": "780016853",
+      "nom": "SERVICE D ACCOMPAGNEMENT A LA VIE SOCIALE",
+      "ville": "MANTES LA JOLIE",
+      "categorie": "Service d'Accompagnement à la Vie Sociale (S.A.V.S.)",
+      "ouverture": "1998-05-01"
+     },
+     {
+      "finess": "780031175",
+      "nom": "MAS LE BOIS DES SAULES",
+      "ville": "PLAISIR",
+      "categorie": "Maison d'Accueil Spécialisée (M.A.S.)",
+      "ouverture": "2024-11-05"
+     },
+     {
+      "finess": "780170056",
+      "nom": "HOPITAL DE JOUR CTRE PSYCHOTHERAPIQUE INFANTILE  L ENVOL",
+      "ville": "MANTES LA JOLIE",
+      "categorie": "Maison de Santé pour Maladies Mentales",
+      "ouverture": "1982-01-29"
+     },
+     {
+      "finess": "780680104",
+      "nom": "INSTITUT MEDICO EDUCATIF LA RENCONTRE",
+      "ville": "TRAPPES",
+      "categorie": "Institut Médico-Educatif (I.M.E.)",
+      "ouverture": "1970-10-01"
+     },
+     {
+      "finess": "780700290",
+      "nom": "FOYER HEBERGEMENT ADULTES HANDICAPES",
+      "ville": "MANTES LA JOLIE",
+      "categorie": "Foyer Hébergement Adultes Handicapés",
+      "ouverture": "1973-01-08"
+     },
+     {
+      "finess": "780700779",
+      "nom": "ETABLISSEMENT ET SERVICE D'AIDE PAR LE TRAVAIL JEAN PIERRAT",
+      "ville": "BUC CEDEX",
+      "categorie": "Etablissement et Service d'Aide par le Travail (E.S.A.T.)",
+      "ouverture": "1969-03-01"
+     }
+    ],
+    "source": "https://www.data.gouv.fr/datasets/53699569a3a729239d2046eb",
+    "aide": "Établissements dont le SIRET commence par ce SIREN. 0 ne prouve pas l'absence d'activité médico-sociale (SIRET non renseigné dans FINESS, autre entité juridique du même groupe)."
+   },
+   "origine": "demandeur de permis",
+   "consigne": "Ces résultats viennent des outils permis_du_prospect, fiche_entreprise et finess_du_prospect : cite-les. Conclus avec conclure_prospect."
+  }
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure_prospect",
+    "args": "{\"verdict\":\"prospect\",\"adequation\":\"forte\",\"type_structure\":\"Association ESS (loi 1901) gestionnaire d'établissements médico-sociaux pour adultes handicapés (EAM, MAS, IME, ESAT, foyers, services à domicile) dans les Yvelines\",\"besoin_immobilier\":\"Projets récurrents d'équipements de santé (handicap) depuis 2013, dont un permis autorisé non commencé (2017, 1 062 m² à Limay) et des chantiers récents (2021 : 1 035 m² à Limay ; 2023 : 333 m² à Plaisir), signalant un besoin continu d'extension ou de rénovation du patrimoine médico-social.\",\"indices\":[\"fiche_entreprise : association déclarée (nature 9220), active (état A), NAF 88.99B « Action sociale sans hébergement n.c.a. », effectif 41 (tranche 500‑999 salariés), 20 établissements ouverts sur 40.\",\"finess_du_prospect : 15 établissements FINESS dans les Yvelines, tous médico-sociaux handicap (7 EAM, 2 SESSAD, 2 IME, 2 ESAT, 1 SAVS, 1 MAS, 1 hôpital de jour psychiatrie infantile), dont une MAS ouverte en 2024 (Le Bois des Saules à Plaisir).\",\"permis_du_prospect : 6 permis de construire « équipement de santé » déposés 2013‑2023 (Plaisir, Limay, Trappes, Breuil‑Bois‑Robert), surfaces 55‑1 062 m², 5 « commencé », 1 « autorisé » (2017, Limay, 1 062 m²).\",\"taille_calculee : grande (salariés ≥ 500, 20 établissements ouverts, 15 FINESS) – correspond au cœur de cible Buddimm (structures moyennes et grandes), pas encore « très grande » (milliers de salariés) qui internaliserait la direction immobilière.\"],\"limites\":\"Taille grande (ETI, 500‑999 salariés) : risque modéré d'internalisation partielle de la fonction immobilière, mais l'historique de permis montre un recours à la maîtrise d'ouvrage externe.\"}"
+   }
+  ]
+ }
+]

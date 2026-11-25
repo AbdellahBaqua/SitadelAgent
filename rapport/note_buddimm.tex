@@ -1,0 +1,226 @@
+% Note de rendu - test Buddimm « qualification des permis de construire (Sitadel) »
+% Compilation : xelatex note_buddimm.tex (deux passes)
+\documentclass[10pt,a4paper]{article}
+
+% ---------- polices et langue ----------
+\usepackage{fontspec}
+\setmainfont{Libertinus Serif}
+\setsansfont{Libertinus Sans}
+\usepackage[french]{babel}
+\usepackage{microtype}
+
+% ---------- couleurs ----------
+\usepackage{xcolor}
+\definecolor{encre}{HTML}{1B2438}
+\definecolor{accent}{HTML}{2563B0}
+\definecolor{vert}{HTML}{1B8059}
+\definecolor{orange}{HTML}{C9731F}
+\definecolor{rouge}{HTML}{B4443C}
+\definecolor{gris}{HTML}{5F6670}
+\definecolor{filet}{HTML}{D5DAE1}
+\definecolor{fond}{HTML}{F3F5F8}
+
+% ---------- mise en page ----------
+\usepackage[a4paper,top=13mm,bottom=16mm,left=17mm,right=17mm,footskip=8mm]{geometry}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\titleformat{\section}{\sffamily\bfseries\normalsize\color{encre}}
+  {\colorbox{accent}{\makebox[3.2mm]{\color{white}\footnotesize\thesection}}}{6pt}{\MakeUppercase}
+  [\vspace{-4pt}{\color{filet}\rule{\linewidth}{.5pt}}]
+\titlespacing*{\section}{0pt}{9pt}{-1pt}
+\usepackage{enumitem}
+\setlist{nosep,leftmargin=1.05em,topsep=1pt,itemsep=2.2pt}
+\setlist[itemize]{label={\color{accent}\scriptsize$\blacksquare$}}
+\usepackage{amssymb}
+\usepackage{tabularx,booktabs,array}
+\renewcommand{\arraystretch}{1.15}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{3pt}
+\usepackage{fancyhdr}
+\pagestyle{fancy}\fancyhf{}\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[L]{\sffamily\scriptsize\color{gris}\textbf{BAQUA Abdellah} · Buddimm, stage IA agentique 2027 · Qualification des demandeurs de permis (Sitadel, Yvelines)}
+\fancyfoot[R]{\sffamily\scriptsize\color{gris}\href{https://github.com/AbdellahBaqua/SitadelAgent}{github.com/AbdellahBaqua/SitadelAgent} · \thepage/2}
+
+% ---------- schémas ----------
+\usepackage{tikz}
+\usetikzlibrary{positioning,arrows.meta,calc,fit,backgrounds}
+\tikzset{
+  etape/.style={draw=#1,fill=#1!6,rounded corners=2pt,line width=.6pt,align=center,
+                font=\sffamily\scriptsize,inner sep=3pt,minimum height=11mm,text width=27mm,text=encre},
+  fleche/.style={-{Stealth[length=2.2mm]},line width=.7pt,color=gris},
+  chiffre/.style={font=\sffamily\bfseries\scriptsize,color=#1,fill=white,inner sep=1pt},
+}
+\newcommand{\nb}[1]{\textbf{#1}}
+% étiquette + valeur du bloc d'identité
+\newcommand{\champ}[2]{{\sffamily\tiny\bfseries\color{gris}\addfontfeature{LetterSpace=8}#1}\\[1.5pt]#2}
+% chiffre clé
+\newcommand{\kpi}[3]{\begin{minipage}[t]{.235\linewidth}\sffamily
+  {\color{#1}\rule{\linewidth}{1.6pt}}\\[2pt]
+  {\color{#1}\LARGE\bfseries #2}\\[1pt]
+  {\scriptsize\color{encre}#3\par}\end{minipage}}
+% colonne établi / fragile / manque
+\newcommand{\bilan}[3]{\begin{minipage}[t]{.315\linewidth}
+  {\color{#1}\rule{\linewidth}{1.6pt}}\\[1pt]
+  {\sffamily\bfseries\small\color{#1}#2}\\[1pt]
+  {\footnotesize\raggedright #3\par}\end{minipage}}
+
+\begin{document}
+
+% ================= en-tête =================
+{\sffamily
+{\color{accent}\scriptsize\bfseries\addfontfeature{LetterSpace=6}BUDDIMM · STAGE IA AGENTIQUE 2027 · NOTE DE RENDU DU TEST SITADEL}\\[3pt]
+{\color{encre}\fontsize{21}{24}\selectfont\bfseries Le demandeur n'est pas le client}\\[2pt]
+{\color{gris}\normalsize Qualifier qui construit dans les Yvelines, retrouver qui exploitera le bâtiment, et en tirer une liste de prospects sourcée}\par}
+\vspace{6pt}
+
+\noindent\begin{tikzpicture}
+  \node[fill=fond,draw=none,inner xsep=9pt,inner ysep=7pt,text width=\dimexpr\linewidth-18pt\relax,
+        path picture={\fill[accent] (path picture bounding box.north west) rectangle ([xshift=2.2pt]path picture bounding box.south west);}] {%
+  \sffamily\raggedright
+  \begin{minipage}[t]{42mm}\champ{CANDIDAT}{\Large\bfseries\color{encre}BAQUA Abdellah}\end{minipage}\hfill
+  \begin{minipage}[t]{24mm}\champ{TEMPS PASSÉ}{\Large\bfseries\color{encre}7 heures}\end{minipage}\hfill
+  \begin{minipage}[t]{57mm}\champ{DÉPÔT GIT}{\small\bfseries\color{accent}\href{https://github.com/AbdellahBaqua/SitadelAgent}{github.com/AbdellahBaqua/SitadelAgent}}\end{minipage}\hfill
+  \begin{minipage}[t]{28mm}\champ{RENDU LE}{\small\bfseries\color{encre}25 novembre 2026}\end{minipage}\par
+  \vspace{6pt}
+  \champ{OUTILS UTILISÉS}{\footnotesize\color{encre}Claude Code (assistant de code) · NVIDIA NIM (Nemotron 3 Ultra et Lightning) · Groq (gpt-oss-120b) · Python · \LaTeX}\par
+  \vspace{4pt}
+  {\scriptsize\color{gris}Données publiques uniquement (SDES, Annuaire des entreprises, FINESS) · personnes morales seulement, aucun nom de personne physique · aucune prise de contact avec les demandeurs\par}};
+\end{tikzpicture}
+
+\vspace{7pt}
+\noindent\kpi{encre}{3\,957}{demandeurs personnes morales\\(3\,363 PC logements, 4\,245 PC locaux)}\hfill
+\kpi{accent}{92\,\%}{classés par des règles du code ;\\8\,\% par l'agent, 58 non déterminés}\hfill
+\kpi{orange}{22}{exploitants retrouvés dans FINESS\\sur 98 permis, dont 8 distincts\\du demandeur}\hfill
+\kpi{vert}{131}{prospects jugés par l'agent,\\après 99 écartés par le code}
+
+% ================= 1. angle =================
+\section{L'angle choisi, et pourquoi}
+Sitadel dit qui \emph{dépose} un permis, pas ce qu'est le demandeur ni qui \emph{exploitera} le bâtiment. Or Buddimm accompagne
+des associations médico-sociales, des structures de l'ESS et des bailleurs sociaux : la bonne question n'est pas seulement
+\og quelle famille ?\fg{}, mais \og derrière ce permis, quelle structure a un projet immobilier et pas de direction immobilière ?\fg{}
+Le prototype y répond avec un principe constant : \textbf{le code tranche quand un champ fiable suffit, l'agent LLM ne traite que
+ce qui demande un jugement, et le code contrôle l'agent} (liste fermée, source citée pour chaque indice, fiche entreprise
+obligatoire, plafonds de confiance, trace complète). Périmètre : PC de logements et de locaux des Yvelines (millésime 2026-10)
+dont le demandeur est une personne morale.
+
+\vspace{3pt}
+\begin{center}
+\begin{tikzpicture}[node distance=8mm and 7.5mm]
+  \node[etape=gris] (sit) {\textbf{Sitadel 78}\\PC logements + locaux\\personnes morales};
+  \node[etape=accent,right=of sit] (reg) {\textbf{Règles (code)}\\catégorie juridique,\\NAF, dénomination};
+  \node[etape=orange,right=of reg] (ag1) {\textbf{Agent classification}\\fiche Annuaire,\\libellés Insee};
+  \node[etape=vert,right=of ag1] (fam) {\textbf{8 familles}\\+ \og non déterminé\fg{}\\lien source par ligne};
+  \draw[fleche] (sit) -- (reg);
+  \draw[fleche] (reg) -- node[above=1pt,chiffre=accent]{8\,\%} (ag1);
+  \draw[fleche] (ag1) -- (fam);
+  \node[etape=gris,below=of sit] (tie) {\textbf{Projets médico-sociaux}\\déposés par un tiers\\(promoteur, bailleur)};
+  \node[etape=orange,right=of tie] (ag2) {\textbf{Agent exploitant}\\candidats FINESS\\dans la commune\\et la rue};
+  \node[etape=accent,right=of ag2] (pre) {\textbf{Pré-filtre (code)}\\culte, école, sport,\\cabinet, structure cessée};
+  \node[etape=orange,right=of pre] (ag3) {\textbf{Agent qualification}\\Annuaire + FINESS\\+ garde-fou preuve dure};
+  \draw[fleche] (tie) -- (ag2);
+  \draw[fleche] (ag2) -- node[above=1pt,chiffre=orange]{+6} (pre);
+  \draw[fleche] (pre) -- node[above=1pt,chiffre=accent]{$-$99} (ag3);
+  \draw[fleche] (fam.south) -- node[right=1pt,font=\sffamily\scriptsize,color=gris]{230 candidats} ($(fam.south)+(0,-3.8mm)$) -| (pre.north);
+  \node[etape=vert,below=4.5mm of ag3] (pro) {\textbf{Prospects priorisés}\\score explicable, preuves\\et sources par ligne};
+  \draw[fleche] (ag3) -- (pro);
+  \begin{scope}[on background layer]
+    \node[fit=(sit)(fam)(pro),draw=filet,dashed,rounded corners=3pt,inner sep=3.5pt] (cadre) {};
+  \end{scope}
+  \node[anchor=south west,font=\sffamily\scriptsize,color=gris,text width=98mm,align=left] at ($(cadre.south west)+(4pt,3pt)$)
+    {\textcolor{accent}{\rule{6pt}{6pt}} code déterministe \quad \textcolor{orange}{\rule{6pt}{6pt}} agent LLM encadré \quad \textcolor{vert}{\rule{6pt}{6pt}} sortie sourcée\\[1pt]
+     garde-fous : liste fermée · source citée · fiche obligatoire · plafonds · traces};
+\end{tikzpicture}
+\end{center}
+\vspace{-6pt}
+
+% ================= 2. résultats =================
+\section{Ce que j'ai trouvé}
+\begin{itemize}
+\item \textbf{Les associations construisent rarement.} Côté logements, les 30 demandeurs associatifs ou exploitants santé-social ne déposent que
+  47 PC ; seuls 6 en déposent plus d'un. Un permis est donc un signal \emph{tardif et ponctuel} : le compte se gagne avant le dépôt.
+\item \textbf{Le médico-social est déposé par d'autres.} Sur 64 PC de logements en résidence médico-sociale ou sociale, 49 (77\,\%) viennent de
+  promoteurs (26) et de bailleurs (23), 4 seulement d'associations. D'où l'\emph{agent exploitant}, qui rapproche ces permis de
+  FINESS (registre des établissements sanitaires et sociaux) : sur 98 permis traités, 22 exploitants trouvés, dont 8 distincts du
+  demandeur, par exemple l'association \emph{Handi Val de Seine} derrière une résidence déposée par le bailleur Logement Francilien.
+\item \textbf{Le vrai promoteur est masqué.} 42\,\% des PC de logements des promoteurs passent par des sociétés de construction-vente à usage unique ;
+  en lisant leurs dirigeants personnes morales, 633 des 795 sociétés de programme sont rattachées à un groupe.
+\item \textbf{Les équipements de santé portés par des associations sont rares mais lourds} : 33,5\,\% de la surface de santé créée
+  (79\,217\,m²), dont un seul projet pèse 46\,\%. Une poignée de comptes concentre l'enjeu.
+\item \textbf{Une liste de prospects nettoyée.} Sur 230 candidats des familles cibles, le code écarte 99 cas sans ambiguïté
+  (culte, écoles, clubs sportifs, cabinets libéraux, structures cessées) ; l'agent ne juge que les 131 restants. Tête de liste :
+  Avenir APEI, Fondation Mallet, Delos APEI 78, Autisme en Yvelines, Fondation John Bost, Handi Val de Seine, Coallia, Vilogia.
+\end{itemize}
+
+% ================= 3. preuves =================
+\clearpage
+\section{Exemples : prospects qualifiés et leurs preuves}
+{\small
+\begin{tabularx}{\linewidth}{@{}P{29mm}P{54mm}Y@{}}
+\toprule
+\textsf{\footnotesize\bfseries\color{gris}PROSPECT} & \textsf{\footnotesize\bfseries\color{gris}PREUVE DURE (VÉRIFIÉE PAR CODE)} & \textsf{\footnotesize\bfseries\color{gris}BESOIN IMMOBILIER VISIBLE (AGENT, SOURCES CITÉES)}\\
+\midrule
+\textbf{Avenir APEI} & 20 établissements FINESS ; activité 88.10B (accompagnement d'adultes handicapés) & 3 permis autorisés en 2024--2025, pas encore commencés : 8 logements pour personnes handicapées au Vésinet, 564 et 576\,m² d'action sociale à La Celle-Saint-Cloud.\\
+\textbf{Fondation Mallet} & 9 établissements FINESS ; activité 86.10Z (hospitalier) & 34 permis de 2014 à 2025, chaque année, autour de Houdan, Richebourg et Bazainville : un maître d'ouvrage régulier, rare pour une fondation.\\
+\textbf{Handi Val de Seine} & 18 établissements FINESS ; activité 87.30B ; reliée par l'agent exploitant & Exploite la résidence de 30 logements de Follainville-Dennemont, déposée par le bailleur Logement Francilien : seul FINESS relie ce bâtiment à son exploitant.\\
+\textbf{Coallia Habitat} & Bailleur social ; permis de résidence sociale & Résidence sociale de 115 logements autorisée en 2025 à Sartrouville, pas encore commencée.\\
+\bottomrule
+\end{tabularx}}
+\vspace{1pt}{\footnotesize\color{gris}Chaque ligne de \texttt{prospects\_priorises.csv} porte ces colonnes (\texttt{preuves\_dures}, \texttt{indices\_agent}, \texttt{raisons} du score) et le lien vers sa fiche publique ; les 99 candidats écartés gardent leur règle dans \texttt{prospects\_ecartes.csv}.\par}
+
+% ================= 4. établi / fragile / manque =================
+\section{Ce qui est établi, fragile, ou manque}
+\noindent\bilan{vert}{Établi}{Familles par catégorie juridique Sirène (92\,\% des demandeurs, exact par construction). Tous les comptages,
+  rejouables depuis les données. Chaque ligne renvoie à sa source publique (SDES, Annuaire des entreprises, FINESS).
+  Les 99 exclusions du pré-filtre, relues une à une.}\hfill
+\bilan{orange}{Fragile}{Le jugement de l'agent sur les cas ambigus : deux modèles s'accordent sur 56\,\% des classifications difficiles,
+  et sur 20 des 22 qualifications de prospects \emph{après} le garde-fou \og preuve dure\fg{} (17/22 avant). Le rapprochement FINESS :
+  40\,\% des cas où l'exploitant devrait être connu. Le barème du score et les seuils de taille.}\hfill
+\bilan{rouge}{Manque}{Une précision mesurée : les échantillons de contrôle sont tirés (50 demandeurs, 12 verdicts) mais pas encore
+  vérifiés à la main. La qualification complète (22 des 131 prospects, en test). Les successeurs des bailleurs fusionnés.
+  Les projets pas encore ouverts, invisibles dans FINESS.}
+
+% ================= 5. ce qui bloque =================
+\section{Ce qui bloque}
+\begin{itemize}
+\item \textbf{Le NAF d'un permis est daté} : c'est celui d'un établissement au dépôt, souvent fermé depuis. L'agent s'appuie sur
+  l'activité \emph{actuelle} de l'Annuaire et signale toute divergence.
+\item \textbf{Les champs utiles sont mal remplis} : le type de résidence est \og non rempli\fg{} (code 9) pour 41 des 47 permis de
+  logements associatifs (87\,\%) ; \og résidence pour personnes âgées\fg{} mêle Ehpad et résidences services seniors privées, absentes
+  de FINESS ; environ 15\,\% des ouvertures de chantier et un tiers des achèvements ne remontent jamais.
+\item \textbf{La cible n'est pas définie assez finement.} Les désaccords entre modèles portent presque tous sur des associations
+  \og grises\fg{} (culturelles, communautaires, de formation) : est-ce de l'ESS au sens de Buddimm ? C'est une question métier, pas
+  de puissance de modèle ; le garde-fou du code la tranche provisoirement en \og à vérifier\fg{}.
+\item \textbf{Une erreur que le code ne voit pas} : les constats rédigés par les agents explorateurs ont des chiffres vérifiés
+  automatiquement, mais 3 interprétations sur 19 étaient fausses ; je les ai retirées après relecture.
+\end{itemize}
+
+% ================= 6. ensuite =================
+\section{Ce que je ferais ensuite}
+\begin{enumerate}[label=\textcolor{accent}{\sffamily\bfseries\arabic*},leftmargin=1.2em,itemsep=2.2pt]
+\item Vérifier à la main les échantillons de contrôle et publier la précision des règles et de l'agent, strate par strate.
+\item Fixer avec l'équipe la définition de la cible (crèches, associations culturelles, très grands groupes) et en faire des règles.
+\item Qualifier les 131 prospects avec le modèle Groq : même qualité que le modèle NVIDIA sur l'échantillon, 4 fois plus rapide (17\,s contre 73\,s par cas).
+\item Améliorer le rapprochement FINESS (adresses abrégées, communes seules) et retrouver le successeur des bailleurs fusionnés.
+\item \textbf{Brancher le résultat sur la prospection}, chaque mois :
+\end{enumerate}
+\vspace{3pt}
+\begin{center}
+\begin{tikzpicture}[node distance=3mm and 5mm]
+  \tikzset{petit/.style={etape=#1,minimum height=9mm,text width=26mm}}
+  \node[petit=gris] (a) {\textbf{Sitadel}\\mise à jour mensuelle};
+  \node[petit=accent,right=of a] (b) {\textbf{Nouveaux permis}\\et changements d'état};
+  \node[petit=orange,right=of b] (c) {\textbf{Pipeline}\\famille, exploitant,\\qualification};
+  \node[petit=vert,right=of c] (d) {\textbf{Fiche prospect}\\besoin, permis, sources};
+  \node[petit=accent,right=of d] (e) {\textbf{Revue humaine}\\puis CRM};
+  \foreach \x/\y in {a/b,b/c,c/d,d/e} \draw[fleche] (\x) -- (\y);
+\end{tikzpicture}
+\end{center}
+\vspace{-5pt}
+Les permis nouveaux ou passés à l'état \og autorisé, non commencé\fg{} déclenchent une fiche : qui est la structure, quel projet,
+quel besoin probable, avec les liens vers les sources publiques. Alertes utiles : un exploitant connu dépose à nouveau, un bailleur
+dépose une résidence médico-sociale sans exploitant identifié, un permis associatif est annulé (projet à sécuriser).
+\textbf{La décision de contacter reste humaine, et le contact n'est jamais automatisé.}
+
+\end{document}

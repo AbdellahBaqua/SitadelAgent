@@ -1,0 +1,109 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "785118944"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "785118944"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "785118944"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "785118944"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "PAROISSE ST CYR L ECOLE     66",
+     "nb_permis_PC": 1,
+     "annees_depot": [
+      "2017"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 0,
+     "surface_locaux_non_residentiels_creee_m2": 42,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 0
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "785118944",
+      "nom": "PAROISSE ST CYR L ECOLE     66",
+      "nature_juridique": "2700",
+      "naf_actuel": "94.91Z",
+      "etat": "A",
+      "date_creation": "1900-01-01",
+      "categorie": "PME",
+      "effectif": "01",
+      "nb_etablissements": 1,
+      "nb_etablissements_ouverts": 1,
+      "siege_actuel": {
+       "siret": "78511894400012",
+       "naf": "94.91Z",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "78511894400012",
+       "naf_dans_permis": "94.91Z",
+       "nb_permis": 1,
+       "annees_depot": [
+        "2017"
+       ],
+       "etat_actuel": "ouvert",
+       "date_creation": "1900-01-01",
+       "date_fermeture": null
+      }
+     ],
+     "alertes": [],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/785118944"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "94.91Z",
+      "libelle": "Activités des organisations religieuses"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "2700",
+     "libelle": "Paroisse hors zone concordataire"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"association_ess\",\"confiance\":\"haute\",\"indices\":[\"permis_du_demandeur : dénomination « PAROISSE ST CYR L ECOLE », 1 permis en 2017 pour 42 m² de surface non résidentielle, 0 logement créé\",\"fiche_entreprise : nature_juridique 2700 (Paroisse hors zone concordataire), naf_actuel 94.91Z (Activités des organisations religieuses), entreprise active (état A), effectif 01\",\"libelle_cj : code 2700 = « Paroisse hors zone concordataire » (forme juridique d'association cultuelle)\",\"libelle_naf : code 94.91Z = « Activités des organisations religieuses »\"],\"limites\":\"Un seul permis ancien (2017) ; l'effectif est très faible (01) mais cohérent pour une paroisse. Aucune ambiguïté sur la nature associative et cultuelle de la structure.\"}"
+   }
+  ]
+ }
+]

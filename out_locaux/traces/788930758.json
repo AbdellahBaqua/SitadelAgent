@@ -1,0 +1,116 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "788930758"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "788930758"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "788930758"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "788930758"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "PHARMACIE DE L OUEST",
+     "nb_permis_PC": 1,
+     "annees_depot": [
+      "2016"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 0,
+     "surface_locaux_non_residentiels_creee_m2": 255,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 1
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "788930758",
+      "nom": "PHARMACIE DE L OUEST",
+      "nature_juridique": "5785",
+      "naf_actuel": "47.73Z",
+      "etat": "A",
+      "date_creation": "2012-10-17",
+      "categorie": "PME",
+      "effectif": "11",
+      "nb_etablissements": 2,
+      "nb_etablissements_ouverts": 1,
+      "siege_actuel": {
+       "siret": "78893075800024",
+       "naf": "47.73Z",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "78893075800016",
+       "naf_dans_permis": "70.10Z",
+       "nb_permis": 1,
+       "annees_depot": [
+        "2016"
+       ],
+       "etat_actuel": "fermé",
+       "date_creation": "2012-10-17",
+       "date_fermeture": "2018-03-19"
+      }
+     ],
+     "alertes": [
+      "SIRET 78893075800016 (permis 2016) fermé le 2018-03-19 : le NAF 70.10Z du permis vient d'un établissement fermé",
+      "NAF du permis ['70.10Z'] différent du NAF actuel de l'entreprise 47.73Z"
+     ],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/788930758"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "47.73Z",
+      "libelle": "Commerce de détail de produits pharmaceutiques en magasin spécialisé"
+     },
+     {
+      "code": "70.10Z",
+      "libelle": "Activités des sièges sociaux"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5499",
+     "libelle": "Société à responsabilité limitée (sans autre indication)"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"entreprise_autre\",\"confiance\":\"moyenne\",\"indices\":[\"fiche_entreprise : NAF actuel 47.73Z = « Commerce de détail de produits pharmaceutiques en magasin spécialisé » (pharmacie)\",\"fiche_entreprise : nature juridique 5785 (SARL) → entreprise privée commerciale\",\"permis_du_demandeur : 1 permis en 2016 pour 255 m² de surface non résidentielle, 0 logement créé, 0 logement social\",\"libelle_naf : 47.73Z confirme l'activité de pharmacie de détail\",\"libelle_cj : 5499 = « Société à responsabilité limitée (sans autre indication) »\",\"fiche_entreprise (alerte) : l'établissement du permis (SIRET 78893075800016) est fermé depuis 2018, son NAF 70.10Z (siège social) ne reflète pas l'activité réelle\"],\"limites\":\"L'établissement ayant déposé le permis est fermé ; le NAF du permis (70.10Z) est historique et non pertinent. L'entreprise actuelle est une pharmacie en activité (SARL, 11 salariés), sans lien avec le logement social, la promotion, la foncière, l'ESS, l'exploitation médico-sociale au sens établissement de santé, la collectivité ou la copropriété.\"}"
+   }
+  ]
+ }
+]

@@ -1,0 +1,115 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "798018370"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "798018370"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "798018370"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "798018370"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "HOGAR",
+     "nb_permis_PC": 1,
+     "annees_depot": [
+      "2025"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 0,
+     "surface_locaux_non_residentiels_creee_m2": 19,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 1
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "798018370",
+      "nom": "HOGAR (L'ERMITAGE)",
+      "nature_juridique": "5710",
+      "naf_actuel": "55.10Z",
+      "etat": "A",
+      "date_creation": "2013-10-21",
+      "categorie": "PME",
+      "effectif": "02",
+      "nb_etablissements": 1,
+      "nb_etablissements_ouverts": 1,
+      "siege_actuel": {
+       "siret": "79801837000014",
+       "naf": "55.10Z",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "79801837000014",
+       "naf_dans_permis": "70.10Z",
+       "nb_permis": 1,
+       "annees_depot": [
+        "2025"
+       ],
+       "etat_actuel": "ouvert",
+       "date_creation": "2013-10-21",
+       "date_fermeture": null
+      }
+     ],
+     "alertes": [
+      "NAF du permis ['70.10Z'] différent du NAF actuel de l'entreprise 55.10Z"
+     ],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/798018370"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "55.10Z",
+      "libelle": "Hôtels et hébergement similaire"
+     },
+     {
+      "code": "70.10Z",
+      "libelle": "Activités des sièges sociaux"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5710",
+     "libelle": "SAS, société par actions simplifiée"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"entreprise_autre\",\"confiance\":\"faible\",\"indices\":[\"fiche_entreprise : forme juridique 5710 (SAS, société par actions simplifiée) – société commerciale, ni association ni organisme public\",\"fiche_entreprise : naf_actuel 55.10Z « Hôtels et hébergement similaire » (libelle_naf) – activité d'hébergement marchand classique\",\"permis_du_demandeur : 1 permis en 2025 pour 19 m² de surface non résidentielle, 0 logement créé, 0 logement locatif social déclaré – pas de production de logement social ni de promotion immobilière\",\"dénomination : « HOGAR (L'ERMITAGE) » évoque un établissement hôtelier ou d'hébergement touristique\"],\"limites\":\"L'activité 55.10Z recouvre l'hôtellerie classique ; elle ne permet pas d'affirmer qu'il s'agit d'hébergement social ou médico-social (famille exploitant_sante_social). Aucune information sur un éventuel conventionnement social de l'établissement. Le NAF du permis (70.10Z, sièges sociaux) est historique et diffère de l'activité actuelle.\"}"
+   }
+  ]
+ }
+]

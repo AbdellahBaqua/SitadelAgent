@@ -1,0 +1,109 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "881467856"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "881467856"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "881467856"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "881467856"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "MT SARTROUVILLE",
+     "nb_permis_PC": 1,
+     "annees_depot": [
+      "2020"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 0,
+     "surface_locaux_non_residentiels_creee_m2": 47,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 0
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "881467856",
+      "nom": "MT SARTROUVILLE",
+      "nature_juridique": "5499",
+      "naf_actuel": "66.19B",
+      "etat": "A",
+      "date_creation": "2020-01-29",
+      "categorie": "PME",
+      "effectif": "NN",
+      "nb_etablissements": 1,
+      "nb_etablissements_ouverts": 1,
+      "siege_actuel": {
+       "siret": "88146785600012",
+       "naf": "66.19B",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "88146785600012",
+       "naf_dans_permis": "66.19B",
+       "nb_permis": 1,
+       "annees_depot": [
+        "2020"
+       ],
+       "etat_actuel": "ouvert",
+       "date_creation": "2020-01-29",
+       "date_fermeture": null
+      }
+     ],
+     "alertes": [],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/881467856"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "66.19B",
+      "libelle": "Autres activités auxiliaires de services financiers, hors assurance et caisses de retraite, n.c.a."
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5499",
+     "libelle": "Société à responsabilité limitée (sans autre indication)"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"entreprise_autre\",\"confiance\":\"moyenne\",\"indices\":[\"permis_du_demandeur : 1 permis en 2020, 0 logement créé, 47 m² de surface non résidentielle, pas de logement social déclaré\",\"fiche_entreprise : entreprise active (créée 2020), forme juridique SARL (cj 5499), catégorie PME, 1 établissement ouvert\",\"libelle_naf (66.19B) : « Autres activités auxiliaires de services financiers, hors assurance et caisses de retraite, n.c.a. » – activité financière, pas immobilière\",\"libelle_cj (5499) : « Société à responsabilité limitée (sans autre indication) » – société commerciale classique\",\"dénomination : MT SARTROUVILLE – ne signale pas d'appartenance à un secteur spécialisé (logement social, promotion, foncière, association, santé, collectivité, copropriété)\"],\"limites\":\"L'objet du permis (47 m² non résidentiels) est marginal et ne permet pas de rattacher l'entreprise à une famille immobilière spécialisée. Le NAF actuel (services financiers) est éloigné de l'immobilier. L'entreprise pourrait être un porteur de projet ponctuel (ex. local pour son activité), mais aucune source ne confirme une activité immobilière récurrente.\"}"
+   }
+  ]
+ }
+]

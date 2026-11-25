@@ -1,0 +1,109 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "807956412"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "807956412"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "807956412"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "807956412"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "SCI DOALEX",
+     "nb_permis_PC": 1,
+     "annees_depot": [
+      "2015"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 0,
+     "surface_locaux_non_residentiels_creee_m2": 883,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 0
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "807956412",
+      "nom": "SCI DOALEX",
+      "nature_juridique": "6599",
+      "naf_actuel": "68.32A",
+      "etat": "A",
+      "date_creation": "2014-11-08",
+      "categorie": null,
+      "effectif": "NN",
+      "nb_etablissements": 1,
+      "nb_etablissements_ouverts": 1,
+      "siege_actuel": {
+       "siret": "80795641200017",
+       "naf": "68.32A",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "80795641200017",
+       "naf_dans_permis": "68.32A",
+       "nb_permis": 1,
+       "annees_depot": [
+        "2015"
+       ],
+       "etat_actuel": "ouvert",
+       "date_creation": "2014-11-08",
+       "date_fermeture": null
+      }
+     ],
+     "alertes": [],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/807956412"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "68.32A",
+      "libelle": "Administration d'immeubles et autres biens immobiliers"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "6599",
+     "libelle": "Autre société civile"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"fonciere_investisseur\",\"confiance\":\"moyenne\",\"indices\":[\"fiche_entreprise : nature_juridique 6599 « Autre société civile » (SCI), naf_actuel 68.32A « Administration d'immeubles et autres biens immobiliers », entreprise active (état A), créée en 2014\",\"libelle_cj : code 6599 = « Autre société civile » (forme juridique typique des SCI patrimoniales)\",\"libelle_naf : code 68.32A = « Administration d'immeubles et autres biens immobiliers » (activité de gestion/location de patrimoine)\",\"permis_du_demandeur : 1 permis en 2015, 883 m² de surface non résidentielle créée, 0 logement, 0 logement social (projet tertiaire/commercial unique)\"],\"limites\":\"Impossible de savoir si le bâtiment construit a été conservé en patrimoine (location) ou revendu (promotion). Le NAF actuel (gestion) penche pour une détention patrimoniale, mais le permis montre une opération de construction. Aucune information sur la destination ultérieure de l'immeuble.\"}"
+   }
+  ]
+ }
+]

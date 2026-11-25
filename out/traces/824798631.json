@@ -1,0 +1,113 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "824798631"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "824798631"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "824798631"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "824798631"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "SASU GOPIVA",
+     "nb_permis_PC": 2,
+     "annees_depot": [
+      "2019",
+      "2023"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 2,
+     "surface_locaux_non_residentiels_creee_m2": 0,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 2,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 0
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "824798631",
+      "nom": "EURL GOPIVA (GOPIVA)",
+      "nature_juridique": "5499",
+      "naf_actuel": "68.31Z",
+      "etat": "A",
+      "date_creation": "2017-01-02",
+      "categorie": "PME",
+      "effectif": "NN",
+      "nb_etablissements": 2,
+      "nb_etablissements_ouverts": 1,
+      "siege_actuel": {
+       "siret": "82479863100027",
+       "naf": "68.31Z",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "82479863100019",
+       "naf_dans_permis": "68.31Z",
+       "nb_permis": 2,
+       "annees_depot": [
+        "2019",
+        "2023"
+       ],
+       "etat_actuel": "fermé",
+       "date_creation": "2017-01-02",
+       "date_fermeture": "2022-12-27"
+      }
+     ],
+     "alertes": [
+      "SIRET 82479863100019 (permis 2019,2023) fermé le 2022-12-27 : le NAF 68.31Z du permis vient d'un établissement fermé"
+     ],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/824798631"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "68.31Z",
+      "libelle": "Agences immobilières"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5710",
+     "libelle": "SAS, société par actions simplifiée"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"fonciere_investisseur\",\"confiance\":\"faible\",\"indices\":[\"fiche_entreprise : NAF actuel 68.31Z « Agences immobilières » (inclut les marchands de biens selon la nomenclature NAF), forme juridique EURL (ex-SASU), entreprise active, PME.\",\"permis_du_demandeur : 2 permis de construire déposés (2019, 2023) pour 2 logements individuels, 0 logement social, 0 surface non résidentielle.\",\"libelle_naf : 68.31Z = « Agences immobilières » (activités d'agents/courtiers en immobilier et marchands de biens immobiliers).\",\"libelle_cj : 5710 = « SAS, société par actions simplifiée » (mais fiche_entreprise indique nature_juridique 5499 = EURL, changement de forme).\",\"dénomination : GOPIVA – ne contient pas de terme évocateur (promotion, foncière, habitat, etc.).\"],\"limites\":\"L'activité principale déclarée est « Agences immobilières » (68.31Z), qui recouvre à la fois l'intermédiation et le négoce de biens (marchands de biens). Les 2 permis pour maisons individuelles suggèrent une activité de construction pour revente (marchand de biens ou petit promoteur), mais le volume est très faible (2 unités sur 4 ans) et l'établissement porteur des permis est fermé depuis 2022. Aucune preuve de détention/location de patrimoine (foncière) ni de promotion immobilière structurée (promoteur). La classification reste incertaine entre « fonciere_investisseur » (marchand de biens) et « entreprise_autre » (agence immobilière avec activité accessoire de construction).\"}"
+   }
+  ]
+ }
+]

@@ -1,0 +1,109 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "902693571"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "902693571"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "902693571"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "902693571"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "LOUISE PATRIMONIALE IMMO",
+     "nb_permis_PC": 1,
+     "annees_depot": [
+      "2024"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 3,
+     "surface_locaux_non_residentiels_creee_m2": 0,
+     "nb_permis_collectif": 1,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 0
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "902693571",
+      "nom": "LOUISE PATRIMONIALE IMMO",
+      "nature_juridique": "5710",
+      "naf_actuel": "66.30Z",
+      "etat": "A",
+      "date_creation": "2021-08-31",
+      "categorie": "PME",
+      "effectif": "NN",
+      "nb_etablissements": 1,
+      "nb_etablissements_ouverts": 1,
+      "siege_actuel": {
+       "siret": "90269357100017",
+       "naf": "66.30Z",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "90269357100017",
+       "naf_dans_permis": "66.30Z",
+       "nb_permis": 1,
+       "annees_depot": [
+        "2024"
+       ],
+       "etat_actuel": "ouvert",
+       "date_creation": "2021-08-31",
+       "date_fermeture": null
+      }
+     ],
+     "alertes": [],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/902693571"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "66.30Z",
+      "libelle": "Gestion de fonds"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5710",
+     "libelle": "SAS, société par actions simplifiée"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"fonciere_investisseur\",\"confiance\":\"moyenne\",\"indices\":[\"fiche_entreprise : NAF actuel 66.30Z « Gestion de fonds » (libelle_naf) — activité de gestion d'actifs financiers/immobiliers, pas de promotion ni d'exploitation sociale\",\"fiche_entreprise : forme juridique SAS (libelle_cj 5710) — société commerciale, exclut bailleur_social, association_ess, collectivite_public, copropriete\",\"permis_du_demandeur : 1 PC 2024, 3 logements collectifs créés, 0 logement locatif social déclaré — opération de production immobilière sans vocation sociale\",\"dénomination : « LOUISE PATRIMONIALE IMMO » — vocabulaire patrimonial/immobilier cohérent avec une foncière ou un véhicule d'investissement\"],\"limites\":\"L'activité « Gestion de fonds » (66.30Z) peut couvrir des fonds d'investissement divers (pas seulement immobilier) ; le permis unique ne permet pas de confirmer un modèle récurrent d'acquisition/détention de patrimoine locatif. Aucune preuve directe de location/gestion de patrimoine en propre.\"}"
+   }
+  ]
+ }
+]

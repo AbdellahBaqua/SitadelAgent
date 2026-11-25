@@ -1,0 +1,1909 @@
+[
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "apercu",
+    "args": {},
+    "sortie": {
+     "perimetre": "PC des Yvelines (78) créant des locaux non résidentiels, déposés par des personnes morales, extraction SDES/Sitadel",
+     "nb_permis": 4245,
+     "nb_demandeurs": 2439,
+     "annees_depot": {
+      "2005": 1,
+      "2006": 1,
+      "2008": 1,
+      "2012": 97,
+      "2013": 257,
+      "2014": 271,
+      "2015": 258,
+      "2016": 322,
+      "2017": 341,
+      "2018": 360,
+      "2019": 331,
+      "2020": 270,
+      "2021": 347,
+      "2022": 370,
+      "2023": 334,
+      "2024": 300,
+      "2025": 282,
+      "2026": 101,
+      "2087": 1
+     },
+     "familles_demandeurs": {
+      "fonciere_investisseur": 895,
+      "entreprise_autre": 602,
+      "collectivite_public": 303,
+      "promoteur": 266,
+      "non_determine": 184,
+      "association_ess": 135,
+      "exploitant_sante_social": 32,
+      "bailleur_social": 21,
+      "copropriete": 1
+     },
+     "colonnes_interrogeables": [
+      "famille",
+      "AN_DEPOT",
+      "COMM",
+      "ADR_LOCALITE_TER",
+      "ETAT_DAU",
+      "DESTINATION_PRINCIPALE",
+      "DEST_SURF_MAX",
+      "TYPE_SERVICE_PUBLIC",
+      "NATURE_PROJET_COMPLETEE",
+      "TYPE_TRANSFO_PRINCIPAL",
+      "TYPE_PRINCIP_LOCAUX_TRANSFORMES",
+      "ZONE_OP",
+      "CJ_DEM",
+      "APE_DEM",
+      "SIREN_DEM",
+      "DENOM_DEM"
+     ],
+     "mesures": [
+      "permis",
+      "surface_m2",
+      "acteurs"
+     ],
+     "remarques": [
+      "2026 est une année partielle",
+      "un permis modificatif n'a pas de ligne propre",
+      "~15 % des ouvertures de chantier et ~1/3 des achèvements ne remontent jamais",
+      "APE_DEM = NAF de l'établissement du permis, possiblement fermé",
+      "surface_m2 = SURF_LOC_CREEE, surface de plancher de locaux non résidentiels créée",
+      "DEST_SURF_MAX = destination qui reçoit le plus de surface (calculée par le code à partir des SURF_*)",
+      "DESTINATION_PRINCIPALE est codée par le SDES (introduite en mai 2022) ; TYPE_SERVICE_PUBLIC vient du formulaire et est souvent 'non rempli'",
+      "un même permis peut aussi créer des logements : il figure alors aussi dans le fichier logements"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 1,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "famille"
+     ],
+     "mesure": "surface_m2",
+     "top": 10
+    },
+    "sortie": {
+     "filtres": {},
+     "nb_permis_filtres": 4245,
+     "nb_groupes": 9,
+     "resultats": [
+      {
+       "famille": "fonciere_investisseur",
+       "permis": 1149,
+       "surface_m2": 1893109,
+       "acteurs": 895
+      },
+      {
+       "famille": "entreprise_autre",
+       "permis": 958,
+       "surface_m2": 970831,
+       "acteurs": 602
+      },
+      {
+       "famille": "promoteur",
+       "permis": 362,
+       "surface_m2": 912675,
+       "acteurs": 266
+      },
+      {
+       "famille": "collectivite_public",
+       "permis": 1129,
+       "surface_m2": 790045,
+       "acteurs": 303
+      },
+      {
+       "famille": "non_determine",
+       "permis": 266,
+       "surface_m2": 276846,
+       "acteurs": 184
+      },
+      {
+       "famille": "association_ess",
+       "permis": 275,
+       "surface_m2": 179244,
+       "acteurs": 135
+      },
+      {
+       "famille": "bailleur_social",
+       "permis": 56,
+       "surface_m2": 47307,
+       "acteurs": 21
+      },
+      {
+       "famille": "exploitant_sante_social",
+       "permis": 48,
+       "surface_m2": 7860,
+       "acteurs": 32
+      },
+      {
+       "famille": "copropriete",
+       "permis": 2,
+       "surface_m2": 2191,
+       "acteurs": 1
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 2,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "famille",
+      "DEST_SURF_MAX"
+     ],
+     "mesure": "surface_m2",
+     "top": 30
+    },
+    "sortie": {
+     "filtres": {},
+     "nb_permis_filtres": 4245,
+     "nb_groupes": 56,
+     "resultats": [
+      {
+       "famille": "collectivite_public",
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "permis": 938,
+       "surface_m2": 724425,
+       "acteurs": 268
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "DEST_SURF_MAX": "commerce",
+       "permis": 401,
+       "surface_m2": 523123,
+       "acteurs": 327
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "DEST_SURF_MAX": "entrepôt",
+       "permis": 217,
+       "surface_m2": 505226,
+       "acteurs": 194
+      },
+      {
+       "famille": "promoteur",
+       "DEST_SURF_MAX": "bureaux",
+       "permis": 61,
+       "surface_m2": 339876,
+       "acteurs": 50
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "DEST_SURF_MAX": "bureaux",
+       "permis": 218,
+       "surface_m2": 336015,
+       "acteurs": 201
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "DEST_SURF_MAX": "industrie",
+       "permis": 109,
+       "surface_m2": 273660,
+       "acteurs": 89
+      },
+      {
+       "famille": "entreprise_autre",
+       "DEST_SURF_MAX": "entrepôt",
+       "permis": 105,
+       "surface_m2": 241120,
+       "acteurs": 89
+      },
+      {
+       "famille": "promoteur",
+       "DEST_SURF_MAX": "commerce",
+       "permis": 200,
+       "surface_m2": 226285,
+       "acteurs": 158
+      },
+      {
+       "famille": "entreprise_autre",
+       "DEST_SURF_MAX": "industrie",
+       "permis": 166,
+       "surface_m2": 202494,
+       "acteurs": 98
+      },
+      {
+       "famille": "entreprise_autre",
+       "DEST_SURF_MAX": "agriculture",
+       "permis": 151,
+       "surface_m2": 196611,
+       "acteurs": 110
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "permis": 110,
+       "surface_m2": 187115,
+       "acteurs": 89
+      },
+      {
+       "famille": "promoteur",
+       "DEST_SURF_MAX": "industrie",
+       "permis": 23,
+       "surface_m2": 153723,
+       "acteurs": 18
+      },
+      {
+       "famille": "entreprise_autre",
+       "DEST_SURF_MAX": "bureaux",
+       "permis": 133,
+       "surface_m2": 146242,
+       "acteurs": 106
+      },
+      {
+       "famille": "association_ess",
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "permis": 192,
+       "surface_m2": 134966,
+       "acteurs": 113
+      },
+      {
+       "famille": "entreprise_autre",
+       "DEST_SURF_MAX": "commerce",
+       "permis": 231,
+       "surface_m2": 118715,
+       "acteurs": 179
+      },
+      {
+       "famille": "promoteur",
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "permis": 53,
+       "surface_m2": 95241,
+       "acteurs": 47
+      },
+      {
+       "famille": "non_determine",
+       "DEST_SURF_MAX": "commerce",
+       "permis": 84,
+       "surface_m2": 75987,
+       "acteurs": 73
+      },
+      {
+       "famille": "non_determine",
+       "DEST_SURF_MAX": "bureaux",
+       "permis": 67,
+       "surface_m2": 68634,
+       "acteurs": 46
+      },
+      {
+       "famille": "entreprise_autre",
+       "DEST_SURF_MAX": "service public / intérêt collectif",
+       "permis": 146,
+       "surface_m2": 55439,
+       "acteurs": 73
+      },
+      {
+       "famille": "non_determine",
+       "DEST_SURF_MAX": "industrie",
+       "permis": 31,
+       "surface_m2": 53190,
+       "acteurs": 20
+      },
+      {
+       "famille": "promoteur",
+       "DEST_SURF_MAX": "entrepôt",
+       "permis": 10,
+       "surface_m2": 48808,
+       "acteurs": 9
+      },
+      {
+       "famille": "promoteur",
+       "DEST_SURF_MAX": "hôtels / hébergement",
+       "permis": 10,
+       "surface_m2": 48278,
+       "acteurs": 9
+      },
+      {
+       "famille": "non_determine",
+       "DEST_SURF_MAX": "entrepôt",
+       "permis": 21,
+       "surface_m2": 45016,
+       "acteurs": 18
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "DEST_SURF_MAX": "agriculture",
+       "permis": 59,
+       "surface_m2": 37558,
+       "acteurs": 47
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "DEST_SURF_MAX": "hôtels / hébergement",
+       "permis": 28,
+       "surface_m2": 30412,
+       "acteurs": 25
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 3,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "famille",
+      "SIREN_DEM"
+     ],
+     "mesure": "permis",
+     "top": 50
+    },
+    "sortie": {
+     "filtres": {},
+     "nb_permis_filtres": 4245,
+     "nb_groupes": 2439,
+     "resultats": [
+      {
+       "famille": "collectivite_public",
+       "SIREN_DEM": "227806460",
+       "permis": 54,
+       "surface_m2": 115560,
+       "acteurs": 1
+      },
+      {
+       "famille": "collectivite_public",
+       "SIREN_DEM": "552049447",
+       "permis": 30,
+       "surface_m2": 30983,
+       "acteurs": 1
+      },
+      {
+       "famille": "collectivite_public",
+       "SIREN_DEM": "200059889",
+       "permis": 29,
+       "surface_m2": 6261,
+       "acteurs": 1
+      },
+      {
+       "famille": "association_ess",
+       "SIREN_DEM": "775667181",
+       "permis": 28,
+       "surface_m2": 13268,
+       "acteurs": 1
+      },
+      {
+       "famille": "collectivite_public",
+       "SIREN_DEM": "237500079",
+       "permis": 26,
+       "surface_m2": 17898,
+       "acteurs": 1
+      },
+      {
+       "famille": "collectivite_public",
+       "SIREN_DEM": "217803626",
+       "permis": 26,
+       "surface_m2": 19937,
+       "acteurs": 1
+      },
+      {
+       "famille": "collectivite_public",
+       "SIREN_DEM": "217804988",
+       "permis": 19,
+       "surface_m2": 11548,
+       "acteurs": 1
+      },
+      {
+       "famille": "entreprise_autre",
+       "SIREN_DEM": "444608442",
+       "permis": 18,
+       "surface_m2": 7146,
+       "acteurs": 1
+      },
+      {
+       "famille": "entreprise_autre",
+       "SIREN_DEM": "343262622",
+       "permis": 17,
+       "surface_m2": 142098,
+       "acteurs": 1
+      },
+      {
+       "famille": "entreprise_autre",
+       "SIREN_DEM": "507523801",
+       "permis": 17,
+       "surface_m2": 3488,
+       "acteurs": 1
+      },
+      {
+       "famille": "collectivite_public",
+       "SIREN_DEM": "210205506",
+       "permis": 16,
+       "surface_m2": 9670,
+       "acteurs": 1
+      },
+      {
+       "famille": "collectivite_public",
+       "SIREN_DEM": "217806215",
+       "permis": 16,
+       "surface_m2": 8676,
+       "acteurs": 1
+      },
+      {
+       "famille": "association_ess",
+       "SIREN_DEM": "785150194",
+       "permis": 15,
+       "surface_m2": 4315,
+       "acteurs": 1
+      },
+      {
+       "famille": "collectivite_public",
+       "SIREN_DEM": "217804236",
+       "permis": 15,
+       "surface_m2": 9779,
+       "acteurs": 1
+      },
+      {
+       "famille": "promoteur",
+       "SIREN_DEM": "562091546",
+       "permis": 14,
+       "surface_m2": 35710,
+       "acteurs": 1
+      },
+      {
+       "famille": "collectivite_public",
+       "SIREN_DEM": "287800536",
+       "permis": 14,
+       "surface_m2": 6135,
+       "acteurs": 1
+      },
+      {
+       "famille": "collectivite_public",
+       "SIREN_DEM": "217806249",
+       "permis": 14,
+       "surface_m2": 4164,
+       "acteurs": 1
+      },
+      {
+       "famille": "collectivite_public",
+       "SIREN_DEM": "217806462",
+       "permis": 14,
+       "surface_m2": 3259,
+       "acteurs": 1
+      },
+      {
+       "famille": "collectivite_public",
+       "SIREN_DEM": "412280737",
+       "permis": 13,
+       "surface_m2": 6167,
+       "acteurs": 1
+      },
+      {
+       "famille": "collectivite_public",
+       "SIREN_DEM": "217803618",
+       "permis": 13,
+       "surface_m2": 10853,
+       "acteurs": 1
+      },
+      {
+       "famille": "association_ess",
+       "SIREN_DEM": "303742480",
+       "permis": 12,
+       "surface_m2": 10219,
+       "acteurs": 1
+      },
+      {
+       "famille": "collectivite_public",
+       "SIREN_DEM": "217801729",
+       "permis": 12,
+       "surface_m2": 2623,
+       "acteurs": 1
+      },
+      {
+       "famille": "collectivite_public",
+       "SIREN_DEM": "217803113",
+       "permis": 12,
+       "surface_m2": 5517,
+       "acteurs": 1
+      },
+      {
+       "famille": "collectivite_public",
+       "SIREN_DEM": "217804186",
+       "permis": 12,
+       "surface_m2": 7149,
+       "acteurs": 1
+      },
+      {
+       "famille": "collectivite_public",
+       "SIREN_DEM": "217804905",
+       "permis": 12,
+       "surface_m2": 4237,
+       "acteurs": 1
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 4,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "famille",
+      "SIREN_DEM"
+     ],
+     "mesure": "surface_m2",
+     "top": 50
+    },
+    "sortie": {
+     "filtres": {},
+     "nb_permis_filtres": 4245,
+     "nb_groupes": 2439,
+     "resultats": [
+      {
+       "famille": "entreprise_autre",
+       "SIREN_DEM": "343262622",
+       "permis": 17,
+       "surface_m2": 142098,
+       "acteurs": 1
+      },
+      {
+       "famille": "collectivite_public",
+       "SIREN_DEM": "227806460",
+       "permis": 54,
+       "surface_m2": 115560,
+       "acteurs": 1
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "SIREN_DEM": "932694664",
+       "permis": 1,
+       "surface_m2": 115327,
+       "acteurs": 1
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "SIREN_DEM": "977954361",
+       "permis": 5,
+       "surface_m2": 86104,
+       "acteurs": 1
+      },
+      {
+       "famille": "collectivite_public",
+       "SIREN_DEM": "257550004",
+       "permis": 11,
+       "surface_m2": 77345,
+       "acteurs": 1
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "SIREN_DEM": "821789740",
+       "permis": 2,
+       "surface_m2": 66758,
+       "acteurs": 1
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "SIREN_DEM": "500363932",
+       "permis": 3,
+       "surface_m2": 63749,
+       "acteurs": 1
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "SIREN_DEM": "304200371",
+       "permis": 3,
+       "surface_m2": 62243,
+       "acteurs": 1
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "SIREN_DEM": "323439786",
+       "permis": 6,
+       "surface_m2": 57706,
+       "acteurs": 1
+      },
+      {
+       "famille": "promoteur",
+       "SIREN_DEM": "489244483",
+       "permis": 7,
+       "surface_m2": 49577,
+       "acteurs": 1
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "SIREN_DEM": "451226328",
+       "permis": 9,
+       "surface_m2": 47722,
+       "acteurs": 1
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "SIREN_DEM": "508309697",
+       "permis": 2,
+       "surface_m2": 42696,
+       "acteurs": 1
+      },
+      {
+       "famille": "promoteur",
+       "SIREN_DEM": "343183331",
+       "permis": 7,
+       "surface_m2": 41865,
+       "acteurs": 1
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "SIREN_DEM": "791581135",
+       "permis": 2,
+       "surface_m2": 40710,
+       "acteurs": 1
+      },
+      {
+       "famille": "entreprise_autre",
+       "SIREN_DEM": "393341516",
+       "permis": 1,
+       "surface_m2": 39558,
+       "acteurs": 1
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "SIREN_DEM": "799791025",
+       "permis": 3,
+       "surface_m2": 38741,
+       "acteurs": 1
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "SIREN_DEM": "918387879",
+       "permis": 1,
+       "surface_m2": 38478,
+       "acteurs": 1
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "SIREN_DEM": "780129987",
+       "permis": 8,
+       "surface_m2": 37724,
+       "acteurs": 1
+      },
+      {
+       "famille": "promoteur",
+       "SIREN_DEM": "732055199",
+       "permis": 3,
+       "surface_m2": 37100,
+       "acteurs": 1
+      },
+      {
+       "famille": "association_ess",
+       "SIREN_DEM": "441921962",
+       "permis": 2,
+       "surface_m2": 36977,
+       "acteurs": 1
+      },
+      {
+       "famille": "promoteur",
+       "SIREN_DEM": "562091546",
+       "permis": 14,
+       "surface_m2": 35710,
+       "acteurs": 1
+      },
+      {
+       "famille": "promoteur",
+       "SIREN_DEM": "887910248",
+       "permis": 1,
+       "surface_m2": 35572,
+       "acteurs": 1
+      },
+      {
+       "famille": "promoteur",
+       "SIREN_DEM": "891495202",
+       "permis": 1,
+       "surface_m2": 32930,
+       "acteurs": 1
+      },
+      {
+       "famille": "promoteur",
+       "SIREN_DEM": "899789648",
+       "permis": 5,
+       "surface_m2": 31828,
+       "acteurs": 1
+      },
+      {
+       "famille": "collectivite_public",
+       "SIREN_DEM": "552049447",
+       "permis": 30,
+       "surface_m2": 30983,
+       "acteurs": 1
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 5,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "profil_acteur",
+    "args": {
+     "siren": "227806460"
+    },
+    "sortie": {
+     "denomination": "DEPARTEMENT DES YVELINES",
+     "famille": "collectivite_public",
+     "cj": "7220 (Département)",
+     "nb_permis": 54,
+     "surface_m2": 115560,
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/227806460",
+     "permis": [
+      {
+       "num": "07800512A0017",
+       "annee": "2012",
+       "commune": "ACHERES",
+       "surface_m2": 4884,
+       "etat": "5 (commencé)",
+       "destination": "service public / intérêt collectif",
+       "service_public": "2 (enseignement et recherche)",
+       "chambres": 0
+      },
+      {
+       "num": "07846514M0021",
+       "annee": "2014",
+       "commune": "ORGERUS",
+       "surface_m2": 1352,
+       "etat": "5 (commencé)",
+       "destination": "service public / intérêt collectif",
+       "service_public": "2 (enseignement et recherche)",
+       "chambres": 0
+      },
+      {
+       "num": "07846514M0023",
+       "annee": "2014",
+       "commune": "ORGERUS",
+       "surface_m2": 50,
+       "etat": "5 (commencé)",
+       "destination": "service public / intérêt collectif",
+       "service_public": "2 (enseignement et recherche)",
+       "chambres": 0
+      },
+      {
+       "num": "07811715G0002",
+       "annee": "2015",
+       "commune": "BUC",
+       "surface_m2": 343,
+       "etat": "5 (commencé)",
+       "destination": "service public / intérêt collectif",
+       "service_public": "2 (enseignement et recherche)",
+       "chambres": 0
+      },
+      {
+       "num": "07829715E0015",
+       "annee": "2015",
+       "commune": "GUYANCOURT",
+       "surface_m2": 23,
+       "etat": "2 (autorisé)",
+       "destination": "service public / intérêt collectif",
+       "service_public": "2 (enseignement et recherche)",
+       "chambres": 0
+      },
+      {
+       "num": "07831415M0001",
+       "annee": "2015",
+       "commune": "ISSOU",
+       "surface_m2": 55,
+       "etat": "2 (autorisé)",
+       "destination": "service public / intérêt collectif",
+       "service_public": "5 (ouvrage spécial)",
+       "chambres": 0
+      },
+      {
+       "num": "0783611500002",
+       "annee": "2015",
+       "commune": "MANTES-LA-JOLIE",
+       "surface_m2": 223,
+       "etat": "5 (commencé)",
+       "destination": "service public / intérêt collectif",
+       "service_public": "2 (enseignement et recherche)",
+       "chambres": 0
+      },
+      {
+       "num": "07836215Y0004",
+       "annee": "2015",
+       "commune": "MANTES-LA-VILLE",
+       "surface_m2": 166,
+       "etat": "5 (commencé)",
+       "destination": "bureaux",
+       "service_public": "7 (non rempli)",
+       "chambres": 0
+      },
+      {
+       "num": "07862415Y0001",
+       "annee": "2015",
+       "commune": "TRIEL-SUR-SEINE",
+       "surface_m2": 22,
+       "etat": "2 (autorisé)",
+       "destination": "service public / intérêt collectif",
+       "service_public": "5 (ouvrage spécial)",
+       "chambres": 0
+      },
+      {
+       "num": "07811716G0008",
+       "annee": "2016",
+       "commune": "BUC",
+       "surface_m2": 6088,
+       "etat": "5 (commencé)",
+       "destination": "service public / intérêt collectif",
+       "service_public": "2 (enseignement et recherche)",
+       "chambres": 0
+      },
+      {
+       "num": "07820616M0010",
+       "annee": "2016",
+       "commune": "ECQUEVILLY",
+       "surface_m2": 205,
+       "etat": "5 (commencé)",
+       "destination": "bureaux",
+       "service_public": "7 (non rempli)",
+       "chambres": 0
+      },
+      {
+       "num": "07825116G0018",
+       "annee": "2016",
+       "commune": "FOURQUEUX",
+       "surface_m2": 5837,
+       "etat": "5 (commencé)",
+       "destination": "service public / intérêt collectif",
+       "service_public": "2 (enseignement et recherche)",
+       "chambres": 0
+      },
+      {
+       "num": "07825116G0019",
+       "annee": "2016",
+       "commune": "FOURQUEUX",
+       "surface_m2": 2674,
+       "etat": "5 (commencé)",
+       "destination": "service public / intérêt collectif",
+       "service_public": "2 (enseignement et recherche)",
+       "chambres": 0
+      },
+      {
+       "num": "0783541600001",
+       "annee": "2016",
+       "commune": "MAGNANVILLE",
+       "surface_m2": 23,
+       "etat": "2 (autorisé)",
+       "destination": "service public / intérêt collectif",
+       "service_public": "5 (ouvrage spécial)",
+       "chambres": 0
+      },
+      {
+       "num": "07842316E0002",
+       "annee": "2016",
+       "commune": "MONTIGNY-LE-BRETONNEUX",
+       "surface_m2": 81,
+       "etat": "5 (commencé)",
+       "destination": "service public / intérêt collectif",
+       "service_public": "2 (enseignement et recherche)",
+       "chambres": 0
+      },
+      {
+       "num": "07858616G1010",
+       "annee": "2016",
+       "commune": "SARTROUVILLE",
+       "surface_m2": 25,
+       "etat": "6 (terminé)",
+       "destination": "service public / intérêt collectif",
+       "service_public": "2 (enseignement et recherche)",
+       "chambres": 0
+      },
+      {
+       "num": "07811717K0001",
+       "annee": "2017",
+       "commune": "BUC",
+       "surface_m2": 10002,
+       "etat": "2 (autorisé)",
+       "destination": "service public / intérêt collectif",
+       "service_public": "2 (enseignement et recherche)",
+       "chambres": 0
+      },
+      {
+       "num": "07811717K0013",
+       "annee": "2017",
+       "commune": "BUC",
+       "surface_m2": 1019,
+       "etat": "5 (commencé)",
+       "destination": "service public / intérêt collectif",
+       "service_public": "2 (enseignement et recherche)",
+       "chambres": 0
+      },
+      {
+       "num": "07836117Y0017",
+       "annee": "2017",
+       "commune": "MANTES-LA-JOLIE",
+       "surface_m2": 7695,
+       "etat": "5 (commencé)",
+       "destination": "service public / intérêt collectif",
+       "service_public": "2 (enseignement et recherche)",
+       "chambres": 0
+      },
+      {
+       "num": "07842317E0003",
+       "annee": "2017",
+       "commune": "MONTIGNY-LE-BRETONNEUX",
+       "surface_m2": 131,
+       "etat": "2 (autorisé)",
+       "destination": "service public / intérêt collectif",
+       "service_public": "5 (ouvrage spécial)",
+       "chambres": 0
+      }
+     ],
+     "tronque": true
+    }
+   }
+  ]
+ },
+ {
+  "etape": 6,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "profil_acteur",
+    "args": {
+     "siren": "932694664"
+    },
+    "sortie": {
+     "denomination": "PROLOGIS FRANCE CXCIII SARL",
+     "famille": "fonciere_investisseur",
+     "cj": "5499 (Société à responsabilité limitée (sans autre indication))",
+     "nb_permis": 1,
+     "surface_m2": 115327,
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/932694664",
+     "permis": [
+      {
+       "num": "0782382500002",
+       "annee": "2025",
+       "commune": "FLINS SUR SEINE",
+       "surface_m2": 115327,
+       "etat": "2 (autorisé)",
+       "destination": "entrepôt",
+       "service_public": "7 (non rempli)",
+       "chambres": 0
+      }
+     ],
+     "tronque": false
+    }
+   }
+  ]
+ },
+ {
+  "etape": 7,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "profil_acteur",
+    "args": {
+     "siren": "977954361"
+    },
+    "sortie": {
+     "denomination": "VGP PARK VELIZY",
+     "famille": "fonciere_investisseur",
+     "cj": "6540 (Société civile immobilière)",
+     "nb_permis": 5,
+     "surface_m2": 86104,
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/977954361",
+     "permis": [
+      {
+       "num": "07864025V1004",
+       "annee": "2025",
+       "commune": "VELIZY-VILLACOUBLAY",
+       "surface_m2": 20410,
+       "etat": "2 (autorisé)",
+       "destination": "industrie",
+       "service_public": "7 (non rempli)",
+       "chambres": 0
+      },
+      {
+       "num": "07864025V1005",
+       "annee": "2025",
+       "commune": "VELIZY-VILLACOUBLAY",
+       "surface_m2": 27145,
+       "etat": "5 (commencé)",
+       "destination": "industrie",
+       "service_public": "7 (non rempli)",
+       "chambres": 0
+      },
+      {
+       "num": "07864025V1006",
+       "annee": "2025",
+       "commune": "VELIZY-VILLACOUBLAY",
+       "surface_m2": 7323,
+       "etat": "2 (autorisé)",
+       "destination": "industrie",
+       "service_public": "7 (non rempli)",
+       "chambres": 0
+      },
+      {
+       "num": "07864025V1007",
+       "annee": "2025",
+       "commune": "VELIZY-VILLACOUBLAY",
+       "surface_m2": 25418,
+       "etat": "2 (autorisé)",
+       "destination": "industrie",
+       "service_public": "7 (non rempli)",
+       "chambres": 0
+      },
+      {
+       "num": "07864025V1008",
+       "annee": "2025",
+       "commune": "VELIZY-VILLACOUBLAY",
+       "surface_m2": 5808,
+       "etat": "2 (autorisé)",
+       "destination": "industrie",
+       "service_public": "7 (non rempli)",
+       "chambres": 0
+      }
+     ],
+     "tronque": false
+    }
+   }
+  ]
+ },
+ {
+  "etape": 8,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "profil_acteur",
+    "args": {
+     "siren": "562091546"
+    },
+    "sortie": {
+     "denomination": "BOUYGUES IMMOBILIER",
+     "famille": "promoteur",
+     "cj": "5599 (SA à conseil d'administration (s.a.i.))",
+     "nb_permis": 14,
+     "surface_m2": 35710,
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/562091546",
+     "permis": [
+      {
+       "num": "07864012V1010",
+       "annee": "2012",
+       "commune": "VAÃÂLIZY-VILLACOUBLAY",
+       "surface_m2": 111,
+       "etat": "6 (terminé)",
+       "destination": "commerce",
+       "service_public": "7 (non rempli)",
+       "chambres": 0
+      },
+      {
+       "num": "07864612V0149",
+       "annee": "2012",
+       "commune": "VERSAILLES",
+       "surface_m2": 55,
+       "etat": "6 (terminé)",
+       "destination": "commerce",
+       "service_public": "7 (non rempli)",
+       "chambres": 0
+      },
+      {
+       "num": "07864013V1002",
+       "annee": "2013",
+       "commune": "VAÃÂLIZY-VILLACOUBLAY",
+       "surface_m2": 23553,
+       "etat": "6 (terminé)",
+       "destination": "bureaux",
+       "service_public": "7 (non rempli)",
+       "chambres": 0
+      },
+      {
+       "num": "07842314E0001",
+       "annee": "2014",
+       "commune": "MONTIGNY LE BRETONNEUX",
+       "surface_m2": 3298,
+       "etat": "6 (terminé)",
+       "destination": "service public / intérêt collectif",
+       "service_public": "3 (santé)",
+       "chambres": 84
+      },
+      {
+       "num": "07849814Y0023",
+       "annee": "2014",
+       "commune": "POISSY",
+       "surface_m2": 140,
+       "etat": "6 (terminé)",
+       "destination": "commerce",
+       "service_public": "7 (non rempli)",
+       "chambres": 0
+      },
+      {
+       "num": "07862114E0015",
+       "annee": "2014",
+       "commune": "TRAPPES",
+       "surface_m2": 215,
+       "etat": "6 (terminé)",
+       "destination": "commerce",
+       "service_public": "7 (non rempli)",
+       "chambres": 0
+      },
+      {
+       "num": "07838315E0010",
+       "annee": "2015",
+       "commune": "MAUREPAS",
+       "surface_m2": 5212,
+       "etat": "2 (autorisé)",
+       "destination": "commerce",
+       "service_public": "7 (non rempli)",
+       "chambres": 0
+      },
+      {
+       "num": "07800516A0008",
+       "annee": "2016",
+       "commune": "ACHERES",
+       "surface_m2": 1179,
+       "etat": "6 (terminé)",
+       "destination": "commerce",
+       "service_public": "4 (action sociale)",
+       "chambres": 0
+      },
+      {
+       "num": "07858617G1076",
+       "annee": "2017",
+       "commune": "SARTROUVILLE",
+       "surface_m2": 974,
+       "etat": "6 (terminé)",
+       "destination": "commerce",
+       "service_public": "7 (non rempli)",
+       "chambres": 0
+      },
+      {
+       "num": "07864219V0019",
+       "annee": "2019",
+       "commune": "VERNEUIL-SUR-SEINE",
+       "surface_m2": 302,
+       "etat": "6 (terminé)",
+       "destination": "commerce",
+       "service_public": "7 (non rempli)",
+       "chambres": 0
+      },
+      {
+       "num": "07815220G0001",
+       "annee": "2020",
+       "commune": "CHAVENAY",
+       "surface_m2": 156,
+       "etat": "6 (terminé)",
+       "destination": "bureaux",
+       "service_public": "7 (non rempli)",
+       "chambres": 0
+      },
+      {
+       "num": "07864621V0087",
+       "annee": "2021",
+       "commune": "VERSAILLES",
+       "surface_m2": 0,
+       "etat": "6 (terminé)",
+       "destination": "commerce",
+       "service_public": "7 (non rempli)",
+       "chambres": 0
+      },
+      {
+       "num": "0780152500016",
+       "annee": "2025",
+       "commune": "ANDRAÃÂSY",
+       "surface_m2": 228,
+       "etat": "2 (autorisé)",
+       "destination": "commerce",
+       "service_public": "7 (non rempli)",
+       "chambres": 0
+      },
+      {
+       "num": "0785862501050",
+       "annee": "2025",
+       "commune": "SARTROUVILLE",
+       "surface_m2": 287,
+       "etat": "2 (autorisé)",
+       "destination": "commerce",
+       "service_public": "7 (non rempli)",
+       "chambres": 0
+      }
+     ],
+     "tronque": false
+    }
+   }
+  ]
+ },
+ {
+  "etape": 9,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "famille",
+      "SIREN_DEM"
+     ],
+     "mesure": "permis",
+     "top": 100
+    },
+    "sortie": {
+     "filtres": {},
+     "nb_permis_filtres": 4245,
+     "nb_groupes": 2439,
+     "resultats": [
+      {
+       "famille": "collectivite_public",
+       "SIREN_DEM": "227806460",
+       "permis": 54,
+       "surface_m2": 115560,
+       "acteurs": 1
+      },
+      {
+       "famille": "collectivite_public",
+       "SIREN_DEM": "552049447",
+       "permis": 30,
+       "surface_m2": 30983,
+       "acteurs": 1
+      },
+      {
+       "famille": "collectivite_public",
+       "SIREN_DEM": "200059889",
+       "permis": 29,
+       "surface_m2": 6261,
+       "acteurs": 1
+      },
+      {
+       "famille": "association_ess",
+       "SIREN_DEM": "775667181",
+       "permis": 28,
+       "surface_m2": 13268,
+       "acteurs": 1
+      },
+      {
+       "famille": "collectivite_public",
+       "SIREN_DEM": "237500079",
+       "permis": 26,
+       "surface_m2": 17898,
+       "acteurs": 1
+      },
+      {
+       "famille": "collectivite_public",
+       "SIREN_DEM": "217803626",
+       "permis": 26,
+       "surface_m2": 19937,
+       "acteurs": 1
+      },
+      {
+       "famille": "collectivite_public",
+       "SIREN_DEM": "217804988",
+       "permis": 19,
+       "surface_m2": 11548,
+       "acteurs": 1
+      },
+      {
+       "famille": "entreprise_autre",
+       "SIREN_DEM": "444608442",
+       "permis": 18,
+       "surface_m2": 7146,
+       "acteurs": 1
+      },
+      {
+       "famille": "entreprise_autre",
+       "SIREN_DEM": "343262622",
+       "permis": 17,
+       "surface_m2": 142098,
+       "acteurs": 1
+      },
+      {
+       "famille": "entreprise_autre",
+       "SIREN_DEM": "507523801",
+       "permis": 17,
+       "surface_m2": 3488,
+       "acteurs": 1
+      },
+      {
+       "famille": "collectivite_public",
+       "SIREN_DEM": "210205506",
+       "permis": 16,
+       "surface_m2": 9670,
+       "acteurs": 1
+      },
+      {
+       "famille": "collectivite_public",
+       "SIREN_DEM": "217806215",
+       "permis": 16,
+       "surface_m2": 8676,
+       "acteurs": 1
+      },
+      {
+       "famille": "association_ess",
+       "SIREN_DEM": "785150194",
+       "permis": 15,
+       "surface_m2": 4315,
+       "acteurs": 1
+      },
+      {
+       "famille": "collectivite_public",
+       "SIREN_DEM": "217804236",
+       "permis": 15,
+       "surface_m2": 9779,
+       "acteurs": 1
+      },
+      {
+       "famille": "promoteur",
+       "SIREN_DEM": "562091546",
+       "permis": 14,
+       "surface_m2": 35710,
+       "acteurs": 1
+      },
+      {
+       "famille": "collectivite_public",
+       "SIREN_DEM": "287800536",
+       "permis": 14,
+       "surface_m2": 6135,
+       "acteurs": 1
+      },
+      {
+       "famille": "collectivite_public",
+       "SIREN_DEM": "217806249",
+       "permis": 14,
+       "surface_m2": 4164,
+       "acteurs": 1
+      },
+      {
+       "famille": "collectivite_public",
+       "SIREN_DEM": "217806462",
+       "permis": 14,
+       "surface_m2": 3259,
+       "acteurs": 1
+      },
+      {
+       "famille": "collectivite_public",
+       "SIREN_DEM": "412280737",
+       "permis": 13,
+       "surface_m2": 6167,
+       "acteurs": 1
+      },
+      {
+       "famille": "collectivite_public",
+       "SIREN_DEM": "217803618",
+       "permis": 13,
+       "surface_m2": 10853,
+       "acteurs": 1
+      },
+      {
+       "famille": "association_ess",
+       "SIREN_DEM": "303742480",
+       "permis": 12,
+       "surface_m2": 10219,
+       "acteurs": 1
+      },
+      {
+       "famille": "collectivite_public",
+       "SIREN_DEM": "217801729",
+       "permis": 12,
+       "surface_m2": 2623,
+       "acteurs": 1
+      },
+      {
+       "famille": "collectivite_public",
+       "SIREN_DEM": "217803113",
+       "permis": 12,
+       "surface_m2": 5517,
+       "acteurs": 1
+      },
+      {
+       "famille": "collectivite_public",
+       "SIREN_DEM": "217804186",
+       "permis": 12,
+       "surface_m2": 7149,
+       "acteurs": 1
+      },
+      {
+       "famille": "collectivite_public",
+       "SIREN_DEM": "217804905",
+       "permis": 12,
+       "surface_m2": 4237,
+       "acteurs": 1
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 10,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "profil_acteur",
+    "args": {
+     "siren": "775667181"
+    },
+    "sortie": {
+     "denomination": "FONDATION MALLET",
+     "famille": "association_ess",
+     "cj": "9300 (Fondation)",
+     "nb_permis": 28,
+     "surface_m2": 13268,
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/775667181",
+     "permis": [
+      {
+       "num": "07861614E0010",
+       "annee": "2014",
+       "commune": "THOIRY",
+       "surface_m2": 0,
+       "etat": "2 (autorisé)",
+       "destination": "hôtels / hébergement",
+       "service_public": "7 (non rempli)",
+       "chambres": 0
+      },
+      {
+       "num": "07831015M0026",
+       "annee": "2015",
+       "commune": "HOUDAN",
+       "surface_m2": 26,
+       "etat": "2 (autorisé)",
+       "destination": "industrie",
+       "service_public": "7 (non rempli)",
+       "chambres": 0
+      },
+      {
+       "num": "07831015M0027",
+       "annee": "2015",
+       "commune": "HOUDAN",
+       "surface_m2": 48,
+       "etat": "2 (autorisé)",
+       "destination": "service public / intérêt collectif",
+       "service_public": "2 (enseignement et recherche)",
+       "chambres": 0
+      },
+      {
+       "num": "07831015M0029",
+       "annee": "2015",
+       "commune": "HOUDAN",
+       "surface_m2": 453,
+       "etat": "5 (commencé)",
+       "destination": "industrie",
+       "service_public": "7 (non rempli)",
+       "chambres": 0
+      },
+      {
+       "num": "07831016M0049",
+       "annee": "2016",
+       "commune": "HOUDAN",
+       "surface_m2": 489,
+       "etat": "2 (autorisé)",
+       "destination": "bureaux",
+       "service_public": "7 (non rempli)",
+       "chambres": 0
+      },
+      {
+       "num": "07831016M0051",
+       "annee": "2016",
+       "commune": "HOUDAN",
+       "surface_m2": 136,
+       "etat": "2 (autorisé)",
+       "destination": "agriculture",
+       "service_public": "7 (non rempli)",
+       "chambres": 0
+      },
+      {
+       "num": "07831016M0057",
+       "annee": "2016",
+       "commune": "HOUDAN",
+       "surface_m2": 690,
+       "etat": "6 (terminé)",
+       "destination": "bureaux",
+       "service_public": "7 (non rempli)",
+       "chambres": 0
+      },
+      {
+       "num": "07831016M0063",
+       "annee": "2016",
+       "commune": "HOUDAN",
+       "surface_m2": 370,
+       "etat": "5 (commencé)",
+       "destination": "bureaux",
+       "service_public": "7 (non rempli)",
+       "chambres": 0
+      },
+      {
+       "num": "07838116M0005",
+       "annee": "2016",
+       "commune": "MAULETTE",
+       "surface_m2": 55,
+       "etat": "6 (terminé)",
+       "destination": "service public / intérêt collectif",
+       "service_public": "5 (ouvrage spécial)",
+       "chambres": 0
+      },
+      {
+       "num": "07804817M0010",
+       "annee": "2017",
+       "commune": "BAZAINVILLE",
+       "surface_m2": 211,
+       "etat": "2 (autorisé)",
+       "destination": "agriculture",
+       "service_public": "7 (non rempli)",
+       "chambres": 0
+      },
+      {
+       "num": "07804817M0011",
+       "annee": "2017",
+       "commune": "BAZAINVILLE",
+       "surface_m2": 303,
+       "etat": "2 (autorisé)",
+       "destination": "agriculture",
+       "service_public": "7 (non rempli)",
+       "chambres": 0
+      },
+      {
+       "num": "07831018M0118",
+       "annee": "2018",
+       "commune": "HOUDAN",
+       "surface_m2": 1390,
+       "etat": "5 (commencé)",
+       "destination": "entrepôt",
+       "service_public": "7 (non rempli)",
+       "chambres": 0
+      },
+      {
+       "num": "07831018M0128",
+       "annee": "2018",
+       "commune": "HOUDAN",
+       "surface_m2": 96,
+       "etat": "2 (autorisé)",
+       "destination": "agriculture",
+       "service_public": "7 (non rempli)",
+       "chambres": 0
+      },
+      {
+       "num": "07852018M0008",
+       "annee": "2018",
+       "commune": "RICHEBOURG",
+       "surface_m2": 83,
+       "etat": "2 (autorisé)",
+       "destination": "bureaux",
+       "service_public": "7 (non rempli)",
+       "chambres": 0
+      },
+      {
+       "num": "07831019M0006",
+       "annee": "2019",
+       "commune": "HOUDAN",
+       "surface_m2": 0,
+       "etat": "2 (autorisé)",
+       "destination": "commerce",
+       "service_public": "7 (non rempli)",
+       "chambres": 0
+      },
+      {
+       "num": "07831019M0011",
+       "annee": "2019",
+       "commune": "HOUDAN",
+       "surface_m2": 0,
+       "etat": "2 (autorisé)",
+       "destination": "bureaux",
+       "service_public": "7 (non rempli)",
+       "chambres": 0
+      },
+      {
+       "num": "07831019M0013",
+       "annee": "2019",
+       "commune": "HOUDAN",
+       "surface_m2": 0,
+       "etat": "2 (autorisé)",
+       "destination": "bureaux",
+       "service_public": "7 (non rempli)",
+       "chambres": 0
+      },
+      {
+       "num": "07838119M0008",
+       "annee": "2019",
+       "commune": "",
+       "surface_m2": 32,
+       "etat": "2 (autorisé)",
+       "destination": "agriculture",
+       "service_public": "7 (non rempli)",
+       "chambres": 0
+      },
+      {
+       "num": "07804820M0012",
+       "annee": "2020",
+       "commune": "BAZAINVILLE",
+       "surface_m2": 2263,
+       "etat": "2 (autorisé)",
+       "destination": "commerce",
+       "service_public": "7 (non rempli)",
+       "chambres": 0
+      },
+      {
+       "num": "07804820M0023",
+       "annee": "2020",
+       "commune": "BAZAINVILLE",
+       "surface_m2": 4587,
+       "etat": "2 (autorisé)",
+       "destination": "industrie",
+       "service_public": "7 (non rempli)",
+       "chambres": 0
+      }
+     ],
+     "tronque": true
+    }
+   }
+  ]
+ },
+ {
+  "etape": 11,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "famille",
+      "SIREN_DEM"
+     ],
+     "mesure": "surface_m2",
+     "top": 100
+    },
+    "sortie": {
+     "filtres": {},
+     "nb_permis_filtres": 4245,
+     "nb_groupes": 2439,
+     "resultats": [
+      {
+       "famille": "entreprise_autre",
+       "SIREN_DEM": "343262622",
+       "permis": 17,
+       "surface_m2": 142098,
+       "acteurs": 1
+      },
+      {
+       "famille": "collectivite_public",
+       "SIREN_DEM": "227806460",
+       "permis": 54,
+       "surface_m2": 115560,
+       "acteurs": 1
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "SIREN_DEM": "932694664",
+       "permis": 1,
+       "surface_m2": 115327,
+       "acteurs": 1
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "SIREN_DEM": "977954361",
+       "permis": 5,
+       "surface_m2": 86104,
+       "acteurs": 1
+      },
+      {
+       "famille": "collectivite_public",
+       "SIREN_DEM": "257550004",
+       "permis": 11,
+       "surface_m2": 77345,
+       "acteurs": 1
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "SIREN_DEM": "821789740",
+       "permis": 2,
+       "surface_m2": 66758,
+       "acteurs": 1
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "SIREN_DEM": "500363932",
+       "permis": 3,
+       "surface_m2": 63749,
+       "acteurs": 1
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "SIREN_DEM": "304200371",
+       "permis": 3,
+       "surface_m2": 62243,
+       "acteurs": 1
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "SIREN_DEM": "323439786",
+       "permis": 6,
+       "surface_m2": 57706,
+       "acteurs": 1
+      },
+      {
+       "famille": "promoteur",
+       "SIREN_DEM": "489244483",
+       "permis": 7,
+       "surface_m2": 49577,
+       "acteurs": 1
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "SIREN_DEM": "451226328",
+       "permis": 9,
+       "surface_m2": 47722,
+       "acteurs": 1
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "SIREN_DEM": "508309697",
+       "permis": 2,
+       "surface_m2": 42696,
+       "acteurs": 1
+      },
+      {
+       "famille": "promoteur",
+       "SIREN_DEM": "343183331",
+       "permis": 7,
+       "surface_m2": 41865,
+       "acteurs": 1
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "SIREN_DEM": "791581135",
+       "permis": 2,
+       "surface_m2": 40710,
+       "acteurs": 1
+      },
+      {
+       "famille": "entreprise_autre",
+       "SIREN_DEM": "393341516",
+       "permis": 1,
+       "surface_m2": 39558,
+       "acteurs": 1
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "SIREN_DEM": "799791025",
+       "permis": 3,
+       "surface_m2": 38741,
+       "acteurs": 1
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "SIREN_DEM": "918387879",
+       "permis": 1,
+       "surface_m2": 38478,
+       "acteurs": 1
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "SIREN_DEM": "780129987",
+       "permis": 8,
+       "surface_m2": 37724,
+       "acteurs": 1
+      },
+      {
+       "famille": "promoteur",
+       "SIREN_DEM": "732055199",
+       "permis": 3,
+       "surface_m2": 37100,
+       "acteurs": 1
+      },
+      {
+       "famille": "association_ess",
+       "SIREN_DEM": "441921962",
+       "permis": 2,
+       "surface_m2": 36977,
+       "acteurs": 1
+      },
+      {
+       "famille": "promoteur",
+       "SIREN_DEM": "562091546",
+       "permis": 14,
+       "surface_m2": 35710,
+       "acteurs": 1
+      },
+      {
+       "famille": "promoteur",
+       "SIREN_DEM": "887910248",
+       "permis": 1,
+       "surface_m2": 35572,
+       "acteurs": 1
+      },
+      {
+       "famille": "promoteur",
+       "SIREN_DEM": "891495202",
+       "permis": 1,
+       "surface_m2": 32930,
+       "acteurs": 1
+      },
+      {
+       "famille": "promoteur",
+       "SIREN_DEM": "899789648",
+       "permis": 5,
+       "surface_m2": 31828,
+       "acteurs": 1
+      },
+      {
+       "famille": "collectivite_public",
+       "SIREN_DEM": "552049447",
+       "permis": 30,
+       "surface_m2": 30983,
+       "acteurs": 1
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 12,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "noter",
+    "args": {
+     "titre": "Le Département des Yvelines est le déposant le plus régulier (54 permis sur 13 ans) mais avec des surfaces unitaires modestes",
+     "constat": "Le Département des Yvelines (SIREN 227806460) dépose 54 permis créant des locaux non-résidentiels entre 2012 et 2025, pour 115 560 m² cumulés (moyenne 2 140 m²/permis). 938 des 1 129 permis des collectivités publiques (83 %) relèvent de la destination « service public / intérêt collectif » (724 425 m²). Le Département agit en maître d'ouvrage direct et récurrent, pas en promoteur.",
+     "interet_buddimm": "Veille : identifier les programmes d'équipements publics du Département (collèges, centres sociaux, PMI, maisons de l'autonomie) pour anticiper les besoins en foncier, montage ou AMO. Conseil : le Département est un donneur d'ordre récurrent, pas un client « one-shot ».",
+     "fiabilite": "établi",
+     "limites": "Période 2012-2025 seulement (données Sitadel) ; ne couvre pas les marchés de maîtrise d'œuvre ni les acquisitions sans PC.",
+     "a_creuser": "Répartition par type d'équipement (collèges vs action sociale vs autres) et par bassin de vie."
+    },
+    "sortie": {
+     "erreur": "Refusé : ces chiffres ne figurent dans aucun résultat d'outil : 2 140. Corrige-les avec des chiffres issus des requêtes, ou fais la requête qui les donne, puis renote."
+    }
+   }
+  ]
+ },
+ {
+  "etape": 13,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "noter",
+    "args": {
+     "titre": "Le Département des Yvelines est le déposant le plus régulier (54 permis sur 13 ans) mais avec des surfaces unitaires modestes",
+     "constat": "Le Département des Yvelines (SIREN 227806460) dépose 54 permis créant des locaux non-résidentiels entre 2012 et 2025, pour 115 560 m² cumulés. 938 des 1 129 permis des collectivités publiques (83 %) relèvent de la destination « service public / intérêt collectif » (724 425 m²). Le Département agit en maître d'ouvrage direct et récurrent, pas en promoteur.",
+     "interet_buddimm": "Veille : identifier les programmes d'équipements publics du Département (collèges, centres sociaux, PMI, maisons de l'autonomie) pour anticiper les besoins en foncier, montage ou AMO. Conseil : le Département est un donneur d'ordre récurrent, pas un client « one-shot ».",
+     "fiabilite": "établi",
+     "limites": "Période 2012-2025 seulement (données Sitadel) ; ne couvre pas les marchés de maîtrise d'œuvre ni les acquisitions sans PC.",
+     "a_creuser": "Répartition par type d'équipement (collèges vs action sociale vs autres) et par bassin de vie."
+    },
+    "sortie": {
+     "ok": "note 1 enregistrée"
+    }
+   }
+  ]
+ }
+]

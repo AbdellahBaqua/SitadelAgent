@@ -1,0 +1,111 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "831933205"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "831933205"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "831933205"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "831933205"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "DELI FOOD GROUP",
+     "nb_permis_PC": 3,
+     "annees_depot": [
+      "2018"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 0,
+     "surface_locaux_non_residentiels_creee_m2": 507,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 1
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "831933205",
+      "nom": "DELI FOOD GROUP",
+      "nature_juridique": "5710",
+      "naf_actuel": "64.20Z",
+      "etat": "A",
+      "date_creation": "2017-09-11",
+      "categorie": "ETI",
+      "effectif": "NN",
+      "nb_etablissements": 2,
+      "nb_etablissements_ouverts": 1,
+      "siege_actuel": {
+       "siret": "83193320500021",
+       "naf": "64.20Z",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "83193320500013",
+       "naf_dans_permis": "64.20Z",
+       "nb_permis": 3,
+       "annees_depot": [
+        "2018"
+       ],
+       "etat_actuel": "fermé",
+       "date_creation": "2017-09-11",
+       "date_fermeture": "2019-06-11"
+      }
+     ],
+     "alertes": [
+      "SIRET 83193320500013 (permis 2018) fermé le 2019-06-11 : le NAF 64.20Z du permis vient d'un établissement fermé"
+     ],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/831933205"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "64.20Z",
+      "libelle": "Activités des sociétés holding"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5710",
+     "libelle": "SAS, société par actions simplifiée"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"entreprise_autre\",\"confiance\":\"moyenne\",\"indices\":[\"permis_du_demandeur : 3 permis en 2018, 0 logement créé, 507 m² de surface non résidentielle créée, 0 logement locatif social déclaré\",\"fiche_entreprise : entreprise active (ETI), forme SAS (cj 5710), NAF actuel 64.20Z « Activités des sociétés holding » (libelle_naf), siège ouvert (SIRET 83193320500021)\",\"fiche_entreprise : l'établissement ayant déposé les permis (SIRET 83193320500013) est fermé depuis 2019, son NAF 64.20Z est historique\",\"libelle_cj : 5710 = SAS, société par actions simplifiée\",\"dénomination : DELI FOOD GROUP suggère un groupe agroalimentaire, non un acteur immobilier spécialisé\"],\"limites\":\"L'activité de holding (64.20Z) est générique : elle peut masquer une foncière immobilière, mais aucun indice (permis, dénomination, catégorie) ne pointe vers de l'investissement locatif ou de la promotion. L'absence de logements et la surface non résidentielle modérée (507 m²) orientent vers une construction pour exploitation propre (usine, bureaux, logistique). La classification « entreprise_autre » reste la plus probable, mais une vérification de l'objet social ou du groupe serait nécessaire pour exclure « fonciere_investisseur » avec certitude.\"}"
+   }
+  ]
+ }
+]

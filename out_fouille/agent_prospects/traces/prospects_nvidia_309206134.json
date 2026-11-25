@@ -1,0 +1,62 @@
+[
+ {
+  "etape": "pre",
+  "texte": "résultats calculés par le code avant le modèle",
+  "entree": {
+   "siren": "309206134",
+   "denomination": "ARAM ATELIERS RECH ARTIS ARTIST MAULDRE",
+   "famille_classification": "association_ess",
+   "raisons_du_score": "famille cible (association_ess) +3 ; dépôt assez récent (2022) +1 ; maître d'ouvrage occasionnel (1 ou 2 permis) +1",
+   "taille_calculee": "inconnue",
+   "taille_calcul": "salariés ≥ ?, établissements ouverts 1, établissements FINESS 0",
+   "permis_du_prospect": [
+    {
+     "num_dau": "07805022Y0008",
+     "fichier": "locaux",
+     "annee_depot": "2022",
+     "commune": "BAZOCHES SUR GUYONNE",
+     "etat": "commencé",
+     "type_projet": "",
+     "logements_crees": null,
+     "surface_locaux_creee_m2": 0
+    }
+   ],
+   "fiche_entreprise": {
+    "nom": "ARAM ATELIERS RECH ARTIS ARTIST MAULDRE",
+    "nature_juridique": "9220",
+    "naf_actuel": "94.99Z",
+    "etat": "A",
+    "date_creation": "1900-01-01",
+    "categorie": "PME",
+    "effectif": "NN",
+    "nb_etablissements": 2,
+    "nb_etablissements_ouverts": 1,
+    "libelle_naf_actuel": "Autres organisations fonctionnant par adhésion volontaire",
+    "libelle_nature_juridique": "Association déclarée",
+    "aide": "etat A = active, C ou F = cessée. effectif = tranche Insee de salariés (ex. 21 = 50 à 99, 41 = 500 à 999, 51 = 2 000 à 4 999). Dirigeants et finances volontairement exclus.",
+    "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/309206134"
+   },
+   "finess_du_prospect": {
+    "nb_etablissements_finess_france": 0,
+    "nb_etablissements_finess_yvelines": 0,
+    "nb_departements": 0,
+    "par_type": {},
+    "exemples_yvelines": [],
+    "source": "https://www.data.gouv.fr/datasets/53699569a3a729239d2046eb",
+    "aide": "Établissements dont le SIRET commence par ce SIREN. 0 ne prouve pas l'absence d'activité médico-sociale (SIRET non renseigné dans FINESS, autre entité juridique du même groupe)."
+   },
+   "origine": "demandeur de permis",
+   "consigne": "Ces résultats viennent des outils permis_du_prospect, fiche_entreprise et finess_du_prospect : cite-les. Conclus avec conclure_prospect."
+  }
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure_prospect",
+    "args": "{\"verdict\":\"prospect\",\"adequation\":\"moyenne\",\"type_structure\":\"Association artistique/artisanale (ESS) – ateliers de recherche et création\",\"besoin_immobilier\":\"Permis déposé en 2022 pour des locaux à Bazoches-sur-Guyonne, travaux commencés (surface créée 0 m², probable réhabilitation ou aménagement d'ateliers existants).\",\"indices\":[\"denomination : ARAM ATELIERS RECH ARTIS ARTIST MAULDRE – nom évoquant des ateliers d'artisanat/art\",\"fiche_entreprise : nature juridique 9220 (Association déclarée), NAF 94.99Z (Autres organisations fonctionnant par adhésion volontaire), état A (active), catégorie PME, 1 établissement ouvert\",\"permis_du_prospect : 1 permis 2022 (numéro 07805022Y0008) pour des locaux, état « commencé », maître d'ouvrage occasionnel\",\"finess_du_prospect : 0 établissement FINESS – structure non gestionnaire d'établissements sanitaires ou médico-sociaux\"],\"limites\":\"Taille exacte inconnue (effectif NN) ; activité culturelle/artisanale et non sociale ou médico-sociale cœur de cible ; un seul permis récent, projet de faible envergure (surface créée 0 m²).\"}"
+   }
+  ]
+ }
+]

@@ -1,0 +1,125 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "341535094"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "341535094"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "341535094"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "341535094"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "EUROPEAN AERO DEFENCE SPACE COMPANY",
+     "nb_permis_PC": 3,
+     "annees_depot": [
+      "2012",
+      "2013"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 0,
+     "surface_locaux_non_residentiels_creee_m2": 9138,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 2
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "341535094",
+      "nom": "AIRBUS GROUP SAS (EADS FRANCE)",
+      "nature_juridique": "5710",
+      "naf_actuel": "70.10Z",
+      "etat": "C",
+      "date_creation": "1987-05-26",
+      "categorie": null,
+      "effectif": "NN",
+      "nb_etablissements": 14,
+      "nb_etablissements_ouverts": 0,
+      "siege_actuel": {
+       "siret": "34153509400153",
+       "naf": "70.10Z",
+       "etat": "F"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "34153509400047",
+       "naf_dans_permis": "70.10Z",
+       "nb_permis": 2,
+       "annees_depot": [
+        "2012",
+        "2013"
+       ],
+       "etat_actuel": "fermé",
+       "date_creation": "2000-05-29",
+       "date_fermeture": "2015-07-01"
+      },
+      {
+       "siret": "34153509400054",
+       "naf_dans_permis": "70.10Z",
+       "nb_permis": 1,
+       "annees_depot": [
+        "2012"
+       ],
+       "etat_actuel": "fermé",
+       "date_creation": "2000-05-29",
+       "date_fermeture": "2017-07-01"
+      }
+     ],
+     "alertes": [
+      "SIRET 34153509400047 (permis 2012,2013) fermé le 2015-07-01 : le NAF 70.10Z du permis vient d'un établissement fermé",
+      "SIRET 34153509400054 (permis 2012) fermé le 2017-07-01 : le NAF 70.10Z du permis vient d'un établissement fermé"
+     ],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/341535094"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "70.10Z",
+      "libelle": "Activités des sièges sociaux"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5710",
+     "libelle": "SAS, société par actions simplifiée"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"entreprise_autre\",\"confiance\":\"haute\",\"indices\":[\"fiche_entreprise : nom actuel « AIRBUS GROUP SAS (EADS FRANCE) », forme juridique SAS (cj 5710), NAF actuel 70.10Z (Activités des sièges sociaux)\",\"permis_du_demandeur : 3 permis de construire (2012‑2013) pour 9 138 m² de surface non résidentielle créée, 0 logement, 0 logement social\",\"libelle_naf : 70.10Z = « Activités des sièges sociaux »\",\"libelle_cj : 5710 = « SAS, société par actions simplifiée »\",\"connaissance du modèle (non vérifiée) : Airbus Group est un grand groupe industriel aéronautique/défense, pas un acteur de l'immobilier locatif, de la promotion, du logement social ou de la santé\"],\"limites\":\"Les permis datent de 2012‑2013 et portent sur des établissements aujourd'hui fermés ; l'entreprise n'a plus d'établissement ouvert selon la fiche_entreprise. La classification repose sur la nature de l'entreprise (groupe industriel) et l'objet des permis (locaux non résidentiels pour usage propre), non sur une activité immobilière.\"}"
+   }
+  ]
+ }
+]

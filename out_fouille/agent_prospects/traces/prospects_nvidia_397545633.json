@@ -1,0 +1,87 @@
+[
+ {
+  "etape": "pre",
+  "texte": "résultats calculés par le code avant le modèle",
+  "entree": {
+   "siren": "397545633",
+   "denomination": "EUROSCANLM-78",
+   "famille_classification": "exploitant_sante_social",
+   "raisons_du_score": "famille cible (exploitant_sante_social) +2 ; exploitant probable (moyenne) de « EUROSCANIRM - 78 MONTFORT », projet équipement de santé déposé par LA REINE ANNE (permis 0784202300005) +3 ; dépôt assez récent (2023) +1",
+   "taille_calculee": "moyenne",
+   "taille_calcul": "salariés ≥ ?, établissements ouverts 4, établissements FINESS 3",
+   "permis_du_prospect": [
+    {
+     "num_dau": "0784202300005",
+     "fichier": "locaux",
+     "annee_depot": "2023",
+     "commune": "MONTFORT-L'AMAURY",
+     "etat": "terminé",
+     "type_projet": "équipement de santé",
+     "logements_crees": null,
+     "surface_locaux_creee_m2": 23,
+     "depose_par": "LA REINE ANNE"
+    }
+   ],
+   "fiche_entreprise": {
+    "nom": "EUROSCANLM-78",
+    "nature_juridique": "6220",
+    "naf_actuel": "82.99Z",
+    "etat": "A",
+    "date_creation": "1994-04-11",
+    "categorie": "ETI",
+    "effectif": "NN",
+    "nb_etablissements": 5,
+    "nb_etablissements_ouverts": 4,
+    "libelle_naf_actuel": "Autres activités de soutien aux entreprises n.c.a.",
+    "libelle_nature_juridique": "Groupement d'intérêt économique (GIE)",
+    "aide": "etat A = active, C ou F = cessée. effectif = tranche Insee de salariés (ex. 21 = 50 à 99, 41 = 500 à 999, 51 = 2 000 à 4 999). Dirigeants et finances volontairement exclus.",
+    "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/397545633"
+   },
+   "finess_du_prospect": {
+    "nb_etablissements_finess_france": 3,
+    "nb_etablissements_finess_yvelines": 3,
+    "nb_departements": 1,
+    "par_type": {
+     "Autres Etablissements Relevant de la Loi Hospitalière": 3
+    },
+    "exemples_yvelines": [
+     {
+      "finess": "780022794",
+      "nom": "EUROSCANIRM - 78 HOUDAN",
+      "ville": "HOUDAN",
+      "categorie": "Autre Etablissement Loi Hospitalière",
+      "ouverture": "2010-07-23"
+     },
+     {
+      "finess": "780024865",
+      "nom": "EUROSCANIRM - 78 PORT MARLY",
+      "ville": "LE PORT MARLY",
+      "categorie": "Autre Etablissement Loi Hospitalière",
+      "ouverture": "2001-11-08"
+     },
+     {
+      "finess": "780025458",
+      "nom": "EUROSCANIRM - 78 MONTFORT",
+      "ville": "MONTFORT L AMAURY",
+      "categorie": "Autre Etablissement Loi Hospitalière",
+      "ouverture": "2019-12-15"
+     }
+    ],
+    "source": "https://www.data.gouv.fr/datasets/53699569a3a729239d2046eb",
+    "aide": "Établissements dont le SIRET commence par ce SIREN. 0 ne prouve pas l'absence d'activité médico-sociale (SIRET non renseigné dans FINESS, autre entité juridique du même groupe)."
+   },
+   "origine": "exploitant trouvé derrière un permis déposé par un tiers",
+   "consigne": "Ces résultats viennent des outils permis_du_prospect, fiche_entreprise et finess_du_prospect : cite-les. Conclus avec conclure_prospect."
+  }
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure_prospect",
+    "args": "{\"verdict\":\"prospect\",\"adequation\":\"moyenne\",\"type_structure\":\"GIE exploitant de centres d'imagerie médicale (IRM) sous enseigne EUROSCANIRM\",\"besoin_immobilier\":\"Un permis récent (2023) pour un équipement de santé de faible surface (23 m²) déposé par un tiers (LA REINE ANNE) à Montfort-l'Amaury, suggérant une possible extension ou aménagement d'un site existant.\",\"indices\":[\"fiche_entreprise : structure active (état A), forme juridique GIE (groupement d'intérêt économique), NAF 82.99Z « Autres activités de soutien aux entreprises n.c.a. », catégorie ETI, 4 établissements ouverts.\",\"finess_du_prospect : exploite 3 établissements « Autres Établissements Relevant de la Loi Hospitalière » dans les Yvelines (Houdan, Port-Marly, Montfort-l'Amaury), confirmant une activité sanitaire réelle.\",\"permis_du_prospect : permis 0784202300005 déposé en 2023 par LA REINE ANNE pour un « équipement de santé » de 23 m² à Montfort-l'Amaury, état « terminé ».\",\"dénomination : EUROSCANLM-78, nom cohérent avec l'exploitation de centres IRM (EUROSCANIRM).\"],\"limites\":\"Le permis est déposé par un tiers (propriétaire probable), la surface du projet est très modeste (23 m²), le code NAF ne reflète pas l'activité sanitaire, et la forme GIE suggère un groupement de professionnels libéraux plutôt qu'une structure associative/ESS classique.\"}"
+   }
+  ]
+ }
+]

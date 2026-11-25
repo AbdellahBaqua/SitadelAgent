@@ -1,0 +1,116 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "832336622"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "832336622"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "832336622"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "832336622"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "SAS DU 2 AVENUE DE LA GARE",
+     "nb_permis_PC": 2,
+     "annees_depot": [
+      "2018"
+     ],
+     "nb_communes": 2,
+     "logements_crees_total": 0,
+     "surface_locaux_non_residentiels_creee_m2": 19487,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 0
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "832336622",
+      "nom": "SAS DU 2 AVENUE DE LA GARE",
+      "nature_juridique": "5710",
+      "naf_actuel": "68.20B",
+      "etat": "A",
+      "date_creation": "2017-09-18",
+      "categorie": "PME",
+      "effectif": "NN",
+      "nb_etablissements": 2,
+      "nb_etablissements_ouverts": 1,
+      "siege_actuel": {
+       "siret": "83233662200028",
+       "naf": "68.20B",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "83233662200010",
+       "naf_dans_permis": "68.31Z",
+       "nb_permis": 2,
+       "annees_depot": [
+        "2018"
+       ],
+       "etat_actuel": "fermé",
+       "date_creation": "2017-09-18",
+       "date_fermeture": "2023-11-01"
+      }
+     ],
+     "alertes": [
+      "SIRET 83233662200010 (permis 2018) fermé le 2023-11-01 : le NAF 68.31Z du permis vient d'un établissement fermé",
+      "NAF du permis ['68.31Z'] différent du NAF actuel de l'entreprise 68.20B"
+     ],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/832336622"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "68.20B",
+      "libelle": "Location de terrains et d'autres biens immobiliers"
+     },
+     {
+      "code": "68.31Z",
+      "libelle": "Agences immobilières"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5710",
+     "libelle": "SAS, société par actions simplifiée"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"fonciere_investisseur\",\"confiance\":\"moyenne\",\"indices\":[\"fiche_entreprise : NAF actuel 68.20B « Location de terrains et d'autres biens immobiliers » (location/patrimoine immobilier)\",\"fiche_entreprise : forme juridique SAS (5710), société commerciale compatible avec une foncière/SCI/structure d'investissement\",\"permis_du_demandeur : 2 permis 2018 créant 19 487 m² de surface non résidentielle, 0 logement, 0 logement social → projet tertiaire/commercial, pas de production de logement social\",\"denomination : « SAS DU 2 AVENUE DE LA GARE » suggère une société d'exploitation/détention d'un immeuble unique (patrimoine)\",\"libelle_naf : 68.20B correspond à l'activité de détention et location de patrimoine immobilier (foncière)\",\"fiche_entreprise : établissement du permis (SIRET 83233662200010) fermé fin 2023, NAF permis 68.31Z (agence immobilière) historique et non représentatif de l'activité actuelle\"],\"limites\":\"Pas de données financières ni de portefeuille connu pour confirmer l'ampleur de l'activité foncière ; l'absence de logements créés ne permet pas d'exclure totalement une activité de promotion ponctuelle, mais l'activité actuelle (NAF 68.20B) et l'objet des permis (surfaces non résidentielles) orientent vers de la détention/location de patrimoine.\"}"
+   }
+  ]
+ }
+]

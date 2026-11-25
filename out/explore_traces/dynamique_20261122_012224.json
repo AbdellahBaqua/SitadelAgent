@@ -1,0 +1,2101 @@
+[
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "apercu",
+    "args": {},
+    "sortie": {
+     "perimetre": "PC des Yvelines (78) créant des logements, déposés par des personnes morales, extraction SDES/Sitadel",
+     "nb_permis": 3363,
+     "nb_demandeurs": 2048,
+     "annees_depot": {
+      "2011": 3,
+      "2012": 100,
+      "2013": 222,
+      "2014": 235,
+      "2015": 258,
+      "2016": 266,
+      "2017": 290,
+      "2018": 247,
+      "2019": 256,
+      "2020": 231,
+      "2021": 356,
+      "2022": 247,
+      "2023": 221,
+      "2024": 185,
+      "2025": 168,
+      "2026": 77,
+      "2091": 1
+     },
+     "familles_demandeurs": {
+      "fonciere_investisseur": 1014,
+      "promoteur": 690,
+      "non_determine": 172,
+      "collectivite_public": 79,
+      "bailleur_social": 31,
+      "entreprise_autre": 29,
+      "association_ess": 26,
+      "copropriete": 4,
+      "exploitant_sante_social": 3
+     },
+     "colonnes_interrogeables": [
+      "famille",
+      "AN_DEPOT",
+      "COMM",
+      "ADR_LOCALITE_TER",
+      "ETAT_DAU",
+      "RESIDENCE",
+      "TYPE_PRINCIP_LOGTS_CREES",
+      "NATURE_PROJET_COMPLETEE",
+      "TYPE_TRANSFO_PRINCIPAL",
+      "TYPE_PRINCIP_LOCAUX_TRANSFORMES",
+      "UTILISATION",
+      "DESTINATION_PRINCIPALE",
+      "ZONE_OP",
+      "CJ_DEM",
+      "APE_DEM",
+      "SIREN_DEM",
+      "DENOM_DEM"
+     ],
+     "mesures": [
+      "permis",
+      "logements",
+      "acteurs"
+     ],
+     "remarques": [
+      "2026 est une année partielle",
+      "un permis modificatif n'a pas de ligne propre",
+      "~15 % des ouvertures de chantier et ~1/3 des achèvements ne remontent jamais",
+      "APE_DEM = NAF de l'établissement du permis, possiblement fermé",
+      "RESIDENCE est rempli sur une petite minorité de permis (souvent 'non rempli') ; les drapeaux RES_* n'existent que depuis mai 2022",
+      "NATURE_PROJET_COMPLETEE et TYPE_TRANSFO_* sont dits 'introduits en mai 2022' mais sont renseignés dès 2012 dans le fichier (recodage SDES probable)"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 1,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "AN_DEPOT",
+      "famille"
+     ],
+     "mesure": "permis",
+     "top": 100
+    },
+    "sortie": {
+     "filtres": {},
+     "nb_permis_filtres": 3363,
+     "nb_groupes": 112,
+     "resultats": [
+      {
+       "AN_DEPOT": "2021",
+       "famille": "fonciere_investisseur",
+       "permis": 147,
+       "logements": 975,
+       "acteurs": 131
+      },
+      {
+       "AN_DEPOT": "2021",
+       "famille": "promoteur",
+       "permis": 131,
+       "logements": 7880,
+       "acteurs": 104
+      },
+      {
+       "AN_DEPOT": "2017",
+       "famille": "promoteur",
+       "permis": 119,
+       "logements": 6157,
+       "acteurs": 86
+      },
+      {
+       "AN_DEPOT": "2020",
+       "famille": "fonciere_investisseur",
+       "permis": 108,
+       "logements": 633,
+       "acteurs": 104
+      },
+      {
+       "AN_DEPOT": "2015",
+       "famille": "fonciere_investisseur",
+       "permis": 107,
+       "logements": 1458,
+       "acteurs": 95
+      },
+      {
+       "AN_DEPOT": "2016",
+       "famille": "promoteur",
+       "permis": 105,
+       "logements": 6324,
+       "acteurs": 77
+      },
+      {
+       "AN_DEPOT": "2017",
+       "famille": "fonciere_investisseur",
+       "permis": 103,
+       "logements": 1210,
+       "acteurs": 92
+      },
+      {
+       "AN_DEPOT": "2019",
+       "famille": "fonciere_investisseur",
+       "permis": 103,
+       "logements": 638,
+       "acteurs": 91
+      },
+      {
+       "AN_DEPOT": "2023",
+       "famille": "fonciere_investisseur",
+       "permis": 102,
+       "logements": 869,
+       "acteurs": 94
+      },
+      {
+       "AN_DEPOT": "2014",
+       "famille": "fonciere_investisseur",
+       "permis": 102,
+       "logements": 554,
+       "acteurs": 86
+      },
+      {
+       "AN_DEPOT": "2018",
+       "famille": "fonciere_investisseur",
+       "permis": 101,
+       "logements": 425,
+       "acteurs": 88
+      },
+      {
+       "AN_DEPOT": "2022",
+       "famille": "fonciere_investisseur",
+       "permis": 100,
+       "logements": 419,
+       "acteurs": 89
+      },
+      {
+       "AN_DEPOT": "2016",
+       "famille": "fonciere_investisseur",
+       "permis": 94,
+       "logements": 848,
+       "acteurs": 79
+      },
+      {
+       "AN_DEPOT": "2018",
+       "famille": "promoteur",
+       "permis": 94,
+       "logements": 4086,
+       "acteurs": 78
+      },
+      {
+       "AN_DEPOT": "2022",
+       "famille": "promoteur",
+       "permis": 92,
+       "logements": 6062,
+       "acteurs": 76
+      },
+      {
+       "AN_DEPOT": "2013",
+       "famille": "fonciere_investisseur",
+       "permis": 92,
+       "logements": 635,
+       "acteurs": 63
+      },
+      {
+       "AN_DEPOT": "2024",
+       "famille": "fonciere_investisseur",
+       "permis": 91,
+       "logements": 645,
+       "acteurs": 80
+      },
+      {
+       "AN_DEPOT": "2015",
+       "famille": "promoteur",
+       "permis": 84,
+       "logements": 5280,
+       "acteurs": 69
+      },
+      {
+       "AN_DEPOT": "2019",
+       "famille": "promoteur",
+       "permis": 81,
+       "logements": 4273,
+       "acteurs": 65
+      },
+      {
+       "AN_DEPOT": "2020",
+       "famille": "promoteur",
+       "permis": 81,
+       "logements": 4188,
+       "acteurs": 71
+      },
+      {
+       "AN_DEPOT": "2025",
+       "famille": "fonciere_investisseur",
+       "permis": 78,
+       "logements": 614,
+       "acteurs": 72
+      },
+      {
+       "AN_DEPOT": "2014",
+       "famille": "promoteur",
+       "permis": 66,
+       "logements": 3497,
+       "acteurs": 52
+      },
+      {
+       "AN_DEPOT": "2013",
+       "famille": "promoteur",
+       "permis": 64,
+       "logements": 2844,
+       "acteurs": 46
+      },
+      {
+       "AN_DEPOT": "2023",
+       "famille": "promoteur",
+       "permis": 59,
+       "logements": 2629,
+       "acteurs": 53
+      },
+      {
+       "AN_DEPOT": "2025",
+       "famille": "promoteur",
+       "permis": 52,
+       "logements": 2975,
+       "acteurs": 40
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 2,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "AN_DEPOT",
+      "famille"
+     ],
+     "mesure": "permis",
+     "top": 200
+    },
+    "sortie": {
+     "filtres": {},
+     "nb_permis_filtres": 3363,
+     "nb_groupes": 112,
+     "resultats": [
+      {
+       "AN_DEPOT": "2021",
+       "famille": "fonciere_investisseur",
+       "permis": 147,
+       "logements": 975,
+       "acteurs": 131
+      },
+      {
+       "AN_DEPOT": "2021",
+       "famille": "promoteur",
+       "permis": 131,
+       "logements": 7880,
+       "acteurs": 104
+      },
+      {
+       "AN_DEPOT": "2017",
+       "famille": "promoteur",
+       "permis": 119,
+       "logements": 6157,
+       "acteurs": 86
+      },
+      {
+       "AN_DEPOT": "2020",
+       "famille": "fonciere_investisseur",
+       "permis": 108,
+       "logements": 633,
+       "acteurs": 104
+      },
+      {
+       "AN_DEPOT": "2015",
+       "famille": "fonciere_investisseur",
+       "permis": 107,
+       "logements": 1458,
+       "acteurs": 95
+      },
+      {
+       "AN_DEPOT": "2016",
+       "famille": "promoteur",
+       "permis": 105,
+       "logements": 6324,
+       "acteurs": 77
+      },
+      {
+       "AN_DEPOT": "2017",
+       "famille": "fonciere_investisseur",
+       "permis": 103,
+       "logements": 1210,
+       "acteurs": 92
+      },
+      {
+       "AN_DEPOT": "2019",
+       "famille": "fonciere_investisseur",
+       "permis": 103,
+       "logements": 638,
+       "acteurs": 91
+      },
+      {
+       "AN_DEPOT": "2023",
+       "famille": "fonciere_investisseur",
+       "permis": 102,
+       "logements": 869,
+       "acteurs": 94
+      },
+      {
+       "AN_DEPOT": "2014",
+       "famille": "fonciere_investisseur",
+       "permis": 102,
+       "logements": 554,
+       "acteurs": 86
+      },
+      {
+       "AN_DEPOT": "2018",
+       "famille": "fonciere_investisseur",
+       "permis": 101,
+       "logements": 425,
+       "acteurs": 88
+      },
+      {
+       "AN_DEPOT": "2022",
+       "famille": "fonciere_investisseur",
+       "permis": 100,
+       "logements": 419,
+       "acteurs": 89
+      },
+      {
+       "AN_DEPOT": "2016",
+       "famille": "fonciere_investisseur",
+       "permis": 94,
+       "logements": 848,
+       "acteurs": 79
+      },
+      {
+       "AN_DEPOT": "2018",
+       "famille": "promoteur",
+       "permis": 94,
+       "logements": 4086,
+       "acteurs": 78
+      },
+      {
+       "AN_DEPOT": "2022",
+       "famille": "promoteur",
+       "permis": 92,
+       "logements": 6062,
+       "acteurs": 76
+      },
+      {
+       "AN_DEPOT": "2013",
+       "famille": "fonciere_investisseur",
+       "permis": 92,
+       "logements": 635,
+       "acteurs": 63
+      },
+      {
+       "AN_DEPOT": "2024",
+       "famille": "fonciere_investisseur",
+       "permis": 91,
+       "logements": 645,
+       "acteurs": 80
+      },
+      {
+       "AN_DEPOT": "2015",
+       "famille": "promoteur",
+       "permis": 84,
+       "logements": 5280,
+       "acteurs": 69
+      },
+      {
+       "AN_DEPOT": "2019",
+       "famille": "promoteur",
+       "permis": 81,
+       "logements": 4273,
+       "acteurs": 65
+      },
+      {
+       "AN_DEPOT": "2020",
+       "famille": "promoteur",
+       "permis": 81,
+       "logements": 4188,
+       "acteurs": 71
+      },
+      {
+       "AN_DEPOT": "2025",
+       "famille": "fonciere_investisseur",
+       "permis": 78,
+       "logements": 614,
+       "acteurs": 72
+      },
+      {
+       "AN_DEPOT": "2014",
+       "famille": "promoteur",
+       "permis": 66,
+       "logements": 3497,
+       "acteurs": 52
+      },
+      {
+       "AN_DEPOT": "2013",
+       "famille": "promoteur",
+       "permis": 64,
+       "logements": 2844,
+       "acteurs": 46
+      },
+      {
+       "AN_DEPOT": "2023",
+       "famille": "promoteur",
+       "permis": 59,
+       "logements": 2629,
+       "acteurs": 53
+      },
+      {
+       "AN_DEPOT": "2025",
+       "famille": "promoteur",
+       "permis": 52,
+       "logements": 2975,
+       "acteurs": 40
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 3,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "AN_DEPOT",
+      "famille"
+     ],
+     "mesure": "permis",
+     "top": 112
+    },
+    "sortie": {
+     "filtres": {},
+     "nb_permis_filtres": 3363,
+     "nb_groupes": 112,
+     "resultats": [
+      {
+       "AN_DEPOT": "2021",
+       "famille": "fonciere_investisseur",
+       "permis": 147,
+       "logements": 975,
+       "acteurs": 131
+      },
+      {
+       "AN_DEPOT": "2021",
+       "famille": "promoteur",
+       "permis": 131,
+       "logements": 7880,
+       "acteurs": 104
+      },
+      {
+       "AN_DEPOT": "2017",
+       "famille": "promoteur",
+       "permis": 119,
+       "logements": 6157,
+       "acteurs": 86
+      },
+      {
+       "AN_DEPOT": "2020",
+       "famille": "fonciere_investisseur",
+       "permis": 108,
+       "logements": 633,
+       "acteurs": 104
+      },
+      {
+       "AN_DEPOT": "2015",
+       "famille": "fonciere_investisseur",
+       "permis": 107,
+       "logements": 1458,
+       "acteurs": 95
+      },
+      {
+       "AN_DEPOT": "2016",
+       "famille": "promoteur",
+       "permis": 105,
+       "logements": 6324,
+       "acteurs": 77
+      },
+      {
+       "AN_DEPOT": "2017",
+       "famille": "fonciere_investisseur",
+       "permis": 103,
+       "logements": 1210,
+       "acteurs": 92
+      },
+      {
+       "AN_DEPOT": "2019",
+       "famille": "fonciere_investisseur",
+       "permis": 103,
+       "logements": 638,
+       "acteurs": 91
+      },
+      {
+       "AN_DEPOT": "2023",
+       "famille": "fonciere_investisseur",
+       "permis": 102,
+       "logements": 869,
+       "acteurs": 94
+      },
+      {
+       "AN_DEPOT": "2014",
+       "famille": "fonciere_investisseur",
+       "permis": 102,
+       "logements": 554,
+       "acteurs": 86
+      },
+      {
+       "AN_DEPOT": "2018",
+       "famille": "fonciere_investisseur",
+       "permis": 101,
+       "logements": 425,
+       "acteurs": 88
+      },
+      {
+       "AN_DEPOT": "2022",
+       "famille": "fonciere_investisseur",
+       "permis": 100,
+       "logements": 419,
+       "acteurs": 89
+      },
+      {
+       "AN_DEPOT": "2016",
+       "famille": "fonciere_investisseur",
+       "permis": 94,
+       "logements": 848,
+       "acteurs": 79
+      },
+      {
+       "AN_DEPOT": "2018",
+       "famille": "promoteur",
+       "permis": 94,
+       "logements": 4086,
+       "acteurs": 78
+      },
+      {
+       "AN_DEPOT": "2022",
+       "famille": "promoteur",
+       "permis": 92,
+       "logements": 6062,
+       "acteurs": 76
+      },
+      {
+       "AN_DEPOT": "2013",
+       "famille": "fonciere_investisseur",
+       "permis": 92,
+       "logements": 635,
+       "acteurs": 63
+      },
+      {
+       "AN_DEPOT": "2024",
+       "famille": "fonciere_investisseur",
+       "permis": 91,
+       "logements": 645,
+       "acteurs": 80
+      },
+      {
+       "AN_DEPOT": "2015",
+       "famille": "promoteur",
+       "permis": 84,
+       "logements": 5280,
+       "acteurs": 69
+      },
+      {
+       "AN_DEPOT": "2019",
+       "famille": "promoteur",
+       "permis": 81,
+       "logements": 4273,
+       "acteurs": 65
+      },
+      {
+       "AN_DEPOT": "2020",
+       "famille": "promoteur",
+       "permis": 81,
+       "logements": 4188,
+       "acteurs": 71
+      },
+      {
+       "AN_DEPOT": "2025",
+       "famille": "fonciere_investisseur",
+       "permis": 78,
+       "logements": 614,
+       "acteurs": 72
+      },
+      {
+       "AN_DEPOT": "2014",
+       "famille": "promoteur",
+       "permis": 66,
+       "logements": 3497,
+       "acteurs": 52
+      },
+      {
+       "AN_DEPOT": "2013",
+       "famille": "promoteur",
+       "permis": 64,
+       "logements": 2844,
+       "acteurs": 46
+      },
+      {
+       "AN_DEPOT": "2023",
+       "famille": "promoteur",
+       "permis": 59,
+       "logements": 2629,
+       "acteurs": 53
+      },
+      {
+       "AN_DEPOT": "2025",
+       "famille": "promoteur",
+       "permis": 52,
+       "logements": 2975,
+       "acteurs": 40
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 4,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "lire_dictionnaire",
+    "args": {
+     "variable": "ETAT_DAU"
+    },
+    "sortie": {
+     "variable": "ETAT_DAU",
+     "definition": "ETAT_DAU | Etat d'avancement du projet |  | 2 = Autorisé\n4 = Annulé\n5 = Commencé\n6 = Terminé | Numérique, 1 chiffre | Toutes les DAU du fichier ont été autorisées ; les modalités 4 à 6 concernent des DAU pour lesquelles est connu l'état postérieur d'avancement du projet . | Décision / suivi des travaux"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 5,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "AN_DEPOT",
+      "ETAT_DAU"
+     ],
+     "mesure": "permis",
+     "top": 100
+    },
+    "sortie": {
+     "filtres": {},
+     "nb_permis_filtres": 3363,
+     "nb_groupes": 61,
+     "resultats": [
+      {
+       "AN_DEPOT": "2017",
+       "ETAT_DAU": "6 (terminé)",
+       "permis": 142,
+       "logements": 5706,
+       "acteurs": 118
+      },
+      {
+       "AN_DEPOT": "2021",
+       "ETAT_DAU": "6 (terminé)",
+       "permis": 138,
+       "logements": 5828,
+       "acteurs": 113
+      },
+      {
+       "AN_DEPOT": "2025",
+       "ETAT_DAU": "2 (autorisé)",
+       "permis": 130,
+       "logements": 4477,
+       "acteurs": 113
+      },
+      {
+       "AN_DEPOT": "2016",
+       "ETAT_DAU": "6 (terminé)",
+       "permis": 125,
+       "logements": 4947,
+       "acteurs": 97
+      },
+      {
+       "AN_DEPOT": "2018",
+       "ETAT_DAU": "6 (terminé)",
+       "permis": 120,
+       "logements": 3394,
+       "acteurs": 107
+      },
+      {
+       "AN_DEPOT": "2015",
+       "ETAT_DAU": "6 (terminé)",
+       "permis": 120,
+       "logements": 5765,
+       "acteurs": 102
+      },
+      {
+       "AN_DEPOT": "2022",
+       "ETAT_DAU": "2 (autorisé)",
+       "permis": 113,
+       "logements": 2921,
+       "acteurs": 94
+      },
+      {
+       "AN_DEPOT": "2024",
+       "ETAT_DAU": "2 (autorisé)",
+       "permis": 113,
+       "logements": 2716,
+       "acteurs": 98
+      },
+      {
+       "AN_DEPOT": "2023",
+       "ETAT_DAU": "2 (autorisé)",
+       "permis": 110,
+       "logements": 2039,
+       "acteurs": 96
+      },
+      {
+       "AN_DEPOT": "2020",
+       "ETAT_DAU": "6 (terminé)",
+       "permis": 106,
+       "logements": 2973,
+       "acteurs": 98
+      },
+      {
+       "AN_DEPOT": "2019",
+       "ETAT_DAU": "6 (terminé)",
+       "permis": 104,
+       "logements": 4421,
+       "acteurs": 92
+      },
+      {
+       "AN_DEPOT": "2021",
+       "ETAT_DAU": "5 (commencé)",
+       "permis": 102,
+       "logements": 2481,
+       "acteurs": 88
+      },
+      {
+       "AN_DEPOT": "2013",
+       "ETAT_DAU": "6 (terminé)",
+       "permis": 97,
+       "logements": 2722,
+       "acteurs": 76
+      },
+      {
+       "AN_DEPOT": "2014",
+       "ETAT_DAU": "6 (terminé)",
+       "permis": 95,
+       "logements": 2623,
+       "acteurs": 76
+      },
+      {
+       "AN_DEPOT": "2021",
+       "ETAT_DAU": "2 (autorisé)",
+       "permis": 83,
+       "logements": 1990,
+       "acteurs": 77
+      },
+      {
+       "AN_DEPOT": "2019",
+       "ETAT_DAU": "5 (commencé)",
+       "permis": 74,
+       "logements": 1548,
+       "acteurs": 56
+      },
+      {
+       "AN_DEPOT": "2026",
+       "ETAT_DAU": "2 (autorisé)",
+       "permis": 71,
+       "logements": 1079,
+       "acteurs": 55
+      },
+      {
+       "AN_DEPOT": "2022",
+       "ETAT_DAU": "5 (commencé)",
+       "permis": 71,
+       "logements": 3194,
+       "acteurs": 65
+      },
+      {
+       "AN_DEPOT": "2015",
+       "ETAT_DAU": "5 (commencé)",
+       "permis": 70,
+       "logements": 1785,
+       "acteurs": 60
+      },
+      {
+       "AN_DEPOT": "2023",
+       "ETAT_DAU": "5 (commencé)",
+       "permis": 68,
+       "logements": 1979,
+       "acteurs": 64
+      },
+      {
+       "AN_DEPOT": "2017",
+       "ETAT_DAU": "5 (commencé)",
+       "permis": 66,
+       "logements": 2003,
+       "acteurs": 61
+      },
+      {
+       "AN_DEPOT": "2016",
+       "ETAT_DAU": "5 (commencé)",
+       "permis": 66,
+       "logements": 2362,
+       "acteurs": 63
+      },
+      {
+       "AN_DEPOT": "2014",
+       "ETAT_DAU": "5 (commencé)",
+       "permis": 66,
+       "logements": 1397,
+       "acteurs": 58
+      },
+      {
+       "AN_DEPOT": "2024",
+       "ETAT_DAU": "5 (commencé)",
+       "permis": 63,
+       "logements": 2182,
+       "acteurs": 62
+      },
+      {
+       "AN_DEPOT": "2017",
+       "ETAT_DAU": "2 (autorisé)",
+       "permis": 57,
+       "logements": 563,
+       "acteurs": 41
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 6,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "AN_DEPOT",
+      "ETAT_DAU"
+     ],
+     "mesure": "permis",
+     "top": 61
+    },
+    "sortie": {
+     "filtres": {},
+     "nb_permis_filtres": 3363,
+     "nb_groupes": 61,
+     "resultats": [
+      {
+       "AN_DEPOT": "2017",
+       "ETAT_DAU": "6 (terminé)",
+       "permis": 142,
+       "logements": 5706,
+       "acteurs": 118
+      },
+      {
+       "AN_DEPOT": "2021",
+       "ETAT_DAU": "6 (terminé)",
+       "permis": 138,
+       "logements": 5828,
+       "acteurs": 113
+      },
+      {
+       "AN_DEPOT": "2025",
+       "ETAT_DAU": "2 (autorisé)",
+       "permis": 130,
+       "logements": 4477,
+       "acteurs": 113
+      },
+      {
+       "AN_DEPOT": "2016",
+       "ETAT_DAU": "6 (terminé)",
+       "permis": 125,
+       "logements": 4947,
+       "acteurs": 97
+      },
+      {
+       "AN_DEPOT": "2018",
+       "ETAT_DAU": "6 (terminé)",
+       "permis": 120,
+       "logements": 3394,
+       "acteurs": 107
+      },
+      {
+       "AN_DEPOT": "2015",
+       "ETAT_DAU": "6 (terminé)",
+       "permis": 120,
+       "logements": 5765,
+       "acteurs": 102
+      },
+      {
+       "AN_DEPOT": "2022",
+       "ETAT_DAU": "2 (autorisé)",
+       "permis": 113,
+       "logements": 2921,
+       "acteurs": 94
+      },
+      {
+       "AN_DEPOT": "2024",
+       "ETAT_DAU": "2 (autorisé)",
+       "permis": 113,
+       "logements": 2716,
+       "acteurs": 98
+      },
+      {
+       "AN_DEPOT": "2023",
+       "ETAT_DAU": "2 (autorisé)",
+       "permis": 110,
+       "logements": 2039,
+       "acteurs": 96
+      },
+      {
+       "AN_DEPOT": "2020",
+       "ETAT_DAU": "6 (terminé)",
+       "permis": 106,
+       "logements": 2973,
+       "acteurs": 98
+      },
+      {
+       "AN_DEPOT": "2019",
+       "ETAT_DAU": "6 (terminé)",
+       "permis": 104,
+       "logements": 4421,
+       "acteurs": 92
+      },
+      {
+       "AN_DEPOT": "2021",
+       "ETAT_DAU": "5 (commencé)",
+       "permis": 102,
+       "logements": 2481,
+       "acteurs": 88
+      },
+      {
+       "AN_DEPOT": "2013",
+       "ETAT_DAU": "6 (terminé)",
+       "permis": 97,
+       "logements": 2722,
+       "acteurs": 76
+      },
+      {
+       "AN_DEPOT": "2014",
+       "ETAT_DAU": "6 (terminé)",
+       "permis": 95,
+       "logements": 2623,
+       "acteurs": 76
+      },
+      {
+       "AN_DEPOT": "2021",
+       "ETAT_DAU": "2 (autorisé)",
+       "permis": 83,
+       "logements": 1990,
+       "acteurs": 77
+      },
+      {
+       "AN_DEPOT": "2019",
+       "ETAT_DAU": "5 (commencé)",
+       "permis": 74,
+       "logements": 1548,
+       "acteurs": 56
+      },
+      {
+       "AN_DEPOT": "2026",
+       "ETAT_DAU": "2 (autorisé)",
+       "permis": 71,
+       "logements": 1079,
+       "acteurs": 55
+      },
+      {
+       "AN_DEPOT": "2022",
+       "ETAT_DAU": "5 (commencé)",
+       "permis": 71,
+       "logements": 3194,
+       "acteurs": 65
+      },
+      {
+       "AN_DEPOT": "2015",
+       "ETAT_DAU": "5 (commencé)",
+       "permis": 70,
+       "logements": 1785,
+       "acteurs": 60
+      },
+      {
+       "AN_DEPOT": "2023",
+       "ETAT_DAU": "5 (commencé)",
+       "permis": 68,
+       "logements": 1979,
+       "acteurs": 64
+      },
+      {
+       "AN_DEPOT": "2017",
+       "ETAT_DAU": "5 (commencé)",
+       "permis": 66,
+       "logements": 2003,
+       "acteurs": 61
+      },
+      {
+       "AN_DEPOT": "2016",
+       "ETAT_DAU": "5 (commencé)",
+       "permis": 66,
+       "logements": 2362,
+       "acteurs": 63
+      },
+      {
+       "AN_DEPOT": "2014",
+       "ETAT_DAU": "5 (commencé)",
+       "permis": 66,
+       "logements": 1397,
+       "acteurs": 58
+      },
+      {
+       "AN_DEPOT": "2024",
+       "ETAT_DAU": "5 (commencé)",
+       "permis": 63,
+       "logements": 2182,
+       "acteurs": 62
+      },
+      {
+       "AN_DEPOT": "2017",
+       "ETAT_DAU": "2 (autorisé)",
+       "permis": 57,
+       "logements": 563,
+       "acteurs": 41
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 7,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "AN_DEPOT",
+      "ETAT_DAU"
+     ],
+     "mesure": "permis",
+     "top": 61
+    },
+    "sortie": {
+     "filtres": {},
+     "nb_permis_filtres": 3363,
+     "nb_groupes": 61,
+     "resultats": [
+      {
+       "AN_DEPOT": "2017",
+       "ETAT_DAU": "6 (terminé)",
+       "permis": 142,
+       "logements": 5706,
+       "acteurs": 118
+      },
+      {
+       "AN_DEPOT": "2021",
+       "ETAT_DAU": "6 (terminé)",
+       "permis": 138,
+       "logements": 5828,
+       "acteurs": 113
+      },
+      {
+       "AN_DEPOT": "2025",
+       "ETAT_DAU": "2 (autorisé)",
+       "permis": 130,
+       "logements": 4477,
+       "acteurs": 113
+      },
+      {
+       "AN_DEPOT": "2016",
+       "ETAT_DAU": "6 (terminé)",
+       "permis": 125,
+       "logements": 4947,
+       "acteurs": 97
+      },
+      {
+       "AN_DEPOT": "2018",
+       "ETAT_DAU": "6 (terminé)",
+       "permis": 120,
+       "logements": 3394,
+       "acteurs": 107
+      },
+      {
+       "AN_DEPOT": "2015",
+       "ETAT_DAU": "6 (terminé)",
+       "permis": 120,
+       "logements": 5765,
+       "acteurs": 102
+      },
+      {
+       "AN_DEPOT": "2022",
+       "ETAT_DAU": "2 (autorisé)",
+       "permis": 113,
+       "logements": 2921,
+       "acteurs": 94
+      },
+      {
+       "AN_DEPOT": "2024",
+       "ETAT_DAU": "2 (autorisé)",
+       "permis": 113,
+       "logements": 2716,
+       "acteurs": 98
+      },
+      {
+       "AN_DEPOT": "2023",
+       "ETAT_DAU": "2 (autorisé)",
+       "permis": 110,
+       "logements": 2039,
+       "acteurs": 96
+      },
+      {
+       "AN_DEPOT": "2020",
+       "ETAT_DAU": "6 (terminé)",
+       "permis": 106,
+       "logements": 2973,
+       "acteurs": 98
+      },
+      {
+       "AN_DEPOT": "2019",
+       "ETAT_DAU": "6 (terminé)",
+       "permis": 104,
+       "logements": 4421,
+       "acteurs": 92
+      },
+      {
+       "AN_DEPOT": "2021",
+       "ETAT_DAU": "5 (commencé)",
+       "permis": 102,
+       "logements": 2481,
+       "acteurs": 88
+      },
+      {
+       "AN_DEPOT": "2013",
+       "ETAT_DAU": "6 (terminé)",
+       "permis": 97,
+       "logements": 2722,
+       "acteurs": 76
+      },
+      {
+       "AN_DEPOT": "2014",
+       "ETAT_DAU": "6 (terminé)",
+       "permis": 95,
+       "logements": 2623,
+       "acteurs": 76
+      },
+      {
+       "AN_DEPOT": "2021",
+       "ETAT_DAU": "2 (autorisé)",
+       "permis": 83,
+       "logements": 1990,
+       "acteurs": 77
+      },
+      {
+       "AN_DEPOT": "2019",
+       "ETAT_DAU": "5 (commencé)",
+       "permis": 74,
+       "logements": 1548,
+       "acteurs": 56
+      },
+      {
+       "AN_DEPOT": "2026",
+       "ETAT_DAU": "2 (autorisé)",
+       "permis": 71,
+       "logements": 1079,
+       "acteurs": 55
+      },
+      {
+       "AN_DEPOT": "2022",
+       "ETAT_DAU": "5 (commencé)",
+       "permis": 71,
+       "logements": 3194,
+       "acteurs": 65
+      },
+      {
+       "AN_DEPOT": "2015",
+       "ETAT_DAU": "5 (commencé)",
+       "permis": 70,
+       "logements": 1785,
+       "acteurs": 60
+      },
+      {
+       "AN_DEPOT": "2023",
+       "ETAT_DAU": "5 (commencé)",
+       "permis": 68,
+       "logements": 1979,
+       "acteurs": 64
+      },
+      {
+       "AN_DEPOT": "2017",
+       "ETAT_DAU": "5 (commencé)",
+       "permis": 66,
+       "logements": 2003,
+       "acteurs": 61
+      },
+      {
+       "AN_DEPOT": "2016",
+       "ETAT_DAU": "5 (commencé)",
+       "permis": 66,
+       "logements": 2362,
+       "acteurs": 63
+      },
+      {
+       "AN_DEPOT": "2014",
+       "ETAT_DAU": "5 (commencé)",
+       "permis": 66,
+       "logements": 1397,
+       "acteurs": 58
+      },
+      {
+       "AN_DEPOT": "2024",
+       "ETAT_DAU": "5 (commencé)",
+       "permis": 63,
+       "logements": 2182,
+       "acteurs": 62
+      },
+      {
+       "AN_DEPOT": "2017",
+       "ETAT_DAU": "2 (autorisé)",
+       "permis": 57,
+       "logements": 563,
+       "acteurs": 41
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 8,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "AN_DEPOT",
+      "ETAT_DAU"
+     ],
+     "mesure": "permis",
+     "filtres": {
+      "AN_DEPOT_min": 2011,
+      "AN_DEPOT_max": 2015
+     },
+     "top": 50
+    },
+    "sortie": {
+     "filtres": {
+      "AN_DEPOT_min": 2011,
+      "AN_DEPOT_max": 2015
+     },
+     "nb_permis_filtres": 818,
+     "nb_groupes": 18,
+     "resultats": [
+      {
+       "AN_DEPOT": "2015",
+       "ETAT_DAU": "6 (terminé)",
+       "permis": 120,
+       "logements": 5765,
+       "acteurs": 102
+      },
+      {
+       "AN_DEPOT": "2013",
+       "ETAT_DAU": "6 (terminé)",
+       "permis": 97,
+       "logements": 2722,
+       "acteurs": 76
+      },
+      {
+       "AN_DEPOT": "2014",
+       "ETAT_DAU": "6 (terminé)",
+       "permis": 95,
+       "logements": 2623,
+       "acteurs": 76
+      },
+      {
+       "AN_DEPOT": "2015",
+       "ETAT_DAU": "5 (commencé)",
+       "permis": 70,
+       "logements": 1785,
+       "acteurs": 60
+      },
+      {
+       "AN_DEPOT": "2014",
+       "ETAT_DAU": "5 (commencé)",
+       "permis": 66,
+       "logements": 1397,
+       "acteurs": 58
+      },
+      {
+       "AN_DEPOT": "2014",
+       "ETAT_DAU": "2 (autorisé)",
+       "permis": 55,
+       "logements": 733,
+       "acteurs": 53
+      },
+      {
+       "AN_DEPOT": "2015",
+       "ETAT_DAU": "2 (autorisé)",
+       "permis": 51,
+       "logements": 896,
+       "acteurs": 46
+      },
+      {
+       "AN_DEPOT": "2013",
+       "ETAT_DAU": "5 (commencé)",
+       "permis": 51,
+       "logements": 1051,
+       "acteurs": 42
+      },
+      {
+       "AN_DEPOT": "2013",
+       "ETAT_DAU": "4 (annulé)",
+       "permis": 38,
+       "logements": 631,
+       "acteurs": 34
+      },
+      {
+       "AN_DEPOT": "2012",
+       "ETAT_DAU": "6 (terminé)",
+       "permis": 38,
+       "logements": 1543,
+       "acteurs": 30
+      },
+      {
+       "AN_DEPOT": "2013",
+       "ETAT_DAU": "2 (autorisé)",
+       "permis": 36,
+       "logements": 431,
+       "acteurs": 36
+      },
+      {
+       "AN_DEPOT": "2012",
+       "ETAT_DAU": "5 (commencé)",
+       "permis": 33,
+       "logements": 902,
+       "acteurs": 31
+      },
+      {
+       "AN_DEPOT": "2014",
+       "ETAT_DAU": "4 (annulé)",
+       "permis": 19,
+       "logements": 350,
+       "acteurs": 18
+      },
+      {
+       "AN_DEPOT": "2015",
+       "ETAT_DAU": "4 (annulé)",
+       "permis": 17,
+       "logements": 290,
+       "acteurs": 17
+      },
+      {
+       "AN_DEPOT": "2012",
+       "ETAT_DAU": "2 (autorisé)",
+       "permis": 17,
+       "logements": 155,
+       "acteurs": 16
+      },
+      {
+       "AN_DEPOT": "2012",
+       "ETAT_DAU": "4 (annulé)",
+       "permis": 12,
+       "logements": 409,
+       "acteurs": 11
+      },
+      {
+       "AN_DEPOT": "2011",
+       "ETAT_DAU": "5 (commencé)",
+       "permis": 2,
+       "logements": 56,
+       "acteurs": 1
+      },
+      {
+       "AN_DEPOT": "2011",
+       "ETAT_DAU": "2 (autorisé)",
+       "permis": 1,
+       "logements": 3,
+       "acteurs": 1
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 9,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "AN_DEPOT",
+      "ETAT_DAU"
+     ],
+     "mesure": "permis",
+     "filtres": {
+      "AN_DEPOT_min": 2020,
+      "AN_DEPOT_max": 2026
+     },
+     "top": 50
+    },
+    "sortie": {
+     "filtres": {
+      "AN_DEPOT_min": 2020,
+      "AN_DEPOT_max": 2026
+     },
+     "nb_permis_filtres": 1485,
+     "nb_groupes": 26,
+     "resultats": [
+      {
+       "AN_DEPOT": "2021",
+       "ETAT_DAU": "6 (terminé)",
+       "permis": 138,
+       "logements": 5828,
+       "acteurs": 113
+      },
+      {
+       "AN_DEPOT": "2025",
+       "ETAT_DAU": "2 (autorisé)",
+       "permis": 130,
+       "logements": 4477,
+       "acteurs": 113
+      },
+      {
+       "AN_DEPOT": "2022",
+       "ETAT_DAU": "2 (autorisé)",
+       "permis": 113,
+       "logements": 2921,
+       "acteurs": 94
+      },
+      {
+       "AN_DEPOT": "2024",
+       "ETAT_DAU": "2 (autorisé)",
+       "permis": 113,
+       "logements": 2716,
+       "acteurs": 98
+      },
+      {
+       "AN_DEPOT": "2023",
+       "ETAT_DAU": "2 (autorisé)",
+       "permis": 110,
+       "logements": 2039,
+       "acteurs": 96
+      },
+      {
+       "AN_DEPOT": "2020",
+       "ETAT_DAU": "6 (terminé)",
+       "permis": 106,
+       "logements": 2973,
+       "acteurs": 98
+      },
+      {
+       "AN_DEPOT": "2021",
+       "ETAT_DAU": "5 (commencé)",
+       "permis": 102,
+       "logements": 2481,
+       "acteurs": 88
+      },
+      {
+       "AN_DEPOT": "2021",
+       "ETAT_DAU": "2 (autorisé)",
+       "permis": 83,
+       "logements": 1990,
+       "acteurs": 77
+      },
+      {
+       "AN_DEPOT": "2026",
+       "ETAT_DAU": "2 (autorisé)",
+       "permis": 71,
+       "logements": 1079,
+       "acteurs": 55
+      },
+      {
+       "AN_DEPOT": "2022",
+       "ETAT_DAU": "5 (commencé)",
+       "permis": 71,
+       "logements": 3194,
+       "acteurs": 65
+      },
+      {
+       "AN_DEPOT": "2023",
+       "ETAT_DAU": "5 (commencé)",
+       "permis": 68,
+       "logements": 1979,
+       "acteurs": 64
+      },
+      {
+       "AN_DEPOT": "2024",
+       "ETAT_DAU": "5 (commencé)",
+       "permis": 63,
+       "logements": 2182,
+       "acteurs": 62
+      },
+      {
+       "AN_DEPOT": "2020",
+       "ETAT_DAU": "2 (autorisé)",
+       "permis": 55,
+       "logements": 755,
+       "acteurs": 54
+      },
+      {
+       "AN_DEPOT": "2020",
+       "ETAT_DAU": "5 (commencé)",
+       "permis": 50,
+       "logements": 1427,
+       "acteurs": 50
+      },
+      {
+       "AN_DEPOT": "2022",
+       "ETAT_DAU": "6 (terminé)",
+       "permis": 45,
+       "logements": 882,
+       "acteurs": 43
+      },
+      {
+       "AN_DEPOT": "2021",
+       "ETAT_DAU": "4 (annulé)",
+       "permis": 33,
+       "logements": 226,
+       "acteurs": 29
+      },
+      {
+       "AN_DEPOT": "2023",
+       "ETAT_DAU": "6 (terminé)",
+       "permis": 32,
+       "logements": 213,
+       "acteurs": 31
+      },
+      {
+       "AN_DEPOT": "2025",
+       "ETAT_DAU": "5 (commencé)",
+       "permis": 29,
+       "logements": 535,
+       "acteurs": 26
+      },
+      {
+       "AN_DEPOT": "2020",
+       "ETAT_DAU": "4 (annulé)",
+       "permis": 20,
+       "logements": 277,
+       "acteurs": 17
+      },
+      {
+       "AN_DEPOT": "2022",
+       "ETAT_DAU": "4 (annulé)",
+       "permis": 18,
+       "logements": 317,
+       "acteurs": 17
+      },
+      {
+       "AN_DEPOT": "2023",
+       "ETAT_DAU": "4 (annulé)",
+       "permis": 11,
+       "logements": 101,
+       "acteurs": 9
+      },
+      {
+       "AN_DEPOT": "2025",
+       "ETAT_DAU": "6 (terminé)",
+       "permis": 9,
+       "logements": 14,
+       "acteurs": 8
+      },
+      {
+       "AN_DEPOT": "2024",
+       "ETAT_DAU": "6 (terminé)",
+       "permis": 6,
+       "logements": 12,
+       "acteurs": 6
+      },
+      {
+       "AN_DEPOT": "2026",
+       "ETAT_DAU": "5 (commencé)",
+       "permis": 5,
+       "logements": 6,
+       "acteurs": 5
+      },
+      {
+       "AN_DEPOT": "2024",
+       "ETAT_DAU": "4 (annulé)",
+       "permis": 3,
+       "logements": 14,
+       "acteurs": 3
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 10,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "AN_DEPOT",
+      "famille"
+     ],
+     "mesure": "permis",
+     "filtres": {
+      "AN_DEPOT_min": 2015,
+      "AN_DEPOT_max": 2024
+     },
+     "top": 100
+    },
+    "sortie": {
+     "filtres": {
+      "AN_DEPOT_min": 2015,
+      "AN_DEPOT_max": 2024
+     },
+     "nb_permis_filtres": 2557,
+     "nb_groupes": 75,
+     "resultats": [
+      {
+       "AN_DEPOT": "2021",
+       "famille": "fonciere_investisseur",
+       "permis": 147,
+       "logements": 975,
+       "acteurs": 131
+      },
+      {
+       "AN_DEPOT": "2021",
+       "famille": "promoteur",
+       "permis": 131,
+       "logements": 7880,
+       "acteurs": 104
+      },
+      {
+       "AN_DEPOT": "2017",
+       "famille": "promoteur",
+       "permis": 119,
+       "logements": 6157,
+       "acteurs": 86
+      },
+      {
+       "AN_DEPOT": "2020",
+       "famille": "fonciere_investisseur",
+       "permis": 108,
+       "logements": 633,
+       "acteurs": 104
+      },
+      {
+       "AN_DEPOT": "2015",
+       "famille": "fonciere_investisseur",
+       "permis": 107,
+       "logements": 1458,
+       "acteurs": 95
+      },
+      {
+       "AN_DEPOT": "2016",
+       "famille": "promoteur",
+       "permis": 105,
+       "logements": 6324,
+       "acteurs": 77
+      },
+      {
+       "AN_DEPOT": "2017",
+       "famille": "fonciere_investisseur",
+       "permis": 103,
+       "logements": 1210,
+       "acteurs": 92
+      },
+      {
+       "AN_DEPOT": "2019",
+       "famille": "fonciere_investisseur",
+       "permis": 103,
+       "logements": 638,
+       "acteurs": 91
+      },
+      {
+       "AN_DEPOT": "2023",
+       "famille": "fonciere_investisseur",
+       "permis": 102,
+       "logements": 869,
+       "acteurs": 94
+      },
+      {
+       "AN_DEPOT": "2018",
+       "famille": "fonciere_investisseur",
+       "permis": 101,
+       "logements": 425,
+       "acteurs": 88
+      },
+      {
+       "AN_DEPOT": "2022",
+       "famille": "fonciere_investisseur",
+       "permis": 100,
+       "logements": 419,
+       "acteurs": 89
+      },
+      {
+       "AN_DEPOT": "2016",
+       "famille": "fonciere_investisseur",
+       "permis": 94,
+       "logements": 848,
+       "acteurs": 79
+      },
+      {
+       "AN_DEPOT": "2018",
+       "famille": "promoteur",
+       "permis": 94,
+       "logements": 4086,
+       "acteurs": 78
+      },
+      {
+       "AN_DEPOT": "2022",
+       "famille": "promoteur",
+       "permis": 92,
+       "logements": 6062,
+       "acteurs": 76
+      },
+      {
+       "AN_DEPOT": "2024",
+       "famille": "fonciere_investisseur",
+       "permis": 91,
+       "logements": 645,
+       "acteurs": 80
+      },
+      {
+       "AN_DEPOT": "2015",
+       "famille": "promoteur",
+       "permis": 84,
+       "logements": 5280,
+       "acteurs": 69
+      },
+      {
+       "AN_DEPOT": "2019",
+       "famille": "promoteur",
+       "permis": 81,
+       "logements": 4273,
+       "acteurs": 65
+      },
+      {
+       "AN_DEPOT": "2020",
+       "famille": "promoteur",
+       "permis": 81,
+       "logements": 4188,
+       "acteurs": 71
+      },
+      {
+       "AN_DEPOT": "2023",
+       "famille": "promoteur",
+       "permis": 59,
+       "logements": 2629,
+       "acteurs": 53
+      },
+      {
+       "AN_DEPOT": "2024",
+       "famille": "promoteur",
+       "permis": 49,
+       "logements": 2976,
+       "acteurs": 45
+      },
+      {
+       "AN_DEPOT": "2021",
+       "famille": "bailleur_social",
+       "permis": 40,
+       "logements": 1571,
+       "acteurs": 15
+      },
+      {
+       "AN_DEPOT": "2019",
+       "famille": "bailleur_social",
+       "permis": 37,
+       "logements": 1615,
+       "acteurs": 10
+      },
+      {
+       "AN_DEPOT": "2017",
+       "famille": "bailleur_social",
+       "permis": 30,
+       "logements": 1046,
+       "acteurs": 13
+      },
+      {
+       "AN_DEPOT": "2016",
+       "famille": "non_determine",
+       "permis": 25,
+       "logements": 140,
+       "acteurs": 20
+      },
+      {
+       "AN_DEPOT": "2015",
+       "famille": "non_determine",
+       "permis": 25,
+       "logements": 213,
+       "acteurs": 18
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 11,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "AN_DEPOT",
+      "famille"
+     ],
+     "mesure": "permis",
+     "top": 112
+    },
+    "sortie": {
+     "filtres": {},
+     "nb_permis_filtres": 3363,
+     "nb_groupes": 112,
+     "resultats": [
+      {
+       "AN_DEPOT": "2021",
+       "famille": "fonciere_investisseur",
+       "permis": 147,
+       "logements": 975,
+       "acteurs": 131
+      },
+      {
+       "AN_DEPOT": "2021",
+       "famille": "promoteur",
+       "permis": 131,
+       "logements": 7880,
+       "acteurs": 104
+      },
+      {
+       "AN_DEPOT": "2017",
+       "famille": "promoteur",
+       "permis": 119,
+       "logements": 6157,
+       "acteurs": 86
+      },
+      {
+       "AN_DEPOT": "2020",
+       "famille": "fonciere_investisseur",
+       "permis": 108,
+       "logements": 633,
+       "acteurs": 104
+      },
+      {
+       "AN_DEPOT": "2015",
+       "famille": "fonciere_investisseur",
+       "permis": 107,
+       "logements": 1458,
+       "acteurs": 95
+      },
+      {
+       "AN_DEPOT": "2016",
+       "famille": "promoteur",
+       "permis": 105,
+       "logements": 6324,
+       "acteurs": 77
+      },
+      {
+       "AN_DEPOT": "2017",
+       "famille": "fonciere_investisseur",
+       "permis": 103,
+       "logements": 1210,
+       "acteurs": 92
+      },
+      {
+       "AN_DEPOT": "2019",
+       "famille": "fonciere_investisseur",
+       "permis": 103,
+       "logements": 638,
+       "acteurs": 91
+      },
+      {
+       "AN_DEPOT": "2023",
+       "famille": "fonciere_investisseur",
+       "permis": 102,
+       "logements": 869,
+       "acteurs": 94
+      },
+      {
+       "AN_DEPOT": "2014",
+       "famille": "fonciere_investisseur",
+       "permis": 102,
+       "logements": 554,
+       "acteurs": 86
+      },
+      {
+       "AN_DEPOT": "2018",
+       "famille": "fonciere_investisseur",
+       "permis": 101,
+       "logements": 425,
+       "acteurs": 88
+      },
+      {
+       "AN_DEPOT": "2022",
+       "famille": "fonciere_investisseur",
+       "permis": 100,
+       "logements": 419,
+       "acteurs": 89
+      },
+      {
+       "AN_DEPOT": "2016",
+       "famille": "fonciere_investisseur",
+       "permis": 94,
+       "logements": 848,
+       "acteurs": 79
+      },
+      {
+       "AN_DEPOT": "2018",
+       "famille": "promoteur",
+       "permis": 94,
+       "logements": 4086,
+       "acteurs": 78
+      },
+      {
+       "AN_DEPOT": "2022",
+       "famille": "promoteur",
+       "permis": 92,
+       "logements": 6062,
+       "acteurs": 76
+      },
+      {
+       "AN_DEPOT": "2013",
+       "famille": "fonciere_investisseur",
+       "permis": 92,
+       "logements": 635,
+       "acteurs": 63
+      },
+      {
+       "AN_DEPOT": "2024",
+       "famille": "fonciere_investisseur",
+       "permis": 91,
+       "logements": 645,
+       "acteurs": 80
+      },
+      {
+       "AN_DEPOT": "2015",
+       "famille": "promoteur",
+       "permis": 84,
+       "logements": 5280,
+       "acteurs": 69
+      },
+      {
+       "AN_DEPOT": "2019",
+       "famille": "promoteur",
+       "permis": 81,
+       "logements": 4273,
+       "acteurs": 65
+      },
+      {
+       "AN_DEPOT": "2020",
+       "famille": "promoteur",
+       "permis": 81,
+       "logements": 4188,
+       "acteurs": 71
+      },
+      {
+       "AN_DEPOT": "2025",
+       "famille": "fonciere_investisseur",
+       "permis": 78,
+       "logements": 614,
+       "acteurs": 72
+      },
+      {
+       "AN_DEPOT": "2014",
+       "famille": "promoteur",
+       "permis": 66,
+       "logements": 3497,
+       "acteurs": 52
+      },
+      {
+       "AN_DEPOT": "2013",
+       "famille": "promoteur",
+       "permis": 64,
+       "logements": 2844,
+       "acteurs": 46
+      },
+      {
+       "AN_DEPOT": "2023",
+       "famille": "promoteur",
+       "permis": 59,
+       "logements": 2629,
+       "acteurs": 53
+      },
+      {
+       "AN_DEPOT": "2025",
+       "famille": "promoteur",
+       "permis": 52,
+       "logements": 2975,
+       "acteurs": 40
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 12,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "noter",
+    "args": {
+     "titre": "Pic historique 2021 porté par les foncières investisseurs, puis effondrement promoteur",
+     "constat": "2021 est l'année record avec 356 permis déposés (vs 290 en 2017, précédent pic). Ce pic est tiré par les fonciere_investisseur (147 permis, 975 logements, 131 acteurs) et les promoteurs (131 permis, 7 880 logements). Depuis 2022, les promoteurs s'effondrent : 92 (2022), 59 (2023), 49 (2024), 52 (2025) — soit -60 % vs 2021. Les fonciere_investisseur restent stables autour de 100 permis/an (100 en 2022, 102 en 2023, 91 en 2024, 78 en 2025).",
+     "interet_buddimm": "Veille marché : le retrait promoteur signale une difficulté du neuf dense ; les foncières maintiennent un flux de petits projets (divisions, réhabilitations) — opportunité d'accompagnement sur du diffus.",
+     "fiabilite": "établi",
+     "limites": "Données 2025-2026 incomplètes (dépôts en cours) ; 2021 peut inclure des dépôts anticipés avant RE2020.",
+     "a_creuser": "Corréler avec taux d'intérêt et foncier disponible ; identifier si les foncières sont des véhicules de promoteurs."
+    },
+    "sortie": {
+     "erreur": "Refusé : chiffres non vérifiables : 60 % (base absente ou fausse dans la phrase). Corrige-les avec des chiffres issus des requêtes, ou fais la requête qui les donne. Chaque pourcentage doit citer, dans la même phrase, son numérateur et son dénominateur (ex. « 3 251 sur 11 785, soit 27,6 % »). Puis renote."
+    }
+   }
+  ]
+ },
+ {
+  "etape": 13,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "noter",
+    "args": {
+     "titre": "Pic historique 2021 porté par les foncières investisseurs, puis effondrement promoteur",
+     "constat": "2021 est l'année record avec 356 permis déposés (vs 290 en 2017, précédent pic). Ce pic est tiré par les fonciere_investisseur (147 permis, 975 logements, 131 acteurs) et les promoteurs (131 permis, 7 880 logements). Depuis 2022, les promoteurs s'effondrent : 92 (2022), 59 (2023), 49 (2024) — soit une baisse de 82 permis sur 131 (62,6 %) entre 2021 et 2024. Les fonciere_investisseur restent stables autour de 100 permis/an (100 en 2022, 102 en 2023, 91 en 2024, 78 en 2025).",
+     "interet_buddimm": "Veille marché : le retrait promoteur signale une difficulté du neuf dense ; les foncières maintiennent un flux de petits projets (divisions, réhabilitations) — opportunité d'accompagnement sur du diffus.",
+     "fiabilite": "établi",
+     "limites": "Données 2025-2026 incomplètes (dépôts en cours) ; 2021 peut inclure des dépôts anticipés avant RE2020.",
+     "a_creuser": "Corréler avec taux d'intérêt et foncier disponible ; identifier si les foncières sont des véhicules de promoteurs.",
+     "chiffres_non_verifies": [
+      "62,6 % (base absente ou fausse dans la phrase)",
+      "82"
+     ]
+    },
+    "sortie": {
+     "ok": "note 1 enregistrée avec avertissement"
+    }
+   }
+  ]
+ }
+]

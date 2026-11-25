@@ -1,0 +1,106 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "438542417"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "438542417"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "438542417"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "438542417"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "SEQUABAT",
+     "nb_permis_PC": 1,
+     "annees_depot": [
+      "2015"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 29,
+     "surface_locaux_non_residentiels_creee_m2": 0,
+     "nb_permis_collectif": 1,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 0
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "438542417",
+      "nom": "IDEC GRAND SUD",
+      "nature_juridique": "5710",
+      "naf_actuel": "71.12B",
+      "etat": "A",
+      "date_creation": "2001-07-07",
+      "categorie": "ETI",
+      "effectif": "12",
+      "nb_etablissements": 9,
+      "nb_etablissements_ouverts": 1,
+      "siege_actuel": {
+       "siret": "43854241700086",
+       "naf": "71.12B",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "?",
+       "naf_dans_permis": "71.12B",
+       "nb_permis": 1,
+       "annees_depot": [
+        "2015"
+       ]
+      }
+     ],
+     "alertes": [],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/438542417"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "71.12B",
+      "libelle": "Ingénierie, études techniques"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5710",
+     "libelle": "SAS, société par actions simplifiée"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"entreprise_autre\",\"confiance\":\"moyenne\",\"indices\":[\"fiche_entreprise : NAF actuel 71.12B (Ingénierie, études techniques), forme juridique SAS (5710), entreprise active (ETI, 12 salariés), dénomination actuelle IDEC GRAND SUD\",\"permis_du_demandeur : 1 permis de construire déposé en 2015 sous le nom SEQUABAT, 29 logements créés en collectif, 0 logement locatif social déclaré\",\"libelle_naf : 71.12B = Ingénierie, études techniques (activité de services, pas de promotion immobilière ni de construction)\",\"libelle_cj : 5710 = SAS, société par actions simplifiée (structure privée lucrative)\",\"dénomination : écart entre le nom du permis (SEQUABAT) et la dénomination sociale actuelle (IDEC GRAND SUD)\"],\"limites\":\"L'unique permis (2015) montre une production de 29 logements, ce qui pourrait évoquer une opération de promotion ponctuelle, mais l'activité principale et actuelle de l'entreprise est l'ingénierie/études techniques (NAF 71.12B). Le lien entre SEQUABAT et IDEC GRAND SUD n'est pas documenté (changement de nom ? filiale ?). Une seule opération ne suffit pas à qualifier de promoteur (activité habituelle de construction-vente). Aucune trace d'activité bailleur, foncière, association, exploitant santé/social, collectivité ou copropriété.\"}"
+   }
+  ]
+ }
+]

@@ -1,0 +1,492 @@
+{
+ "k": 6,
+ "silhouettes": {
+  "4": 0.29,
+  "5": 0.3,
+  "6": 0.346,
+  "7": 0.291,
+  "8": 0.344
+ },
+ "nb_acteurs": 3957,
+ "indicateurs": {
+  "v_permis": "nombre de permis (log)",
+  "v_annees": "années actives (log)",
+  "v_logements": "logements créés (log)",
+  "v_surface": "surface de locaux créée (log)",
+  "part_locaux": "part de permis de locaux",
+  "v_taille": "logements par permis (log)",
+  "v_communes": "nombre de communes (log)",
+  "part_medico": "part de projets médico-sociaux",
+  "taux_acheve": "taux d'achèvement déclaré",
+  "taux_annule": "taux d'annulation"
+ },
+ "reconciliees": 15,
+ "groupes": [
+  {
+   "groupe": 0,
+   "effectif": 1353,
+   "description_auto": "part de permis de locaux élevé (+0.9 σ) ; logements créés (log) faible (-0.7 σ) ; logements par permis (log) faible (-0.7 σ)",
+   "familles": {
+    "fonciere_investisseur": 533,
+    "entreprise_autre": 441,
+    "collectivite_public": 195,
+    "association_ess": 79,
+    "promoteur": 58,
+    "exploitant_sante_social": 27,
+    "non_determine": 19,
+    "bailleur_social": 1
+   },
+   "famille_dominante": "fonciere_investisseur",
+   "part_famille_dominante": 0.394,
+   "moyennes": {
+    "permis": 1.43,
+    "logements": 0.1,
+    "surface_m2": 1895,
+    "annees_actives": 1.3,
+    "communes": 1.07,
+    "part_locaux": 0.981,
+    "part_medico": 0.073,
+    "taux_acheve": 0.057,
+    "taux_annule": 0.014
+   },
+   "z_centre": {
+    "v_permis": -0.17,
+    "v_annees": -0.08,
+    "v_logements": -0.71,
+    "v_surface": 0.44,
+    "part_locaux": 0.93,
+    "v_taille": -0.71,
+    "v_communes": -0.18,
+    "part_medico": 0.11,
+    "taux_acheve": -0.59,
+    "taux_annule": -0.22
+   },
+   "exemples": [
+    {
+     "siren": "217800903",
+     "denomination": "COMMUNE DE BOUAFLE",
+     "famille": "collectivite_public",
+     "permis": 6
+    },
+    {
+     "siren": "217805373",
+     "denomination": "COMMUNE DE SAINT ARNOULT EN YVELINES",
+     "famille": "collectivite_public",
+     "permis": 6
+    },
+    {
+     "siren": "217806421",
+     "denomination": "COMMUNE DE VERNEUIL-SUR-SEINE",
+     "famille": "collectivite_public",
+     "permis": 6
+    },
+    {
+     "siren": "447760455",
+     "denomination": "SCI LE PLATEAU DE BOUAFLE",
+     "famille": "fonciere_investisseur",
+     "permis": 5
+    },
+    {
+     "siren": "539545616",
+     "denomination": "ROCHER",
+     "famille": "fonciere_investisseur",
+     "permis": 5
+    },
+    {
+     "siren": "899789648",
+     "denomination": "SCI IE064 FLINS",
+     "famille": "promoteur",
+     "permis": 5
+    }
+   ]
+  },
+  {
+   "groupe": 1,
+   "effectif": 729,
+   "description_auto": "taux d'achèvement déclaré élevé (+1.6 σ) ; logements créés (log) faible (-0.5 σ) ; logements par permis (log) faible (-0.5 σ)",
+   "familles": {
+    "fonciere_investisseur": 412,
+    "entreprise_autre": 184,
+    "promoteur": 47,
+    "association_ess": 36,
+    "collectivite_public": 27,
+    "exploitant_sante_social": 13,
+    "non_determine": 8,
+    "bailleur_social": 2
+   },
+   "famille_dominante": "fonciere_investisseur",
+   "part_famille_dominante": 0.565,
+   "moyennes": {
+    "permis": 1.16,
+    "logements": 0.8,
+    "surface_m2": 788,
+    "annees_actives": 1.07,
+    "communes": 1.03,
+    "part_locaux": 0.647,
+    "part_medico": 0.05,
+    "taux_acheve": 0.996,
+    "taux_annule": 0.0
+   },
+   "z_centre": {
+    "v_permis": -0.38,
+    "v_annees": -0.35,
+    "v_logements": -0.5,
+    "v_surface": -0.06,
+    "part_locaux": 0.21,
+    "v_taille": -0.49,
+    "v_communes": -0.24,
+    "part_medico": -0.0,
+    "taux_acheve": 1.58,
+    "taux_annule": -0.28
+   },
+   "exemples": [
+    {
+     "siren": "217806231",
+     "denomination": "COMMUNE DE LE TREMBLAY SUR MAULDRE",
+     "famille": "collectivite_public",
+     "permis": 5
+    },
+    {
+     "siren": "329480651",
+     "denomination": "SCI TROIS JEAN",
+     "famille": "fonciere_investisseur",
+     "permis": 5
+    },
+    {
+     "siren": "217801075",
+     "denomination": "COMMUNE DE BREVAL",
+     "famille": "collectivite_public",
+     "permis": 4
+    },
+    {
+     "siren": "851891747",
+     "denomination": "IKON",
+     "famille": "fonciere_investisseur",
+     "permis": 4
+    },
+    {
+     "siren": "821460102",
+     "denomination": "CELLNEX FRANCE SAS",
+     "famille": "entreprise_autre",
+     "permis": 4
+    },
+    {
+     "siren": "510815558",
+     "denomination": "SCI CFL PATRIMOINE",
+     "famille": "fonciere_investisseur",
+     "permis": 3
+    }
+   ]
+  },
+  {
+   "groupe": 2,
+   "effectif": 665,
+   "description_auto": "logements par permis (log) élevé (+1.8 σ) ; logements créés (log) élevé (+1.7 σ) ; part de permis de locaux faible (-0.9 σ)",
+   "familles": {
+    "promoteur": 520,
+    "fonciere_investisseur": 94,
+    "entreprise_autre": 23,
+    "bailleur_social": 9,
+    "collectivite_public": 7,
+    "association_ess": 6,
+    "copropriete": 3,
+    "non_determine": 3
+   },
+   "famille_dominante": "promoteur",
+   "part_famille_dominante": 0.782,
+   "moyennes": {
+    "permis": 1.6,
+    "logements": 74.3,
+    "surface_m2": 276,
+    "annees_actives": 1.17,
+    "communes": 1.12,
+    "part_locaux": 0.144,
+    "part_medico": 0.049,
+    "taux_acheve": 0.488,
+    "taux_annule": 0.013
+   },
+   "z_centre": {
+    "v_permis": -0.02,
+    "v_annees": -0.23,
+    "v_logements": 1.7,
+    "v_surface": -0.43,
+    "part_locaux": -0.87,
+    "v_taille": 1.83,
+    "v_communes": -0.11,
+    "part_medico": -0.01,
+    "taux_acheve": 0.41,
+    "taux_annule": -0.22
+   },
+   "exemples": [
+    {
+     "siren": "629800418",
+     "denomination": "SOC ECONOMIE MIXTE IMMOBILIERE DE VELIZY",
+     "famille": "fonciere_investisseur",
+     "permis": 9
+    },
+    {
+     "siren": "815022751",
+     "denomination": "EUROPEAN HOMES 36",
+     "famille": "promoteur",
+     "permis": 7
+    },
+    {
+     "siren": "880836150",
+     "denomination": "SCCV VOISINS LE PARC HABITE",
+     "famille": "promoteur",
+     "permis": 7
+    },
+    {
+     "siren": "808164685",
+     "denomination": "SCI POISSY LA COUDRAIE",
+     "famille": "fonciere_investisseur",
+     "permis": 6
+    },
+    {
+     "siren": "438861692",
+     "denomination": "BERYL INVESTISSEMENT",
+     "famille": "promoteur",
+     "permis": 6
+    },
+    {
+     "siren": "481104420",
+     "denomination": "SOC AMENAGEMENT GARE DE L'EST",
+     "famille": "fonciere_investisseur",
+     "permis": 5
+    }
+   ]
+  },
+  {
+   "groupe": 3,
+   "effectif": 769,
+   "description_auto": "part de permis de locaux faible (-1.1 σ) ; surface de locaux créée (log) faible (-0.7 σ) ; taux d'achèvement déclaré faible (-0.6 σ)",
+   "familles": {
+    "fonciere_investisseur": 596,
+    "promoteur": 93,
+    "entreprise_autre": 42,
+    "collectivite_public": 16,
+    "non_determine": 15,
+    "bailleur_social": 3,
+    "association_ess": 3,
+    "exploitant_sante_social": 1
+   },
+   "famille_dominante": "fonciere_investisseur",
+   "part_famille_dominante": 0.775,
+   "moyennes": {
+    "permis": 1.37,
+    "logements": 3.8,
+    "surface_m2": 6,
+    "annees_actives": 1.16,
+    "communes": 1.07,
+    "part_locaux": 0.044,
+    "part_medico": 0.004,
+    "taux_acheve": 0.031,
+    "taux_annule": 0.018
+   },
+   "z_centre": {
+    "v_permis": -0.21,
+    "v_annees": -0.23,
+    "v_logements": 0.07,
+    "v_surface": -0.74,
+    "part_locaux": -1.08,
+    "v_taille": 0.06,
+    "v_communes": -0.17,
+    "part_medico": -0.23,
+    "taux_acheve": -0.65,
+    "taux_annule": -0.2
+   },
+   "exemples": [
+    {
+     "siren": "399608991",
+     "denomination": "SOC DE PARTICIPATIONS ET DE PLACEMENTS",
+     "famille": "promoteur",
+     "permis": 13
+    },
+    {
+     "siren": "798895199",
+     "denomination": "ARC PROJECT MANAGEMENT",
+     "famille": "entreprise_autre",
+     "permis": 7
+    },
+    {
+     "siren": "492892690",
+     "denomination": "FONCIERE ACTIVE",
+     "famille": "fonciere_investisseur",
+     "permis": 6
+    },
+    {
+     "siren": "809223662",
+     "denomination": "SCI COSTE VERSAILLES",
+     "famille": "fonciere_investisseur",
+     "permis": 6
+    },
+    {
+     "siren": "851307058",
+     "denomination": "SAS DU GAILLON",
+     "famille": "fonciere_investisseur",
+     "permis": 5
+    },
+    {
+     "siren": "878603851",
+     "denomination": "PROLEDA",
+     "famille": "promoteur",
+     "permis": 5
+    }
+   ]
+  },
+  {
+   "groupe": 4,
+   "effectif": 249,
+   "description_auto": "années actives (log) élevé (+3.0 σ) ; nombre de permis (log) élevé (+2.9 σ) ; nombre de communes (log) élevé (+2.7 σ)",
+   "familles": {
+    "collectivite_public": 76,
+    "fonciere_investisseur": 51,
+    "entreprise_autre": 49,
+    "promoteur": 35,
+    "bailleur_social": 21,
+    "association_ess": 15,
+    "exploitant_sante_social": 2
+   },
+   "famille_dominante": "collectivite_public",
+   "part_famille_dominante": 0.305,
+   "moyennes": {
+    "permis": 9.93,
+    "logements": 143.9,
+    "surface_m2": 6421,
+    "annees_actives": 5.44,
+    "communes": 4.55,
+    "part_locaux": 0.632,
+    "part_medico": 0.098,
+    "taux_acheve": 0.321,
+    "taux_annule": 0.068
+   },
+   "z_centre": {
+    "v_permis": 2.94,
+    "v_annees": 3.05,
+    "v_logements": 0.68,
+    "v_surface": 1.29,
+    "part_locaux": 0.18,
+    "v_taille": 0.27,
+    "v_communes": 2.72,
+    "part_medico": 0.24,
+    "taux_acheve": 0.02,
+    "taux_annule": 0.03
+   },
+   "exemples": [
+    {
+     "siren": "227806460",
+     "denomination": "DEPARTEMENT DES YVELINES",
+     "famille": "collectivite_public",
+     "permis": 65
+    },
+    {
+     "siren": "562091546",
+     "denomination": "BOUYGUES IMMOBILIER",
+     "famille": "promoteur",
+     "permis": 62
+    },
+    {
+     "siren": "552141533",
+     "denomination": "IMMOBILIERE 3F",
+     "famille": "bailleur_social",
+     "permis": 54
+    },
+    {
+     "siren": "450341847",
+     "denomination": "IMMOBILIERE DES ORMES",
+     "famille": "fonciere_investisseur",
+     "permis": 50
+    },
+    {
+     "siren": "308435460",
+     "denomination": "LES RESIDENCES SOCIETE ANONYME D'HABITATIONS A LOYER MODERE",
+     "famille": "bailleur_social",
+     "permis": 42
+    },
+    {
+     "siren": "582142816",
+     "denomination": "SA D'H L M FRANCE HABITATION",
+     "famille": "bailleur_social",
+     "permis": 36
+    }
+   ]
+  },
+  {
+   "groupe": 5,
+   "effectif": 192,
+   "description_auto": "taux d'annulation élevé (+4.1 σ) ; taux d'achèvement déclaré faible (-0.7 σ) ; nombre de permis (log) faible (-0.3 σ)",
+   "familles": {
+    "fonciere_investisseur": 104,
+    "promoteur": 40,
+    "entreprise_autre": 32,
+    "association_ess": 6,
+    "collectivite_public": 5,
+    "non_determine": 4,
+    "copropriete": 1
+   },
+   "famille_dominante": "fonciere_investisseur",
+   "part_famille_dominante": 0.542,
+   "moyennes": {
+    "permis": 1.25,
+    "logements": 6.6,
+    "surface_m2": 825,
+    "annees_actives": 1.11,
+    "communes": 1.03,
+    "part_locaux": 0.441,
+    "part_medico": 0.031,
+    "taux_acheve": 0.006,
+    "taux_annule": 0.98
+   },
+   "z_centre": {
+    "v_permis": -0.3,
+    "v_annees": -0.3,
+    "v_logements": -0.1,
+    "v_surface": -0.12,
+    "part_locaux": -0.23,
+    "v_taille": -0.07,
+    "v_communes": -0.25,
+    "part_medico": -0.1,
+    "taux_acheve": -0.71,
+    "taux_annule": 4.14
+   },
+   "exemples": [
+    {
+     "siren": "843979287",
+     "denomination": "SCI KILIC",
+     "famille": "fonciere_investisseur",
+     "permis": 5
+    },
+    {
+     "siren": "881617815",
+     "denomination": "PHAM SO PARTNER",
+     "famille": "fonciere_investisseur",
+     "permis": 3
+    },
+    {
+     "siren": "813711249",
+     "denomination": "SCI SOUDANNES",
+     "famille": "fonciere_investisseur",
+     "permis": 3
+    },
+    {
+     "siren": "891294530",
+     "denomination": "LCSC GRESSET SUISSES",
+     "famille": "promoteur",
+     "permis": 3
+    },
+    {
+     "siren": "815146154",
+     "denomination": "SCI DE LA GARE",
+     "famille": "fonciere_investisseur",
+     "permis": 3
+    },
+    {
+     "siren": "880367347",
+     "denomination": "FONCIERE DES MAISONS",
+     "famille": "fonciere_investisseur",
+     "permis": 3
+    }
+   ]
+  }
+ ]
+}

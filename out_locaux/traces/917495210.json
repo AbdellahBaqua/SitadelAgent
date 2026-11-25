@@ -1,0 +1,115 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "917495210"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "917495210"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "917495210"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "917495210"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "ARKAN",
+     "nb_permis_PC": 1,
+     "annees_depot": [
+      "2023"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 0,
+     "surface_locaux_non_residentiels_creee_m2": 0,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 0
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "917495210",
+      "nom": "ARKAN",
+      "nature_juridique": "5499",
+      "naf_actuel": "56.10A",
+      "etat": "A",
+      "date_creation": "2022-07-15",
+      "categorie": "PME",
+      "effectif": "02",
+      "nb_etablissements": 1,
+      "nb_etablissements_ouverts": 1,
+      "siege_actuel": {
+       "siret": "91749521000010",
+       "naf": "56.10A",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "91749521000010",
+       "naf_dans_permis": "70.10Z",
+       "nb_permis": 1,
+       "annees_depot": [
+        "2023"
+       ],
+       "etat_actuel": "ouvert",
+       "date_creation": "2022-07-15",
+       "date_fermeture": null
+      }
+     ],
+     "alertes": [
+      "NAF du permis ['70.10Z'] différent du NAF actuel de l'entreprise 56.10A"
+     ],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/917495210"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "56.10A",
+      "libelle": "Restauration traditionnelle"
+     },
+     {
+      "code": "70.10Z",
+      "libelle": "Activités des sièges sociaux"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5499",
+     "libelle": "Société à responsabilité limitée (sans autre indication)"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"entreprise_autre\",\"confiance\":\"moyenne\",\"indices\":[\"fiche_entreprise : NAF actuel 56.10A « Restauration traditionnelle », forme juridique 5499 « Société à responsabilité limitée (sans autre indication) », entreprise active (état A), effectif 02, créée en 2022\",\"permis_du_demandeur : 1 permis déposé en 2023, 0 logements créés, 0 m² de locaux non résidentiels, aucun logement locatif social déclaré, NAF du permis 70.10Z « Activités des sièges sociaux »\",\"libelle_naf : confirmation que 56.10A = Restauration traditionnelle et 70.10Z = Activités des sièges sociaux\",\"libelle_cj : confirmation que 5499 = SARL\",\"dénomination : « ARKAN » ne suggère pas de secteur immobilier, social ou médical\"],\"limites\":\"Le permis mentionne une activité de siège social (70.10Z) alors que l'activité actuelle de l'entreprise est la restauration (56.10A). Cela peut indiquer une structure holding pour des restaurants, mais il n'y a aucune preuve d'activité de promotion immobilière, de bailleur social, de foncière, d'association ESS, d'exploitant santé/social, de collectivité ou de copropriété. L'unique permis ne porte pas sur de la création de logements.\"}"
+   }
+  ]
+ }
+]

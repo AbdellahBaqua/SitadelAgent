@@ -1,0 +1,109 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "750826406"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "750826406"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "750826406"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "750826406"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "EARL DE LA MASSICOTERIE",
+     "nb_permis_PC": 1,
+     "annees_depot": [
+      "2016"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 2,
+     "surface_locaux_non_residentiels_creee_m2": 0,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 1,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 1
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "750826406",
+      "nom": "EARL DE LA MASSICOTERIE",
+      "nature_juridique": "6598",
+      "naf_actuel": "01.11Z",
+      "etat": "A",
+      "date_creation": "2012-01-01",
+      "categorie": null,
+      "effectif": "02",
+      "nb_etablissements": 2,
+      "nb_etablissements_ouverts": 2,
+      "siege_actuel": {
+       "siret": "75082640600019",
+       "naf": "01.11Z",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "75082640600019",
+       "naf_dans_permis": "01.11Z",
+       "nb_permis": 1,
+       "annees_depot": [
+        "2016"
+       ],
+       "etat_actuel": "ouvert",
+       "date_creation": "2012-01-01",
+       "date_fermeture": null
+      }
+     ],
+     "alertes": [],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/750826406"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "01.11Z",
+      "libelle": "Culture de céréales (à l'exception du riz), de légumineuses et de graines oléagineuses"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "6598",
+     "libelle": "Exploitation agricole à responsabilité limitée"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"entreprise_autre\",\"confiance\":\"haute\",\"indices\":[\"fiche_entreprise : nature_juridique 6598 = Exploitation agricole à responsabilité limitée (EARL)\",\"fiche_entreprise : naf_actuel 01.11Z = Culture de céréales (à l'exception du riz), de légumineuses et de graines oléagineuses\",\"libelle_cj : code 6598 confirme la forme juridique agricole\",\"libelle_naf : code 01.11Z confirme l'activité agricole actuelle\",\"permis_du_demandeur : 1 seul permis en 2016 pour 2 logements individuels (pas de collectif, pas de logement social), cohérent avec une exploitation agricole construisant pour ses besoins propres\"],\"limites\":\"Aucune : l'activité agricole et la forme juridique sont confirmées par les sources officielles actuelles (Sirène), et l'historique des permis ne montre aucune activité de promotion, de bailleur social, de foncière ou d'exploitant médico-social.\"}"
+   }
+  ]
+ }
+]

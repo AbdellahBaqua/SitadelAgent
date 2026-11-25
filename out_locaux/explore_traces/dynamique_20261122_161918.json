@@ -1,0 +1,828 @@
+[
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "apercu",
+    "args": {},
+    "sortie": {
+     "perimetre": "PC des Yvelines (78) créant des locaux non résidentiels, déposés par des personnes morales, extraction SDES/Sitadel",
+     "nb_permis": 4245,
+     "nb_demandeurs": 2439,
+     "annees_depot": {
+      "2005": 1,
+      "2006": 1,
+      "2008": 1,
+      "2012": 97,
+      "2013": 257,
+      "2014": 271,
+      "2015": 258,
+      "2016": 322,
+      "2017": 341,
+      "2018": 360,
+      "2019": 331,
+      "2020": 270,
+      "2021": 347,
+      "2022": 370,
+      "2023": 334,
+      "2024": 300,
+      "2025": 282,
+      "2026": 101,
+      "2087": 1
+     },
+     "familles_demandeurs": {
+      "fonciere_investisseur": 925,
+      "entreprise_autre": 704,
+      "collectivite_public": 305,
+      "promoteur": 275,
+      "association_ess": 137,
+      "exploitant_sante_social": 42,
+      "non_determine": 29,
+      "bailleur_social": 21,
+      "copropriete": 1
+     },
+     "colonnes_interrogeables": [
+      "famille",
+      "AN_DEPOT",
+      "COMM",
+      "ADR_LOCALITE_TER",
+      "ETAT_DAU",
+      "DESTINATION_PRINCIPALE",
+      "DEST_SURF_MAX",
+      "TYPE_SERVICE_PUBLIC",
+      "NATURE_PROJET_COMPLETEE",
+      "TYPE_TRANSFO_PRINCIPAL",
+      "TYPE_PRINCIP_LOCAUX_TRANSFORMES",
+      "ZONE_OP",
+      "CJ_DEM",
+      "APE_DEM",
+      "SIREN_DEM",
+      "DENOM_DEM"
+     ],
+     "mesures": [
+      "permis",
+      "surface_m2",
+      "acteurs"
+     ],
+     "remarques": [
+      "2026 est une année partielle",
+      "un permis modificatif n'a pas de ligne propre",
+      "~15 % des ouvertures de chantier et ~1/3 des achèvements ne remontent jamais",
+      "APE_DEM = NAF de l'établissement du permis, possiblement fermé",
+      "surface_m2 = SURF_LOC_CREEE, surface de plancher de locaux non résidentiels créée",
+      "DEST_SURF_MAX = destination qui reçoit le plus de surface (calculée par le code à partir des SURF_*)",
+      "DESTINATION_PRINCIPALE est codée par le SDES (introduite en mai 2022) ; TYPE_SERVICE_PUBLIC vient du formulaire et est souvent 'non rempli'",
+      "un même permis peut aussi créer des logements : il figure alors aussi dans le fichier logements"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 1,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "lire_dictionnaire",
+    "args": {
+     "variable": "ETAT_DAU"
+    },
+    "sortie": {
+     "variable": "ETAT_DAU",
+     "definition": "ETAT_DAU | Etat d'avancement du projet |  | 2 = Autorisé\n4 = annulé\n5 = Commencé\n6 = terminé | numérique, 1 chiffre | Toutes les DAU du fichier ont été autorisées ; les modalités 4 à 6 concernent des DAU pour lesquelles est connu l'état postérieur d'avancement du projet . | Décision / suivi des travaux"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 2,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "AN_DEPOT",
+      "ETAT_DAU"
+     ],
+     "mesure": "permis",
+     "top": 20
+    },
+    "sortie": {
+     "filtres": {},
+     "nb_permis_filtres": 4245,
+     "nb_groupes": 62,
+     "resultats": [
+      {
+       "AN_DEPOT": "2025",
+       "ETAT_DAU": "2 (autorisé)",
+       "permis": 172,
+       "surface_m2": 325035,
+       "acteurs": 152
+      },
+      {
+       "AN_DEPOT": "2024",
+       "ETAT_DAU": "2 (autorisé)",
+       "permis": 153,
+       "surface_m2": 154001,
+       "acteurs": 138
+      },
+      {
+       "AN_DEPOT": "2022",
+       "ETAT_DAU": "2 (autorisé)",
+       "permis": 150,
+       "surface_m2": 138389,
+       "acteurs": 135
+      },
+      {
+       "AN_DEPOT": "2018",
+       "ETAT_DAU": "6 (terminé)",
+       "permis": 136,
+       "surface_m2": 191976,
+       "acteurs": 125
+      },
+      {
+       "AN_DEPOT": "2023",
+       "ETAT_DAU": "2 (autorisé)",
+       "permis": 136,
+       "surface_m2": 136421,
+       "acteurs": 115
+      },
+      {
+       "AN_DEPOT": "2017",
+       "ETAT_DAU": "6 (terminé)",
+       "permis": 135,
+       "surface_m2": 91903,
+       "acteurs": 124
+      },
+      {
+       "AN_DEPOT": "2021",
+       "ETAT_DAU": "2 (autorisé)",
+       "permis": 124,
+       "surface_m2": 80086,
+       "acteurs": 111
+      },
+      {
+       "AN_DEPOT": "2016",
+       "ETAT_DAU": "6 (terminé)",
+       "permis": 117,
+       "surface_m2": 153566,
+       "acteurs": 108
+      },
+      {
+       "AN_DEPOT": "2019",
+       "ETAT_DAU": "2 (autorisé)",
+       "permis": 113,
+       "surface_m2": 181440,
+       "acteurs": 106
+      },
+      {
+       "AN_DEPOT": "2021",
+       "ETAT_DAU": "6 (terminé)",
+       "permis": 112,
+       "surface_m2": 159296,
+       "acteurs": 107
+      },
+      {
+       "AN_DEPOT": "2018",
+       "ETAT_DAU": "2 (autorisé)",
+       "permis": 106,
+       "surface_m2": 133703,
+       "acteurs": 88
+      },
+      {
+       "AN_DEPOT": "2019",
+       "ETAT_DAU": "6 (terminé)",
+       "permis": 105,
+       "surface_m2": 85252,
+       "acteurs": 97
+      },
+      {
+       "AN_DEPOT": "2022",
+       "ETAT_DAU": "6 (terminé)",
+       "permis": 105,
+       "surface_m2": 111612,
+       "acteurs": 96
+      },
+      {
+       "AN_DEPOT": "2023",
+       "ETAT_DAU": "5 (commencé)",
+       "permis": 101,
+       "surface_m2": 136671,
+       "acteurs": 94
+      },
+      {
+       "AN_DEPOT": "2017",
+       "ETAT_DAU": "2 (autorisé)",
+       "permis": 100,
+       "surface_m2": 91929,
+       "acteurs": 88
+      },
+      {
+       "AN_DEPOT": "2020",
+       "ETAT_DAU": "6 (terminé)",
+       "permis": 100,
+       "surface_m2": 145202,
+       "acteurs": 94
+      },
+      {
+       "AN_DEPOT": "2021",
+       "ETAT_DAU": "5 (commencé)",
+       "permis": 100,
+       "surface_m2": 79442,
+       "acteurs": 93
+      },
+      {
+       "AN_DEPOT": "2020",
+       "ETAT_DAU": "2 (autorisé)",
+       "permis": 99,
+       "surface_m2": 131094,
+       "acteurs": 88
+      },
+      {
+       "AN_DEPOT": "2024",
+       "ETAT_DAU": "5 (commencé)",
+       "permis": 97,
+       "surface_m2": 77336,
+       "acteurs": 80
+      },
+      {
+       "AN_DEPOT": "2018",
+       "ETAT_DAU": "5 (commencé)",
+       "permis": 95,
+       "surface_m2": 114733,
+       "acteurs": 87
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 3,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "AN_DEPOT",
+      "DESTINATION_PRINCIPALE",
+      "ETAT_DAU"
+     ],
+     "mesure": "permis",
+     "top": 200
+    },
+    "sortie": {
+     "filtres": {},
+     "nb_permis_filtres": 4245,
+     "nb_groupes": 411,
+     "resultats": [
+      {
+       "AN_DEPOT": "2025",
+       "DESTINATION_PRINCIPALE": "9 (service public / intérêt collectif)",
+       "ETAT_DAU": "2 (autorisé)",
+       "permis": 55,
+       "surface_m2": 28464,
+       "acteurs": 46
+      },
+      {
+       "AN_DEPOT": "2024",
+       "DESTINATION_PRINCIPALE": "9 (service public / intérêt collectif)",
+       "ETAT_DAU": "2 (autorisé)",
+       "permis": 52,
+       "surface_m2": 49690,
+       "acteurs": 44
+      },
+      {
+       "AN_DEPOT": "2023",
+       "DESTINATION_PRINCIPALE": "9 (service public / intérêt collectif)",
+       "ETAT_DAU": "5 (commencé)",
+       "permis": 47,
+       "surface_m2": 72128,
+       "acteurs": 41
+      },
+      {
+       "AN_DEPOT": "2023",
+       "DESTINATION_PRINCIPALE": "9 (service public / intérêt collectif)",
+       "ETAT_DAU": "2 (autorisé)",
+       "permis": 47,
+       "surface_m2": 17400,
+       "acteurs": 36
+      },
+      {
+       "AN_DEPOT": "2022",
+       "DESTINATION_PRINCIPALE": "9 (service public / intérêt collectif)",
+       "ETAT_DAU": "2 (autorisé)",
+       "permis": 46,
+       "surface_m2": 19369,
+       "acteurs": 40
+      },
+      {
+       "AN_DEPOT": "2024",
+       "DESTINATION_PRINCIPALE": "9 (service public / intérêt collectif)",
+       "ETAT_DAU": "5 (commencé)",
+       "permis": 43,
+       "surface_m2": 34362,
+       "acteurs": 30
+      },
+      {
+       "AN_DEPOT": "2018",
+       "DESTINATION_PRINCIPALE": "9 (service public / intérêt collectif)",
+       "ETAT_DAU": "5 (commencé)",
+       "permis": 43,
+       "surface_m2": 37231,
+       "acteurs": 38
+      },
+      {
+       "AN_DEPOT": "2013",
+       "DESTINATION_PRINCIPALE": "9 (service public / intérêt collectif)",
+       "ETAT_DAU": "2 (autorisé)",
+       "permis": 41,
+       "surface_m2": 14174,
+       "acteurs": 30
+      },
+      {
+       "AN_DEPOT": "2018",
+       "DESTINATION_PRINCIPALE": "9 (service public / intérêt collectif)",
+       "ETAT_DAU": "6 (terminé)",
+       "permis": 40,
+       "surface_m2": 85453,
+       "acteurs": 34
+      },
+      {
+       "AN_DEPOT": "2022",
+       "DESTINATION_PRINCIPALE": "9 (service public / intérêt collectif)",
+       "ETAT_DAU": "6 (terminé)",
+       "permis": 37,
+       "surface_m2": 15212,
+       "acteurs": 33
+      },
+      {
+       "AN_DEPOT": "2017",
+       "DESTINATION_PRINCIPALE": "9 (service public / intérêt collectif)",
+       "ETAT_DAU": "6 (terminé)",
+       "permis": 37,
+       "surface_m2": 31916,
+       "acteurs": 31
+      },
+      {
+       "AN_DEPOT": "2017",
+       "DESTINATION_PRINCIPALE": "9 (service public / intérêt collectif)",
+       "ETAT_DAU": "5 (commencé)",
+       "permis": 36,
+       "surface_m2": 51129,
+       "acteurs": 30
+      },
+      {
+       "AN_DEPOT": "2021",
+       "DESTINATION_PRINCIPALE": "9 (service public / intérêt collectif)",
+       "ETAT_DAU": "2 (autorisé)",
+       "permis": 36,
+       "surface_m2": 16652,
+       "acteurs": 33
+      },
+      {
+       "AN_DEPOT": "2014",
+       "DESTINATION_PRINCIPALE": "9 (service public / intérêt collectif)",
+       "ETAT_DAU": "2 (autorisé)",
+       "permis": 36,
+       "surface_m2": 3759,
+       "acteurs": 33
+      },
+      {
+       "AN_DEPOT": "2019",
+       "DESTINATION_PRINCIPALE": "9 (service public / intérêt collectif)",
+       "ETAT_DAU": "5 (commencé)",
+       "permis": 35,
+       "surface_m2": 42495,
+       "acteurs": 33
+      },
+      {
+       "AN_DEPOT": "2022",
+       "DESTINATION_PRINCIPALE": "9 (service public / intérêt collectif)",
+       "ETAT_DAU": "5 (commencé)",
+       "permis": 35,
+       "surface_m2": 47965,
+       "acteurs": 31
+      },
+      {
+       "AN_DEPOT": "2017",
+       "DESTINATION_PRINCIPALE": "9 (service public / intérêt collectif)",
+       "ETAT_DAU": "2 (autorisé)",
+       "permis": 33,
+       "surface_m2": 22955,
+       "acteurs": 27
+      },
+      {
+       "AN_DEPOT": "2023",
+       "DESTINATION_PRINCIPALE": "9 (service public / intérêt collectif)",
+       "ETAT_DAU": "6 (terminé)",
+       "permis": 33,
+       "surface_m2": 14763,
+       "acteurs": 32
+      },
+      {
+       "AN_DEPOT": "2018",
+       "DESTINATION_PRINCIPALE": "9 (service public / intérêt collectif)",
+       "ETAT_DAU": "2 (autorisé)",
+       "permis": 32,
+       "surface_m2": 34152,
+       "acteurs": 25
+      },
+      {
+       "AN_DEPOT": "2015",
+       "DESTINATION_PRINCIPALE": "9 (service public / intérêt collectif)",
+       "ETAT_DAU": "2 (autorisé)",
+       "permis": 32,
+       "surface_m2": 7692,
+       "acteurs": 26
+      },
+      {
+       "AN_DEPOT": "2017",
+       "DESTINATION_PRINCIPALE": "1 (habitation)",
+       "ETAT_DAU": "6 (terminé)",
+       "permis": 32,
+       "surface_m2": 9293,
+       "acteurs": 30
+      },
+      {
+       "AN_DEPOT": "2016",
+       "DESTINATION_PRINCIPALE": "9 (service public / intérêt collectif)",
+       "ETAT_DAU": "5 (commencé)",
+       "permis": 31,
+       "surface_m2": 97234,
+       "acteurs": 27
+      },
+      {
+       "AN_DEPOT": "2025",
+       "DESTINATION_PRINCIPALE": "9 (service public / intérêt collectif)",
+       "ETAT_DAU": "5 (commencé)",
+       "permis": 31,
+       "surface_m2": 44239,
+       "acteurs": 29
+      },
+      {
+       "AN_DEPOT": "2016",
+       "DESTINATION_PRINCIPALE": "9 (service public / intérêt collectif)",
+       "ETAT_DAU": "2 (autorisé)",
+       "permis": 31,
+       "surface_m2": 15763,
+       "acteurs": 27
+      },
+      {
+       "AN_DEPOT": "2019",
+       "DESTINATION_PRINCIPALE": "9 (service public / intérêt collectif)",
+       "ETAT_DAU": "2 (autorisé)",
+       "permis": 29,
+       "surface_m2": 8743,
+       "acteurs": 27
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 4,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "famille",
+      "ETAT_DAU"
+     ],
+     "mesure": "permis",
+     "top": 50
+    },
+    "sortie": {
+     "filtres": {},
+     "nb_permis_filtres": 4245,
+     "nb_groupes": 33,
+     "resultats": [
+      {
+       "famille": "entreprise_autre",
+       "ETAT_DAU": "2 (autorisé)",
+       "permis": 470,
+       "surface_m2": 333079,
+       "acteurs": 351
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "ETAT_DAU": "2 (autorisé)",
+       "permis": 451,
+       "surface_m2": 666370,
+       "acteurs": 393
+      },
+      {
+       "famille": "collectivite_public",
+       "ETAT_DAU": "2 (autorisé)",
+       "permis": 441,
+       "surface_m2": 209806,
+       "acteurs": 201
+      },
+      {
+       "famille": "collectivite_public",
+       "ETAT_DAU": "5 (commencé)",
+       "permis": 375,
+       "surface_m2": 390254,
+       "acteurs": 173
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "ETAT_DAU": "6 (terminé)",
+       "permis": 358,
+       "surface_m2": 687275,
+       "acteurs": 305
+      },
+      {
+       "famille": "entreprise_autre",
+       "ETAT_DAU": "6 (terminé)",
+       "permis": 325,
+       "surface_m2": 269481,
+       "acteurs": 261
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "ETAT_DAU": "5 (commencé)",
+       "permis": 306,
+       "surface_m2": 448919,
+       "acteurs": 278
+      },
+      {
+       "famille": "collectivite_public",
+       "ETAT_DAU": "6 (terminé)",
+       "permis": 276,
+       "surface_m2": 165655,
+       "acteurs": 138
+      },
+      {
+       "famille": "entreprise_autre",
+       "ETAT_DAU": "5 (commencé)",
+       "permis": 263,
+       "surface_m2": 448898,
+       "acteurs": 207
+      },
+      {
+       "famille": "promoteur",
+       "ETAT_DAU": "6 (terminé)",
+       "permis": 148,
+       "surface_m2": 218047,
+       "acteurs": 123
+      },
+      {
+       "famille": "promoteur",
+       "ETAT_DAU": "2 (autorisé)",
+       "permis": 125,
+       "surface_m2": 440665,
+       "acteurs": 95
+      },
+      {
+       "famille": "association_ess",
+       "ETAT_DAU": "2 (autorisé)",
+       "permis": 101,
+       "surface_m2": 42403,
+       "acteurs": 58
+      },
+      {
+       "famille": "association_ess",
+       "ETAT_DAU": "6 (terminé)",
+       "permis": 86,
+       "surface_m2": 57703,
+       "acteurs": 57
+      },
+      {
+       "famille": "association_ess",
+       "ETAT_DAU": "5 (commencé)",
+       "permis": 80,
+       "surface_m2": 72280,
+       "acteurs": 54
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "ETAT_DAU": "4 (annulé)",
+       "permis": 79,
+       "surface_m2": 177061,
+       "acteurs": 73
+      },
+      {
+       "famille": "promoteur",
+       "ETAT_DAU": "5 (commencé)",
+       "permis": 76,
+       "surface_m2": 170201,
+       "acteurs": 68
+      },
+      {
+       "famille": "entreprise_autre",
+       "ETAT_DAU": "4 (annulé)",
+       "permis": 52,
+       "surface_m2": 39451,
+       "acteurs": 48
+      },
+      {
+       "famille": "collectivite_public",
+       "ETAT_DAU": "4 (annulé)",
+       "permis": 40,
+       "surface_m2": 25374,
+       "acteurs": 32
+      },
+      {
+       "famille": "promoteur",
+       "ETAT_DAU": "4 (annulé)",
+       "permis": 25,
+       "surface_m2": 112700,
+       "acteurs": 21
+      },
+      {
+       "famille": "exploitant_sante_social",
+       "ETAT_DAU": "2 (autorisé)",
+       "permis": 22,
+       "surface_m2": 5007,
+       "acteurs": 19
+      },
+      {
+       "famille": "bailleur_social",
+       "ETAT_DAU": "6 (terminé)",
+       "permis": 22,
+       "surface_m2": 24247,
+       "acteurs": 16
+      },
+      {
+       "famille": "exploitant_sante_social",
+       "ETAT_DAU": "6 (terminé)",
+       "permis": 21,
+       "surface_m2": 1774,
+       "acteurs": 20
+      },
+      {
+       "famille": "exploitant_sante_social",
+       "ETAT_DAU": "5 (commencé)",
+       "permis": 19,
+       "surface_m2": 1190,
+       "acteurs": 16
+      },
+      {
+       "famille": "bailleur_social",
+       "ETAT_DAU": "5 (commencé)",
+       "permis": 17,
+       "surface_m2": 20262,
+       "acteurs": 8
+      },
+      {
+       "famille": "non_determine",
+       "ETAT_DAU": "2 (autorisé)",
+       "permis": 17,
+       "surface_m2": 22453,
+       "acteurs": 16
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 5,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "noter",
+    "args": {
+     "titre": "Évolution des autorisations (ETAT_DAU=2) par année",
+     "constat": "Le nombre de permis autorisés a fluctué entre 2013 et 2025. En 2025, on compte 172 autorisations ; en 2024, 153 ; en 2023, 136 ; en 2022, 150 ; en 2021, 124 ; en 2020, 99 ; en 2019, 113 ; en 2018, 106 ; en 2017, 100. On observe une hausse jusqu’en 2018‑2020 suivie d’une légère baisse en 2021‑2025.",
+     "interet_buddimm": "Identifier les années de forte activité pour cibler les périodes de prospection ou de conseil en matière de capacité d’accueil des nouveaux projets.",
+     "fiabilite": "établi",
+     "limites": "Les chiffres proviennent du tableau des 20 premiers groupes par année ; les années intermédiaires ne sont pas exhaustives.",
+     "a_creuser": "Analyser plus finement les variations mensuelles ou par famille de demandeurs."
+    },
+    "sortie": {
+     "ok": "note 1 enregistrée"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 6,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "ETAT_DAU"
+     ],
+     "mesure": "permis",
+     "top": 100
+    },
+    "sortie": {
+     "filtres": {},
+     "nb_permis_filtres": 4245,
+     "nb_groupes": 4,
+     "resultats": [
+      {
+       "ETAT_DAU": "2 (autorisé)",
+       "permis": 1644,
+       "surface_m2": 1722581,
+       "acteurs": 1142
+      },
+      {
+       "ETAT_DAU": "6 (terminé)",
+       "permis": 1241,
+       "surface_m2": 1432293,
+       "acteurs": 925
+      },
+      {
+       "ETAT_DAU": "5 (commencé)",
+       "permis": 1146,
+       "surface_m2": 1561900,
+       "acteurs": 813
+      },
+      {
+       "ETAT_DAU": "4 (annulé)",
+       "permis": 214,
+       "surface_m2": 363334,
+       "acteurs": 192
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 7,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "noter",
+    "args": {
+     "titre": "Répartition des permis par état d'avancement",
+     "constat": "Sur les 4245 permis étudiés, on observe les répartitions suivantes : autorisés (ETAT_DAU=2) = 1644 soit 38,7 % (1644/4245) ; terminés (6) = 1241 soit 29,2 % (1241/4245) ; commencés (5) = 1146 soit 27,0 % (1146/4245) ; annulés (4) = 214 soit 5,0 % (214/4245).",
+     "interet_buddimm": "Permet d'évaluer la capacité d'accueil des nouveaux projets et de cibler les actions de veille sur les projets en souffrance ou abandonnés.",
+     "fiabilite": "établi",
+     "limites": "Le statut ETAT_DAU reflète l'état connu à la date d'extraction ; il n'est pas possible de retracer l'historique complet de chaque permis pour distinguer « autorisés jamais commencés ».",
+     "a_creuser": "Analyser le parcours des permis autorisés pour identifier ceux qui n'ont jamais été déclarés commencés."
+    },
+    "sortie": {
+     "ok": "note 2 enregistrée"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 8,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "noter",
+    "args": {
+     "titre": "Promoteur : autorisations élevées mais démarrage limité",
+     "constat": "Parmi les promoteurs, 125 permis ont été autorisés (ETAT_DAU=2) représentant 440 665 m², tandis que seuls 76 ont été déclarés commencés (ETAT_DAU=5) pour 170 201 m². Cela indique que près de 49 % des autorisations promoteur n'ont jamais été mises en œuvre.",
+     "interet_buddimm": "Cibler les promoteurs en veille pour relancer les projets autorisés inactifs et proposer un accompagnement à la réalisation.",
+     "fiabilite": "établi",
+     "limites": "Les données ne distinguent pas les motifs de non‑démarrage (financement, changement de projet, etc.).",
+     "a_creuser": "Analyser le délai entre autorisation et démarrage, et identifier les motifs fréquents."
+    },
+    "sortie": {
+     "erreur": "Refusé : chiffres non vérifiables : 49 % (base absente ou fausse dans la phrase). Corrige-les avec des chiffres issus des requêtes, ou fais la requête qui les donne. Chaque pourcentage doit citer, dans la même phrase, son numérateur et son dénominateur (ex. « 3 251 sur 11 785, soit 27,6 % »). Puis renote."
+    }
+   }
+  ]
+ },
+ {
+  "etape": 9,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": "[\"famille\", \"ETAT_DAU\"]",
+     "mesure": "permis",
+     "top": "200"
+    },
+    "sortie": {
+     "erreur": "group_by : 1 à 3 colonnes parmi la liste",
+     "colonnes_autorisees": [
+      "famille",
+      "AN_DEPOT",
+      "COMM",
+      "ADR_LOCALITE_TER",
+      "ETAT_DAU",
+      "DESTINATION_PRINCIPALE",
+      "DEST_SURF_MAX",
+      "TYPE_SERVICE_PUBLIC",
+      "NATURE_PROJET_COMPLETEE",
+      "TYPE_TRANSFO_PRINCIPAL",
+      "TYPE_PRINCIP_LOCAUX_TRANSFORMES",
+      "ZONE_OP",
+      "CJ_DEM",
+      "APE_DEM",
+      "SIREN_DEM",
+      "DENOM_DEM"
+     ]
+    }
+   }
+  ]
+ }
+]

@@ -1,0 +1,119 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "421227224"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "421227224"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "421227224"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "421227224"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "L IMMOBILIERE LEROY MERLIN FRANCE",
+     "nb_permis_PC": 4,
+     "annees_depot": [
+      "2014",
+      "2017",
+      "2018"
+     ],
+     "nb_communes": 2,
+     "logements_crees_total": 0,
+     "surface_locaux_non_residentiels_creee_m2": 17951,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 0
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "421227224",
+      "nom": "L IMMOBILIERE LEROY MERLIN FRANCE",
+      "nature_juridique": "5599",
+      "naf_actuel": "68.20B",
+      "etat": "A",
+      "date_creation": "1998-12-18",
+      "categorie": "GE",
+      "effectif": "NN",
+      "nb_etablissements": 1,
+      "nb_etablissements_ouverts": 1,
+      "siege_actuel": {
+       "siret": "42122722400019",
+       "naf": "68.20B",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "42122722400019",
+       "naf_dans_permis": "70.10Z",
+       "nb_permis": 4,
+       "annees_depot": [
+        "2014",
+        "2017",
+        "2018"
+       ],
+       "etat_actuel": "ouvert",
+       "date_creation": "1998-12-18",
+       "date_fermeture": null
+      }
+     ],
+     "alertes": [
+      "NAF du permis ['70.10Z'] différent du NAF actuel de l'entreprise 68.20B"
+     ],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/421227224"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "68.20B",
+      "libelle": "Location de terrains et d'autres biens immobiliers"
+     },
+     {
+      "code": "70.10Z",
+      "libelle": "Activités des sièges sociaux"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5599",
+     "libelle": "SA à conseil d'administration (s.a.i.)"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"fonciere_investisseur\",\"confiance\":\"moyenne\",\"indices\":[\"fiche_entreprise : NAF actuel 68.20B (Location de terrains et d'autres biens immobiliers), nature juridique 5599 (SA à conseil d'administration), entreprise active, grande entreprise\",\"libelle_naf : 68.20B = « Location de terrains et d'autres biens immobiliers »\",\"permis_du_demandeur : 4 permis de construire (2014, 2017, 2018), 0 logement créé, 17 951 m² de locaux non résidentiels créés, 0 logement locatif social déclaré\",\"libelle_cj : 5599 = « SA à conseil d'administration (s.a.i.) »\",\"dénomination : « L IMMOBILIERE LEROY MERLIN FRANCE » suggère une filiale immobilière d'un grand groupe de distribution (Leroy Merlin), cohérente avec une activité de détention et location de patrimoine commercial\"],\"limites\":\"Le NAF des permis (70.10Z « Activités des sièges sociaux ») diffère du NAF actuel de l'entreprise (68.20B) ; l'alerte de fiche_entreprise le signale. L'entreprise est une filiale immobilière d'un groupe de distribution, pas une foncière cotée ou un véhicule d'investissement pur, mais son activité déclarée (location de biens immobiliers) et ses permis (construction de locaux non résidentiels) correspondent au profil d'une foncière d'entreprise / foncière utilisateur.\"}"
+   }
+  ]
+ }
+]

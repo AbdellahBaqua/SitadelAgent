@@ -1,0 +1,108 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "887918019"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "887918019"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "887918019"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "887918019"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "SAFE ARCHITECTURE URBANISME",
+     "nb_permis_PC": 1,
+     "annees_depot": [
+      "2023"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 129,
+     "surface_locaux_non_residentiels_creee_m2": 0,
+     "nb_permis_collectif": 1,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [
+      "1"
+     ],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 1
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "887918019",
+      "nom": "SAFE ARCHITECTURE URBANISME",
+      "nature_juridique": "5710",
+      "naf_actuel": "71.11Z",
+      "etat": "A",
+      "date_creation": "2020-06-05",
+      "categorie": "PME",
+      "effectif": "03",
+      "nb_etablissements": 2,
+      "nb_etablissements_ouverts": 1,
+      "siege_actuel": {
+       "siret": "88791801900027",
+       "naf": "71.11Z",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "?",
+       "naf_dans_permis": "71.11Z",
+       "nb_permis": 1,
+       "annees_depot": [
+        "2023"
+       ]
+      }
+     ],
+     "alertes": [],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/887918019"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "71.11Z",
+      "libelle": "Activités d'architecture"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5710",
+     "libelle": "SAS, société par actions simplifiée"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"entreprise_autre\",\"confiance\":\"moyenne\",\"indices\":[\"permis_du_demandeur : 1 permis en 2023, 129 logements créés, 1 permis collectif, 0 logements locatifs sociaux, type résidence déclaré '1' (résidence principale)\",\"fiche_entreprise : entreprise active (état A), SAS (CJ 5710), NAF actuel 71.11Z 'Activités d'architecture', PME de 3-5 employés, créée en 2020\",\"libelle_naf : 71.11Z = 'Activités d'architecture' (confirmé par fiche_entreprise et permis_du_demandeur)\",\"libelle_cj : 5710 = 'SAS, société par actions simplifiée' (forme commerciale, non associative, non publique, non HLM)\"],\"limites\":\"L'entreprise est une agence d'architecture (NAF 71.11Z) qui a déposé un permis pour 129 logements. Elle n'est pas un bailleur social, promoteur, foncière, association ESS, exploitant santé/social, collectivité ou copropriété. Elle pourrait agir comme maître d'œuvre pour le compte d'un tiers (promoteur ou bailleur), mais en tant que demandeur du permis, elle est une entreprise d'architecture. Aucune information ne permet de la rattacher à une famille plus spécifique que 'entreprise_autre'.\"}"
+   }
+  ]
+ }
+]

@@ -1,0 +1,125 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "533025441"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "533025441"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "533025441"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "533025441"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "SAS IMMOBILIERE DVD",
+     "nb_permis_PC": 2,
+     "annees_depot": [
+      "2014",
+      "2022"
+     ],
+     "nb_communes": 2,
+     "logements_crees_total": 0,
+     "surface_locaux_non_residentiels_creee_m2": 6265,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 0
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "533025441",
+      "nom": "IMMOBILIERE DOMUSVI",
+      "nature_juridique": "5710",
+      "naf_actuel": "41.10A",
+      "etat": "A",
+      "date_creation": "2011-06-07",
+      "categorie": "GE",
+      "effectif": "NN",
+      "nb_etablissements": 4,
+      "nb_etablissements_ouverts": 3,
+      "siege_actuel": {
+       "siret": "53302544100031",
+       "naf": "41.10A",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "53302544100023",
+       "naf_dans_permis": "68.32A",
+       "nb_permis": 1,
+       "annees_depot": [
+        "2014"
+       ],
+       "etat_actuel": "ouvert",
+       "date_creation": "2012-06-28",
+       "date_fermeture": null
+      },
+      {
+       "siret": "53302544100031",
+       "naf_dans_permis": "41.10A",
+       "nb_permis": 1,
+       "annees_depot": [
+        "2022"
+       ],
+       "etat_actuel": "ouvert",
+       "date_creation": "2020-10-09",
+       "date_fermeture": null
+      }
+     ],
+     "alertes": [],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/533025441"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "41.10A",
+      "libelle": "Promotion immobilière de logements"
+     },
+     {
+      "code": "68.32A",
+      "libelle": "Administration d'immeubles et autres biens immobiliers"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5710",
+     "libelle": "SAS, société par actions simplifiée"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"promoteur\",\"confiance\":\"moyenne\",\"indices\":[\"fiche_entreprise : NAF actuel de l'entreprise = 41.10A « Promotion immobilière de logements » (activé principal actuel).\",\"libelle_naf : confirmation que 41.10A correspond à de la promotion immobilière de logements.\",\"permis_du_demandeur : 2 permis déposés (2014, 2022) pour 6 265 m² de surfaces non résidentielles, 0 logement créé, 0 logement social déclaré – cohérent avec une activité de promotion (bureaux, commerces, équipements) plutôt que de détention locative.\",\"fiche_entreprise : forme juridique SAS (cj 5710), entreprise active, catégorie GE – structure privée de promotion.\"],\"limites\":\"La dénomination « IMMOBILIERE DOMUSVI » suggère un lien avec le groupe DomusVi (exploitant privé santé/médico-social), mais l'entité déposante a pour activité principale actuelle la promotion immobilière (NAF 41.10A) et non l'exploitation. Les permis ne précisent pas la nature exacte des surfaces non résidentielles (santé, bureaux, commerces). L'absence de logements créés et de logements sociaux ne permet pas de la rattacher aux bailleurs sociaux.\"}"
+   }
+  ]
+ }
+]

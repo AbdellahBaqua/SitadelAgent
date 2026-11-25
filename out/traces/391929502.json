@@ -1,0 +1,131 @@
+[
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "{\"siren\":\"391929502\"}"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "FINANCIERE DU DOME",
+     "nb_permis_PC": 1,
+     "annees_depot": [
+      "2026"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 114,
+     "surface_locaux_non_residentiels_creee_m2": 154,
+     "nb_permis_collectif": 1,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 30,
+     "permis_autorises_pas_remontes_comme_commences": 1
+    }
+   }
+  ]
+ },
+ {
+  "etape": 1,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "fiche_entreprise",
+    "args": "{\"siren\":\"391929502\"}"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "391929502",
+      "nom": "FINANCIERE DU DOME",
+      "nature_juridique": "5710",
+      "naf_actuel": "64.20Z",
+      "etat": "A",
+      "date_creation": "1993-06-22",
+      "categorie": "PME",
+      "effectif": "03",
+      "nb_etablissements": 1,
+      "nb_etablissements_ouverts": 1,
+      "siege_actuel": {
+       "siret": "39192950200014",
+       "naf": "64.20Z",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "39192950200014",
+       "naf_dans_permis": "64.20Z",
+       "nb_permis": 1,
+       "annees_depot": [
+        "2026"
+       ],
+       "etat_actuel": "ouvert",
+       "date_creation": "1993-06-22",
+       "date_fermeture": null
+      }
+     ],
+     "alertes": [],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/391929502"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 2,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "libelle_naf",
+    "args": "{\"code\":\"64.20Z\"}"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "libelle_naf",
+    "sortie": {
+     "code": "64.20Z",
+     "libelle": "Activités des sociétés holding"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 3,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "libelle_cj",
+    "args": "{\"code\":\"5710\"}"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5710",
+     "libelle": "SAS, société par actions simplifiée"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 4,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"fonciere_investisseur\",\"confiance\":\"moyenne\",\"indices\":[\"fiche_entreprise : NAF actuel 64.20Z = « Activités des sociétés holding » (holding company)\",\"libelle_naf : 64.20Z confirmé comme activité de holding\",\"libelle_cj : 5710 = SAS (société par actions simplifiée)\",\"dénomination : « FINANCIERE DU DOME » — nom à consonance financière/holding\",\"permis_du_demandeur : 1 PC en 2026, 114 logements dont 30 locatifs sociaux, 1 permis collectif — activité d'investissement immobilier significative\",\"fiche_entreprise : entreprise active (état A), PME 3-5 salariés, 1 établissement ouvert (siège = établissement du permis)\"],\"limites\":\"L'activité de holding (64.20Z) peut servir de structure porteuse pour différents métiers (promotion, foncière, bailleur social via filiales). Le permis montre un programme important avec du social, mais la société elle-même n'a que 3-5 salariés et une activité déclarée de holding pur. Impossible d'exclure qu'il s'agisse d'un véhicule de promotion (promoteur) ou d'une structure de bailleur social sans voir le montage juridique complet.\"}"
+   }
+  ]
+ }
+]

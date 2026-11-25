@@ -1,0 +1,109 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "319806105"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "319806105"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "319806105"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "319806105"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "DANIEL VARLET TRAITEUR",
+     "nb_permis_PC": 1,
+     "annees_depot": [
+      "2020"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 1,
+     "surface_locaux_non_residentiels_creee_m2": 1800,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 1,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 0
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "319806105",
+      "nom": "DANIEL VARLET TRAITEUR",
+      "nature_juridique": "5710",
+      "naf_actuel": "10.13B",
+      "etat": "A",
+      "date_creation": "1980-09-11",
+      "categorie": "PME",
+      "effectif": "00",
+      "nb_etablissements": 3,
+      "nb_etablissements_ouverts": 3,
+      "siege_actuel": {
+       "siret": "31980610500015",
+       "naf": "10.13B",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "31980610500015",
+       "naf_dans_permis": "10.13B",
+       "nb_permis": 1,
+       "annees_depot": [
+        "2020"
+       ],
+       "etat_actuel": "ouvert",
+       "date_creation": "1980-09-11",
+       "date_fermeture": null
+      }
+     ],
+     "alertes": [],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/319806105"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "10.13B",
+      "libelle": "Charcuterie"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5710",
+     "libelle": "SAS, société par actions simplifiée"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"entreprise_autre\",\"confiance\":\"haute\",\"indices\":[\"fiche_entreprise : NAF actuel 10.13B (Charcuterie), nature juridique 5710 (SAS), état actif, entreprise créée en 1980\",\"libelle_naf : code 10.13B = Charcuterie (activité de transformation de viande, commerce de détail)\",\"libelle_cj : code 5710 = SAS, société par actions simplifiée (forme juridique commerciale)\",\"permis_du_demandeur : 1 permis en 2020, 1800 m² de surface non résidentielle créée, 0 logement locatif social, 1 permis individuel, 0 collectif, types de résidence non déclarés\"],\"limites\":\"L'effectif est indiqué à 00 (peut être un artefact de déclaration). Le permis mentionne 1 logement créé au total mais aucun logement social et aucune résidence déclarée ; la surface non résidentielle de 1800 m² suggère un bâtiment commercial/artisanal pour l'activité de charcuterie-traiteur.\"}"
+   }
+  ]
+ }
+]

@@ -1,0 +1,109 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "890799182"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "890799182"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "890799182"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "890799182"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "EQUANS FRANCE",
+     "nb_permis_PC": 1,
+     "annees_depot": [
+      "2026"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 0,
+     "surface_locaux_non_residentiels_creee_m2": 6262,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 1
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "890799182",
+      "nom": "EQUANS FRANCE",
+      "nature_juridique": "5710",
+      "naf_actuel": "70.10Z",
+      "etat": "A",
+      "date_creation": "2020-10-15",
+      "categorie": "GE",
+      "effectif": "NN",
+      "nb_etablissements": 2,
+      "nb_etablissements_ouverts": 1,
+      "siege_actuel": {
+       "siret": "89079918200021",
+       "naf": "70.10Z",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "89079918200021",
+       "naf_dans_permis": "70.10Z",
+       "nb_permis": 1,
+       "annees_depot": [
+        "2026"
+       ],
+       "etat_actuel": "ouvert",
+       "date_creation": "2022-09-12",
+       "date_fermeture": null
+      }
+     ],
+     "alertes": [],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/890799182"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "70.10Z",
+      "libelle": "Activités des sièges sociaux"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5710",
+     "libelle": "SAS, société par actions simplifiée"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"entreprise_autre\",\"confiance\":\"haute\",\"indices\":[\"permis_du_demandeur : 1 permis en 2026, 0 logement créé, 6262 m² de surface non résidentielle, 0 logement locatif social déclaré\",\"fiche_entreprise : entreprise EQUANS FRANCE, forme juridique SAS (cj 5710), NAF actuel 70.10Z, catégorie GE (grande entreprise), état actif, siège ouvert\",\"libelle_naf : 70.10Z = Activités des sièges sociaux (holding, direction centrale)\",\"libelle_cj : 5710 = SAS, société par actions simplifiée (société commerciale de droit commun)\",\"dénomination : EQUANS FRANCE (groupe Bouygues, services multi-techniques énergie/industriel/numérique)\"],\"limites\":\"Le permis porte sur 2026 (futur) mais cela ne change pas la nature du demandeur. L'entreprise est un grand groupe privé de services, pas un acteur de l'immobilier social, de la promotion, de la foncière, de l'ESS, de la santé/social, ni une collectivité ou copropriété.\"}"
+   }
+  ]
+ }
+]

@@ -1,0 +1,111 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "817411176"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "817411176"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "817411176"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "817411176"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "SNC MARLY ABREUVOIR",
+     "nb_permis_PC": 1,
+     "annees_depot": [
+      "2021"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 2,
+     "surface_locaux_non_residentiels_creee_m2": 0,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 1,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 0
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "817411176",
+      "nom": "SNC MARLY ABREUVOIR",
+      "nature_juridique": "5202",
+      "naf_actuel": "68.31Z",
+      "etat": "A",
+      "date_creation": "2015-11-25",
+      "categorie": "PME",
+      "effectif": "NN",
+      "nb_etablissements": 3,
+      "nb_etablissements_ouverts": 1,
+      "siege_actuel": {
+       "siret": "81741117600032",
+       "naf": "68.31Z",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "81741117600024",
+       "naf_dans_permis": "68.31Z",
+       "nb_permis": 1,
+       "annees_depot": [
+        "2021"
+       ],
+       "etat_actuel": "fermé",
+       "date_creation": "2016-11-04",
+       "date_fermeture": "2021-09-16"
+      }
+     ],
+     "alertes": [
+      "SIRET 81741117600024 (permis 2021) fermé le 2021-09-16 : le NAF 68.31Z du permis vient d'un établissement fermé"
+     ],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/817411176"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "68.31Z",
+      "libelle": "Agences immobilières"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5202",
+     "libelle": "Société en nom collectif"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"promoteur\",\"confiance\":\"moyenne\",\"indices\":[\"permis_du_demandeur : 1 permis en 2021, 2 logements créés, 0 logement locatif social, 1 permis individuel (pas de collectif) → petite opération de construction résidentielle neuve\",\"fiche_entreprise : SNC (cj 5202), NAF actuel 68.31Z (Agences immobilières), entreprise active, PME ; l'établissement ayant déposé le permis est fermé depuis 2021\",\"libelle_naf : 68.31Z = Agences immobilières (activité déclarée, pas promotion immobilière)\",\"libelle_cj : 5202 = Société en nom collectif\",\"dénomination : SNC MARLY ABREUVOIR – aucune évocation de bailleur social, association, santé, collectivité ou copropriété\"],\"limites\":\"Le NAF actuel (68.31Z) correspond à de l'agence immobilière, pas à de la promotion (41.10Z) ; un seul permis déposé, l'établissement porteur est fermé ; impossible de savoir si la structure réalise régulièrement de la construction-vente ou s'il s'agit d'une opération ponctuelle. La qualification de promoteur repose sur la nature du permis (création de 2 logements individuels neufs) mais n'est pas confirmée par l'activité déclarée.\"}"
+   }
+  ]
+ }
+]

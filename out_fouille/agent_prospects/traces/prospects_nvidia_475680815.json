@@ -1,0 +1,155 @@
+[
+ {
+  "etape": "pre",
+  "texte": "résultats calculés par le code avant le modèle",
+  "entree": {
+   "siren": "475680815",
+   "denomination": "VILOGIA SOCIETE ANONYME D'HLM",
+   "famille_classification": "bailleur_social",
+   "raisons_du_score": "famille cible (bailleur_social) +2 ; dépôt récent (2025) +2 ; 2 permis autorisé(s) depuis moins de 3 ans, pas encore commencé(s) +2 ; projet de taille significative (≥ 20 logements ou ≥ 1 000 m²) +1",
+   "taille_calculee": "grande",
+   "taille_calcul": "salariés ≥ 1000, établissements ouverts 51, établissements FINESS 8",
+   "permis_du_prospect": [
+    {
+     "num_dau": "0783212500004",
+     "fichier": "logements",
+     "annee_depot": "2025",
+     "commune": "JOUARS PONTCHARTRAIN",
+     "etat": "autorisé",
+     "type_projet": "",
+     "logements_crees": 12,
+     "surface_locaux_creee_m2": null
+    },
+    {
+     "num_dau": "0783212500006",
+     "fichier": "logements",
+     "annee_depot": "2025",
+     "commune": "JOUARS PONTCHARTRAIN",
+     "etat": "autorisé",
+     "type_projet": "",
+     "logements_crees": 12,
+     "surface_locaux_creee_m2": null
+    },
+    {
+     "num_dau": "0783582410055",
+     "fichier": "logements",
+     "annee_depot": "2024",
+     "commune": "MAISONS-LAFFITTE",
+     "etat": "commencé",
+     "type_projet": "",
+     "logements_crees": 22,
+     "surface_locaux_creee_m2": null
+    },
+    {
+     "num_dau": "07832121Y0044",
+     "fichier": "logements",
+     "annee_depot": "2021",
+     "commune": "JOUARS-PONTCHARTRAIN",
+     "etat": "autorisé",
+     "type_projet": "",
+     "logements_crees": 11,
+     "surface_locaux_creee_m2": null
+    },
+    {
+     "num_dau": "07801017G0001",
+     "fichier": "logements",
+     "annee_depot": "2017",
+     "commune": "LES ALLUETS-LE-ROI",
+     "etat": "terminé",
+     "type_projet": "",
+     "logements_crees": 21,
+     "surface_locaux_creee_m2": null
+    },
+    {
+     "num_dau": "07835615E0009",
+     "fichier": "logements",
+     "annee_depot": "2015",
+     "commune": "MAGNY-LES-HAMEAUX",
+     "etat": "terminé",
+     "type_projet": "",
+     "logements_crees": 75,
+     "surface_locaux_creee_m2": null
+    },
+    {
+     "num_dau": "07849815Y0025",
+     "fichier": "logements",
+     "annee_depot": "2015",
+     "commune": "POISSY",
+     "etat": "terminé",
+     "type_projet": "",
+     "logements_crees": 23,
+     "surface_locaux_creee_m2": null
+    },
+    {
+     "num_dau": "07849815Y0026",
+     "fichier": "logements",
+     "annee_depot": "2015",
+     "commune": "POISSY",
+     "etat": "terminé",
+     "type_projet": "",
+     "logements_crees": 10,
+     "surface_locaux_creee_m2": null
+    },
+    {
+     "num_dau": "07849815Y0055",
+     "fichier": "logements",
+     "annee_depot": "2015",
+     "commune": "POISSY",
+     "etat": "terminé",
+     "type_projet": "",
+     "logements_crees": 15,
+     "surface_locaux_creee_m2": null
+    },
+    {
+     "num_dau": "07849815Y0055",
+     "fichier": "locaux",
+     "annee_depot": "2015",
+     "commune": "POISSY",
+     "etat": "terminé",
+     "type_projet": "",
+     "logements_crees": null,
+     "surface_locaux_creee_m2": 236
+    }
+   ],
+   "fiche_entreprise": {
+    "nom": "VILOGIA SOCIETE ANONYME D'HLM",
+    "nature_juridique": "5546",
+    "naf_actuel": "41.20B",
+    "etat": "A",
+    "date_creation": "1983-02-18",
+    "categorie": "ETI",
+    "effectif": "42",
+    "nb_etablissements": 85,
+    "nb_etablissements_ouverts": 51,
+    "libelle_naf_actuel": "Construction d'autres bâtiments",
+    "libelle_nature_juridique": "SA de HLM à conseil d'administration",
+    "aide": "etat A = active, C ou F = cessée. effectif = tranche Insee de salariés (ex. 21 = 50 à 99, 41 = 500 à 999, 51 = 2 000 à 4 999). Dirigeants et finances volontairement exclus.",
+    "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/475680815"
+   },
+   "finess_du_prospect": {
+    "nb_etablissements_finess_france": 8,
+    "nb_etablissements_finess_yvelines": 0,
+    "nb_departements": 2,
+    "par_type": {
+     "Logements en Structure Collective": 7,
+     "Etablissements d'Hébergement pour Personnes Âgées": 1
+    },
+    "exemples_yvelines": [],
+    "source": "https://www.data.gouv.fr/datasets/53699569a3a729239d2046eb",
+    "aide": "Établissements dont le SIRET commence par ce SIREN. 0 ne prouve pas l'absence d'activité médico-sociale (SIRET non renseigné dans FINESS, autre entité juridique du même groupe)."
+   },
+   "origine": "demandeur de permis",
+   "consigne": "Ces résultats viennent des outils permis_du_prospect, fiche_entreprise et finess_du_prospect : cite-les. Conclus avec conclure_prospect."
+  }
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure_prospect",
+    "args": "{\"verdict\":\"prospect\",\"adequation\":\"forte\",\"type_structure\":\"Bailleur social (SA HLM) gérant des logements collectifs et un EHPAD\",\"besoin_immobilier\":\"Permis récents (2025) autorisés non commencés à Jouars-Pontchartrain (24 logements) et projet commencé en 2024 à Maisons-Laffitte (22 logements), témoignant d'une activité de production immobilière soutenue.\",\"indices\":[\"denomination : VILOGIA SOCIETE ANONYME D'HLM — bailleur social, cible prioritaire de Buddimm.\",\"fiche_entreprise : nature_juridique 5546 (SA de HLM à conseil d'administration), NAF 41.20B (construction d'autres bâtiments), état A (active), catégorie ETI, 51 établissements ouverts.\",\"finess_du_prospect : 8 établissements FINESS dont 7 « Logements en Structure Collective » et 1 « Établissement d'Hébergement pour Personnes Âgées », confirmant l'exploitation d'établissements sanitaires/médico-sociaux.\",\"permis_du_prospect : 2 permis 2025 autorisés non commencés (12 + 12 logements à Jouars-Pontchartrain), 1 permis 2024 commencé (22 logements à Maisons-Laffitte), et historique de réalisations (2015-2021), montrant un besoin immobilier récurrent et visible.\"],\"limites\":\"Taille « grande » (salariés ≥ 1000, 51 établissements ouverts) : une très grande structure pourrait avoir sa direction immobilière interne, mais les bailleurs sociaux restent cœur de cible. FINESS indique 0 établissement dans les Yvelines, alors que les permis y sont localisés (activité multi-départements).\"}"
+   }
+  ]
+ }
+]

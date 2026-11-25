@@ -1,0 +1,131 @@
+[
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "{\"siren\":\"423736222\"}"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "EARL MAISON GAILLARD",
+     "nb_permis_PC": 1,
+     "annees_depot": [
+      "2020"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 1,
+     "surface_locaux_non_residentiels_creee_m2": 0,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 1,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 1
+    }
+   }
+  ]
+ },
+ {
+  "etape": 1,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "fiche_entreprise",
+    "args": "{\"siren\":\"423736222\"}"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "423736222",
+      "nom": "EARL MAISON GAILLARD",
+      "nature_juridique": "6598",
+      "naf_actuel": "01.24Z",
+      "etat": "A",
+      "date_creation": "1999-06-30",
+      "categorie": null,
+      "effectif": "02",
+      "nb_etablissements": 1,
+      "nb_etablissements_ouverts": 1,
+      "siege_actuel": {
+       "siret": "42373622200013",
+       "naf": "01.24Z",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "42373622200013",
+       "naf_dans_permis": "01.24Z",
+       "nb_permis": 1,
+       "annees_depot": [
+        "2020"
+       ],
+       "etat_actuel": "ouvert",
+       "date_creation": "1999-06-30",
+       "date_fermeture": null
+      }
+     ],
+     "alertes": [],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/423736222"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 2,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "libelle_naf",
+    "args": "{\"code\":\"01.24Z\"}"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "libelle_naf",
+    "sortie": {
+     "code": "01.24Z",
+     "libelle": "Culture de fruits à pépins et à noyau"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 3,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "libelle_cj",
+    "args": "{\"code\":\"6598\"}"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "6598",
+     "libelle": "Exploitation agricole à responsabilité limitée"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 4,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"entreprise_autre\",\"confiance\":\"haute\",\"indices\":[\"fiche_entreprise : NAF actuel 01.24Z (Culture de fruits à pépins et à noyau), nature juridique 6598 (EARL - Exploitation agricole à responsabilité limitée), effectif 02, entreprise active depuis 1999\",\"libelle_naf : 01.24Z = Culture de fruits à pépins et à noyau (activité agricole)\",\"libelle_cj : 6598 = Exploitation agricole à responsabilité limitée (forme juridique agricole)\",\"permis_du_demandeur : 1 permis de construire individuel déposé en 2020, 1 logement créé, aucun logement social, aucune surface non résidentielle\"],\"limites\":\"Le permis concerne une maison individuelle ; on ne sait pas si elle est liée à l'exploitation agricole (logement d'exploitant) ou non. L'entreprise ne correspond à aucune des familles spécialisées (bailleur social, promoteur, foncière, association ESS, exploitant santé/social, collectivité, copropriété).\"}"
+   }
+  ]
+ }
+]

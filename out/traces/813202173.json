@@ -1,0 +1,116 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "813202173"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "813202173"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "813202173"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "813202173"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "IGT HABITAT",
+     "nb_permis_PC": 1,
+     "annees_depot": [
+      "2015"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 1,
+     "surface_locaux_non_residentiels_creee_m2": 0,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 1,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 0
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "813202173",
+      "nom": "IGT HABITAT",
+      "nature_juridique": "5710",
+      "naf_actuel": "68.10Z",
+      "etat": "A",
+      "date_creation": "2015-07-01",
+      "categorie": "PME",
+      "effectif": "NN",
+      "nb_etablissements": 3,
+      "nb_etablissements_ouverts": 1,
+      "siege_actuel": {
+       "siret": "81320217300056",
+       "naf": "68.10Z",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "81320217300015",
+       "naf_dans_permis": "68.31Z",
+       "nb_permis": 1,
+       "annees_depot": [
+        "2015"
+       ],
+       "etat_actuel": "fermé",
+       "date_creation": "2015-07-01",
+       "date_fermeture": "2018-09-13"
+      }
+     ],
+     "alertes": [
+      "SIRET 81320217300015 (permis 2015) fermé le 2018-09-13 : le NAF 68.31Z du permis vient d'un établissement fermé",
+      "NAF du permis ['68.31Z'] différent du NAF actuel de l'entreprise 68.10Z"
+     ],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/813202173"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "68.10Z",
+      "libelle": "Activités des marchands de biens immobiliers"
+     },
+     {
+      "code": "68.31Z",
+      "libelle": "Agences immobilières"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5710",
+     "libelle": "SAS, société par actions simplifiée"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"fonciere_investisseur\",\"confiance\":\"haute\",\"indices\":[\"fiche_entreprise : NAF actuel de l'entreprise 68.10Z « Activités des marchands de biens immobiliers » (marchand de biens), forme juridique SAS (5710), entreprise active créée en 2015\",\"libelle_naf : 68.10Z correspond à « Activités des marchands de biens immobiliers », activité listée explicitement dans la famille fonciere_investisseur (marchand de biens)\",\"permis_du_demandeur : 1 permis individuel en 2015 (1 logement créé, 0 logement social), établissement porteur du permis (SIRET 81320217300015) fermé depuis 2018, NAF du permis 68.31Z (agence immobilière) différent du NAF actuel\",\"fiche_entreprise (alertes) : le NAF du permis provient d'un établissement fermé, le NAF actuel 68.10Z est celui de l'entreprise aujourd'hui\"],\"limites\":\"Aucune information sur l'activité de promotion immobilière (construction-vente) au-delà du marchand de biens. Le seul permis est une maison individuelle, ce qui est compatible avec de l'achat-revente ou de la construction pour revente par un marchand de biens.\"}"
+   }
+  ]
+ }
+]

@@ -1,0 +1,115 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "751863564"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "751863564"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "751863564"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "751863564"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "COLLIGNON",
+     "nb_permis_PC": 2,
+     "annees_depot": [
+      "2019"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 2,
+     "surface_locaux_non_residentiels_creee_m2": 0,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 2,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 0
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "751863564",
+      "nom": "COLLIGNON",
+      "nature_juridique": "5499",
+      "naf_actuel": "10.71C",
+      "etat": "A",
+      "date_creation": "2012-06-04",
+      "categorie": "PME",
+      "effectif": "02",
+      "nb_etablissements": 2,
+      "nb_etablissements_ouverts": 2,
+      "siege_actuel": {
+       "siret": "75186356400017",
+       "naf": "70.10Z",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "75186356400017",
+       "naf_dans_permis": "70.10Z",
+       "nb_permis": 2,
+       "annees_depot": [
+        "2019"
+       ],
+       "etat_actuel": "ouvert",
+       "date_creation": "2012-06-04",
+       "date_fermeture": null
+      }
+     ],
+     "alertes": [
+      "NAF du permis ['70.10Z'] différent du NAF actuel de l'entreprise 10.71C"
+     ],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/751863564"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "10.71C",
+      "libelle": "Boulangerie et boulangerie-pâtisserie"
+     },
+     {
+      "code": "70.10Z",
+      "libelle": "Activités des sièges sociaux"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5499",
+     "libelle": "Société à responsabilité limitée (sans autre indication)"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"entreprise_autre\",\"confiance\":\"moyenne\",\"indices\":[\"fiche_entreprise : NAF actuel 10.71C « Boulangerie et boulangerie-pâtisserie » – activité principale actuelle de l'entreprise\",\"fiche_entreprise : Catégorie juridique 5499 (SARL) – société commerciale de droit commun\",\"permis_du_demandeur : 2 permis de construire individuels déposés en 2019, 0 logement social, 0 collectif, 0 surface non résidentielle\",\"libelle_naf : NAF de l'établissement dans le permis 70.10Z « Activités des sièges sociaux », différent du NAF actuel de l'entreprise\",\"fiche_entreprise : Alerte confirmant la divergence entre le NAF du permis (70.10Z) et le NAF actuel (10.71C)\"],\"limites\":\"L'entreprise est une boulangerie (SARL, 2 salariés) qui a déposé 2 permis pour des maisons individuelles en 2019. L'établissement porteur du permis avait un NAF « sièges sociaux » (70.10Z), mais l'activité actuelle et principale est la boulangerie. Aucune indication d'appartenance au secteur du logement social, de la promotion immobilière professionnelle, de la foncière, de l'ESS, de la santé/social, du public ou de la copropriété. La construction semble ponctuelle et non cœur de métier.\"}"
+   }
+  ]
+ }
+]

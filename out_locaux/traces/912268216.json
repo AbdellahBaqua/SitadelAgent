@@ -1,0 +1,116 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "912268216"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "912268216"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "912268216"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "912268216"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "KEOLIS VELIZY VALLEE DE LA BIEVRE",
+     "nb_permis_PC": 2,
+     "annees_depot": [
+      "2022"
+     ],
+     "nb_communes": 2,
+     "logements_crees_total": 0,
+     "surface_locaux_non_residentiels_creee_m2": 343,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 0
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "912268216",
+      "nom": "KEOLIS VELIZY VALLEE DE LA BIEVRE",
+      "nature_juridique": "5202",
+      "naf_actuel": "49.39A",
+      "etat": "A",
+      "date_creation": "2022-04-07",
+      "categorie": "GE",
+      "effectif": "22",
+      "nb_etablissements": 2,
+      "nb_etablissements_ouverts": 1,
+      "siege_actuel": {
+       "siret": "91226821600021",
+       "naf": "49.39A",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "91226821600013",
+       "naf_dans_permis": "70.10Z",
+       "nb_permis": 2,
+       "annees_depot": [
+        "2022"
+       ],
+       "etat_actuel": "fermé",
+       "date_creation": "2022-04-07",
+       "date_fermeture": "2022-07-04"
+      }
+     ],
+     "alertes": [
+      "SIRET 91226821600013 (permis 2022) fermé le 2022-07-04 : le NAF 70.10Z du permis vient d'un établissement fermé",
+      "NAF du permis ['70.10Z'] différent du NAF actuel de l'entreprise 49.39A"
+     ],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/912268216"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "49.39A",
+      "libelle": "Transports routiers réguliers de voyageurs"
+     },
+     {
+      "code": "70.10Z",
+      "libelle": "Activités des sièges sociaux"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5499",
+     "libelle": "Société à responsabilité limitée (sans autre indication)"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"entreprise_autre\",\"confiance\":\"haute\",\"indices\":[\"fiche_entreprise : NAF actuel 49.39A « Transports routiers réguliers de voyageurs » → activité de transport de voyageurs\",\"libelle_naf : confirmation que 49.39A correspond aux transports routiers réguliers de voyageurs\",\"permis_du_demandeur : 2 permis en 2022 pour 343 m² de surface non résidentielle, 0 logement créé → construction d'équipement technique (dépôt, maintenance, bureaux) cohérent avec un exploitant de transport\",\"dénomination : « KEOLIS VELIZY VALLEE DE LA BIEVRE » → filiale du groupe Keolis (transport public), nom évocateur d'exploitation de réseau de bus\",\"libelle_cj : catégorie juridique 5499 = SARL, société commerciale privée\",\"fiche_entreprise : entreprise active (état A), grande entreprise (GE), 22 salariés, siège distinct de l'établissement ayant déposé les permis (établissement fermé depuis 2022)\"],\"limites\":\"Le NAF figurant sur les permis (70.10Z « Activités des sièges sociaux ») provenait d'un établissement créé et fermé en 2022 pour la démarche ; il ne reflète pas l'activité réelle de l'entreprise. L'objet des permis (locaux non résidentiels) est compatible avec l'activité de transport mais n'est pas décrit dans le détail (type d'ouvrage).\"}"
+   }
+  ]
+ }
+]

@@ -1,0 +1,109 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "798895199"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "798895199"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "798895199"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "798895199"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "ARC PROJECT MANAGEMENT",
+     "nb_permis_PC": 7,
+     "annees_depot": [
+      "2026"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 7,
+     "surface_locaux_non_residentiels_creee_m2": 0,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 7,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 7
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "798895199",
+      "nom": "ARC PROJECT MANAGEMENT",
+      "nature_juridique": "5710",
+      "naf_actuel": "71.12B",
+      "etat": "A",
+      "date_creation": "2013-12-02",
+      "categorie": "PME",
+      "effectif": "03",
+      "nb_etablissements": 2,
+      "nb_etablissements_ouverts": 1,
+      "siege_actuel": {
+       "siret": "79889519900023",
+       "naf": "71.12B",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "79889519900023",
+       "naf_dans_permis": "71.12B",
+       "nb_permis": 7,
+       "annees_depot": [
+        "2026"
+       ],
+       "etat_actuel": "ouvert",
+       "date_creation": "2019-05-01",
+       "date_fermeture": null
+      }
+     ],
+     "alertes": [],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/798895199"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "71.12B",
+      "libelle": "Ingénierie, études techniques"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5710",
+     "libelle": "SAS, société par actions simplifiée"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"entreprise_autre\",\"confiance\":\"moyenne\",\"indices\":[\"fiche_entreprise : SAS (cj 5710), NAF actuel 71.12B « Ingénierie, études techniques », PME 3‑5 employés, active depuis 2013\",\"permis_du_demandeur : 7 permis de maisons individuelles déposés en 2026, 0 logement social, 0 surface non‑résidentielle, tous autorisés non commencés\",\"libelle_naf : 71.12B = « Ingénierie, études techniques » (pas promotion, pas construction, pas immobilier)\",\"libelle_cj : 5710 = « SAS, société par actions simplifiée » (forme commerciale, pas association ni organisme HLM)\",\"dénomination : « ARC PROJECT MANAGEMENT » évoque la maîtrise d’œuvre / gestion de projet, non la promotion immobilière\"],\"limites\":\"L'objet exact des 7 permis (compte propre pour revente ? compte de tiers ?) n'est pas certain. Le NAF d'ingénierie ne correspond pas aux codes promoteur (41.10Z, 68.10Z) ni foncière (68.20B, 68.20C). Aucune trace d'activité HLM, associative, santé, publique ou copropriété.\"}"
+   }
+  ]
+ }
+]

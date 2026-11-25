@@ -1,0 +1,111 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "781908728"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "781908728"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "781908728"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "781908728"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "CSE ARIANEGROUP",
+     "nb_permis_PC": 3,
+     "annees_depot": [
+      "2018",
+      "2021"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 0,
+     "surface_locaux_non_residentiels_creee_m2": 300,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 1
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "781908728",
+      "nom": "CSE ARIANEGROUP (CE ARIANEGROUP)",
+      "nature_juridique": "8311",
+      "naf_actuel": "94.20Z",
+      "etat": "A",
+      "date_creation": "1900-01-01",
+      "categorie": "PME",
+      "effectif": "11",
+      "nb_etablissements": 1,
+      "nb_etablissements_ouverts": 1,
+      "siege_actuel": {
+       "siret": "78190872800012",
+       "naf": "94.20Z",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "78190872800012",
+       "naf_dans_permis": "94.20Z",
+       "nb_permis": 3,
+       "annees_depot": [
+        "2018",
+        "2021"
+       ],
+       "etat_actuel": "ouvert",
+       "date_creation": "1900-01-01",
+       "date_fermeture": null
+      }
+     ],
+     "alertes": [],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/781908728"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "94.20Z",
+      "libelle": "Activités des syndicats de salariés"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "8311",
+     "libelle": "Comité social économique d'établissement"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"association_ess\",\"confiance\":\"moyenne\",\"indices\":[\"fiche_entreprise : nature_juridique 8311 = « Comité social économique d'établissement » (CSE), personne morale de droit privé à but non lucratif représentant les salariés\",\"fiche_entreprise : naf_actuel 94.20Z = « Activités des syndicats de salariés » (libelle_naf), activité de représentation et défense des intérêts collectifs des travailleurs\",\"permis_du_demandeur : 3 permis déposés (2018, 2021) pour 300 m² de surfaces non résidentielles, 0 logement créé, cohérent avec des locaux pour activités du CSE (locaux syndicaux, salles de réunion, etc.)\",\"dénomination : « CSE ARIANEGROUP » confirme la nature de comité social et économique d'une grande entreprise\"],\"limites\":\"La famille « association_ess » est la plus proche car le CSE est une structure à vocation solidaire, non lucrative, relevant de l'économie sociale au sens large (représentation des salariés). Cependant, ce n'est pas une association loi 1901, une fondation ou une mutuelle au sens strict. Aucune autre famille ne correspond mieux (ni bailleur, promoteur, foncière, exploitant santé, collectivité, copropriété, entreprise commerciale).\"}"
+   }
+  ]
+ }
+]

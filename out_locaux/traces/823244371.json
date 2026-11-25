@@ -1,0 +1,115 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "823244371"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "823244371"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "823244371"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "823244371"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "AMAZON FRANCE TRANSPORT SAS",
+     "nb_permis_PC": 1,
+     "annees_depot": [
+      "2025"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 0,
+     "surface_locaux_non_residentiels_creee_m2": 1640,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 1
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "823244371",
+      "nom": "AMAZON FRANCE TRANSPORT SAS",
+      "nature_juridique": "5710",
+      "naf_actuel": "52.29B",
+      "etat": "A",
+      "date_creation": "2016-10-19",
+      "categorie": "GE",
+      "effectif": "51",
+      "nb_etablissements": 35,
+      "nb_etablissements_ouverts": 33,
+      "siege_actuel": {
+       "siret": "82324437100014",
+       "naf": "52.29B",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "82324437100014",
+       "naf_dans_permis": "70.10Z",
+       "nb_permis": 1,
+       "annees_depot": [
+        "2025"
+       ],
+       "etat_actuel": "ouvert",
+       "date_creation": "2016-10-19",
+       "date_fermeture": null
+      }
+     ],
+     "alertes": [
+      "NAF du permis ['70.10Z'] différent du NAF actuel de l'entreprise 52.29B"
+     ],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/823244371"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "52.29B",
+      "libelle": "Affrètement et organisation des transports"
+     },
+     {
+      "code": "70.10Z",
+      "libelle": "Activités des sièges sociaux"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5710",
+     "libelle": "SAS, société par actions simplifiée"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"entreprise_autre\",\"confiance\":\"haute\",\"indices\":[\"permis_du_demandeur : 1 permis en 2025 pour 1 640 m² de surface non résidentielle, 0 logement créé, 0 logement social\",\"fiche_entreprise : entreprise active (GE), NAF actuel 52.29B « Affrètement et organisation des transports », forme SAS (cj 5710), 35 établissements dont 33 ouverts\",\"libelle_naf : 52.29B = affrètement et organisation des transports (activité logistique/transport), 70.10Z = activités des sièges sociaux (NAF historique de l'établissement dans le permis)\",\"libelle_cj : 5710 = SAS, société par actions simplifiée (entreprise privée)\",\"dénomination : AMAZON FRANCE TRANSPORT SAS (filiale transport/logistique d'Amazon)\"],\"limites\":\"Le NAF du permis (70.10Z) diffère du NAF actuel de l'entreprise (52.29B), mais l'alerte de fiche_entreprise explique qu'il s'agit du NAF d'un établissement (siège) à la date du permis, alors que l'activité réelle de l'entreprise est le transport/logistique. Aucune ambiguïté sur la nature privée et non immobilière de la structure.\"}"
+   }
+  ]
+ }
+]

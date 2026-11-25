@@ -1,0 +1,113 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "389067455"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "389067455"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "389067455"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "389067455"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "LOCATION GESTION SERVICE",
+     "nb_permis_PC": 2,
+     "annees_depot": [
+      "2015",
+      "2021"
+     ],
+     "nb_communes": 2,
+     "logements_crees_total": 4,
+     "surface_locaux_non_residentiels_creee_m2": 0,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 2,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 1,
+     "permis_autorises_pas_remontes_comme_commences": 0
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "389067455",
+      "nom": "LOCATION GESTION SERVICE (LGS)",
+      "nature_juridique": "5499",
+      "naf_actuel": "46.49Z",
+      "etat": "A",
+      "date_creation": "1992-09-24",
+      "categorie": "PME",
+      "effectif": "NN",
+      "nb_etablissements": 3,
+      "nb_etablissements_ouverts": 1,
+      "siege_actuel": {
+       "siret": "38906745500037",
+       "naf": "46.49Z",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "38906745500011",
+       "naf_dans_permis": "46.49Z",
+       "nb_permis": 2,
+       "annees_depot": [
+        "2015",
+        "2021"
+       ],
+       "etat_actuel": "fermé",
+       "date_creation": "1992-09-24",
+       "date_fermeture": "1999-05-03"
+      }
+     ],
+     "alertes": [
+      "SIRET 38906745500011 (permis 2015,2021) fermé le 1999-05-03 : le NAF 46.49Z du permis vient d'un établissement fermé"
+     ],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/389067455"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "46.49Z",
+      "libelle": "Commerce de gros (commerce interentreprises) d'autres biens domestiques"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5499",
+     "libelle": "Société à responsabilité limitée (sans autre indication)"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"non_determine\",\"confiance\":\"faible\",\"indices\":[\"permis_du_demandeur : 2 permis individuels (2015, 2021), 4 logements créés dont 1 locatif social déclaré, 0 collectif, 0 surface non résidentielle\",\"fiche_entreprise : entreprise active (SARL, CJ 5499), NAF actuel 46.49Z « Commerce de gros d'autres biens domestiques », créée 1992, 3 établissements dont 1 ouvert (siège), l'établissement des permis (38906745500011) fermé depuis 1999\",\"libelle_naf : 46.49Z = commerce de gros interentreprises, pas d'activité immobilière\",\"libelle_cj : 5499 = SARL, forme commerciale classique\",\"dénomination : « LOCATION GESTION SERVICE » évoque une activité de location/gestion immobilière, mais seul le nom est un indice faible\"],\"limites\":\"L'activité réelle de l'entreprise (NAF 46.49Z) ne correspond pas à l'immobilier ; la dénomination suggère pourtant de la gestion locative. Le volume de permis est très faible (2 individuels sur 6 ans) et l'établissement porteur des permis est fermé depuis 1999. Aucune preuve formelle de statut bailleur social, promoteur, foncière, association ESS, exploitant santé/social, collectivité ou copropriété. L'appartenance à « entreprise_autre » est possible mais non certaine au vu de la dénomination.\"}"
+   }
+  ]
+ }
+]

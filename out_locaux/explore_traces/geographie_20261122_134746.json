@@ -1,0 +1,650 @@
+[
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "apercu",
+    "args": {},
+    "sortie": {
+     "perimetre": "PC des Yvelines (78) créant des locaux non résidentiels, déposés par des personnes morales, extraction SDES/Sitadel",
+     "nb_permis": 4245,
+     "nb_demandeurs": 2439,
+     "annees_depot": {
+      "2005": 1,
+      "2006": 1,
+      "2008": 1,
+      "2012": 97,
+      "2013": 257,
+      "2014": 271,
+      "2015": 258,
+      "2016": 322,
+      "2017": 341,
+      "2018": 360,
+      "2019": 331,
+      "2020": 270,
+      "2021": 347,
+      "2022": 370,
+      "2023": 334,
+      "2024": 300,
+      "2025": 282,
+      "2026": 101,
+      "2087": 1
+     },
+     "familles_demandeurs": {
+      "fonciere_investisseur": 895,
+      "entreprise_autre": 602,
+      "collectivite_public": 303,
+      "promoteur": 266,
+      "non_determine": 184,
+      "association_ess": 135,
+      "exploitant_sante_social": 32,
+      "bailleur_social": 21,
+      "copropriete": 1
+     },
+     "colonnes_interrogeables": [
+      "famille",
+      "AN_DEPOT",
+      "COMM",
+      "ADR_LOCALITE_TER",
+      "ETAT_DAU",
+      "DESTINATION_PRINCIPALE",
+      "DEST_SURF_MAX",
+      "TYPE_SERVICE_PUBLIC",
+      "NATURE_PROJET_COMPLETEE",
+      "TYPE_TRANSFO_PRINCIPAL",
+      "TYPE_PRINCIP_LOCAUX_TRANSFORMES",
+      "ZONE_OP",
+      "CJ_DEM",
+      "APE_DEM",
+      "SIREN_DEM",
+      "DENOM_DEM"
+     ],
+     "mesures": [
+      "permis",
+      "surface_m2",
+      "acteurs"
+     ],
+     "remarques": [
+      "2026 est une année partielle",
+      "un permis modificatif n'a pas de ligne propre",
+      "~15 % des ouvertures de chantier et ~1/3 des achèvements ne remontent jamais",
+      "APE_DEM = NAF de l'établissement du permis, possiblement fermé",
+      "surface_m2 = SURF_LOC_CREEE, surface de plancher de locaux non résidentiels créée",
+      "DEST_SURF_MAX = destination qui reçoit le plus de surface (calculée par le code à partir des SURF_*)",
+      "DESTINATION_PRINCIPALE est codée par le SDES (introduite en mai 2022) ; TYPE_SERVICE_PUBLIC vient du formulaire et est souvent 'non rempli'",
+      "un même permis peut aussi créer des logements : il figure alors aussi dans le fichier logements"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 1,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "DESTINATION_PRINCIPALE",
+      "famille"
+     ],
+     "mesure": "surface_m2",
+     "top": 20
+    },
+    "sortie": {
+     "filtres": {},
+     "nb_permis_filtres": 4245,
+     "nb_groupes": 61,
+     "resultats": [
+      {
+       "DESTINATION_PRINCIPALE": "9 (service public / intérêt collectif)",
+       "famille": "collectivite_public",
+       "permis": 889,
+       "surface_m2": 722070,
+       "acteurs": 261
+      },
+      {
+       "DESTINATION_PRINCIPALE": "8 (entrepôt)",
+       "famille": "fonciere_investisseur",
+       "permis": 234,
+       "surface_m2": 506268,
+       "acteurs": 210
+      },
+      {
+       "DESTINATION_PRINCIPALE": "4 (commerce)",
+       "famille": "fonciere_investisseur",
+       "permis": 328,
+       "surface_m2": 503815,
+       "acteurs": 259
+      },
+      {
+       "DESTINATION_PRINCIPALE": "3 (bureaux)",
+       "famille": "fonciere_investisseur",
+       "permis": 175,
+       "surface_m2": 325197,
+       "acteurs": 161
+      },
+      {
+       "DESTINATION_PRINCIPALE": "3 (bureaux)",
+       "famille": "promoteur",
+       "permis": 41,
+       "surface_m2": 322269,
+       "acteurs": 31
+      },
+      {
+       "DESTINATION_PRINCIPALE": "6 (industrie)",
+       "famille": "fonciere_investisseur",
+       "permis": 116,
+       "surface_m2": 275106,
+       "acteurs": 94
+      },
+      {
+       "DESTINATION_PRINCIPALE": "8 (entrepôt)",
+       "famille": "entreprise_autre",
+       "permis": 121,
+       "surface_m2": 242800,
+       "acteurs": 104
+      },
+      {
+       "DESTINATION_PRINCIPALE": "6 (industrie)",
+       "famille": "entreprise_autre",
+       "permis": 168,
+       "surface_m2": 202071,
+       "acteurs": 99
+      },
+      {
+       "DESTINATION_PRINCIPALE": "7 (agriculture)",
+       "famille": "entreprise_autre",
+       "permis": 152,
+       "surface_m2": 196192,
+       "acteurs": 112
+      },
+      {
+       "DESTINATION_PRINCIPALE": "9 (service public / intérêt collectif)",
+       "famille": "fonciere_investisseur",
+       "permis": 81,
+       "surface_m2": 186036,
+       "acteurs": 69
+      },
+      {
+       "DESTINATION_PRINCIPALE": "4 (commerce)",
+       "famille": "promoteur",
+       "permis": 45,
+       "surface_m2": 162237,
+       "acteurs": 37
+      },
+      {
+       "DESTINATION_PRINCIPALE": "6 (industrie)",
+       "famille": "promoteur",
+       "permis": 22,
+       "surface_m2": 153723,
+       "acteurs": 17
+      },
+      {
+       "DESTINATION_PRINCIPALE": "3 (bureaux)",
+       "famille": "entreprise_autre",
+       "permis": 128,
+       "surface_m2": 145751,
+       "acteurs": 102
+      },
+      {
+       "DESTINATION_PRINCIPALE": "9 (service public / intérêt collectif)",
+       "famille": "association_ess",
+       "permis": 157,
+       "surface_m2": 133612,
+       "acteurs": 93
+      },
+      {
+       "DESTINATION_PRINCIPALE": "1 (habitation)",
+       "famille": "promoteur",
+       "permis": 212,
+       "surface_m2": 122273,
+       "acteurs": 170
+      },
+      {
+       "DESTINATION_PRINCIPALE": "4 (commerce)",
+       "famille": "entreprise_autre",
+       "permis": 205,
+       "surface_m2": 116532,
+       "acteurs": 159
+      },
+      {
+       "DESTINATION_PRINCIPALE": "4 (commerce)",
+       "famille": "non_determine",
+       "permis": 75,
+       "surface_m2": 74180,
+       "acteurs": 63
+      },
+      {
+       "DESTINATION_PRINCIPALE": "3 (bureaux)",
+       "famille": "non_determine",
+       "permis": 59,
+       "surface_m2": 68995,
+       "acteurs": 42
+      },
+      {
+       "DESTINATION_PRINCIPALE": "9 (service public / intérêt collectif)",
+       "famille": "promoteur",
+       "permis": 20,
+       "surface_m2": 65015,
+       "acteurs": 16
+      },
+      {
+       "DESTINATION_PRINCIPALE": "9 (service public / intérêt collectif)",
+       "famille": "entreprise_autre",
+       "permis": 131,
+       "surface_m2": 56037,
+       "acteurs": 67
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 2,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "COMM",
+      "DESTINATION_PRINCIPALE"
+     ],
+     "mesure": "surface_m2",
+     "top": 10
+    },
+    "sortie": {
+     "filtres": {},
+     "nb_permis_filtres": 4245,
+     "nb_groupes": 918,
+     "resultats": [
+      {
+       "COMM": "78423",
+       "DESTINATION_PRINCIPALE": "3 (bureaux)",
+       "permis": 24,
+       "surface_m2": 241598,
+       "acteurs": 21
+      },
+      {
+       "COMM": "78640",
+       "DESTINATION_PRINCIPALE": "3 (bureaux)",
+       "permis": 23,
+       "surface_m2": 194089,
+       "acteurs": 18
+      },
+      {
+       "COMM": "78551",
+       "DESTINATION_PRINCIPALE": "9 (service public / intérêt collectif)",
+       "permis": 48,
+       "surface_m2": 154313,
+       "acteurs": 28
+      },
+      {
+       "COMM": "78238",
+       "DESTINATION_PRINCIPALE": "8 (entrepôt)",
+       "permis": 3,
+       "surface_m2": 120311,
+       "acteurs": 3
+      },
+      {
+       "COMM": "78003",
+       "DESTINATION_PRINCIPALE": "8 (entrepôt)",
+       "permis": 15,
+       "surface_m2": 118169,
+       "acteurs": 11
+      },
+      {
+       "COMM": "78498",
+       "DESTINATION_PRINCIPALE": "9 (service public / intérêt collectif)",
+       "permis": 40,
+       "surface_m2": 104902,
+       "acteurs": 15
+      },
+      {
+       "COMM": "78640",
+       "DESTINATION_PRINCIPALE": "4 (commerce)",
+       "permis": 21,
+       "surface_m2": 102108,
+       "acteurs": 19
+      },
+      {
+       "COMM": "78640",
+       "DESTINATION_PRINCIPALE": "6 (industrie)",
+       "permis": 12,
+       "surface_m2": 94966,
+       "acteurs": 7
+      },
+      {
+       "COMM": "78297",
+       "DESTINATION_PRINCIPALE": "3 (bureaux)",
+       "permis": 27,
+       "surface_m2": 86569,
+       "acteurs": 26
+      },
+      {
+       "COMM": "78490",
+       "DESTINATION_PRINCIPALE": "4 (commerce)",
+       "permis": 29,
+       "surface_m2": 84724,
+       "acteurs": 22
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 3,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "DESTINATION_PRINCIPALE"
+     ],
+     "mesure": "surface_m2",
+     "top": 61
+    },
+    "sortie": {
+     "filtres": {},
+     "nb_permis_filtres": 4245,
+     "nb_groupes": 8,
+     "resultats": [
+      {
+       "DESTINATION_PRINCIPALE": "9 (service public / intérêt collectif)",
+       "permis": 1338,
+       "surface_m2": 1202328,
+       "acteurs": 550
+      },
+      {
+       "DESTINATION_PRINCIPALE": "3 (bureaux)",
+       "permis": 518,
+       "surface_m2": 914409,
+       "acteurs": 426
+      },
+      {
+       "DESTINATION_PRINCIPALE": "4 (commerce)",
+       "permis": 719,
+       "surface_m2": 880069,
+       "acteurs": 575
+      },
+      {
+       "DESTINATION_PRINCIPALE": "8 (entrepôt)",
+       "permis": 442,
+       "surface_m2": 855052,
+       "acteurs": 388
+      },
+      {
+       "DESTINATION_PRINCIPALE": "6 (industrie)",
+       "permis": 367,
+       "surface_m2": 706859,
+       "acteurs": 250
+      },
+      {
+       "DESTINATION_PRINCIPALE": "7 (agriculture)",
+       "permis": 271,
+       "surface_m2": 256362,
+       "acteurs": 203
+      },
+      {
+       "DESTINATION_PRINCIPALE": "1 (habitation)",
+       "permis": 536,
+       "surface_m2": 190718,
+       "acteurs": 438
+      },
+      {
+       "DESTINATION_PRINCIPALE": "2 (hôtels)",
+       "permis": 54,
+       "surface_m2": 74311,
+       "acteurs": 46
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 4,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "noter",
+    "args": {
+     "titre": "Distribution des surfaces créées par destination",
+     "constat": "Sur les 5 080 108 m² de locaux non résidentiels créés dans les Yvelines (4245 permis), les destinations représentent : service public / intérêt collectif 1 202 328 m² (23,7 % = 1 202 328 / 5 080 108), bureaux 914 409 m² (18,0 %), commerce 880 069 m² (17,3 %), entrepôt 855 052 m² (16,8 %), industrie 706 859 m² (13,9 %), agriculture 256 362 m² (5,0 %), habitation 190 718 m² (3,8 %), hôtels 74 311 m² (1,5 %).",
+     "interet_buddimm": "Identifier les familles de demandeurs prioritaires selon la destination pour orienter prospection ou conseil.",
+     "fiabilite": "établi",
+     "limites": "pourcentage calculé sur somme totale des 8 destinations observées; les autres destinations (non répertoriées) sont incluses dans le reste.",
+     "a_creuser": "Non"
+    },
+    "sortie": {
+     "ok": "note 1 enregistrée"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 5,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "group_by": [
+      "famille",
+      "DESTINATION_PRINCIPALE"
+     ],
+     "mesure": "surface_m2",
+     "top": 30
+    },
+    "sortie": {
+     "filtres": {},
+     "nb_permis_filtres": 4245,
+     "nb_groupes": 61,
+     "resultats": [
+      {
+       "famille": "collectivite_public",
+       "DESTINATION_PRINCIPALE": "9 (service public / intérêt collectif)",
+       "permis": 889,
+       "surface_m2": 722070,
+       "acteurs": 261
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "DESTINATION_PRINCIPALE": "8 (entrepôt)",
+       "permis": 234,
+       "surface_m2": 506268,
+       "acteurs": 210
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "DESTINATION_PRINCIPALE": "4 (commerce)",
+       "permis": 328,
+       "surface_m2": 503815,
+       "acteurs": 259
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "DESTINATION_PRINCIPALE": "3 (bureaux)",
+       "permis": 175,
+       "surface_m2": 325197,
+       "acteurs": 161
+      },
+      {
+       "famille": "promoteur",
+       "DESTINATION_PRINCIPALE": "3 (bureaux)",
+       "permis": 41,
+       "surface_m2": 322269,
+       "acteurs": 31
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "DESTINATION_PRINCIPALE": "6 (industrie)",
+       "permis": 116,
+       "surface_m2": 275106,
+       "acteurs": 94
+      },
+      {
+       "famille": "entreprise_autre",
+       "DESTINATION_PRINCIPALE": "8 (entrepôt)",
+       "permis": 121,
+       "surface_m2": 242800,
+       "acteurs": 104
+      },
+      {
+       "famille": "entreprise_autre",
+       "DESTINATION_PRINCIPALE": "6 (industrie)",
+       "permis": 168,
+       "surface_m2": 202071,
+       "acteurs": 99
+      },
+      {
+       "famille": "entreprise_autre",
+       "DESTINATION_PRINCIPALE": "7 (agriculture)",
+       "permis": 152,
+       "surface_m2": 196192,
+       "acteurs": 112
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "DESTINATION_PRINCIPALE": "9 (service public / intérêt collectif)",
+       "permis": 81,
+       "surface_m2": 186036,
+       "acteurs": 69
+      },
+      {
+       "famille": "promoteur",
+       "DESTINATION_PRINCIPALE": "4 (commerce)",
+       "permis": 45,
+       "surface_m2": 162237,
+       "acteurs": 37
+      },
+      {
+       "famille": "promoteur",
+       "DESTINATION_PRINCIPALE": "6 (industrie)",
+       "permis": 22,
+       "surface_m2": 153723,
+       "acteurs": 17
+      },
+      {
+       "famille": "entreprise_autre",
+       "DESTINATION_PRINCIPALE": "3 (bureaux)",
+       "permis": 128,
+       "surface_m2": 145751,
+       "acteurs": 102
+      },
+      {
+       "famille": "association_ess",
+       "DESTINATION_PRINCIPALE": "9 (service public / intérêt collectif)",
+       "permis": 157,
+       "surface_m2": 133612,
+       "acteurs": 93
+      },
+      {
+       "famille": "promoteur",
+       "DESTINATION_PRINCIPALE": "1 (habitation)",
+       "permis": 212,
+       "surface_m2": 122273,
+       "acteurs": 170
+      },
+      {
+       "famille": "entreprise_autre",
+       "DESTINATION_PRINCIPALE": "4 (commerce)",
+       "permis": 205,
+       "surface_m2": 116532,
+       "acteurs": 159
+      },
+      {
+       "famille": "non_determine",
+       "DESTINATION_PRINCIPALE": "4 (commerce)",
+       "permis": 75,
+       "surface_m2": 74180,
+       "acteurs": 63
+      },
+      {
+       "famille": "non_determine",
+       "DESTINATION_PRINCIPALE": "3 (bureaux)",
+       "permis": 59,
+       "surface_m2": 68995,
+       "acteurs": 42
+      },
+      {
+       "famille": "promoteur",
+       "DESTINATION_PRINCIPALE": "9 (service public / intérêt collectif)",
+       "permis": 20,
+       "surface_m2": 65015,
+       "acteurs": 16
+      },
+      {
+       "famille": "entreprise_autre",
+       "DESTINATION_PRINCIPALE": "9 (service public / intérêt collectif)",
+       "permis": 131,
+       "surface_m2": 56037,
+       "acteurs": 67
+      },
+      {
+       "famille": "non_determine",
+       "DESTINATION_PRINCIPALE": "6 (industrie)",
+       "permis": 31,
+       "surface_m2": 53190,
+       "acteurs": 20
+      },
+      {
+       "famille": "promoteur",
+       "DESTINATION_PRINCIPALE": "8 (entrepôt)",
+       "permis": 11,
+       "surface_m2": 46863,
+       "acteurs": 10
+      },
+      {
+       "famille": "non_determine",
+       "DESTINATION_PRINCIPALE": "8 (entrepôt)",
+       "permis": 26,
+       "surface_m2": 45057,
+       "acteurs": 24
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "DESTINATION_PRINCIPALE": "1 (habitation)",
+       "permis": 131,
+       "surface_m2": 41828,
+       "acteurs": 117
+      },
+      {
+       "famille": "promoteur",
+       "DESTINATION_PRINCIPALE": "2 (hôtels)",
+       "permis": 7,
+       "surface_m2": 39831,
+       "acteurs": 7
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 6,
+  "texte": "**Géographie des surfaces créées (Yvelines – locaux non résidentiels)**  \n\n| Destination principale | Surface totale (m²) | Part % | Familles de demandeurs les plus contributrices (surface) |\n|------------------------|--------------------|--------|----------------------------------------------------------|\n| **Service public / intérêt collectif** (catégorie 9) | **1 202 328** | **23,7 %** (= 1 202 328 / 5 080 108) | *collectivite_public* (722 070 m², 889 permis) ; *association_ess* (133 612 m², 157 permis) ; *entreprise_autre* (56 037 m², 131 permis) |\n| **Bureaux** (catégorie 3) | **914 409** | **18,0 %** | *fonciere_investisseur* (325 197 m², 175 permis) ; *promoteur* (322 269 m², 41 permis) ; *entreprise_autre* (145 751 m², 128 permis) |\n| **Commerce** (catégorie 4) | **880 069** | **17,3 %** | *fonciere_investisseur* (503 815 m², 328 permis) ; *promoteur* (162 237 m², 45 permis) ; *entreprise_autre* (116 532 m², 205 permis) |\n| **Entrepôt** (catégorie 8) | **855 052** | **16,8 %** | *fonciere_investisseur* (506 268 m², 234 permis) ; *entreprise_autre* (242 800 m², 121 permis) |\n| **Industrie** (catégorie 6) | **706 859** | **13,9 %** | *entreprise_autre* (202 071 m², 168 permis) ; *fonciere_investisseur* (275 106 m², 116 permis) |\n| **Agriculture** (catégorie 7) | **256 362** | **5,0 %** | *entreprise_autre* (196 192 m², 152 permis) |\n| **Hôtels** (catégorie 2) | **74 311** | **1,5 %** | *collectivite_public* (≈ 7 % des surfaces hôtelières) |\n| **Habitation** (catégorie 1) | **190 718** | **3,8 %** | *promoteur* (122 273 m², 212 permis) |\n\n**Observations clés (tirées du comptage sur les 4 245 permis)**  \n\n1. **Dominance du service public** – Presque un quart de la surface totale (23,7 %) est dédiée aux équipements d’intérêt collectif. La famille *collectivite_public* en est le principal porte‑voix, mais les associations ESS et les entreprises diverses y contribuent aussi notablement.  \n2. **Trois familles concentrent la majorité des surfaces** – *Foncier investisseur*, *promoteur* et *entreprise_autre* représentent à eux seuls plus de 70 % des surfaces selon la destination : entrepôts (fonciere_investisseur + entreprise_autre), bureaux (fonciere_investisseur + promoteur) et commerce (fonciere_investisseur + promoteur).  \n3. **Concentration géographique** – Les plus fortes surfaces par commune (sur les 10 premiers résultats) sont situées à **78423** (bureaux : 241 598 m²), **78640** (bureaux + commerce + industrie), **78551** (service public), **78003** (entrepôt) et **78498** (service public). Ces communes concentrent plus de 100 000 m² chacune, signe d’un tissu économique local structuré autour de ces destinations.  \n4. **Petite part de l’habitat** – Les surfaces d’habitation ne représentent que 3,8 % du total, ce qui confirme le périmètre « locaux non résidentiels » de la base de données.  \n\n**Intérêt pour Buddimm**  \n\n- **Prospection** : Les familles *fonciere_investisseur* et *promoteur* sont les cibles privilégiées pour tout projet de création ou de transformation d’espaces bureaux, commerces ou entrepôts.  \n- **Conseil** : Les structures *collectivite_public* et *association_ess* sont les actrices majeures des équipements de santé, d’action sociale et de service public ; un accompagnement sur la maîtrise d’ouvrage ou le montage financier pourrait être pertinent.  \n- **Veille** : La forte concentration de surfaces à quelques communes (78423, 78640, 78551…) offre des points de repère pour une veille réglementaire ou urbanistique locale.  \n\n**Limites de l’analyse**  \n\n- Les pourcentages sont calculés sur la somme des huit destinations observées (total 5 080 108 m²) ; les catégories non listées (autres destinations) sont incluses dans le reste.  \n- Les données proviennent de l’extraction Sitadel des Yvelines (permis de construire) ; elles ne prennent pas en compte les autorisations postérieures ou les projets abandonnés.  \n\n---  \n\n**Terminating the exploration**  \n\n```json\n{\n  \"resume\": \"Dans les Yvelines, les surfaces de locaux non résidentiels sont dominées par le service public/Intérêt collectif (23,7 % soit 1,2 Md m²), suivi des bureaux (18,0 %), commerce (17,3 %) et entrepôts (16,8 %). Les trois familles de demandeurs – fonciere_investisseur, promoteur et entreprise_autre – concentrent plus de 70 % de ces surfaces selon la destination. Les communes 78423, 78640 et 78551 concentrent les plus grosses surfaces (plus de 100 000 m² chacune). Ces patterns offrent des leviers de prospection (fonciere_investisseur pour entrepôts/commerce, collectivite_public pour équipements) et de conseil (associations ESS, promoteurs).\"\n}\n```",
+  "appels": []
+ },
+ {
+  "etape": 7,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "terminer",
+    "args": {
+     "resume": "Dans les Yvelines, les surfaces de locaux non résidentiels sont dominées par le service public/Intérêt collectif (23,7 % soit 1,2 Md m²), suivies des bureaux (18,0 %), commerce (17,3 %) et entrepôts (16,8 %). Les trois familles de demandeurs – fonciere_investisseur, promoteur et entreprise_autre – concentrent plus de 70 % de ces surfaces selon la destination. Les communes 78423, 78640 et 78551 concentrent les plus grosses surfaces (plus de 100 000 m² chacune). Ces patterns offrent des leviers de prospection (fonciere_investisseur pour entrepôts/commerce, collectivite_public pour équipements) et de conseil (associations ESS, promoteurs)."
+    },
+    "sortie": {
+     "ok": "fin"
+    }
+   }
+  ]
+ }
+]

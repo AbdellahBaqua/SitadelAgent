@@ -1,0 +1,111 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "818190571"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "818190571"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "818190571"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "818190571"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "SAS RADIO SIR MF",
+     "nb_permis_PC": 2,
+     "annees_depot": [
+      "2023",
+      "2024"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 0,
+     "surface_locaux_non_residentiels_creee_m2": 452,
+     "nb_permis_collectif": 0,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 0
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "818190571",
+      "nom": "SAS RADIO SIR MF",
+      "nature_juridique": "5710",
+      "naf_actuel": "64.20Z",
+      "etat": "A",
+      "date_creation": "2016-01-11",
+      "categorie": "PME",
+      "effectif": "NN",
+      "nb_etablissements": 1,
+      "nb_etablissements_ouverts": 1,
+      "siege_actuel": {
+       "siret": "81819057100013",
+       "naf": "64.20Z",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "81819057100013",
+       "naf_dans_permis": "64.20Z",
+       "nb_permis": 2,
+       "annees_depot": [
+        "2023",
+        "2024"
+       ],
+       "etat_actuel": "ouvert",
+       "date_creation": "2016-01-11",
+       "date_fermeture": null
+      }
+     ],
+     "alertes": [],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/818190571"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "64.20Z",
+      "libelle": "Activités des sociétés holding"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5710",
+     "libelle": "SAS, société par actions simplifiée"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"entreprise_autre\",\"confiance\":\"faible\",\"indices\":[\"permis_du_demandeur : 2 permis déposés en 2023-2024, 0 logement créé, 452 m² de surface non résidentielle créée, 0 logement locatif social déclaré\",\"fiche_entreprise : SAS (cj 5710), NAF actuel 64.20Z, entreprise active, PME, 1 établissement ouvert\",\"libelle_naf : 64.20Z = Activités des sociétés holding\",\"libelle_cj : 5710 = SAS, société par actions simplifiée\",\"dénomination : « SAS RADIO SIR MF » suggère une activité liée à la radio/médias\"],\"limites\":\"Le NAF 64.20Z (holding) n'indique pas une activité immobilière spécifique ; la dénomination évoque les médias. Les permis portent sur du non-résidentiel sans précision de destination (bureaux, studios, commerces). Aucune preuve d'activité de bailleur social, promoteur, foncière, association, exploitant santé/social, collectivité ou copropriété.\"}"
+   }
+  ]
+ }
+]

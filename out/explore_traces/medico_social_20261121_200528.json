@@ -1,0 +1,604 @@
+[
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "apercu",
+    "args": {},
+    "sortie": {
+     "perimetre": "PC des Yvelines (78) déposés par des personnes morales, extraction SDES/Sitadel",
+     "nb_permis": 3363,
+     "nb_demandeurs": 2048,
+     "annees_depot": {
+      "2011": 3,
+      "2012": 100,
+      "2013": 222,
+      "2014": 235,
+      "2015": 258,
+      "2016": 266,
+      "2017": 290,
+      "2018": 247,
+      "2019": 256,
+      "2020": 231,
+      "2021": 356,
+      "2022": 247,
+      "2023": 221,
+      "2024": 185,
+      "2025": 168,
+      "2026": 77,
+      "2091": 1
+     },
+     "familles_demandeurs": {
+      "fonciere_investisseur": 1014,
+      "promoteur": 690,
+      "non_determine": 172,
+      "collectivite_public": 79,
+      "bailleur_social": 31,
+      "entreprise_autre": 29,
+      "association_ess": 26,
+      "copropriete": 4,
+      "exploitant_sante_social": 3
+     },
+     "colonnes_interrogeables": [
+      "famille",
+      "AN_DEPOT",
+      "COMM",
+      "ADR_LOCALITE_TER",
+      "ETAT_DAU",
+      "RESIDENCE",
+      "TYPE_PRINCIP_LOGTS_CREES",
+      "NATURE_PROJET_COMPLETEE",
+      "TYPE_TRANSFO_PRINCIPAL",
+      "TYPE_PRINCIP_LOCAUX_TRANSFORMES",
+      "UTILISATION",
+      "DESTINATION_PRINCIPALE",
+      "ZONE_OP",
+      "CJ_DEM",
+      "APE_DEM",
+      "SIREN_DEM",
+      "DENOM_DEM"
+     ],
+     "mesures": [
+      "permis",
+      "logements",
+      "acteurs"
+     ],
+     "remarques": [
+      "2026 est une année partielle",
+      "un permis modificatif n'a pas de ligne propre",
+      "~15 % des ouvertures de chantier et ~1/3 des achèvements ne remontent jamais",
+      "RESIDENCE est rempli sur une petite minorité de permis (souvent 'non rempli') ; les drapeaux RES_* n'existent que depuis mai 2022",
+      "NATURE_PROJET_COMPLETEE et TYPE_TRANSFO_* sont dits 'introduits en mai 2022' mais sont renseignés dès 2012 dans le fichier (recodage SDES probable)",
+      "APE_DEM = NAF de l'établissement du permis, possiblement fermé"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 1,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "filtres": {
+      "famille": "bailleur_social"
+     },
+     "group_by": [
+      "AN_DEPOT"
+     ],
+     "mesure": "permis",
+     "top": 10
+    },
+    "sortie": {
+     "filtres": {
+      "famille": "bailleur_social"
+     },
+     "nb_permis_filtres": 299,
+     "nb_groupes": 16,
+     "resultats": [
+      {
+       "AN_DEPOT": "2021",
+       "permis": 40,
+       "logements": 1571,
+       "acteurs": 15
+      },
+      {
+       "AN_DEPOT": "2019",
+       "permis": 37,
+       "logements": 1615,
+       "acteurs": 10
+      },
+      {
+       "AN_DEPOT": "2017",
+       "permis": 30,
+       "logements": 1046,
+       "acteurs": 13
+      },
+      {
+       "AN_DEPOT": "2015",
+       "permis": 24,
+       "logements": 1492,
+       "acteurs": 13
+      },
+      {
+       "AN_DEPOT": "2016",
+       "permis": 22,
+       "logements": 1038,
+       "acteurs": 13
+      },
+      {
+       "AN_DEPOT": "2022",
+       "permis": 20,
+       "logements": 605,
+       "acteurs": 8
+      },
+      {
+       "AN_DEPOT": "2014",
+       "permis": 19,
+       "logements": 734,
+       "acteurs": 8
+      },
+      {
+       "AN_DEPOT": "2013",
+       "permis": 19,
+       "logements": 729,
+       "acteurs": 10
+      },
+      {
+       "AN_DEPOT": "2024",
+       "permis": 17,
+       "logements": 607,
+       "acteurs": 9
+      },
+      {
+       "AN_DEPOT": "2018",
+       "permis": 16,
+       "logements": 488,
+       "acteurs": 11
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 2,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "filtres": {
+      "famille": "bailleur_social"
+     },
+     "group_by": [
+      "COMM"
+     ],
+     "mesure": "permis",
+     "top": 10
+    },
+    "sortie": {
+     "filtres": {
+      "famille": "bailleur_social"
+     },
+     "nb_permis_filtres": 299,
+     "nb_groupes": 90,
+     "resultats": [
+      {
+       "COMM": "78311",
+       "permis": 17,
+       "logements": 467,
+       "acteurs": 5
+      },
+      {
+       "COMM": "78551",
+       "permis": 13,
+       "logements": 694,
+       "acteurs": 7
+      },
+      {
+       "COMM": "78321",
+       "permis": 11,
+       "logements": 199,
+       "acteurs": 6
+      },
+      {
+       "COMM": "78621",
+       "permis": 11,
+       "logements": 793,
+       "acteurs": 6
+      },
+      {
+       "COMM": "78372",
+       "permis": 10,
+       "logements": 248,
+       "acteurs": 3
+      },
+      {
+       "COMM": "78624",
+       "permis": 10,
+       "logements": 245,
+       "acteurs": 5
+      },
+      {
+       "COMM": "78650",
+       "permis": 10,
+       "logements": 415,
+       "acteurs": 7
+      },
+      {
+       "COMM": "78440",
+       "permis": 9,
+       "logements": 376,
+       "acteurs": 4
+      },
+      {
+       "COMM": "78498",
+       "permis": 9,
+       "logements": 270,
+       "acteurs": 4
+      },
+      {
+       "COMM": "78206",
+       "permis": 8,
+       "logements": 78,
+       "acteurs": 2
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 3,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "filtres": {},
+     "group_by": [
+      "famille"
+     ],
+     "mesure": "logements",
+     "top": 10
+    },
+    "sortie": {
+     "filtres": {},
+     "nb_permis_filtres": 3363,
+     "nb_groupes": 9,
+     "resultats": [
+      {
+       "famille": "promoteur",
+       "permis": 1112,
+       "logements": 61394,
+       "acteurs": 690
+      },
+      {
+       "famille": "bailleur_social",
+       "permis": 299,
+       "logements": 11785,
+       "acteurs": 31
+      },
+      {
+       "famille": "fonciere_investisseur",
+       "permis": 1410,
+       "logements": 10435,
+       "acteurs": 1014
+      },
+      {
+       "famille": "non_determine",
+       "permis": 247,
+       "logements": 3729,
+       "acteurs": 172
+      },
+      {
+       "famille": "collectivite_public",
+       "permis": 166,
+       "logements": 1200,
+       "acteurs": 79
+      },
+      {
+       "famille": "entreprise_autre",
+       "permis": 79,
+       "logements": 873,
+       "acteurs": 29
+      },
+      {
+       "famille": "association_ess",
+       "permis": 40,
+       "logements": 580,
+       "acteurs": 26
+      },
+      {
+       "famille": "copropriete",
+       "permis": 4,
+       "logements": 112,
+       "acteurs": 4
+      },
+      {
+       "famille": "exploitant_sante_social",
+       "permis": 6,
+       "logements": 7,
+       "acteurs": 3
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 4,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "lire_dictionnaire",
+    "args": {
+     "variable": "RESIDENCE"
+    },
+    "sortie": {
+     "variable": "RESIDENCE",
+     "definition": "RESIDENCE | Type de résidence |  | 1 = res pour personnes âgées\n2 = res étudiantes\n3 = res de tourisme\n4 = res hôtelière à vocation sociale\n5 = res sociale\n6 = res pour handicapés\n7 = autre résidence\n8 = projet mixte\n9 = Non rempli | Numérique, 1 caractère | Pour les projets mixtes (logements ordinaires / résidence), on fait en sorte que cette catégorie ne soit définie que si la résidence représente la majorité des logements du projet. | Recodification des cases du formulaire suivantes"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 5,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "filtres": {
+      "famille": "association_ess"
+     },
+     "group_by": [
+      "famille"
+     ],
+     "mesure": "permis",
+     "top": 10
+    },
+    "sortie": {
+     "filtres": {
+      "famille": "association_ess"
+     },
+     "nb_permis_filtres": 40,
+     "nb_groupes": 1,
+     "resultats": [
+      {
+       "famille": "association_ess",
+       "permis": 40,
+       "logements": 580,
+       "acteurs": 26
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 6,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "filtres": {
+      "famille": "association_ess"
+     },
+     "group_by": [
+      "COMM"
+     ],
+     "mesure": "permis",
+     "top": 10
+    },
+    "sortie": {
+     "filtres": {
+      "famille": "association_ess"
+     },
+     "nb_permis_filtres": 40,
+     "nb_groupes": 29,
+     "resultats": [
+      {
+       "COMM": "78646",
+       "permis": 5,
+       "logements": 34,
+       "acteurs": 4
+      },
+      {
+       "COMM": "78146",
+       "permis": 3,
+       "logements": 57,
+       "acteurs": 3
+      },
+      {
+       "COMM": "78520",
+       "permis": 3,
+       "logements": 4,
+       "acteurs": 2
+      },
+      {
+       "COMM": "78310",
+       "permis": 2,
+       "logements": 7,
+       "acteurs": 1
+      },
+      {
+       "COMM": "78517",
+       "permis": 2,
+       "logements": 25,
+       "acteurs": 2
+      },
+      {
+       "COMM": "78518",
+       "permis": 2,
+       "logements": 12,
+       "acteurs": 1
+      },
+      {
+       "COMM": "78005",
+       "permis": 1,
+       "logements": 122,
+       "acteurs": 1
+      },
+      {
+       "COMM": "78117",
+       "permis": 1,
+       "logements": 1,
+       "acteurs": 1
+      },
+      {
+       "COMM": "78206",
+       "permis": 1,
+       "logements": 1,
+       "acteurs": 1
+      },
+      {
+       "COMM": "78217",
+       "permis": 1,
+       "logements": 62,
+       "acteurs": 1
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 7,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "filtres": {
+      "RESIDENCE": [
+       1,
+       5,
+       6,
+       4
+      ]
+     },
+     "group_by": [
+      "RESIDENCE"
+     ],
+     "mesure": "permis",
+     "top": 10
+    },
+    "sortie": {
+     "filtres": {
+      "RESIDENCE": [
+       1,
+       5,
+       6,
+       4
+      ]
+     },
+     "nb_permis_filtres": 64,
+     "nb_groupes": 3,
+     "resultats": [
+      {
+       "RESIDENCE": "1 (personnes âgées)",
+       "permis": 33,
+       "logements": 3160,
+       "acteurs": 32
+      },
+      {
+       "RESIDENCE": "5 (sociale)",
+       "permis": 27,
+       "logements": 2398,
+       "acteurs": 18
+      },
+      {
+       "RESIDENCE": "6 (handicapés)",
+       "permis": 4,
+       "logements": 63,
+       "acteurs": 4
+      }
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "etape": 8,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "noter",
+    "args": {
+     "constat": "Sur les 64 permis de construction classés comme résidence pour personnes âgées (1), sociales (5) ou handicapées (6), 33 (52 %) concernent les personnes âgées, 27 (42 %) sont sociales et seulement 4 (6 %) sont handicapées. Le total de logements correspond à 56 % pour les personnes âgées, 43 % pour les logements sociaux et 1 % pour les handicapés.",
+     "fiabilite": "établi",
+     "interet_buddimm": "Permet de cibler les prospects et les projets d’accompagnement sur les deux segments les plus porteurs (personnes âgées et logements sociaux).",
+     "limites": "Les données ne distinguent pas les projets mixtes où la résidence ne représente pas la majorité des logements, ce qui peut biaiser la répartition.",
+     "titre": "Dominance des résidences pour personnes âgées et sociales dans les permis de construire médico‑social"
+    },
+    "sortie": {
+     "ok": "note 1 enregistrée"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 9,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "compter",
+    "args": {
+     "filtres": {
+      "RESIDENCE": 1
+     },
+     "group_by": [
+      "COMM"
+     ],
+     "mesure": "permis",
+     "top": 5
+    },
+    "sortie": {
+     "filtres": {
+      "RESIDENCE": 1
+     },
+     "nb_permis_filtres": 33,
+     "nb_groupes": 26,
+     "resultats": [
+      {
+       "COMM": "78361",
+       "permis": 3,
+       "logements": 341,
+       "acteurs": 3
+      },
+      {
+       "COMM": "78123",
+       "permis": 2,
+       "logements": 182,
+       "acteurs": 1
+      },
+      {
+       "COMM": "78517",
+       "permis": 2,
+       "logements": 150,
+       "acteurs": 2
+      },
+      {
+       "COMM": "78545",
+       "permis": 2,
+       "logements": 195,
+       "acteurs": 2
+      },
+      {
+       "COMM": "78571",
+       "permis": 2,
+       "logements": 122,
+       "acteurs": 2
+      }
+     ]
+    }
+   }
+  ]
+ }
+]

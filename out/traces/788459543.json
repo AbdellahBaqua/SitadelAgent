@@ -1,0 +1,116 @@
+[
+ {
+  "etape": "pre",
+  "texte": "appels faits par le code avant le modèle",
+  "appels": [
+   {
+    "outil": "permis_du_demandeur",
+    "args": "788459543"
+   },
+   {
+    "outil": "fiche_entreprise",
+    "args": "788459543"
+   },
+   {
+    "outil": "libelle_naf",
+    "args": "788459543"
+   },
+   {
+    "outil": "libelle_cj",
+    "args": "788459543"
+   }
+  ],
+  "resultats": [
+   {
+    "outil": "permis_du_demandeur",
+    "sortie": {
+     "denomination": "L.M.H.",
+     "nb_permis_PC": 1,
+     "annees_depot": [
+      "2017"
+     ],
+     "nb_communes": 1,
+     "logements_crees_total": 7,
+     "surface_locaux_non_residentiels_creee_m2": 0,
+     "nb_permis_collectif": 1,
+     "nb_permis_individuel": 0,
+     "types_residence_declares": [],
+     "logements_locatifs_sociaux_declares": 0,
+     "permis_autorises_pas_remontes_comme_commences": 0
+    }
+   },
+   {
+    "outil": "fiche_entreprise",
+    "sortie": {
+     "entreprise": {
+      "siren": "788459543",
+      "nom": "GROUPE MLB CONCEPT (MLB CONCEPT)",
+      "nature_juridique": "5710",
+      "naf_actuel": "41.20B",
+      "etat": "A",
+      "date_creation": "2012-09-21",
+      "categorie": "PME",
+      "effectif": "12",
+      "nb_etablissements": 2,
+      "nb_etablissements_ouverts": 1,
+      "siege_actuel": {
+       "siret": "78845954300021",
+       "naf": "41.20B",
+       "etat": "A"
+      },
+      "etabs_trouves": []
+     },
+     "etablissements_des_permis": [
+      {
+       "siret": "78845954300013",
+       "naf_dans_permis": "64.20Z",
+       "nb_permis": 1,
+       "annees_depot": [
+        "2017"
+       ],
+       "etat_actuel": "fermé",
+       "date_creation": "2012-09-21",
+       "date_fermeture": "2017-12-07"
+      }
+     ],
+     "alertes": [
+      "SIRET 78845954300013 (permis 2017) fermé le 2017-12-07 : le NAF 64.20Z du permis vient d'un établissement fermé",
+      "NAF du permis ['64.20Z'] différent du NAF actuel de l'entreprise 41.20B"
+     ],
+     "aide": "Le NAF du permis est celui d'un ÉTABLISSEMENT (possiblement fermé) ; naf_actuel est celui de l'ENTREPRISE aujourd'hui.",
+     "source": "https://annuaire-entreprises.data.gouv.fr/entreprise/788459543"
+    }
+   },
+   {
+    "outil": "libelle_naf",
+    "sortie": [
+     {
+      "code": "41.20B",
+      "libelle": "Construction d'autres bâtiments"
+     },
+     {
+      "code": "64.20Z",
+      "libelle": "Activités des sociétés holding"
+     }
+    ]
+   },
+   {
+    "outil": "libelle_cj",
+    "sortie": {
+     "code": "5202",
+     "libelle": "Société en nom collectif"
+    }
+   }
+  ]
+ },
+ {
+  "etape": 0,
+  "texte": null,
+  "appels": [
+   {
+    "outil": "conclure",
+    "args": "{\"famille\":\"promoteur\",\"confiance\":\"moyenne\",\"indices\":[\"permis_du_demandeur : 1 PC déposé en 2017, 7 logements créés en collectif, 0 logement social déclaré → indice d'une opération de promotion résidentielle\",\"fiche_entreprise : NAF actuel 41.20B « Construction d'autres bâtiments » (libelle_naf) → activité de construction, compatible avec un promoteur de petite taille\",\"fiche_entreprise : entreprise active (PME, 12 salariés), nom « GROUPE MLB CONCEPT » → structure de groupe opérant dans la construction\",\"permis_du_demandeur + fiche_entreprise : l'établissement du permis (SIRET 78845954300013, NAF 64.20Z holding) est fermé depuis 2017 ; le NAF du permis est donc un indice historique non pertinent pour l'activité actuelle\",\"libelle_cj : CJ 5202 « Société en nom collectif » (donnée du permis) mais fiche_entreprise indique nature_juridique 5710 (SAS) → forme juridique évoluée, cohérente avec un promoteur qui structure ses opérations en SAS\"],\"limites\":\"[\\\"Le NAF actuel 41.20B est celui de la construction générale, pas spécifiquement du développement immobilier (41.10Z) ; l'entreprise peut être un constructeur réalisant des opérations pour compte de tiers.\\\", \\\"Aucune preuve directe de commercialisation en VEFA ou de revente des 7 logements (données de logements sociaux à 0, mais champ mal renseigné).\\\", \\\"La dénomination du permis « L.M.H. » diffère du nom actuel « GROUPE MLB CONCEPT » ; lien non documenté (changement de nom ou filiale).\\\", \\\"Effectif réduit (12 salariés) : pourrait être une entreprise de construction plutôt qu'un promoteur pur.\\\"]\"}"
+   }
+  ]
+ }
+]
